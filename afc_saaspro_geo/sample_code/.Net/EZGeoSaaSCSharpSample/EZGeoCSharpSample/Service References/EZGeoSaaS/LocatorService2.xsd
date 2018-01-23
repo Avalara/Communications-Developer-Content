@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ezgeoasp.billsoft.com/LocatorService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EZGeoSaaS" />
+  <xs:element name="GetServerTime">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetServerTimeResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeocodeAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EZGeoSaaS" minOccurs="0" name="inputAddress" nillable="true" type="q1:InputAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeocodeAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EZGeoSaaS" minOccurs="0" name="GeocodeAddressResult" nillable="true" type="q2:AddressLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeocodeAllMatches">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EZGeoSaaS" minOccurs="0" name="inputAddress" nillable="true" type="q3:InputAddress" />
+        <xs:element minOccurs="0" name="matchCount" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeocodeAllMatchesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/EZGeoSaaS" minOccurs="0" name="GeocodeAllMatchesResult" nillable="true" type="q4:ArrayOfAddressLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeocodeLatLong">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="latitude" type="xs:double" />
+        <xs:element minOccurs="0" name="longitude" type="xs:double" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GeocodeLatLongResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/EZGeoSaaS" minOccurs="0" name="GeocodeLatLongResult" nillable="true" type="q5:AddressLocation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

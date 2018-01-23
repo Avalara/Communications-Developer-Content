@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2fbfea31-d6f7-49b2-8aa2-f6e5f820dc6d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/EZGeoSaaS/LocatorService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LocatorService.xsd" MetadataType="Schema" ID="28f4635e-e007-4ae4-9433-043bc712148a" SourceId="1" SourceUrl="http://ezgeoasp.billsoft.com/LocatorService.svc?xsd=xsd2" />
+    <MetadataFile FileName="LocatorService1.xsd" MetadataType="Schema" ID="014d4463-3c12-4bb2-90bd-96092e586605" SourceId="1" SourceUrl="http://ezgeoasp.billsoft.com/LocatorService.svc?xsd=xsd3" />
+    <MetadataFile FileName="LocatorService.wsdl" MetadataType="Wsdl" ID="59919ae3-fd9c-44dd-910d-9bb3a85f5b5d" SourceId="1" SourceUrl="http://ezgeoasp.billsoft.com/LocatorService.svc?wsdl" />
+    <MetadataFile FileName="LocatorService2.xsd" MetadataType="Schema" ID="3cb96d3b-954e-47f9-9978-3b4fd0480db9" SourceId="1" SourceUrl="http://ezgeoasp.billsoft.com/LocatorService.svc?xsd=xsd0" />
+    <MetadataFile FileName="LocatorService.disco" MetadataType="Disco" ID="9a2fe67f-a21c-411f-96d0-5d5b0d5a5b75" SourceId="1" SourceUrl="http://ezgeoasp.billsoft.com/LocatorService.svc?disco" />
+    <MetadataFile FileName="LocatorService3.xsd" MetadataType="Schema" ID="58d18f0c-3d20-4893-8e98-e9d095bf3433" SourceId="1" SourceUrl="http://ezgeoasp.billsoft.com/LocatorService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

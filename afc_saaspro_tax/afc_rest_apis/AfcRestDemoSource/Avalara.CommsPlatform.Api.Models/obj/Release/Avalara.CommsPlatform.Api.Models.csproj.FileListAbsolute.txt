@@ -1,0 +1,7 @@
+C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Models\bin\Release\Avalara.CommsPlatform.Api.Models.dll
+C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Models\bin\Release\Avalara.CommsPlatform.Api.Models.pdb
+C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Models\bin\Release\Newtonsoft.Json.dll
+C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Models\bin\Release\Newtonsoft.Json.xml
+C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Models\obj\Release\Avalara.CommsPlatform.Api.Models.csprojResolveAssemblyReference.cache
+C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Models\obj\Release\Avalara.CommsPlatform.Api.Models.dll
+C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Models\obj\Release\Avalara.CommsPlatform.Api.Models.pdb

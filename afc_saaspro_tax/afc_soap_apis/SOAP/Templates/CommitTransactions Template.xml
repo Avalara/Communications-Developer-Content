@@ -1,0 +1,28 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:ezt="http://schemas.datacontract.org/2004/07/EZTaxWebService">
+   <soap:Header/>
+   <soap:Body>
+      <tem:CommitTransactions>
+          <tem:commitData>
+            <ezt:Committed>?</ezt:Committed>
+            <ezt:CustomerNumber>?</ezt:CustomerNumber>
+            <ezt:DocumentCode>?</ezt:DocumentCode>
+            <ezt:InvoiceNumber>?</ezt:InvoiceNumber>
+            <ezt:Optional>?</ezt:Optional>
+            <ezt:Optional10>?</ezt:Optional10>
+            <ezt:Optional4>?</ezt:Optional4>
+            <ezt:Optional5>?</ezt:Optional5>
+            <ezt:Optional6>?</ezt:Optional6>
+            <ezt:Optional7>?</ezt:Optional7>
+            <ezt:Optional8>?</ezt:Optional8>
+            <ezt:Optional9>?</ezt:Optional9>
+            <ezt:OptionalAlpha1>?</ezt:OptionalAlpha1>
+            <ezt:OptionalFields>
+               <ezt:OptionalField>
+                  <ezt:OptionalKeyNo>?</ezt:OptionalKeyNo>
+                  <ezt:OptionalValue>?</ezt:OptionalValue>
+               </ezt:OptionalField>
+            </ezt:OptionalFields>
+         </tem:commitData>
+      </tem:CommitTransactions>
+   </soap:Body>
+</soap:Envelope>

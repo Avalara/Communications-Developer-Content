@@ -1,0 +1,246 @@
+{
+  "Transactions": [
+    {
+      "OriginationAddress": {
+        "CountryISO": "string",
+        "County": "string",
+        "Locality": "string",
+        "State": "string",
+        "ZipCode": "string",
+        "ZipP4": "string"
+      },
+      "OriginationFipsCode": "string",
+      "OriginationPCode": 0,
+      "OriginationNpaNxx": 0,
+      "TerminationAddress": {
+        "CountryISO": "string",
+        "County": "string",
+        "Locality": "string",
+        "State": "string",
+        "ZipCode": "string",
+        "ZipP4": "string"
+      },
+      "TerminationFipsCode": "string",
+      "TerminationPCode": 0,
+      "TerminationNpaNxx": 0,
+      "BillToAddress": {
+        "CountryISO": "string",
+        "County": "string",
+        "Locality": "string",
+        "State": "string",
+        "ZipCode": "string",
+        "ZipP4": "string"
+      },
+      "BillToFipsCode": "string",
+      "BillToPCode": 0,
+      "BillToNpaNxx": 0,
+      "IsPrivateLine": true,
+      "PrivateLineSplit": 0,
+      "CustomerType": 0,
+      "BusinessClass": 0,
+      "Sale": true,
+      "TransactionType": 0,
+      "ServiceType": 0,
+      "ServiceClass": 0,
+      "Date": "2017-06-09T21:32:38.009Z",
+      "Charge": 0,
+      "Incorporated": true,
+      "FederalExempt": true,
+      "StateExempt": true,
+      "CountyExempt": true,
+      "LocalExempt": true,
+      "FederalPCode": 0,
+      "StatePCode": 0,
+      "CountyPCode": 0,
+      "LocalPCode": 0,
+      "Exemptions": [
+        {
+          "PCode": 0,
+          "TaxLevel": 0,
+          "TaxType": 0
+        }
+      ],
+      "ExemptionType": 0,
+      "InvoiceNumber": 0,
+      "Optional": 0,
+      "CustomerNumber": "string",
+      "CompanyIdentifier": "string",
+      "OptionalAlpha1": "string",
+      "Optional4": 0,
+      "Optional5": 0,
+      "Optional6": 0,
+      "Optional7": 0,
+      "Optional8": 0,
+      "Optional9": 0,
+      "Optional10": 0,
+      "AdjustmentMethod": 0,
+      "Lines": 0,
+      "Locations": 0,
+      "Minutes": 0,
+      "Debit": true,
+      "AdjustmentDiscount": 0,
+      "FacilitiesBased": true,
+      "Franchise": true,
+      "Lifeline": true,
+      "Regulated": true,
+      "ServiceLevelNumber": 0,
+      "Exclusions": [
+        {
+          "CountryISO": "string",
+          "State": "string",
+          "ExclusionOn": true
+        }
+      ],
+      "CategoryExemptions": [
+        {
+          "CountryISO": "string",
+          "State": "string",
+          "TaxCategory": 0
+        }
+      ],
+      "OptionalFields": [
+        {
+          "OptionalKeyNo": 0,
+          "OptionalValue": "string"
+        }
+      ],
+      "TaxInclusive": true,
+      "SafeHarborOverrides": [
+        {
+          "SafeHarborType": 0,
+          "OriginalFederalTam": 0,
+          "NewFederalTam": 0
+        }
+      ],
+      "DocumentCode": "string",
+      "Commit": true
+    }
+  ],
+  "Adjustments": [
+    {
+      "OriginationAddress": {
+        "CountryISO": "string",
+        "County": "string",
+        "Locality": "string",
+        "State": "string",
+        "ZipCode": "string",
+        "ZipP4": "string"
+      },
+      "OriginationFipsCode": "string",
+      "OriginationPCode": 0,
+      "OriginationNpaNxx": 0,
+      "TerminationAddress": {
+        "CountryISO": "string",
+        "County": "string",
+        "Locality": "string",
+        "State": "string",
+        "ZipCode": "string",
+        "ZipP4": "string"
+      },
+      "TerminationFipsCode": "string",
+      "TerminationPCode": 0,
+      "TerminationNpaNxx": 0,
+      "BillToAddress": {
+        "CountryISO": "string",
+        "County": "string",
+        "Locality": "string",
+        "State": "string",
+        "ZipCode": "string",
+        "ZipP4": "string"
+      },
+      "BillToFipsCode": "string",
+      "BillToPCode": 0,
+      "BillToNpaNxx": 0,
+      "IsPrivateLine": true,
+      "PrivateLineSplit": 0,
+      "CustomerType": 0,
+      "BusinessClass": 0,
+      "Sale": true,
+      "TransactionType": 0,
+      "ServiceType": 0,
+      "ServiceClass": 0,
+      "Date": "2017-06-09T21:32:38.009Z",
+      "Charge": 0,
+      "Incorporated": true,
+      "FederalExempt": true,
+      "StateExempt": true,
+      "CountyExempt": true,
+      "LocalExempt": true,
+      "FederalPCode": 0,
+      "StatePCode": 0,
+      "CountyPCode": 0,
+      "LocalPCode": 0,
+      "Exemptions": [
+        {
+          "PCode": 0,
+          "TaxLevel": 0,
+          "TaxType": 0
+        }
+      ],
+      "ExemptionType": 0,
+      "InvoiceNumber": 0,
+      "Optional": 0,
+      "CustomerNumber": "string",
+      "CompanyIdentifier": "string",
+      "OptionalAlpha1": "string",
+      "Optional4": 0,
+      "Optional5": 0,
+      "Optional6": 0,
+      "Optional7": 0,
+      "Optional8": 0,
+      "Optional9": 0,
+      "Optional10": 0,
+      "AdjustmentMethod": 0,
+      "Lines": 0,
+      "Locations": 0,
+      "Minutes": 0,
+      "Debit": true,
+      "AdjustmentDiscount": 0,
+      "FacilitiesBased": true,
+      "Franchise": true,
+      "Lifeline": true,
+      "Regulated": true,
+      "ServiceLevelNumber": 0,
+      "Exclusions": [
+        {
+          "CountryISO": "string",
+          "State": "string",
+          "ExclusionOn": true
+        }
+      ],
+      "CategoryExemptions": [
+        {
+          "CountryISO": "string",
+          "State": "string",
+          "TaxCategory": 0
+        }
+      ],
+      "OptionalFields": [
+        {
+          "OptionalKeyNo": 0,
+          "OptionalValue": "string"
+        }
+      ],
+      "TaxInclusive": true,
+      "SafeHarborOverrides": [
+        {
+          "SafeHarborType": 0,
+          "OriginalFederalTam": 0,
+          "NewFederalTam": 0
+        }
+      ],
+      "DocumentCode": "string",
+      "Commit": true
+    }
+  ],
+  "Exclusions": [
+    {
+      "CountryISO": "string",
+      "State": "string",
+      "ExclusionOn": true
+    }
+  ],
+  "ReturnDetail": true,
+  "DocumentCode": "string",
+  "Commit": true
+}

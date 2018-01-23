@@ -1,0 +1,26 @@
+{
+  "ProRatedPercent": 0.5,
+  "Transaction": {
+    "OriginationPCode": 540000,
+    "TerminationPCode": 540000,
+    "BillToPCode": 540000,
+    "CustomerType": 1,
+    "BusinessClass": 1,
+    "Sale": true,
+    "TransactionType": 1,
+    "ServiceType": 1,
+    "ServiceClass": 0,
+    "Date": "2017-10-15T00:00:00Z",
+    "Charge": 100,
+    "Incorporated": true,
+    "InvoiceNumber": 10001,
+    "CustomerNumber": "ProRatedTest",
+    "CompanyIdentifier": "AVA-TEST",
+    "FacilitiesBased": false,
+    "Franchise": false,
+    "Lifeline": false,
+    "Regulated": false,
+    "DocumentCode": "TEST-ProRated 2017.10.03 AAA",
+    "Commit": false
+  }
+}

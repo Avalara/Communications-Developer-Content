@@ -1,0 +1,96 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:ezt="http://schemas.datacontract.org/2004/07/EZTaxWebService">
+   <soap:Header>
+      <UserName xmlns="http://eztaxasp.billsoft.com/eztaxwebservice">*****</UserName>
+      <Password xmlns="http://eztaxasp.billsoft.com/eztaxwebservice">*****</Password>
+   </soap:Header>
+   <soap:Body>
+      <tem:CalcTaxesWithZipAddress xmlns="http://tempuri.org/">
+         <tem:aTransaction xmlns:a="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <ezt:AdjustmentMethod>0</ezt:AdjustmentMethod>
+            <ezt:BillToAddress>
+               <ezt:CountryISO>CAN</ezt:CountryISO>
+               <ezt:County i:nil="true"/>
+               <ezt:Locality>Vancouver</ezt:Locality>
+               <ezt:State>BC</ezt:State>
+               <ezt:ZipCode>V6C-3R8</ezt:ZipCode>
+            </ezt:BillToAddress>
+            <ezt:BillToFipsCode i:nil="true"/>
+            <ezt:BillToNpaNxx i:nil="true"/>
+            <ezt:BillToPCode i:nil="true"/>
+            <ezt:BusinessClass>1</ezt:BusinessClass>
+            <ezt:CategoryExemptions i:nil="true"/>
+            <ezt:Charge>100.0</ezt:Charge>
+            <ezt:Commit>true</ezt:Commit>
+            <ezt:CompanyIdentifier>TST</ezt:CompanyIdentifier>
+            <ezt:CountyExempt>false</ezt:CountyExempt>
+            <ezt:CountyPCode>0</ezt:CountyPCode>
+            <ezt:CustomerNumber>ABC</ezt:CustomerNumber>
+            <ezt:CustomerType>1</ezt:CustomerType>
+            <ezt:Date>2017-07-01T00:00:00</ezt:Date>
+            <ezt:DocumentCode>Test Transaction 2017.07.01</ezt:DocumentCode>
+            <ezt:Debit>false</ezt:Debit>
+            <ezt:DiscountType>0</ezt:DiscountType>
+            <ezt:Exclusions i:nil="true"/>
+            <ezt:ExemptionType>0</ezt:ExemptionType>
+            <ezt:Exemptions i:nil="true"/>
+            <ezt:FacilitiesBased>false</ezt:FacilitiesBased>
+            <ezt:FederalExempt>false</ezt:FederalExempt>
+            <ezt:FederalPCode>0</ezt:FederalPCode>
+            <ezt:Franchise>false</ezt:Franchise>
+            <ezt:Incorporated>false</ezt:Incorporated>
+            <ezt:InvoiceNumber>345</ezt:InvoiceNumber>
+            <ezt:IsPrivateLine>false</ezt:IsPrivateLine>
+            <ezt:Lifeline>false</ezt:Lifeline>
+            <ezt:Lines>1</ezt:Lines>
+            <ezt:LocalExempt>false</ezt:LocalExempt>
+            <ezt:LocalPCode>0</ezt:LocalPCode>
+            <ezt:Locations>0</ezt:Locations>
+            <ezt:Minutes>0</ezt:Minutes>
+            <ezt:Optional>123456</ezt:Optional>
+            <ezt:Optional10>10</ezt:Optional10>
+            <ezt:Optional4>4</ezt:Optional4>
+            <ezt:Optional5>5</ezt:Optional5>
+            <ezt:Optional6>6</ezt:Optional6>
+            <ezt:Optional7>7</ezt:Optional7>
+            <ezt:Optional8>8</ezt:Optional8>
+            <ezt:Optional9>9</ezt:Optional9>
+            <ezt:OptionalAlpha1>ZZZ</ezt:OptionalAlpha1>
+            <ezt:OriginationAddress>
+               <ezt:CountryISO>CAN</ezt:CountryISO>
+               <ezt:County i:nil="true"/>
+               <ezt:Locality>Vancouver</ezt:Locality>
+               <ezt:State>BC</ezt:State>
+               <ezt:ZipCode>V6C-3R8</ezt:ZipCode>
+            </ezt:OriginationAddress>
+            <ezt:OriginationFipsCode i:nil="true"/>
+            <ezt:OriginationNpaNxx i:nil="true"/>
+            <ezt:OriginationPCode i:nil="true"/>
+            <ezt:OptionalFields>
+               <ezt:OptionalField>
+                  <ezt:OptionalKeyNo>1</ezt:OptionalKeyNo>
+                  <ezt:OptionalValue>Sample CalcTaxesWithZipAddress with Canadian Address</ezt:OptionalValue>
+               </ezt:OptionalField>
+            </ezt:OptionalFields>
+            <ezt:PrivateLineSplit>0.0</ezt:PrivateLineSplit>
+            <ezt:Regulated>false</ezt:Regulated>
+            <ezt:Sale>true</ezt:Sale>
+            <ezt:ServiceClass>1</ezt:ServiceClass>
+            <ezt:ServiceLevelNumber>0</ezt:ServiceLevelNumber>
+            <ezt:ServiceType>602</ezt:ServiceType>
+            <ezt:StateExempt>false</ezt:StateExempt>
+            <ezt:StatePCode>0</ezt:StatePCode>
+            <ezt:TerminationAddress>
+               <ezt:CountryISO>CAN</ezt:CountryISO>
+               <ezt:County i:nil="true"/>
+               <ezt:Locality>Vancouver</ezt:Locality>
+               <ezt:State>BC</ezt:State>
+               <ezt:ZipCode>V6C-3R8</ezt:ZipCode>
+            </ezt:TerminationAddress>
+            <ezt:TerminationFipsCode i:nil="true"/>
+            <ezt:TerminationNpaNxx i:nil="true"/>
+            <ezt:TerminationPCode i:nil="true"/>
+            <ezt:TransactionType>3</ezt:TransactionType>
+         </tem:aTransaction>
+      </tem:CalcTaxesWithZipAddress>
+   </soap:Body>
+</soap:Envelope>

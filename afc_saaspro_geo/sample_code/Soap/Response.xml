@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <soap:Header>
+      <wsa:Action>http://xml.billsoft.com/2006/08/ezgeo/GeocodeAddressResponse</wsa:Action>
+      <wsa:MessageID>uuid:71d2e4c6-63fc-486b-9c8f-1464056cf4fa</wsa:MessageID>
+      <wsa:RelatesTo>uuid:bb44bb62-5f2d-46d7-ae7d-2d990487fb72</wsa:RelatesTo>
+      <wsa:To>http://schemas.xmlsoap.org/ws/2004/03/addressing/role/anonymous</wsa:To>
+      <wsse:Security>
+        <wsu:Timestamp wsu:Id="Timestamp-7f564c06-ffdc-4f49-8148-0747de36740c">
+          <wsu:Created>2006-09-01T15:58:46Z</wsu:Created>
+          <wsu:Expires>2006-09-01T16:03:46Z</wsu:Expires>
+        </wsu:Timestamp>
+      </wsse:Security>
+    </soap:Header>
+    <soap:Body>
+      <GeocodeAddressResponse xmlns="http://xml.billsoft.com/2006/08/ezgeo">
+        <GeocodeAddressResult>
+          <UnderlyingFipsCode>2009139350</UnderlyingFipsCode>
+          <FIPSCodeString>2009139350</FIPSCodeString>
+          <FipsPlaceName>LENEXA</FipsPlaceName>
+          <PrimaryJurisdictionName>LENEXA</PrimaryJurisdictionName>
+          <PrimaryJurisdictionPcode>1249200</PrimaryJurisdictionPcode>
+          <SpecialTaxDistrictName />
+          <SpecialTaxDistrictPcode>-1</SpecialTaxDistrictPcode>
+          <TaxJurisdictionName>LENEXA</TaxJurisdictionName>
+          <NetworkID>nt</NetworkID>
+          <StreetNumber>8220</StreetNumber>
+          <StreetName>MARSHALL DR</StreetName>
+          <Unit />
+          <City>OVERLAND PARK</City>
+          <County>JOHNSON</County>
+          <Country>USA</Country>
+          <State>KS</State>
+          <PostalCode>66214</PostalCode>
+          <PostalCodeExtenstion>1537</PostalCodeExtenstion>
+          <TimeZone>GMT</TimeZone>
+          <Score>1</Score>
+          <Latitude>38.979736211501752</Latitude>
+          <Longitude>-94.713361510116343</Longitude>
+          <CensusTract>0</CensusTract>
+          <CensusBlockGroup>0</CensusBlockGroup>
+          <PCode>1249200</PCode>
+          <FIPSCode>2009139350</FIPSCode>
+          <Unincorporated>false</Unincorporated>
+          <CassAddress>
+            <Address>
+              <string>8220 MARSHALL DR</string>
+              <string>LENEXA,KS,66214-1537</string>
+            </Address>
+            <AddressLine>8220 MARSHALL DR</AddressLine>
+            <CityStateZip>LENEXA,KS,66214-1537</CityStateZip>
+            <City>LENEXA</City>
+            <State>KS</State>
+            <Zip>66214</Zip>
+            <Zip4>1537</Zip4>
+            <AddressQualityFlags>S4</AddressQualityFlags>
+            <CarrierRoute>C019</CarrierRoute>
+            <CountyCode>91</CountyCode>
+            <DeliveryPointValidation>3</DeliveryPointValidation>
+            <EnhancedLineOfTravel>0</EnhancedLineOfTravel>
+            <Reliability>100</Reliability>
+            <USPSBarCode>/662141537203/
+</USPSBarCode>
+          </CassAddress>
+        </GeocodeAddressResult>
+      </GeocodeAddressResponse>
+    </soap:Body>
+  </soap:Envelope>

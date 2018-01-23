@@ -1,0 +1,514 @@
+array(83) {
+  [0]=>
+  string(1309) "struct Transaction {
+ int AdjustmentMethod;
+ ZipAddress BillToAddress;
+ string BillToFipsCode;
+ unsignedInt BillToNpaNxx;
+ unsignedInt BillToPCode;
+ int BusinessClass;
+ double Charge;
+ string CompanyIdentifier;
+ boolean CountyExempt;
+ unsignedInt CountyPCode;
+ string CustomerNumber;
+ int CustomerType;
+ dateTime Date;
+ boolean Debit;
+ int DiscountType;
+ int ExemptionType;
+ ArrayOfTaxExemption Exemptions;
+ boolean FacilitiesBased;
+ boolean FederalExempt;
+ unsignedInt FederalPCode;
+ boolean Franchise;
+ boolean Incorporated;
+ unsignedInt InvoiceNumber;
+ boolean Lifeline;
+ int Lines;
+ boolean LocalExempt;
+ unsignedInt LocalPCode;
+ int Locations;
+ double Minutes;
+ unsignedInt Optional;
+ unsignedInt Optional10;
+ unsignedInt Optional4;
+ unsignedInt Optional5;
+ unsignedInt Optional6;
+ unsignedInt Optional7;
+ unsignedInt Optional8;
+ unsignedInt Optional9;
+ string OptionalAlpha1;
+ ZipAddress OriginationAddress;
+ string OriginationFipsCode;
+ unsignedInt OriginationNpaNxx;
+ unsignedInt OriginationPCode;
+ boolean Regulated;
+ boolean Sale;
+ int ServiceClass;
+ unsignedInt ServiceLevelNumber;
+ short ServiceType;
+ boolean StateExempt;
+ unsignedInt StatePCode;
+ ZipAddress TerminationAddress;
+ string TerminationFipsCode;
+ unsignedInt TerminationNpaNxx;
+ unsignedInt TerminationPCode;
+ short TransactionType;
+}"
+  [1]=>
+  string(122) "struct ZipAddress {
+ string CountryISO;
+ string County;
+ string Locality;
+ string State;
+ string ZipCode;
+ string ZipP4;
+}"
+  [2]=>
+  string(58) "struct ArrayOfTaxExemption {
+ TaxExemption TaxExemption;
+}"
+  [3]=>
+  string(74) "struct TaxExemption {
+ unsignedInt PCode;
+ int TaxLevel;
+ short TaxType;
+}"
+  [4]=>
+  string(43) "struct ArrayOfTaxData {
+ TaxData TaxData;
+}"
+  [5]=>
+  string(742) "struct TaxData {
+ int AdjustmentType;
+ boolean Billable;
+ int CalculationType;
+ string CategoryDescription;
+ short CategoryID;
+ string CompanyIdentifier;
+ boolean Compliance;
+ string CustomerNumber;
+ string Description;
+ double ExemptSaleAmount;
+ int ExemptionType;
+ unsignedInt InvoiceNumber;
+ int Lines;
+ int Locations;
+ double Minutes;
+ unsignedInt Optional;
+ unsignedInt Optional10;
+ unsignedInt Optional4;
+ unsignedInt Optional5;
+ unsignedInt Optional6;
+ unsignedInt Optional7;
+ unsignedInt Optional8;
+ unsignedInt Optional9;
+ string OptionalAlpha1;
+ unsignedInt PCode;
+ double Rate;
+ double RefundUncollect;
+ unsignedInt ServiceLevelNumber;
+ boolean Surcharge;
+ double TaxAmount;
+ int TaxLevel;
+ short TaxType;
+ double TaxableMeasure;
+}"
+  [6]=>
+  string(923) "struct SalesUseTransaction {
+ int AdjustmentMethod;
+ double Charge;
+ string CompanyIdentifier;
+ boolean CountyExempt;
+ unsignedInt CountyPCode;
+ string CustomerNumber;
+ int CustomerType;
+ dateTime Date;
+ int ExemptionType;
+ ArrayOfTaxExemption Exemptions;
+ int FOB;
+ boolean FederalExempt;
+ unsignedInt FederalPCode;
+ boolean Incorporated;
+ unsignedInt InvoiceNumber;
+ boolean LocalExempt;
+ unsignedInt LocalPCode;
+ unsignedInt Optional;
+ unsignedInt Optional10;
+ unsignedInt Optional4;
+ unsignedInt Optional5;
+ unsignedInt Optional6;
+ unsignedInt Optional7;
+ unsignedInt Optional8;
+ unsignedInt Optional9;
+ string OptionalAlpha1;
+ boolean Sale;
+ anyType SaleAttributes;
+ short ServiceType;
+ ZipAddress ShipFromAddress;
+ string ShipFromFipsCode;
+ unsignedInt ShipFromPCode;
+ ZipAddress ShipToAddress;
+ string ShipToFipsCode;
+ unsignedInt ShipToPCode;
+ boolean StateExempt;
+ unsignedInt StatePCode;
+ short TransactionType;
+}"
+  [7]=>
+  string(64) "struct ShipAndHandlingAttributes {
+ boolean SellerReqShipping;
+}"
+  [8]=>
+  string(56) "struct InstallationAttributes {
+ int InstallationType;
+}"
+  [9]=>
+  string(96) "struct SoftwareMaintAttributes {
+ int AgreementType;
+ boolean SellerRequired;
+ int UpdateType;
+}"
+  [10]=>
+  string(113) "struct ServiceContractAttributes {
+ int AgreementType;
+ int ItemType;
+ boolean SellerRequired;
+ int TimeOfSale;
+}"
+  [11]=>
+  string(112) "struct MaintAgreementAttributes {
+ int AgreementType;
+ int ItemType;
+ boolean SellerRequired;
+ int TimeOfSale;
+}"
+  [12]=>
+  string(81) "struct FactoryWarrantyAttributes {
+ int AgreementType;
+ boolean SellerRequired;
+}"
+  [13]=>
+  string(94) "struct ExtWarrantyAttributes {
+ int AgreementType;
+ boolean SellerRequired;
+ int TimeOfSale;
+}"
+  [14]=>
+  string(28) "struct TradeInAttributes {
+}"
+  [15]=>
+  string(46) "struct FinanceAttributes {
+ int FinanceType;
+}"
+  [16]=>
+  string(28) "struct DefaultAttributes {
+}"
+  [17]=>
+  string(30) "struct DemurrageAttributes {
+}"
+  [18]=>
+  string(28) "struct DepositAttributes {
+}"
+  [19]=>
+  string(103) "struct FreightAttributes {
+ boolean CommonCarrier;
+ boolean PaidToSeller;
+ boolean SellerReqShipping;
+}"
+  [20]=>
+  string(48) "struct DiscountAttributes {
+ int DiscountType;
+}"
+  [21]=>
+  string(37) "struct ArrayOfNexus {
+ Nexus Nexus;
+}"
+  [22]=>
+  string(50) "struct Nexus {
+ boolean HasNexus;
+ string State;
+}"
+  [23]=>
+  string(49) "struct ArrayOfExclusion {
+ Exclusion Exclusion;
+}"
+  [24]=>
+  string(77) "struct Exclusion {
+ string CountryISO;
+ boolean ExclusionOn;
+ string State;
+}"
+  [25]=>
+  string(79) "struct ArrayOfSalesUseTransaction {
+ SalesUseTransaction SalesUseTransaction;
+}"
+  [26]=>
+  string(67) "struct ArrayOfCustomerTaxData {
+ CustomerTaxData CustomerTaxData;
+}"
+  [27]=>
+  string(362) "struct CustomerTaxData {
+ int CalculationType;
+ string CategoryDescription;
+ short CategoryID;
+ string Description;
+ double ExcessTax;
+ double ExemptSaleAmount;
+ int Lines;
+ int Locations;
+ double MaxBase;
+ double MinBase;
+ double Minutes;
+ unsignedInt PCode;
+ double Rate;
+ short Surcharge;
+ double TaxAmount;
+ int TaxLevel;
+ int TaxType;
+ double TotalCharge;
+}"
+  [28]=>
+  string(55) "struct ArrayOfAddressData {
+ AddressData AddressData;
+}"
+  [29]=>
+  string(178) "struct AddressData {
+ string CountryISO;
+ string County;
+ string Locality;
+ string State;
+ int TaxLevel;
+ string ZipBegin;
+ string ZipEnd;
+ string ZipP4Begin;
+ string ZipP4End;
+}"
+  [30]=>
+  string(61) "struct CalcTaxesWithZipAddress {
+ Transaction aTransaction;
+}"
+  [31]=>
+  string(89) "struct CalcTaxesWithZipAddressResponse {
+ ArrayOfTaxData CalcTaxesWithZipAddressResult;
+}"
+  [32]=>
+  string(59) "struct CalcTaxesWithFipsCode {
+ Transaction aTransaction;
+}"
+  [33]=>
+  string(85) "struct CalcTaxesWithFipsCodeResponse {
+ ArrayOfTaxData CalcTaxesWithFipsCodeResult;
+}"
+  [34]=>
+  string(56) "struct CalcTaxesWithPCode {
+ Transaction aTransaction;
+}"
+  [35]=>
+  string(79) "struct CalcTaxesWithPCodeResponse {
+ ArrayOfTaxData CalcTaxesWithPCodeResult;
+}"
+  [36]=>
+  string(57) "struct CalcTaxesWithNpaNxx {
+ Transaction aTransaction;
+}"
+  [37]=>
+  string(81) "struct CalcTaxesWithNpaNxxResponse {
+ ArrayOfTaxData CalcTaxesWithNpaNxxResult;
+}"
+  [38]=>
+  string(59) "struct CalcAdjWithZipAddress {
+ Transaction anAdjustment;
+}"
+  [39]=>
+  string(85) "struct CalcAdjWithZipAddressResponse {
+ ArrayOfTaxData CalcAdjWithZipAddressResult;
+}"
+  [40]=>
+  string(57) "struct CalcAdjWithFipsCode {
+ Transaction anAdjustment;
+}"
+  [41]=>
+  string(81) "struct CalcAdjWithFipsCodeResponse {
+ ArrayOfTaxData CalcAdjWithFipsCodeResult;
+}"
+  [42]=>
+  string(54) "struct CalcAdjWithPCode {
+ Transaction anAdjustment;
+}"
+  [43]=>
+  string(75) "struct CalcAdjWithPCodeResponse {
+ ArrayOfTaxData CalcAdjWithPCodeResult;
+}"
+  [44]=>
+  string(55) "struct CalcAdjWithNpaNxx {
+ Transaction anAdjustment;
+}"
+  [45]=>
+  string(77) "struct CalcAdjWithNpaNxxResponse {
+ ArrayOfTaxData CalcAdjWithNpaNxxResult;
+}"
+  [46]=>
+  string(128) "struct SAUCalcTaxesWithPCode {
+ SalesUseTransaction aTransaction;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [47]=>
+  string(85) "struct SAUCalcTaxesWithPCodeResponse {
+ ArrayOfTaxData SAUCalcTaxesWithPCodeResult;
+}"
+  [48]=>
+  string(131) "struct SAUCalcTaxesWithFipsCode {
+ SalesUseTransaction aTransaction;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [49]=>
+  string(91) "struct SAUCalcTaxesWithFipsCodeResponse {
+ ArrayOfTaxData SAUCalcTaxesWithFipsCodeResult;
+}"
+  [50]=>
+  string(133) "struct SAUCalcTaxesWithZipAddress {
+ SalesUseTransaction aTransaction;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [51]=>
+  string(95) "struct SAUCalcTaxesWithZipAddressResponse {
+ ArrayOfTaxData SAUCalcTaxesWithZipAddressResult;
+}"
+  [52]=>
+  string(126) "struct SAUCalcAdjWithPCode {
+ SalesUseTransaction anAdjustment;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [53]=>
+  string(81) "struct SAUCalcAdjWithPCodeResponse {
+ ArrayOfTaxData SAUCalcAdjWithPCodeResult;
+}"
+  [54]=>
+  string(129) "struct SAUCalcAdjWithFipsCode {
+ SalesUseTransaction anAdjustment;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [55]=>
+  string(87) "struct SAUCalcAdjWithFipsCodeResponse {
+ ArrayOfTaxData SAUCalcAdjWithFipsCodeResult;
+}"
+  [56]=>
+  string(131) "struct SAUCalcAdjWithZipAddress {
+ SalesUseTransaction anAdjustment;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [57]=>
+  string(91) "struct SAUCalcAdjWithZipAddressResponse {
+ ArrayOfTaxData SAUCalcAdjWithZipAddressResult;
+}"
+  [58]=>
+  string(201) "struct SAUCalcTaxesAndAdjWithPCodeInCustMode {
+ ArrayOfSalesUseTransaction aTransactionList;
+ ArrayOfSalesUseTransaction anAdjustmentList;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [59]=>
+  string(125) "struct SAUCalcTaxesAndAdjWithPCodeInCustModeResponse {
+ ArrayOfCustomerTaxData SAUCalcTaxesAndAdjWithPCodeInCustModeResult;
+}"
+  [60]=>
+  string(204) "struct SAUCalcTaxesAndAdjWithFipsCodeInCustMode {
+ ArrayOfSalesUseTransaction aTransactionList;
+ ArrayOfSalesUseTransaction anAdjustmentList;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [61]=>
+  string(131) "struct SAUCalcTaxesAndAdjWithFipsCodeInCustModeResponse {
+ ArrayOfCustomerTaxData SAUCalcTaxesAndAdjWithFipsCodeInCustModeResult;
+}"
+  [62]=>
+  string(206) "struct SAUCalcTaxesAndAdjWithZipAddressInCustMode {
+ ArrayOfSalesUseTransaction aTransactionList;
+ ArrayOfSalesUseTransaction anAdjustmentList;
+ ArrayOfNexus aNexusList;
+ ArrayOfExclusion anExclusionList;
+}"
+  [63]=>
+  string(135) "struct SAUCalcTaxesAndAdjWithZipAddressInCustModeResponse {
+ ArrayOfCustomerTaxData SAUCalcTaxesAndAdjWithZipAddressInCustModeResult;
+}"
+  [64]=>
+  string(42) "struct GetAddress {
+ unsignedInt aPCode;
+}"
+  [65]=>
+  string(67) "struct GetAddressResponse {
+ ArrayOfAddressData GetAddressResult;
+}"
+  [66]=>
+  string(43) "struct PCodeToFips {
+ unsignedInt aPCode;
+}"
+  [67]=>
+  string(57) "struct PCodeToFipsResponse {
+ string PCodeToFipsResult;
+}"
+  [68]=>
+  string(37) "struct FipsToPCode {
+ string aFips;
+}"
+  [69]=>
+  string(62) "struct FipsToPCodeResponse {
+ unsignedInt FipsToPCodeResult;
+}"
+  [70]=>
+  string(47) "struct NpaNxxToPCode {
+ unsignedInt anNpaNxx;
+}"
+  [71]=>
+  string(66) "struct NpaNxxToPCodeResponse {
+ unsignedInt NpaNxxToPCodeResult;
+}"
+  [72]=>
+  string(46) "struct ZipToPCode {
+ ZipAddress aZipAddress;
+}"
+  [73]=>
+  string(60) "struct ZipToPCodeResponse {
+ unsignedInt ZipToPCodeResult;
+}"
+  [74]=>
+  string(40) "struct GetTaxCategory {
+ int aTaxType;
+}"
+  [75]=>
+  string(63) "struct GetTaxCategoryResponse {
+ string GetTaxCategoryResult;
+}"
+  [76]=>
+  string(43) "struct GetTaxDescription {
+ int aTaxType;
+}"
+  [77]=>
+  string(69) "struct GetTaxDescriptionResponse {
+ string GetTaxDescriptionResult;
+}"
+  [78]=>
+  string(24) "struct GetServerTime {
+}"
+  [79]=>
+  string(63) "struct GetServerTimeResponse {
+ dateTime GetServerTimeResult;
+}"
+  [80]=>
+  string(8) "int char"
+  [81]=>
+  string(17) "duration duration"
+  [82]=>
+  string(11) "string guid"
+}

@@ -1,0 +1,21 @@
+{
+  "DocumentCode": "string",
+  "Committed": true,
+  "CustomerNumber": "string",
+  "InvoiceNumber": 0,
+  "Optional": 0,
+  "Optional4": 0,
+  "Optional5": 0,
+  "Optional6": 0,
+  "Optional7": 0,
+  "Optional8": 0,
+  "Optional9": 0,
+  "Optional10": 0,
+  "OptionalAlpha1": "string",
+  "OptionalFields": [
+    {
+      "OptionalKeyNo": 0,
+      "OptionalValue": "string"
+    }
+  ]
+}

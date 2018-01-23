@@ -1,0 +1,108 @@
+{
+  "Transactions": [
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "County": "New York",
+    "Locality": "Manhattan",
+    "State": "NY",
+    "ZipCode": "10001",
+    "ZipP4": "0000"
+ },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "County": "New York",
+    "Locality": "Manhattan",
+    "State": "NY",
+    "ZipCode": "10001",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA",
+    "County": "New York",
+    "Locality": "Manhattan",
+    "State": "NY",
+    "ZipCode": "10001",
+    "ZipP4": "0000"
+  },
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 13,
+  "ServiceType": 6,
+  "ServiceClass": 0,
+  "Date": "2017-06-15T12:00:00Z",
+  "Charge": 20,
+  "Incorporated": true,
+  "CompanyIdentifier": "AVA",
+  "OptionalAlpha1": "0000001",
+  "Lines": 0,
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,
+  "ServiceLevelNumber": 0,
+  "TaxInclusive": false,
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "Tax Calculation for $20"
+	} ]
+}
+  ],
+ "Adjustments": [
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "County": "New York",
+    "Locality": "Manhattan",
+    "State": "NY",
+    "ZipCode": "10001",
+    "ZipP4": "0000"
+ },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "County": "New York",
+    "Locality": "Manhattan",
+    "State": "NY",
+    "ZipCode": "10001",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA",
+    "County": "New York",
+    "Locality": "Manhattan",
+    "State": "NY",
+    "ZipCode": "10001",
+    "ZipP4": "0000"
+  },
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 13,
+  "ServiceType": 6,
+  "AdjustmentDiscount": 0,
+  "ServiceClass": 0,
+  "Date": "2017-06-15T12:00:00Z",
+  "Charge": 3,
+  "Incorporated": true,
+  "CompanyIdentifier": "Avalara Test",
+  "OptionalAlpha1": "0000002",
+  "Lines": 0,
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,
+  "ServiceLevelNumber": 0,
+  "TaxInclusive": false,
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "Tax Adjustment for $3"
+	} ]
+}
+ ],
+  "ReturnDetail": true,
+  "DocumentCode": "Sample Calc with Adj 2017.07.03 Test 01",
+  "Commit": true
+}
