@@ -1,0 +1,59 @@
+<env:Envelope xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns:ezt="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:tem="http://tempuri.org/">
+   <env:Header>
+      <UserName xmlns="http://eztaxasp.billsoft.com/eztaxwebservice">*****</UserName>
+      <Password xmlns="http://eztaxasp.billsoft.com/eztaxwebservice">*****</Password>
+   </env:Header>
+   <env:Body>
+      <tem:CalcTaxesWithZipAddress xmlns="http://tempuri.org/">
+         <tem:aTransaction xmlns:a="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <ezt:AdjustmentMethod>0</ezt:AdjustmentMethod>
+            <ezt:BillToAddress>
+               <ezt:CountryISO>USA</ezt:CountryISO>
+            </ezt:BillToAddress>
+            <ezt:BusinessClass>1</ezt:BusinessClass>
+            <ezt:CategoryExemptions/>
+            <ezt:Charge>1000</ezt:Charge>
+            <ezt:Commit>true</ezt:Commit>
+            <ezt:CompanyIdentifier>Avalara Test</ezt:CompanyIdentifier>
+            <ezt:CountyExempt>false</ezt:CountyExempt>
+            <ezt:CustomerNumber>ABC</ezt:CustomerNumber>
+            <ezt:CustomerType>1</ezt:CustomerType>
+            <ezt:Date>2017-07-01T00:00:00</ezt:Date>
+            <ezt:DocumentCode>Test Transaction 2017.07.01</ezt:DocumentCode>
+            <ezt:ExemptionType>0</ezt:ExemptionType>
+            <ezt:FacilitiesBased>false</ezt:FacilitiesBased>
+            <ezt:FederalExempt>false</ezt:FederalExempt>
+            <ezt:Franchise>false</ezt:Franchise>
+            <ezt:Incorporated>true</ezt:Incorporated>
+            <ezt:InvoiceNumber>345</ezt:InvoiceNumber>
+            <ezt:IsPrivateLine>true</ezt:IsPrivateLine>
+            <ezt:Lines>0</ezt:Lines>
+            <ezt:LocalExempt>false</ezt:LocalExempt>
+            <ezt:OriginationAddress>
+               <ezt:CountryISO>USA</ezt:CountryISO>
+               <ezt:Locality>Santa Clara</ezt:Locality>
+               <ezt:State>CA</ezt:State>
+               <ezt:ZipCode>95051</ezt:ZipCode>
+            </ezt:OriginationAddress>
+            <ezt:OptionalFields>
+               <ezt:OptionalField>
+                  <ezt:OptionalKeyNo>1</ezt:OptionalKeyNo>
+                  <ezt:OptionalValue>Test of private line with A pt in Santa Clara CA and Z pt in Irving TX</ezt:OptionalValue>
+               </ezt:OptionalField>
+            </ezt:OptionalFields>
+            <ezt:PrivateLineSplit>0.5</ezt:PrivateLineSplit>
+            <ezt:Sale>true</ezt:Sale>
+            <ezt:ServiceClass>1</ezt:ServiceClass>
+            <ezt:ServiceType>04</ezt:ServiceType>
+            <ezt:StateExempt>false</ezt:StateExempt>
+            <ezt:TerminationAddress>
+               <ezt:CountryISO>USA</ezt:CountryISO>
+               <ezt:Locality>Irving</ezt:Locality>
+               <ezt:State>TX</ezt:State>
+               <ezt:ZipCode>75038</ezt:ZipCode>
+            </ezt:TerminationAddress>
+            <ezt:TransactionType>02</ezt:TransactionType>
+         </tem:aTransaction>
+      </tem:CalcTaxesWithZipAddress>
+   </env:Body>
+</env:Envelope>

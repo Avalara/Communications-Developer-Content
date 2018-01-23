@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <soap:Header>
+      <wsa:Action wsu:Id="Id-d75565b2-652d-481a-993e-02a3766fac41">http://xml.billsoft.com/2006/08/ezgeo/GeocodeAddress</wsa:Action>
+      <wsa:MessageID wsu:Id="Id-a8394078-2a39-46f3-a300-be028b187ae2">uuid:021cad7b-5fed-44f4-b682-01e414024f6f</wsa:MessageID>
+      <wsa:ReplyTo wsu:Id="Id-f0e92a19-2fe3-4efe-8dc6-ce454540179f">
+        <wsa:Address>http://schemas.xmlsoap.org/ws/2004/03/addressing/role/anonymous</wsa:Address>
+      </wsa:ReplyTo>
+      <wsa:To wsu:Id="Id-684050f6-8e09-4f49-b67f-1611ed2c90eb">http://localhost/2006/08/EZGeo/LocatorService.asmx</wsa:To>
+      <wsse:Security soap:mustUnderstand="1">
+        <wsu:Timestamp wsu:Id="Timestamp-af4202cc-265b-49a0-abc6-cc5194030c2a">
+          <wsu:Created>2006-09-01T16:06:48Z</wsu:Created>
+          <wsu:Expires>2006-09-01T16:07:48Z</wsu:Expires>
+        </wsu:Timestamp>
+        <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="SecurityToken-32ed5acb-e40c-4117-a2bb-b0508d9ad2a1">
+          <wsse:Username>billsoft</wsse:Username>
+          <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">l1YOStCUTxGwrrhMBmEand+zNeE=</wsse:Password>
+          <wsse:Nonce>NSQmmx5w5gG/2gVKgHRpVA==</wsse:Nonce>
+          <wsu:Created>2006-09-01T16:06:48Z</wsu:Created>
+        </wsse:UsernameToken>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+          <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1" />
+            <Reference URI="#Id-d75565b2-652d-481a-993e-02a3766fac41">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>qT3F7PNYNAY18NRQV2t8SBeftz4=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-a8394078-2a39-46f3-a300-be028b187ae2">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>Hf7uQPh6DMCFigN7QD/llxUG0dE=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-f0e92a19-2fe3-4efe-8dc6-ce454540179f">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>cqCD8NXCYi0h+cxRpCYmadnrP4A=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-684050f6-8e09-4f49-b67f-1611ed2c90eb">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>jodpfDCl187JV8MKeGgnXlFMtVQ=</DigestValue>
+            </Reference>
+            <Reference URI="#Timestamp-af4202cc-265b-49a0-abc6-cc5194030c2a">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>c6UW52IeRX/TTNBzTw1JCFzb21I=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-59dea75a-4f09-4864-9c89-3809c359ef73">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>l2Qo0rgXL9kFAuzxcNxaGPMRzRQ=</DigestValue>
+            </Reference>
+          </SignedInfo>
+          <SignatureValue>jT8+9LuPXKKnsj7KVBP+ra60GA0=</SignatureValue>
+          <KeyInfo>
+            <wsse:SecurityTokenReference>
+              <wsse:Reference URI="#SecurityToken-32ed5acb-e40c-4117-a2bb-b0508d9ad2a1" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#UsernameToken" />
+            </wsse:SecurityTokenReference>
+          </KeyInfo>
+        </Signature>
+      </wsse:Security>
+    </soap:Header>
+    <soap:Body wsu:Id="Id-59dea75a-4f09-4864-9c89-3809c359ef73">
+      <GeocodeAddress xmlns="http://xml.billsoft.com/2006/08/ezgeo">
+        <addressInfo>
+          <AddressLine1>10100 West 87th St.</AddressLine1>
+          <AddressLine2>Overland Park, KS 66212</AddressLine2>
+          <GrammarRule>2</GrammarRule>
+          <MinimumScore>0</MinimumScore>
+          <MaxCount>0</MaxCount>
+          <Options>8</Options>
+          <CassCertify>true</CassCertify>
+        </addressInfo>
+      </GeocodeAddress>
+    </soap:Body>
+  </soap:Envelope>

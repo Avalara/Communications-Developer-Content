@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EZGeoSaaS" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EZGeoSaaS" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://ezgeoasp.billsoft.com/LocatorService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="EZGeoFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EZGeoFault" nillable="true" type="tns:EZGeoFault" />
+  <xs:complexType name="InputAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CassCertify" type="xs:boolean" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityStateZip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MinimumScore" type="xs:double" />
+      <xs:element minOccurs="0" name="Offset" type="xs:double" />
+      <xs:element minOccurs="0" name="Options" type="xs:int" />
+      <xs:element minOccurs="0" name="SecondaryUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InputAddress" nillable="true" type="tns:InputAddress" />
+  <xs:complexType name="AddressLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Alternate" type="xs:int" />
+      <xs:element minOccurs="0" name="CassAddress" nillable="true" type="tns:CassAddress" />
+      <xs:element minOccurs="0" name="CensusBlockGroup" type="xs:int" />
+      <xs:element minOccurs="0" name="CensusTract" type="xs:int" />
+      <xs:element minOccurs="0" name="CityName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrorMessage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FeatureID" type="xs:int" />
+      <xs:element minOccurs="0" name="FipsCode" type="xs:long" />
+      <xs:element minOccurs="0" name="FipsPlaceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Incorporated" type="xs:boolean" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="InputAddress" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="NetworkID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PCode" type="xs:int" />
+      <xs:element minOccurs="0" name="PostalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostalCodeExtension" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryJurisdictionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PrimaryJurisdictionPCode" type="xs:int" />
+      <xs:element minOccurs="0" name="Score" type="xs:double" />
+      <xs:element minOccurs="0" name="SecondaryUnit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpecialTaxDistrictName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SpecialTaxDistrictPCode" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="StandardizedAddress" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element minOccurs="0" name="StateName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StreetNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxJurisdictionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TimeZone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnderlyingFipsCode" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressLocation" nillable="true" type="tns:AddressLocation" />
+  <xs:complexType name="CassAddress">
+    <xs:sequence>
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Address" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="AddressLine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressQualityFlags" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CarrierRoute" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CityStateZip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountyCode" type="xs:int" />
+      <xs:element minOccurs="0" name="DeliveryPointValidation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EnhancedLineOfTravel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Reliability" type="xs:double" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="USPSBarCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zip4" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CassAddress" nillable="true" type="tns:CassAddress" />
+  <xs:complexType name="ArrayOfAddressLocation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AddressLocation" nillable="true" type="tns:AddressLocation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAddressLocation" nillable="true" type="tns:ArrayOfAddressLocation" />
+</xs:schema>

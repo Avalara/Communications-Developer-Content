@@ -1,0 +1,49 @@
+<?php
+$headers = array(
+    "Content-Type: text/xml; charset=utf-8;",
+    "SOAPAction: http://tempuri.org/ILocatorService/GeocodeAddress"
+);
+
+$data = '
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/">
+    <s:Header>
+        <o:Security s:mustUnderstand="1" xmlns:o="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <o:UsernameToken>
+                <o:Username>billsoft</o:Username>
+                <o:Password>Srnkl#5nq8</o:Password>
+            </o:UsernameToken>
+        </o:Security>
+    </s:Header>
+    <s:Body>
+        <GeocodeAddress xmlns="http://tempuri.org/">
+            <inputAddress xmlns:a="http://schemas.datacontract.org/2004/07/EZGeoSaaS">
+                <a:CassCertify>false</a:CassCertify>
+                <a:City>Overland Park</a:City>
+                <a:CityStateZip>Overland Park, KS 66212</a:CityStateZip>
+                <a:MinimumScore>0.7</a:MinimumScore>
+                <a:Offset>0</a:Offset>
+                <a:Options>0</a:Options>
+                <a:SecondaryUnit></a:SecondaryUnit>
+                <a:State>KS</a:State>
+                <a:StreetAddress>9025 Farley St</a:StreetAddress>
+                <a:Zip>66212</a:Zip>
+            </inputAddress>
+        </GeocodeAddress>
+    </s:Body>
+</s:Envelope>';
+
+// PHP cURL  for https connection with auth
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, 'https://EZgeoASP.Billsoft.com/LocatorService.svc');
+curl_setopt($ch, CURLOPT_TIMEOUT, 60);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+// converting
+$response = curl_exec($ch);
+
+print "\n\nResponse...\n";
+echo $response;
+print "\n\n";

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+      <ns1:authentication soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next" soapenv:mustUnderstand="0" xmlns:ns1="http://xml.billsoft.com/auth">
+        <ns1:userid soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next" soapenv:mustUnderstand="0">testuser</ns1:userid>
+        <ns1:password soapenv:actor="http://schemas.xmlsoap.org/soap/actor/next" soapenv:mustUnderstand="0">sdf345@#$</ns1:password>
+      </ns1:authentication>
+    </soapenv:Header>
+    <soapenv:Body>
+      <GeocodeAddress xmlns="http://xml.billsoft.com/2006/08/ezgeo">
+        <addressInfo>
+          <AddressLine1>10100 West 87th St</AddressLine1>
+          <AddressLine2>Overland Park, KS 66212 </AddressLine2>
+          <GrammarRule>2</GrammarRule>
+          <MinimumScore>0.0</MinimumScore>
+          <MaxCount>0</MaxCount>
+          <Options>9</Options>
+          <CassCertify>true</CassCertify>
+        </addressInfo>
+      </GeocodeAddress>
+    </soapenv:Body>
+  </soapenv:Envelope>

@@ -1,0 +1,260 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Body>
+      <CalcTaxesWithZipAddressResponse xmlns="http://tempuri.org/">
+         <CalcTaxesWithZipAddressResult xmlns:a="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Exempt Client</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Universal Service Fund (VoIP)</a:Description>
+               <a:ExemptSaleAmount>64.9</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>123456</a:Optional>
+               <a:Optional10>10</a:Optional10>
+               <a:Optional4>4</a:Optional4>
+               <a:Optional5>5</a:Optional5>
+               <a:Optional6>6</a:Optional6>
+               <a:Optional7>7</a:Optional7>
+               <a:Optional8>8</a:Optional8>
+               <a:Optional9>9</a:Optional9>
+               <a:OptionalAlpha1>ZZZ</a:OptionalAlpha1>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>1210800</a:PCode>
+               <a:Rate>0.0725</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+               <a:Surcharge>true</a:Surcharge>
+               <a:TaxAmount>2.5447499999999996</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>165</a:TaxType>
+               <a:TaxableMeasure>35.099999999999994</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+               <a:CategoryID>1</a:CategoryID>
+               <a:CompanyIdentifier>Exempt Client</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Sales Tax</a:Description>
+               <a:ExemptSaleAmount>100</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>123456</a:Optional>
+               <a:Optional10>10</a:Optional10>
+               <a:Optional4>4</a:Optional4>
+               <a:Optional5>5</a:Optional5>
+               <a:Optional6>6</a:Optional6>
+               <a:Optional7>7</a:Optional7>
+               <a:Optional8>8</a:Optional8>
+               <a:Optional9>9</a:Optional9>
+               <a:OptionalAlpha1>ZZZ</a:OptionalAlpha1>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>1248900</a:PCode>
+               <a:Rate>0.01125</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>0</a:TaxAmount>
+               <a:TaxLevel>3</a:TaxLevel>
+               <a:TaxType>1</a:TaxType>
+               <a:TaxableMeasure>0</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+               <a:CategoryID>1</a:CategoryID>
+               <a:CompanyIdentifier>Exempt Client</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Sales Tax</a:Description>
+               <a:ExemptSaleAmount>100</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>123456</a:Optional>
+               <a:Optional10>10</a:Optional10>
+               <a:Optional4>4</a:Optional4>
+               <a:Optional5>5</a:Optional5>
+               <a:Optional6>6</a:Optional6>
+               <a:Optional7>7</a:Optional7>
+               <a:Optional8>8</a:Optional8>
+               <a:Optional9>9</a:Optional9>
+               <a:OptionalAlpha1>ZZZ</a:OptionalAlpha1>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>1248900</a:PCode>
+               <a:Rate>0.01475</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>0</a:TaxAmount>
+               <a:TaxLevel>2</a:TaxLevel>
+               <a:TaxType>1</a:TaxType>
+               <a:TaxableMeasure>0</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+               <a:CategoryID>1</a:CategoryID>
+               <a:CompanyIdentifier>Exempt Client</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Sales Tax</a:Description>
+               <a:ExemptSaleAmount>100</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>123456</a:Optional>
+               <a:Optional10>10</a:Optional10>
+               <a:Optional4>4</a:Optional4>
+               <a:Optional5>5</a:Optional5>
+               <a:Optional6>6</a:Optional6>
+               <a:Optional7>7</a:Optional7>
+               <a:Optional8>8</a:Optional8>
+               <a:Optional9>9</a:Optional9>
+               <a:OptionalAlpha1>ZZZ</a:OptionalAlpha1>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>1248900</a:PCode>
+               <a:Rate>0.065</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>0</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>1</a:TaxType>
+               <a:TaxableMeasure>0</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Exempt Client</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>FUSF (VoIP)</a:Description>
+               <a:ExemptSaleAmount>35.099999999999994</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>1</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>123456</a:Optional>
+               <a:Optional10>10</a:Optional10>
+               <a:Optional4>4</a:Optional4>
+               <a:Optional5>5</a:Optional5>
+               <a:Optional6>6</a:Optional6>
+               <a:Optional7>7</a:Optional7>
+               <a:Optional8>8</a:Optional8>
+               <a:Optional9>9</a:Optional9>
+               <a:OptionalAlpha1>ZZZ</a:OptionalAlpha1>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>0</a:PCode>
+               <a:Rate>0.174</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>11.2926</a:TaxAmount>
+               <a:TaxLevel>0</a:TaxLevel>
+               <a:TaxType>162</a:TaxType>
+               <a:TaxableMeasure>64.9</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>REGULATORY CHARGES</a:CategoryDescription>
+               <a:CategoryID>6</a:CategoryID>
+               <a:CompanyIdentifier>Exempt Client</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>FCC Regulatory Fee (VoIP)</a:Description>
+               <a:ExemptSaleAmount>100</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>1</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>123456</a:Optional>
+               <a:Optional10>10</a:Optional10>
+               <a:Optional4>4</a:Optional4>
+               <a:Optional5>5</a:Optional5>
+               <a:Optional6>6</a:Optional6>
+               <a:Optional7>7</a:Optional7>
+               <a:Optional8>8</a:Optional8>
+               <a:Optional9>9</a:Optional9>
+               <a:OptionalAlpha1>ZZZ</a:OptionalAlpha1>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>0</a:PCode>
+               <a:Rate>0.00371</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>0</a:TaxAmount>
+               <a:TaxLevel>0</a:TaxLevel>
+               <a:TaxType>226</a:TaxType>
+               <a:TaxableMeasure>0</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>false</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Exempt Client</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Telecommunications Relay Surcharge (VoIP)</a:Description>
+               <a:ExemptSaleAmount>35.099999999999994</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>1</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>123456</a:Optional>
+               <a:Optional10>10</a:Optional10>
+               <a:Optional4>4</a:Optional4>
+               <a:Optional5>5</a:Optional5>
+               <a:Optional6>6</a:Optional6>
+               <a:Optional7>7</a:Optional7>
+               <a:Optional8>8</a:Optional8>
+               <a:Optional9>9</a:Optional9>
+               <a:OptionalAlpha1>ZZZ</a:OptionalAlpha1>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>0</a:PCode>
+               <a:Rate>0.01862</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>1.2084380000000001</a:TaxAmount>
+               <a:TaxLevel>0</a:TaxLevel>
+               <a:TaxType>235</a:TaxType>
+               <a:TaxableMeasure>64.9</a:TaxableMeasure>
+            </a:TaxData>
+         </CalcTaxesWithZipAddressResult>
+      </CalcTaxesWithZipAddressResponse>
+   </s:Body>
+</s:Envelope>

@@ -1,0 +1,182 @@
+{
+  "Transactions": [
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 19,
+  "ServiceType": 6,
+  "ServiceClass": 0,
+  "Date": "2017-11-15T12:00:00Z",
+  "Charge": 50,
+  "Incorporated": true,
+  "CompanyIdentifier": "AVA",
+  "OptionalAlpha1": "0000001",
+  "Lines": 0,
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,
+  "ServiceLevelNumber": 0,
+  "TaxInclusive": false,
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "01 Baseline (with no exemptions)"
+	} ]
+},
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "Exemptions": [
+    {
+      "PCode": 0,
+      "TaxLevel": 0,
+      "TaxType": 0
+    },
+    {
+      "PCode": 0,
+      "TaxLevel": 1,
+      "TaxType": 0
+    },
+    {
+      "PCode": 0,
+      "TaxLevel": 2,
+      "TaxType": 0
+    },
+    {
+      "PCode": 0,
+      "TaxLevel": 3,
+      "TaxType": 0
+    }
+  ],
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 19,
+  "ServiceType": 6,
+  "ServiceClass": 0,
+  "Date": "2017-11-15T12:00:00Z",
+  "Charge": 50,
+  "Incorporated": true,
+  "CompanyIdentifier": "AVA",
+  "OptionalAlpha1": "0000002",
+  "Lines": 0,
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,
+  "ServiceLevelNumber": 0,
+  "TaxInclusive": false,
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "02 Exempting all tax types for all jurisdictions by level - Federal, State, County and Local"
+	} ]
+},
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA",
+    "County": "Brevard",
+    "Locality": "Cocoa Beach",
+    "State": "FL",
+    "ZipCode": "32931",
+    "ZipP4": "0000"
+  },
+  "CategoryExemptions": [
+    {
+      "CountryISO": "USA",
+      "TaxCategory": 999
+    }
+  ],
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 19,
+  "ServiceType": 6,
+  "ServiceClass": 0,
+  "Date": "2017-11-15T12:00:00Z",
+  "Charge": 50,
+  "Incorporated": true,
+  "CompanyIdentifier": "AVA",
+  "OptionalAlpha1": "0000003",
+  "Lines": 0,
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,
+  "ServiceLevelNumber": 0,
+  "TaxInclusive": false,
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "02 Exempting Category - All Tax Categories"
+	} ]
+}
+  ],
+  "ReturnDetail": true,
+  "DocumentCode": "CALC-16412/CALC-16443 Testcases 2017.11.17 Test 01-02",
+  "Commit": false
+}

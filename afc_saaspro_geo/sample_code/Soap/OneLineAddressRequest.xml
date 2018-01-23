@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+  <soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/03/addressing" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+    <soap:Header>
+      <wsa:Action wsu:Id="Id-56b49b48-1497-497e-816b-476acaaa5480">http://xml.billsoft.com/ezgeo/GeocodeAddress</wsa:Action>
+      <wsa:MessageID wsu:Id="Id-db0a655f-8a81-4f8a-8b28-f30b5400c4de">uuid:36cd8a13-f79b-41f5-bfb8-8c3f07c6cffe</wsa:MessageID>
+      <wsa:ReplyTo wsu:Id="Id-e9f16843-a1ae-445d-a3b9-f5f5acd450a7">
+        <wsa:Address>http://schemas.xmlsoap.org/ws/2004/03/addressing/role/anonymous</wsa:Address>
+      </wsa:ReplyTo>
+      <wsa:To wsu:Id="Id-79044f13-5830-40a9-b8bd-5c431406d7d6">http://localhost/EZGeo/LocatorService.asmx</wsa:To>
+      <wsse:Security soap:mustUnderstand="1">
+        <wsu:Timestamp wsu:Id="Timestamp-bb7ee249-e524-4ac3-be28-c181bd6fc0a3">
+          <wsu:Created>2004-08-17T19:31:11Z</wsu:Created>
+          <wsu:Expires>2004-08-17T19:32:11Z</wsu:Expires>
+        </wsu:Timestamp>
+        <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="SecurityToken-488773ba-6ca4-4c27-8209-1b3b71e4aa3b">
+          <wsse:Username>testuser</wsse:Username>
+          <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">CR5mTIxVGhuQiGYwy1rQmj10DHk=</wsse:Password>
+          <wsse:Nonce>zoSmM04sqZB7LQxVAnLROQ==</wsse:Nonce>
+          <wsu:Created>2004-08-17T19:31:11Z</wsu:Created>
+        </wsse:UsernameToken>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+          <SignedInfo>
+            <CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#hmac-sha1" />
+            <Reference URI="#Id-56b49b48-1497-497e-816b-476acaaa5480">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>0vGALHYl6fuOFNrYeDBxhNa4VK4=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-db0a655f-8a81-4f8a-8b28-f30b5400c4de">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>ONwfubHm+hk2ld5LLqzwHXzza1M=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-e9f16843-a1ae-445d-a3b9-f5f5acd450a7">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>R80QE1oW/zO3wxDZRG4FhF6jhzM=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-79044f13-5830-40a9-b8bd-5c431406d7d6">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>G2Sq3sO35Wjs3hE0ANnMCzqtX/o=</DigestValue>
+            </Reference>
+            <Reference URI="#Timestamp-bb7ee249-e524-4ac3-be28-c181bd6fc0a3">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>aMB5JPFa409MymDDzxboDkPbFjc=</DigestValue>
+            </Reference>
+            <Reference URI="#Id-95be8f6d-0425-4149-9663-d63507e680a6">
+              <Transforms>
+                <Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              </Transforms>
+              <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+              <DigestValue>ttmcRZ6V4SwM+ofNQvpwJV3+oJQ=</DigestValue>
+            </Reference>
+          </SignedInfo>
+          <SignatureValue>0Gc+N+zlomX1BLYz6GIM3w9YVq8=</SignatureValue>
+          <KeyInfo>
+            <wsse:SecurityTokenReference>
+              <wsse:Reference URI="#SecurityToken-488773ba-6ca4-4c27-8209-1b3b71e4aa3b" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#UsernameToken" />
+            </wsse:SecurityTokenReference>
+          </KeyInfo>
+        </Signature>
+      </wsse:Security>
+    </soap:Header>
+    <soap:Body wsu:Id="Id-95be8f6d-0425-4149-9663-d63507e680a6">
+      <GeocodeAddress xmlns="http://xml.billsoft.com/ezgeo">
+        <addressInfo>
+          <AddressLine1>8220 Marshall Drive, 66214</AddressLine1>
+          <AddressLine2 />
+          <GrammarRule>1</GrammarRule>
+          <MinimumScore>0</MinimumScore>
+          <MaxCount>0</MaxCount>
+          <Options>0</Options>
+        </addressInfo>
+      </GeocodeAddress>
+    </soap:Body>
+  </soap:Envelope>
