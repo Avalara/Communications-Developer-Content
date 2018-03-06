@@ -19,9 +19,9 @@ The AFC SaaS Pro Geo service provides APIs to geo code an address for address va
 ## **Useful Developer REST Links**
 **Swagger Page** – Real time request/response to REST Taxation Service
 
-[UA Swagger Link](https://communicationsua.avalara.net/API/AFCRESTDocs)
+[UA Swagger Link](https://communicationsua.avalara.net/API/AFCSaaSProTax)
 
-[Prod Swagger Link](https://communications.avalara.net/API/AFCRESTDocs)
+[Prod Swagger Link](https://communications.avalara.net/API/AFCSaaSProTax)
 
 [Encode to Base64 Link](https://www.base64encode.org/ )
 
