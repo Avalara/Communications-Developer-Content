@@ -1,3 +1,36 @@
+//************************************************************************
+//**                                                                     *
+//** Use of the Licensed Product is covered by warranty, including       *
+//** warranty disclaimer, and liability provisions in the license        *
+//** agreement between Avalara, Inc. and Customer; any warranty          *
+//** provided for the Licensed Product shall not be deemed to apply      *
+//** to this or any other code example.  Avalara expressly disclaims     *
+//** all warranties of any kind including, without limitation, warranties*
+//** of merchantability or fitness for a particular purpose.  The code   *
+//** example is for Customer's use only.  Customer assumes all           *
+//** responsibilities regarding the use or adaptation of this code       *
+//** example and acknowledges that use of such code example is at        *
+//** Customer's own risk.                                                *
+//**                                                                     *
+//** Use of this code example constitutes acceptance of the aforesaid    *
+//** terms, conditions, and limitations; Customer hereby releases        *
+//** Avalara, Inc., its employees, directors, affiliates and assigns     *
+//** from any and all financial or legal responsibility, implied or      *
+//** explicit.                                                           *
+//**                                                                     *
+//************************************************************************
+//**                                                                     *
+//** This example code is intended for API demonstration only and is not *
+//** intended for production use.                                        *
+//**                                                                     *
+//************************************************************************
+//                                                                       *
+// Copyright 2017 by Avalara, Inc.                                       *
+//   All Rights Reserved. No part of this publication may be reproduced, *
+//   stored in a retrieval system, or transmitted, in any form, by any   *
+//   means, without the prior written permission of the publisher.       *
+//                                                                       *
+//************************************************************************
 package wsclientsample;
 
 import java.util.Set;
