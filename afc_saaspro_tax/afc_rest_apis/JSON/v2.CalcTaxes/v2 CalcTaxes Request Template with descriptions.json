@@ -11,7 +11,8 @@
         "st": "string",			// [State]			State abbreviation for exclusion
         "excl": true			// [ExclusionOn]	true = enable exclusion, false = disable exclusion
       }
-    ]
+    ],
+    "idnt": "string"    	// [CompanyIdentifier] - 20 byte alpha-numeric reporting field for Company Identifier
   },
   "inv": [				// [Invoice] List of invoices to be processed
     {
@@ -124,7 +125,8 @@
               "key": "string",		// [Key]	Numeric value 1-10
               "val": "string"		// [Value]	Alpha-numeric value up to 150 bytes
             }
-          ]
+          ],
+          "prop": 0             // [AttributeProperty]  Attribute property used for supported Sales and Use t/s pairs
         }
       ],
       "invm": true,			// [InvoiceMode]	false = line items are unrelated, true = line items are part of a single invoice

@@ -5,8 +5,8 @@
       "itms": [				// [LineItem]		List of line item tax results
         {
           "ref": "string",		// [LineNumber]	Reference Id for line item
-          "base": 0,
-          "txs": [			// [Taxes]		List of taxes for line item
+          "base": 0,            // [BaseSaleAmount]  Value for tax inclusive calls that represents the charge minus billable taxes
+          "txs": [			    // [Taxes]		List of taxes for line item
             {
               "bill": true,			// [Billable] 		false = non-billable tax, true = standard billable tax
               "cmpl": true,			// [Compliance] 	false = non-compliance tax, true = standard compliance tax

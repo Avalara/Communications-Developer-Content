@@ -1,0 +1,43 @@
+{
+  "Transaction": {
+  "OriginationNpaNxx": 714826,
+  "TerminationNpaNxx": 714715,
+  "BillToNpaNxx": 714715,
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 19,
+  "ServiceType": 6,
+  "ServiceClass": 1,
+  "Date": "2018-02-28T11:45:30.569000000Z",
+  "Charge": 12.0,
+  "Incorporated": true,
+  "Optional": 1,
+  "CustomerNumber": "123456",
+  "CompanyIdentifier": "AVA-TEST",
+  "DocumentCode": "20180305-TEST",
+  "Commit": true,
+  "Lines": 1,
+  "Locations": 0,
+  "Minutes": 0.0,
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false
+},
+  "Overrides": [
+    {
+      "Pcode": 0,
+      "Scope": 0,
+      "TaxType": 162,
+      "TaxLevel": 0,
+      "LevelExemptible": true,
+      "BracketInfo": [
+        {
+          "Rate": 0,
+          "MaxBase": 2147483647
+        }
+      ]
+    }
+  ]
+}

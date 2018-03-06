@@ -50,13 +50,8 @@ import javax.xml.ws.handler.PortInfo;
 
 import org.datacontract.schemas._2004._07.eztaxwebservice.AddressData;
 import org.datacontract.schemas._2004._07.eztaxwebservice.ArrayOfAddressData;
-import org.datacontract.schemas._2004._07.eztaxwebservice.ArrayOfCustomerTaxData;
 import org.datacontract.schemas._2004._07.eztaxwebservice.ArrayOfTaxData;
-import org.datacontract.schemas._2004._07.eztaxwebservice.ArrayOfTaxDataV2;
 import org.datacontract.schemas._2004._07.eztaxwebservice.ArrayOfTaxExemption;
-import org.datacontract.schemas._2004._07.eztaxwebservice.ArrayOfTransaction;
-import org.datacontract.schemas._2004._07.eztaxwebservice.CustomerResultsV2;
-import org.datacontract.schemas._2004._07.eztaxwebservice.CustomerTaxData;
 import org.datacontract.schemas._2004._07.eztaxwebservice.ReverseTaxResults;
 import org.datacontract.schemas._2004._07.eztaxwebservice.TaxData;
 import org.datacontract.schemas._2004._07.eztaxwebservice.TaxExemption;
@@ -225,7 +220,32 @@ public class Sample {
 
             // Create a transaction for processing tax calculations
             Transaction trans = new Transaction();
-            fillTransaction(trans);
+            trans.setBusinessClass(new JAXBElement<Integer>(new QName(xmlns, "BusinessClass"), Integer.class, 0));    // 1 = CLEC
+            trans.setCharge(100.00);
+            trans.setCompanyIdentifier(new JAXBElement<String>(new QName(xmlns, "CompanyIdentifier"), String.class, "TST"));
+            trans.setCustomerNumber(new JAXBElement<String>(new QName(xmlns, "CustomerNumber"), String.class, "Test Customer"));
+            trans.setCustomerType(new JAXBElement<Integer>(new QName(xmlns, "CustomerType"), Integer.class, 0));     // 0 = Residential
+            trans.setDate(DatatypeFactory.newInstance().newXMLGregorianCalendar(new GregorianCalendar(2011, 6, 1)));
+            trans.setDebit(false);        // true is only used for prepaid card transactions
+            trans.setFacilitiesBased(false);
+            trans.setFranchise(false);
+            trans.setIncorporated(true);    // Indicate that address is in an incorporated area. Use false for un-incorporated
+            trans.setInvoiceNumber((long)1234567890);   // Optional field
+            trans.setLifeline(false);
+            trans.setLines(1);
+            trans.setLocations(1);
+            trans.setMinutes(10.5);
+            trans.setRegulated(true);
+            trans.setSale(true);          // true = Retail, false = Wholesale
+            trans.setServiceClass(new JAXBElement<Integer>(new QName(xmlns, "ServiceClass"), Integer.class, 1)); // 1 = Primary Long Distance
+            trans.setServiceType((short)6);
+            trans.setTransactionType((short)13);
+
+            // No exemptions for this transaction
+            trans.setFederalExempt(false);
+            trans.setStateExempt(false);
+            trans.setCountyExempt(false);
+            trans.setLocalExempt(false);
 
             System.out.println();
             System.out.println("----------------------------------------------------------");
@@ -407,24 +427,6 @@ public class Sample {
             System.out.println("Taxes returned:");
             System.out.println();
             PrintTaxes(results.getTaxes().getValue());
-            
-            // Example of calling the web service with a set of transactions
-            // Sometimes called Invoice mode or Customer mode
-            System.out.println();
-            System.out.println("----------------------------------------------------------");
-            System.out.println("Customer Mode example:");
-            System.out.println();
-            ArrayOfTransaction transArray = new ArrayOfTransaction();
-            transArray.getTransaction().add(trans);
-            CustomerResultsV2 custResults = eztax.calcTaxesInCustModeV2(transArray, null, null, null, null, null, false);
-            System.out.println("Taxes returned:");
-            System.out.println();
-            PrintCustomerTaxesV2(custResults.getSummarizedTaxes().getValue());
-            System.out.println();
-            System.out.println("----------------------------------------------------------");
-            System.out.println("Sample.java output finished");
-            System.out.println();
-            
          }
          catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -436,45 +438,6 @@ public class Sample {
          ex.printStackTrace();
       }
    }
-   
-   // helper function to fill in a Transaction object
-   private static void fillTransaction(Transaction trans)  {
-	   try {
-       // Used for JAXBElement namespaces
-       String xmlns = "http://schemas.datacontract.org/2004/07/EZTaxWebService";
-
-       trans.setBusinessClass(new JAXBElement<Integer>(new QName(xmlns, "BusinessClass"), Integer.class, 0));    // 1 = CLEC
-       trans.setCharge(100.00);
-       trans.setCompanyIdentifier(new JAXBElement<String>(new QName(xmlns, "CompanyIdentifier"), String.class, "TST"));
-       trans.setCustomerNumber(new JAXBElement<String>(new QName(xmlns, "CustomerNumber"), String.class, "Test Customer"));
-       trans.setCustomerType(new JAXBElement<Integer>(new QName(xmlns, "CustomerType"), Integer.class, 0));     // 0 = Residential
-       trans.setDate(DatatypeFactory.newInstance().newXMLGregorianCalendar(new GregorianCalendar(2011, 6, 1)));
-       trans.setDebit(false);        // true is only used for prepaid card transactions
-       trans.setFacilitiesBased(false);
-       trans.setFranchise(false);
-       trans.setIncorporated(true);    // Indicate that address is in an incorporated area. Use false for un-incorporated
-       trans.setInvoiceNumber((long)1234567890);   // Optional field
-       trans.setLifeline(false);
-       trans.setLines(1);
-       trans.setLocations(1);
-       trans.setMinutes(10.5);
-       trans.setRegulated(true);
-       trans.setSale(true);          // true = Retail, false = Wholesale
-       trans.setServiceClass(new JAXBElement<Integer>(new QName(xmlns, "ServiceClass"), Integer.class, 1)); // 1 = Primary Long Distance
-       trans.setServiceType((short)6);
-       trans.setTransactionType((short)13);
-
-       // No exemptions for this transaction
-       trans.setFederalExempt(false);
-       trans.setStateExempt(false);
-       trans.setCountyExempt(false);
-       trans.setLocalExempt(false);
-	   
-	   } catch (Exception ex)  {
-	         System.out.println(ex.getMessage());
-	         ex.printStackTrace();
-	   }
-   } /* end of fillTransaction
 
    /*
     * Print tax information on the console
@@ -488,24 +451,6 @@ public class Sample {
          System.out.println("Description:        " + tax.getDescription().getValue());
          System.out.println("Tax Category:       " + tax.getCategoryDescription().getValue());
          System.out.println("Taxable Measure:    " + tax.getTaxableMeasure());
-         System.out.println("Exempt Sale Amount: " + tax.getExemptSaleAmount());
-         System.out.println("Tax Rate:           " + tax.getRate());
-         System.out.println("Tax Amount:         " + tax.getTaxAmount());
-         System.out.println("Calculation Type:   " + tax.getCalculationType());    // See manual for possible values
-         System.out.println();
-      }
-   }
-   /*
-    * Print tax information on the console
-    */
-   private static void PrintCustomerTaxesV2(ArrayOfCustomerTaxData taxes) {
-      // NOTE: Not all tax data information is printed for conciseness
-      for (CustomerTaxData tax : taxes.getCustomerTaxData()) {
-         System.out.println("PCode:              " + tax.getPCode());
-         System.out.println("Tax Type ID:        " + tax.getTaxType());
-         System.out.println("Tax Level:          " + tax.getTaxLevel().getValue());
-         System.out.println("Description:        " + tax.getDescription().getValue());
-         System.out.println("Tax Category:       " + tax.getCategoryDescription().getValue());
          System.out.println("Exempt Sale Amount: " + tax.getExemptSaleAmount());
          System.out.println("Tax Rate:           " + tax.getRate());
          System.out.println("Tax Amount:         " + tax.getTaxAmount());
