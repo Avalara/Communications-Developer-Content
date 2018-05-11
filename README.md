@@ -16,6 +16,12 @@ The AFC SaaS Pro Geo service provides APIs to geo code an address for address va
 * **afc\_rest\_apis** - Sample C#, Java, JSON and Demo application
 * **afc\_soap\_apis** - Sample C#, Java, PHP and SOAP xml
 
+**afc\_saasstd\_tax** -  AFC SaaS Standard Communications Taxation Documentation and Samples
+
+* **manuals** -  User and Developer Documents
+* **support\_docs** - Taxation Related Supporting Documents
+* **sample\_code** - Sample files and scripts
+
 ## **Useful Developer REST Links**
 **Swagger Page** – Real time request/response to REST Taxation Service
 
