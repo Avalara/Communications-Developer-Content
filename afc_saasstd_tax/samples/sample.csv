@@ -1,0 +1,11 @@
+Request Type,Date,BillTo Country ISO,BillTo State,BillTo County,BillTo Locality ,BillTo ZipCode,Charge,Transaction Type,Service Type,Sale,Incorporated,Customer Number
+CalcTaxes,20160315,USA,FL,Brevard,Cocoa Beach,32931,50,19,6,TRUE,TRUE,Customer 1     
+CalcTaxes,20160315,USA,FL,Brevard,Cocoa Beach,32931,15,19,50,TRUE,TRUE,Customer 1     
+CalcTaxes,20160315,USA,CA,San Francisco,San Francisco,94102,50,13,6,TRUE,TRUE,Customer 2
+CalcTaxes,20160315,USA,CA,San Francisco,San Francisco,94102,15,13,50,TRUE,TRUE,Customer 2   
+CalcTaxes,20160315,USA,NY,New York,New York,10001,50,16,6,TRUE,TRUE,Customer 3
+CalcTaxes,20160315,USA,NY,New York,New York,10001,25,16,36,TRUE,TRUE,Customer 3
+CalcAdj,20160315,USA,MA,Suffolk,Boston,2108,100,3,34,TRUE,TRUE,Customer 4
+CalcAdj,20160315,USA,MA,Suffolk,Boston,2108,100,24,636,TRUE,TRUE,Customer 4
+CalcTaxes,20160315,CAN,BC,,,,75,2,1,TRUE,TRUE,Customer 5
+CalcTaxes,20160315,CAN,,,,,125,2,1,TRUE,TRUE,Customer 5
