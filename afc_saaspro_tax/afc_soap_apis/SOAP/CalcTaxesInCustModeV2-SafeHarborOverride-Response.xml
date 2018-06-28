@@ -1,0 +1,260 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Body>
+      <CalcTaxesInCustModeV2Response xmlns="http://tempuri.org/">
+         <CalcTaxesInCustModeV2Result xmlns:a="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:SummarizedTaxes>
+               <a:CustomerTaxData>
+                  <a:CalculationType>5</a:CalculationType>
+                  <a:CategoryDescription>GROSS RECEIPTS TAXES</a:CategoryDescription>
+                  <a:CategoryID>3</a:CategoryID>
+                  <a:Description>Statutory Gross Receipts</a:Description>
+                  <a:ExcessTax>0</a:ExcessTax>
+                  <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+                  <a:Lines>0</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:MaxBase>2147483647</a:MaxBase>
+                  <a:MinBase>0</a:MinBase>
+                  <a:Minutes>0</a:Minutes>
+                  <a:PCode>3383000</a:PCode>
+                  <a:Rate>0.05</a:Rate>
+                  <a:Surcharge>0</a:Surcharge>
+                  <a:TaxAmount>5.8242178947368428</a:TaxAmount>
+                  <a:TaxLevel>1</a:TaxLevel>
+                  <a:TaxType>14</a:TaxType>
+                  <a:TotalCharge>116.48435789473685</a:TotalCharge>
+               </a:CustomerTaxData>
+               <a:CustomerTaxData>
+                  <a:CalculationType>1</a:CalculationType>
+                  <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+                  <a:CategoryID>1</a:CategoryID>
+                  <a:Description>Sales Tax</a:Description>
+                  <a:ExcessTax>0</a:ExcessTax>
+                  <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+                  <a:Lines>0</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:MaxBase>2147483647</a:MaxBase>
+                  <a:MinBase>0</a:MinBase>
+                  <a:Minutes>0</a:Minutes>
+                  <a:PCode>3383000</a:PCode>
+                  <a:Rate>0.06</a:Rate>
+                  <a:Surcharge>0</a:Surcharge>
+                  <a:TaxAmount>7.02272507368421</a:TaxAmount>
+                  <a:TaxLevel>1</a:TaxLevel>
+                  <a:TaxType>1</a:TaxType>
+                  <a:TotalCharge>117.04541789473684</a:TotalCharge>
+               </a:CustomerTaxData>
+               <a:CustomerTaxData>
+                  <a:CalculationType>1</a:CalculationType>
+                  <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+                  <a:CategoryID>5</a:CategoryID>
+                  <a:Description>FUSF (VoIP)</a:Description>
+                  <a:ExcessTax>0</a:ExcessTax>
+                  <a:ExemptSaleAmount>40</a:ExemptSaleAmount>
+                  <a:Lines>1</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:MaxBase>2147483647</a:MaxBase>
+                  <a:MinBase>0</a:MinBase>
+                  <a:Minutes>0</a:Minutes>
+                  <a:PCode>0</a:PCode>
+                  <a:Rate>0.184</a:Rate>
+                  <a:Surcharge>0</a:Surcharge>
+                  <a:TaxAmount>11.04</a:TaxAmount>
+                  <a:TaxLevel>0</a:TaxLevel>
+                  <a:TaxType>162</a:TaxType>
+                  <a:TotalCharge>60</a:TotalCharge>
+               </a:CustomerTaxData>
+               <a:CustomerTaxData>
+                  <a:CalculationType>1</a:CalculationType>
+                  <a:CategoryDescription>REGULATORY CHARGES</a:CategoryDescription>
+                  <a:CategoryID>6</a:CategoryID>
+                  <a:Description>FCC Regulatory Fee (VoIP)</a:Description>
+                  <a:ExcessTax>0</a:ExcessTax>
+                  <a:ExemptSaleAmount>40</a:ExemptSaleAmount>
+                  <a:Lines>1</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:MaxBase>2147483647</a:MaxBase>
+                  <a:MinBase>0</a:MinBase>
+                  <a:Minutes>0</a:Minutes>
+                  <a:PCode>0</a:PCode>
+                  <a:Rate>0.00302</a:Rate>
+                  <a:Surcharge>0</a:Surcharge>
+                  <a:TaxAmount>0.1812</a:TaxAmount>
+                  <a:TaxLevel>0</a:TaxLevel>
+                  <a:TaxType>226</a:TaxType>
+                  <a:TotalCharge>60</a:TotalCharge>
+               </a:CustomerTaxData>
+            </a:SummarizedTaxes>
+            <a:Taxes>
+               <a:TaxDataV2>
+                  <a:AdjustmentType>0</a:AdjustmentType>
+                  <a:Billable>true</a:Billable>
+                  <a:CalculationType>5</a:CalculationType>
+                  <a:CategoryDescription>GROSS RECEIPTS TAXES</a:CategoryDescription>
+                  <a:CategoryID>3</a:CategoryID>
+                  <a:CompanyIdentifier>TST</a:CompanyIdentifier>
+                  <a:Compliance>true</a:Compliance>
+                  <a:CustomerNumber>ABC</a:CustomerNumber>
+                  <a:Description>Statutory Gross Receipts</a:Description>
+                  <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+                  <a:ExemptionType>0</a:ExemptionType>
+                  <a:InvoiceNumber>345</a:InvoiceNumber>
+                  <a:Lines>0</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:Minutes>0</a:Minutes>
+                  <a:Optional>123456</a:Optional>
+                  <a:Optional10>10</a:Optional10>
+                  <a:Optional4>4</a:Optional4>
+                  <a:Optional5>5</a:Optional5>
+                  <a:Optional6>6</a:Optional6>
+                  <a:Optional7>7</a:Optional7>
+                  <a:Optional8>8</a:Optional8>
+                  <a:Optional9>9</a:Optional9>
+                  <a:OptionalAlpha1>Line item 001</a:OptionalAlpha1>
+                  <a:OptionalFields>
+                     <a:OptionalField>
+                        <a:OptionalKeyNo>1</a:OptionalKeyNo>
+                        <a:OptionalValue>PA Safe Harbor 0.6/0.4 for VoIP/Usage</a:OptionalValue>
+                     </a:OptionalField>
+                  </a:OptionalFields>
+                  <a:PCode>3383000</a:PCode>
+                  <a:Rate>0.05</a:Rate>
+                  <a:RefundUncollect>0</a:RefundUncollect>
+                  <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+                  <a:Surcharge>false</a:Surcharge>
+                  <a:TaxAmount>5.8242178947368428</a:TaxAmount>
+                  <a:TaxLevel>1</a:TaxLevel>
+                  <a:TaxType>14</a:TaxType>
+                  <a:TaxableMeasure>116.48435789473685</a:TaxableMeasure>
+                  <a:TransCharge>100</a:TransCharge>
+               </a:TaxDataV2>
+               <a:TaxDataV2>
+                  <a:AdjustmentType>0</a:AdjustmentType>
+                  <a:Billable>true</a:Billable>
+                  <a:CalculationType>1</a:CalculationType>
+                  <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+                  <a:CategoryID>1</a:CategoryID>
+                  <a:CompanyIdentifier>TST</a:CompanyIdentifier>
+                  <a:Compliance>true</a:Compliance>
+                  <a:CustomerNumber>ABC</a:CustomerNumber>
+                  <a:Description>Sales Tax</a:Description>
+                  <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+                  <a:ExemptionType>0</a:ExemptionType>
+                  <a:InvoiceNumber>345</a:InvoiceNumber>
+                  <a:Lines>0</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:Minutes>0</a:Minutes>
+                  <a:Optional>123456</a:Optional>
+                  <a:Optional10>10</a:Optional10>
+                  <a:Optional4>4</a:Optional4>
+                  <a:Optional5>5</a:Optional5>
+                  <a:Optional6>6</a:Optional6>
+                  <a:Optional7>7</a:Optional7>
+                  <a:Optional8>8</a:Optional8>
+                  <a:Optional9>9</a:Optional9>
+                  <a:OptionalAlpha1>Line item 001</a:OptionalAlpha1>
+                  <a:OptionalFields>
+                     <a:OptionalField>
+                        <a:OptionalKeyNo>1</a:OptionalKeyNo>
+                        <a:OptionalValue>PA Safe Harbor 0.6/0.4 for VoIP/Usage</a:OptionalValue>
+                     </a:OptionalField>
+                  </a:OptionalFields>
+                  <a:PCode>3383000</a:PCode>
+                  <a:Rate>0.06</a:Rate>
+                  <a:RefundUncollect>0</a:RefundUncollect>
+                  <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+                  <a:Surcharge>false</a:Surcharge>
+                  <a:TaxAmount>7.02272507368421</a:TaxAmount>
+                  <a:TaxLevel>1</a:TaxLevel>
+                  <a:TaxType>1</a:TaxType>
+                  <a:TaxableMeasure>117.04541789473684</a:TaxableMeasure>
+                  <a:TransCharge>100</a:TransCharge>
+               </a:TaxDataV2>
+               <a:TaxDataV2>
+                  <a:AdjustmentType>0</a:AdjustmentType>
+                  <a:Billable>true</a:Billable>
+                  <a:CalculationType>1</a:CalculationType>
+                  <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+                  <a:CategoryID>5</a:CategoryID>
+                  <a:CompanyIdentifier>TST</a:CompanyIdentifier>
+                  <a:Compliance>true</a:Compliance>
+                  <a:CustomerNumber>ABC</a:CustomerNumber>
+                  <a:Description>FUSF (VoIP)</a:Description>
+                  <a:ExemptSaleAmount>40</a:ExemptSaleAmount>
+                  <a:ExemptionType>0</a:ExemptionType>
+                  <a:InvoiceNumber>345</a:InvoiceNumber>
+                  <a:Lines>1</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:Minutes>0</a:Minutes>
+                  <a:Optional>123456</a:Optional>
+                  <a:Optional10>10</a:Optional10>
+                  <a:Optional4>4</a:Optional4>
+                  <a:Optional5>5</a:Optional5>
+                  <a:Optional6>6</a:Optional6>
+                  <a:Optional7>7</a:Optional7>
+                  <a:Optional8>8</a:Optional8>
+                  <a:Optional9>9</a:Optional9>
+                  <a:OptionalAlpha1>Line item 001</a:OptionalAlpha1>
+                  <a:OptionalFields>
+                     <a:OptionalField>
+                        <a:OptionalKeyNo>1</a:OptionalKeyNo>
+                        <a:OptionalValue>PA Safe Harbor 0.6/0.4 for VoIP/Usage</a:OptionalValue>
+                     </a:OptionalField>
+                  </a:OptionalFields>
+                  <a:PCode>0</a:PCode>
+                  <a:Rate>0.184</a:Rate>
+                  <a:RefundUncollect>0</a:RefundUncollect>
+                  <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+                  <a:Surcharge>false</a:Surcharge>
+                  <a:TaxAmount>11.04</a:TaxAmount>
+                  <a:TaxLevel>0</a:TaxLevel>
+                  <a:TaxType>162</a:TaxType>
+                  <a:TaxableMeasure>60</a:TaxableMeasure>
+                  <a:TransCharge>100</a:TransCharge>
+               </a:TaxDataV2>
+               <a:TaxDataV2>
+                  <a:AdjustmentType>0</a:AdjustmentType>
+                  <a:Billable>true</a:Billable>
+                  <a:CalculationType>1</a:CalculationType>
+                  <a:CategoryDescription>REGULATORY CHARGES</a:CategoryDescription>
+                  <a:CategoryID>6</a:CategoryID>
+                  <a:CompanyIdentifier>TST</a:CompanyIdentifier>
+                  <a:Compliance>true</a:Compliance>
+                  <a:CustomerNumber>ABC</a:CustomerNumber>
+                  <a:Description>FCC Regulatory Fee (VoIP)</a:Description>
+                  <a:ExemptSaleAmount>40</a:ExemptSaleAmount>
+                  <a:ExemptionType>0</a:ExemptionType>
+                  <a:InvoiceNumber>345</a:InvoiceNumber>
+                  <a:Lines>1</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:Minutes>0</a:Minutes>
+                  <a:Optional>123456</a:Optional>
+                  <a:Optional10>10</a:Optional10>
+                  <a:Optional4>4</a:Optional4>
+                  <a:Optional5>5</a:Optional5>
+                  <a:Optional6>6</a:Optional6>
+                  <a:Optional7>7</a:Optional7>
+                  <a:Optional8>8</a:Optional8>
+                  <a:Optional9>9</a:Optional9>
+                  <a:OptionalAlpha1>Line item 001</a:OptionalAlpha1>
+                  <a:OptionalFields>
+                     <a:OptionalField>
+                        <a:OptionalKeyNo>1</a:OptionalKeyNo>
+                        <a:OptionalValue>PA Safe Harbor 0.6/0.4 for VoIP/Usage</a:OptionalValue>
+                     </a:OptionalField>
+                  </a:OptionalFields>
+                  <a:PCode>0</a:PCode>
+                  <a:Rate>0.00302</a:Rate>
+                  <a:RefundUncollect>0</a:RefundUncollect>
+                  <a:ServiceLevelNumber>888</a:ServiceLevelNumber>
+                  <a:Surcharge>false</a:Surcharge>
+                  <a:TaxAmount>0.1812</a:TaxAmount>
+                  <a:TaxLevel>0</a:TaxLevel>
+                  <a:TaxType>226</a:TaxType>
+                  <a:TaxableMeasure>60</a:TaxableMeasure>
+                  <a:TransCharge>100</a:TransCharge>
+               </a:TaxDataV2>
+            </a:Taxes>
+         </CalcTaxesInCustModeV2Result>
+      </CalcTaxesInCustModeV2Response>
+   </s:Body>
+</s:Envelope>

@@ -7,7 +7,7 @@
     "reg": true,			// [Regulated]			true = seller is regulated, false = seller is not regulated
     "excl": [				// [Exclusion]			List of exclusions to apply to transactions
       {
-        "ctry": "string",		// [Country]		Country ISO for exclusion
+        "ctry": "string",		// [Country]		3 Byte Country ISO for exclusion
         "st": "string",			// [State]			State abbreviation for exclusion
         "excl": true			// [ExclusionOn]	true = enable exclusion, false = disable exclusion
       }
@@ -34,7 +34,7 @@
       "cust": 0,			// [CustomerType]	0 = Residential, 1 = Business, 2 = Senior Citizen, 3 = Industrial
       "lfln": true,			// [Lifeline] 		false = customer is not a lifeline participant, true = customer is a lifeline participant
       "date": "2017-12-18T19:37:11.254Z",	// [Date]			Date to be applied to invoice / transaction
-      "exms": [				// [Invoice] List of exemptions to be applied to invoice
+      "exms": [				// [Exemptions] List of tax exemptions to be applied to invoice
         {
           "frc": true,			// [Force] 		false = apply level exemption allowed logic, true = ignore level exemption allowed logic (force exemption to apply)
           "loc": {				// [Location]		Exemption location information
@@ -162,7 +162,7 @@
       "brkt": [				// [TaxBracket] List of tax brackets for override
         {
           "rate": 0,			// [Rate]		Tax rate for tax bracket
-          "max": 0				// [MaxBase]	Maximum base for tax bracket
+          "max": 0				// [MaxBase]	Maximum base for tax bracket (2147483647 = unlimited)
         }
       ]
     }
@@ -170,8 +170,8 @@
   "sovr": [				// [SafeHarborOverride] List of safe harbor overrides to be applied for transactions
     {
       "sh": 0,				// [SafeHarborType]		1 = Cellular, 2 = VoIP, 4 = Paging
-      "old": 0,				// [OriginalFederalTam]	Original Federal TAM.  64.9% = 0.649   State = (1.0 - Federal TAM)
-      "new": 0				// [NewFederalTam]			New Federal TAM.  64.9% = 0.649		   State = (1.0 - Federal TAM)
+      "old": 0,				// [OriginalFederalTam]	Original Federal TAM.  0.649 = 64.9%   State = (1.0 - Federal TAM)
+      "new": 0				// [NewFederalTam]			New Federal TAM.   0.371 = 37.1%	   State = (1.0 - Federal TAM)
     }
   ]
 }
