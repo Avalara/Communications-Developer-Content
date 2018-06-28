@@ -2,7 +2,7 @@
   "inv": [		// [Invoice] List of invoices with tax results
     {
       "doc": "string",		// [DocumentCode]	Unique document code applied to invoice for Commit
-      "itms": [				// [LineItem]		List of line item tax results
+      "itms": [				// [DetailedTax]		List of line item tax results
         {
           "ref": "string",		// [LineNumber]	Reference Id for line item
           "base": 0,            // [BaseSaleAmount]  Value for tax inclusive calls that represents the charge minus billable taxes
@@ -14,7 +14,7 @@
               "calc": 0,			// [CalculationType]	1 = Rate, 2 = Fixed, 3 = PerMinute, 4 = PerLine, 5 = SelfTaxingRate, 6 = PerBracket, 7 = FixedOnTier
               "cat": "string",		// [CategoryName]	Tax Category Name
               "cid": 0,				// [CategoryID]		Tax Category Numerical ID
-              "name": "string",		// [Name]			Tax Name
+              "name": "string",		// [TaxName]		Tax Name
               "exm": 0,				// [ExemptSaleAmount]	Exempt Sale Amount (double)
               "lns": 0,				// [Lines]			Number of lines taxed (integer)
               "min": 0,				// [Minutes]		Number of minutes taxed (double)
@@ -65,7 +65,7 @@
       "summ": [		// [SummarizedTax]	Summarized taxes for invoice
         {
           "max": 0,		// [MaxBase]		Maximum base for tax bracket
-          "min": 0,		// [MinBase]		Minimim base for tax bracket
+          "min": 0,		// [MinBase]		Minimum  base for tax bracket
           "tchg": 0,	// [TotalCharge]	Total charge amount for invoice
           "calc": 0,    // ------ Refer to "txs" object details for remaining descriptions  ---------
           "cat": "string",
