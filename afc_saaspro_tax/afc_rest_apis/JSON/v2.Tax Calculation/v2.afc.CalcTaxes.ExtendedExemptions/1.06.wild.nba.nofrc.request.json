@@ -1,0 +1,59 @@
+{
+    "cmpn": {
+        "bscl": 1,
+        "svcl": 0,
+        "fclt": true,
+        "frch": true,
+        "reg": false
+    },
+    "inv": [
+        {
+            "doc": "PLAT-7535 Valhalla test run 01",
+            "cmmt": false,
+            "bill": {
+                "ctry": "USA",
+                "st": "PR",
+                "city": "Adjuntas",
+                "zip": "00601",
+                "int": true
+            },
+            "cust": 1,
+            "lfln": false,
+            "date": "2018-02-01T12:00:00Z",
+            "exms": [
+                {
+                    "frc": false,
+                    "loc": {
+                        "pcd": 5116000
+                    },
+                    "tpe": 0,
+                    "dom": 0,
+                    "scp": 1920,
+                    "exnb": true
+                }
+            ],
+            "itms": [
+                {
+                    "ref": "1.06.wild.nba.nofrc",
+                    "chg": 100,
+                    "line": 0,
+                    "sale": 1,
+                    "incl": false,
+                    "tran": 13,
+                    "serv": 6,
+                    "dbt": false,
+                    "adj": false
+                }
+            ],
+            "invm": true,
+            "dtl": true,
+            "summ": false,
+            "opt": [
+                {
+                    "key": "1",
+                    "val": "Wildcard Tax Type NBA true Force false Test 1.06.wild.nba.nofrc"
+                }
+            ]
+        }
+    ]
+}

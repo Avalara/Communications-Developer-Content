@@ -1,0 +1,19 @@
+[
+  {
+    "ref": "Test Ava-01",
+    "cass": true,
+    "addr": "9025 Farley",
+    "city": "Overland Park",
+    "st": "KS",
+    "zip": "66212"
+  },
+  {
+    "ref": "Test Ava-02",
+    "cass": true,
+    "addr": "1 Royal Way",
+    "city": "Kansas City",
+    "st": "MO",
+    "zip": "64129"
+  }
+  
+]

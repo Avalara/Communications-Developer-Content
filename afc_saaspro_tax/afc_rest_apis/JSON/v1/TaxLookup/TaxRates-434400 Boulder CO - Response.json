@@ -1,0 +1,5634 @@
+[
+  {
+    "TaxType": 6,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1953-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.03,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 7,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 18,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2017-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2017-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.182,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.171,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.168,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.166,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.164,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.156,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.151,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.144,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.149,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.136,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.141,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.123,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.095,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.114,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.102,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.11,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.117,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.097,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.091,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 23,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01862,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01635,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01219,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01484,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01053,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01058,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00585,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01137,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01012,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 31,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 55,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2017-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2017-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.182,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.171,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.168,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.166,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.164,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.156,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.151,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.144,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.149,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.136,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.141,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.123,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.095,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.114,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.102,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.11,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.117,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.035987,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.033761,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 56,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2017-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2017-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.182,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.171,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.168,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.166,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.164,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.156,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.151,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.144,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.149,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.136,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.141,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.123,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.095,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.114,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.102,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.11,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.117,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01164,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01092,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 62,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 63,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 72,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.083333,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.08,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0825,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.085,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0775,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.074167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.073333,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.066667,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.0625,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2006-10-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.065833,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.06,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 83,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 87,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 88,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 162,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2017-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2017-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.182,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.171,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.168,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.166,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.164,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.156,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.151,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.144,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.149,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.136,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.141,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.123,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.095,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.114,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.102,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.11,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.113,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.117,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.062953,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.059059,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 163,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 164,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 169,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00371,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00331,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00343,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00347,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00375,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00349,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00342,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.00314,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.00266,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2006-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.00264,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.00243,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 170,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.016667,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.014167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.015,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.014167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.015,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.014167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.015,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2006-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.016666,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.018333,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 217,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 226,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00371,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00331,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00343,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00347,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00375,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00349,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00342,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.00314,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 229,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 232,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01862,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01635,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01219,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01484,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01053,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01058,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00585,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01137,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01012,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 234,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01862,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01635,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01219,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01484,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01053,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01058,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00585,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01137,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01012,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 235,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01862,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01635,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01219,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01484,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01053,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01058,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00585,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01137,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01012,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 274,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 277,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2017-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2017-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.182,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.171,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.168,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.166,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.164,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.156,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.151,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.153,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.144,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.149,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.129,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.136,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 311,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2017-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2017-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.182,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.171,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.168,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.161,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.157,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.166,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.164,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.156,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.151,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.155,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 429,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.010833,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 430,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0225,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.01,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 444,
+    "TaxLevel": 0,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2017-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2017-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.174,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.179,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2016-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.182,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2015-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.167,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 310,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-09-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.001,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 233,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.014,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 217,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.05,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 175,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2016-10-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.05,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 165,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.026,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 105,
+    "TaxLevel": 2,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2012-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1991-08-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.001,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 74,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.026,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.029,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.022,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.027,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2006-10-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.01408,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.02552,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 73,
+    "TaxLevel": 3,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1993-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 48,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.026,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.029,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.022,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.027,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2006-10-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.01144,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.010064,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 34,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2013-05-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.07,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.03,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-06-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.07,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2006-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.07,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 33,
+    "TaxLevel": 2,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2005-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.01,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.006,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 23,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.05,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2010-10-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.2,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2009-03-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.12,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.07,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.1,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 13,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2013-04-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.026,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-07-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.029,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-07-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.022,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-04-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.027,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2006-10-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.016,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.029,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 10,
+    "TaxLevel": 2,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2014-07-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.75,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1998-12-04T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.5,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 4,
+    "TaxLevel": 2,
+    "RateHistory": [
+      {
+        "EffectiveDate": "1991-08-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.001,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 2,
+    "TaxLevel": 3,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 1.1491,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2013-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 1.1114,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2012-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 1.0278,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 1.007533,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2003-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0.849333,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": true,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 49,
+    "TaxLevel": 3,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0386,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0356,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0341,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0356,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0341,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 49,
+    "TaxLevel": 2,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00985,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.008,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2002-07-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 49,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2001-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.029,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 1,
+    "TaxLevel": 3,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0386,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2014-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0356,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2008-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0341,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2007-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0356,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0341,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 1,
+    "TaxLevel": 2,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2015-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.00985,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2011-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.008,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "2005-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0065,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.0055,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "TaxType": 1,
+    "TaxLevel": 1,
+    "RateHistory": [
+      {
+        "EffectiveDate": "2001-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.029,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      },
+      {
+        "EffectiveDate": "1900-01-01T00:00:00",
+        "LevelExemptible": false,
+        "BracketInfo": [
+          {
+            "Rate": 0.03,
+            "MaxBase": 2147483647,
+            "CountyOverrideTax": 0,
+            "StateOverrideTax": 0,
+            "StateOverrideOn": false,
+            "CountyOverrideOn": false
+          }
+        ]
+      }
+    ]
+  }
+]

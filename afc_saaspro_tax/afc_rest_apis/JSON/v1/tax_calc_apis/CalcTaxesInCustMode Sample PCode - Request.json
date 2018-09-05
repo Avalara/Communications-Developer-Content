@@ -1,0 +1,57 @@
+{
+  "Transactions": [
+{
+  "OriginationPCode": 3726100,
+  "TerminationPCode": 3726100,
+  "BillToPCode": 3726100,
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 5,
+  "ServiceType": 6,
+  "ServiceClass": 0,
+  "Date": "2017-11-15T12:00:00Z",
+  "Charge": 50,
+  "Incorporated": true,
+  "CompanyIdentifier": "Avalara Test",
+  "Lines": 0,
+  "FacilitiesBased": false,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,  
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "Tax Calculation for Internet/Access Charge in Dallas Tx"
+	} ]
+},  
+{
+  "OriginationPCode": 3726100,
+  "TerminationPCode": 3726100,
+  "BillToPCode": 3726100,
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 13,
+  "ServiceType": 6,
+  "ServiceClass": 0,
+  "Date": "2017-11-15T12:00:00Z",
+  "Charge": 50,
+  "Incorporated": true,
+  "CompanyIdentifier": "Avalara Test",
+  "Lines": 0,
+  "FacilitiesBased": false,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,  
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "Tax Calculation for Cellular/Access Charge in Dallas Tx"
+	} ]
+}
+],
+  "ReturnDetail": true,
+  "DocumentCode": "Sample Calc 2017.11.20 Test 01",
+  "Commit": false
+}

@@ -1,0 +1,91 @@
+{
+    "cmpn": {
+        "bscl": 1,
+        "svcl": 0,
+        "fclt": true,
+        "frch": true,
+        "reg": false
+    },
+    "inv": [
+        {
+            "doc": "PLAT-7535 Valhalla test run 01",
+            "cmmt": false,
+            "bill": {
+                "ctry": "USA",
+                "st": "PR",
+                "city": "Adjuntas",
+                "zip": "00601",
+                "int": true
+            },
+            "cust": 1,
+            "lfln": false,
+            "date": "2018-02-01T12:00:00Z",
+            "exms": [
+                {
+                    "loc": {
+                        "pcd": 5116000
+                    },
+                    "tpe": 35,
+                    "lvl": 1
+                },
+                {
+                    "loc": {
+                        "pcd": 5116000
+                    },
+                    "tpe": 1,
+                    "lvl": 1
+                },
+                {
+                    "loc": {
+                        "pcd": 5116000
+                    },
+                    "tpe": 1,
+                    "lvl": 2
+                },
+                {
+                    "loc": {
+                        "pcd": 5116000
+                    },
+                    "tpe": 1,
+                    "lvl": 3
+                },
+                {
+                    "loc": {
+                        "pcd": 5116000
+                    },
+                    "tpe": 170,
+                    "lvl": 0
+                },
+                {
+                    "loc": {
+                        "pcd": 5116000
+                    },
+                    "tpe": 232,
+                    "lvl": 1
+                }
+            ],
+            "itms": [
+                {
+                    "ref": "1.01.std",
+                    "chg": 100,
+                    "line": 0,
+                    "sale": 1,
+                    "incl": false,
+                    "tran": 13,
+                    "serv": 6,
+                    "dbt": false,
+                    "adj": false
+                }
+            ],
+            "invm": true,
+            "dtl": true,
+            "summ": false,
+            "opt": [
+                {
+                    "key": "1",
+                    "val": "Standard (Legacy Style) Tax Type Test 1.01.std"
+                }
+            ]
+        }
+    ]
+}
