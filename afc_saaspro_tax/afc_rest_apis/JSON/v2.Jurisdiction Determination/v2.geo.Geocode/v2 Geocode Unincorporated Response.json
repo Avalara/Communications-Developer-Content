@@ -1,0 +1,42 @@
+[
+  {
+    "ref": "Test Ava-Incorporated PCode 429801",
+    "cass": {
+      "addr": "2045 OSWEGO ST ",
+      "city": "AURORA",
+      "st": "CO",
+      "zip": "80010-1619"
+    },
+    "cBlk": 2009,
+    "cTrc": 8000,
+    "cnty": "ADAMS",
+    "feat": 2409757,
+    "fips": "9900429801",
+    "inc": true,
+    "jur": "AURORA RTD",
+    "lat": 39.74814821370304,
+    "long": -104.84936681919291,
+    "pcd": 429801,
+    "scr": 1
+  },
+  {
+    "ref": "Test Ava-Unincorporated PCode 429801",
+    "cass": {
+      "addr": "24210 E 19TH AVE ",
+      "city": "AURORA",
+      "st": "CO",
+      "zip": "80019-3706"
+    },
+    "cBlk": 1143,
+    "cTrc": 8353,
+    "cnty": "ADAMS",
+    "feat": 198116,
+    "fips": "9900429801",
+    "inc": false,
+    "jur": "AURORA RTD",
+    "lat": 39.743492290111995,
+    "long": -104.70495125456084,
+    "pcd": 429801,
+    "scr": 0.98
+  }
+]

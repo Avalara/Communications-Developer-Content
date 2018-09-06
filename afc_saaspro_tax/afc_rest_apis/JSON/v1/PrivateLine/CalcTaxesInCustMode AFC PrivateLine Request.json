@@ -1,0 +1,38 @@
+{
+  "Transactions": [
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "Locality": "Louisville",
+    "State": "KY",
+    "ZipCode": "40201",
+    "ZipP4": "0000"
+  },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "Locality": "Irving",
+    "State": "TX",
+    "ZipCode": "75038",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA"
+  },
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 1,
+  "ServiceType": 4,
+  "ServiceClass": 0,
+  "Date": "2017-08-15T12:00:00Z",
+  "Charge": 1000,
+  "Incorporated": true,
+  "OptionalAlpha1": "PrivateLineTest",
+  "IsPrivateLine": true,
+  "PrivateLineSplit": 0.50
+}
+  ],
+  "ReturnDetail": true,
+  "DocumentCode": "INV1237A-56999",
+  "Commit": true
+}

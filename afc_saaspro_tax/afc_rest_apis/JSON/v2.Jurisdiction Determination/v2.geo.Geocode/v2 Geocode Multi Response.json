@@ -1,0 +1,42 @@
+[
+  {
+    "ref": "Test Ava-01",
+    "cass": {
+      "addr": "9025 FARLEY ST ",
+      "city": "OVERLAND PARK",
+      "st": "KS",
+      "zip": "66212-4753"
+    },
+    "cBlk": 2013,
+    "cTrc": 51902,
+    "cnty": "JOHNSON",
+    "feat": 485639,
+    "fips": "2009153775",
+    "inc": true,
+    "jur": "OVERLAND PARK",
+    "lat": 38.964682978966,
+    "long": -94.70027893144,
+    "pcd": 1248900,
+    "scr": 1
+  },
+  {
+    "ref": "Test Ava-02",
+    "cass": {
+      "addr": "1 ROYAL WAY ",
+      "city": "KANSAS CITY",
+      "st": "MO",
+      "zip": "64129-1695"
+    },
+    "cBlk": 1015,
+    "cTrc": 980802,
+    "cnty": "JACKSON",
+    "feat": 2395492,
+    "fips": "9902103746",
+    "inc": true,
+    "jur": "KANSAS CITY DOWNTOWN STREETCAR TDD",
+    "lat": 39.051577804438,
+    "long": -94.482884539104,
+    "pcd": 2103746,
+    "scr": 1
+  }
+]

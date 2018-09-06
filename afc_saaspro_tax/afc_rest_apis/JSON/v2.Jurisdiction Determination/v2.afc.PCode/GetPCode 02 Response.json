@@ -1,0 +1,43 @@
+{
+  "LocationData": [
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "EMPIRE STATE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "GREELEY SQUARE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "ONE HUNDRED THIRTY EIGHTH",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "MANHATTAN",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "NEW YORK",
+      "PCode": 2604100
+    }
+  ],
+  "MatchCount": 5,
+  "InputMatchType": "Best",
+  "MatchTypeApplied": "Exact",
+  "ResultsLimit": 25
+}

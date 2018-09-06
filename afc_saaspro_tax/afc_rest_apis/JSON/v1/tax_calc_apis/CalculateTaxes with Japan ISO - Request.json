@@ -1,0 +1,35 @@
+{
+  "OriginationAddress": {
+    "CountryISO": "JPN",
+  },
+  "TerminationAddress": {
+    "CountryISO": "JPN",
+  },
+  "BillToAddress": {
+    "CountryISO": "JPN",
+  },
+  "IsPrivateLine": false,
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 15,
+  "ServiceType": 7,
+  "ServiceClass": 0,
+  "Date": "2017-06-15T15:18:29.231Z",
+  "Charge": 50,
+  "Incorporated": true,
+  "FederalExempt": false,
+  "StateExempt": false,
+  "CountyExempt": false,
+  "LocalExempt": false,
+  "InvoiceNumber": 12345,
+  "CustomerNumber": "ABC-12345",
+  "CompanyIdentifier": "AVA",
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,
+  "TaxInclusive": false,
+  "DocumentCode": "TEST20170607-AA",
+  "Commit": true
+}

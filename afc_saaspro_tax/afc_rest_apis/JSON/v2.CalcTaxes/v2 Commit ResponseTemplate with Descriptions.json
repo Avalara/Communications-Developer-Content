@@ -1,9 +1,0 @@
-{
-  "ok": true,	// [Status] 	false = request failed, true = request successful
-  "err": [      // [Error]		Error message(s) related to commit request
-    {
-      "code": 0,		// [Code]		Numeric code associated with error
-      "msg": "string"	// [Message]	Message associated with error
-    }
-  ]
-}

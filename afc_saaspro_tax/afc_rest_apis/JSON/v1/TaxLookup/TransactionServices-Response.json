@@ -1,0 +1,2932 @@
+[
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT-RATE CHARGE FOR CABLE TELEVISION SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 8,
+    "ServiceName": "INSTALL (8)",
+    "Description": "ONE-TIME CHARGE FOR THE INSTALLATION OF ANY CABLE TELEVISION SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 13,
+    "ServiceName": "EQUIPMENT REPAIR (13)",
+    "Description": "CHARGES FOR CABLE EQUIPMENT REPAIR AND SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE CABLE (16) TRANSACTION CATEGORIES.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 35,
+    "ServiceName": "PREMIUM SERVICE (35)",
+    "Description": "PREMIUM MONTHLY FLAT-RATE CHARGE FOR CABLE TELEVISION PREMIUM CHANNEL(S) SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 36,
+    "ServiceName": "PAY PER VIEW SERVICE (36)",
+    "Description": "PAY PER VIEW MONTHLY CHARGES FOR CABLE TELEVISION PAY PER VIEW SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 37,
+    "ServiceName": "EQUIPMENT RENTAL (37)",
+    "Description": "EQUIPMENT (BOX/SWITCH) MONTHLY CHARGES FOR CABLE TELEVISION.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 39,
+    "ServiceName": "TV GUIDE (39)",
+    "Description": "CHARGE FOR TV GUIDE SOURCING PUBLICATION FOR CABLE TELEVISION SERVICES.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 584,
+    "ServiceName": "DIGITAL CHANNEL TIER (584)",
+    "Description": "CHARGE FOR CABLE TELEVISION DIGITAL TIER SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 610,
+    "ServiceName": "EARLY TERMINATION FEES (610)",
+    "Description": "A FEE CHARGED TO CABLE TELEVISION CUSTOMERS FOR EARLY TERMINATION OF SERVICES.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 615,
+    "ServiceName": "EQUIPMENT SALES (615)",
+    "Description": "SALES OF CABLE TELEVISION EQUIPMENT",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 16,
+    "TransactionName": "CABLE TELEVISION (16)",
+    "ServiceId": 654,
+    "ServiceName": "EQUIPMENT RENTAL BASIC (654)",
+    "Description": "EQUIPMENT (BOX/SWITCH) MONTHLY CHARGES FOR CABLE TELEVISION THAT PROVIDE BASIC SERVICE ONLY.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT-RATE CHARGE FOR CELLULAR/WIRELESS SERVICE.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 10,
+    "ServiceName": "USAGE (10)",
+    "Description": "CELLULAR/WIRELESS PER-MINUTE AND/OR PER-USE CHARGES.  CHARGES ARE IN ADDITION TO ANY MONTHLY ACCESS OR ROAMING CHARGES BILLED TO CUSTOMER.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGE FOR ACTIVATING A CELLULAR/WIRELESS ACCOUNT.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE  CELLULAR (13) TRANSACTION CATEGORIES.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 26,
+    "ServiceName": "PREPAID (26)",
+    "Description": "CELLULAR            /PREPAID                       ",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 30,
+    "ServiceName": "LOCAL FEATURE CHARGE (30)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF CELLULAR SERVICES. (INCLUDES SERVICES SUCH AS CALL WAITING",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 33,
+    "ServiceName": "ROAMING CHARGE (33)",
+    "Description": "PER-USE",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 43,
+    "ServiceName": "INVOICE (43)",
+    "Description": "MAPPING CATEGORY FOR TRANSACTIONS ON A PER INVOICE BASIS.  (TAX IS BASED PER INVOICE PER ACCOUNT PER BILLING CYCLE.  TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.)",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 49,
+    "ServiceName": "INTERSTATE USAGE (49)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES.  CELLULAR/WIRELESS PER-MINUTE AND/OR PER-USE INTERSTATE CHARGES. CHARGES ARE IN ADDITION TO ANY INTERSTATE MONTHLY ACCESS OR INTERSTATE ROAMING CHARGES BILLED TO CUSTOMER.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 50,
+    "ServiceName": "INTRASTATE USAGE (50)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES.  CELLULAR/WIRELESS PER-MINUTE AND/OR PER-USE INTRASTATE CHARGES. CHARGES ARE IN ADDITION TO ANY INTRASTATE MONTHLY ACCESS OR INTRASTATE ROAMING CHARGES BILLED TO CUSTOMER.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 51,
+    "ServiceName": "INTERNATIONAL USAGE (51)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 98,
+    "ServiceName": "ACCESS NUMBER (98)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES OR FOR PASSING TRANSACTIONS FOR MULTIPLE LINE ACCOUNTS.  DESIGNATES THE NUMBER OF ACCESS NUMBERS ASSIGNED TO AN ACCOUNT.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 99,
+    "ServiceName": "INTERSTATE ACCESS CHARGE (99)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES.  DESIGNATES THE PORTION OF THE BASIC MONTHLY ACCESS CHARGE THAT IS INTERSTATE. ",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 100,
+    "ServiceName": "INTRASTATE ACCESS CHARGE (100)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES.  DESIGNATES THE PORTION OF THE BASIC MONTHLY ACCESS CHARGE THAT IS INTRASTATE.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 101,
+    "ServiceName": "INTERSTATE ROAMING (101)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES.  PER-USE",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 102,
+    "ServiceName": "INTRASTATE ROAMING (102)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES.  PER-USE",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 572,
+    "ServiceName": "DIGITAL DOWNLOAD (572)",
+    "Description": "THE PURCHASE OF GOODS SUCH AS RINGTONES DOWNLOADED TO A CELL PHONE. ",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 577,
+    "ServiceName": "ENHANCED FEATURES (577)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF WIRELESS SERVICES WHICH ARE SEPARATE FROM VOICE TRANSMISSION RELATED FEATURES AS DEFINED BY THE FCC.  (INCLUDES SERVICES SUCH AS VOICEMAIL",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 591,
+    "ServiceName": "ACCESS CHARGE-NO CONTRACT (591)",
+    "Description": "BASIC MONTHLY FLAT RATE CHARGE FOR CELLULAR/WIRELESS SERVICE THAT IS SOLD WITHOUT A CONTRACT.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 592,
+    "ServiceName": "ACCESS NUMBER-NO CONTRACT (592)",
+    "Description": "FOR USE WHEN CARRIER IS PASSING ACTUAL TRAFFIC AND NOT USING SAFE HARBOR PERCENTAGES.  DESIGNATES THE NUMBER OF ACCESS NUMBERS ASSIGNED TO A WIRELESS ACCOUNT THAT IS SOLD WITHOUT A CONTRACT.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 610,
+    "ServiceName": "EARLY TERMINATION FEES (610)",
+    "Description": "A FEE CHARGED TO CELLULAR CUSTOMERS FOR EARLY TERMINATION OF SERVICES.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 13,
+    "TransactionName": "CELLULAR (13)",
+    "ServiceId": 622,
+    "ServiceName": "TEXT MESSAGE (622)",
+    "Description": "A FEE CHARGED TO CELLLULAR CUSTOMERS FOR TEXT MESSAGING SERVICES.",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 64,
+    "TransactionName": "CONFERENCING (64)",
+    "ServiceId": 648,
+    "ServiceName": "INTRASTATE WITH FCC JURISDICTION (648)",
+    "Description": "PER-MINUTE AND PER-PARTICIPANT CHARGES FOR DIAL-IN SERVICE PROVIDED IN CONJUNCTION WITH CONNECTING CONFERENCE PARTICIPANTS UTILIZING A CONFERENCING BRIDGE WHEN ALL PARTICIPANTS ARE LOCATED WITHIN ONE STATE.  INTENDED TO BE USED TO RETURN FEDERAL CHARGES WITH THE STATE CHARGES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 64,
+    "TransactionName": "CONFERENCING (64)",
+    "ServiceId": 649,
+    "ServiceName": "INTERSTATE WITHOUT FCC JURISDICTION (649)",
+    "Description": "PER-MINUTE AND PER-PARTICIPANT CHARGES FOR DIAL IN SERVICE PROVIDED IN CONJUNCTION WITH CONNECTING CONFERENCE PARTICIPANTS UTILIZING A CONFERENCING BRIDGE WHEN ALL PARTICIPANTS ARE LOCATED IN DIFFERENT STATES.  INTENDED TO BE USED TO RETURN STATE CHARGES FOR CONFERENCING WITHOUT FEDERAL CHARGES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 58,
+    "TransactionName": "DARK FIBER (58)",
+    "ServiceId": 563,
+    "ServiceName": "LEASE-FACILITIES (563)",
+    "Description": "LEASE OF DARK FIBER INSTALLED ON PROPERTY OWNED BY THE LESSOR.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 58,
+    "TransactionName": "DARK FIBER (58)",
+    "ServiceId": 564,
+    "ServiceName": "LEASE-NON-FACILITIES (564)",
+    "Description": "LEASE OF DARK FIBER INSTALLED ON PROPERTY NOT OWNED BY THE LESSOR.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 58,
+    "TransactionName": "DARK FIBER (58)",
+    "ServiceId": 604,
+    "ServiceName": "LEASE-FACILITIES-LOCAL SERVICE (604)",
+    "Description": "LEASE OF DARK FIBER INSTALLED ON PROPERTY OWNED BY LESSOR USED FOR LOCAL TELECOMMUNICATIONS SERVICE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 58,
+    "TransactionName": "DARK FIBER (58)",
+    "ServiceId": 605,
+    "ServiceName": "LEASE-NON-FACILITIES-LOCAL SVC (605)",
+    "Description": "LEASE OF DARK FIBER INSTALLED ON PROPERTY NOT OWNED BY THE LESSOR USED FOR LOCAL TELECOMMUNICATIONS SERVICE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 8,
+    "TransactionName": "FAX (8)",
+    "ServiceId": 10,
+    "ServiceName": "USAGE (10)",
+    "Description": "CHARGES FOR FAX SERVICES",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 14,
+    "TransactionName": "INTERNATIONAL (14)",
+    "ServiceId": 15,
+    "ServiceName": "PRODUCT (15)",
+    "Description": "SUPPLY OF GOODS FOR CONSIDERATION WITHIN COUNTRIES OTHER THAN CANADA",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 14,
+    "TransactionName": "INTERNATIONAL (14)",
+    "ServiceId": 25,
+    "ServiceName": "USA INBOUND (25)",
+    "Description": "INTERNATIONAL CALLS INBOUND TO THE USA THAT ARE BILLED TO AN INTERNATIONAL ADDRESS.  OUTBOUND INTERNATIONAL CALLS SHOULD BE MAPPED AS INTERSTATE/INTERNATIONAL TOLL CALLS [01/12].  (CALL MUST BE BILLED TO A NON-USA ADDRESS.)",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 14,
+    "TransactionName": "INTERNATIONAL (14)",
+    "ServiceId": 658,
+    "ServiceName": "PRODUCT - INDIA INTERSTATE SUPPLY (658)",
+    "Description": "SUPPLY OF GOODS FOR CONSIDERATION WITHIN INDIA IN WHICH THE LOCATION OF THE SUPPLIER AND THE PLACE OF SUPPLY OCCUR IN DIFFERENT STATES OR TERRITORIES.",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 14,
+    "TransactionName": "INTERNATIONAL (14)",
+    "ServiceId": 659,
+    "ServiceName": "PRODUCT - INDIA INTRASTATE SUPPLY (659)",
+    "Description": "SUPPLY OF GOODS FOR CONSIDERATION WITHIN INDIA IN WHICH THE LOCATION OF THE SUPPLIER AND THE PLACE OF SUPPLY OCCUR IN THE SAME STATE OR TERRITORY.",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 5,
+    "TransactionName": "INTERNET (5)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "CHARGES FOR INTERNET ACCESS SERVICES",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 5,
+    "TransactionName": "INTERNET (5)",
+    "ServiceId": 7,
+    "ServiceName": "SERVICE (7)",
+    "Description": "ONE-TIME CHARGE FOR MANUAL",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 5,
+    "TransactionName": "INTERNET (5)",
+    "ServiceId": 8,
+    "ServiceName": "INSTALL (8)",
+    "Description": "ONE-TIME CHARGE FOR THE INSTALLATION",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 5,
+    "TransactionName": "INTERNET (5)",
+    "ServiceId": 10,
+    "ServiceName": "USAGE (10)",
+    "Description": "USED FOR INTERNET ACCESS SALES THAT ARE NOT A MONTHLY RECURRING CHARGE",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 5,
+    "TransactionName": "INTERNET (5)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGE FOR THE ACTIVATION OF AN INTERNET SERVICE ACCOUNT.  IT IS MUTUALLY EXCLUSIVE OF THE OTHER INTERNET CHARGES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 5,
+    "TransactionName": "INTERNET (5)",
+    "ServiceId": 29,
+    "ServiceName": "WEB HOSTING (29)",
+    "Description": "CHARGES FOR INTERNET WEB HOSTING",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 5,
+    "TransactionName": "INTERNET (5)",
+    "ServiceId": 58,
+    "ServiceName": "ACCESS LINE (58)",
+    "Description": "A TELECOMMUNICATIONS LINE PURCHASED",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 1,
+    "ServiceName": "TOLL (1)",
+    "Description": "INTERSTATE TOLL CALLS",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 2,
+    "ServiceName": "TOLL-FREE (2)",
+    "Description": "INTERSTATE AND INTERNATIONAL TOLL-FREE CALLS",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 3,
+    "ServiceName": "WATS (3)",
+    "Description": "INTERSTATE AND INTERNATIONAL WATS SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 4,
+    "ServiceName": "PRIVATE LINE (4)",
+    "Description": "INTERSTATE OR INTERNATIONAL PRIVATE LINE SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 12,
+    "ServiceName": "INTERNATIONAL TOLL (12)",
+    "Description": "INTERNATIONAL CALLS THAT ORIGINATE IN THE US",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "LATE CHARGE IMPOSED ON CUSTOMERS OF INTERSTATE OR INTERNATIONAL LD SERVICES.",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 16,
+    "ServiceName": "900 (16)",
+    "Description": "INTERSTATE OR INTERNATIONAL 900 SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 26,
+    "ServiceName": "PREPAID (26)",
+    "Description": "INTERSTATE          /PREPAID                       ",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 27,
+    "ServiceName": "DATA (27)",
+    "Description": "INTERSTATE OR INTERNATIONAL DATA SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 28,
+    "ServiceName": "E911 CALL (28)",
+    "Description": "MAPPING CATEGORY SPECIFICALLY FOR E911 TOLL CALLS MADE ACROSS STATE BOUNDRIES. (ONLY APPLICABLE TO ACTUAL E911 PHONE CALLS.)",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 54,
+    "ServiceName": "DIRECTORY ASSISTANCE (54)",
+    "Description": "CHARGES FOR DIRECTORY ASSISTANCE CALLS THAT CROSS STATE BOUNDARIES.",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 562,
+    "ServiceName": "LOCAL LOOP (562)",
+    "Description": "LOCAL LOOP CHARGE THAT IS NOT PART OF A LOCAL EXCHANGE SERVICE AND IS SOLD IN CONJUNCTION WITH AN INTERSTATE PRIVATE LINE.",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 1,
+    "TransactionName": "INTERSTATE (1)",
+    "ServiceId": 635,
+    "ServiceName": "TOLL-FREE NUMBER (635)",
+    "Description": "MONTHLY RECURRING CHARGE FOR ACCESS TO A TOLL FREE NUMBER.  THIS REPRESENTS THE INTERSTATE PORTION.",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 1,
+    "ServiceName": "TOLL (1)",
+    "Description": "INTRASTATE TOLL CALL",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 2,
+    "ServiceName": "TOLL-FREE (2)",
+    "Description": "INTRASTATE TOLL-FREE CALLS",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 3,
+    "ServiceName": "WATS (3)",
+    "Description": "INTRASTATE WATS SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 4,
+    "ServiceName": "PRIVATE LINE (4)",
+    "Description": "INTRASTATE PRIVATE LINE SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 5,
+    "ServiceName": "LOCAL EXCHANGE (5)",
+    "Description": "THE BASIC FLAT RATE FOR INTRASTATE LOCAL EXCHANGE SERVICE.  THIS TRANSACTION/SERVICE TYPES WILL INCLUDE ANY APPLICABLE LONG DISTANCE ACCESS LINE CHARGES",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "LATE CHARGE IMPOSED ON CUSTOMERS OF INTRASTATE LD SERVICES.",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 16,
+    "ServiceName": "900 (16)",
+    "Description": "INTRASTATE 900 SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 26,
+    "ServiceName": "PREPAID (26)",
+    "Description": "INTRASTATE          /PREPAID                       ",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 27,
+    "ServiceName": "DATA (27)",
+    "Description": "INTRASTATE DATA SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 28,
+    "ServiceName": "E911 CALL (28)",
+    "Description": "MAPPING CATEGORY SPECIFICALLY FOR E911 TOLL CALLS MADE WITHIN A SINGLE STATE. (ONLY APPLICABLE TO ACTUAL E911 PHONE CALLS.)",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 54,
+    "ServiceName": "DIRECTORY ASSISTANCE (54)",
+    "Description": "CHARGES FOR DIRECTORY ASSISTANCE CALLS THAT ARE CONTAINED WHOLLY IN ONE STATE.",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 630,
+    "ServiceName": "PRIVATE LINE (10% RULE) (630)",
+    "Description": "INTRASTATE PRIVATE LINE SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 631,
+    "ServiceName": "DATA (10% RULE) (631)",
+    "Description": "INTRASTATE DATA SERVICE CHARGE",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 2,
+    "TransactionName": "INTRASTATE (2)",
+    "ServiceId": 635,
+    "ServiceName": "TOLL-FREE NUMBER (635)",
+    "Description": "MONTHLY RECURRING CHARGE FOR ACCESS TO A TOLL FREE NUMBER.  THIS REPRESENTS THE INTRASTATE PORTION.",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 5,
+    "ServiceName": "LOCAL EXCHANGE (5)",
+    "Description": "THE BASIC FLAT RATE FOR INTRASTATE LOCAL EXCHANGE SERVICE.  THIS TRANSACTION/SERVICE TYPES WILL INCLUDE ANY APPLICABLE LONG DISTANCE ACCESS LINE CHARGES",
+    "CategoryId": 1,
+    "CategoryName": "LONG DISTANCE",
+    "IsAlias": true
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 4,
+    "ServiceName": "PRIVATE LINE (4)",
+    "Description": "LOCAL PRIVATE LINE SERVICE CHARGE",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE LOCAL (07) TRANSACTION CATEGORIES.",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 20,
+    "ServiceName": "FCC SUBSCRIBER LINE FEE (20)",
+    "Description": "CHARGE FOR RECOVERING THE COST OF CONNECTING THE CUSTOMER PREMISE TO THE LOCAL PHONE NETWORK",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 21,
+    "ServiceName": "LINES (21)",
+    "Description": "DESIGNATES THE NUMBER OF LINES A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LINES DESIGNATED IN THE LINES FIELD.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 23,
+    "ServiceName": "LOCATION (23)",
+    "Description": "DESIGNATES THE NUMBER OF LOCATIONS AT WHICH A LOCAL SERVICE CUSTOMER IS USING LOCAL SERVICE.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LOCATIONS DESIGNATED IN THE LOCATION NUMBER FIELD.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 24,
+    "ServiceName": "PBX/TRUNK (24)",
+    "Description": "DESIGNATES THE NUMBER OF PBX TRUNKS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LINES DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/41 AND 07/566.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 27,
+    "ServiceName": "DATA (27)",
+    "Description": "LOCAL DATA SERVICE CHARGE",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 30,
+    "ServiceName": "LOCAL FEATURE CHARGE (30)",
+    "Description": "CHARGES AND FEE FOR ADDITIONAL FEATURE CHARGES OF LOCAL EXCHANGE SERVICES.  (INCLUDES SERVICES SUCH AS CALL WAITING",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 40,
+    "ServiceName": "CENTREX/DID EXTENSION (40)",
+    "Description": "DESIGNATES THE NUMBER OF CENTREX / DIRECT INWARD DIALING EXTENSIONS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/42 AND 07/587.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 41,
+    "ServiceName": "PBX EXTENSION (41)",
+    "Description": "DESIGNATES THE NUMBER OF PBX EXTENSIONS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/24 AND 07/566.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 42,
+    "ServiceName": "CENTREX TRUNK (42)",
+    "Description": "DESIGNATES THE NUMBER OF CENTREX TRUNKS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/40 AND 07/587.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 43,
+    "ServiceName": "INVOICE (43)",
+    "Description": "MAPPING CATEGORY FOR TRANSACTIONS ON A PER INVOICE BASIS.  (TAX IS BASED PER INVOICE PER ACCOUNT PER BILLING CYCLE.  TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 45,
+    "ServiceName": "HIGH CAPACITY TRUNK (45)",
+    "Description": "DESIGNATES THE NUMBER OF HIGH CAPACITY TRUNKS A CUSTOMER IS USING.  HIGH CAPACITY TRUNKS ARE USUALLY DEFINED AS T1 OR GREATER.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF HIGH CAPACITY TRUNKS DESIGNATED IN THE LINES FIELD. USED IN CONJUCTION WITH 07/580 AND 07/582.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 84,
+    "ServiceName": "LATE CHARGE BUNDLE (84)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE LOCAL (07) TRANSACTION CATEGORIES ASSOCIATED WITH BUNDLED TRANSACTIONS.  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 85,
+    "ServiceName": "LOCAL EXCHANGE BUNDLE (85)",
+    "Description": "CHARGES FOR MONTHLY RECURRING CHARGE",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 86,
+    "ServiceName": "FCC SUBSCRIBER LINE FEE BUNDLE (86)",
+    "Description": "CHARGE FOR RECOVERING THE COST OF CONNECTING THE CUSTOMER PREMISE TO THE LOCAL PHONE NETWORK",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 87,
+    "ServiceName": "LINES BUNDLE (87)",
+    "Description": "DESIGNATES THE NUMBER OF LINES A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LINES DESIGNATED IN THE LINES FIELD.).  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 88,
+    "ServiceName": "LOCATION BUNDLE (88)",
+    "Description": "DESIGNATES THE NUMBER OF LOCATIONS AT WHICH A LOCAL SERVICE CUSTOMER IS USING LOCAL SERVICE.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LOCATIONS DESIGNATED IN THE LOCATION NUMBER FIELD.).  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 89,
+    "ServiceName": "PBX TRUNK BUNDLE (89)",
+    "Description": "DESIGNATES THE NUMBER OF PBX TRUNKS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LINES DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/92 AND 07/567.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 90,
+    "ServiceName": "LOCAL FEATURE CHARGE BUNDLE (90)",
+    "Description": "CHARGES AND FEE FOR ADDITIONAL FEATURE CHARGES OF LOCAL EXCHANGE SERVICES.  (INCLUDES SERVICES SUCH AS CALL WAITING",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 91,
+    "ServiceName": "CENTREX EXTENSION BUNDLE (91)",
+    "Description": "DESIGNATES THE NUMBER OF CENTREX / DIRECT INWARD DIALING EXTENSIONS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/93 AND 07/588.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 92,
+    "ServiceName": "PBX EXTENSION BUNDLE (92)",
+    "Description": "DESIGNATES THE NUMBER OF PBX EXTENSIONS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/89 AND 07/567.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 93,
+    "ServiceName": "CENTREX TRUNK BUNDLE (93)",
+    "Description": "DESIGNATES THE NUMBER OF CENTREX TRUNKS A LOCAL SERVICE CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/91 AND 07/588.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 94,
+    "ServiceName": "INVOICE BUNDLE (94)",
+    "Description": "MAPPING CATEGORY FOR TRANSACTIONS ON A PER INVOICE BASIS.  (TAX IS BASED PER INVOICE PER ACCOUNT PER BILLING CYCLE.  TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 95,
+    "ServiceName": "HIGH CAPACITY TRUNK BUNDLE (95)",
+    "Description": "DESIGNATES THE NUMBER OF HIGH CAPACITY TRUNKS A CUSTOMER IS USING.  HIGH CAPACITY TRUNKS ARE USUALLY DEFINED AS T1 OR GREATER.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF HIGH CAPACITY TRUNKS DESIGNATED IN THE LINES FIELD. USED IN CONJUCTION WITH 07/581 AND 07/583.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 566,
+    "ServiceName": "PBX OUTBOUND CHANNEL (566)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A PBX CONNECTING THE SUBSCRIBER'S PREMISES TO THE PUBLIC SWITCHED NETWORK.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/24 AND 07/41.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 567,
+    "ServiceName": "PBX OUTBOUND CHANNEL BUNDLE (567)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A PBX CONNECTING THE SUBSCRIBER'S PREMISES TO THE PUBLIC SWITCHED NETWORK.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/89 AND 07/92.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 580,
+    "ServiceName": "HIGH CAPACITY EXTENSION (580)",
+    "Description": "DESIGNATES THE NUMBER OF EXTENSIONS A LOCAL CUSTOMER IS USING ON A HIGH CAPACITY TRUNK. HIGH CAPACITY TRUNKS ARE USUALLY DEFINED AS T1 OR GREATER. (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE. TAX IS CALCULATED BASED ON THE NUMBER OF HIGH CAPACITY EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/45 AND 07/582.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 581,
+    "ServiceName": "HIGH CAPACITY EXTENSION BUNDLE (581)",
+    "Description": "DESIGNATES THE NUMBER OF EXTENSIONS A LOCAL SERVICE CUSTOMER IS USING ON A HIGH CAPACITY TRUNK.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/95 AND 07/583.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 582,
+    "ServiceName": "HIGH CAPACITY OUTBOUND CHANNEL (582)",
+    "Description": "DESIGNATES THE NUMBER OF OUTBOUND CHANNELS A LOCAL SERVICE CUSTOMER IS USING ON A HIGH CAPACITY TRUNK.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/45 AND 07/580.)  ",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 583,
+    "ServiceName": "HIGH CAPACITY OUTBOUND CHANNEL BUNDLE (583)",
+    "Description": "DESIGNATES THE NUMBER OF OUTBOUND CHANNELS A LOCAL SERVICE CUSTOMER IS USING ON A HIGH CAPACITY TRUNK.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/95 AND 07/581.)  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 587,
+    "ServiceName": "CENTREX OUTBOUND CHANNEL (587)",
+    "Description": "DESIGNATES THE NUMBER OF OUTBOUND CHANNELS A LOCAL SERVICE CUSTOMER IS USING ON A CENTREX TRUNK.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/40 AND 07/42.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 588,
+    "ServiceName": "CENTREX OUTBOUND CHANNEL BUNDLE (588)",
+    "Description": "DESIGNATES THE NUMBER OF OUTBOUND CHANNELS A LOCAL SERVICE CUSTOMER IS USING ON A CENTREX TRUNK.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 07/91 AND 07/93).  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 612,
+    "ServiceName": "FCC SUBSCRIBER LINE FEE MULTI LINE (612)",
+    "Description": "CHARGE FOR RECOVERING THE COST OF CONNECTING A MULTI-LINE CUSTOMER PREMISE TO THE LOCAL PHONE NETWORK",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 613,
+    "ServiceName": "FCC SUBSCRIBER LINE FEE MULTI LINE BUNDLE (613)",
+    "Description": "CHARGE FOR RECOVERING THE COST OF CONNECTING A MULTI-LINE CUSTOMER PREMISE TO THE LOCAL PHONE NETWORK",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 623,
+    "ServiceName": "CENTREX INVOICE (623)",
+    "Description": "MAPPING CATEGORY FOR TRANSACTIONS ON A PER INVOICE BASIS.  (TAX IS BASED ON PER INVOICE PER ACCOUNT PER BILLING CYCLE.  TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION SERVICE TYPE.)",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 625,
+    "ServiceName": "CUSTOMER PREMISE EQUIP RENTAL (625)",
+    "Description": "RENTAL OF EQUIPMENT LOCATED AT A SUBSCRIBER'S PREMISES THAT ENABLE CUSTOMERS TO ACCESS LOCAL COMMUNICATIONS SERVICES AS DEFINED BY THE IRS AS IT WILL RETURN FET.",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 641,
+    "ServiceName": "FCC SUBSCRIBER LINE CHARGE CENTREX (641)",
+    "Description": "CHARGE FOR RECOVERING THE COST OF CONNECTING THE CENTREX CUSTOMER PREMISE TO THE LOCAL PHONE NETWORK",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 7,
+    "TransactionName": "LOCAL (7)",
+    "ServiceId": 642,
+    "ServiceName": "FCC SUBSCRIBER LINE CHARGE CENTREX BUNDLE (642)",
+    "Description": "CHARGE FOR RECOVERING THE COST OF CONNECTING THE CENTREX CUSTOMER PREMISE TO THE LOCAL PHONE NETWORK",
+    "CategoryId": 3,
+    "CategoryName": "LOCAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 12,
+    "TransactionName": "NATURAL GAS (12)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC FLAT-RATE CHARGES FOR NATURAL GAS SERVICES.  (NON-TELECOM.  NATURAL GAS ONLY.)",
+    "CategoryId": 9,
+    "CategoryName": "NATURAL GAS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 12,
+    "TransactionName": "NATURAL GAS (12)",
+    "ServiceId": 19,
+    "ServiceName": "CONSUMPTION (19)",
+    "Description": "NATURAL GAS CHARGES FOR CONSUMPTION OF NATURAL GAS.  (NON-TELECOM.  NATURAL GAS ONLY.)",
+    "CategoryId": 9,
+    "CategoryName": "NATURAL GAS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 0,
+    "TransactionName": "NO TAX (0)",
+    "ServiceId": 0,
+    "ServiceName": "NO TAX (0)",
+    "Description": "USAGE OF THIS MAPPING COMBINATION WILL ENSURE THAT NO FEDERAL",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT RATE FOR NON-INTERCONNECTED VOIP SERVICE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGES FOR ACTIVATING A NON-INTERCONNECTED VOIP ACCOUNT.  (MUTUALLY EXCLUSIVE OF THE OTHER VOIP CHARGES.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE \"NON-INTERCONNECTED VOIP\" TRANSACTION CATEGORIES.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 30,
+    "ServiceName": "LOCAL FEATURE CHARGE (30)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF NON-INTERCONNECTED VOIP SERVICES. (INCLUDES SERVICES SUCH AS CALL WAITING",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 43,
+    "ServiceName": "INVOICE (43)",
+    "Description": "MAPPING CATEGORY FOR NON-INTERCONNECTED VOIP TRANSACTIONS ON A PER INVOICE BASIS. (TAX IS BASED PER INVOICE PER ACCOUNT PER BILLING CYCLE. TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 49,
+    "ServiceName": "INTERSTATE USAGE (49)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 50,
+    "ServiceName": "INTRASTATE USAGE (50)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 51,
+    "ServiceName": "INTERNATIONAL USAGE (51)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 65,
+    "TransactionName": "NON-INTERCONNECTED VOIP (65)",
+    "ServiceId": 577,
+    "ServiceName": "ENHANCED FEATURES (577)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF NON-INTERCONNECTED VOIP SERVICES WHICH ARE SEPARATE FROM BASIC TRANSMISSION SERVICES. (INCLUDES SERVICES SUCH AS VOICEMAIL",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 4,
+    "TransactionName": "NON-RECURRING (4)",
+    "ServiceId": 7,
+    "ServiceName": "SERVICE (7)",
+    "Description": "ONE-TIME CHARGE FOR THE ACTUAL PROVISIONING OF MANUAL SERVICE TO A PHONE SYSTEM OR ACCOUNT.  ALL MANUAL REPAIR SERVICES SHOULD FALL INTO THIS CATEGORY.  (THIS DESIGNATION SHOULD NOT BE USED FOR ADMINISTRATIVE FEES OR SERVICE CHANGE FEES.)",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 4,
+    "TransactionName": "NON-RECURRING (4)",
+    "ServiceId": 8,
+    "ServiceName": "INSTALL (8)",
+    "Description": "ONE-TIME CHARGE FOR THE INSTALLATION",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 4,
+    "TransactionName": "NON-RECURRING (4)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGE FOR THE ACTIVATION OF A  A LOCAL EXCHANGE SERVICE ACCOUNT.  (MUTUALLY EXCLUSIVE OF THE OTHER LOCAL CHARGES.)",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 4,
+    "TransactionName": "NON-RECURRING (4)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE NON-RECURRING (04) TRANSACTION CATEGORIES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "ACCESS FOR A SERVICE THAT IS NOT ALREADY DEFINED AS A TRANSACTION/SERVICE TYPE.  CATCH-ALL LOCAL ACCESS CHARGE CATEGORY.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 9,
+    "ServiceName": "DIRECTORY ADS (9)",
+    "Description": "DIRECTORY ADVERTISEMENT CHARGES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE \"OTHER\" (03) TRANSACTION CATEGORIES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 34,
+    "ServiceName": "CONFERENCE BRIDGE (34)",
+    "Description": "CHARGES FOR CONNECTING CONFERENCE PARTICIPANTS UTILIZING A CONFERENCING BRIDGE.  THIS TRANSACTION SHOULD BE USED WHEN TRANSACTIONS ARE INTERSTATE OR CANNOT BE SEPARATED FROM INTRASTATE SERVICES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 37,
+    "ServiceName": "EQUIPMENT RENTAL (37)",
+    "Description": "CHARGE FOR RENTING EQUIPMENT.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 38,
+    "ServiceName": "WIRE MAINTENANCE PLAN (38)",
+    "Description": "MONTHLY RECURRING CHARGES FOR INSIDE WIRING MAINTENANCE BETWEEN CUSTOMER PHONE AND THE LOCAL CARRIER'S DEMARC BOX.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 44,
+    "ServiceName": "TELEGRAPH (44)",
+    "Description": "MAPPING CATEGORY FOR TELEGRAPH CHARGES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 46,
+    "ServiceName": "PICC (46)",
+    "Description": "THIS COMBINATION SHOULD BE USED FOR THE CHARGE ASSESSED BY EITHER A LEC OR LD COMPANY FOR MAINTAINING RECORD OF AN END USERS CHOICE OF LD CARRIER.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 47,
+    "ServiceName": "NO PICK PICC (47)",
+    "Description": "THIS COMBINATION SHOULD BE USED FOR THE CHARGE ASSESSED BY A LEC FOR MAINTAINING RECORD THAT END USERS CHOOSE NOT TO DECLARE AN LD CARRIER.  THIS COMBINATION WILL ONLY RETURN THE NECESSARY STATE TAXES.  IT IS IMPORTANT TO DISTINGUISH THIS TRANSACTION FROM 03/46 BECAUSE NO PICK PICCS ARE NOT SUBJECT TO FUSF.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 57,
+    "ServiceName": "DATA PROCESSING (57)",
+    "Description": "CHARGE FOR THE MANIPULATION OF USER'S DATA.  THIS IS NOT TO BE CONFUSED WITH THE TRANSMISSION OF DATA.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 96,
+    "ServiceName": "NO PICK PICC BUNDLE (96)",
+    "Description": "THIS COMBINATION SHOULD BE USED FOR THE CHARGE ASSESSED BY A LEC FOR MAINTAINING RECORD THAT END USERS CHOOSE NOT TO DECLARE AN LD CARRIER.  THIS COMBINATION WILL ONLY RETURN THE NECESSARY STATE TAXES.  IT IS IMPORTANT TO DISTINGUISH THIS TRANSACTION FROM 03/97 BECAUSE NO PICK PICCS ARE NOT SUBJECT TO FUSF.  THIS SERVICE TYPE SHOULD BE USED WHEN PASSING BUNDLED LOCAL SERVICE AS DEFINED IN IRS NOTICE 2006-50",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 97,
+    "ServiceName": "PICC BUNDLE (97)",
+    "Description": "THIS COMBINATION SHOULD BE USED FOR THE CHARGE ASSESSED BY EITHER A LEC OR LD COMPANY FOR MAINTAINING RECORD OF AN END USERS CHOICE OF LD CARRIER.  IT WILL RETURN THE PROPER FEDERAL TAXES",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 570,
+    "ServiceName": "DIRECTORY LISTING (570)",
+    "Description": "DIRECTORY LISTING CHARGES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 575,
+    "ServiceName": "CONFERENCE BRIDGE-INTRASTATE (575)",
+    "Description": "CHARGES FOR CONNECTING INTRASTATE CONFERENCE PARTICIPANTS UTILIZING A CONFERENCING BRIDGE.  THIS TRANSACTION SHOULD BE USED WHEN INTRASTATE SERVICES DO NOT INCLUDE DIAL IN OR DIAL OUT SERVICES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 576,
+    "ServiceName": "CONFERENCE BRIDGE-INTRASTATE W DIAL IN (576)",
+    "Description": "PER-MINUTE AND PER-PARTICIPANT CHARGES FOR DIAL-IN SERVICE PROVIDED IN CONJUNCTION WITH CONNECTING CONFERENCE PARTICIPANTS UTILIZING A CONFERENCING BRIDGE WHEN ALL PARTICIPANTS ARE LOCATED WITHIN ONE STATE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 589,
+    "ServiceName": "CONFERENCE BRIDGE-INTERSTATE (589)",
+    "Description": "CHARGES FOR CONNECTING INTERSTATE CONFERENCE PARTICIPANTS UTILIZING A CONFERENCING BRIDGE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 593,
+    "ServiceName": "INFO SVCS-PRIVATE PHYSICAL TRANS (593)",
+    "Description": "A SERVICE PROVIDING INFORMATION TO PRIVATE CUSTOMERS BY PHYSICAL MEANS SUCH AS PAPER.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 594,
+    "ServiceName": "INFO SVCS-PRIVATE ELECTRONIC TRANS (594)",
+    "Description": "A SERVICE PROVIDING INFORMATION TO PRIVATE CUSTOMERS BY ELECTRONIC MEANS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 597,
+    "ServiceName": "INFO SVCS-PUBLIC ELECTRONIC TRANS (597)",
+    "Description": "A SERVICE PROVIDING THE PASSIVE RECEIPT OF INFORMATION OTHER THAN FINANCIAL ACCOUNT OR SECURITIES TRADING DATA TO THE PUBLIC BY ELECTRONIC MEANS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 598,
+    "ServiceName": "INFO SVCS-PUBLIC PHYSICAL TRANS (598)",
+    "Description": "A SERVICE PROVIDING INFORMATION TO THE PUBLIC BY PHYSICAL MEANS SUCH AS PAPER.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 599,
+    "ServiceName": "E-MAIL HOSTING SERVICE (599)",
+    "Description": "A SERVICE PROVIDING E-MAIL HOSTING TO CUSTOMERS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 600,
+    "ServiceName": "REAL PROPERTY RENTAL (600)",
+    "Description": "RENTAL OF REAL PROPERTY SPACE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 602,
+    "ServiceName": "SERVICES-PROFESSIONAL (602)",
+    "Description": "A SERVICE RENDERED FOR A FEE IN ONE OF THE LEARNED PROFESSIONS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 603,
+    "ServiceName": "ONLINE SERVICES (603)",
+    "Description": "ACCESS TO A COMPUTER THROUGH A REMOTE TERMINAL THAT ALLOWS RETRIEVAL OF STORED DATA CREATED BY THE SERVICE PROVIDER.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 608,
+    "ServiceName": "CONFERENCE BRIDGE INTERSTATE W DIAL IN (608)",
+    "Description": "PER-MINUTE AND PER-PARTICIPANT CHARGES FOR DIAL IN SERVICE PROVIDED IN CONJUNCTION WITH CONNECTING CONFERENCE PARTICIPANTS UTILIZING A CONFERENCING BRIDGE WHEN ALL PARTICIPANTS ARE LOCATED IN DIFFERENT STATES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 614,
+    "ServiceName": "TELECOM EQUIPMENT RENTAL (614)",
+    "Description": "CHARGE FOR RENTING TELECOMMUNICATIONS EQUIPMENT.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 632,
+    "ServiceName": "SERVICE CONTRACTS (632)",
+    "Description": "AN OPTIONAL CONTRACT TO COVER REPAIRS INCLUDING PARTS AND LABOR.  THIS TYPE OF SERVICE CONTRACT IS SOLD AT THE SAME TIME THE PRODUCT BEING COVERED BY THE SERVICE CONTRACT IS SOLD.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 638,
+    "ServiceName": "SECURITY MONITORING SERVICES (638)",
+    "Description": "A FEE PAID FOR THE SERVICE OF MONITORING THE SECURITY OF REAL OR TANGIBLE PERSONAL PROPERTY.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 639,
+    "ServiceName": "STREAMING INTERNET VIDEO (639)",
+    "Description": "THE PURCHASE OF VIDEO VIA THE INTERNET.  THE PURCHASER DOES NOT RETAIN POSSESSION OF THE VIDEO.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 3,
+    "TransactionName": "OTHER (3)",
+    "ServiceId": 644,
+    "ServiceName": "INFO SVCS-PUB ELEC TRANS (FIN & SECURITIES) (644)",
+    "Description": "A SERVICE PROVIDING THE PASSIVE RECEIPT OF FINANCIAL ACCOUNT OR SECURITIES TRADING DATA TO THE PUBLIC BY ELECTRONIC MEANS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 6,
+    "TransactionName": "PAGING (6)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT-RATE CHARGES FOR PAGING SERVICES.  (MUTUALLY EXCLUSIVE OF THE OTHER PAGING CHARGES.)",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 6,
+    "TransactionName": "PAGING (6)",
+    "ServiceId": 10,
+    "ServiceName": "USAGE (10)",
+    "Description": "PAGING CHARGES FOR USAGE.  CHARGES ARE IN ADDITION TO ANY SERVICES COVERED IN THE MONTHLY ACCESS CHARGE.  (MUTUALLY EXCLUSIVE OF THE OTHER PAGING CHARGES.)",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 6,
+    "TransactionName": "PAGING (6)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGES FOR ACTIVATING A PAGING ACCOUNT.  (MUTUALLY EXCLUSIVE OF THE OTHER PAGING CHARGES.)",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 6,
+    "TransactionName": "PAGING (6)",
+    "ServiceId": 13,
+    "ServiceName": "EQUIPMENT REPAIR (13)",
+    "Description": "CHARGES FOR PAGING EQUIPMENT REPAIR AND SERVICE.  (MUTUALLY EXCLUSIVE OF THE OTHER PAGING CHARGES.)",
+    "CategoryId": 2,
+    "CategoryName": "WIRELESS",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 21,
+    "TransactionName": "PAYPHONE (21)",
+    "ServiceId": 21,
+    "ServiceName": "LINES (21)",
+    "Description": "LINE CHARGES FOR PROVISIONING OF SERVICE TO A COIN OPERATED PHONE. (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LINES DESIGNATED IN THE LINES FIELD.)",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 21,
+    "TransactionName": "PAYPHONE (21)",
+    "ServiceId": 49,
+    "ServiceName": "INTERSTATE USAGE (49)",
+    "Description": "CHARGES FOR CALLS THAT CROSS STATE BOUNDARIES FROM A COIN OPERATED PHONE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 21,
+    "TransactionName": "PAYPHONE (21)",
+    "ServiceId": 50,
+    "ServiceName": "INTRASTATE USAGE (50)",
+    "Description": "CHARGES FOR CALLS THAT DO NOT CROSS STATE BOUNDARIES FROM A COIN OPERATED PHONE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 21,
+    "TransactionName": "PAYPHONE (21)",
+    "ServiceId": 55,
+    "ServiceName": "LOCAL USAGE (55)",
+    "Description": "CHARGES FOR LOCAL CALLS FROM A COIN OPERATED PHONE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 21,
+    "TransactionName": "PAYPHONE (21)",
+    "ServiceId": 56,
+    "ServiceName": "PROVISIONING (56)",
+    "Description": "MRC RELATED CHARGES FOR THE PROVISIONING OF SERVICE TO A COIN-OPERATED PHONE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 62,
+    "TransactionName": "RESERVED (62)",
+    "ServiceId": 590,
+    "ServiceName": "RESERVED (590)",
+    "Description": "RESERVED FOR CUSTOMIZATION.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 15,
+    "ServiceName": "PRODUCT (15)",
+    "Description": "GENERAL SALES TAX RATES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 31,
+    "ServiceName": "USE (31)",
+    "Description": "GENERAL USE TAX RATES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 32,
+    "ServiceName": "DEBIT (32)",
+    "Description": "CALCULATION OF SALES TAX ON A DEBIT CHARGE (PREPAID CHARGE) THAT IS DETERMINED BY STATE LAW TO BE A POINT OF SALE TRANSACTION.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 63,
+    "ServiceName": "RESTOCKING FEE - RENTAL (63)",
+    "Description": "FEE CHARGED TO REIMBURSE THE COST OF RESTOCKING A RENTED ITEM.  THE RETURNED ITEM CANNOT BE MODIFIED IN ANY FORM.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 64,
+    "ServiceName": "RESTOCKING FEE - PURCHASE (64)",
+    "Description": "FEE CHARGED TO REIMBURSE THE COST OF RESTOCKING A PURCHASED ITEM.  THE RETURNED ITEM CANNOT BE MODIFIED IN ANY FORM.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 65,
+    "ServiceName": "PARTIAL CREDIT (65)",
+    "Description": "A CREDIT THAT IS LESS THAN THE FULL AMOUNT OF THE ORIGINAL PURCHASE.  THE REASON FOR THE CREDIT REDUCTION MUST ME DUE TO A RESTOCKING OR HANDLING TYPE FEE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 103,
+    "ServiceName": "SALES TAX AND FUSF (103)",
+    "Description": "THIS TRANSACTION/SERVICE PAIR RETURNS SALES TAX AND FUSF. AVALARA",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 565,
+    "ServiceName": "DEBIT-WIRELESS (565)",
+    "Description": "THE POINT-OF-SALE (POS) PURCHASE OF PREPAID",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 568,
+    "ServiceName": "CENTRAL OFFICE EQUIPMENT-SALES (568)",
+    "Description": "SALE OF TANGIBLE PROPERTY TO A TELECOMMUNICATIONS PROVIDER FOR THE PROVISION OF PHONE SERVICE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 569,
+    "ServiceName": "CENTRAL OFFICE EQUIPMENT-USE (569)",
+    "Description": "USE OF TANGIBLE PROPERTY BY A TELECOMMUNICATIONS PROVIDER FOR THE PROVISION OF PHONE SERVICE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 643,
+    "ServiceName": "DEBIT-WIRELESS (INDIRECT NON-CARRIER SALE) (643)",
+    "Description": "THE POINT-OF-SALE (POS) PURCHASE OF PREPAID",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 10,
+    "TransactionName": "SALES (10)",
+    "ServiceId": 655,
+    "ServiceName": "LOCKED CELL PHONE (655)",
+    "Description": "PURCHASE OF CELL PHONE EQUIPMENT RESTRICTED TO A PARTICULAR CELL PHONE NETWORK BY A LOCKING CODE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 60,
+    "TransactionName": "SATELLITE PHONE (60)",
+    "ServiceId": 10,
+    "ServiceName": "USAGE (10)",
+    "Description": "SATELLITE PER MINUTE AND/OR PER USE CHARGES.",
+    "CategoryId": 10,
+    "CategoryName": "SATELLITE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT-RATE CHARGE FOR SATELLITE TELEVISION SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 8,
+    "ServiceName": "INSTALL (8)",
+    "Description": "ONE-TIME CHARGE FOR THE INSTALLATION OF ANY SATELLITE TELEVISION SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 13,
+    "ServiceName": "EQUIPMENT REPAIR (13)",
+    "Description": "CHARGES FOR SATELLITE EQUIPMENT REPAIR AND SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE  SATELLITE (18) TRANSACTION CATEGORIES.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 35,
+    "ServiceName": "PREMIUM SERVICE (35)",
+    "Description": "PREMIUM MONTHLY FLAT RATE CHARGE FOR SATELLITE TELEVISION PREMIUM CHANNEL(S) SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 36,
+    "ServiceName": "PAY PER VIEW SERVICE (36)",
+    "Description": "PAY PER VIEW MONTHLY CHARGES FOR SATELLITE TELEVISION PAY PER VIEW SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 37,
+    "ServiceName": "EQUIPMENT RENTAL (37)",
+    "Description": "EQUIPMENT (BOX/SWITCH) MONTHLY CHARGES FOR SATELLITE TELEVISION.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 18,
+    "TransactionName": "SATELLITE TELEVISION (18)",
+    "ServiceId": 39,
+    "ServiceName": "TV GUIDE (39)",
+    "Description": "CHARGE FOR TV GUIDE SOURCING PUBLICATION FOR SATELLITE TELEVISION SERVICE.",
+    "CategoryId": 8,
+    "CategoryName": "TV",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 11,
+    "TransactionName": "SHIPPING (11)",
+    "ServiceId": 17,
+    "ServiceName": "FOB ORIGIN (17)",
+    "Description": "SHIPPING CHARGE FOR FOB ORIGIN TRANSACTIONS.  (SHIPPING CHARGES ONLY.)",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 11,
+    "TransactionName": "SHIPPING (11)",
+    "ServiceId": 18,
+    "ServiceName": "FOB DESTINATION (18)",
+    "Description": "SHIPPING CHARGE FOR FOB DESTINATION TRANSACTIONS.  (SHIPPING CHARGES ONLY.)",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 24,
+    "TransactionName": "SOFTWARE (24)",
+    "ServiceId": 59,
+    "ServiceName": "LICENSED SOFTWARE (59)",
+    "Description": "AN AGREEMENT FOR THE USE OF SOFTWARE FOR A SPECIFIED PERIOD.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 24,
+    "TransactionName": "SOFTWARE (24)",
+    "ServiceId": 60,
+    "ServiceName": "SOFTWARE MAINTENANCE AGREEMENT (60)",
+    "Description": "A CONTRACT THAT COVERS THE CONTRACT HOLDER FOR THE EXPENSE OF MAINTAINING AND UPDATING SOFTWARE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 24,
+    "TransactionName": "SOFTWARE (24)",
+    "ServiceId": 61,
+    "ServiceName": "REPORT ON CD/PAPER FORM (61)",
+    "Description": "REPORT GENERATED AND PROVIDED TO END USER DELIVERED ON CD OR PAPER.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 24,
+    "TransactionName": "SOFTWARE (24)",
+    "ServiceId": 595,
+    "ServiceName": "DOWNLOADED LICENSED SOFTWARE (595)",
+    "Description": "AN AGREEMENT FOR THE USE OF SOFTWARE FOR A SPECIFIED PERIOD.  TRANSFERABLE TO THE COMPUTER BY ELECTRONIC MEANS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 24,
+    "TransactionName": "SOFTWARE (24)",
+    "ServiceId": 636,
+    "ServiceName": "REMOTELY ACCESSED SOFTWARE (636)",
+    "Description": "A SERVICE THAT PROVIDES ACCESS AND USAGE OF SOFTWARE THAT REMAINS IN THE POSSESSION OF THE SELLER AND IS REMOTELY ACCESSED BY A CUSTOMER.  IF DATA IS MANIPULATED BY THE SOFTWARE",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 15,
+    "TransactionName": "TELEPHONY (15)",
+    "ServiceId": 7,
+    "ServiceName": "SERVICE (7)",
+    "Description": "ALL TELEPHONE SERVICE IN COUNTRIES OTHER THAN THE USA",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 15,
+    "TransactionName": "TELEPHONY (15)",
+    "ServiceId": 624,
+    "ServiceName": "WIRELESS SERVICE (624)",
+    "Description": "ALL WIRELESS TELEPHONE SERVICE IN COUNTRIES OTHER THAN THE USA",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 15,
+    "TransactionName": "TELEPHONY (15)",
+    "ServiceId": 627,
+    "ServiceName": "INTERNET ACCESS (627)",
+    "Description": "ALL INTERNET ACCESS IN COUNTRIES OTHER THAN CANADA",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 15,
+    "TransactionName": "TELEPHONY (15)",
+    "ServiceId": 629,
+    "ServiceName": "MESSAGING SERVICES (629)",
+    "Description": "ALL MESSAGING SERVICES IN COUNTRIES OTHER THAN CANADA",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 15,
+    "TransactionName": "TELEPHONY (15)",
+    "ServiceId": 656,
+    "ServiceName": "SERVICE - INDIA INTERSTATE SUPPLY (656)",
+    "Description": "TELEPHONE SERVICE IN INDIA IN WHICH THE LOCATION OF THE SUPPLIER AND THE PLACE OF SUPPLY OCCUR IN DIFFERENT STATES OR TERRITORIES.",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 15,
+    "TransactionName": "TELEPHONY (15)",
+    "ServiceId": 657,
+    "ServiceName": "SERVICE - INDIA INTRASTATE SUPPLY (657)",
+    "Description": "TELEPHONE SERVICE IN INDIA IN WHICH THE LOCATION OF THE SUPPLIER AND THE PLACE OF SUPPLY OCCUR IN THE SAME STATE OR TERRITORY.",
+    "CategoryId": 5,
+    "CategoryName": "INTERNATIONAL",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 25,
+    "TransactionName": "TIMESHARING (25)",
+    "ServiceId": 62,
+    "ServiceName": "INFORMATION RETRIEVAL (62)",
+    "Description": "ACCESS TO A COMPUTER THROUGH A REMOTE TERMINAL THAT ALLOWS RETRIEVAL OF STORED DATA CREATED BY THE USER.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 25,
+    "TransactionName": "TIMESHARING (25)",
+    "ServiceId": 646,
+    "ServiceName": "INFORMATION RETRIEVAL (PROVIDER DATA) (646)",
+    "Description": "ACCESS TO A COMPUTER THROUGH A REMOTE TERMINAL THAT ALLOWS RETRIEVAL OF STORED DATA CREATED BY THE SERVICE PROVIDER.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 9,
+    "TransactionName": "VOICE MAIL (9)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT-RATE CHARGES FOR VOICE MAIL SERVICES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 9,
+    "TransactionName": "VOICE MAIL (9)",
+    "ServiceId": 10,
+    "ServiceName": "USAGE (10)",
+    "Description": "VOICE MAIL CHARGES FOR USAGE.  CHARGES ARE IN ADDITION TO ANY SERVICES PROVIDED IN THE MONTHLY ACCESS CHARGE.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 9,
+    "TransactionName": "VOICE MAIL (9)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGE FOR ACTIVATING A VOICE MAIL ACCOUNT.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 9,
+    "TransactionName": "VOICE MAIL (9)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE VOICE MAIL  (09) TRANSACTION CATEGORIES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT RATE FOR VOIP SERVICE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 8,
+    "ServiceName": "INSTALL (8)",
+    "Description": "CHARGE FOR INSTALLATION OF VOIP SERVICES.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGES FOR ACTIVATING A VOIP ACCOUNT.  (MUTUALLY EXCLUSIVE OF THE OTHER VOIP CHARGES.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 13,
+    "ServiceName": "EQUIPMENT REPAIR (13)",
+    "Description": "CHARGE FOR REPAIR OF EQUIPMENT NECESSARY TO MAKE VOIP CALLS.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE VOIP (19) TRANSACTION CATEGORIES.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 21,
+    "ServiceName": "LINES (21)",
+    "Description": "DESIGNATES THE QUANTITY OF NUMBERS A VOIP CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LINES DESIGNATED IN THE LINES FIELD.)  THIS SERVICE TYPE WILL RETURN E911 AT THE LANDLINE RATE REGARDLESS OF WHETHER IT IS PAIRED WITH THE VOIP OR VOIPA TRANSACTION TYPE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 30,
+    "ServiceName": "LOCAL FEATURE CHARGE (30)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF VOIP SERVICES.  (INCLUDES SERVICES SUCH AS CALL WAITING",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 37,
+    "ServiceName": "EQUIPMENT RENTAL (37)",
+    "Description": "CHARGE FOR RENTING EQUIPMENT NECESSARY TO MAKE VOIP PHONE CALLS.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 41,
+    "ServiceName": "PBX EXTENSION (41)",
+    "Description": "DESIGNATES THE NUMBER OF VOIP PBX EXTENSIONS A VOIP SERVICE CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 19/566 AND 19/578.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 43,
+    "ServiceName": "INVOICE (43)",
+    "Description": "MAPPING CATEGORY FOR TRANSACTIONS ON A PER INVOICE BASIS.  (TAX IS BASED PER INVOICE PER ACCOUNT PER BILLING CYCLE.  TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 48,
+    "ServiceName": "WIRELESS ACCESS CHARGE (48)",
+    "Description": "THIS WILL TAX SIMILAR TO CELLULAR/ACCESS CHARGE.  FEDERAL AND STATE USF ARE APPLIED",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 49,
+    "ServiceName": "INTERSTATE USAGE (49)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 50,
+    "ServiceName": "INTRASTATE USAGE (50)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 51,
+    "ServiceName": "INTERNATIONAL USAGE (51)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 52,
+    "ServiceName": "WIRELESS LINES (52)",
+    "Description": "DESIGNATES THE QUANTITY OF NUMBERS A VOIP CUSTOMER IS USING.  (TAXABLE AMOUNT AND NUMBER OF LINES ARE IRRELEVANT FOR THIS SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF TRANSACTIONS PASSED.  FOR TWO LINES YOU WOULD PASS TWO TRANSACTIONS.) THIS SERVICE TYPE WILL RETURN E911 AT THE WIRELESS RATE REGARDLESS OF WHETHER IT IS PAIRED WITH THE VOIP OR VOIPA TRANSACTION TYPE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 53,
+    "ServiceName": "LNP (53)",
+    "Description": "FIXED",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 566,
+    "ServiceName": "PBX OUTBOUND CHANNEL (566)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A VOIP PBX CONNECTING THE SUBSCRIBER'S PREMISES TO THE PUBLIC SWITCHED NETWORK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 19/41 AND 19/578.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 577,
+    "ServiceName": "ENHANCED FEATURES (577)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF VOIP SERVICES WHICH ARE SEPARATE FROM VOICE TRANSMISSION RELATED FEATURES AS DEFINED BY THE FCC.  (INCLUDES SERVICES SUCH AS VOICEMAIL",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 578,
+    "ServiceName": "PBX (578)",
+    "Description": "DESIGNATES THE NUMBER OF PBX TRUNKS A VOIP CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 19/41 AND 19/566.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 579,
+    "ServiceName": "PBX HIGH CAPACITY (579)",
+    "Description": "DESIGNATES THE NUMBER OF HIGH CAPACITY TRUNKS A CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF HIGH CAPACITY TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 19/580 AND 19/582.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 580,
+    "ServiceName": "HIGH CAPACITY EXTENSION (580)",
+    "Description": "DESIGNATES THE NUMBER OF VOIP EXTENSIONS A VOIP SERVICE CUSTOMER IS USING ON A HIGH CAPACITY TRUNK. TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 19/579 AND 19/582.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 582,
+    "ServiceName": "HIGH CAPACITY OUTBOUND CHANNEL (582)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A VOIP HIGH CAPACITY TRUNK CONNECTING THE SUBSCRIBER'S PREMISES TO THE PUBLIC SWITCHED NETWORK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 19/579 AND 19/580.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 596,
+    "ServiceName": "ACCESS-LOCAL ONLY SERVICE (596)",
+    "Description": "BASIC MONTHLY FLAT RATE CHARGE FOR LOCAL ONLY SERVICE VOIP.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 607,
+    "ServiceName": "RESERVED (607)",
+    "Description": "INACTIVE TRANSACTION/SERVICE TYPE PAIR.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 19,
+    "TransactionName": "VOIP (19)",
+    "ServiceId": 635,
+    "ServiceName": "TOLL-FREE NUMBER (635)",
+    "Description": "MONTHLY RECURRING CHARGE FOR ACCESS TO A VOIP TOLL FREE NUMBER.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT RATE FOR VOIP SERVICE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 8,
+    "ServiceName": "INSTALL (8)",
+    "Description": "CHARGE FOR INSTALLATION OF VOIP SERVICES.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGES FOR ACTIVATING A VOIP ACCOUNT.  (MUTUALLY EXCLUSIVE OF THE OTHER VOIP CHARGES.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 13,
+    "ServiceName": "EQUIPMENT REPAIR (13)",
+    "Description": "CHARGE FOR REPAIR OF EQUIPMENT NECESSARY TO MAKE VOIP CALLS.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE VOIPA  (20) TRANSACTION CATEGORIES.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 21,
+    "ServiceName": "LINES (21)",
+    "Description": "DESIGNATES THE QUANTITY OF NUMBERS A VOIP CUSTOMER IS USING.  (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF LINES DESIGNATED IN THE LINES FIELD.)  THIS SERVICE TYPE WILL RETURN E911 AT THE LANDLINE RATE REGARDLESS OF WHETHER IT IS PAIRED WITH THE VOIP OR VOIPA TRANSACTION TYPE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 30,
+    "ServiceName": "LOCAL FEATURE CHARGE (30)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF VOIP SERVICES.  (INCLUDES SERVICES SUCH AS CALL WAITING",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 37,
+    "ServiceName": "EQUIPMENT RENTAL (37)",
+    "Description": "CHARGE FOR RENTING EQUIPMENT NECESSARY TO MAKE VOIP PHONE CALLS.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 41,
+    "ServiceName": "PBX EXTENSION (41)",
+    "Description": "DESIGNATES THE NUMBER OF VOIP PBX EXTENSIONS A VOIP SERVICE CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 20/566 AND 20/578.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 43,
+    "ServiceName": "INVOICE (43)",
+    "Description": "MAPPING CATEGORY FOR TRANSACTIONS ON A PER INVOICE BASIS.  (TAX IS BASED PER INVOICE PER ACCOUNT PER BILLING CYCLE.  TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 48,
+    "ServiceName": "WIRELESS ACCESS CHARGE (48)",
+    "Description": "THIS WILL TAX SIMILAR TO CELLULAR/ACCESS CHARGE.  FEDERAL AND STATE USF ARE APPLIED",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 49,
+    "ServiceName": "INTERSTATE USAGE (49)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 50,
+    "ServiceName": "INTRASTATE USAGE (50)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 51,
+    "ServiceName": "INTERNATIONAL USAGE (51)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 52,
+    "ServiceName": "WIRELESS LINES (52)",
+    "Description": "DESIGNATES THE QUANTITY OF NUMBERS A VOIP CUSTOMER IS USING.  (TAXABLE AMOUNT AND NUMBER OF LINES ARE IRRELEVANT FOR THIS SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF TRANSACTIONS PASSED.  FOR TWO LINES YOU WOULD PASS TWO TRANSACTIONS.) THIS SERVICE TYPE WILL RETURN E911 AT THE WIRELESS RATE REGARDLESS OF WHETHER IT IS PAIRED WITH THE VOIP OR VOIPA TRANSACTION TYPE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 53,
+    "ServiceName": "LNP (53)",
+    "Description": "FIXED",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 566,
+    "ServiceName": "PBX OUTBOUND CHANNEL (566)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A VOIP PBX CONNECTING THE SUBSCRIBERS PREMISES TO THE PUBLIC SWITCHED NETWORK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 20/41 AND 20/578.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 577,
+    "ServiceName": "ENHANCED FEATURES (577)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF VOIP SERVICES WHICH ARE SEPARATE FROM VOICE TRANSMISSION RELATED FEATURES AS DEFINED BY THE FCC.  (INCLUDES SERVICES SUCH AS VOICEMAIL",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 578,
+    "ServiceName": "PBX (578)",
+    "Description": "DESIGNATES THE NUMBER OF PBX TRUNKS A VOIP CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 20/41 AND 29/566.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 579,
+    "ServiceName": "PBX HIGH CAPACITY (579)",
+    "Description": "DESIGNATES THE NUMBER OF HIGH CAPACITY TRUNKS A CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF HIGH CAPACITY TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 20/580 AND 20/582.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 580,
+    "ServiceName": "HIGH CAPACITY EXTENSION (580)",
+    "Description": "DESIGNATES THE NUMBER OF VOIP EXTENSIONS A VOIP SERVICE CUSTOMER IS USING ON A HIGH CAPACITY TRUNK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 20/579 AND 20/582.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 582,
+    "ServiceName": "HIGH CAPACITY OUTBOUND CHANNEL (582)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A VOIP HIGH CAPACITY TRUNK CONNECTING THE SUBSCRIBER'S PREMISES TO THE PUBLIC SWITCHED NETWORK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF HIGH CAPACITY OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 20/579 AND 20/580.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 596,
+    "ServiceName": "ACCESS-LOCAL ONLY SERVICE (596)",
+    "Description": "BASIC MONTHLY FLAT RATE CHARGE FOR LOCAL ONLY SERVICE VOIP.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 607,
+    "ServiceName": "RESERVED (607)",
+    "Description": "INACTIVE TRANSACTION/SERVICE TYPE PAIR.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 20,
+    "TransactionName": "VOIPA (20)",
+    "ServiceId": 635,
+    "ServiceName": "TOLL-FREE NUMBER (635)",
+    "Description": "MONTHLY RECURRING CHARGE FOR ACCESS TO A VOIP TOLL FREE NUMBER.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 6,
+    "ServiceName": "ACCESS CHARGE (6)",
+    "Description": "BASIC MONTHLY FLAT RATE FOR VOIP SERVICE.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 8,
+    "ServiceName": "INSTALL (8)",
+    "Description": "CHARGE FOR INSTALLATION OF VOIP SERVICES.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 11,
+    "ServiceName": "ACTIVATION (11)",
+    "Description": "ONE-TIME CHARGES FOR ACTIVATING A VOIP ACCOUNT.  (MUTUALLY EXCLUSIVE OF THE OTHER VOIP CHARGES.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 13,
+    "ServiceName": "EQUIPMENT REPAIR (13)",
+    "Description": "CHARGE FOR REPAIR OF EQUIPMENT NECESSARY TO MAKE VOIP CALLS.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 14,
+    "ServiceName": "LATE CHARGE (14)",
+    "Description": "CATEGORY FOR LATE CHARGES THAT WERE ORIGINALLY TAXED USING ONE OF THE VOIP-NOMADIC  TRANSACTION CATEGORIES.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 21,
+    "ServiceName": "LINES (21)",
+    "Description": "DESIGNATES THE QUANTITY OF NUMBERS A VOIP CUSTOMER IS USING. (TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE  NUMBER OF LINES DISIGNATED IN THE LINES FIELD.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 30,
+    "ServiceName": "LOCAL FEATURE CHARGE (30)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF VOIP SERVICES. (INCLUDES SERVICES SUCH AS CALL WAITING",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 37,
+    "ServiceName": "EQUIPMENT RENTAL (37)",
+    "Description": "CHARGE FOR RENTING EQUIPMENT NECESSARY TO MAKE VOIP PHONE CALLS.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 41,
+    "ServiceName": "PBX EXTENSION (41)",
+    "Description": "DESIGNATES THE NUMBER OF VOIP PBX EXTENSIONS A LOCAL SERVICE CUSTOMER IS USING. TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE. TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 59/566 AND 59/578.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 43,
+    "ServiceName": "INVOICE (43)",
+    "Description": "MAPPING CATEGORY FOR TRANSACTIONS ON A PER INVOICE BASIS. (TAX IS BASED PER INVOICE PER ACCOUNT PER BILLING CYCLE. TAXABLE AMOUNT OR NUMBERS OF LINES ARE IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.)",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 49,
+    "ServiceName": "INTERSTATE USAGE (49)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 50,
+    "ServiceName": "INTRASTATE USAGE (50)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 51,
+    "ServiceName": "INTERNATIONAL USAGE (51)",
+    "Description": "PORTION OF MRC",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 53,
+    "ServiceName": "LNP (53)",
+    "Description": "FIXED",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 566,
+    "ServiceName": "PBX OUTBOUND CHANNEL (566)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A VOIP PBX CONNECTING THE SUBSCRIBER'S PREMISES TO THE PUBLIC SWITCHED NETWORK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 59/41 AND 59/578.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 577,
+    "ServiceName": "ENHANCED FEATURES (577)",
+    "Description": "CHARGES AND FEES FOR ADDITIONAL FEATURE CHARGES OF VOIP SERVICES WHICH ARE SEPARATE FROM VOICE TRANSMISSION RELATED FEATURES AS DEFINED BY THE FCC.  (INCLUDES SERVICES SUCH AS VOICEMAIL",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 578,
+    "ServiceName": "PBX (578)",
+    "Description": "DESIGNATES THE NUMBER OF PBX TRUNKS A VOIP CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 59/41 AND 59/566.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 579,
+    "ServiceName": "PBX HIGH CAPACITY (579)",
+    "Description": "DESIGNATES THE NUMBER OF HIGH CAPACITY TRUNKS A CUSTOMER IS USING.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF HIGH CAPACITY TRUNKS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 59/580 AND 59/582.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 580,
+    "ServiceName": "HIGH CAPACITY EXTENSION (580)",
+    "Description": "DESIGNATES THE NUMBER OF VOIP EXTENSIONS A VOIP SERVICE CUSTOMER IS USING ON A HIGH CAPACITY TRUNK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF EXTENSIONS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH  59/579 AND 59/582.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 582,
+    "ServiceName": "HIGH CAPACITY OUTBOUND CHANNEL (582)",
+    "Description": "DESIGNATES THE NUMBER OF VOICE GRADE COMMUNICATIONS CHANNELS LEAVING A SUBSCRIBER'S PREMISES THROUGH A VOIP HIGH CAPACITY TRUNK CONNECTING THE SUBSCRIBER'S PREMISES TO THE PUBLIC SWITCHED NETWORK.  TAXABLE AMOUNT IS IRRELEVANT FOR THIS TRANSACTION/SERVICE TYPE.  TAX IS CALCULATED BASED ON THE NUMBER OF OUTBOUND CHANNELS DESIGNATED IN THE LINES FIELD.  USED IN CONJUNCTION WITH 59/579 AND 59/580.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 607,
+    "ServiceName": "RESERVED (607)",
+    "Description": "INACTIVE TRANSACTION/SERVICE TYPE PAIR.",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 59,
+    "TransactionName": "VOIP-NOMADIC (59)",
+    "ServiceId": 635,
+    "ServiceName": "TOLL-FREE NUMBER (635)",
+    "Description": "MONTHLY RECURRING CHARGE FOR ACCESS TO A VOIP-NOMADIC TOLL FREE NUMBER",
+    "CategoryId": 7,
+    "CategoryName": "VOIP",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 61,
+    "TransactionName": "VPN (61)",
+    "ServiceId": 585,
+    "ServiceName": "INTERSTATE MPLS (585)",
+    "Description": "CHARGE FOR INTERSTATE VIRTUAL PRIVATE NETWORK USING MPLS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 61,
+    "TransactionName": "VPN (61)",
+    "ServiceId": 586,
+    "ServiceName": "INTRASTATE MPLS (586)",
+    "Description": "CHARGE FOR INTRASTATE VIRTUAL PRIVATE NETWORK USING MPLS.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 61,
+    "TransactionName": "VPN (61)",
+    "ServiceId": 650,
+    "ServiceName": "MPLS INTRASTATE ACTIVATION (650)",
+    "Description": "ONE-TIME CHARGE FOR THE ACTIVATION OF AN INTRASTATE VIRTUAL PRIVATE NETWORK (VPN) USING MULTIPROTOCOL LABEL SWITCHING (MPLS).  IT IS MUTUALLY EXCLUSIVE OF THE OTHER VPN CHARGES. ",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 61,
+    "TransactionName": "VPN (61)",
+    "ServiceId": 651,
+    "ServiceName": "MPLS INSTALL (651)",
+    "Description": "ONE-TIME CHARGE FOR THE INSTALLATION",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 61,
+    "TransactionName": "VPN (61)",
+    "ServiceId": 652,
+    "ServiceName": "MPLS SERVICE (652)",
+    "Description": "ONE-TIME CHARGE FOR MANUAL",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  },
+  {
+    "TransactionId": 61,
+    "TransactionName": "VPN (61)",
+    "ServiceId": 653,
+    "ServiceName": "MPLS INTERSTATE ACTIVATION (653)",
+    "Description": "ONE-TIME CHARGE FOR THE ACTIVATION OF AN INTERSTATE VIRTUAL PRIVATE NETWORK (VPN) USING MULTIPROTOCOL LABEL SWITCHING (MPLS).  IT IS MUTUALLY EXCLUSIVE OF THE OTHER VPN CHARGES.",
+    "CategoryId": 6,
+    "CategoryName": "CORE",
+    "IsAlias": false
+  }
+]

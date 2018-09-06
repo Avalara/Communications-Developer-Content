@@ -1,0 +1,43 @@
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "County": "King",
+    "Locality": "Issaquah",
+    "State": "WA",
+    "ZipCode": "98027",
+    "ZipP4": "0000"
+   },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "County": "King",
+    "Locality": "Issaquah",
+    "State": "WA",
+    "ZipCode": "98027",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA",
+    "County": "King",
+    "Locality": "Issaquah",
+    "State": "WA",
+    "ZipCode": "98027",
+    "ZipP4": "0000"
+   },
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "ServiceClass": 0,
+  "Sale": true,
+  "TransactionType": 25000,
+  "ServiceType": 25001,
+  "Date": "2017-09-15T00:00:00Z",
+  "Charge": 160,
+  "Lines" : 4,
+  "Incorporated": true,
+  "Optional5": 1,
+  "TaxInclusive": true,
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "AvaAfcTest Packaged Cellular/Access Charge and Lines"
+	} ]
+}
