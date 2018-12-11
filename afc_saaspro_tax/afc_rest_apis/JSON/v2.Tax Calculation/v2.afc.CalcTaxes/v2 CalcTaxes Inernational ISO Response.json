@@ -1,0 +1,2857 @@
+{
+  "inv": [
+    {
+      "doc": "TEST-COUNTRY ISO 2018.11.15:12.02 AVA",
+      "itms": [
+        {
+          "ref": "AMERICAN SAMOA/USA-AS/5340001",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "ANDORRA/AND/5510000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5510000,
+              "rate": 0.045,
+              "sur": false,
+              "tax": 4.5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ANTIGUA/ATG/5250000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5250000,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ARGENTINA/ARG/4481300",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "VAT (Communications)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481300,
+              "rate": 0.27,
+              "sur": false,
+              "tax": 27,
+              "lvl": 0,
+              "tid": 465
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "Tasa de Control",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481300,
+              "rate": 0.005,
+              "sur": false,
+              "tax": 0.5,
+              "lvl": 0,
+              "tid": 393
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Universal Service Fee",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481300,
+              "rate": 0.01,
+              "sur": false,
+              "tax": 1,
+              "lvl": 0,
+              "tid": 298
+            }
+          ]
+        },
+        {
+          "ref": "AUSTRALIA/AUS/4481400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "Goods and Service Tax (GST)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481400,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 66
+            }
+          ]
+        },
+        {
+          "ref": "AUSTRIA/AUT/4481500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481500,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "AZERBAIJAN/AZE/4481600",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481600,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "BAHAMAS/BHS/5420000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5420000,
+              "rate": 0.12,
+              "sur": false,
+              "tax": 12,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "BAHRAIN/BHR/5450000"
+        },
+        {
+          "ref": "BARBADOS/BRB/4481700",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481700,
+              "rate": 0.175,
+              "sur": false,
+              "tax": 17.5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "BELGIUM/BEL/4481800",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481800,
+              "rate": 0.21,
+              "sur": false,
+              "tax": 21,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "BELIZE/BLZ/5240000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5240000,
+              "rate": 0.125,
+              "sur": false,
+              "tax": 12.5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "BERMUDA/BMU/5180000"
+        },
+        {
+          "ref": "BOLIVIA/BOL/4481900",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4481900,
+              "rate": 0.13,
+              "sur": false,
+              "tax": 13,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "BOSNIA AND HERZEGOVINA/BIH/5380000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5380000,
+              "rate": 0.17,
+              "sur": false,
+              "tax": 17,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "BRAZIL/BRA/5430000"
+        },
+        {
+          "ref": "BULGARIA/BGR/4482000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4482000,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "CAMBODIA/KHM/4482100",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4482100,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "CANADA/CAN/4482200",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "Goods and Service Tax (GST)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 4482200,
+              "rate": 0.05,
+              "sur": false,
+              "tax": 5,
+              "lvl": 0,
+              "tid": 66
+            }
+          ]
+        },
+        {
+          "ref": "CAYMAN ISLANDS/CYM/5520000"
+        },
+        {
+          "ref": "CHILE/CHL/5350000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5350000,
+              "rate": 0.19,
+              "sur": false,
+              "tax": 19,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "CHINA/CHN/5101400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5101400,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "HONG KONG/CHN-HK/5101401"
+        },
+        {
+          "ref": "COLOMBIA/COL/5101500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5101500,
+              "rate": 0.19,
+              "sur": false,
+              "tax": 19,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "COSTA RICA/CRI/5101600",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5101600,
+              "rate": 0.13,
+              "sur": false,
+              "tax": 13,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "CROATIA/HRV/5101700",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5101700,
+              "rate": 0.25,
+              "sur": false,
+              "tax": 25,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "CURACAO/CUW/5540000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5540000,
+              "rate": 0.06,
+              "sur": false,
+              "tax": 6,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "CYPRUS/CYP/5101800",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5101800,
+              "rate": 0.19,
+              "sur": false,
+              "tax": 19,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "CZECH REPUBLIC/CZE/5101900",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5101900,
+              "rate": 0.21,
+              "sur": false,
+              "tax": 21,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "DENMARK/DNK/5102000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5102000,
+              "rate": 0.25,
+              "sur": false,
+              "tax": 25,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "DOMINICA/DMA/5270000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5270000,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "DOMINICAN REPUBLIC/DOM/5280000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5280000,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ECUADOR/ECU/5102100",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5102100,
+              "rate": 0.12,
+              "sur": false,
+              "tax": 12,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "EGYPT/EGY/5410000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5410000,
+              "rate": 0.14,
+              "sur": false,
+              "tax": 14.000000000000002,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "EL SALVADOR/SLV/5290000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5290000,
+              "rate": 0.13,
+              "sur": false,
+              "tax": 13,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ESTONIA/EST/5102200",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5102200,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "FEDERATED STATES OF MICRONESIA/USA-FM/5340002",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 120.391,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5340002,
+              "rate": 0.008,
+              "sur": false,
+              "tax": 0.9631280000000001,
+              "lvl": 1,
+              "tid": 65
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "FIJI/FJI/5105400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5105400,
+              "rate": 0.09,
+              "sur": false,
+              "tax": 9,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "FINLAND/FIN/5105500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5105500,
+              "rate": 0.24,
+              "sur": false,
+              "tax": 24,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "FRANCE/FRA/5105600",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5105600,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "GERMANY/DEU/5105700",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5105700,
+              "rate": 0.19,
+              "sur": false,
+              "tax": 19,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "GHANA/GHA/5105800",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5105800,
+              "rate": 0.175,
+              "sur": false,
+              "tax": 17.5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "GREECE/GRC/5127400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5127400,
+              "rate": 0.24,
+              "sur": false,
+              "tax": 24,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "GRENADA/GRD/5300000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5300000,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "GUAM/USA-GU/5106100",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 120.391,
+              "calc": 1,
+              "cat": "GROSS RECEIPTS TAXES",
+              "cid": 3,
+              "name": "Statutory Gross Receipts",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5106100,
+              "rate": 0.05,
+              "sur": false,
+              "tax": 6.019550000000001,
+              "lvl": 1,
+              "tid": 14
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "GUATEMALA/GTM/5310000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5310000,
+              "rate": 0.12,
+              "sur": false,
+              "tax": 12,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "GUYANA/GUY/5320000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5320000,
+              "rate": 0.14,
+              "sur": false,
+              "tax": 14.000000000000002,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "HONDURAS/HND/5108500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5108500,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "HUNGARY/HUN/5108600",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5108600,
+              "rate": 0.27,
+              "sur": false,
+              "tax": 27,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ICELAND/ISL/5138400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5138400,
+              "rate": 0.24,
+              "sur": false,
+              "tax": 24,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "INDIA/IND/5148400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "IGST (Communications)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5148400,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 482
+            }
+          ]
+        },
+        {
+          "ref": "INDIA PUNJAB/IND-PB/5148421",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "SGST (Communications)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5148421,
+              "rate": 0.09,
+              "sur": false,
+              "tax": 9,
+              "lvl": 1,
+              "tid": 486
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "CGST (Communications)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5148400,
+              "rate": 0.09,
+              "sur": false,
+              "tax": 9,
+              "lvl": 0,
+              "tid": 484
+            }
+          ]
+        },
+        {
+          "ref": "INDONESIA/IDN/5108700",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5108700,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "IRELAND/IRL/5108800",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5108800,
+              "rate": 0.23,
+              "sur": false,
+              "tax": 23,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ISRAEL/ISR/5370000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5370000,
+              "rate": 0.17,
+              "sur": false,
+              "tax": 17,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ITALY/ITA/5108900",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5108900,
+              "rate": 0.22,
+              "sur": false,
+              "tax": 22,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "JAMAICA/JAM/5330000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "VAT (Communications)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5330000,
+              "rate": 0.25,
+              "sur": false,
+              "tax": 25,
+              "lvl": 0,
+              "tid": 465
+            }
+          ]
+        },
+        {
+          "ref": "JAPAN/JPN/5109000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5109000,
+              "rate": 0.08,
+              "sur": false,
+              "tax": 8,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "KENYA/KEN/5109100",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5109100,
+              "rate": 0.16,
+              "sur": false,
+              "tax": 16,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "KUWAIT/KWT/5460000"
+        },
+        {
+          "ref": "LATVIA/LVA/5109200",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5109200,
+              "rate": 0.21,
+              "sur": false,
+              "tax": 21,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "LEBANON/LBN/5390000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5390000,
+              "rate": 0.11,
+              "sur": false,
+              "tax": 11,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "LITHUANIA/LTU/5109300",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5109300,
+              "rate": 0.21,
+              "sur": false,
+              "tax": 21,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "LUXEMBOURG/LUX/5109400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5109400,
+              "rate": 0.17,
+              "sur": false,
+              "tax": 17,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "MALAYSIA/MYS/5210000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "National Service Tax",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5210000,
+              "rate": 0.06,
+              "sur": false,
+              "tax": 6,
+              "lvl": 0,
+              "tid": 528
+            }
+          ]
+        },
+        {
+          "ref": "MARSHALL ISLANDS/USA-MH/5340003",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 120.391,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5340003,
+              "rate": 0.008,
+              "sur": false,
+              "tax": 0.9631280000000001,
+              "lvl": 1,
+              "tid": 65
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "MAURITIUS/MUS/5113200",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5113200,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "MEXICO/MEX/5113300",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5113300,
+              "rate": 0.16,
+              "sur": false,
+              "tax": 16,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "MOROCCO/MAR/5113400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5113400,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "NAMIBIA/NAM/5113500"
+        },
+        {
+          "ref": "NETHERLANDS/NLD/5113600",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5113600,
+              "rate": 0.21,
+              "sur": false,
+              "tax": 21,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "NEW ZEALAND/NZL/5113700",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5113700,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "NICARAGUA/NIC/5340000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5340000,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "NIGERIA/NGA/5158400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5158400,
+              "rate": 0.05,
+              "sur": false,
+              "tax": 5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "NORTHERN MARIANA ISLANDS/USA-MP/5340004",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "NORWAY/NOR/5114500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5114500,
+              "rate": 0.25,
+              "sur": false,
+              "tax": 25,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "OMAN/OMN/5470000"
+        },
+        {
+          "ref": "PALAU/USA-PW/5340005",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "PANAMA/PAN/5115300",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115300,
+              "rate": 0.07,
+              "sur": false,
+              "tax": 7.000000000000001,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "PAPUA NEW GUINEA/PNG/5115400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115400,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "PARAGUAY/PRY/5530000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5530000,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "PERU/PER/5115500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115500,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "PHILIPPINES/PHL/5360000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5360000,
+              "rate": 0.12,
+              "sur": false,
+              "tax": 12,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "POLAND/POL/5115600",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115600,
+              "rate": 0.23,
+              "sur": false,
+              "tax": 23,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "PORTUGAL/PRT/5115700",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115700,
+              "rate": 0.23,
+              "sur": false,
+              "tax": 23,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "PUERTO RICO/USA-PR/5115900",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 120.391,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "Sales Tax",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115900,
+              "rate": 0.105,
+              "sur": false,
+              "tax": 12.641055,
+              "lvl": 1,
+              "tid": 1
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "QATAR/QAT/5480000"
+        },
+        {
+          "ref": "REPUBLIC OF MALTA/MLT/5200000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5200000,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "REUNION ISLAND/REU/5220000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5220000,
+              "rate": 0.085,
+              "sur": false,
+              "tax": 8.5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ROMANIA/ROU/5123900",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5123900,
+              "rate": 0.19,
+              "sur": false,
+              "tax": 19,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "RUSSIA/RUS/5124000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124000,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SAUDI ARABIA/SAU/5490000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5490000,
+              "rate": 0.05,
+              "sur": false,
+              "tax": 5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SENEGAL/SEN/5440000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5440000,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SERBIA/SRB/5400000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5400000,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SINGAPORE/SGP/5124100",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124100,
+              "rate": 0.07,
+              "sur": false,
+              "tax": 7.000000000000001,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SLOVAK REPUBLIC/SVK/5178400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5178400,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SLOVENIA/SVN/5124200",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124200,
+              "rate": 0.22,
+              "sur": false,
+              "tax": 22,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SOUTH AFRICA/ZAF/5124300",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124300,
+              "rate": 0.15,
+              "sur": false,
+              "tax": 15,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SOUTH KOREA/KOR/5168400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5168400,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SPAIN/ESP/5124400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124400,
+              "rate": 0.21,
+              "sur": false,
+              "tax": 21,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ST KITTS AND NEVIS/KNA/5230000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5230000,
+              "rate": 0.17,
+              "sur": false,
+              "tax": 17,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ST VINCENT/VCT/5260000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5260000,
+              "rate": 0.16,
+              "sur": false,
+              "tax": 16,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SWEDEN/SWE/5124500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124500,
+              "rate": 0.25,
+              "sur": false,
+              "tax": 25,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "SWITZERLAND/CHE/5124600",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124600,
+              "rate": 0.077,
+              "sur": false,
+              "tax": 7.7,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "TAIWAN/TWN/5124700",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124700,
+              "rate": 0.05,
+              "sur": false,
+              "tax": 5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "TANZANIA/TZA/5124800",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124800,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "THAILAND/THA/5124900",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5124900,
+              "rate": 0.07,
+              "sur": false,
+              "tax": 7.000000000000001,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "TRINIDAD AND TOBAGO/TTO/5125000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5125000,
+              "rate": 0.125,
+              "sur": false,
+              "tax": 12.5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "TURKEY/TUR/5125100",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5125100,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "UGANDA/UGA/5125200",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5125200,
+              "rate": 0.18,
+              "sur": false,
+              "tax": 18,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "UKRAINE/UKR/5125300",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5125300,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "UNITED ARAB EMIRATES/ARE/5500000",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5500000,
+              "rate": 0.05,
+              "sur": false,
+              "tax": 5,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "UNITED KINGDOM/GBR/5125400",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5125400,
+              "rate": 0.2,
+              "sur": false,
+              "tax": 20,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "UNITED STATES OF AMERICA/USA/0",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "UNSUPPORTED COUNTRY/UNS/5190000"
+        },
+        {
+          "ref": "URUGUAY/URY/5125500",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5125500,
+              "rate": 0.22,
+              "sur": false,
+              "tax": 22,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "US VIRGIN ISLANDS/USA-VI/5340006",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed Universal Service Fund",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.201,
+              "sur": false,
+              "tax": 20.1,
+              "lvl": 0,
+              "tid": 18
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireline)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.00291,
+              "sur": false,
+              "tax": 0.291,
+              "lvl": 0,
+              "tid": 169
+            }
+          ]
+        },
+        {
+          "ref": "VENEZUELA/VEN/5127200",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5127200,
+              "rate": 0.16,
+              "sur": false,
+              "tax": 16,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "VIETNAM/VNM/5127300",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5127300,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        },
+        {
+          "ref": "ZAMBIA/ZMB/5105900",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5105900,
+              "rate": 0.16,
+              "sur": false,
+              "tax": 16,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1222 @@
+{
+   "cmpn": {
+      "bscl": 0,
+      "svcl": 0,
+      "fclt": false,
+      "frch": false,
+      "reg": false
+   },
+   "inv": [
+      {
+         "doc": "TEST-COUNTRY ISO 2018.11.15:12.02 AVA",
+         "cmmt": false,
+         "bill": { "ctry": "USA" },  //Will be overridden at line item level
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "AMERICAN SAMOA/USA-AS/5340001",
+               "bill": { "ctry": "USA", "st": "AS" },
+               "from": { "ctry": "USA", "st": "AS" },
+               "to": { "ctry": "USA", "st": "AS" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12
+            },
+            {
+               "ref": "ANDORRA/AND/5510000",
+               "bill": { "ctry": "AND" },
+               "from": { "ctry": "AND" },
+               "to": { "ctry": "AND" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ANTIGUA/ATG/5250000",
+               "bill": { "ctry": "ATG" },
+               "from": { "ctry": "ATG" },
+               "to": { "ctry": "ATG" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ARGENTINA/ARG/4481300",
+               "bill": { "ctry": "ARG" },
+               "from": { "ctry": "ARG" },
+               "to": { "ctry": "ARG" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "AUSTRALIA/AUS/4481400",
+               "bill": { "ctry": "AUS" },
+               "from": { "ctry": "AUS" },
+               "to": { "ctry": "AUS" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "AUSTRIA/AUT/4481500",
+               "bill": { "ctry": "AUT" },
+               "from": { "ctry": "AUT" },
+               "to": { "ctry": "AUT" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "AZERBAIJAN/AZE/4481600",
+               "bill": { "ctry": "AZE" },
+               "from": { "ctry": "AZE" },
+               "to": { "ctry": "AZE" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BAHAMAS/BHS/5420000",
+               "bill": { "ctry": "BHS" },
+               "from": { "ctry": "BHS" },
+               "to": { "ctry": "BHS" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BAHRAIN/BHR/5450000",
+               "bill": { "ctry": "BHR" },
+               "from": { "ctry": "BHR" },
+               "to": { "ctry": "BHR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BARBADOS/BRB/4481700",
+               "bill": { "ctry": "BRB" },
+               "from": { "ctry": "BRB" },
+               "to": { "ctry": "BRB" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BELGIUM/BEL/4481800",
+               "bill": { "ctry": "BEL" },
+               "from": { "ctry": "BEL" },
+               "to": { "ctry": "BEL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BELIZE/BLZ/5240000",
+               "bill": { "ctry": "BLZ" },
+               "from": { "ctry": "BLZ" },
+               "to": { "ctry": "BLZ" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BERMUDA/BMU/5180000",
+               "bill": { "ctry": "BMU" },
+               "from": { "ctry": "BMU" },
+               "to": { "ctry": "BMU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BOLIVIA/BOL/4481900",
+               "bill": { "ctry": "BOL" },
+               "from": { "ctry": "BOL" },
+               "to": { "ctry": "BOL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BOSNIA AND HERZEGOVINA/BIH/5380000",
+               "bill": { "ctry": "BIH" },
+               "from": { "ctry": "BIH" },
+               "to": { "ctry": "BIH" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BRAZIL/BRA/5430000",
+               "bill": { "ctry": "BRA" },
+               "from": { "ctry": "BRA" },
+               "to": { "ctry": "BRA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "BULGARIA/BGR/4482000",
+               "bill": { "ctry": "BGR" },
+               "from": { "ctry": "BGR" },
+               "to": { "ctry": "BGR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CAMBODIA/KHM/4482100",
+               "bill": { "ctry": "KHM" },
+               "from": { "ctry": "KHM" },
+               "to": { "ctry": "KHM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CANADA/CAN/4482200",
+               "bill": { "ctry": "CAN" },
+               "from": { "ctry": "CAN" },
+               "to": { "ctry": "CAN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 10,
+               "serv": 15
+            },
+            {
+               "ref": "CAYMAN ISLANDS/CYM/5520000",
+               "bill": { "ctry": "CYM" },
+               "from": { "ctry": "CYM" },
+               "to": { "ctry": "CYM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CHILE/CHL/5350000",
+               "bill": { "ctry": "CHL" },
+               "from": { "ctry": "CHL" },
+               "to": { "ctry": "CHL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CHINA/CHN/5101400",
+               "bill": { "ctry": "CHN" },
+               "from": { "ctry": "CHN" },
+               "to": { "ctry": "CHN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "HONG KONG/CHN-HK/5101401",
+               "bill": { "ctry": "CHN", "st": "HK" },
+               "from": { "ctry": "CHN", "st": "HK" },
+               "to": { "ctry": "CHN", "st": "HK" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "COLOMBIA/COL/5101500",
+               "bill": { "ctry": "COL" },
+               "from": { "ctry": "COL" },
+               "to": { "ctry": "COL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "COSTA RICA/CRI/5101600",
+               "bill": { "ctry": "CRI" },
+               "from": { "ctry": "CRI" },
+               "to": { "ctry": "CRI" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CROATIA/HRV/5101700",
+               "bill": { "ctry": "HRV" },
+               "from": { "ctry": "HRV" },
+               "to": { "ctry": "HRV" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CURACAO/CUW/5540000",
+               "bill": { "ctry": "CUW" },
+               "from": { "ctry": "CUW" },
+               "to": { "ctry": "CUW" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CYPRUS/CYP/5101800",
+               "bill": { "ctry": "CYP" },
+               "from": { "ctry": "CYP" },
+               "to": { "ctry": "CYP" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "CZECH REPUBLIC/CZE/5101900",
+               "bill": { "ctry": "CZE" },
+               "from": { "ctry": "CZE" },
+               "to": { "ctry": "CZE" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "DENMARK/DNK/5102000",
+               "bill": { "ctry": "DNK" },
+               "from": { "ctry": "DNK" },
+               "to": { "ctry": "DNK" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "DOMINICA/DMA/5270000",
+               "bill": { "ctry": "DMA" },
+               "from": { "ctry": "DMA" },
+               "to": { "ctry": "DMA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "DOMINICAN REPUBLIC/DOM/5280000",
+               "bill": { "ctry": "DOM" },
+               "from": { "ctry": "DOM" },
+               "to": { "ctry": "DOM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ECUADOR/ECU/5102100",
+               "bill": { "ctry": "ECU" },
+               "from": { "ctry": "ECU" },
+               "to": { "ctry": "ECU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "EGYPT/EGY/5410000",
+               "bill": { "ctry": "EGY" },
+               "from": { "ctry": "EGY" },
+               "to": { "ctry": "EGY" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "EL SALVADOR/SLV/5290000",
+               "bill": { "ctry": "SLV" },
+               "from": { "ctry": "SLV" },
+               "to": { "ctry": "SLV" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ESTONIA/EST/5102200",
+               "bill": { "ctry": "EST" },
+               "from": { "ctry": "EST" },
+               "to": { "ctry": "EST" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "FEDERATED STATES OF MICRONESIA/USA-FM/5340002",
+               "bill": { "ctry": "USA", "st": "FM" },
+               "from": { "ctry": "USA", "st": "FM" },
+               "to": { "ctry": "USA", "st": "FM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12            },
+            {
+               "ref": "FIJI/FJI/5105400",
+               "bill": { "ctry": "FJI" },
+               "from": { "ctry": "FJI" },
+               "to": { "ctry": "FJI" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "FINLAND/FIN/5105500",
+               "bill": { "ctry": "FIN" },
+               "from": { "ctry": "FIN" },
+               "to": { "ctry": "FIN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "FRANCE/FRA/5105600",
+               "bill": { "ctry": "FRA" },
+               "from": { "ctry": "FRA" },
+               "to": { "ctry": "FRA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "GERMANY/DEU/5105700",
+               "bill": { "ctry": "DEU" },
+               "from": { "ctry": "DEU" },
+               "to": { "ctry": "DEU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "GHANA/GHA/5105800",
+               "bill": { "ctry": "GHA" },
+               "from": { "ctry": "GHA" },
+               "to": { "ctry": "GHA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "GREECE/GRC/5127400",
+               "bill": { "ctry": "GRC" },
+               "from": { "ctry": "GRC" },
+               "to": { "ctry": "GRC" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "GRENADA/GRD/5300000",
+               "bill": { "ctry": "GRD" },
+               "from": { "ctry": "GRD" },
+               "to": { "ctry": "GRD" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "GUAM/USA-GU/5106100",
+               "bill": { "ctry": "USA", "st": "GU" },
+               "from": { "ctry": "USA", "st": "GU" },
+               "to": { "ctry": "USA", "st": "GU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12            },
+            {
+               "ref": "GUATEMALA/GTM/5310000",
+               "bill": { "ctry": "GTM" },
+               "from": { "ctry": "GTM" },
+               "to": { "ctry": "GTM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "GUYANA/GUY/5320000",
+               "bill": { "ctry": "GUY" },
+               "from": { "ctry": "GUY" },
+               "to": { "ctry": "GUY" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "HONDURAS/HND/5108500",
+               "bill": { "ctry": "HND" },
+               "from": { "ctry": "HND" },
+               "to": { "ctry": "HND" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "HUNGARY/HUN/5108600",
+               "bill": { "ctry": "HUN" },
+               "from": { "ctry": "HUN" },
+               "to": { "ctry": "HUN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ICELAND/ISL/5138400",
+               "bill": { "ctry": "ISL" },
+               "from": { "ctry": "ISL" },
+               "to": { "ctry": "ISL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "INDIA/IND/5148400",
+               "bill": { "ctry": "IND" },
+               "from": { "ctry": "IND" },
+               "to": { "ctry": "IND" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "INDIA PUNJAB/IND-PB/5148421",
+               "bill": { "ctry": "IND", "st": "PB" },
+               "from": { "ctry": "IND", "st": "PB" },
+               "to": { "ctry": "IND", "st": "PB" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 657
+            },
+            {
+               "ref": "INDONESIA/IDN/5108700",
+               "bill": { "ctry": "IDN" },
+               "from": { "ctry": "IDN" },
+               "to": { "ctry": "IDN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "IRELAND/IRL/5108800",
+               "bill": { "ctry": "IRL" },
+               "from": { "ctry": "IRL" },
+               "to": { "ctry": "IRL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ISRAEL/ISR/5370000",
+               "bill": { "ctry": "ISR" },
+               "from": { "ctry": "ISR" },
+               "to": { "ctry": "ISR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ITALY/ITA/5108900",
+               "bill": { "ctry": "ITA" },
+               "from": { "ctry": "ITA" },
+               "to": { "ctry": "ITA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "JAMAICA/JAM/5330000",
+               "bill": { "ctry": "JAM" },
+               "from": { "ctry": "JAM" },
+               "to": { "ctry": "JAM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "JAPAN/JPN/5109000",
+               "bill": { "ctry": "JPN" },
+               "from": { "ctry": "JPN" },
+               "to": { "ctry": "JPN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "KENYA/KEN/5109100",
+               "bill": { "ctry": "KEN" },
+               "from": { "ctry": "KEN" },
+               "to": { "ctry": "KEN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "KUWAIT/KWT/5460000",
+               "bill": { "ctry": "KWT" },
+               "from": { "ctry": "KWT" },
+               "to": { "ctry": "KWT" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "LATVIA/LVA/5109200",
+               "bill": { "ctry": "LVA" },
+               "from": { "ctry": "LVA" },
+               "to": { "ctry": "LVA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "LEBANON/LBN/5390000",
+               "bill": { "ctry": "LBN" },
+               "from": { "ctry": "LBN" },
+               "to": { "ctry": "LBN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "LITHUANIA/LTU/5109300",
+               "bill": { "ctry": "LTU" },
+               "from": { "ctry": "LTU" },
+               "to": { "ctry": "LTU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "LUXEMBOURG/LUX/5109400",
+               "bill": { "ctry": "LUX" },
+               "from": { "ctry": "LUX" },
+               "to": { "ctry": "LUX" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "MALAYSIA/MYS/5210000",
+               "bill": { "ctry": "MYS" },
+               "from": { "ctry": "MYS" },
+               "to": { "ctry": "MYS" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "MARSHALL ISLANDS/USA-MH/5340003",
+               "bill": { "ctry": "USA", "st": "MH" },
+               "from": { "ctry": "USA", "st": "MH" },
+               "to": { "ctry": "USA", "st": "MH" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12            
+			},
+            {
+               "ref": "MAURITIUS/MUS/5113200",
+               "bill": { "ctry": "MUS" },
+               "from": { "ctry": "MUS" },
+               "to": { "ctry": "MUS" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "MEXICO/MEX/5113300",
+               "bill": { "ctry": "MEX" },
+               "from": { "ctry": "MEX" },
+               "to": { "ctry": "MEX" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "MOROCCO/MAR/5113400",
+               "bill": { "ctry": "MAR" },
+               "from": { "ctry": "MAR" },
+               "to": { "ctry": "MAR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "NAMIBIA/NAM/5113500",
+               "bill": { "ctry": "NAM" },
+               "from": { "ctry": "NAM" },
+               "to": { "ctry": "NAM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "NETHERLANDS/NLD/5113600",
+               "bill": { "ctry": "NLD" },
+               "from": { "ctry": "NLD" },
+               "to": { "ctry": "NLD" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "NEW ZEALAND/NZL/5113700",
+               "bill": { "ctry": "NZL" },
+               "from": { "ctry": "NZL" },
+               "to": { "ctry": "NZL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "NICARAGUA/NIC/5340000",
+               "bill": { "ctry": "NIC" },
+               "from": { "ctry": "NIC" },
+               "to": { "ctry": "NIC" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "NIGERIA/NGA/5158400",
+               "bill": { "ctry": "NGA" },
+               "from": { "ctry": "NGA" },
+               "to": { "ctry": "NGA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "NORTHERN MARIANA ISLANDS/USA-MP/5340004",
+               "bill": { "ctry": "USA", "st": "MP" },
+               "from": { "ctry": "USA", "st": "MP" },
+               "to": { "ctry": "USA", "st": "MP" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12
+			},
+            {
+               "ref": "NORWAY/NOR/5114500",
+               "bill": { "ctry": "NOR" },
+               "from": { "ctry": "NOR" },
+               "to": { "ctry": "NOR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "OMAN/OMN/5470000",
+               "bill": { "ctry": "OMN" },
+               "from": { "ctry": "OMN" },
+               "to": { "ctry": "OMN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "PALAU/USA-PW/5340005",
+               "bill": { "ctry": "USA", "st": "PW" },
+               "from": { "ctry": "USA", "st": "PW" },
+               "to": { "ctry": "USA", "st": "PW" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12
+            },
+            {
+               "ref": "PANAMA/PAN/5115300",
+               "bill": { "ctry": "PAN" },
+               "from": { "ctry": "PAN" },
+               "to": { "ctry": "PAN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "PAPUA NEW GUINEA/PNG/5115400",
+               "bill": { "ctry": "PNG" },
+               "from": { "ctry": "PNG" },
+               "to": { "ctry": "PNG" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "PARAGUAY/PRY/5530000",
+               "bill": { "ctry": "PRY" },
+               "from": { "ctry": "PRY" },
+               "to": { "ctry": "PRY" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "PERU/PER/5115500",
+               "bill": { "ctry": "PER" },
+               "from": { "ctry": "PER" },
+               "to": { "ctry": "PER" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "PHILIPPINES/PHL/5360000",
+               "bill": { "ctry": "PHL" },
+               "from": { "ctry": "PHL" },
+               "to": { "ctry": "PHL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "POLAND/POL/5115600",
+               "bill": { "ctry": "POL" },
+               "from": { "ctry": "POL" },
+               "to": { "ctry": "POL" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "PORTUGAL/PRT/5115700",
+               "bill": { "ctry": "PRT" },
+               "from": { "ctry": "PRT" },
+               "to": { "ctry": "PRT" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "PUERTO RICO/USA-PR/5115900",
+               "bill": { "ctry": "USA", "st": "PR" },
+               "from": { "ctry": "USA", "st": "PR" },
+               "to": { "ctry": "USA", "st": "PR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12
+            },
+            {
+               "ref": "QATAR/QAT/5480000",
+               "bill": { "ctry": "QAT" },
+               "from": { "ctry": "QAT" },
+               "to": { "ctry": "QAT" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "REPUBLIC OF MALTA/MLT/5200000",
+               "bill": { "ctry": "MLT" },
+               "from": { "ctry": "MLT" },
+               "to": { "ctry": "MLT" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "REUNION ISLAND/REU/5220000",
+               "bill": { "ctry": "REU" },
+               "from": { "ctry": "REU" },
+               "to": { "ctry": "REU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ROMANIA/ROU/5123900",
+               "bill": { "ctry": "ROU" },
+               "from": { "ctry": "ROU" },
+               "to": { "ctry": "ROU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "RUSSIA/RUS/5124000",
+               "bill": { "ctry": "RUS" },
+               "from": { "ctry": "RUS" },
+               "to": { "ctry": "RUS" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SAUDI ARABIA/SAU/5490000",
+               "bill": { "ctry": "SAU" },
+               "from": { "ctry": "SAU" },
+               "to": { "ctry": "SAU" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SENEGAL/SEN/5440000",
+               "bill": { "ctry": "SEN" },
+               "from": { "ctry": "SEN" },
+               "to": { "ctry": "SEN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SERBIA/SRB/5400000",
+               "bill": { "ctry": "SRB" },
+               "from": { "ctry": "SRB" },
+               "to": { "ctry": "SRB" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SINGAPORE/SGP/5124100",
+               "bill": { "ctry": "SGP" },
+               "from": { "ctry": "SGP" },
+               "to": { "ctry": "SGP" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SLOVAK REPUBLIC/SVK/5178400",
+               "bill": { "ctry": "SVK" },
+               "from": { "ctry": "SVK" },
+               "to": { "ctry": "SVK" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SLOVENIA/SVN/5124200",
+               "bill": { "ctry": "SVN" },
+               "from": { "ctry": "SVN" },
+               "to": { "ctry": "SVN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SOUTH AFRICA/ZAF/5124300",
+               "bill": { "ctry": "ZAF" },
+               "from": { "ctry": "ZAF" },
+               "to": { "ctry": "ZAF" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SOUTH KOREA/KOR/5168400",
+               "bill": { "ctry": "KOR" },
+               "from": { "ctry": "KOR" },
+               "to": { "ctry": "KOR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SPAIN/ESP/5124400",
+               "bill": { "ctry": "ESP" },
+               "from": { "ctry": "ESP" },
+               "to": { "ctry": "ESP" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ST KITTS AND NEVIS/KNA/5230000",
+               "bill": { "ctry": "KNA" },
+               "from": { "ctry": "KNA" },
+               "to": { "ctry": "KNA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ST VINCENT/VCT/5260000",
+               "bill": { "ctry": "VCT" },
+               "from": { "ctry": "VCT" },
+               "to": { "ctry": "VCT" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SWEDEN/SWE/5124500",
+               "bill": { "ctry": "SWE" },
+               "from": { "ctry": "SWE" },
+               "to": { "ctry": "SWE" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "SWITZERLAND/CHE/5124600",
+               "bill": { "ctry": "CHE" },
+               "from": { "ctry": "CHE" },
+               "to": { "ctry": "CHE" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "TAIWAN/TWN/5124700",
+               "bill": { "ctry": "TWN" },
+               "from": { "ctry": "TWN" },
+               "to": { "ctry": "TWN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "TANZANIA/TZA/5124800",
+               "bill": { "ctry": "TZA" },
+               "from": { "ctry": "TZA" },
+               "to": { "ctry": "TZA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "THAILAND/THA/5124900",
+               "bill": { "ctry": "THA" },
+               "from": { "ctry": "THA" },
+               "to": { "ctry": "THA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "TRINIDAD AND TOBAGO/TTO/5125000",
+               "bill": { "ctry": "TTO" },
+               "from": { "ctry": "TTO" },
+               "to": { "ctry": "TTO" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "TURKEY/TUR/5125100",
+               "bill": { "ctry": "TUR" },
+               "from": { "ctry": "TUR" },
+               "to": { "ctry": "TUR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "UGANDA/UGA/5125200",
+               "bill": { "ctry": "UGA" },
+               "from": { "ctry": "UGA" },
+               "to": { "ctry": "UGA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "UKRAINE/UKR/5125300",
+               "bill": { "ctry": "UKR" },
+               "from": { "ctry": "UKR" },
+               "to": { "ctry": "UKR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "UNITED ARAB EMIRATES/ARE/5500000",
+               "bill": { "ctry": "ARE" },
+               "from": { "ctry": "ARE" },
+               "to": { "ctry": "ARE" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "UNITED KINGDOM/GBR/5125400",
+               "bill": { "ctry": "GBR" },
+               "from": { "ctry": "GBR" },
+               "to": { "ctry": "GBR" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "UNITED STATES OF AMERICA/USA/0",
+               "bill": { "ctry": "USA" },
+               "from": { "ctry": "USA" },
+               "to": { "ctry": "USA" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12
+            },
+            {
+               "ref": "UNSUPPORTED COUNTRY/UNS/5190000",
+               "bill": { "ctry": "UNS" },
+               "from": { "ctry": "UNS" },
+               "to": { "ctry": "UNS" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "URUGUAY/URY/5125500",
+               "bill": { "ctry": "URY" },
+               "from": { "ctry": "URY" },
+               "to": { "ctry": "URY" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "US VIRGIN ISLANDS/USA-VI/5340006",
+               "bill": { "ctry": "USA", "st": "VI" },
+               "from": { "ctry": "USA", "st": "VI" },
+               "to": { "ctry": "USA", "st": "VI" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 1,
+               "serv": 12
+            },
+            {
+               "ref": "VENEZUELA/VEN/5127200",
+               "bill": { "ctry": "VEN" },
+               "from": { "ctry": "VEN" },
+               "to": { "ctry": "VEN" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "VIETNAM/VNM/5127300",
+               "bill": { "ctry": "VNM" },
+               "from": { "ctry": "VNM" },
+               "to": { "ctry": "VNM" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+            {
+               "ref": "ZAMBIA/ZMB/5105900",
+               "bill": { "ctry": "ZMB" },
+               "from": { "ctry": "ZMB" },
+               "to": { "ctry": "ZMB" },
+               "chg": 100,
+               "sale": 1,
+               "tran": 15,
+               "serv": 7
+            },
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": false
+      }
+   ]
+}

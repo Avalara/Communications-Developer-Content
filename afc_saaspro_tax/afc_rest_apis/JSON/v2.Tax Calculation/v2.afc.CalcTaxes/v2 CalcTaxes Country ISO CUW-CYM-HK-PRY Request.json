@@ -1,0 +1,149 @@
+{
+  "cmpn": {
+    "bscl": 0,
+    "svcl": 0,
+    "fclt": false,
+    "frch": false,
+    "reg": false
+  },
+  "inv": [
+    {
+      "doc": "TEST-COUNTRY CURACAO INVOICE 2018.11.15:12.02 AVA",
+      "cmmt": false,
+      "bill": {
+        "ctry": "CUW",
+        "int": true,
+        "geo": false,
+        "city": "Some City",
+        "st": "ZZ",
+        "zip": "99999"
+      },
+      "cust": 0,
+      "lfln": false,
+      "date": "2018-11-15T12:00:00Z",
+      "itms": [
+        {
+          "ref": "CUW Line Item 001 - Telephony/Service",
+          "chg": 100,
+          "sale": 1,
+          "tran": 15,
+          "serv": 7
+        }
+      ],
+      "invm": true,
+      "dtl": true,
+      "summ": true,
+      "opt": [
+        {
+          "key": "1",
+          "val": "Curacao CUW Sample Line Items Invoice ABC-ZZZ"
+        }
+      ]
+    }
+  ],
+  "inv": [
+    {
+      "doc": "TEST-COUNTRY CAYMAN ISLANDS INVOICE 2018.11.15:12.02 AVA",
+      "cmmt": false,
+      "bill": {
+        "ctry": "CYM",
+        "int": true,
+        "geo": false,
+        "city": "Some City",
+        "st": "ZZ",
+        "zip": "99999"
+      },
+      "cust": 0,
+      "lfln": false,
+      "date": "2018-11-15T12:00:00Z",
+      "itms": [
+        {
+          "ref": "CYM Line Item 001 - Telephony/Service",
+          "chg": 100,
+          "sale": 1,
+          "tran": 15,
+          "serv": 7
+        }
+      ],
+      "invm": true,
+      "dtl": true,
+      "summ": true,
+      "opt": [
+        {
+          "key": "1",
+          "val": "Cayman Islands CYM Sample Line Items Invoice ABC-ZZZ"
+        }
+      ]
+    }
+  ],
+  "inv": [
+    {
+      "doc": "TEST-COUNTRY CHINA-HONG KING INVOICE 2018.11.15:12.02 AVA",
+      "cmmt": false,
+      "bill": {
+        "ctry": "CHN",
+        "int": true,
+        "geo": false,
+        "city": "Some City",
+        "st": "HK",
+        "zip": "99999"
+      },
+      "cust": 0,
+      "lfln": false,
+      "date": "2018-11-15T12:00:00Z",
+      "itms": [
+        {
+          "ref": "HK Line Item 001 - Telephony/Service",
+          "chg": 100,
+          "sale": 1,
+          "tran": 15,
+          "serv": 7
+        }
+      ],
+      "invm": true,
+      "dtl": true,
+      "summ": true,
+      "opt": [
+        {
+          "key": "1",
+          "val": "China-Hong Kong CHN/HK Sample Line Items Invoice ABC-ZZZ"
+        }
+      ]
+    }
+  ],
+  "inv": [
+    {
+      "doc": "TEST-COUNTRY PARAGUAY INVOICE 2018.11.15:12.02 AVA",
+      "cmmt": false,
+      "bill": {
+        "ctry": "PRY",
+        "int": true,
+        "geo": false,
+        "city": "Some City",
+        "st": "ZZ",
+        "zip": "99999"
+      },
+      "cust": 0,
+      "lfln": false,
+      "date": "2018-11-15T12:00:00Z",
+      "itms": [
+        {
+          "ref": "PRY Line Item 001 - Telephony/Service",
+          "chg": 100,
+          "sale": 1,
+          "tran": 15,
+          "serv": 7
+        }
+      ],
+      "invm": true,
+      "dtl": true,
+      "summ": true,
+      "opt": [
+        {
+          "key": "1",
+          "val": "Paraguay PRY Sample Line Items Invoice ABC-ZZZ"
+        }
+      ]
+    }
+  ]
+ }

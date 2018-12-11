@@ -8066,7 +8066,7 @@
     "TransactionType": 57,
     "ServiceType": 633,
     "MarketType": 4,
-    "InterfaceType": 2,
+    "InterfaceType": 3,
     "InputType": 1,
     "IsBundle": false,
     "TransactionDescription": "Digital Goods",
@@ -8666,5 +8666,16 @@
     "TransactionDescription": "BUNDLE_PKG_25000",
     "ServiceDescription": "BUNDLE_ID_25001",
     "TSPairDescription": "Cellular 13 Usage 10 and Access Number 98"
+  },
+  {
+    "TransactionType": 25000,
+    "ServiceType": 25002,
+    "MarketType": 0,
+    "InterfaceType": 0,
+    "InputType": 0,
+    "IsBundle": true,
+    "TransactionDescription": "BUNDLE_PKG_25000",
+    "ServiceDescription": "BUNDLE_ID_25002",
+    "TSPairDescription": "VoIP Access Charge and Lines Bundle"
   }
 ]

@@ -1,0 +1,1313 @@
+{
+   "cmpn": {
+      "bscl": 0,
+      "svcl": 0,
+      "fclt": false,
+      "frch": false,
+      "reg": false
+   },
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Alaska",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Anchorage",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Anchorage",
+            "st": "AK",
+            "zip": "99501"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Alaska Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Alaska Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Alaska Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Arizona",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Maricopa",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Phoenix",
+            "st": "AZ",
+            "zip": "85001"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Arizona Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Arizona Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Arizona Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Arkansas",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Pulaski",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Little Rock",
+            "st": "AR",
+            "zip": "72201"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Arkansas Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Arkansas Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Arkansas Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 California",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Los Angeles",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Los Angeles",
+            "st": "CA",
+            "zip": "90001"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "California Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "California Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "California Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Kansas",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Johnson",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Overland Park",
+            "st": "KS",
+            "zip": "66202"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Kansas Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Kansas Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Kansas Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Maine",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Knox",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Rockport",
+            "st": "ME",
+            "zip": "04856"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Maine Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Maine Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Maine Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Missouri",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Clay",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Kansas City",
+            "st": "MO",
+            "zip": "64116"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Missouri Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Missouri Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Missouri Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Nevada",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Clark",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Las Vegas",
+            "st": "NV",
+            "zip": "89044"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Nevada Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Nevada Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Nevada Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 New Mexico",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Santa Fe",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Santa Fe",
+            "st": "NM",
+            "zip": "87501"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "New Mexico Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "New Mexico Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "New Mexico Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Oklahoma",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Carter",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Gene Autry",
+            "st": "OK",
+            "zip": "73436"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Oklahoma Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Oklahoma Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Oklahoma Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Washington D.C.",
+         "cmmt": false,
+         "bill": {
+            "cnty": "District Of Columbia",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Washington",
+            "st": "DC",
+            "zip": "20001"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Washington D.C. Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Washington D.C. Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Washington D.C. Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Wisconsin",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Brown",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Green Bay",
+            "st": "WI",
+            "zip": "54173"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Wisconsin Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Wisconsin Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Wisconsin Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "inv": [
+      {
+         "doc": "TEST-VOIP RATE OVERRIDE INVOICE 2018.11.15:12.00 Wyoming",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Laramie",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Cheyenne",
+            "st": "WY",
+            "zip": "82001"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Wyoming Line Item 001 - VoIP/Intrastate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 50,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Wyoming Line Item 002 - VoIP/Interstate Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 49,
+               "dbt": false,
+               "adj": false
+            },
+            {
+               "ref": "Wyoming Line Item 003 - VoIP/International Usage",
+               "chg": 100,
+               "line": 0,
+               "sale": 1,
+               "incl": false,
+               "tran": 19,
+               "serv": 51,
+               "dbt": false,
+               "adj": false
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true
+      }
+   ],
+   "ovr": [
+      {
+         "loc": {
+            "ctry": "USA"
+         },
+         "scp": 0,
+         "tid": 162,
+         "lvl": 0,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA"
+         },
+         "scp": 0,
+         "tid": 163,
+         "lvl": 0,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.195,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "AK"
+         },
+         "scp": 1,
+         "tid": 165,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "AK"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.19,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "AZ"
+         },
+         "scp": 1,
+         "tid": 13,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "AZ"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.003418,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "AR"
+         },
+         "scp": 1,
+         "tid": 13,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "AR"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0725,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 450,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 288,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0035,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 453,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 293,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0056,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 161,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 239,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0075,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 217,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 291,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.005,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 454,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "CA"
+         },
+         "scp": 1,
+         "tid": 290,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0475,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "KS"
+         },
+         "scp": 1,
+         "tid": 165,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "KS"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.075,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "ME"
+         },
+         "scp": 1,
+         "tid": 13,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "ME"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.021,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "MO"
+         },
+         "scp": 1,
+         "tid": 141,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "MO"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.001,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "NV"
+         },
+         "scp": 1,
+         "tid": 165,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "NV"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.001545,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "NM"
+         },
+         "scp": 1,
+         "tid": 165,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "NM"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0606,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "OK"
+         },
+         "scp": 1,
+         "tid": 165,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "OK"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.012,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "DC"
+         },
+         "scp": 1,
+         "tid": 165,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "DC"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.000679,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "WI"
+         },
+         "scp": 1,
+         "tid": 271,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "WI"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.034171,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "WY"
+         },
+         "scp": 1,
+         "tid": 426,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.0,
+               "max": 2147483647
+            }
+         ]
+      },
+      {
+         "loc": {
+            "ctry": "USA",
+            "st": "WY"
+         },
+         "scp": 1,
+         "tid": 282,
+         "lvl": 1,
+         "lvlExm": true,
+         "brkt": [
+            {
+               "rate": 0.017,
+               "max": 2147483647
+            }
+         ]
+      }
+   ]
+}

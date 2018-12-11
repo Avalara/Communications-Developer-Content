@@ -1,0 +1,81 @@
+{
+    "cmpn": {
+        "bscl": 0,
+        "svcl": 0,
+        "fclt": false,
+        "frch": false,
+        "reg": false
+    },
+    "inv": [
+        {
+            "doc": "TEST-LINE ITEM OVERRIDE INVOICE 2018-10-15 AVA",
+            "cmmt": false,
+            "bill": {
+                "cnty": "San Francisco",
+                "ctry": "USA",
+                "int": true,
+                "geo": false,
+                "city": "San Francisco",
+                "st": "CA",
+                "zip": "94102"
+            },
+            "cust": 0,
+            "lfln": false,
+            "date": "2018-10-15T12:00:00Z",
+            "itms": [
+                {
+                    "ref": "Line Item 001 - VoIP/Access Charge",
+                    "chg": 100,
+                    "line": 0,
+                    "sale": 1,
+                    "incl": false,
+                    "tran": 19,
+                    "serv": 6,
+                    "dbt": false,
+                    "adj": false
+                },
+                {
+                    "ref": "Line Item 002 - Internet/Access Charge",
+                    "bill": {
+                        "cnty": "Fort Bend",
+                        "ctry": "USA",
+                        "int": true,
+                        "geo": false,
+                        "city": "Houston",
+                        "st": "TX",
+                        "zip": "77053"
+                    },
+                    "chg": 50,
+                    "line": 0,
+                    "sale": 1,
+                    "incl": false,
+                    "tran": 5,
+                    "serv": 6,
+                    "dbt": false,
+                    "adj": false
+                },
+                {
+                    "ref": "Line Item 003 - Cable/Access Charge",
+                    "date": "2017-01-01T12:00:00Z", 
+                    "chg": 25,
+                    "line": 0,
+                    "sale": 1,
+                    "incl": false,
+                    "tran": 16,
+                    "serv": 6,
+                    "dbt": false,
+                    "adj": false
+                }
+            ],
+            "invm": true,
+            "dtl": true,
+            "summ": true,
+            "opt": [
+                {
+                    "key": "1",
+                    "val": "Line Item Override Sample Invoice ABC-ZZZ"
+                }
+            ]
+        }
+    ]
+}
