@@ -1,0 +1,68 @@
+{
+   "cmpn": {
+      "bscl": 0,
+      "svcl": 0,
+      "fclt": false,
+      "frch": false,
+      "reg": false
+   },
+   "inv": [
+      {
+         "doc": "TEST-VOIP P2P INVOICE 2018.11.15:12.02 AVA",
+         "cmmt": false,
+         "bill": {
+            "cnty": "Cook",
+            "ctry": "USA",
+            "int": true,
+            "geo": false,
+            "city": "Chicago Mpea",
+            "st": "IL",
+            "zip": "60601"
+         },
+         "cust": 0,
+         "lfln": false,
+         "date": "2018-11-15T12:00:00Z",
+         "itms": [
+            {
+               "ref": "Line Item 001 - VoIP/Access Charge",
+               "from": {
+                  "cnty": "Cook",
+                  "ctry": "USA",
+                  "int": true,
+                  "geo": false,
+                  "city": "Chicago Mpea",
+                  "st": "IL",
+                  "zip": "60601"
+               },
+               "to": {
+                  "cnty": "Hudson",
+                  "ctry": "USA",
+                  "int": true,
+                  "geo": false,
+                  "city": "Secaucus",
+                  "st": "NJ",
+                  "zip": "07096"
+               },
+               "chg": 100,
+               "line": 1,
+               "sale": 1,
+               "incl": true,
+               "tran": 1,
+               "serv": 4,
+               "dbt": false,
+               "adj": false,
+               "plsp": 0.50
+            }
+         ],
+         "invm": true,
+         "dtl": true,
+         "summ": true,
+         "opt": [
+            {
+               "key": "1",
+               "val": "VoIP Sample P2P Private Line Invoice ABC-ZZZ"
+            }
+         ]
+      }
+   ]
+}
