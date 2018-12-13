@@ -23,11 +23,11 @@ The AFC SaaS Pro Geo service provides APIs to geo code an address for address va
 * **sample\_code** - Sample files and scripts
 
 ## **Useful Developer REST Links**
-** Online Documentation** - Useful links for more detailed information and help pages
+**Online Documentation** - Useful links for more detailed information and help pages
 
-[Communications Help Center] (https://help.avalara.com/Avalara_for_Communications)
+[Communications Help Center](https://help.avalara.com/Avalara_for_Communications)
 
-[Communications Developer Rest v2 Guide] (https://developer.avalara.com/communications/dev-guide_rest_v2/)
+[Communications Developer Rest v2 Guide](https://developer.avalara.com/communications/dev-guide_rest_v2/)
 
 **Swagger Page** – Real time request/response to REST Taxation Service
 
