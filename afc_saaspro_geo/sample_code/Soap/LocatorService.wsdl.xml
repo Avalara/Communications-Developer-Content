@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s0="http://xml.billsoft.com/2006/08/ezgeo" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="http://xml.billsoft.com/2006/08/ezgeo" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://xml.billsoft.com/2006/08/ezgeo">
+      <s:element name="GetServerTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServerTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetServerTimeResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeocodeAddress">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addressInfo" type="s0:GeocodeAddressRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="GeocodeAddressRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="GrammarRule" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MinimumScore" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaxCount" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Options" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CassCertify" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GeocodeAddressResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GeocodeAddressResult" type="s0:AddressLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="AddressLocation">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UnderlyingFipsCode" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIPSCodeString" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FipsPlaceName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrimaryJurisdictionName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="PrimaryJurisdictionPcode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SpecialTaxDistrictName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SpecialTaxDistrictPcode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TaxJurisdictionName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NetworkID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetNumber" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="StreetName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="County" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Country" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCodeExtenstion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TimeZone" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Score" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Latitude" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Longitude" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CensusTract" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CensusBlockGroup" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PCode" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="FIPSCode" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Unincorporated" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="CassAddress" type="s0:CassAddress" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CassAddress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s0:ArrayOfString" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressLine" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CityStateZip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="City" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="State" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Zip4" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddressQualityFlags" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CarrierRoute" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountyCode" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeliveryPointValidation" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EnhancedLineOfTravel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Reliability" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="USPSBarCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GeocodeAllMatches">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="addressInfo" type="s0:GeocodeAddressRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GeocodeAllMatchesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="matches" type="s0:ArrayOfAddressLocation" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAddressLocation">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AddressLocation" nillable="true" type="s0:AddressLocation" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </types>
+  <message name="GetServerTimeSoapIn">
+    <part name="parameters" element="s0:GetServerTime" />
+  </message>
+  <message name="GetServerTimeSoapOut">
+    <part name="parameters" element="s0:GetServerTimeResponse" />
+  </message>
+  <message name="GeocodeAddressSoapIn">
+    <part name="parameters" element="s0:GeocodeAddress" />
+  </message>
+  <message name="GeocodeAddressSoapOut">
+    <part name="parameters" element="s0:GeocodeAddressResponse" />
+  </message>
+  <message name="GeocodeAllMatchesSoapIn">
+    <part name="parameters" element="s0:GeocodeAllMatches" />
+  </message>
+  <message name="GeocodeAllMatchesSoapOut">
+    <part name="parameters" element="s0:GeocodeAllMatchesResponse" />
+  </message>
+  <portType name="LocatorServiceSoap">
+    <operation name="GetServerTime">
+      <input message="s0:GetServerTimeSoapIn" />
+      <output message="s0:GetServerTimeSoapOut" />
+    </operation>
+    <operation name="GeocodeAddress">
+      <input message="s0:GeocodeAddressSoapIn" />
+      <output message="s0:GeocodeAddressSoapOut" />
+    </operation>
+    <operation name="GeocodeAllMatches">
+      <input message="s0:GeocodeAllMatchesSoapIn" />
+      <output message="s0:GeocodeAllMatchesSoapOut" />
+    </operation>
+  </portType>
+  <binding name="LocatorServiceSoap" type="s0:LocatorServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetServerTime">
+      <soap:operation soapAction="http://xml.billsoft.com/2006/08/ezgeo/GetServerTime" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GeocodeAddress">
+      <soap:operation soapAction="http://xml.billsoft.com/2006/08/ezgeo/GeocodeAddress" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="GeocodeAllMatches">
+      <soap:operation soapAction="http://xml.billsoft.com/2006/08/ezgeo/GeocodeAllMatches" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="LocatorService">
+    <port name="LocatorServiceSoap" binding="s0:LocatorServiceSoap">
+      <soap:address location="https://ezgeoasp.billsoft.com/2008/01/EZGeo/LocatorService.asmx" />
+    </port>
+  </service>
+</definitions>

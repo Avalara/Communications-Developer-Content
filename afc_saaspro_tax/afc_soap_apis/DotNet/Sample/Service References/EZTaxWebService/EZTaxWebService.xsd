@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/EZTaxWebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Transaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdjustmentMethod" type="xs:int" />
+      <xs:element minOccurs="0" name="BillToAddress" nillable="true" type="tns:ZipAddress" />
+      <xs:element minOccurs="0" name="BillToFipsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BillToNpaNxx" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="BillToPCode" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="BusinessClass" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Charge" type="xs:double" />
+      <xs:element minOccurs="0" name="CompanyIdentifier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountyExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CountyPCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="CustomerNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Debit" type="xs:boolean" />
+      <xs:element minOccurs="0" name="DiscountType" type="xs:int" />
+      <xs:element minOccurs="0" name="ExemptionType" type="xs:int" />
+      <xs:element minOccurs="0" name="Exemptions" nillable="true" type="tns:ArrayOfTaxExemption" />
+      <xs:element minOccurs="0" name="FacilitiesBased" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FederalExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FederalPCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Franchise" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Incorporated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="InvoiceNumber" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Lifeline" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Lines" type="xs:int" />
+      <xs:element minOccurs="0" name="LocalExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LocalPCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Locations" type="xs:int" />
+      <xs:element minOccurs="0" name="Minutes" type="xs:double" />
+      <xs:element minOccurs="0" name="Optional" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional10" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional4" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional5" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional6" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional7" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional8" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional9" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="OptionalAlpha1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginationAddress" nillable="true" type="tns:ZipAddress" />
+      <xs:element minOccurs="0" name="OriginationFipsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OriginationNpaNxx" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="OriginationPCode" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Regulated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Sale" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ServiceClass" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ServiceLevelNumber" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="ServiceType" type="xs:short" />
+      <xs:element minOccurs="0" name="StateExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StatePCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="TerminationAddress" nillable="true" type="tns:ZipAddress" />
+      <xs:element minOccurs="0" name="TerminationFipsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TerminationNpaNxx" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="TerminationPCode" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="TransactionType" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Transaction" nillable="true" type="tns:Transaction" />
+  <xs:complexType name="ZipAddress">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryISO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Locality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipP4" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ZipAddress" nillable="true" type="tns:ZipAddress" />
+  <xs:complexType name="ArrayOfTaxExemption">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxExemption" nillable="true" type="tns:TaxExemption" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxExemption" nillable="true" type="tns:ArrayOfTaxExemption" />
+  <xs:complexType name="TaxExemption">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="TaxLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxType" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxExemption" nillable="true" type="tns:TaxExemption" />
+  <xs:complexType name="ArrayOfTaxData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TaxData" nillable="true" type="tns:TaxData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTaxData" nillable="true" type="tns:ArrayOfTaxData" />
+  <xs:complexType name="TaxData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdjustmentType" type="xs:int" />
+      <xs:element minOccurs="0" name="Billable" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CalculationType" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" type="xs:short" />
+      <xs:element minOccurs="0" name="CompanyIdentifier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Compliance" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CustomerNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExemptSaleAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="ExemptionType" type="xs:int" />
+      <xs:element minOccurs="0" name="InvoiceNumber" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Lines" type="xs:int" />
+      <xs:element minOccurs="0" name="Locations" type="xs:int" />
+      <xs:element minOccurs="0" name="Minutes" type="xs:double" />
+      <xs:element minOccurs="0" name="Optional" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional10" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional4" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional5" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional6" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional7" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional8" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional9" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="OptionalAlpha1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Rate" type="xs:double" />
+      <xs:element minOccurs="0" name="RefundUncollect" type="xs:double" />
+      <xs:element minOccurs="0" name="ServiceLevelNumber" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Surcharge" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TaxAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="TaxLevel" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxType" type="xs:short" />
+      <xs:element minOccurs="0" name="TaxableMeasure" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TaxData" nillable="true" type="tns:TaxData" />
+  <xs:complexType name="SalesUseTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdjustmentMethod" type="xs:int" />
+      <xs:element minOccurs="0" name="Charge" type="xs:double" />
+      <xs:element minOccurs="0" name="CompanyIdentifier" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CountyExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="CountyPCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="CustomerNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CustomerType" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ExemptionType" type="xs:int" />
+      <xs:element minOccurs="0" name="Exemptions" nillable="true" type="tns:ArrayOfTaxExemption" />
+      <xs:element minOccurs="0" name="FOB" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="FederalExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="FederalPCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Incorporated" type="xs:boolean" />
+      <xs:element minOccurs="0" name="InvoiceNumber" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="LocalExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="LocalPCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional10" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional4" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional5" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional6" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional7" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional8" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Optional9" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="OptionalAlpha1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sale" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SaleAttributes" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="ServiceType" type="xs:short" />
+      <xs:element minOccurs="0" name="ShipFromAddress" nillable="true" type="tns:ZipAddress" />
+      <xs:element minOccurs="0" name="ShipFromFipsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipFromPCode" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="ShipToAddress" nillable="true" type="tns:ZipAddress" />
+      <xs:element minOccurs="0" name="ShipToFipsCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShipToPCode" nillable="true" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="StateExempt" type="xs:boolean" />
+      <xs:element minOccurs="0" name="StatePCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="TransactionType" type="xs:short" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SalesUseTransaction" nillable="true" type="tns:SalesUseTransaction" />
+  <xs:complexType name="MaintAgreementAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgreementType" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemType" type="xs:int" />
+      <xs:element minOccurs="0" name="SellerRequired" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TimeOfSale" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MaintAgreementAttributes" nillable="true" type="tns:MaintAgreementAttributes" />
+  <xs:complexType name="FreightAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CommonCarrier" type="xs:boolean" />
+      <xs:element minOccurs="0" name="PaidToSeller" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SellerReqShipping" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FreightAttributes" nillable="true" type="tns:FreightAttributes" />
+  <xs:complexType name="DepositAttributes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="DepositAttributes" nillable="true" type="tns:DepositAttributes" />
+  <xs:complexType name="DiscountAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DiscountType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DiscountAttributes" nillable="true" type="tns:DiscountAttributes" />
+  <xs:complexType name="ExtWarrantyAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgreementType" type="xs:int" />
+      <xs:element minOccurs="0" name="SellerRequired" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TimeOfSale" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ExtWarrantyAttributes" nillable="true" type="tns:ExtWarrantyAttributes" />
+  <xs:complexType name="DefaultAttributes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="DefaultAttributes" nillable="true" type="tns:DefaultAttributes" />
+  <xs:complexType name="DemurrageAttributes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="DemurrageAttributes" nillable="true" type="tns:DemurrageAttributes" />
+  <xs:complexType name="TradeInAttributes">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:element name="TradeInAttributes" nillable="true" type="tns:TradeInAttributes" />
+  <xs:complexType name="FinanceAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FinanceType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FinanceAttributes" nillable="true" type="tns:FinanceAttributes" />
+  <xs:complexType name="InstallationAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="InstallationType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="InstallationAttributes" nillable="true" type="tns:InstallationAttributes" />
+  <xs:complexType name="ShipAndHandlingAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="SellerReqShipping" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ShipAndHandlingAttributes" nillable="true" type="tns:ShipAndHandlingAttributes" />
+  <xs:complexType name="SoftwareMaintAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgreementType" type="xs:int" />
+      <xs:element minOccurs="0" name="SellerRequired" type="xs:boolean" />
+      <xs:element minOccurs="0" name="UpdateType" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SoftwareMaintAttributes" nillable="true" type="tns:SoftwareMaintAttributes" />
+  <xs:complexType name="ServiceContractAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgreementType" type="xs:int" />
+      <xs:element minOccurs="0" name="ItemType" type="xs:int" />
+      <xs:element minOccurs="0" name="SellerRequired" type="xs:boolean" />
+      <xs:element minOccurs="0" name="TimeOfSale" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceContractAttributes" nillable="true" type="tns:ServiceContractAttributes" />
+  <xs:complexType name="FactoryWarrantyAttributes">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AgreementType" type="xs:int" />
+      <xs:element minOccurs="0" name="SellerRequired" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FactoryWarrantyAttributes" nillable="true" type="tns:FactoryWarrantyAttributes" />
+  <xs:complexType name="ArrayOfNexus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Nexus" nillable="true" type="tns:Nexus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfNexus" nillable="true" type="tns:ArrayOfNexus" />
+  <xs:complexType name="Nexus">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HasNexus" type="xs:boolean" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Nexus" nillable="true" type="tns:Nexus" />
+  <xs:complexType name="ArrayOfExclusion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Exclusion" nillable="true" type="tns:Exclusion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfExclusion" nillable="true" type="tns:ArrayOfExclusion" />
+  <xs:complexType name="Exclusion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryISO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExclusionOn" type="xs:boolean" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Exclusion" nillable="true" type="tns:Exclusion" />
+  <xs:complexType name="ArrayOfSalesUseTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SalesUseTransaction" nillable="true" type="tns:SalesUseTransaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSalesUseTransaction" nillable="true" type="tns:ArrayOfSalesUseTransaction" />
+  <xs:complexType name="ArrayOfCustomerTaxData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomerTaxData" nillable="true" type="tns:CustomerTaxData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomerTaxData" nillable="true" type="tns:ArrayOfCustomerTaxData" />
+  <xs:complexType name="CustomerTaxData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CalculationType" type="xs:int" />
+      <xs:element minOccurs="0" name="CategoryDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CategoryID" type="xs:short" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExcessTax" type="xs:double" />
+      <xs:element minOccurs="0" name="ExemptSaleAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="Lines" type="xs:int" />
+      <xs:element minOccurs="0" name="Locations" type="xs:int" />
+      <xs:element minOccurs="0" name="MaxBase" type="xs:double" />
+      <xs:element minOccurs="0" name="MinBase" type="xs:double" />
+      <xs:element minOccurs="0" name="Minutes" type="xs:double" />
+      <xs:element minOccurs="0" name="PCode" type="xs:unsignedInt" />
+      <xs:element minOccurs="0" name="Rate" type="xs:double" />
+      <xs:element minOccurs="0" name="Surcharge" type="xs:short" />
+      <xs:element minOccurs="0" name="TaxAmount" type="xs:double" />
+      <xs:element minOccurs="0" name="TaxLevel" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="TaxType" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalCharge" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomerTaxData" nillable="true" type="tns:CustomerTaxData" />
+  <xs:complexType name="ArrayOfAddressData">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AddressData" nillable="true" type="tns:AddressData" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAddressData" nillable="true" type="tns:ArrayOfAddressData" />
+  <xs:complexType name="AddressData">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CountryISO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Locality" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaxLevel" type="xs:int" />
+      <xs:element minOccurs="0" name="ZipBegin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipEnd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipP4Begin" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ZipP4End" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressData" nillable="true" type="tns:AddressData" />
+</xs:schema>

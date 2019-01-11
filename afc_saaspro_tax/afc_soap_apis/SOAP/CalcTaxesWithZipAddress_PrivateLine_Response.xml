@@ -1,0 +1,368 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Body>
+      <CalcTaxesWithZipAddressResponse xmlns="http://tempuri.org/">
+         <CalcTaxesWithZipAddressResult xmlns:a="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>2</a:CalculationType>
+               <a:CategoryDescription>RIGHT OF WAY FEES</a:CategoryDescription>
+               <a:CategoryID>9</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Municipal Right of Way (Private Line)</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>3727200</a:PCode>
+               <a:Rate>14.91</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>14.91</a:TaxAmount>
+               <a:TaxLevel>3</a:TaxLevel>
+               <a:TaxType>53</a:TaxType>
+               <a:TaxableMeasure>0</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>State Universal Service Fund</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>3671300</a:PCode>
+               <a:Rate>0.033</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>true</a:Surcharge>
+               <a:TaxAmount>16.99203</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>13</a:TaxType>
+               <a:TaxableMeasure>514.91</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+               <a:CategoryID>1</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Transit Tax</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>3727200</a:PCode>
+               <a:Rate>0.01</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>5.3190203</a:TaxAmount>
+               <a:TaxLevel>3</a:TaxLevel>
+               <a:TaxType>33</a:TaxType>
+               <a:TaxableMeasure>531.90203</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+               <a:CategoryID>1</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Sales Tax</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>3727200</a:PCode>
+               <a:Rate>0.01</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>5.3190203</a:TaxAmount>
+               <a:TaxLevel>3</a:TaxLevel>
+               <a:TaxType>1</a:TaxType>
+               <a:TaxableMeasure>531.90203</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>SALES AND USE TAXES</a:CategoryDescription>
+               <a:CategoryID>1</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Sales Tax</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>3727200</a:PCode>
+               <a:Rate>0.0625</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>false</a:Surcharge>
+               <a:TaxAmount>33.243876875</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>1</a:TaxType>
+               <a:TaxableMeasure>531.90203</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>REGULATORY CHARGES</a:CategoryDescription>
+               <a:CategoryID>6</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>CA PUC Fee</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>253500</a:PCode>
+               <a:Rate>0.003</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>true</a:Surcharge>
+               <a:TaxAmount>1.5</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>468</a:TaxType>
+               <a:TaxableMeasure>500</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>CA TRS</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>253500</a:PCode>
+               <a:Rate>0.005</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>true</a:Surcharge>
+               <a:TaxAmount>2.5</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>466</a:TaxType>
+               <a:TaxableMeasure>500</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>CA High Cost Fund A</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>253500</a:PCode>
+               <a:Rate>0.0035</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>true</a:Surcharge>
+               <a:TaxAmount>1.75</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>60</a:TaxType>
+               <a:TaxableMeasure>500</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>Universal Lifeline Telephone Service Charge</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>253500</a:PCode>
+               <a:Rate>0.0475</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>true</a:Surcharge>
+               <a:TaxAmount>23.75</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>22</a:TaxType>
+               <a:TaxableMeasure>500</a:TaxableMeasure>
+            </a:TaxData>
+            <a:TaxData>
+               <a:AdjustmentType>0</a:AdjustmentType>
+               <a:Billable>true</a:Billable>
+               <a:CalculationType>1</a:CalculationType>
+               <a:CategoryDescription>CONNECTIVITY CHARGES</a:CategoryDescription>
+               <a:CategoryID>5</a:CategoryID>
+               <a:CompanyIdentifier>Avalara Test</a:CompanyIdentifier>
+               <a:Compliance>true</a:Compliance>
+               <a:CustomerNumber>ABC</a:CustomerNumber>
+               <a:Description>CA Teleconnect Fund</a:Description>
+               <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+               <a:ExemptionType>0</a:ExemptionType>
+               <a:InvoiceNumber>345</a:InvoiceNumber>
+               <a:Lines>0</a:Lines>
+               <a:Locations>0</a:Locations>
+               <a:Minutes>0</a:Minutes>
+               <a:Optional>0</a:Optional>
+               <a:Optional10>0</a:Optional10>
+               <a:Optional4>0</a:Optional4>
+               <a:Optional5>0</a:Optional5>
+               <a:Optional6>0</a:Optional6>
+               <a:Optional7>0</a:Optional7>
+               <a:Optional8>0</a:Optional8>
+               <a:Optional9>0</a:Optional9>
+               <a:OptionalAlpha1 i:nil="true"/>
+               <a:OptionalFields i:nil="true"/>
+               <a:PCode>253500</a:PCode>
+               <a:Rate>0.0108</a:Rate>
+               <a:RefundUncollect>0</a:RefundUncollect>
+               <a:ServiceLevelNumber>0</a:ServiceLevelNumber>
+               <a:Surcharge>true</a:Surcharge>
+               <a:TaxAmount>5.4</a:TaxAmount>
+               <a:TaxLevel>1</a:TaxLevel>
+               <a:TaxType>21</a:TaxType>
+               <a:TaxableMeasure>500</a:TaxableMeasure>
+            </a:TaxData>
+         </CalcTaxesWithZipAddressResult>
+      </CalcTaxesWithZipAddressResponse>
+   </s:Body>
+</s:Envelope>

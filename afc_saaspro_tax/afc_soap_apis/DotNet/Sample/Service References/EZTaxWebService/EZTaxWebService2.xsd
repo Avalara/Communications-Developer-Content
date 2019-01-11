@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EZTaxWebService" />
+  <xs:element name="CalcTaxesWithZipAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransaction" nillable="true" type="q1:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcTaxesWithZipAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcTaxesWithZipAddressResult" nillable="true" type="q2:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcTaxesWithFipsCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransaction" nillable="true" type="q3:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcTaxesWithFipsCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcTaxesWithFipsCodeResult" nillable="true" type="q4:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcTaxesWithPCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransaction" nillable="true" type="q5:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcTaxesWithPCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcTaxesWithPCodeResult" nillable="true" type="q6:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcTaxesWithNpaNxx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransaction" nillable="true" type="q7:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcTaxesWithNpaNxxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcTaxesWithNpaNxxResult" nillable="true" type="q8:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithZipAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustment" nillable="true" type="q9:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithZipAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcAdjWithZipAddressResult" nillable="true" type="q10:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithFipsCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustment" nillable="true" type="q11:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithFipsCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcAdjWithFipsCodeResult" nillable="true" type="q12:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithPCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustment" nillable="true" type="q13:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithPCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcAdjWithPCodeResult" nillable="true" type="q14:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithNpaNxx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustment" nillable="true" type="q15:Transaction" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CalcAdjWithNpaNxxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="CalcAdjWithNpaNxxResult" nillable="true" type="q16:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesWithPCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransaction" nillable="true" type="q17:SalesUseTransaction" />
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q18:ArrayOfNexus" />
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q19:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesWithPCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcTaxesWithPCodeResult" nillable="true" type="q20:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesWithFipsCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransaction" nillable="true" type="q21:SalesUseTransaction" />
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q22:ArrayOfNexus" />
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q23:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesWithFipsCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcTaxesWithFipsCodeResult" nillable="true" type="q24:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesWithZipAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransaction" nillable="true" type="q25:SalesUseTransaction" />
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q26:ArrayOfNexus" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q27:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesWithZipAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcTaxesWithZipAddressResult" nillable="true" type="q28:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcAdjWithPCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustment" nillable="true" type="q29:SalesUseTransaction" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q30:ArrayOfNexus" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q31:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcAdjWithPCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcAdjWithPCodeResult" nillable="true" type="q32:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcAdjWithFipsCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustment" nillable="true" type="q33:SalesUseTransaction" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q34:ArrayOfNexus" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q35:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcAdjWithFipsCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcAdjWithFipsCodeResult" nillable="true" type="q36:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcAdjWithZipAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustment" nillable="true" type="q37:SalesUseTransaction" />
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q38:ArrayOfNexus" />
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q39:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcAdjWithZipAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcAdjWithZipAddressResult" nillable="true" type="q40:ArrayOfTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesAndAdjWithPCodeInCustMode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransactionList" nillable="true" type="q41:ArrayOfSalesUseTransaction" />
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustmentList" nillable="true" type="q42:ArrayOfSalesUseTransaction" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q43:ArrayOfNexus" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q44:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesAndAdjWithPCodeInCustModeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcTaxesAndAdjWithPCodeInCustModeResult" nillable="true" type="q45:ArrayOfCustomerTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesAndAdjWithFipsCodeInCustMode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransactionList" nillable="true" type="q46:ArrayOfSalesUseTransaction" />
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustmentList" nillable="true" type="q47:ArrayOfSalesUseTransaction" />
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q48:ArrayOfNexus" />
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q49:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesAndAdjWithFipsCodeInCustModeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcTaxesAndAdjWithFipsCodeInCustModeResult" nillable="true" type="q50:ArrayOfCustomerTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesAndAdjWithZipAddressInCustMode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aTransactionList" nillable="true" type="q51:ArrayOfSalesUseTransaction" />
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anAdjustmentList" nillable="true" type="q52:ArrayOfSalesUseTransaction" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aNexusList" nillable="true" type="q53:ArrayOfNexus" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="anExclusionList" nillable="true" type="q54:ArrayOfExclusion" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SAUCalcTaxesAndAdjWithZipAddressInCustModeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="SAUCalcTaxesAndAdjWithZipAddressInCustModeResult" nillable="true" type="q55:ArrayOfCustomerTaxData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddress">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aPCode" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAddressResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="GetAddressResult" nillable="true" type="q56:ArrayOfAddressData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PCodeToFips">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aPCode" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PCodeToFipsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PCodeToFipsResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FipsToPCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aFips" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FipsToPCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FipsToPCodeResult" nillable="true" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NpaNxxToPCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="anNpaNxx" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="NpaNxxToPCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="NpaNxxToPCodeResult" nillable="true" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZipToPCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/EZTaxWebService" minOccurs="0" name="aZipAddress" nillable="true" type="q57:ZipAddress" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ZipToPCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ZipToPCodeResult" nillable="true" type="xs:unsignedInt" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxCategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aTaxType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxCategoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTaxCategoryResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxDescription">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="aTaxType" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTaxDescriptionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetTaxDescriptionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTime">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServerTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetServerTimeResult" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,140 @@
+{
+  "inv": [
+    {
+      "doc": "PLAT-7535 Valhalla test run 01",
+      "itms": [
+        {
+          "ref": "2.04.wild",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 0,
+              "calc": 2,
+              "cat": "E-911 CHARGES",
+              "cid": 7,
+              "name": "E911 (Business)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115900,
+              "rate": 1,
+              "sur": false,
+              "tax": 0,
+              "lvl": 1,
+              "tid": 35
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 0,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "State Universal Service Fund",
+              "exm": 100,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5115900,
+              "rate": 0.0139,
+              "sur": false,
+              "tax": 0,
+              "lvl": 1,
+              "tid": 13
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 0,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "Sales Tax",
+              "exm": 100,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5116000,
+              "rate": 0.01,
+              "sur": false,
+              "tax": 0,
+              "lvl": 3,
+              "tid": 1
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 0,
+              "calc": 1,
+              "cat": "SALES AND USE TAXES",
+              "cid": 1,
+              "name": "Sales Tax",
+              "exm": 100,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5116000,
+              "rate": 0.105,
+              "sur": false,
+              "tax": 0,
+              "lvl": 1,
+              "tid": 1
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 0,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Fed USF Cellular",
+              "exm": 100,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.195,
+              "sur": false,
+              "tax": 0,
+              "lvl": 0,
+              "tid": 55
+            },
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 0,
+              "calc": 2,
+              "cat": "REGULATORY CHARGES",
+              "cid": 6,
+              "name": "FCC Regulatory Fee (Wireless)",
+              "exm": 100,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.0175,
+              "sur": false,
+              "tax": 0,
+              "lvl": 0,
+              "tid": 170
+            },
+            {
+              "bill": false,
+              "cmpl": true,
+              "tm": 37.1,
+              "calc": 1,
+              "cat": "CONNECTIVITY CHARGES",
+              "cid": 5,
+              "name": "Telecommunications Relay Surcharge (Cellular)",
+              "exm": 62.9,
+              "lns": 0,
+              "min": 0,
+              "pcd": 0,
+              "rate": 0.02289,
+              "sur": false,
+              "tax": 0.8492190000000001,
+              "lvl": 0,
+              "tid": 232
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

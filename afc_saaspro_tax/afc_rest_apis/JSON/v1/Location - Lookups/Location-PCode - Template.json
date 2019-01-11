@@ -1,0 +1,12 @@
+{
+  "FipsCode": "string",
+  "NpaNxx": 0,
+  "ZipAddress": {
+    "CountryISO": "string",
+    "County": "string",
+    "Locality": "string",
+    "State": "string",
+    "ZipCode": "string",
+    "ZipP4": "string"
+  }
+}

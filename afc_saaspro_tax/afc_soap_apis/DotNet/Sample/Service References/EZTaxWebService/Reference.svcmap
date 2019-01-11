@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ebc16b17-8fc6-4ddd-bc35-bb171672533d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EZTaxWebService.wsdl" MetadataType="Wsdl" ID="4b45911b-a732-41db-940a-e936ac017b5d" SourceId="1" SourceUrl="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="EZTaxWebService1.wsdl" MetadataType="Wsdl" ID="974a404d-3f5b-4cb5-a783-5aad5de9e6a1" SourceId="1" SourceUrl="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?wsdl" />
+    <MetadataFile FileName="EZTaxWebService.xsd" MetadataType="Schema" ID="3129a4fc-a754-40a8-9fdb-3b919dbbbccb" SourceId="1" SourceUrl="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?xsd=xsd2" />
+    <MetadataFile FileName="EZTaxWebService1.xsd" MetadataType="Schema" ID="c4efd682-05ea-4fed-90ae-7bb3a528f900" SourceId="1" SourceUrl="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?xsd=xsd1" />
+    <MetadataFile FileName="EZTaxWebService2.xsd" MetadataType="Schema" ID="f00e5c41-6c97-49e7-ad16-54a308a34e09" SourceId="1" SourceUrl="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

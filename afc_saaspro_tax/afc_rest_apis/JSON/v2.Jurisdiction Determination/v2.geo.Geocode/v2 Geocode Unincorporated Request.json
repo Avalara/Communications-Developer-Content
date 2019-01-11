@@ -1,0 +1,19 @@
+[
+  {
+    "ref": "Test Ava-Incorporated PCode 429801",
+    "cass": true,
+    "addr": "2045 Oswego St",
+    "city": "Aurora",
+    "st": "CO",
+    "zip": "80010"
+  },
+  {
+    "ref": "Test Ava-Unincorporated PCode 429801",
+    "cass": true,
+    "addr": "24210 E 19th Ave",
+    "city": "Aurora",
+    "st": "CO",
+    "zip": "80019"
+  },
+  
+]

@@ -1,0 +1,53 @@
+{
+  "Transactions": [
+{
+  "OriginationAddress": {
+    "CountryISO": "USA",
+    "Locality": "Los Angeles",
+    "State": "CA",
+    "ZipCode": "90001",
+    "ZipP4": "0000"
+ },
+  "TerminationAddress": {
+    "CountryISO": "USA",
+    "Locality": "Los Angeles",
+    "State": "CA",
+    "ZipCode": "90001",
+    "ZipP4": "0000"
+  },
+  "BillToAddress": {
+    "CountryISO": "USA",
+    "Locality": "Los Angeles",
+    "State": "CA",
+    "ZipCode": "90001",
+    "ZipP4": "0000"
+  },
+  "CustomerType": 0,
+  "BusinessClass": 0,
+  "Sale": true,
+  "TransactionType": 19,
+  "ServiceType": 6,
+  "ServiceClass": 0,
+  "Date": "2017-07-15T12:00:00Z",
+  "Charge": 100,
+  "Incorporated": true,
+  "CompanyIdentifier": "Avalara Test",
+  "OptionalAlpha1": "0000001",
+  "Lines": 0,
+  "FacilitiesBased": true,
+  "Franchise": false,
+  "Lifeline": false,
+  "Regulated": false,
+  "ServiceLevelNumber": 0,
+  "TaxInclusive": false,
+  "OptionalFields": [
+	{
+	  "OptionalKeyNo": 1,
+	  "OptionalValue": "02 Baseline Safe Harbor TAM of 0.649 for VoIP"
+	} ]
+}
+  ],
+  "ReturnDetail": true,
+  "DocumentCode": "Testcases 2017.07.05 Test",
+  "Commit": true
+}

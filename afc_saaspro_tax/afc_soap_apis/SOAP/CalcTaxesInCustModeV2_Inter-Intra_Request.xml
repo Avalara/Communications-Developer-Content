@@ -1,0 +1,106 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/" xmlns:ezt="http://schemas.datacontract.org/2004/07/EZTaxWebService">
+   <soap:Header>
+      <UserName xmlns="http://eztaxasp.billsoft.com/eztaxwebservice">*****</UserName>
+      <Password xmlns="http://eztaxasp.billsoft.com/eztaxwebservice">*****</Password>
+   </soap:Header>
+   <soap:Body>
+      <tem:CalcTaxesInCustModeV2 xmlns="http://tempuri.org/">
+         <tem:transactions xmlns:a="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <ezt:Transaction>
+               <ezt:AdjustmentMethod>0</ezt:AdjustmentMethod>
+               <ezt:BillToAddress>
+                  <ezt:CountryISO>USA</ezt:CountryISO>
+                  <ezt:Locality>Santa Clara</ezt:Locality>
+                  <ezt:State>CA</ezt:State>
+                  <ezt:ZipCode>95051</ezt:ZipCode>
+               </ezt:BillToAddress>
+               <ezt:BusinessClass>1</ezt:BusinessClass>
+               <ezt:CategoryExemptions/>
+               <ezt:Charge>1000</ezt:Charge>
+               <ezt:CompanyIdentifier>AVA</ezt:CompanyIdentifier>
+               <ezt:CountyExempt>false</ezt:CountyExempt>
+               <ezt:CustomerNumber>ABC</ezt:CustomerNumber>
+               <ezt:CustomerType>1</ezt:CustomerType>
+               <ezt:Date>2017-08-15T00:00:00</ezt:Date>
+               <ezt:ExemptionType>0</ezt:ExemptionType>
+               <ezt:FacilitiesBased>false</ezt:FacilitiesBased>
+               <ezt:FederalExempt>false</ezt:FederalExempt>
+               <ezt:Franchise>false</ezt:Franchise>
+               <ezt:Incorporated>true</ezt:Incorporated>
+               <ezt:InvoiceNumber>345</ezt:InvoiceNumber>
+               <ezt:IsPrivateLine>false</ezt:IsPrivateLine>
+               <ezt:Lines>0</ezt:Lines>
+               <ezt:LocalExempt>false</ezt:LocalExempt>
+               <ezt:OriginationAddress>
+                  <ezt:CountryISO>USA</ezt:CountryISO>
+                  <ezt:Locality>Santa Clara</ezt:Locality>
+                  <ezt:State>CA</ezt:State>
+                  <ezt:ZipCode>95051</ezt:ZipCode>
+               </ezt:OriginationAddress>
+               <ezt:PrivateLineSplit>0.0</ezt:PrivateLineSplit>
+               <ezt:Sale>true</ezt:Sale>
+               <ezt:ServiceClass>1</ezt:ServiceClass>
+               <ezt:ServiceType>04</ezt:ServiceType>
+               <ezt:StateExempt>false</ezt:StateExempt>
+               <ezt:TerminationAddress>
+                  <ezt:CountryISO>USA</ezt:CountryISO>
+                  <ezt:Locality>Irving</ezt:Locality>
+                  <ezt:State>TX</ezt:State>
+                  <ezt:ZipCode>75038</ezt:ZipCode>
+               </ezt:TerminationAddress>
+               <ezt:TransactionType>-1</ezt:TransactionType>
+            </ezt:Transaction>
+            <ezt:Transaction>
+               <ezt:AdjustmentMethod>0</ezt:AdjustmentMethod>
+               <ezt:BillToAddress>
+                  <ezt:CountryISO>USA</ezt:CountryISO>
+                  <ezt:Locality>Santa Clara</ezt:Locality>
+                  <ezt:State>CA</ezt:State>
+                  <ezt:ZipCode>95051</ezt:ZipCode>
+               </ezt:BillToAddress>
+               <ezt:BusinessClass>1</ezt:BusinessClass>
+               <ezt:CategoryExemptions/>
+               <ezt:Charge>1000</ezt:Charge>
+               <ezt:CompanyIdentifier>AVA</ezt:CompanyIdentifier>
+               <ezt:CountyExempt>false</ezt:CountyExempt>
+               <ezt:CustomerNumber>ABC</ezt:CustomerNumber>
+               <ezt:CustomerType>1</ezt:CustomerType>
+               <ezt:Date>2017-08-15T00:00:00</ezt:Date>
+               <ezt:ExemptionType>0</ezt:ExemptionType>
+               <ezt:FacilitiesBased>false</ezt:FacilitiesBased>
+               <ezt:FederalExempt>false</ezt:FederalExempt>
+               <ezt:Franchise>false</ezt:Franchise>
+               <ezt:Incorporated>true</ezt:Incorporated>
+               <ezt:InvoiceNumber>345</ezt:InvoiceNumber>
+               <ezt:IsPrivateLine>false</ezt:IsPrivateLine>
+               <ezt:Lines>0</ezt:Lines>
+               <ezt:LocalExempt>false</ezt:LocalExempt>
+               <ezt:OriginationAddress>
+                  <ezt:CountryISO>USA</ezt:CountryISO>
+                  <ezt:Locality>Santa Clara</ezt:Locality>
+                  <ezt:State>CA</ezt:State>
+                  <ezt:ZipCode>95051</ezt:ZipCode>
+               </ezt:OriginationAddress>
+               <ezt:PrivateLineSplit>0.0</ezt:PrivateLineSplit>
+               <ezt:Sale>true</ezt:Sale>
+               <ezt:ServiceClass>1</ezt:ServiceClass>
+               <ezt:ServiceType>-1</ezt:ServiceType>
+               <ezt:StateExempt>false</ezt:StateExempt>
+               <ezt:TerminationAddress>
+                  <ezt:CountryISO>USA</ezt:CountryISO>
+                  <ezt:Locality>Irving</ezt:Locality>
+                  <ezt:State>TX</ezt:State>
+                  <ezt:ZipCode>75038</ezt:ZipCode>
+               </ezt:TerminationAddress>
+               <ezt:TransactionType>19</ezt:TransactionType>
+            </ezt:Transaction>
+         </tem:transactions>
+         <adjustments xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+         <sauTransactions i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+         <sauAdjustments i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+         <nexus i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+         <exclusions i:nil="true" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"/>
+         <tem:returnDetail>true</tem:returnDetail>
+      </tem:CalcTaxesInCustModeV2>
+   </soap:Body>
+</soap:Envelope>

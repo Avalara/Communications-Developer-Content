@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:i0="http://tempuri.org/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://eztaxasp.billsoft.com/eztaxwebservice" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="EZTaxWebService" targetNamespace="http://eztaxasp.billsoft.com/eztaxwebservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="http://tempuri.org/" location="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:service name="EZTaxWebService">
+    <wsdl:port name="WSHttpBinding_IEZTaxWebService" binding="i0:WSHttpBinding_IEZTaxWebService">
+      <soap12:address location="http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc</wsa10:Address>
+        <Identity xmlns="http://schemas.xmlsoap.org/ws/2006/02/addressingidentity">
+          <KeyInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <X509Data>
+              <X509Certificate>MIIEZDCCA0ygAwIBAgILAQAAAAABF4lpUw0wDQYJKoZIhvcNAQEFBQAwajEjMCEGA1UECxMaT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gQ0ExEzARBgNVBAoTCkdsb2JhbFNpZ24xLjAsBgNVBAMTJUdsb2JhbFNpZ24gT3JnYW5pemF0aW9uIFZhbGlkYXRpb24gQ0EwHhcNMDgwMTE3MjAyMDU2WhcNMTEwMTE3MjAyMDUxWjCBgDELMAkGA1UEBhMCVVMxDzANBgNVBAgTBkthbnNhczEWMBQGA1UEBxMNT3ZlcmxhbmQgUGFyazERMA8GA1UECxMIRVpUQVhBU1AxFTATBgNVBAoTDEJpbGxzb2Z0IEluYzEeMBwGA1UEAxMVZXp0YXhhc3AuYmlsbHNvZnQuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCbRRlmgm+Ziql6IGNtkaI30E1ApBwoTY/77AVChKuAqVD596XbLaI4aZlrIT8xz06bb0s7qHAUIjfJwrOXtX6QgPgbAqyX++EQ78TFaHkccem5/n3RfqtdaU0+BePfZ/0o351X9TkhJhTAToIxSUPqiLAVrRIt9Ce8HiZfxtkgjQIDAQABo4IBdjCCAXIwHwYDVR0jBBgwFoAUfW0q7Garp1E2qwJp8XCPxFkLmh8wSQYIKwYBBQUHAQEEPTA7MDkGCCsGAQUFBzAChi1odHRwOi8vc2VjdXJlLmdsb2JhbHNpZ24ubmV0L2NhY2VydC9vcmd2MS5jcnQwPwYDVR0fBDgwNjA0oDKgMIYuaHR0cDovL2NybC5nbG9iYWxzaWduLm5ldC9Pcmdhbml6YXRpb25WYWwxLmNybDAdBgNVHQ4EFgQU8TabhkrZbWIznKz4urRrLtxLs2QwCQYDVR0TBAIwADAOBgNVHQ8BAf8EBAMCBaAwKQYDVR0lBCIwIAYIKwYBBQUHAwEGCCsGAQUFBwMCBgorBgEEAYI3CgMDMEsGA1UdIAREMEIwQAYJKwYBBAGgMgEUMDMwMQYIKwYBBQUHAgEWJWh0dHA6Ly93d3cuZ2xvYmFsc2lnbi5uZXQvcmVwb3NpdG9yeS8wEQYJYIZIAYb4QgEBBAQDAgbAMA0GCSqGSIb3DQEBBQUAA4IBAQBtmGSRlg47QEFNwt4fYixuEoOMDLPqeqv6h+I+RSdyeiIFDhJL+adIqPhIKaSnRm/TEaR36aP5ojI0u87HESzVEAylmlCuwMGSQImAhg09LXLVfImY3VW0UqRDMPIPY+C7SXhALIY/W8GyjnmoKAp0mjaWMCiAvFHccSkemukXbjWPbxCDwPP08e6y1TwdLv7cyr5LPEBaCdW1cZKkR7e93es8LgW3bDJxG77MnGerYYJuIK12vJEiCPtE9A6E4oWyeyY2xot+rV50vwXs6dLfdD8N7jkVKnNTQSDg8d0M5SzpJqkCI8gWNliK1QXI4sLiarJv+GgHgXkMGepOkXkG</X509Certificate>
+            </X509Data>
+          </KeyInfo>
+        </Identity>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IEZTaxWebService" binding="i0:BasicHttpBinding_IEZTaxWebService">
+      <soap:address location="https://eztaxasp.billsoft.com/EZTaxWebService/EZTaxWebService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,31 @@
+<s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope">
+   <s:Body>
+      <CalcTaxesInCustModeResponse xmlns="http://tempuri.org/">
+         <CalcTaxesInCustModeResult xmlns:a="http://schemas.datacontract.org/2004/07/EZTaxWebService" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+            <a:SummarizedTaxes>
+               <a:CustomerTaxData>
+                  <a:CalculationType>1</a:CalculationType>
+                  <a:CategoryDescription>VALUE ADDED TAXES</a:CategoryDescription>
+                  <a:CategoryID>13</a:CategoryID>
+                  <a:Description>Value Added Tax (VAT)</a:Description>
+                  <a:ExcessTax>0</a:ExcessTax>
+                  <a:ExemptSaleAmount>0</a:ExemptSaleAmount>
+                  <a:Lines>0</a:Lines>
+                  <a:Locations>0</a:Locations>
+                  <a:MaxBase>2147483647</a:MaxBase>
+                  <a:MinBase>0</a:MinBase>
+                  <a:Minutes>0</a:Minutes>
+                  <a:PCode>5125400</a:PCode>
+                  <a:Rate>0.2</a:Rate>
+                  <a:Surcharge>0</a:Surcharge>
+                  <a:TaxAmount>20</a:TaxAmount>
+                  <a:TaxLevel>0</a:TaxLevel>
+                  <a:TaxType>65</a:TaxType>
+                  <a:TotalCharge>100</a:TotalCharge>
+               </a:CustomerTaxData>
+            </a:SummarizedTaxes>
+            <a:Taxes/>
+         </CalcTaxesInCustModeResult>
+      </CalcTaxesInCustModeResponse>
+   </s:Body>
+</s:Envelope>

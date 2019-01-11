@@ -1,0 +1,3176 @@
+[
+  {
+    "TaxType": 0,
+    "CategoryType": 0,
+    "TaxDescription": "No Tax",
+    "CategoryDescription": "NO CATEGORY DESCRIPTION"
+  },
+  {
+    "TaxType": 1,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 2,
+    "CategoryType": 2,
+    "TaxDescription": "Business and Occupation Tax",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 3,
+    "CategoryType": 3,
+    "TaxDescription": "Carrier Gross Receipts",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 4,
+    "CategoryType": 1,
+    "TaxDescription": "District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 5,
+    "CategoryType": 4,
+    "TaxDescription": "Excise Tax",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 6,
+    "CategoryType": 4,
+    "TaxDescription": "Federal Excise Tax",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 7,
+    "CategoryType": 5,
+    "TaxDescription": "Fed USF A - School",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 8,
+    "CategoryType": 2,
+    "TaxDescription": "License Tax",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 9,
+    "CategoryType": 6,
+    "TaxDescription": "P.U.C. Fee",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 10,
+    "CategoryType": 7,
+    "TaxDescription": "E-911",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 11,
+    "CategoryType": 1,
+    "TaxDescription": "Service Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 12,
+    "CategoryType": 1,
+    "TaxDescription": "Special Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 13,
+    "CategoryType": 5,
+    "TaxDescription": "State Universal Service Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 14,
+    "CategoryType": 3,
+    "TaxDescription": "Statutory Gross Receipts",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 15,
+    "CategoryType": 3,
+    "TaxDescription": "Surcharge",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 16,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 17,
+    "CategoryType": 1,
+    "TaxDescription": "Sales (Web Hosting)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 18,
+    "CategoryType": 5,
+    "TaxDescription": "Fed Universal Service Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 19,
+    "CategoryType": 5,
+    "TaxDescription": "State High Cost Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 20,
+    "CategoryType": 5,
+    "TaxDescription": "State Deaf and Disabled Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 21,
+    "CategoryType": 5,
+    "TaxDescription": "CA Teleconnect Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 22,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Lifeline Telephone Service Charge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 23,
+    "CategoryType": 5,
+    "TaxDescription": "Telecom Relay Surcharge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 24,
+    "CategoryType": 9,
+    "TaxDescription": "Telecommunications Infrastructure Maintenance Fee",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 25,
+    "CategoryType": 7,
+    "TaxDescription": "Poison Control Fund",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 26,
+    "CategoryType": 9,
+    "TaxDescription": "Telecommunications Infrastructure Fund",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 27,
+    "CategoryType": 4,
+    "TaxDescription": "NY MCTD 186c",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 28,
+    "CategoryType": 2,
+    "TaxDescription": "NY MCTD 184a",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 29,
+    "CategoryType": 2,
+    "TaxDescription": "Franchise Tax",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 30,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax - Business",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 31,
+    "CategoryType": 5,
+    "TaxDescription": "Fed Telecommunications Relay Service",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 32,
+    "CategoryType": 1,
+    "TaxDescription": "District Tax (Residential Only)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 33,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 34,
+    "CategoryType": 5,
+    "TaxDescription": "Telecommunications Assistance Service Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 35,
+    "CategoryType": 7,
+    "TaxDescription": "E911 (Business)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 36,
+    "CategoryType": 5,
+    "TaxDescription": "TRS (Business)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 37,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Service Fund (Line)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 38,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Service Fund (Business Line)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 39,
+    "CategoryType": 7,
+    "TaxDescription": "E911 (PBX/Trunk line)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 40,
+    "CategoryType": 2,
+    "TaxDescription": "License Tax (Business)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 41,
+    "CategoryType": 9,
+    "TaxDescription": "Optional TIMF",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 42,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax (Business)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 43,
+    "CategoryType": 7,
+    "TaxDescription": "E911 (Residential)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 44,
+    "CategoryType": 7,
+    "TaxDescription": "E911 (Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 45,
+    "CategoryType": 2,
+    "TaxDescription": "NY Franchise 184",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 46,
+    "CategoryType": 2,
+    "TaxDescription": "NY Franchise 184 Usage",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 47,
+    "CategoryType": 2,
+    "TaxDescription": "NY MCTD 184a Usage",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 48,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Service Fund (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 49,
+    "CategoryType": 1,
+    "TaxDescription": "Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 50,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax (Data)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 51,
+    "CategoryType": 9,
+    "TaxDescription": "Municipal Right of Way",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 52,
+    "CategoryType": 9,
+    "TaxDescription": "Municipal Right of Way (Business)",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 53,
+    "CategoryType": 9,
+    "TaxDescription": "Municipal Right of Way (Private Line)",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 54,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax - Wireless",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 55,
+    "CategoryType": 5,
+    "TaxDescription": "Fed USF Cellular",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 56,
+    "CategoryType": 5,
+    "TaxDescription": "Fed USF Paging",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 57,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax (Interstate)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 58,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (PBX Trunk)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 59,
+    "CategoryType": 1,
+    "TaxDescription": "District Tax (Web Hosting)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 60,
+    "CategoryType": 5,
+    "TaxDescription": "CA High Cost Fund A",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 61,
+    "CategoryType": 5,
+    "TaxDescription": "Telecommunications Education Access Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 62,
+    "CategoryType": 5,
+    "TaxDescription": "Fed TRS Cellular",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 63,
+    "CategoryType": 5,
+    "TaxDescription": "Fed TRS Paging",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 64,
+    "CategoryType": 10,
+    "TaxDescription": "Communications Service Tax",
+    "CategoryDescription": "COMMUNICATIONS SERVICES TAX"
+  },
+  {
+    "TaxType": 65,
+    "CategoryType": 13,
+    "TaxDescription": "Value Added Tax (VAT)",
+    "CategoryDescription": "VALUE ADDED TAXES"
+  },
+  {
+    "TaxType": 66,
+    "CategoryType": 1,
+    "TaxDescription": "Goods and Service Tax (GST)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 67,
+    "CategoryType": 1,
+    "TaxDescription": "Harmonized Sales Tax (HST)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 68,
+    "CategoryType": 1,
+    "TaxDescription": "Provincial Sales Tax (PST)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 69,
+    "CategoryType": 1,
+    "TaxDescription": "Quebec Sales Tax (QST)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 70,
+    "CategoryType": 5,
+    "TaxDescription": "National Contribution Regime (NCR)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 71,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (Cable Television)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 72,
+    "CategoryType": 11,
+    "TaxDescription": "FCC Regulatory Fee",
+    "CategoryDescription": "CABLE REGULATORY FEES"
+  },
+  {
+    "TaxType": 73,
+    "CategoryType": 11,
+    "TaxDescription": "Franchise Tax (Cable)",
+    "CategoryDescription": "CABLE REGULATORY FEES"
+  },
+  {
+    "TaxType": 74,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Service Fund (Paging)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 75,
+    "CategoryType": 3,
+    "TaxDescription": "Statutory Gross Receipts (Wireless)",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 76,
+    "CategoryType": 12,
+    "TaxDescription": "Sage E911 Tax",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 77,
+    "CategoryType": 12,
+    "TaxDescription": "Sage E911 Tax (Business)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 78,
+    "CategoryType": 12,
+    "TaxDescription": "Sage E911 Tax (PBX/Trunk line)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 79,
+    "CategoryType": 12,
+    "TaxDescription": "Sage E911 Tax (Residential)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 80,
+    "CategoryType": 12,
+    "TaxDescription": "Sage E911 Tax (Wireless)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 81,
+    "CategoryType": 12,
+    "TaxDescription": "Sage License Tax",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 82,
+    "CategoryType": 2,
+    "TaxDescription": "Franchise Tax (Wireless)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 83,
+    "CategoryType": 12,
+    "TaxDescription": "Federal USF (Alternate)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 84,
+    "CategoryType": 11,
+    "TaxDescription": "Public Education and Government (PEG) Access Fee",
+    "CategoryDescription": "CABLE REGULATORY FEES"
+  },
+  {
+    "TaxType": 85,
+    "CategoryType": 10,
+    "TaxDescription": "Communications Service Tax (Satellite)",
+    "CategoryDescription": "COMMUNICATIONS SERVICES TAX"
+  },
+  {
+    "TaxType": 86,
+    "CategoryType": 2,
+    "TaxDescription": "Franchise Tax (Satellite)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 87,
+    "CategoryType": 12,
+    "TaxDescription": "Carrier Cost Recovery",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 88,
+    "CategoryType": 12,
+    "TaxDescription": "Federal TRS (Alternate)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 89,
+    "CategoryType": 5,
+    "TaxDescription": "TRS (Centrex)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 90,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (Cable Television - Business)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 91,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (Centrex)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 92,
+    "CategoryType": 7,
+    "TaxDescription": "E911 (Centrex)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 93,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (Line)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 94,
+    "CategoryType": 1,
+    "TaxDescription": "Crime Control District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 95,
+    "CategoryType": 1,
+    "TaxDescription": "Library District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 96,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 97,
+    "CategoryType": 1,
+    "TaxDescription": "Health Services District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 98,
+    "CategoryType": 1,
+    "TaxDescription": "Emergency Services District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 99,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 100,
+    "CategoryType": 1,
+    "TaxDescription": "Development District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 101,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 102,
+    "CategoryType": 1,
+    "TaxDescription": "Ambulance District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 103,
+    "CategoryType": 1,
+    "TaxDescription": "Fire District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 104,
+    "CategoryType": 1,
+    "TaxDescription": "Police District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 105,
+    "CategoryType": 1,
+    "TaxDescription": "Football District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 106,
+    "CategoryType": 1,
+    "TaxDescription": "Baseball District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 107,
+    "CategoryType": 1,
+    "TaxDescription": "Crime Control District Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 108,
+    "CategoryType": 1,
+    "TaxDescription": "Library District Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 109,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 110,
+    "CategoryType": 1,
+    "TaxDescription": "Health Services District Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 111,
+    "CategoryType": 1,
+    "TaxDescription": "Emergency Services District Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 112,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 113,
+    "CategoryType": 1,
+    "TaxDescription": "Development District Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 114,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (Interstate)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 115,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (Telegraph)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 116,
+    "CategoryType": 7,
+    "TaxDescription": "E911 Network And Database Surcharge",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 117,
+    "CategoryType": 2,
+    "TaxDescription": "License Tax Emergency",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 118,
+    "CategoryType": 2,
+    "TaxDescription": "License Tax Emergency (Business)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 119,
+    "CategoryType": 1,
+    "TaxDescription": "Educational Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 120,
+    "CategoryType": 1,
+    "TaxDescription": "Educational Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 121,
+    "CategoryType": 7,
+    "TaxDescription": "E911 Operational Surcharge County Commission",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 122,
+    "CategoryType": 7,
+    "TaxDescription": "E911 Operational Surcharge Voter Approved",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 123,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax Nine Hundred",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 124,
+    "CategoryType": 1,
+    "TaxDescription": "Convention Center Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 125,
+    "CategoryType": 7,
+    "TaxDescription": "E911 High Capacity Trunk",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 126,
+    "CategoryType": 1,
+    "TaxDescription": "School Board Tax A",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 127,
+    "CategoryType": 1,
+    "TaxDescription": "School Board Tax B",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 128,
+    "CategoryType": 1,
+    "TaxDescription": "School Board Tax C",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 129,
+    "CategoryType": 1,
+    "TaxDescription": "School Board Tax D",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 130,
+    "CategoryType": 1,
+    "TaxDescription": "School Board Tax E",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 131,
+    "CategoryType": 1,
+    "TaxDescription": "School Board Tax F",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 132,
+    "CategoryType": 1,
+    "TaxDescription": "School District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 133,
+    "CategoryType": 1,
+    "TaxDescription": "Police Jury Tax B",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 134,
+    "CategoryType": 1,
+    "TaxDescription": "Police Jury Tax C",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 135,
+    "CategoryType": 1,
+    "TaxDescription": "Police Jury Tax E",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 136,
+    "CategoryType": 10,
+    "TaxDescription": "Communications Service Tax (Wireless)",
+    "CategoryDescription": "COMMUNICATIONS SERVICES TAX"
+  },
+  {
+    "TaxType": 137,
+    "CategoryType": 2,
+    "TaxDescription": "Service Provider Tax",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 138,
+    "CategoryType": 1,
+    "TaxDescription": "Telecommunications Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 139,
+    "CategoryType": 1,
+    "TaxDescription": "Advanced Transit Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 140,
+    "CategoryType": 1,
+    "TaxDescription": "Advanced Transit Web Hosting Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 141,
+    "CategoryType": 5,
+    "TaxDescription": "Missouri Universal Service Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 142,
+    "CategoryType": 2,
+    "TaxDescription": "Business and Occupation Tax (Wholesale)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 143,
+    "CategoryType": 5,
+    "TaxDescription": "Telecommunications Education Access Fund (Centrex)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 144,
+    "CategoryType": 2,
+    "TaxDescription": "Business and Occupation Tax (Other)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 145,
+    "CategoryType": 1,
+    "TaxDescription": "Tribal Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 146,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 147,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 148,
+    "CategoryType": 1,
+    "TaxDescription": "Crime Control District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 149,
+    "CategoryType": 1,
+    "TaxDescription": "Library District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 150,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 151,
+    "CategoryType": 1,
+    "TaxDescription": "Health Services District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 152,
+    "CategoryType": 1,
+    "TaxDescription": "Emergency Services District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 153,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 154,
+    "CategoryType": 1,
+    "TaxDescription": "Development District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 155,
+    "CategoryType": 1,
+    "TaxDescription": "Advanced Transit Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 156,
+    "CategoryType": 5,
+    "TaxDescription": "CA PSPE Surcharge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 157,
+    "CategoryType": 1,
+    "TaxDescription": "District Tax (Data Processing)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 158,
+    "CategoryType": 12,
+    "TaxDescription": "Eschelon UUT",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 159,
+    "CategoryType": 12,
+    "TaxDescription": "Cable Franchise Fee",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 160,
+    "CategoryType": 3,
+    "TaxDescription": "Statutory Gross Receipts (Business)",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 161,
+    "CategoryType": 7,
+    "TaxDescription": "E911 (VoIP)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 162,
+    "CategoryType": 5,
+    "TaxDescription": "FUSF (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 163,
+    "CategoryType": 5,
+    "TaxDescription": "FUSF",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 164,
+    "CategoryType": 12,
+    "TaxDescription": "Cost Recovery Surcharge",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 165,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Service Fund (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 166,
+    "CategoryType": 10,
+    "TaxDescription": "Communications Service Tax (Cable)",
+    "CategoryDescription": "COMMUNICATIONS SERVICES TAX"
+  },
+  {
+    "TaxType": 167,
+    "CategoryType": 9,
+    "TaxDescription": "Municipal Right of Way (Cable)",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 168,
+    "CategoryType": 12,
+    "TaxDescription": "Reserved",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 169,
+    "CategoryType": 6,
+    "TaxDescription": "FCC Regulatory Fee (Wireline)",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 170,
+    "CategoryType": 6,
+    "TaxDescription": "FCC Regulatory Fee (Wireless)",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 171,
+    "CategoryType": 12,
+    "TaxDescription": "Reserved",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 172,
+    "CategoryType": 3,
+    "TaxDescription": "Statutory Gross Receipts (Video)",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 173,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax - Lifeline",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 174,
+    "CategoryType": 5,
+    "TaxDescription": "TRS - Long Distance",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 175,
+    "CategoryType": 5,
+    "TaxDescription": "Telecom Relay Surcharge (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 176,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax - Senior Citizen",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 177,
+    "CategoryType": 6,
+    "TaxDescription": "Regulatory Cost Charge - Local",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 178,
+    "CategoryType": 6,
+    "TaxDescription": "Regulatory Cost Charge - Intrastate",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 179,
+    "CategoryType": 6,
+    "TaxDescription": "Regulatory Cost Charge - Cable",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 180,
+    "CategoryType": 6,
+    "TaxDescription": "P.U.C. Fee - Cable",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 181,
+    "CategoryType": 1,
+    "TaxDescription": "Provincial Sales Tax (TOLL)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 182,
+    "CategoryType": 8,
+    "TaxDescription": "UUT",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 183,
+    "CategoryType": 12,
+    "TaxDescription": "Reserved",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 184,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 185,
+    "CategoryType": 1,
+    "TaxDescription": "Use Tax-Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 186,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 187,
+    "CategoryType": 1,
+    "TaxDescription": "Use Tax-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 188,
+    "CategoryType": 1,
+    "TaxDescription": "Rental Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 189,
+    "CategoryType": 1,
+    "TaxDescription": "Rental Tax-Linen",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 190,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Vending",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 191,
+    "CategoryType": 1,
+    "TaxDescription": "Rental Tax-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 192,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Wholesale",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 193,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Food and Drugs",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 194,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Food",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 195,
+    "CategoryType": 1,
+    "TaxDescription": "Fur Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 196,
+    "CategoryType": 2,
+    "TaxDescription": "Privilege Tax-Manufacturing",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 197,
+    "CategoryType": 1,
+    "TaxDescription": "Lead Acid Battery Fee",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 198,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Motor Fuel",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 199,
+    "CategoryType": 1,
+    "TaxDescription": "Lead Acid Battery Fee-Larger Battery",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 200,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Parking",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 201,
+    "CategoryType": 2,
+    "TaxDescription": "Privilege Tax-Recreation",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 202,
+    "CategoryType": 1,
+    "TaxDescription": "Dry Cleaning Fee",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 203,
+    "CategoryType": 1,
+    "TaxDescription": "White Goods Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 204,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Medical Equipment",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 205,
+    "CategoryType": 1,
+    "TaxDescription": "Electronic Waste Recycling Fee-Small",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 206,
+    "CategoryType": 1,
+    "TaxDescription": "Electronic Waste Recycling Fee-Medium",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 207,
+    "CategoryType": 1,
+    "TaxDescription": "Electronic Waste Recycling Fee-Large",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 208,
+    "CategoryType": 1,
+    "TaxDescription": "Alcoholic Beverage Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 209,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Alcohol",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 210,
+    "CategoryType": 1,
+    "TaxDescription": "Liquor Drink Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 211,
+    "CategoryType": 5,
+    "TaxDescription": "IN Universal Service Charge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 212,
+    "CategoryType": 5,
+    "TaxDescription": "TRS (Paging)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 213,
+    "CategoryType": 5,
+    "TaxDescription": "ConnectME Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 214,
+    "CategoryType": 3,
+    "TaxDescription": "PA PURTA Surcharge",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 215,
+    "CategoryType": 5,
+    "TaxDescription": "ConnectME Fund (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 216,
+    "CategoryType": 5,
+    "TaxDescription": "ConnectME Fund (Cable)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 217,
+    "CategoryType": 5,
+    "TaxDescription": "TRS (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 218,
+    "CategoryType": 6,
+    "TaxDescription": "Consumer Counsel Fee",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 219,
+    "CategoryType": 9,
+    "TaxDescription": "San Diego Underground Conversion Surcharge",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 220,
+    "CategoryType": 5,
+    "TaxDescription": "RSPF Surcharge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 221,
+    "CategoryType": 12,
+    "TaxDescription": "Network Access Fee",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 222,
+    "CategoryType": 12,
+    "TaxDescription": "Franchise Fee",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 223,
+    "CategoryType": 5,
+    "TaxDescription": "CASF",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 224,
+    "CategoryType": 2,
+    "TaxDescription": "License Tax (Cable)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 225,
+    "CategoryType": 5,
+    "TaxDescription": "Relay Missouri Surcharge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 226,
+    "CategoryType": 6,
+    "TaxDescription": "FCC Regulatory Fee (VoIP)",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 227,
+    "CategoryType": 12,
+    "TaxDescription": "Reserved",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 228,
+    "CategoryType": 9,
+    "TaxDescription": "Municipal Right of Way (Extension)",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 229,
+    "CategoryType": 12,
+    "TaxDescription": "Carrier Cost Recovery (VoIP)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 230,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Video",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 231,
+    "CategoryType": 1,
+    "TaxDescription": "North Carolina Telecommunications Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 232,
+    "CategoryType": 5,
+    "TaxDescription": "Telecommunications Relay Surcharge (Cellular)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 233,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 Prepaid Wireless",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 234,
+    "CategoryType": 5,
+    "TaxDescription": "Telecommunications Relay Surcharge (Paging)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 235,
+    "CategoryType": 5,
+    "TaxDescription": "Telecommunications Relay Surcharge (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 236,
+    "CategoryType": 5,
+    "TaxDescription": "TDAP",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 237,
+    "CategoryType": 5,
+    "TaxDescription": "TAP Surcharge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 238,
+    "CategoryType": 10,
+    "TaxDescription": "Communications Service Tax (Non-Facilities)",
+    "CategoryDescription": "COMMUNICATIONS SERVICES TAX"
+  },
+  {
+    "TaxType": 239,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 (VoIP) Alternate",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 240,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 (VoIP PBX)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 241,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (VoIP)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 242,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (VoIP-Business)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 243,
+    "CategoryType": 1,
+    "TaxDescription": "Solid Waste Collection Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 244,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 (VoIP Business)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 245,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 (VoIP-Nomadic)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 246,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 Prepaid Wireless (Alternate)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 247,
+    "CategoryType": 7,
+    "TaxDescription": "Police and Fire Protection Fee",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 248,
+    "CategoryType": 7,
+    "TaxDescription": "San Francisco Access Line Tax",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 249,
+    "CategoryType": 7,
+    "TaxDescription": "San Francisco Access Line Tax (PBX/Trunk Line)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 250,
+    "CategoryType": 7,
+    "TaxDescription": "San Francisco Access line Tax (VoIP)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 251,
+    "CategoryType": 7,
+    "TaxDescription": "San Francisco Access Line Tax (Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 252,
+    "CategoryType": 7,
+    "TaxDescription": "San Francisco Access Line Tax (High Cap Trunk)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 253,
+    "CategoryType": 7,
+    "TaxDescription": "City of San Jose Telephone Line Tax",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 254,
+    "CategoryType": 7,
+    "TaxDescription": "City of San Jose Telephone Line Tax-PBX/Trunk Line",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 255,
+    "CategoryType": 7,
+    "TaxDescription": "City of San Jose Telephone Line Tax (VoIP)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 256,
+    "CategoryType": 7,
+    "TaxDescription": "CIty of San Jose Telephone Line Tax (Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 257,
+    "CategoryType": 7,
+    "TaxDescription": "San Leandro Emerg Com Sys Access Tax",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 258,
+    "CategoryType": 7,
+    "TaxDescription": "San Leandro Emerg Com Sys Access Tax (PBX Trunk)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 259,
+    "CategoryType": 7,
+    "TaxDescription": "San Leandro Emerg Com Sys Access Tax (VoIP)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 260,
+    "CategoryType": 7,
+    "TaxDescription": "San Leandro Emerg Com Sys Access Tax (Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 261,
+    "CategoryType": 7,
+    "TaxDescription": "San Leandro Emerg Com Sys Access Tax-High Cap Trnk",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 262,
+    "CategoryType": 7,
+    "TaxDescription": "Police and Fire Protection Fee (Prepaid)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 263,
+    "CategoryType": 7,
+    "TaxDescription": "Public Safety Communications Surcharge",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 264,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 Technical Charge",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 265,
+    "CategoryType": 5,
+    "TaxDescription": "Telecom Assistance Svc Fund-High Capacity Trunk",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 266,
+    "CategoryType": 6,
+    "TaxDescription": "CRT Levy",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 267,
+    "CategoryType": 7,
+    "TaxDescription": "Access Line Tax",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 268,
+    "CategoryType": 7,
+    "TaxDescription": "Access Line Tax (PBX/Trunk Line)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 269,
+    "CategoryType": 7,
+    "TaxDescription": "Access Line Tax (VoIP)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 270,
+    "CategoryType": 7,
+    "TaxDescription": "Access Line Tax (Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 271,
+    "CategoryType": 5,
+    "TaxDescription": "WI USF",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 272,
+    "CategoryType": 12,
+    "TaxDescription": "Network Access Fee-Interstate",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 273,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax - Other",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 274,
+    "CategoryType": 12,
+    "TaxDescription": "FCC Regulatory fee (VoIP Alternate)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 275,
+    "CategoryType": 4,
+    "TaxDescription": "Excise Tax (Wireless)",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 276,
+    "CategoryType": 12,
+    "TaxDescription": "Reserved_276",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 277,
+    "CategoryType": 5,
+    "TaxDescription": "Federal Universal Service Fund (Non-Billable)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 278,
+    "CategoryType": 9,
+    "TaxDescription": "Municipal Right of Way-High Capacity Trunk",
+    "CategoryDescription": "RIGHT OF WAY FEES"
+  },
+  {
+    "TaxType": 279,
+    "CategoryType": 1,
+    "TaxDescription": "Education Cess",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 280,
+    "CategoryType": 1,
+    "TaxDescription": "Secondary and Higher Education Cess",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 281,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax (Video)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 282,
+    "CategoryType": 5,
+    "TaxDescription": "State USF (VoIP Alternate)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 283,
+    "CategoryType": 5,
+    "TaxDescription": "TRS (VoIP Business)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 284,
+    "CategoryType": 5,
+    "TaxDescription": "TRS (Trunk)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 285,
+    "CategoryType": 5,
+    "TaxDescription": "Deaf and Disabled Fund (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 286,
+    "CategoryType": 8,
+    "TaxDescription": "Utility Users Tax-Wireless(Business)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 287,
+    "CategoryType": 1,
+    "TaxDescription": "Telecommunications Sales Tax-Prepaid",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 288,
+    "CategoryType": 5,
+    "TaxDescription": "CA High Cost Fund A (VoIP Actual)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 289,
+    "CategoryType": 5,
+    "TaxDescription": "State High Cost Fund (VoIP Actual)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 290,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Lifeline Telephone Svc Chg (VoIP Actual)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 291,
+    "CategoryType": 5,
+    "TaxDescription": "Telecommunications Relay Svc Charge (VoIP Actual)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 292,
+    "CategoryType": 5,
+    "TaxDescription": "CA Teleconnect Fund (VoIP Actual)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 293,
+    "CategoryType": 5,
+    "TaxDescription": "CASF (VoIP Actual)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 294,
+    "CategoryType": 1,
+    "TaxDescription": "Oklahoma Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 295,
+    "CategoryType": 2,
+    "TaxDescription": "Business and Occupation Tax (Prtg and Publishing)",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 296,
+    "CategoryType": 1,
+    "TaxDescription": "Premier Resort Area Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 297,
+    "CategoryType": 7,
+    "TaxDescription": "E911 Equalization Surcharge",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 298,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Service Fee",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 299,
+    "CategoryType": 5,
+    "TaxDescription": "NE Universal Service",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 300,
+    "CategoryType": 5,
+    "TaxDescription": "TAP Surcharge (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 301,
+    "CategoryType": 5,
+    "TaxDescription": "GA Universal Access Fund",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 302,
+    "CategoryType": 5,
+    "TaxDescription": "CA High Cost Fund A (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 303,
+    "CategoryType": 5,
+    "TaxDescription": "CA Teleconnect Fund (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 304,
+    "CategoryType": 5,
+    "TaxDescription": "CASF (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 305,
+    "CategoryType": 5,
+    "TaxDescription": "State High Cost Fund (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 306,
+    "CategoryType": 6,
+    "TaxDescription": "PUC Fee (Wireless)",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 307,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Lifeline Telephone Svc Charge (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 308,
+    "CategoryType": 5,
+    "TaxDescription": "NY TAF",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 309,
+    "CategoryType": 7,
+    "TaxDescription": "Prepaid Wireless E911 TRS Surcharge",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 310,
+    "CategoryType": 5,
+    "TaxDescription": "TRS-Prepaid Wireless",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 311,
+    "CategoryType": 5,
+    "TaxDescription": "FUSF (Multi-line)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 312,
+    "CategoryType": 3,
+    "TaxDescription": "ND Gross Receipts Tax",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 313,
+    "CategoryType": 1,
+    "TaxDescription": "NY Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 314,
+    "CategoryType": 1,
+    "TaxDescription": "NY Local Transit Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 315,
+    "CategoryType": 1,
+    "TaxDescription": "NY Local District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 316,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Satellite",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 317,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax-Commercial Lease",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 318,
+    "CategoryType": 1,
+    "TaxDescription": "Food and Beverage Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 319,
+    "CategoryType": 12,
+    "TaxDescription": "Network Access Fee LD-Interstate",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 320,
+    "CategoryType": 12,
+    "TaxDescription": "Network Access Fee LD-Intrastate",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 321,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 322,
+    "CategoryType": 1,
+    "TaxDescription": "District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 323,
+    "CategoryType": 1,
+    "TaxDescription": "Special Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 324,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 325,
+    "CategoryType": 1,
+    "TaxDescription": "Crime Control District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 326,
+    "CategoryType": 1,
+    "TaxDescription": "Library District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 327,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 328,
+    "CategoryType": 1,
+    "TaxDescription": "Health Services District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 329,
+    "CategoryType": 1,
+    "TaxDescription": "Emergency Services District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 330,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 331,
+    "CategoryType": 1,
+    "TaxDescription": "Development District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 332,
+    "CategoryType": 1,
+    "TaxDescription": "Ambulance District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 333,
+    "CategoryType": 1,
+    "TaxDescription": "Fire District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 334,
+    "CategoryType": 1,
+    "TaxDescription": "Football District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 335,
+    "CategoryType": 1,
+    "TaxDescription": "Baseball District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 336,
+    "CategoryType": 1,
+    "TaxDescription": "Educational Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 337,
+    "CategoryType": 1,
+    "TaxDescription": "School District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 338,
+    "CategoryType": 1,
+    "TaxDescription": "Advanced Transit Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 339,
+    "CategoryType": 1,
+    "TaxDescription": "Tribal Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 340,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Senior Citizen",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 341,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 342,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 343,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Vending",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 344,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Food and Drugs",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 345,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Food",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 346,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Motor Fuel",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 347,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Parking",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 348,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Medical Equipment",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 349,
+    "CategoryType": 1,
+    "TaxDescription": "Alcoholic Beverage Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 350,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Alcohol",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 351,
+    "CategoryType": 1,
+    "TaxDescription": "Liquor Drink Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 352,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Video",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 353,
+    "CategoryType": 1,
+    "TaxDescription": "Premier Resort Area Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 354,
+    "CategoryType": 1,
+    "TaxDescription": "NY Transit Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 355,
+    "CategoryType": 1,
+    "TaxDescription": "NY District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 356,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax-Food and Beverage",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 357,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 358,
+    "CategoryType": 1,
+    "TaxDescription": "District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 359,
+    "CategoryType": 1,
+    "TaxDescription": "Special Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 360,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 361,
+    "CategoryType": 1,
+    "TaxDescription": "Crime Control District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 362,
+    "CategoryType": 1,
+    "TaxDescription": "Library District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 363,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 364,
+    "CategoryType": 1,
+    "TaxDescription": "Health Services District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 365,
+    "CategoryType": 1,
+    "TaxDescription": "Emergency Services District Consumer UseTax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 366,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 367,
+    "CategoryType": 1,
+    "TaxDescription": "Development District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 368,
+    "CategoryType": 1,
+    "TaxDescription": "Ambulance District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 369,
+    "CategoryType": 1,
+    "TaxDescription": "Fire District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 370,
+    "CategoryType": 1,
+    "TaxDescription": "Football District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 371,
+    "CategoryType": 1,
+    "TaxDescription": "Baseball District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 372,
+    "CategoryType": 1,
+    "TaxDescription": "Educational Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 373,
+    "CategoryType": 1,
+    "TaxDescription": "School District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 374,
+    "CategoryType": 1,
+    "TaxDescription": "Advanced Transit Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 375,
+    "CategoryType": 1,
+    "TaxDescription": "Tribal Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 376,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Senior Citizen",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 377,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 378,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 379,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Vending",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 380,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Food and Drugs",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 381,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Food",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 382,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Motor Fuel",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 383,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Parking",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 384,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Medical Equipment",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 385,
+    "CategoryType": 1,
+    "TaxDescription": "Alcoholic Beverage Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 386,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Alcohol",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 387,
+    "CategoryType": 1,
+    "TaxDescription": "Liquor Drink Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 388,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Video",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 389,
+    "CategoryType": 1,
+    "TaxDescription": "Premier Resort Area Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 390,
+    "CategoryType": 1,
+    "TaxDescription": "NY Transit Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 391,
+    "CategoryType": 1,
+    "TaxDescription": "NY District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 392,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax-Food and Beverage",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 393,
+    "CategoryType": 6,
+    "TaxDescription": "Tasa de Control",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 394,
+    "CategoryType": 5,
+    "TaxDescription": "Radio Rights Fee",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 395,
+    "CategoryType": 2,
+    "TaxDescription": "Business & Occupation Tax-Rent and Royalty",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 396,
+    "CategoryType": 2,
+    "TaxDescription": "Business & Occupation Tax-Other Services",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 397,
+    "CategoryType": 4,
+    "TaxDescription": "Montana Excise Tax",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 398,
+    "CategoryType": 1,
+    "TaxDescription": "Rural Transportation Authority District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 399,
+    "CategoryType": 1,
+    "TaxDescription": "MHA District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 400,
+    "CategoryType": 1,
+    "TaxDescription": "Public Safety Improvements District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 401,
+    "CategoryType": 1,
+    "TaxDescription": "Mass Transit District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 402,
+    "CategoryType": 1,
+    "TaxDescription": "Metropolitan District Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 403,
+    "CategoryType": 1,
+    "TaxDescription": "RTA Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 404,
+    "CategoryType": 1,
+    "TaxDescription": "RTA Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 405,
+    "CategoryType": 1,
+    "TaxDescription": "MHA Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 406,
+    "CategoryType": 1,
+    "TaxDescription": "MHA Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 407,
+    "CategoryType": 1,
+    "TaxDescription": "Mass Transit District Consumer Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 408,
+    "CategoryType": 1,
+    "TaxDescription": "Mass Transit District Vendor Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 409,
+    "CategoryType": 13,
+    "TaxDescription": "VAT (Reduced Rate)",
+    "CategoryDescription": "VALUE ADDED TAXES"
+  },
+  {
+    "TaxType": 410,
+    "CategoryType": 7,
+    "TaxDescription": "Poison Control Fund (Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 411,
+    "CategoryType": 6,
+    "TaxDescription": "State Inspection and Supervision",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 412,
+    "CategoryType": 1,
+    "TaxDescription": "Education Sales-Vending",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 413,
+    "CategoryType": 1,
+    "TaxDescription": "Education Sales-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 414,
+    "CategoryType": 1,
+    "TaxDescription": "Education Use-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 415,
+    "CategoryType": 1,
+    "TaxDescription": "Education Consumer Use-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 416,
+    "CategoryType": 1,
+    "TaxDescription": "Education Vendor Use-Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 417,
+    "CategoryType": 1,
+    "TaxDescription": "Education Sales-Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 418,
+    "CategoryType": 1,
+    "TaxDescription": "Education Use-Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 419,
+    "CategoryType": 1,
+    "TaxDescription": "Education Consumer Use - Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 420,
+    "CategoryType": 1,
+    "TaxDescription": "Education Vendor Use - Manufacturing",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 421,
+    "CategoryType": 1,
+    "TaxDescription": "Rental Use Tax - Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 422,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Rental Tax - Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 423,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Rental Tax - Motor Vehicles",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 424,
+    "CategoryType": 12,
+    "TaxDescription": "Revenue Statement",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 425,
+    "CategoryType": 4,
+    "TaxDescription": "NY MCTD 186c (Wireless)",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 426,
+    "CategoryType": 5,
+    "TaxDescription": "WY USF",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 427,
+    "CategoryType": 5,
+    "TaxDescription": "WY USF (Paging)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 428,
+    "CategoryType": 5,
+    "TaxDescription": "WY USF (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 429,
+    "CategoryType": 6,
+    "TaxDescription": "FCC Regulatory Fee-Toll Free",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 430,
+    "CategoryType": 6,
+    "TaxDescription": "FCC Regulatory Fee (Satellite)",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 431,
+    "CategoryType": 3,
+    "TaxDescription": "Commerce Tax",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 432,
+    "CategoryType": 5,
+    "TaxDescription": "Telecom Assistance Svc Fund - VoIP",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 433,
+    "CategoryType": 5,
+    "TaxDescription": "Telecom Assistance Svc Fund - VoIP High Cap Trnk",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 434,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 (VoIP-Nomadic PBX)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 435,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 Service Fee (NL 911 Bureau)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 436,
+    "CategoryType": 12,
+    "TaxDescription": "Copyright Fee (Rated)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 437,
+    "CategoryType": 12,
+    "TaxDescription": "Copyright Fee (Fixed)",
+    "CategoryDescription": "RESERVED"
+  },
+  {
+    "TaxType": 438,
+    "CategoryType": 2,
+    "TaxDescription": "Utility Tax",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 439,
+    "CategoryType": 3,
+    "TaxDescription": "Audio-Video Service Tax",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 440,
+    "CategoryType": 4,
+    "TaxDescription": "Swachh Bharat Cess",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 441,
+    "CategoryType": 2,
+    "TaxDescription": "PIS",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 442,
+    "CategoryType": 2,
+    "TaxDescription": "COFINS",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 443,
+    "CategoryType": 13,
+    "TaxDescription": "ICMS",
+    "CategoryDescription": "VALUE ADDED TAXES"
+  },
+  {
+    "TaxType": 444,
+    "CategoryType": 6,
+    "TaxDescription": "Federal USF (Centrex)",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 445,
+    "CategoryType": 8,
+    "TaxDescription": "UUT (Prepaid Wireless)",
+    "CategoryDescription": "UTILITY USER TAXES"
+  },
+  {
+    "TaxType": 446,
+    "CategoryType": 6,
+    "TaxDescription": "Mobile Telephony Services Surcharge",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 447,
+    "CategoryType": 7,
+    "TaxDescription": "Access Line Tax (Prepaid Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 448,
+    "CategoryType": 7,
+    "TaxDescription": "San Leandro Emerg Com Sys Acc Tax (Ppd Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 449,
+    "CategoryType": 1,
+    "TaxDescription": "Rental Tax (Lower Rate)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 450,
+    "CategoryType": 5,
+    "TaxDescription": "CA High Cost Fund A (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 451,
+    "CategoryType": 5,
+    "TaxDescription": "State High Cost Fund (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 452,
+    "CategoryType": 5,
+    "TaxDescription": "CA Teleconnect Fund (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 453,
+    "CategoryType": 5,
+    "TaxDescription": "CASF (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 454,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Lifeline Telephone Service Charge (VoIP)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 455,
+    "CategoryType": 6,
+    "TaxDescription": "FUNTTEL",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 456,
+    "CategoryType": 5,
+    "TaxDescription": "FUST",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 457,
+    "CategoryType": 1,
+    "TaxDescription": "Telecommunications Use Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 458,
+    "CategoryType": 4,
+    "TaxDescription": "Krishi Kalyan Cess",
+    "CategoryDescription": "EXCISE TAXES"
+  },
+  {
+    "TaxType": 459,
+    "CategoryType": 5,
+    "TaxDescription": "School and Library Fund Surcharge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 460,
+    "CategoryType": 7,
+    "TaxDescription": "State 911 Charge",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 461,
+    "CategoryType": 5,
+    "TaxDescription": "ITAC Assessment",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 462,
+    "CategoryType": 7,
+    "TaxDescription": "State 911 Charge (Wireless)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 463,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 (Advanced Services)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 464,
+    "CategoryType": 13,
+    "TaxDescription": "VAT (Wireless)",
+    "CategoryDescription": "VALUE ADDED TAXES"
+  },
+  {
+    "TaxType": 465,
+    "CategoryType": 13,
+    "TaxDescription": "VAT (Communications)",
+    "CategoryDescription": "VALUE ADDED TAXES"
+  },
+  {
+    "TaxType": 466,
+    "CategoryType": 5,
+    "TaxDescription": "CA TRS",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 467,
+    "CategoryType": 5,
+    "TaxDescription": "CA TRS (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 468,
+    "CategoryType": 6,
+    "TaxDescription": "CA PUC Fee",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 469,
+    "CategoryType": 1,
+    "TaxDescription": "Use Tax (Rental)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 470,
+    "CategoryType": 1,
+    "TaxDescription": "Use Tax (Other)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 471,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax (Other)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 472,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax (Other)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 473,
+    "CategoryType": 5,
+    "TaxDescription": "SC USF",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 474,
+    "CategoryType": 5,
+    "TaxDescription": "USF (Prepaid Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 475,
+    "CategoryType": 7,
+    "TaxDescription": "E-911 (Lifeline)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 476,
+    "CategoryType": 2,
+    "TaxDescription": "Utility Tax NF",
+    "CategoryDescription": "BUSINESS TAXES"
+  },
+  {
+    "TaxType": 477,
+    "CategoryType": 1,
+    "TaxDescription": "Telecommunications Sales Tax (Wholesale)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 478,
+    "CategoryType": 5,
+    "TaxDescription": "E-rate Broadband Program",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 479,
+    "CategoryType": 5,
+    "TaxDescription": "E-rate Broadband Program (Business Line)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 480,
+    "CategoryType": 5,
+    "TaxDescription": "E-rate Broadband Program (Line)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 481,
+    "CategoryType": 5,
+    "TaxDescription": "E-rate Broadband Program (Wireless)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 482,
+    "CategoryType": 1,
+    "TaxDescription": "IGST (Communications)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 483,
+    "CategoryType": 1,
+    "TaxDescription": "CGST",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 484,
+    "CategoryType": 1,
+    "TaxDescription": "CGST (Communications)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 485,
+    "CategoryType": 1,
+    "TaxDescription": "SGST",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 486,
+    "CategoryType": 1,
+    "TaxDescription": "SGST (Communications)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 487,
+    "CategoryType": 5,
+    "TaxDescription": "Universal Service Fund (Other)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 488,
+    "CategoryType": 1,
+    "TaxDescription": "IGST",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 489,
+    "CategoryType": 5,
+    "TaxDescription": "Kentucky Lifeline Surcharge",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 490,
+    "CategoryType": 1,
+    "TaxDescription": "Telecommunications Sales Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 491,
+    "CategoryType": 7,
+    "TaxDescription": "Public Safety Communications Surcharge (Prepaid)",
+    "CategoryDescription": "E-911 CHARGES"
+  },
+  {
+    "TaxType": 492,
+    "CategoryType": 3,
+    "TaxDescription": "Statutory Gross Receipts NF",
+    "CategoryDescription": "GROSS RECEIPTS TAXES"
+  },
+  {
+    "TaxType": 493,
+    "CategoryType": 6,
+    "TaxDescription": "PUC Franchise Fee (Video) NF",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 494,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 495,
+    "CategoryType": 1,
+    "TaxDescription": "District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 496,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 497,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 498,
+    "CategoryType": 1,
+    "TaxDescription": "Mass Transit District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 499,
+    "CategoryType": 1,
+    "TaxDescription": "Metropolitan District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 500,
+    "CategoryType": 1,
+    "TaxDescription": "MHA District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 501,
+    "CategoryType": 1,
+    "TaxDescription": "Public Safety Improvement District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 502,
+    "CategoryType": 1,
+    "TaxDescription": "Rural Transportation Authority District Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 503,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 504,
+    "CategoryType": 1,
+    "TaxDescription": "District Consumer Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 505,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Consumer Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 506,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Consumer Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 507,
+    "CategoryType": 1,
+    "TaxDescription": "Mass Transit District Consumer Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 508,
+    "CategoryType": 1,
+    "TaxDescription": "MHA Consumer Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 509,
+    "CategoryType": 1,
+    "TaxDescription": "RTA Consumer Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 510,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Consumer Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 511,
+    "CategoryType": 1,
+    "TaxDescription": "District Vendor Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 512,
+    "CategoryType": 1,
+    "TaxDescription": "Hospital District Vendor Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 513,
+    "CategoryType": 1,
+    "TaxDescription": "Improvement District Vendor Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 514,
+    "CategoryType": 1,
+    "TaxDescription": "Mass Transit District Vendor Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 515,
+    "CategoryType": 1,
+    "TaxDescription": "MHA Vendor Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 516,
+    "CategoryType": 1,
+    "TaxDescription": "RTA Vendor Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 517,
+    "CategoryType": 1,
+    "TaxDescription": "Transit Vendor Use Tax NF",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 518,
+    "CategoryType": 5,
+    "TaxDescription": "State USF (VoIP Alternate) NF",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 519,
+    "CategoryType": 5,
+    "TaxDescription": "E-rate Broadband Program (VoIP Alternate)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 520,
+    "CategoryType": 5,
+    "TaxDescription": "ConnectME Fund (VoIP Alternate)",
+    "CategoryDescription": "CONNECTIVITY CHARGES"
+  },
+  {
+    "TaxType": 521,
+    "CategoryType": 6,
+    "TaxDescription": "P.U.C. Fee (VoIP Alternate)",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 522,
+    "CategoryType": 6,
+    "TaxDescription": "P.U.C. Fee NF",
+    "CategoryDescription": "REGULATORY CHARGES"
+  },
+  {
+    "TaxType": 523,
+    "CategoryType": 1,
+    "TaxDescription": "Sales Tax (Tiered Rate)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 524,
+    "CategoryType": 1,
+    "TaxDescription": "Use Tax (Tiered Rate)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 525,
+    "CategoryType": 1,
+    "TaxDescription": "Consumer Use Tax (Tiered Rate)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 526,
+    "CategoryType": 1,
+    "TaxDescription": "Vendor Use Tax (Tiered Rate)",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 527,
+    "CategoryType": 1,
+    "TaxDescription": "National Sales Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  },
+  {
+    "TaxType": 528,
+    "CategoryType": 1,
+    "TaxDescription": "National Service Tax",
+    "CategoryDescription": "SALES AND USE TAXES"
+  }
+]

@@ -1,0 +1,17 @@
+Request Type,BillTo Country ISO,BillTo State,BillTo County,BillTo Locality ,BillTo ZipCode,Customer Type,Invoice Date,Charge,Transaction Type,Service Type,Sale,Incorporated,Customer Number,Optional Alpha 1
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,00.Baseline,No Exemptions
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,1.01.std,Tax Type
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,1.02.scope,Tax Type
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,1.03.dom,Tax Type
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,1.04.wild,Tax Type
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,1.04b.wild-nofed,Tax Type
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,1.05.wild.nba,Tax Type
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,1.06.wild.nba.nofrc,Tax Type
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.01.std,Category
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.01b.std.fed ,Category
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.02.scope,Category
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.03.dom,Category
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.04.wild,Category
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.04b.wild-nofed,Category
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.05.wild.nba,Category
+CalcTaxes,USA,PR,,Adjuntas,601,Business,20180201,100,13,6,TRUE,TRUE,2.06.wild.nba.nofrc,Category
