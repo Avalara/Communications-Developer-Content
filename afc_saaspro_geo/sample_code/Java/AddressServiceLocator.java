@@ -71,16 +71,16 @@ public class AddressServiceLocator {
 			 }
 			 in.close();
 			 
-		    Source xmlInput = new StreamSource(new StringReader(response.toString()));
-	        StringWriter stringWriter = new StringWriter();
-	        StreamResult xmlOutput = new StreamResult(stringWriter);
-	        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-	        transformerFactory.setAttribute("indent-number", 2);
-	        Transformer transformer = transformerFactory.newTransformer(); 
-	        transformer.setOutputProperty(OutputKeys.INDENT, "yes");
-	        transformer.transform(xmlInput, xmlOutput);
+		     Source xmlInput = new StreamSource(new StringReader(response.toString()));
+	         StringWriter stringWriter = new StringWriter();
+	         StreamResult xmlOutput = new StreamResult(stringWriter);
+	         TransformerFactory transformerFactory = TransformerFactory.newInstance();
+	         transformerFactory.setAttribute("indent-number", 2);
+	         Transformer transformer = transformerFactory.newTransformer(); 
+	         transformer.setOutputProperty(OutputKeys.INDENT, "yes");
+	         transformer.transform(xmlInput, xmlOutput);
 		      
-			System.out.println(xmlOutput.getWriter().toString());	
+			 System.out.println(xmlOutput.getWriter().toString());	
 			 
 		} catch (Exception e) {
 			System.out.println(e);
