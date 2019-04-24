@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="afc_saaspro_geo/sample_code/Java"/>
+	<classpathentry kind="src" path="afc_saaspro_tax/afc_rest_apis/java/src"/>
+	<classpathentry kind="src" path="afc_saaspro_tax/afc_soap_apis/Java/Sample/Sample_EclipseProject/src"/>
+	<classpathentry kind="src" path="afc_saaspro_tax/afc_soap_apis/Java/Sample/src"/>
+	<classpathentry kind="lib" path="afc_saaspro_tax/afc_rest_apis/java/lib/gson-2.3.1.jar"/>
+	<classpathentry kind="lib" path="afc_saaspro_tax/afc_soap_apis/Java/Sample/lib/eztaxasp.jar"/>
+	<classpathentry kind="lib" path="afc_saaspro_tax/afc_soap_apis/Java/Sample/Sample_EclipseProject/lib/eztaxasp.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
