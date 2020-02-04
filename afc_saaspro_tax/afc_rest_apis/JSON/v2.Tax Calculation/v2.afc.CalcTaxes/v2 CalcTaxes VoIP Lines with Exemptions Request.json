@@ -1,0 +1,68 @@
+{
+    "cmpn": {
+        "bscl": 0,
+        "svcl": 0,
+        "fclt": false,
+        "frch": false,
+        "reg": false
+    },
+    "inv": [
+        {
+            "doc": "TEST-VOIP LINES EXEMPTION INVOICE 2018.11.15:12.02 AVA",
+            "cmmt": false,
+            "bill": {
+                "ctry": "USA",
+                "int": true,
+                "geo": false,
+                "city": "Englewood",
+                "st": "CO",
+                "zip": "80110"
+            },
+            "cust": 0,
+            "lfln": false,
+            "date": "2018-11-15T12:00:00Z",
+            "exms": [
+                {
+                    "loc": {
+                        "ctry": "USA",
+                        "st": "CO"
+                    },
+                    "cat": 1,
+					"dom": 1,
+                    "scp": 1920
+                },
+                {
+                    "loc": {
+                        "ctry": "USA",
+                        "st": "CO"
+                    },
+                    "cat": 2,
+					"dom": 1,
+                    "scp": 1920
+                }
+            ],
+            "itms": [
+                {
+                    "ref": "Line Item 001 - VoIP/Lines",
+                    "chg": 0,
+                    "line": 10,
+                    "sale": 1,
+                    "incl": false,
+                    "tran": 19,
+                    "serv": 21,
+                    "dbt": false,
+                    "adj": false
+                }
+            ],
+            "invm": true,
+            "dtl": true,
+            "summ": true,
+            "opt": [
+                {
+                    "key": "1",
+                    "val": "VoIP Lines Exemption Invoice ABC-ZZZ"
+                }
+            ]
+        }
+    ]
+}

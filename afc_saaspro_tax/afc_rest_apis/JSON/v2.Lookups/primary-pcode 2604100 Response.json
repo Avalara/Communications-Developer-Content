@@ -1,0 +1,15 @@
+{
+  "LocationData": [
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "NEW YORK",
+      "PCode": 2604100
+    }
+  ],
+  "MatchCount": 1,
+  "InputMatchType": null,
+  "MatchTypeApplied": null,
+  "ResultsLimit": 0
+}

@@ -1,0 +1,449 @@
+{
+  "LocationData": [
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "ANSONIA",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "AUDUBON",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "BEAR STEARNS",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "BOWLING GREEN",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "B T CREDIT",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "CANAL STREET",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "CATHEDRAL",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "CHEROKEE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "CHINATOWN",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "CHURCH STREET",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "COLLEGE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "COLONIAL PARK",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "COLUMBIA UNIVERSITY",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "COLUMBUS CIRCLE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "COOPER",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "DPO",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "EMPIRE STATE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "FORT GEORGE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "FORT WASHINGTON",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "FRANKLIN D ROOSEVELT",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "GOVERNORS ISLAND",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "GRACIE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "GRAND CENTRAL",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "GREELEY SQUARE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "HAMILTON GRANGE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "HELL GATE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "HOWARD",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "INWOOD",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "ISLAND",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "KNICKERBOCKER",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "LENOX HILL",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "LINCOLNTON",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "LONDON TERRACE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "MADISON SQUARE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "MANHATTAN",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "MANHATTANVILLE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "MIDTOWN",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "MORNINGSIDE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "MURRAY HILL",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "NEW YORK",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "OLD CHELSEA",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "ONE HUNDRED THIRTY EIGHTH",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "PATCHIN",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "PECK SLIP",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "PETER STUYVESANT",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "PITT",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "PLANETARIUM",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "PORT AUTHORITY",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "PRINCE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "RADIO CITY",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "RADIO CITY BUSI REPLY",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "ROCKEFELLER CENTER",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "SOUTH POLE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "TIMES SQUARE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "TOMPKINS SQUARE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "TRIBOROUGH",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "TUDOR",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "UNITED NATIONS NEW YORK",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "VILLAGE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "WALL STREET",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "WARDS ISLAND",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "WASHINGTON BRIDGE",
+      "PCode": 2604100
+    },
+    {
+      "CountryIso": "USA",
+      "State": "NY",
+      "County": "NEW YORK",
+      "Locality": "WEST VILLAGE",
+      "PCode": 2604100
+    }
+  ],
+  "MatchCount": 63,
+  "InputMatchType": null,
+  "MatchTypeApplied": null,
+  "ResultsLimit": 0
+}

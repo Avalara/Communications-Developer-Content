@@ -1,0 +1,89 @@
+{
+    "cmpn": {
+        "bscl": 1,
+        "svcl": 0,
+        "fclt": true,
+        "frch": true,
+        "reg": false
+    },
+    "inv": [
+        {
+            "doc": "PLAT-7535 Valhalla test run 01",
+            "cmmt": false,
+            "bill": {
+                "ctry": "USA",
+                "st": "PR",
+                "city": "Adjuntas",
+                "zip": "00601",
+                "int": true
+            },
+            "cust": 1,
+            "lfln": false,
+            "date": "2018-02-01T12:00:00Z",
+            "exms": [
+                {
+                    "loc": {
+                        "cnty": "",
+                        "ctry": "USA",
+                        "city": "",
+                        "st": "",
+                        "zip": ""
+                    },
+                    "cat": 7
+                },
+                {
+                    "loc": {
+                        "cnty": "",
+                        "ctry": "USA",
+                        "city": "",
+                        "st": "",
+                        "zip": ""
+                    },
+                    "cat": 1
+                },
+                {
+                    "loc": {
+                        "cnty": "",
+                        "ctry": "USA",
+                        "city": "",
+                        "st": "",
+                        "zip": ""
+                    },
+                    "cat": 5
+                },
+                {
+                    "loc": {
+                        "cnty": "",
+                        "ctry": "USA",
+                        "city": "",
+                        "st": "",
+                        "zip": ""
+                    },
+                    "cat": 6
+                }
+            ],
+            "itms": [
+                {
+                    "ref": "2.01b.std.fed",
+                    "chg": 100,
+                    "line": 0,
+                    "sale": 1,
+                    "incl": false,
+                    "tran": 13,
+                    "serv": 6,
+                    "dbt": false,
+                    "adj": false
+                }
+            ],
+            "invm": true,
+            "dtl": true,
+            "summ": false,
+            "opt": [
+                {
+                    "key": "1",
+                    "val": "Standard Category - Fed level jurisdiction Test 2.01b.std.fed"
+                }
+            ]
+        }
+    ]
+}

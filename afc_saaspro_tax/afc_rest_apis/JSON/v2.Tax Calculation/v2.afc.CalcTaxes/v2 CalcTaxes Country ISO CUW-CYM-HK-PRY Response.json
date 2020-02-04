@@ -1,0 +1,114 @@
+{
+  "inv": [
+    {
+      "doc": "TEST-COUNTRY CURACAO INVOICE 2018.11.15:12.02 AVA",
+      "itms": [
+        {
+          "ref": "CUW Line Item 001 - Telephony/Service",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5540000,
+              "rate": 0.06,
+              "sur": false,
+              "tax": 6,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        }
+      ],
+      "summ": [
+        {
+          "max": 2147483647,
+          "min": 0,
+          "tchg": 100,
+          "calc": 1,
+          "cat": "VALUE ADDED TAXES",
+          "cid": 13,
+          "name": "Value Added Tax (VAT)",
+          "exm": 0,
+          "lns": 0,
+          "pcd": 5540000,
+          "rate": 0.06,
+          "sur": false,
+          "tax": 6,
+          "lvl": 0,
+          "tid": 65
+        }
+      ]
+    },
+    {
+      "doc": "TEST-COUNTRY CAYMAN ISLANDS INVOICE 2018.11.15:12.02 AVA",
+      "itms": [
+        {
+          "ref": "CYM Line Item 001 - Telephony/Service"
+        }
+      ]
+    },
+    {
+      "doc": "TEST-COUNTRY CHINA-HONG KING INVOICE 2018.11.15:12.02 AVA",
+      "itms": [
+        {
+          "ref": "HK Line Item 001 - Telephony/Service"
+        }
+      ]
+    },
+    {
+      "doc": "TEST-COUNTRY PARAGUAY INVOICE 2018.11.15:12.02 AVA",
+      "itms": [
+        {
+          "ref": "PRY Line Item 001 - Telephony/Service",
+          "txs": [
+            {
+              "bill": true,
+              "cmpl": true,
+              "tm": 100,
+              "calc": 1,
+              "cat": "VALUE ADDED TAXES",
+              "cid": 13,
+              "name": "Value Added Tax (VAT)",
+              "exm": 0,
+              "lns": 0,
+              "min": 0,
+              "pcd": 5530000,
+              "rate": 0.1,
+              "sur": false,
+              "tax": 10,
+              "lvl": 0,
+              "tid": 65
+            }
+          ]
+        }
+      ],
+      "summ": [
+        {
+          "max": 2147483647,
+          "min": 0,
+          "tchg": 100,
+          "calc": 1,
+          "cat": "VALUE ADDED TAXES",
+          "cid": 13,
+          "name": "Value Added Tax (VAT)",
+          "exm": 0,
+          "lns": 0,
+          "pcd": 5530000,
+          "rate": 0.1,
+          "sur": false,
+          "tax": 10,
+          "lvl": 0,
+          "tid": 65
+        }
+      ]
+    }
+  ]
+}
