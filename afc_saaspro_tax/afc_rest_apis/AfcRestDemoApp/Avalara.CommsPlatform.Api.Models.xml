@@ -1,0 +1,2024 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Avalara.CommsPlatform.Api.Models</name>
+    </assembly>
+    <members>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Address">
+            <summary>
+            Address information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Address.StreetAddress">
+            <summary>
+            Street address.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Address.City">
+            <summary>
+            City name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Address.State">
+            <summary>
+            State name or abbreviation.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Address.PostalCode">
+            <summary>
+            Postal code.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.BillingPeriod">
+            <summary>
+            Optional object for passing in billing period
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.BillingPeriod.BillingPeriodMonth">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.BillingPeriod.BillingPeriodYear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.CalcTaxesRequest">
+            <summary>
+            Request body for tax calculation API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CalcTaxesRequest.ConfigOptions">
+            <summary>
+            Request configuration options.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CalcTaxesRequest.CompanyData">
+            <summary>
+            Company information required for tax calculations.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CalcTaxesRequest.Invoices">
+            <summary>
+            List of invoices to process.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CalcTaxesRequest.TaxOverrides">
+            <summary>
+            Tax rate overrides.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CalcTaxesRequest.SafeHarborOverrides">
+            <summary>
+            Safe harbor overrides for USF taxes.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.CalcTaxesResponse">
+            <summary>
+            Response body for tax calculation API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CalcTaxesResponse.InvoiceResults">
+            <summary>
+            Tax calculation results for each invoice submitted in request.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CalcTaxesResponse.Errors">
+            <summary>
+            Error description (as applicable).
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.CommitRequest">
+            <summary>
+            Parameter for CommitTransactions API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CommitRequest.DocumentCode">
+            <summary>
+            Document code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CommitRequest.Commit">
+            <summary>
+            Indicates if transactions for the specified document code should be committed.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CommitRequest.OptionalFields">
+            <summary>
+            Overrides value for OptionalFields field in reports.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.CommitResponse">
+            <summary>
+            Response body for Commit API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CommitResponse.Success">
+            <summary>
+            Indicates if document code's commit status was updated successfully.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CommitResponse.Errors">
+            <summary>
+            Error description (as applicable).
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.CompanyData">
+            <summary>
+            Container class for json priperties assocated with v2.CalcTaxes company data
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CompanyData.BusinessClass">
+            <summary>
+            Business class. 0 = ILEC, 1 = CLEC.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CompanyData.ServiceClass">
+            <summary>
+            Service class. 0 = Primary Local, 1 = Primary Long Distance.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CompanyData.Facilities">
+            <summary>
+            Specifies if the carrier delivering the service has company owned facilities to provide the service.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CompanyData.Franchise">
+            <summary>
+            Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CompanyData.Regulated">
+            <summary>
+            Indicates if company is regulated.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CompanyData.Exclusions">
+            <summary>
+            Exclusion list.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.CompanyData.CompanyIdentifier">
+            <summary>
+            An optional company identifier for reporting
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Error">
+            <summary>
+            Error information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Error.Code">
+            <summary>
+            Error code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Error.Message">
+            <summary>
+            Error message.
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Error.#ctor">
+            <summary>
+            Constructor. Defaults Code to -2000.
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Error.#ctor(System.String)">
+            <summary>
+            Constructor. Defaults Code to -2000.
+            </summary>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Error.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="code">Error code.</param>
+            <param name="message">Error message.</param>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Exclusion">
+            <summary>
+            Specifies a tax exclusion by state.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Exclusion.Country">
+            <summary>
+            Country ISO code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Exclusion.State">
+            <summary>
+            State abbreviation.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Exclusion.ExclusionOn">
+            <summary>
+            Indicates if exclusion applies to the specified state.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GeoBatchDownloadResponse">
+            <summary>
+            Response body for Geo Batch Submit File API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchDownloadResponse.InputFileName">
+            <summary>
+            Input File Name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchDownloadResponse.InputFileDownload">
+            <summary>
+            Input File Download.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchDownloadResponse.OutputFileName">
+            <summary>
+            Output File Name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchDownloadResponse.OutputFileDownload">
+            <summary>
+            Output File Name.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GeoBatchLog">
+            <summary>
+            Response body for Geo Batch Submit File API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchLog.Log">
+            <summary>
+            DateTime of Log.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchLog.Errors">
+            <summary>
+            Error description (as applicable).
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GeoBatchLogItem">
+            <summary>
+            Response body for Geo Batch Submit File API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchLogItem.Date">
+            <summary>
+            DateTime of Log.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchLogItem.Status">
+            <summary>
+            Level of Status.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchLogItem.Message">
+            <summary>
+            Output File Name.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GeoBatchStatus">
+            <summary>
+            Individual File Status For Geo Batch result
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchStatus.ProcessId">
+            <summary>
+            Process ID for Batch file.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchStatus.RequestDate">
+            <summary>
+            Request Date.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchStatus.ProcessingStart">
+            <summary>
+            Request Date.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchStatus.ProcessingEnd">
+            <summary>
+            Processing End.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchStatus.Status">
+            <summary>
+            Status Of Batch File.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchStatus.Downloads">
+            <summary>
+            Output File Name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchStatus.Error">
+            <summary>
+            Error information.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GeoBatchSubmitFileResponse">
+            <summary>
+            Response body for Geo Batch Submit File API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchSubmitFileResponse.ProcessId">
+            <summary>
+            File ID that was uploaded
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeoBatchSubmitFileResponse.Errors">
+            <summary>
+            Error description (as applicable).
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GeocodeRequest">
+            <summary>
+            Input data for Geocoding API. 
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeRequest.ReferenceId">
+            <summary>
+            Optional reference Id for geocode request. 
+            Only address information or latitude/longitude should be provided in request body but not both.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeRequest.ReturnCass">
+            <summary>
+            Indicates if the CASS validated address is desired in the results.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeRequest.Latitude">
+            <summary>
+            Latitude for geocoding based on lat/long coordinates.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeRequest.Longitude">
+            <summary>
+            Longitude for geocoding based on lat/long coordinates.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GeocodeResult">
+            <summary>
+            Results for geocoding request.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.ReferenceId">
+            <summary>
+            Reference Id from geocode request input.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.CassAddress">
+            <summary>
+            CASS certified address.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.CensusBlock">
+            <summary>
+            Census block.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.CensusTract">
+            <summary>
+            Census tract.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.County">
+            <summary>
+            County
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.FeatureId">
+            <summary>
+            Feature ID.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.FipsCode">
+            <summary>
+            FIPS Code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.Incorporated">
+            <summary>
+            Indicates if address is within city limits.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.JurisdictionName">
+            <summary>
+            Tax jurisdiction name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.Latitude">
+            <summary>
+            Latitude.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.Longitude">
+            <summary>
+            Longitude.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.PCode">
+            <summary>
+            PCode for tax jurisdiction.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.Score">
+            <summary>
+            Score indicating accuracy of address match in mapping database.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GeocodeResult.Error">
+            <summary>
+            Error message.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Invoice">
+            <summary>
+            Contains information about an invoice or quote.
+            </summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.Invoice.MAX_INVOICE_STRING">
+            <summary>
+            Maximum length of Invoice string.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.DocumentCode">
+            <summary>
+            Document code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.Commit">
+            <summary>
+            Indicates if invoice should be committed as soon as it is processed.
+            Default: false.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.BillTo">
+            <summary>
+            Bill-to location.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.CustomerType">
+            <summary>
+            Customer type.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.Lifeline">
+            <summary>
+            Indicates if customer is a Lifeline participant.
+            Default: false.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.Date">
+            <summary>
+            Invoice date.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.Exemptions">
+            <summary>
+            Tax exemptions.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.Items">
+            <summary>
+            Line items.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.InvoiceMode">
+            <summary>
+            Indicates if all line items within invoice should be processed in invoice mode.
+            Default: true.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.ReturnDetail">
+            <summary>
+            Indicates if individual line item taxes should be included in response.
+            Default: true.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.ReturnSummary">
+            <summary>
+            Indicates if the summarized taxes for the invoice should be included in the resonse.
+            Default: false.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.OptionalFields">
+            <summary>
+            Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.AccountRef">
+            <summary>
+            Account reference for reporting
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.CustomerRef">
+            <summary>
+            Customer Reference for reporting
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.InvoiceRef">
+            <summary>
+            Invoice Number reference for reporting
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.BillCycleRef">
+            <summary>
+            Bill Cycle reference for reporting
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.BillingPeriod">
+            <summary>
+            Billing period for invoice.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Invoice.CurrencyCode">
+            <summary>
+            Currency code for invoice.  Example: CAD = Canadian Dollar
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.InvoiceResult">
+            <summary>
+            Tax calculation results for an invoice.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InvoiceResult.DocumentCode">
+            <summary>
+            Document number for invoice.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InvoiceResult.ItemResults">
+            <summary>
+            Individual tax calculation results for each line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InvoiceResult.SummarizedTaxes">
+            <summary>
+            Summarized taxes for invoice.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InvoiceResult.Errors">
+            <summary>
+            Error description (as applicable).
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InvoiceResult.ReportingInformation">
+            <summary>
+            Flag indicating reporting information should be returned.
+            Reference online documentation for more details 
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.KeyValuePair">
+            <summary>
+            Key/value pair data.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.KeyValuePair.Key">
+            <summary>
+            Key.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.KeyValuePair.Value">
+            <summary>
+            Value.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.LineItem">
+            <summary>
+            Data for an invoice or quote line item.
+            </summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.LineItem.MAX_LINETEM_STRING">
+            <summary>
+            Maximum length of a LineItem string.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.LineNumber">
+            <summary>
+            Reference ID for line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.From">
+            <summary>
+            Location for origination point. If null, will default to Invoice's BillTo location.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.To">
+            <summary>
+            Location for destination point. If null, will default to Invoice's BillTo location.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Charge">
+            <summary>
+            Charge amount.
+            Default: 0.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Lines">
+            <summary>
+            Number of lines.
+            Default: 0.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Locations">
+            <summary>
+            Number of locations.
+            Default: 0.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Minutes">
+            <summary>
+            Number of minutes.
+            Default: 0.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.SaleType">
+            <summary>
+            0 - Wholesale : Indicates that the item was sold to a wholeseller.
+            1 - Retail : Indicates that the item was sold to an end user - a retail sale.
+            2 - Consumed : Indicates that the item was consumed directly (SAU products only).
+            3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.PrivateLineSplit">
+            <summary>
+            Split for private-line transactions.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.TaxInclusive">
+            <summary>
+            Indicates if the charge for this line item is tax-inclusive.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.ProRatedPct">
+            <summary>
+            For pro-rated tax calculations. Percentage to pro-rate.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.ProRatedAdjType">
+            <summary>
+            For pro-rated credit or adjustment calculations.
+            0 = default
+            1 = do not return non-proratable fixed taxes in response
+            2 = return non-proratable fixed taxes in response
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.TransactionType">
+            <summary>
+            Transaction type ID.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.ServiceType">
+            <summary>
+            Service type ID.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Debit">
+            <summary>
+            Indicates if this line item is a debit card transaction.
+            Default: false.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.IsAdjustment">
+            <summary>
+            Indicates if this line item is an adjustment.
+            Default: false.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.AdjustmentMethod">
+            <summary>
+            Adjustment method.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.DiscountType">
+            <summary>
+            Discount type for adjustments.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.OptionalFields">
+            <summary>
+            Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.AttributeProperty">
+            <summary>
+            Attribute/property value for sales and use transaction/service pairs.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.BillTo">
+            <summary>
+            Bill-to location.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.CustomerType">
+            <summary>
+            Customer type.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Lifeline">
+            <summary>
+            Indicates if customer is a Lifeline participant.
+            Default: false.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Date">
+            <summary>
+            Invoice date.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.Quantity">
+            <summary>
+            Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItem.GeneralLedgerRef">
+            <summary>
+            General Ledger reference to be used in reporting
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.LineItemResult">
+            <summary>
+            Tax calculation results for a single line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItemResult.LineNumber">
+            <summary>
+            Reference ID for line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItemResult.BaseSaleAmount">
+            <summary>
+            Base sale amount for tax-inclusive line items.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItemResult.Taxes">
+            <summary>
+            Taxes generated for line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.LineItemResult.Errors">
+            <summary>
+            Error description (as applicable).
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Location">
+            <summary>
+            Location data used to determine taxing jurisdiction.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Location.County">
+            <summary>
+            County name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Location.Country">
+            <summary>
+            Country ISO code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Location.Incorporated">
+            <summary>
+            Indicates if the location is within city limits.
+            Default: true.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Location.Geocode">
+            <summary>
+            Indicates if this address should be geocoded in order to obtain taxing jurisdiction.
+            Default: false.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Location.PCode">
+            <summary>
+            PCode for taxing jurisdiction.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Location.NpaNxx">
+            <summary>
+            NPANXX number.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Location.FipsCode">
+            <summary>
+            FIPS code for taxing jurisdiction.
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Location.Equals(Avalara.CommsPlatform.Api.Models.Location)">
+            <summary>
+            Equality operator
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Location.GetHashCode">
+            <summary>
+            Creates HashCode for use in equality comparison
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Location.op_Equality(Avalara.CommsPlatform.Api.Models.Location,Avalara.CommsPlatform.Api.Models.Location)">
+            <summary>
+            Equality operator
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Location.op_Inequality(Avalara.CommsPlatform.Api.Models.Location,Avalara.CommsPlatform.Api.Models.Location)">
+            <summary>
+            Inequality operator
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.GetTaxConfigItemRequest">
+            <summary>
+            Data for an invoice or quote line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GetTaxConfigItemRequest.RequestedClientId">
+            <summary>
+            Client id associated with profile(s) to be fetched
+            Null value will use client id submitting the request or default client id as applicable
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GetTaxConfigItemRequest.RequestedProfileId">
+            <summary>
+            Configuration profile id to be fetched
+            Use 0 to indicate all profiles
+            Null value will use profile id from request or 0 if not set.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.GetTaxConfigItemRequest.ItemType">
+            <summary>
+            Item Type
+            Examples:
+            Configuration, Bundle, Exclusion, Override, All
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest">
+            <summary>
+            Configuration settings for update
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest.ProfileConfigId">
+            <summary>
+            Profile configuration id to be used when updating an existing profile
+            Use null for new configuration
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest.LinkProfileIds">
+            <summary>
+            Profile(s) to be added to configuration
+            Leave null to not change profiles associated with configuration settings
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest.UnlinkProfileIds">
+            <summary>
+            Profile(s) to be added to configuration
+            Leave null to not change profiles associated with configuration settings
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest.ClientId">
+            <summary>
+            Client id associated with configuration
+            Will use default id for user if null
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest.Deactivate">
+            <summary>
+            True = Deactivate the configuration
+            Requires ProfileConfigId to be provided and valid.
+            Automatically removes any profile mappings associated with the configuration.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest.Description">
+            <summary>
+            Description to be applied to requested configuration
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigBaseRequest.ReplaceExistingLinks">
+            <summary>
+            Flag indicating existing configuration links to profile should be replaced
+            This only applies when one or more profiles have been specified to be linked.
+             - If true, mapping conflicts will be resolved by removing other links.
+             - If false, mapping conflicts will cause the request to fail with an error returned.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SetTaxConfigRequest">
+            <summary>
+            Configuration settings for update request
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigRequest.Settings">
+            <summary>
+            Configuration settings (required)
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigRequest.Bundles">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigRequest.Overrides">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxConfigRequest.Exclusions">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SetTaxExclusionRequest">
+            <summary>
+            Exclusions for update request
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxExclusionRequest.Exclusions">
+            <summary>
+            List of exclusions
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxExclusionRequest.Bundles">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxExclusionRequest.Overrides">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxExclusionRequest.Settings">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SetTaxBundleRequest">
+            <summary>
+            Bundles for update request
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxBundleRequest.Bundles">
+            <summary>
+            List of bundles
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxBundleRequest.Exclusions">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxBundleRequest.Overrides">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxBundleRequest.Settings">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SetTaxNexusRequest">
+            <summary>
+            Nexus values for update request
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxNexusRequest.Nexus">
+            <summary>
+            List of nexus
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SetTaxOverridesRequest">
+            <summary>
+            Overrides for update request
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxOverridesRequest.Overrides">
+            <summary>
+            Overrides
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxOverridesRequest.Exclusions">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxOverridesRequest.Bundles">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetTaxOverridesRequest.Settings">
+            <summary>Placeholder for disallowed field.</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ReportingInformation">
+            <summary>
+            Tax rate override information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ReportingInformation.AccountRef">
+            <summary>
+            Account id
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ReportingInformation.CustomerRef">
+            <summary>
+            Customer reference
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ReportingInformation.InvoiceRef">
+            <summary>
+            Invoice Number reference
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ReportingInformation.BillCycleRef">
+            <summary>
+            Bill Cycle reference
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ReportingInformation.CurrencyCode">
+            <summary>
+            Currency code for invoice
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ReportingInformation.CurrencyDesc">
+            <summary>
+            Currency description
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.RequestConfig">
+            <summary>
+            Container class for json priperties assocated with v2.CalcTaxes request configuration options
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.RequestConfig.ReturnNonBillable">
+            <summary>
+            Flag indicating non-billable taxes should be returned.
+            If set, will override account setting
+            Default if not provided is account setting value
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.RequestConfig.ReturnExtendedData">
+            <summary>
+            Flag indicating extended tax information should be returned.
+            Reference online documentation for more details 
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.RequestConfig.IncludeReportingInformation">
+            <summary>
+            Flag indicating reporting information should be returned.
+            Reference online documentation for more details 
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SafeHarborOverride">
+            <summary>
+            Safe harbor rate override for a USF tax type.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SafeHarborOverride.SafeHarborType">
+            <summary>
+            Safe harbor type (1 = Cellular, 2 = VoIP, 4 = Paging).
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SafeHarborOverride.OriginalFederalTam">
+            <summary>
+            Original Federal TAM value to override.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SafeHarborOverride.NewFederalTam">
+            <summary>
+            New TAM value that will replace the original TAM value.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ServiceInfo">
+            <summary>
+            Response body for service info API.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ServiceInfo.ServerTime">
+            <summary>
+            Server time.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ServiceInfo.Versions">
+            <summary>
+            Version information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ServiceInfo.Error">
+            <summary>
+            Error information.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Status">
+            <summary>
+            Status information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Status.Code">
+            <summary>
+            Status code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Status.Message">
+            <summary>
+            Status message.
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Status.#ctor">
+            <summary>
+            Constructor. Defaults Code to 200.
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Status.#ctor(System.String)">
+            <summary>
+            Constructor. Defaults Code to 200.
+            </summary>
+            <param name="message">Status message.</param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Status.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="code">Status code.</param>
+            <param name="message">Status message.</param>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SummarizedTax">
+            <summary>
+            Tax data for summarized invoice taxes.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SummarizedTax.MaxBase">
+            <summary>
+            Maximum base for tax bracket.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SummarizedTax.MinBase">
+            <summary>
+            Minimim base for tax bracket.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SummarizedTax.TotalCharge">
+            <summary>
+            Total charge amount.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Swagger.GeoBatchSwaggerFileUpload">
+            <summary>
+            Allow File Upload for Swagger
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Swagger.GeoBatchSwaggerFileUpload.Apply(Swashbuckle.AspNetCore.Swagger.Operation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Only apply to Geo Batch Upload Endpoint
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Swagger.SwaggerIgnoreAttribute">
+            <summary>
+            Attribute that specifies if a field or property should be ignored when generating swagger document
+            </summary>
+            <seealso cref="T:System.Attribute" />
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Swagger.SwaggerIgnoreFilter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Swagger.SwaggerIgnoreFilter.Apply(Swashbuckle.AspNetCore.Swagger.Schema,Swashbuckle.AspNetCore.SwaggerGen.SchemaFilterContext)">
+            <summary>
+            Applies the specified filter to swagger.
+            </summary>
+            <param name="schema">The schema.</param>
+            <param name="schemaFilterContext">The schema filter context.</param>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Swagger.StringExtensions">
+            <summary>
+            Helper class
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Tax">
+            <summary>
+            Tax data for individual line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Tax.Billable">
+            <summary>
+            Indicates if tax is billable to customer.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Tax.Compliance">
+            <summary>
+            Indicates if the tax is to be reported to jurisdiction.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Tax.TaxableMeasure">
+            <summary>
+            Taxable measure.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxBase">
+            <summary>
+            Tax data.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.CalculationType">
+            <summary>
+            Calculation type.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.CategoryName">
+            <summary>
+            Tax category name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.CategoryID">
+            <summary>
+            Tax category ID.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.Name">
+            <summary>
+            Tax name.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.ExemptSaleAmount">
+            <summary>
+            Exempt sale amount.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.Lines">
+            <summary>
+            Lines.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.Minutes">
+            <summary>
+            Minutes.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.PCode">
+            <summary>
+            PCode for reporting jurisdiction.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.TaxingPCode">
+            <summary>
+            PCode for taxing jurisdiction.
+            Only returned if return extended tax data flag is true
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.Rate">
+            <summary>
+            Tax rate.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.Surcharge">
+            <summary>
+            Indicates if this tax is a surcharge.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.TaxAmount">
+            <summary>
+            Tax amount.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.TaxLevel">
+            <summary>
+            Tax level ID.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.TaxType">
+            <summary>
+            Tax type ID.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.UserExempt">
+            <summary>
+            Flag indicating if tax was user exempted
+            Only returned if return extended tax data flag is true
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.NoTaxItem">
+            <summary>
+            Flag indicating the item is a no tax entry
+            There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response
+            Only returned if return extended tax data flag is true
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.TransactionType">
+            <summary>
+            Transaction type used to calculate tax
+            For bundles will be specific bundled item transaction type
+            Only returned if return extended tax data flag is true
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.ServiceType">
+            <summary>
+            Service type used to calculate tax
+            For bundles will be specific bundled item service type
+            Only returned if return extended tax data flag is true
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBase.TransactionCharge">
+            <summary>
+            Charge used to calculate tax
+            For bundles will be the percentage of charge applied to bundled item
+            For tax inclusive calls will be the calculated charge
+            Only returned if return extended tax data flag is true
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxBracket">
+            <summary>
+            Rate information for a tax bracket.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBracket.Rate">
+            <summary>
+            Tax rate. Value cannot be negative. For rated taxes, value must be from 0 to 1. Otherwise, value may be larger.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxBracket.MaxBase">
+            <summary>
+            Maximum base that this rate applies to.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxConfigResponse">
+            <summary>
+            Data for an invoice or quote line item.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.ProfileConfigId">
+            <summary>
+            Unique profile configuration id associated with configuration item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.ProfileIds">
+            <summary>
+            Profile id's associated with configuration item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.ClientId">
+            <summary>
+            Client id associated with configuration item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.LastUpdateBy">
+            <summary>
+            User who last updated the configuration item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Active">
+            <summary>
+            Active status of the configuration item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Settings">
+            <summary>
+            Configuration settings (as applicable)
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Exclusions">
+            <summary>
+            Exclusions (as applicable)
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Bundles">
+            <summary>
+            Bundles (as applicable)
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Nexus">
+            <summary>
+            Nexus (as applicable)
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Overrides">
+            <summary>
+            Overrides (as applicable - raw data)
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Description">
+            <summary>
+            Description associated with this item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Error">
+            <summary>
+            Error information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.ItemType">
+            <summary>
+            Item Type
+            Examples:
+              Configuration, Bundle, Exclusion, Override, All
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfigResponse.Convert(Avalara.CommsPlatform.Api.Models.TaxConfiguration,System.Boolean)">
+            <summary>
+            Converts configuration into api response
+            </summary>
+            <param name="cpConfig"></param>
+            <param name="includeInternal"></param>
+            <returns>ProfileConfigResponse object</returns>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse">
+            <summary>
+            Response for setting profile will have the updated profiles as well as applicable messages
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.SetUpdatedProfileConfig(Avalara.CommsPlatform.Api.Models.TaxConfiguration)">
+            <summary>Set updated profile config for response for reference (as applicable)</summary>
+            <param name="updatedConfig"></param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.GetUpdatedProfileConfig">
+            <summary>Get updated profile config for response</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.Errors">
+            <summary>
+            Error information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.Warnings">
+            <summary>
+            Warning information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.Status">
+            <summary>
+            Status information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.UpdatedProfiles">
+            <summary>
+            Updated client profile objects
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.ResponseErrorCode">
+            <summary>
+            Response error code (as applicable)
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.AddError(System.String)">
+            <summary>
+            Handles creating and setting error message
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.SetError(System.String,System.Int32)">
+            <summary>
+            Handles creating and setting error message and response code
+            </summary>
+            <param name="message"></param>
+            <param name="code"></param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.SetProfileConfigResponse.SetError(System.String)">
+            <summary>
+            Handles creating and setting error message and response code
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes">
+            <summary>
+            Choice of Configuration item types
+            - New entries should be added to table ClientProfileConfigXRef also 
+            - Use caution in changes to existing entries as it may impact 
+              references in ClientProfileConfig.ItemType
+            </summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes.All">
+            <summary>All items</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes.Configuration">
+            <summary>Configuration setting item</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes.Bundle">
+            <summary>Bundle item</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes.Exclusion">
+            <summary>Exclusion Item</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes.Override">
+            <summary>Override item</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes.Nexus">
+            <summary>Nexus item</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypes.Exemption">
+            <summary>Exemption item</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypesConverter">
+            <summary>
+            Json converter implementation for ClientProfileItemTypes enum
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypesConverter.WriteJson(Newtonsoft.Json.JsonWriter,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            Conversion of enum deserialization
+            </summary>
+            <param name="writer"></param>
+            <param name="value"></param>
+            <param name="serializer"></param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypesConverter.ReadJson(Newtonsoft.Json.JsonReader,System.Type,System.Object,Newtonsoft.Json.JsonSerializer)">
+            <summary>
+            Conversion of enum serialization
+            </summary>
+            <param name="reader"></param>
+            <param name="objectType"></param>
+            <param name="existingValue"></param>
+            <param name="serializer"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.ClientProfileItemTypesConverter.CanConvert(System.Type)">
+            <summary>
+            Testing convertability
+            </summary>
+            <param name="objectType"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxOnTaxAlgorithms">
+            <summary>
+            Choice of algorithms for Tax-On-Tax calculations
+            </summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.TaxOnTaxAlgorithms.SinglePass">
+            <summary>Tax-on-tax is calculated in a single pass.</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.TaxOnTaxAlgorithms.IterateOnTaxAmount">
+            <summary>Tax-on-tax iterates until the difference in the tax-on-tax calculated tax amount is less than 0.005</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.TaxOnTaxAlgorithms.IterateOnTaxableMeasure">
+            <summary>Tax-on-tax iterates until the difference in the tax-on-tax calculated taxable measure is less than 0.005</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.SelfTaxAlgorithms">
+            <summary>
+            Choice of algorithms for Self-Tax calculations
+            </summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.SelfTaxAlgorithms.Individual">
+            <summary>Each self-tax is calculated independently</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.SelfTaxAlgorithms.Aggregate">
+            <summary>All self-tax taxes for calculation are calculated as an aggregate</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.AfcSafeHarborValues">
+            <summary>
+            Safe Harbor default Federal percentages
+            </summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.AfcSafeHarborValues.Cellular">
+            <summary>Cellular safe harbor value</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.AfcSafeHarborValues.VoIP">
+            <summary>VoIP safe harbor value</summary>
+        </member>
+        <member name="F:Avalara.CommsPlatform.Api.Models.AfcSafeHarborValues.Paging">
+            <summary>Paging safe harbor value</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.AfcTrafficStudyOverride">
+            <summary>
+            Specifies a traffic study override
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.AfcTrafficStudyOverride.TrafficStudyType">
+            <summary>Defines which transaction type the traffic study override applies to.  Ref enum SafeHarborType for list.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.AfcTrafficStudyOverride.SafeHarborFedPcnt">
+            <summary>Safe harbor value to be overriden.  Ref class AfcSafeHarborValues for default values.</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.AfcTrafficStudyOverride.TrafficStudyFedPcnt">
+            <summary>Client provided traffic study percent (Federal) to be used instead of safe harbor.</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.AfcTrafficStudyOverride.#ctor">
+            <summary>Instantiate empty object</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.AfcTrafficStudyOverride.#ctor(Avalara.CommsPlatform.DataAccessService.Models.SafeHarborType,System.Double)">
+            <summary>Instantiate using default safe harbor percent</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.AfcTrafficStudyOverride.#ctor(Avalara.CommsPlatform.DataAccessService.Models.SafeHarborType,System.Double,System.Double)">
+            <summary>Instantiate using provided safe harbor percent</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ClientProfileOverride">
+            <summary>
+            Settings associated with a client profile override
+            Maybe associated with 0 to many profiles
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileOverride.RawData">
+            <summary>
+            Raw data
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ClientProfileExclusion">
+            <summary>
+            Settings associated with a client profile exclusions
+            Maybe associated with 0 to many profiles
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileExclusion.CountryIso">
+            <summary>
+            Country ISO value
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileExclusion.State">
+            <summary>
+            State abbreviation
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ClientProfileNexus">
+            <summary>
+            Settings associated with a client profile nexus
+            Maybe associated with 0 to many profiles
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileNexus.State">
+            <summary>
+            State abbreviation
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem">
+            <summary>
+            Bundled items associated with a bundle package
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.TransactionId">
+            <summary>
+            Transaction id for item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.ServiceId">
+            <summary>
+            Service id for item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.Percentage">
+            <summary>
+            Percentage of package charge to be applied to item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.FixedAmount">
+            <summary>
+            Fixed charge to be applied to item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.Lines">
+            <summary>
+            Fixed lines to be applied to item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.Minutes">
+            <summary>
+            Fixed minutes to be applied to item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.TransactionDesc">
+            <summary>
+            Transaction id for item
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundleItem.ServiceDesc">
+            <summary>
+            Service id for item
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.ClientProfileBundle">
+            <summary>
+            Bundles associated with a client profile configuration
+            Maybe associated with 0 to many profiles
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundle.BundlePackage">
+            <summary>
+            Bundle Package - example:  20000
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundle.BundleId">
+            <summary>
+            Bundle Id - example:  20001
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundle.Description">
+            <summary>
+            Bundle Description
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundle.BundleItems">
+            <summary>
+            Bundled items - percentage should add up to 100% (as applicable)
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.ClientProfileBundle.Version">
+            <summary>
+            Version for bundle - intended to allow changes to format 
+            without having to perform expensive SQL updates on existing bundles
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxConfigurationSettings">
+            <summary>
+            Settings associated with a client profile configuration
+            Maybe associated with 0 to many profiles
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigurationSettings.TrafficStudyOverrides">
+            <summary>
+            List of Traffic Study Overrides
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigurationSettings.ReturnNonBillable">
+            <summary>
+            true : Return both non-billable and billable taxes in taxation response
+            false (default) : Return billable taxes only in taxation response
+            Default: false
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigurationSettings.TaxOnTaxAlgorithm">
+            <summary>
+            Tax-on-tax algorithm to be used in tax calculations
+            0 : Single pass
+            1 (default) : IterateOnTaxAmount
+            2 : IterateOnTaxableMeasure
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigurationSettings.SelfTaxAlgorithm">
+            <summary>
+            Self-tax algorithm to be used in tax calculations
+            0 (default) : Calculate tax on individual self-taxing taxes
+            1 : Calculate tax on aggregate of self-taxing taxes
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigurationSettings.Internal">
+            <summary>
+            Internal configuration settings
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.InternalProfileConfig">
+            <summary>
+            Settings associated with a internal configuration settings
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InternalProfileConfig.CustomerOverrideMultiplier">
+            <summary>
+            Integer value to increase memory allocated for loading override file
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InternalProfileConfig.EnableStatusFile">
+            <summary>
+            Flag to output status file to working directory
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InternalProfileConfig.DisableTaxInclusiveSessionInit">
+             <summary>
+             Flag to disable initialization of tax inclusive session construction on session construction
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.InternalProfileConfig.AbortOnInitWarning">
+            <summary>
+            Flag for session to abort if warnings occur during initialization
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxConfiguration">
+            <summary>ClientProfileConfig</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProcureConfigSettings(System.Boolean)">
+            <summary>ProcureConfigSettings</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProcureConfigExclusions">
+            <summary>ProcureConfigExclusions - returns list of exclusions associated with client/profile</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProcureConfigBundles">
+            <summary>ProcureConfigBundles - returns list of bundles associated with client/profile</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProcureConfigNexus">
+            <summary>ProcureConfigNexus - returns list of nexus values associated with client/profile</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProcureConfigOverrides">
+            <summary>ProcureConfigNexus - returns list of nexus values associated with client/profile</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProfileIds">
+            <summary>
+            The profile ids.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProfileConfigId">
+            <summary>ProfileConfigId</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ClientId">
+            <summary>Client Id</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.LastUpdateBy">
+            <summary>UserName</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.Active">
+            <summary>Active</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ItemType">
+            <summary>Type associated with item</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ItemData">
+            <summary>Data associated with item</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ItemDescription">
+            <summary>Description associated with item</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.CreatedDate">
+            <summary>Date item created</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfiguration.LastUpdateDate">
+            <summary>Date item updated</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.AddProfileId(System.Int32)">
+            <summary>SetProfileIds</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.ProcureAfcEngineConfiguration">
+            <summary>ProcureAfcEngineConfiguration</summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.CopyForDb(Avalara.CommsPlatform.Api.Models.TaxConfiguration)">
+            <summary>Overload to copy select data for database updates</summary>
+            <param name="from"></param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.Equals(Avalara.CommsPlatform.Api.Models.TaxConfiguration)">
+            <summary>
+            Test whether TaxConfiguration object refers to same profile item object passed in
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfiguration.GetHashCode">
+            <summary>
+            If Equals() returns true for a pair of objects then GetHashCode() 
+            must return the same value for these objects. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxConfigMapping">
+            <summary>ClientProfileConfigMapping</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigMapping.ProfileConfigMappingId">
+            <summary>ProfileConfigMappingId</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigMapping.ProfileConfigId">
+            <summary>ProfileConfigId</summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigMapping.ProfileId">
+            <summary>ProfileId</summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObject">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObject.ClientProfileConfigMappings">
+            <summary>
+            Gets or sets the client profile configuration mappings.
+            </summary>
+            <value>
+            The client profile configuration mappings.
+            </value>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObject.TaxConfiguration">
+            <summary>
+            Gets or sets the client profile configuration.
+            </summary>
+            <value>
+            The client profile configuration.
+            </value>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObjectComparer">
+            <summary>
+            Class for handling comparison of tax configurations
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObjectComparer.Equals(Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObject,Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObject)">
+            <summary>
+            Test whether TaxConfiguration object refers to same profile item object passed in
+            </summary>
+            <param name="x"></param>
+            <param name="y"></param>
+            <returns>bool</returns>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObjectComparer.GetHashCode(Avalara.CommsPlatform.Api.Models.TaxConfigurationDomainObject)">
+            <summary>
+            If Equals() returns true for a pair of objects then GetHashCode() 
+            must return the same value for these objects. 
+            </summary>
+            <param name="taxConfigurationDomainObject"></param>
+            <returns>int</returns>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxExemption">
+            <summary>
+            Tax exemption data.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.Force">
+            <summary>
+            Override level exempt flag on wildcard tax type exemptions.
+            </summary>
+            <remarks>True (Default) - Tax type wildcard exemptions will exempt taxes tagged not level exemptible
+            False - Tax type wildcard exemptions will exclude taxes tagged not level exemptible from consideration</remarks>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.Location">
+            <summary>
+            Jurisdiction for exemption
+            </summary>
+            <remarks>Match occurs at level specified by domain setting.</remarks>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.TaxType">
+            <summary>
+            Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.
+            </summary>
+            <remarks>0 Indicates wildcard - exempts all tax types</remarks>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.TaxLevel">
+            <summary>
+            Tax level ID.
+            </summary>
+            <remarks>Obsolete - provided for legacy support.  Use Domain and Scope instead.</remarks>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.TaxCategory">
+            <summary>
+            Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.
+            </summary>
+            <remarks>0 Indicates wildcard - exempts all categories</remarks>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.Domain">
+            <summary>
+            Exemption Domain.  This is the jurisdiction level in which the
+            exemption jurisdiction must match the taxing jurisdiction.
+            </summary>
+            <remarks>0=Federal  1=State  2=County  3=City</remarks>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.Scope">
+            <summary>
+            Exemption Scope.  This defines the tax levels in which the
+            taxes will be considered as candidates for exemption.
+            </summary>
+            <remarks>Combination of (128=Federal  256=State  512=County  1024=Local)
+            Example:  1920=All (Federal+State+County+Local)</remarks>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxExemption.ExemptNonbillable">
+            <summary>
+            Exempt non-billable flag.  Determines if non-billable taxes are
+            to be considered as candidates for exemption.
+            </summary>
+            <remarks>True - nonbillable taxes can be exempted
+            False (Default)- nonbillable taxes will not be exempted</remarks>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.TaxOverride">
+            <summary>
+            Tax rate override information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxOverride.Location">
+            <summary>
+            Jurisdiction PCode for this tax rate override.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxOverride.Scope">
+            <summary>
+            Scope for override. 0 = Country, 1 = State, 2 = County, 3 = City.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxOverride.TaxType">
+            <summary>
+            Tax type ID. 
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxOverride.TaxLevel">
+            <summary>
+            Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxOverride.LevelExemptible">
+            <summary>
+            Indicates if the tax can be exempted using level exemptions.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.TaxOverride.BracketInfo">
+            <summary>
+            Tax rate/bracket information.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.VersionInfo">
+            <summary>
+            Version specific results for service info request.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.VersionInfo.AfcEngineVersion">
+            <summary>
+            AFC Engine Version
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.VersionInfo.BuildVersion">
+            <summary>
+            Service Build Version.
+            </summary>
+        </member>
+        <member name="T:Avalara.CommsPlatform.Api.Models.Warning">
+            <summary>
+            Warning information.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Warning.Code">
+            <summary>
+            Warning code.
+            </summary>
+        </member>
+        <member name="P:Avalara.CommsPlatform.Api.Models.Warning.Message">
+            <summary>
+            Warning message.
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Warning.#ctor">
+            <summary>
+            Constructor. Defaults Code to 0.
+            </summary>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Warning.#ctor(System.String)">
+            <summary>
+            Constructor. Defaults Code to 0.
+            </summary>
+            <param name="message">Warning message.</param>
+        </member>
+        <member name="M:Avalara.CommsPlatform.Api.Models.Warning.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructor.
+            </summary>
+            <param name="code">Warning code.</param>
+            <param name="message">Warning message.</param>
+        </member>
+    </members>
+</doc>

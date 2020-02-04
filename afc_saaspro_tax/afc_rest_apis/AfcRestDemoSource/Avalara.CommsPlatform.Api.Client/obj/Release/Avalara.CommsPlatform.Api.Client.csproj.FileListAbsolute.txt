@@ -1,9 +1,0 @@
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\bin\Release\Avalara.CommsPlatform.Api.Client.dll
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\bin\Release\Avalara.CommsPlatform.Api.Client.pdb
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\bin\Release\Avalara.CommsPlatform.Api.Models.dll
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\bin\Release\Newtonsoft.Json.dll
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\bin\Release\Avalara.CommsPlatform.Api.Models.pdb
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\bin\Release\Newtonsoft.Json.xml
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\obj\Release\Avalara.CommsPlatform.Api.Client.csprojResolveAssemblyReference.cache
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\obj\Release\Avalara.CommsPlatform.Api.Client.dll
-C:\Temp\NEW DEMO APP\AfcRestDemoSource\Avalara.CommsPlatform.Api.Client\obj\Release\Avalara.CommsPlatform.Api.Client.pdb

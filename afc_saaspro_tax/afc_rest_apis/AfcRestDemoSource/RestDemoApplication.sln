@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestDemoApplication", "RestDemoApplication\RestDemoApplication.csproj", "{19156F0C-8BB8-41E7-BB1E-302900D3D12C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestDemoApplication", "src\RestDemoApplication.csproj", "{19156F0C-8BB8-41E7-BB1E-302900D3D12C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalara.CommsPlatform.Api.Models", "Avalara.CommsPlatform.Api.Models\Avalara.CommsPlatform.Api.Models.csproj", "{53BF953D-F402-48C2-9A26-12FD7C8F442B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalara.CommsPlatform.Api.Models", "src\Avalara.CommsPlatform.Api.Models\Avalara.CommsPlatform.Api.Models.csproj", "{53BF953D-F402-48C2-9A26-12FD7C8F442B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Avalara.CommsPlatform.Api.Client", "Avalara.CommsPlatform.Api.Client\Avalara.CommsPlatform.Api.Client.csproj", "{24F2E076-A043-4783-88E7-6F0C59112AA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avalara.CommsPlatform.Api.Client", "src\Avalara.CommsPlatform.Api.Client\Avalara.CommsPlatform.Api.Client.csproj", "{24F2E076-A043-4783-88E7-6F0C59112AA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0599F20C-AFAE-4921-AF8E-152E23A00EA8}
 	EndGlobalSection
 EndGlobal
