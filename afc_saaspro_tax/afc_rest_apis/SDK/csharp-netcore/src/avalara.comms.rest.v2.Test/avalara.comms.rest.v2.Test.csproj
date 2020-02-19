@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SaasPro
+
+APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+
+The version of the OpenAPI document: v2
+
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>avalara.comms.rest.v2.Test</RootNamespace>
+    <AssemblyName>avalara.comms.rest.v2.Test</AssemblyName>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <ItemGroup>
+      <PackageReference Include="CompareNETObjects" Version="4.57.0" />
+      <PackageReference Include="JsonSubTypes" Version="1.5.2" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+      <PackageReference Include="xunit" Version="2.4.1" />
+      <PackageReference Include="xunit.runner.visualstudio" Version="2.4.1" />
+      <PackageReference Include="RestSharp" Version="106.10.1" />
+      <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+      <ProjectReference Include="..\avalara.comms.rest.v2\avalara.comms.rest.v2.csproj">
+          <Project>{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}</Project>
+          <Name>avalara.comms.rest.v2</Name>
+      </ProjectReference>
+  </ItemGroup>
+</Project>
+
