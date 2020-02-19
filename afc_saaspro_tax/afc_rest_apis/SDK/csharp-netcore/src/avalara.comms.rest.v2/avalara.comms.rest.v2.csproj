@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+SaasPro
+
+APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+
+The version of the OpenAPI document: v2
+
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>avalara.comms.rest.v2</RootNamespace>
+    <AssemblyName>avalara.comms.rest.v2</AssemblyName>
+    <Description>A library generated from a OpenAPI doc</Description>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <FileAlignment>512</FileAlignment>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\avalara.comms.rest.v2.xml</DocumentationFile>
+    <RepositoryUrl>https://github.com/GIT_USER_ID/GIT_REPO_ID.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/GIT_USER_ID/GIT_REPO_ID</PackageProjectUrl>
+    <PackageReleaseNotes>Minor update</PackageReleaseNotes>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+      <PackageReference Include="CompareNETObjects" Version="4.57.0" />
+      <PackageReference Include="JsonSubTypes" Version="1.5.2" />
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+      <PackageReference Include="RestSharp" Version="106.10.1" />
+      <PackageReference Include="System.ComponentModel.Annotations" Version="4.5.0" />
+  </ItemGroup>
+</Project>

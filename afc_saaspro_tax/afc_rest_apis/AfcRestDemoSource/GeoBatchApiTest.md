@@ -40,3 +40,5 @@ Geo Batch can be used by either **API** or **Comms Platform** (<https://communic
   - To retrieve your input file download, click the "Download Input File" button or copy the "InputFileDownload" from the response and paste into a browser
   - To retrieve your output file download, click the "Download Output File" button or copy the "OutputFileDownload" from the response and paste into a browser
     - Note: These buttons will not appear until the respective files are ready!
+
+[Parent](../README.md)
