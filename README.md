@@ -1,6 +1,7 @@
 # Communications-Developer-Content
 
 The AFC SaaS Pro Tax services provide APIs to calculate taxes on communications transactions and lookup tax rate and jurisdiction information.
+
 The AFC SaaS Pro Geo service provides APIs to geo code an address for address validation, correction and rooftop level jurisdiction selection.
 
 ## **Overview of Package**
