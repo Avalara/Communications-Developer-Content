@@ -36,7 +36,7 @@ import org.threeten.bp.OffsetDateTime;
  * Contains information about an invoice or quote.
  */
 @ApiModel(description = "Contains information about an invoice or quote.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class Invoice {
   public static final String SERIALIZED_NAME_DOC = "doc";
   @SerializedName(SERIALIZED_NAME_DOC)
@@ -48,7 +48,7 @@ public class Invoice {
 
   public static final String SERIALIZED_NAME_BILL = "bill";
   @SerializedName(SERIALIZED_NAME_BILL)
-  private Location bill = null;
+  private Location bill;
 
   public static final String SERIALIZED_NAME_CUST = "cust";
   @SerializedName(SERIALIZED_NAME_CUST)
@@ -104,7 +104,7 @@ public class Invoice {
 
   public static final String SERIALIZED_NAME_BPD = "bpd";
   @SerializedName(SERIALIZED_NAME_BPD)
-  private BillingPeriod bpd = null;
+  private BillingPeriod bpd;
 
   public static final String SERIALIZED_NAME_CCYCD = "ccycd";
   @SerializedName(SERIALIZED_NAME_CCYCD)
@@ -118,11 +118,11 @@ public class Invoice {
   }
 
    /**
-   * Get doc
+   * Document code.
    * @return doc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Document code.")
 
   public String getDoc() {
     return doc;
@@ -141,11 +141,11 @@ public class Invoice {
   }
 
    /**
-   * Get cmmt
+   * Indicates if invoice should be committed as soon as it is processed.  Default: false.
    * @return cmmt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if invoice should be committed as soon as it is processed.  Default: false.")
 
   public Boolean getCmmt() {
     return cmmt;
@@ -187,11 +187,11 @@ public class Invoice {
   }
 
    /**
-   * Get cust
+   * Customer type.
    * @return cust
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Customer type.")
 
   public Integer getCust() {
     return cust;
@@ -210,11 +210,11 @@ public class Invoice {
   }
 
    /**
-   * Get lfln
+   * Indicates if customer is a Lifeline participant.  Default: false.
    * @return lfln
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if customer is a Lifeline participant.  Default: false.")
 
   public Boolean getLfln() {
     return lfln;
@@ -264,11 +264,11 @@ public class Invoice {
   }
 
    /**
-   * Get exms
+   * Tax exemptions.
    * @return exms
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax exemptions.")
 
   public List<TaxExemption> getExms() {
     return exms;
@@ -295,11 +295,11 @@ public class Invoice {
   }
 
    /**
-   * Get itms
+   * Line items.
    * @return itms
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Line items.")
 
   public List<LineItem> getItms() {
     return itms;
@@ -318,11 +318,11 @@ public class Invoice {
   }
 
    /**
-   * Get invm
+   * Indicates if all line items within invoice should be processed in invoice mode.  Default: true.
    * @return invm
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if all line items within invoice should be processed in invoice mode.  Default: true.")
 
   public Boolean getInvm() {
     return invm;
@@ -341,11 +341,11 @@ public class Invoice {
   }
 
    /**
-   * Get dtl
+   * Indicates if individual line item taxes should be included in response.  Default: true.
    * @return dtl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if individual line item taxes should be included in response.  Default: true.")
 
   public Boolean getDtl() {
     return dtl;
@@ -364,11 +364,11 @@ public class Invoice {
   }
 
    /**
-   * Get summ
+   * Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.
    * @return summ
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.")
 
   public Boolean getSumm() {
     return summ;
@@ -395,11 +395,11 @@ public class Invoice {
   }
 
    /**
-   * Get opt
+   * Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.
    * @return opt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.")
 
   public List<KeyValuePair> getOpt() {
     return opt;
@@ -418,11 +418,11 @@ public class Invoice {
   }
 
    /**
-   * Get acct
+   * Account reference for reporting
    * @return acct
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Account reference for reporting")
 
   public String getAcct() {
     return acct;
@@ -441,11 +441,11 @@ public class Invoice {
   }
 
    /**
-   * Get custref
+   * Customer Reference for reporting
    * @return custref
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Customer Reference for reporting")
 
   public String getCustref() {
     return custref;
@@ -464,11 +464,11 @@ public class Invoice {
   }
 
    /**
-   * Get invn
+   * Invoice Number reference for reporting
    * @return invn
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Invoice Number reference for reporting")
 
   public String getInvn() {
     return invn;
@@ -487,11 +487,11 @@ public class Invoice {
   }
 
    /**
-   * Get bcyc
+   * Bill Cycle reference for reporting
    * @return bcyc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Bill Cycle reference for reporting")
 
   public String getBcyc() {
     return bcyc;
@@ -533,11 +533,11 @@ public class Invoice {
   }
 
    /**
-   * Get ccycd
+   * Currency code for invoice.  Example: CAD &#x3D; Canadian Dollar
    * @return ccycd
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Currency code for invoice.  Example: CAD = Canadian Dollar")
 
   public String getCcycd() {
     return ccycd;

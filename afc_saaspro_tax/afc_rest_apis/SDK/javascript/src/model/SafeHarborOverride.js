@@ -65,16 +65,19 @@ class SafeHarborOverride {
 }
 
 /**
+ * Safe harbor type (1 = Cellular, 2 = VoIp, 4 = Paging).
  * @member {Number} sh
  */
 SafeHarborOverride.prototype['sh'] = undefined;
 
 /**
+ * Original Federal TAM value to override.
  * @member {Number} old
  */
 SafeHarborOverride.prototype['old'] = undefined;
 
 /**
+ * New TAM value that will replace the original TAM value.
  * @member {Number} new
  */
 SafeHarborOverride.prototype['new'] = undefined;

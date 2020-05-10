@@ -171,7 +171,7 @@ __PACKAGE__->method_documentation({
     'max' => {
         datatype => 'double',
         base_name => 'max',
-        description => '',
+        description => 'Maximum base that this rate applies to.',
         format => '',
         read_only => '',
             },

@@ -7,9 +7,9 @@ Specifies a tax exclusion by state.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ctry** | **String** |  |  [optional]
-**st** | **String** |  |  [optional]
-**excl** | **Boolean** |  |  [optional]
+**ctry** | **String** | Country ISO code. |  [optional]
+**st** | **String** | State abbreviation. |  [optional]
+**excl** | **Boolean** | Indicates if exclusion applies to the specified state. |  [optional]
 
 
 

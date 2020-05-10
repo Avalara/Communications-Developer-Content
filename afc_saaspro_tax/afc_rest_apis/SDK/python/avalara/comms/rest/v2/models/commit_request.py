@@ -63,6 +63,7 @@ class CommitRequest(object):
     def doc(self):
         """Gets the doc of this CommitRequest.  # noqa: E501
 
+        Document code.  # noqa: E501
 
         :return: The doc of this CommitRequest.  # noqa: E501
         :rtype: str
@@ -73,6 +74,7 @@ class CommitRequest(object):
     def doc(self, doc):
         """Sets the doc of this CommitRequest.
 
+        Document code.  # noqa: E501
 
         :param doc: The doc of this CommitRequest.  # noqa: E501
         :type: str
@@ -84,6 +86,7 @@ class CommitRequest(object):
     def cmmt(self):
         """Gets the cmmt of this CommitRequest.  # noqa: E501
 
+        Indicates if transactions for the specified document code should be committed.  # noqa: E501
 
         :return: The cmmt of this CommitRequest.  # noqa: E501
         :rtype: bool
@@ -94,6 +97,7 @@ class CommitRequest(object):
     def cmmt(self, cmmt):
         """Sets the cmmt of this CommitRequest.
 
+        Indicates if transactions for the specified document code should be committed.  # noqa: E501
 
         :param cmmt: The cmmt of this CommitRequest.  # noqa: E501
         :type: bool
@@ -105,6 +109,7 @@ class CommitRequest(object):
     def opt(self):
         """Gets the opt of this CommitRequest.  # noqa: E501
 
+        Overrides value for OptionalFields field in reports.  # noqa: E501
 
         :return: The opt of this CommitRequest.  # noqa: E501
         :rtype: list[KeyValuePair]
@@ -115,6 +120,7 @@ class CommitRequest(object):
     def opt(self, opt):
         """Sets the opt of this CommitRequest.
 
+        Overrides value for OptionalFields field in reports.  # noqa: E501
 
         :param opt: The opt of this CommitRequest.  # noqa: E501
         :type: list[KeyValuePair]

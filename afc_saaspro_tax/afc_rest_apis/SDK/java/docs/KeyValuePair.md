@@ -8,7 +8,7 @@ Key/value pair data.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **key** | **String** | Key. |  [optional]
-**val** | **String** |  |  [optional]
+**val** | **String** | Value. |  [optional]
 
 
 

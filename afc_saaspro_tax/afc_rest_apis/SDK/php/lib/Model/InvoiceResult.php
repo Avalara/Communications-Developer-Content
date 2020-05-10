@@ -62,7 +62,7 @@ class InvoiceResult implements ModelInterface, ArrayAccess
         'itms' => '\OpenAPI\Client\Model\LineItemResult[]',
         'summ' => '\OpenAPI\Client\Model\SummarizedTax[]',
         'err' => '\OpenAPI\Client\Model\Error[]',
-        'incrf' => 'ReportingInformation'
+        'incrf' => '\OpenAPI\Client\Model\ReportingInformation'
     ];
 
     /**
@@ -242,7 +242,7 @@ class InvoiceResult implements ModelInterface, ArrayAccess
     /**
      * Sets doc
      *
-     * @param string|null $doc doc
+     * @param string|null $doc Document number for invoice.
      *
      * @return $this
      */
@@ -266,7 +266,7 @@ class InvoiceResult implements ModelInterface, ArrayAccess
     /**
      * Sets itms
      *
-     * @param \OpenAPI\Client\Model\LineItemResult[]|null $itms itms
+     * @param \OpenAPI\Client\Model\LineItemResult[]|null $itms Individual tax calculation results for each line item.
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class InvoiceResult implements ModelInterface, ArrayAccess
     /**
      * Sets summ
      *
-     * @param \OpenAPI\Client\Model\SummarizedTax[]|null $summ summ
+     * @param \OpenAPI\Client\Model\SummarizedTax[]|null $summ Summarized taxes for invoice.
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class InvoiceResult implements ModelInterface, ArrayAccess
     /**
      * Sets err
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $err err
+     * @param \OpenAPI\Client\Model\Error[]|null $err Error description (as applicable).
      *
      * @return $this
      */
@@ -328,7 +328,7 @@ class InvoiceResult implements ModelInterface, ArrayAccess
     /**
      * Gets incrf
      *
-     * @return ReportingInformation|null
+     * @return \OpenAPI\Client\Model\ReportingInformation|null
      */
     public function getIncrf()
     {
@@ -338,7 +338,7 @@ class InvoiceResult implements ModelInterface, ArrayAccess
     /**
      * Sets incrf
      *
-     * @param ReportingInformation|null $incrf incrf
+     * @param \OpenAPI\Client\Model\ReportingInformation|null $incrf incrf
      *
      * @return $this
      */

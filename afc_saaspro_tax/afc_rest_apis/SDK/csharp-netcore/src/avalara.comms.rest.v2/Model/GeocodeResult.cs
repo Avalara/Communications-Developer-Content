@@ -34,20 +34,20 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GeocodeResult" /> class.
         /// </summary>
-        /// <param name="_ref">_ref.</param>
+        /// <param name="_ref">Reference Id from geocode request input..</param>
         /// <param name="cass">cass.</param>
-        /// <param name="cBlk">cBlk.</param>
-        /// <param name="cTrc">cTrc.</param>
-        /// <param name="cnty">cnty.</param>
-        /// <param name="feat">feat.</param>
-        /// <param name="fips">fips.</param>
-        /// <param name="inc">inc.</param>
-        /// <param name="jur">jur.</param>
-        /// <param name="lat">lat.</param>
-        /// <param name="_long">_long.</param>
-        /// <param name="pcd">pcd.</param>
-        /// <param name="scr">scr.</param>
-        /// <param name="err">err.</param>
+        /// <param name="cBlk">Census block..</param>
+        /// <param name="cTrc">Census tract..</param>
+        /// <param name="cnty">County.</param>
+        /// <param name="feat">Feature ID..</param>
+        /// <param name="fips">FIPS Code..</param>
+        /// <param name="inc">Indicates if address is within city limits..</param>
+        /// <param name="jur">Tax jurisdiction name..</param>
+        /// <param name="lat">Latitude..</param>
+        /// <param name="_long">Longitude..</param>
+        /// <param name="pcd">PCode for tax jurisdiction..</param>
+        /// <param name="scr">Score indicating accuracy of address match in mapping database..</param>
+        /// <param name="err">Error message..</param>
         public GeocodeResult(string _ref = default(string), Address cass = default(Address), int? cBlk = default(int?), int? cTrc = default(int?), string cnty = default(string), int? feat = default(int?), string fips = default(string), bool? inc = default(bool?), string jur = default(string), double? lat = default(double?), double? _long = default(double?), int? pcd = default(int?), double? scr = default(double?), string err = default(string))
         {
             this.Ref = _ref;
@@ -67,86 +67,99 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Ref
+        /// Reference Id from geocode request input.
         /// </summary>
+        /// <value>Reference Id from geocode request input.</value>
         [DataMember(Name="ref", EmitDefaultValue=true)]
         public string Ref { get; set; }
 
         /// <summary>
         /// Gets or Sets Cass
         /// </summary>
-        [DataMember(Name="cass", EmitDefaultValue=true)]
+        [DataMember(Name="cass", EmitDefaultValue=false)]
         public Address Cass { get; set; }
 
         /// <summary>
-        /// Gets or Sets CBlk
+        /// Census block.
         /// </summary>
+        /// <value>Census block.</value>
         [DataMember(Name="cBlk", EmitDefaultValue=true)]
         public int? CBlk { get; set; }
 
         /// <summary>
-        /// Gets or Sets CTrc
+        /// Census tract.
         /// </summary>
+        /// <value>Census tract.</value>
         [DataMember(Name="cTrc", EmitDefaultValue=true)]
         public int? CTrc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cnty
+        /// County
         /// </summary>
+        /// <value>County</value>
         [DataMember(Name="cnty", EmitDefaultValue=true)]
         public string Cnty { get; set; }
 
         /// <summary>
-        /// Gets or Sets Feat
+        /// Feature ID.
         /// </summary>
+        /// <value>Feature ID.</value>
         [DataMember(Name="feat", EmitDefaultValue=true)]
         public int? Feat { get; set; }
 
         /// <summary>
-        /// Gets or Sets Fips
+        /// FIPS Code.
         /// </summary>
+        /// <value>FIPS Code.</value>
         [DataMember(Name="fips", EmitDefaultValue=true)]
         public string Fips { get; set; }
 
         /// <summary>
-        /// Gets or Sets Inc
+        /// Indicates if address is within city limits.
         /// </summary>
+        /// <value>Indicates if address is within city limits.</value>
         [DataMember(Name="inc", EmitDefaultValue=true)]
         public bool? Inc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Jur
+        /// Tax jurisdiction name.
         /// </summary>
+        /// <value>Tax jurisdiction name.</value>
         [DataMember(Name="jur", EmitDefaultValue=true)]
         public string Jur { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lat
+        /// Latitude.
         /// </summary>
+        /// <value>Latitude.</value>
         [DataMember(Name="lat", EmitDefaultValue=true)]
         public double? Lat { get; set; }
 
         /// <summary>
-        /// Gets or Sets Long
+        /// Longitude.
         /// </summary>
+        /// <value>Longitude.</value>
         [DataMember(Name="long", EmitDefaultValue=true)]
         public double? Long { get; set; }
 
         /// <summary>
-        /// Gets or Sets Pcd
+        /// PCode for tax jurisdiction.
         /// </summary>
+        /// <value>PCode for tax jurisdiction.</value>
         [DataMember(Name="pcd", EmitDefaultValue=true)]
         public int? Pcd { get; set; }
 
         /// <summary>
-        /// Gets or Sets Scr
+        /// Score indicating accuracy of address match in mapping database.
         /// </summary>
+        /// <value>Score indicating accuracy of address match in mapping database.</value>
         [DataMember(Name="scr", EmitDefaultValue=true)]
         public double? Scr { get; set; }
 
         /// <summary>
-        /// Gets or Sets Err
+        /// Error message.
         /// </summary>
+        /// <value>Error message.</value>
         [DataMember(Name="err", EmitDefaultValue=true)]
         public string Err { get; set; }
 

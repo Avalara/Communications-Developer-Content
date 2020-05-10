@@ -230,7 +230,7 @@ class RequestConfig implements ModelInterface, ArrayAccess
     /**
      * Sets retnb
      *
-     * @param bool|null $retnb retnb
+     * @param bool|null $retnb Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class RequestConfig implements ModelInterface, ArrayAccess
     /**
      * Sets retext
      *
-     * @param bool|null $retext retext
+     * @param bool|null $retext Flag indicating extended tax information should be returned.  Reference online documentation for more details
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class RequestConfig implements ModelInterface, ArrayAccess
     /**
      * Sets incrf
      *
-     * @param bool|null $incrf incrf
+     * @param bool|null $incrf Flag indicating reporting information should be returned.  Reference online documentation for more details
      *
      * @return $this
      */

@@ -68,6 +68,7 @@ class TaxBracket {
 TaxBracket.prototype['rate'] = undefined;
 
 /**
+ * Maximum base that this rate applies to.
  * @member {Number} max
  */
 TaxBracket.prototype['max'] = undefined;

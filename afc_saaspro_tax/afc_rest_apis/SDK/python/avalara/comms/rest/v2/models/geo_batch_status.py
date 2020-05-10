@@ -72,7 +72,8 @@ class GeoBatchStatus(object):
         self.processing_start = processing_start
         self.processing_end = processing_end
         self.status = status
-        self.downloads = downloads
+        if downloads is not None:
+            self.downloads = downloads
         self.error = error
 
     @property
@@ -194,7 +195,6 @@ class GeoBatchStatus(object):
     def downloads(self):
         """Gets the downloads of this GeoBatchStatus.  # noqa: E501
 
-        Output File Name.  # noqa: E501
 
         :return: The downloads of this GeoBatchStatus.  # noqa: E501
         :rtype: GeoBatchDownloadResponse
@@ -205,7 +205,6 @@ class GeoBatchStatus(object):
     def downloads(self, downloads):
         """Sets the downloads of this GeoBatchStatus.
 
-        Output File Name.  # noqa: E501
 
         :param downloads: The downloads of this GeoBatchStatus.  # noqa: E501
         :type: GeoBatchDownloadResponse

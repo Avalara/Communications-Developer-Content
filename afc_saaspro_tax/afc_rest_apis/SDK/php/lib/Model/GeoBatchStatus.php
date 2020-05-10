@@ -63,7 +63,7 @@ class GeoBatchStatus implements ModelInterface, ArrayAccess
         'processing_start' => '\DateTime',
         'processing_end' => '\DateTime',
         'status' => 'string',
-        'downloads' => 'GeoBatchDownloadResponse',
+        'downloads' => '\OpenAPI\Client\Model\GeoBatchDownloadResponse',
         'error' => '\OpenAPI\Client\Model\Error[]'
     ];
 
@@ -364,7 +364,7 @@ class GeoBatchStatus implements ModelInterface, ArrayAccess
     /**
      * Gets downloads
      *
-     * @return GeoBatchDownloadResponse|null
+     * @return \OpenAPI\Client\Model\GeoBatchDownloadResponse|null
      */
     public function getDownloads()
     {
@@ -374,7 +374,7 @@ class GeoBatchStatus implements ModelInterface, ArrayAccess
     /**
      * Sets downloads
      *
-     * @param GeoBatchDownloadResponse|null $downloads Output File Name.
+     * @param \OpenAPI\Client\Model\GeoBatchDownloadResponse|null $downloads downloads
      *
      * @return $this
      */

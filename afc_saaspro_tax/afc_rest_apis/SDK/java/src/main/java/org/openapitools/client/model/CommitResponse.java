@@ -31,7 +31,7 @@ import org.openapitools.client.model.Error;
  * Response body for Commit API.
  */
 @ApiModel(description = "Response body for Commit API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class CommitResponse {
   public static final String SERIALIZED_NAME_OK = "ok";
   @SerializedName(SERIALIZED_NAME_OK)
@@ -49,11 +49,11 @@ public class CommitResponse {
   }
 
    /**
-   * Get ok
+   * Indicates if document code&#39;s commit status was updated successfully.
    * @return ok
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if document code's commit status was updated successfully.")
 
   public Boolean getOk() {
     return ok;
@@ -80,11 +80,11 @@ public class CommitResponse {
   }
 
    /**
-   * Get err
+   * Error description (as applicable).
    * @return err
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error description (as applicable).")
 
   public List<Error> getErr() {
     return err;

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **log** | [**Array&lt;GeoBatchLogItem&gt;**](GeoBatchLogItem.md) | Log of provided Process Id | [optional] 
-**err** | [**Array&lt;Error&gt;**](Error.md) |  | [optional] 
+**err** | [**Array&lt;Error&gt;**](Error.md) | Error description (as applicable). | [optional] 
 
 ## Code Sample
 

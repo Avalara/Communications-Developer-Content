@@ -63,6 +63,7 @@ class SafeHarborOverride(object):
     def sh(self):
         """Gets the sh of this SafeHarborOverride.  # noqa: E501
 
+        Safe harbor type (1 = Cellular, 2 = VoIp, 4 = Paging).  # noqa: E501
 
         :return: The sh of this SafeHarborOverride.  # noqa: E501
         :rtype: int
@@ -73,6 +74,7 @@ class SafeHarborOverride(object):
     def sh(self, sh):
         """Sets the sh of this SafeHarborOverride.
 
+        Safe harbor type (1 = Cellular, 2 = VoIp, 4 = Paging).  # noqa: E501
 
         :param sh: The sh of this SafeHarborOverride.  # noqa: E501
         :type: int
@@ -84,6 +86,7 @@ class SafeHarborOverride(object):
     def old(self):
         """Gets the old of this SafeHarborOverride.  # noqa: E501
 
+        Original Federal TAM value to override.  # noqa: E501
 
         :return: The old of this SafeHarborOverride.  # noqa: E501
         :rtype: float
@@ -94,6 +97,7 @@ class SafeHarborOverride(object):
     def old(self, old):
         """Sets the old of this SafeHarborOverride.
 
+        Original Federal TAM value to override.  # noqa: E501
 
         :param old: The old of this SafeHarborOverride.  # noqa: E501
         :type: float
@@ -105,6 +109,7 @@ class SafeHarborOverride(object):
     def new(self):
         """Gets the new of this SafeHarborOverride.  # noqa: E501
 
+        New TAM value that will replace the original TAM value.  # noqa: E501
 
         :return: The new of this SafeHarborOverride.  # noqa: E501
         :rtype: float
@@ -115,6 +120,7 @@ class SafeHarborOverride(object):
     def new(self, new):
         """Sets the new of this SafeHarborOverride.
 
+        New TAM value that will replace the original TAM value.  # noqa: E501
 
         :param new: The new of this SafeHarborOverride.  # noqa: E501
         :type: float

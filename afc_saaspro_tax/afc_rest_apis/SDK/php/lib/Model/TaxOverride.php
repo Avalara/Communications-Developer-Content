@@ -58,7 +58,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'loc' => 'Location',
+        'loc' => '\OpenAPI\Client\Model\Location',
         'scp' => 'int',
         'tid' => 'int',
         'lvl' => 'int',
@@ -238,7 +238,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
     /**
      * Gets loc
      *
-     * @return Location|null
+     * @return \OpenAPI\Client\Model\Location|null
      */
     public function getLoc()
     {
@@ -248,7 +248,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
     /**
      * Sets loc
      *
-     * @param Location|null $loc loc
+     * @param \OpenAPI\Client\Model\Location|null $loc loc
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
     /**
      * Sets scp
      *
-     * @param int|null $scp scp
+     * @param int|null $scp Scope for override. 0 = Country, 1 = State, 2 = County, 3 = City.
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
     /**
      * Sets tid
      *
-     * @param int|null $tid tid
+     * @param int|null $tid Tax type ID.
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
     /**
      * Sets lvl
      *
-     * @param int|null $lvl lvl
+     * @param int|null $lvl Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
     /**
      * Sets lvl_exm
      *
-     * @param bool|null $lvl_exm lvl_exm
+     * @param bool|null $lvl_exm Indicates if the tax can be exempted using level exemptions.
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class TaxOverride implements ModelInterface, ArrayAccess
     /**
      * Sets brkt
      *
-     * @param \OpenAPI\Client\Model\TaxBracket[]|null $brkt brkt
+     * @param \OpenAPI\Client\Model\TaxBracket[]|null $brkt Tax rate/bracket information.
      *
      * @return $this
      */

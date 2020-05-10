@@ -165,14 +165,14 @@ __PACKAGE__->method_documentation({
     'ok' => {
         datatype => 'boolean',
         base_name => 'ok',
-        description => '',
+        description => 'Indicates if document code&#39;s commit status was updated successfully.',
         format => '',
         read_only => '',
             },
     'err' => {
         datatype => 'ARRAY[Error]',
         base_name => 'err',
-        description => '',
+        description => 'Error description (as applicable).',
         format => '',
         read_only => '',
             },

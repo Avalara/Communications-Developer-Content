@@ -28,7 +28,7 @@ import java.io.IOException;
  * Bundled items associated with a bundle package
  */
 @ApiModel(description = "Bundled items associated with a bundle package")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class BundleItem {
   public static final String SERIALIZED_NAME_TRANSACTION_ID = "TransactionId";
   @SerializedName(SERIALIZED_NAME_TRANSACTION_ID)

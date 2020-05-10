@@ -34,7 +34,7 @@ import org.openapitools.client.model.SummarizedTax;
  * Tax calculation results for an invoice.
  */
 @ApiModel(description = "Tax calculation results for an invoice.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class InvoiceResult {
   public static final String SERIALIZED_NAME_DOC = "doc";
   @SerializedName(SERIALIZED_NAME_DOC)
@@ -54,7 +54,7 @@ public class InvoiceResult {
 
   public static final String SERIALIZED_NAME_INCRF = "incrf";
   @SerializedName(SERIALIZED_NAME_INCRF)
-  private ReportingInformation incrf = null;
+  private ReportingInformation incrf;
 
 
   public InvoiceResult doc(String doc) {
@@ -64,11 +64,11 @@ public class InvoiceResult {
   }
 
    /**
-   * Get doc
+   * Document number for invoice.
    * @return doc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Document number for invoice.")
 
   public String getDoc() {
     return doc;
@@ -95,11 +95,11 @@ public class InvoiceResult {
   }
 
    /**
-   * Get itms
+   * Individual tax calculation results for each line item.
    * @return itms
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Individual tax calculation results for each line item.")
 
   public List<LineItemResult> getItms() {
     return itms;
@@ -126,11 +126,11 @@ public class InvoiceResult {
   }
 
    /**
-   * Get summ
+   * Summarized taxes for invoice.
    * @return summ
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Summarized taxes for invoice.")
 
   public List<SummarizedTax> getSumm() {
     return summ;
@@ -157,11 +157,11 @@ public class InvoiceResult {
   }
 
    /**
-   * Get err
+   * Error description (as applicable).
    * @return err
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error description (as applicable).")
 
   public List<Error> getErr() {
     return err;

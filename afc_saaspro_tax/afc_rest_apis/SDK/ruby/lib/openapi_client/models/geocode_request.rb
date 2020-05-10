@@ -15,21 +15,28 @@ require 'date'
 module OpenapiClient
   # Input data for Geocoding API.
   class GeocodeRequest
+    # Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.
     attr_accessor :ref
 
+    # Indicates if the CASS validated address is desired in the results.
     attr_accessor :cass
 
+    # Latitude for geocoding based on lat/long coordinates.
     attr_accessor :lat
 
+    # Longitude for geocoding based on lat/long coordinates.
     attr_accessor :long
 
+    # Street address.
     attr_accessor :addr
 
     # City name.
     attr_accessor :city
 
+    # State name or abbreviation.
     attr_accessor :st
 
+    # Postal code.
     attr_accessor :zip
 
     # Attribute mapping from ruby-style variable name to JSON key.

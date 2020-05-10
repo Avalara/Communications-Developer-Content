@@ -33,9 +33,9 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GeoBatchDownloadResponse" /> class.
         /// </summary>
-        /// <param name="inputFile">inputFile.</param>
+        /// <param name="inputFile">Input File Name..</param>
         /// <param name="inputFileDownload">Input File Download..</param>
-        /// <param name="outputFile">outputFile.</param>
+        /// <param name="outputFile">Output File Name..</param>
         /// <param name="outputFileDownload">Output File Name..</param>
         public GeoBatchDownloadResponse(string inputFile = default(string), string inputFileDownload = default(string), string outputFile = default(string), string outputFileDownload = default(string))
         {
@@ -50,8 +50,9 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets InputFile
+        /// Input File Name.
         /// </summary>
+        /// <value>Input File Name.</value>
         [DataMember(Name="InputFile", EmitDefaultValue=true)]
         public string InputFile { get; set; }
 
@@ -63,8 +64,9 @@ namespace avalara.comms.rest.v2.Model
         public string InputFileDownload { get; set; }
 
         /// <summary>
-        /// Gets or Sets OutputFile
+        /// Output File Name.
         /// </summary>
+        /// <value>Output File Name.</value>
         [DataMember(Name="OutputFile", EmitDefaultValue=true)]
         public string OutputFile { get; set; }
 

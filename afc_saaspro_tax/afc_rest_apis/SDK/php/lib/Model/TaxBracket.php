@@ -248,7 +248,7 @@ class TaxBracket implements ModelInterface, ArrayAccess
     /**
      * Sets max
      *
-     * @param double|null $max max
+     * @param double|null $max Maximum base that this rate applies to.
      *
      * @return $this
      */

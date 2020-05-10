@@ -34,14 +34,14 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="GeocodeRequest" /> class.
         /// </summary>
-        /// <param name="_ref">_ref.</param>
-        /// <param name="cass">cass.</param>
-        /// <param name="lat">lat.</param>
-        /// <param name="_long">_long.</param>
-        /// <param name="addr">addr.</param>
+        /// <param name="_ref">Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both..</param>
+        /// <param name="cass">Indicates if the CASS validated address is desired in the results..</param>
+        /// <param name="lat">Latitude for geocoding based on lat/long coordinates..</param>
+        /// <param name="_long">Longitude for geocoding based on lat/long coordinates..</param>
+        /// <param name="addr">Street address..</param>
         /// <param name="city">City name..</param>
-        /// <param name="st">st.</param>
-        /// <param name="zip">zip.</param>
+        /// <param name="st">State name or abbreviation..</param>
+        /// <param name="zip">Postal code..</param>
         public GeocodeRequest(string _ref = default(string), bool? cass = default(bool?), double? lat = default(double?), double? _long = default(double?), string addr = default(string), string city = default(string), string st = default(string), string zip = default(string))
         {
             this.Ref = _ref;
@@ -55,32 +55,37 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Ref
+        /// Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.
         /// </summary>
+        /// <value>Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.</value>
         [DataMember(Name="ref", EmitDefaultValue=true)]
         public string Ref { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cass
+        /// Indicates if the CASS validated address is desired in the results.
         /// </summary>
+        /// <value>Indicates if the CASS validated address is desired in the results.</value>
         [DataMember(Name="cass", EmitDefaultValue=true)]
         public bool? Cass { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lat
+        /// Latitude for geocoding based on lat/long coordinates.
         /// </summary>
+        /// <value>Latitude for geocoding based on lat/long coordinates.</value>
         [DataMember(Name="lat", EmitDefaultValue=true)]
         public double? Lat { get; set; }
 
         /// <summary>
-        /// Gets or Sets Long
+        /// Longitude for geocoding based on lat/long coordinates.
         /// </summary>
+        /// <value>Longitude for geocoding based on lat/long coordinates.</value>
         [DataMember(Name="long", EmitDefaultValue=true)]
         public double? Long { get; set; }
 
         /// <summary>
-        /// Gets or Sets Addr
+        /// Street address.
         /// </summary>
+        /// <value>Street address.</value>
         [DataMember(Name="addr", EmitDefaultValue=true)]
         public string Addr { get; set; }
 
@@ -92,14 +97,16 @@ namespace avalara.comms.rest.v2.Model
         public string City { get; set; }
 
         /// <summary>
-        /// Gets or Sets St
+        /// State name or abbreviation.
         /// </summary>
+        /// <value>State name or abbreviation.</value>
         [DataMember(Name="st", EmitDefaultValue=true)]
         public string St { get; set; }
 
         /// <summary>
-        /// Gets or Sets Zip
+        /// Postal code.
         /// </summary>
+        /// <value>Postal code.</value>
         [DataMember(Name="zip", EmitDefaultValue=true)]
         public string Zip { get; set; }
 

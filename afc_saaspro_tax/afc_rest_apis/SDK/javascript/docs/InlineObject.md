@@ -4,6 +4,6 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**file** | **File** |  | [optional] 
+**geoBatchFile** | **File** |  | [optional] 
 
 

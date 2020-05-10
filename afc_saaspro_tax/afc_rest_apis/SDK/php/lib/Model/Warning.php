@@ -248,7 +248,7 @@ class Warning implements ModelInterface, ArrayAccess
     /**
      * Sets msg
      *
-     * @param string|null $msg msg
+     * @param string|null $msg Warning message.
      *
      * @return $this
      */

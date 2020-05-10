@@ -161,9 +161,9 @@ __PACKAGE__->class_documentation({description => '',
 }                                 );
 
 __PACKAGE__->method_documentation({
-    'file' => {
+    'geo_batch_file' => {
         datatype => 'string',
-        base_name => 'file',
+        base_name => 'geoBatchFile',
         description => '',
         format => '',
         read_only => '',
@@ -171,11 +171,11 @@ __PACKAGE__->method_documentation({
 });
 
 __PACKAGE__->openapi_types( {
-    'file' => 'string'
+    'geo_batch_file' => 'string'
 } );
 
 __PACKAGE__->attribute_map( {
-    'file' => 'file'
+    'geo_batch_file' => 'geoBatchFile'
 } );
 
 __PACKAGE__->mk_accessors(keys %{__PACKAGE__->attribute_map});

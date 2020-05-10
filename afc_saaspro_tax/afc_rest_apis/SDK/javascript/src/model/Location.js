@@ -89,41 +89,49 @@ class Location {
 }
 
 /**
+ * County name.
  * @member {String} cnty
  */
 Location.prototype['cnty'] = undefined;
 
 /**
+ * Country ISO code.
  * @member {String} ctry
  */
 Location.prototype['ctry'] = undefined;
 
 /**
+ * Indicates if the location is within city limits.  Default: true.
  * @member {Boolean} int
  */
 Location.prototype['int'] = undefined;
 
 /**
+ * Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.
  * @member {Boolean} geo
  */
 Location.prototype['geo'] = undefined;
 
 /**
+ * PCode for taxing jurisdiction.
  * @member {Number} pcd
  */
 Location.prototype['pcd'] = undefined;
 
 /**
+ * NPANXX number.
  * @member {Number} npa
  */
 Location.prototype['npa'] = undefined;
 
 /**
+ * FIPS code for taxing jurisdiction.
  * @member {String} fips
  */
 Location.prototype['fips'] = undefined;
 
 /**
+ * Street address.
  * @member {String} addr
  */
 Location.prototype['addr'] = undefined;
@@ -135,11 +143,13 @@ Location.prototype['addr'] = undefined;
 Location.prototype['city'] = undefined;
 
 /**
+ * State name or abbreviation.
  * @member {String} st
  */
 Location.prototype['st'] = undefined;
 
 /**
+ * Postal code.
  * @member {String} zip
  */
 Location.prototype['zip'] = undefined;

@@ -28,7 +28,7 @@ import java.io.IOException;
  * Container class for json properties associated with v2.CalcTaxes request configuration options
  */
 @ApiModel(description = "Container class for json properties associated with v2.CalcTaxes request configuration options")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class RequestConfig {
   public static final String SERIALIZED_NAME_RETNB = "retnb";
   @SerializedName(SERIALIZED_NAME_RETNB)
@@ -50,11 +50,11 @@ public class RequestConfig {
   }
 
    /**
-   * Get retnb
+   * Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value
    * @return retnb
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value")
 
   public Boolean getRetnb() {
     return retnb;
@@ -73,11 +73,11 @@ public class RequestConfig {
   }
 
    /**
-   * Get retext
+   * Flag indicating extended tax information should be returned.  Reference online documentation for more details
    * @return retext
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Flag indicating extended tax information should be returned.  Reference online documentation for more details")
 
   public Boolean getRetext() {
     return retext;
@@ -96,11 +96,11 @@ public class RequestConfig {
   }
 
    /**
-   * Get incrf
+   * Flag indicating reporting information should be returned.  Reference online documentation for more details
    * @return incrf
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Flag indicating reporting information should be returned.  Reference online documentation for more details")
 
   public Boolean getIncrf() {
     return incrf;

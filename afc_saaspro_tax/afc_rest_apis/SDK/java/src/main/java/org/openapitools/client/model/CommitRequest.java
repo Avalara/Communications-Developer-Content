@@ -31,7 +31,7 @@ import org.openapitools.client.model.KeyValuePair;
  * Parameter for CommitTransactions API.
  */
 @ApiModel(description = "Parameter for CommitTransactions API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class CommitRequest {
   public static final String SERIALIZED_NAME_DOC = "doc";
   @SerializedName(SERIALIZED_NAME_DOC)
@@ -53,11 +53,11 @@ public class CommitRequest {
   }
 
    /**
-   * Get doc
+   * Document code.
    * @return doc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Document code.")
 
   public String getDoc() {
     return doc;
@@ -76,11 +76,11 @@ public class CommitRequest {
   }
 
    /**
-   * Get cmmt
+   * Indicates if transactions for the specified document code should be committed.
    * @return cmmt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if transactions for the specified document code should be committed.")
 
   public Boolean getCmmt() {
     return cmmt;
@@ -107,11 +107,11 @@ public class CommitRequest {
   }
 
    /**
-   * Get opt
+   * Overrides value for OptionalFields field in reports.
    * @return opt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Overrides value for OptionalFields field in reports.")
 
   public List<KeyValuePair> getOpt() {
     return opt;

@@ -133,11 +133,6 @@ sub api_v2_afc_p_code_post {
 sub api_v2_geo_batch_log_process_id_get {
     my ($self, %args) = @_;
 
-    # verify the required parameter 'process_id' is set
-    unless (exists $args{'process_id'}) {
-      croak("Missing the required parameter 'process_id' when calling api_v2_geo_batch_log_process_id_get");
-    }
-
     # parse inputs
     my $_resource_path = '/api/v2/geo/batch/log/{processId}';
 
@@ -200,11 +195,6 @@ sub api_v2_geo_batch_log_process_id_get {
 sub api_v2_geo_batch_status_process_id_get {
     my ($self, %args) = @_;
 
-    # verify the required parameter 'process_id' is set
-    unless (exists $args{'process_id'}) {
-      croak("Missing the required parameter 'process_id' when calling api_v2_geo_batch_status_process_id_get");
-    }
-
     # parse inputs
     my $_resource_path = '/api/v2/geo/batch/status/{processId}';
 
@@ -247,10 +237,10 @@ sub api_v2_geo_batch_status_process_id_get {
 #
 # Uploads file to Geo Batch.
 # 
-# @param string $file  (optional)
+# @param string $geo_batch_file  (optional)
 {
     my $params = {
-    'file' => {
+    'geo_batch_file' => {
         data_type => 'string',
         description => '',
         required => '0',
@@ -283,9 +273,9 @@ sub api_v2_geo_batch_upload_post {
     $header_params->{'Content-Type'} = $self->{api_client}->select_header_content_type('multipart/form-data');
 
     # form params
-    if ( exists $args{'file'} ) {
-        $form_params->{'file'} = [] unless defined $form_params->{'file'};
-        push @{$form_params->{'file'}}, $args{'file'};
+    if ( exists $args{'geo_batch_file'} ) {
+        $form_params->{'geoBatchFile'} = [] unless defined $form_params->{'geoBatchFile'};
+        push @{$form_params->{'geoBatchFile'}}, $args{'geo_batch_file'};
             }
     
     my $_body_data;

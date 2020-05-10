@@ -35,34 +35,6 @@ class TestCustomizationApi(unittest.TestCase):
         """
         pass
 
-    def test_api_v2_profiles_set_bundles_post(self):
-        """Test case for api_v2_profiles_set_bundles_post
-
-        Creates or updates bundle packages and associated profile mappings.  # noqa: E501
-        """
-        pass
-
-    def test_api_v2_profiles_set_config_post(self):
-        """Test case for api_v2_profiles_set_config_post
-
-        Creates or updates configuration settings and associated profile mappings.  # noqa: E501
-        """
-        pass
-
-    def test_api_v2_profiles_set_exclusions_post(self):
-        """Test case for api_v2_profiles_set_exclusions_post
-
-        Creates or updates exclusions and associated profile mappings.  # noqa: E501
-        """
-        pass
-
-    def test_api_v2_profiles_set_overrides_post(self):
-        """Test case for api_v2_profiles_set_overrides_post
-
-        Creates or updates overrides and associated profile mappings.  # noqa: E501
-        """
-        pass
-
 
 if __name__ == '__main__':
     unittest.main()

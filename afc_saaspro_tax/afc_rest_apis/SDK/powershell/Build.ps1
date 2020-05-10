@@ -58,7 +58,7 @@ $Manifest = @{
     Description = 'avalara.comms.rest.v2 - the PowerShell module for SaasPro'
 
     RootModule = 'avalara.comms.rest.v2.psm1'
-    Guid = '{A0F34316-2DDB-4D0E-9666-B6FB66A7890B}' # Has to be static, otherwise each new build will be considered different module
+    Guid = '{F62CBC2C-9AF6-4CF2-9731-7F5AD567C0BA}' # Has to be static, otherwise each new build will be considered different module
 
     PowerShellVersion = '3.0'
 

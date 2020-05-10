@@ -230,7 +230,7 @@ class Exclusion implements ModelInterface, ArrayAccess
     /**
      * Sets ctry
      *
-     * @param string|null $ctry ctry
+     * @param string|null $ctry Country ISO code.
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class Exclusion implements ModelInterface, ArrayAccess
     /**
      * Sets st
      *
-     * @param string|null $st st
+     * @param string|null $st State abbreviation.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class Exclusion implements ModelInterface, ArrayAccess
     /**
      * Sets excl
      *
-     * @param bool|null $excl excl
+     * @param bool|null $excl Indicates if exclusion applies to the specified state.
      *
      * @return $this
      */

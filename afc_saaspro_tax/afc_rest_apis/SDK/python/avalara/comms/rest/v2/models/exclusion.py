@@ -63,6 +63,7 @@ class Exclusion(object):
     def ctry(self):
         """Gets the ctry of this Exclusion.  # noqa: E501
 
+        Country ISO code.  # noqa: E501
 
         :return: The ctry of this Exclusion.  # noqa: E501
         :rtype: str
@@ -73,6 +74,7 @@ class Exclusion(object):
     def ctry(self, ctry):
         """Sets the ctry of this Exclusion.
 
+        Country ISO code.  # noqa: E501
 
         :param ctry: The ctry of this Exclusion.  # noqa: E501
         :type: str
@@ -84,6 +86,7 @@ class Exclusion(object):
     def st(self):
         """Gets the st of this Exclusion.  # noqa: E501
 
+        State abbreviation.  # noqa: E501
 
         :return: The st of this Exclusion.  # noqa: E501
         :rtype: str
@@ -94,6 +97,7 @@ class Exclusion(object):
     def st(self, st):
         """Sets the st of this Exclusion.
 
+        State abbreviation.  # noqa: E501
 
         :param st: The st of this Exclusion.  # noqa: E501
         :type: str
@@ -105,6 +109,7 @@ class Exclusion(object):
     def excl(self):
         """Gets the excl of this Exclusion.  # noqa: E501
 
+        Indicates if exclusion applies to the specified state.  # noqa: E501
 
         :return: The excl of this Exclusion.  # noqa: E501
         :rtype: bool
@@ -115,6 +120,7 @@ class Exclusion(object):
     def excl(self, excl):
         """Sets the excl of this Exclusion.
 
+        Indicates if exclusion applies to the specified state.  # noqa: E501
 
         :param excl: The excl of this Exclusion.  # noqa: E501
         :type: bool

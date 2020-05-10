@@ -28,7 +28,7 @@ import java.io.IOException;
  * Error information.
  */
 @ApiModel(description = "Error information.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class Error {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -38,6 +38,12 @@ public class Error {
   @SerializedName(SERIALIZED_NAME_MSG)
   private String msg;
 
+
+  public Error code(Integer code) {
+    
+    this.code = code;
+    return this;
+  }
 
    /**
    * Error code.
@@ -51,14 +57,17 @@ public class Error {
   }
 
 
+  public void setCode(Integer code) {
+    this.code = code;
+  }
 
 
    /**
-   * Get msg
+   * Error message.
    * @return msg
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error message.")
 
   public String getMsg() {
     return msg;

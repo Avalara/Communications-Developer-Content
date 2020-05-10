@@ -248,7 +248,7 @@ class Status implements ModelInterface, ArrayAccess
     /**
      * Sets msg
      *
-     * @param string|null $msg msg
+     * @param string|null $msg Status message.
      *
      * @return $this
      */

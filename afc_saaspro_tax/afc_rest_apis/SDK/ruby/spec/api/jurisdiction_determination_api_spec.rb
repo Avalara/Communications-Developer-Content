@@ -69,7 +69,7 @@ describe 'JurisdictionDeterminationApi' do
   # unit tests for api_v2_geo_batch_upload_post
   # Uploads file to Geo Batch.
   # @param [Hash] opts the optional parameters
-  # @option opts [File] :file 
+  # @option opts [File] :geo_batch_file 
   # @return [GeoBatchSubmitFileResponse]
   describe 'api_v2_geo_batch_upload_post test' do
     it 'should work' do

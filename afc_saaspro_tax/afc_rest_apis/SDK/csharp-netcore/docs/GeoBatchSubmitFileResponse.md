@@ -5,7 +5,7 @@ Response body for Geo Batch Submit File API.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **ProcessId** | **int?** | Process Id for File uploaded | [optional] 
-**Err** | [**List&lt;Error&gt;**](Error.md) |  | [optional] 
+**Err** | [**List&lt;Error&gt;**](Error.md) | Error description (as applicable). | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

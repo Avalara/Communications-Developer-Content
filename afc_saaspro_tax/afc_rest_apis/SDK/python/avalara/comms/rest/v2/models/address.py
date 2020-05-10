@@ -67,6 +67,7 @@ class Address(object):
     def addr(self):
         """Gets the addr of this Address.  # noqa: E501
 
+        Street address.  # noqa: E501
 
         :return: The addr of this Address.  # noqa: E501
         :rtype: str
@@ -77,6 +78,7 @@ class Address(object):
     def addr(self, addr):
         """Sets the addr of this Address.
 
+        Street address.  # noqa: E501
 
         :param addr: The addr of this Address.  # noqa: E501
         :type: str
@@ -111,6 +113,7 @@ class Address(object):
     def st(self):
         """Gets the st of this Address.  # noqa: E501
 
+        State name or abbreviation.  # noqa: E501
 
         :return: The st of this Address.  # noqa: E501
         :rtype: str
@@ -121,6 +124,7 @@ class Address(object):
     def st(self, st):
         """Sets the st of this Address.
 
+        State name or abbreviation.  # noqa: E501
 
         :param st: The st of this Address.  # noqa: E501
         :type: str
@@ -132,6 +136,7 @@ class Address(object):
     def zip(self):
         """Gets the zip of this Address.  # noqa: E501
 
+        Postal code.  # noqa: E501
 
         :return: The zip of this Address.  # noqa: E501
         :rtype: str
@@ -142,6 +147,7 @@ class Address(object):
     def zip(self, zip):
         """Sets the zip of this Address.
 
+        Postal code.  # noqa: E501
 
         :param zip: The zip of this Address.  # noqa: E501
         :type: str

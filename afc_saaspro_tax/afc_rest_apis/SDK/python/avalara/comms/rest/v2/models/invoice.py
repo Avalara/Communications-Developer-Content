@@ -102,7 +102,8 @@ class Invoice(object):
 
         self.doc = doc
         self.cmmt = cmmt
-        self.bill = bill
+        if bill is not None:
+            self.bill = bill
         self.cust = cust
         self.lfln = lfln
         self.date = date
@@ -116,13 +117,15 @@ class Invoice(object):
         self.custref = custref
         self.invn = invn
         self.bcyc = bcyc
-        self.bpd = bpd
+        if bpd is not None:
+            self.bpd = bpd
         self.ccycd = ccycd
 
     @property
     def doc(self):
         """Gets the doc of this Invoice.  # noqa: E501
 
+        Document code.  # noqa: E501
 
         :return: The doc of this Invoice.  # noqa: E501
         :rtype: str
@@ -133,6 +136,7 @@ class Invoice(object):
     def doc(self, doc):
         """Sets the doc of this Invoice.
 
+        Document code.  # noqa: E501
 
         :param doc: The doc of this Invoice.  # noqa: E501
         :type: str
@@ -144,6 +148,7 @@ class Invoice(object):
     def cmmt(self):
         """Gets the cmmt of this Invoice.  # noqa: E501
 
+        Indicates if invoice should be committed as soon as it is processed.  Default: false.  # noqa: E501
 
         :return: The cmmt of this Invoice.  # noqa: E501
         :rtype: bool
@@ -154,6 +159,7 @@ class Invoice(object):
     def cmmt(self, cmmt):
         """Sets the cmmt of this Invoice.
 
+        Indicates if invoice should be committed as soon as it is processed.  Default: false.  # noqa: E501
 
         :param cmmt: The cmmt of this Invoice.  # noqa: E501
         :type: bool
@@ -186,6 +192,7 @@ class Invoice(object):
     def cust(self):
         """Gets the cust of this Invoice.  # noqa: E501
 
+        Customer type.  # noqa: E501
 
         :return: The cust of this Invoice.  # noqa: E501
         :rtype: int
@@ -196,6 +203,7 @@ class Invoice(object):
     def cust(self, cust):
         """Sets the cust of this Invoice.
 
+        Customer type.  # noqa: E501
 
         :param cust: The cust of this Invoice.  # noqa: E501
         :type: int
@@ -207,6 +215,7 @@ class Invoice(object):
     def lfln(self):
         """Gets the lfln of this Invoice.  # noqa: E501
 
+        Indicates if customer is a Lifeline participant.  Default: false.  # noqa: E501
 
         :return: The lfln of this Invoice.  # noqa: E501
         :rtype: bool
@@ -217,6 +226,7 @@ class Invoice(object):
     def lfln(self, lfln):
         """Sets the lfln of this Invoice.
 
+        Indicates if customer is a Lifeline participant.  Default: false.  # noqa: E501
 
         :param lfln: The lfln of this Invoice.  # noqa: E501
         :type: bool
@@ -251,6 +261,7 @@ class Invoice(object):
     def exms(self):
         """Gets the exms of this Invoice.  # noqa: E501
 
+        Tax exemptions.  # noqa: E501
 
         :return: The exms of this Invoice.  # noqa: E501
         :rtype: list[TaxExemption]
@@ -261,6 +272,7 @@ class Invoice(object):
     def exms(self, exms):
         """Sets the exms of this Invoice.
 
+        Tax exemptions.  # noqa: E501
 
         :param exms: The exms of this Invoice.  # noqa: E501
         :type: list[TaxExemption]
@@ -272,6 +284,7 @@ class Invoice(object):
     def itms(self):
         """Gets the itms of this Invoice.  # noqa: E501
 
+        Line items.  # noqa: E501
 
         :return: The itms of this Invoice.  # noqa: E501
         :rtype: list[LineItem]
@@ -282,6 +295,7 @@ class Invoice(object):
     def itms(self, itms):
         """Sets the itms of this Invoice.
 
+        Line items.  # noqa: E501
 
         :param itms: The itms of this Invoice.  # noqa: E501
         :type: list[LineItem]
@@ -293,6 +307,7 @@ class Invoice(object):
     def invm(self):
         """Gets the invm of this Invoice.  # noqa: E501
 
+        Indicates if all line items within invoice should be processed in invoice mode.  Default: true.  # noqa: E501
 
         :return: The invm of this Invoice.  # noqa: E501
         :rtype: bool
@@ -303,6 +318,7 @@ class Invoice(object):
     def invm(self, invm):
         """Sets the invm of this Invoice.
 
+        Indicates if all line items within invoice should be processed in invoice mode.  Default: true.  # noqa: E501
 
         :param invm: The invm of this Invoice.  # noqa: E501
         :type: bool
@@ -314,6 +330,7 @@ class Invoice(object):
     def dtl(self):
         """Gets the dtl of this Invoice.  # noqa: E501
 
+        Indicates if individual line item taxes should be included in response.  Default: true.  # noqa: E501
 
         :return: The dtl of this Invoice.  # noqa: E501
         :rtype: bool
@@ -324,6 +341,7 @@ class Invoice(object):
     def dtl(self, dtl):
         """Sets the dtl of this Invoice.
 
+        Indicates if individual line item taxes should be included in response.  Default: true.  # noqa: E501
 
         :param dtl: The dtl of this Invoice.  # noqa: E501
         :type: bool
@@ -335,6 +353,7 @@ class Invoice(object):
     def summ(self):
         """Gets the summ of this Invoice.  # noqa: E501
 
+        Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.  # noqa: E501
 
         :return: The summ of this Invoice.  # noqa: E501
         :rtype: bool
@@ -345,6 +364,7 @@ class Invoice(object):
     def summ(self, summ):
         """Sets the summ of this Invoice.
 
+        Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.  # noqa: E501
 
         :param summ: The summ of this Invoice.  # noqa: E501
         :type: bool
@@ -356,6 +376,7 @@ class Invoice(object):
     def opt(self):
         """Gets the opt of this Invoice.  # noqa: E501
 
+        Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.  # noqa: E501
 
         :return: The opt of this Invoice.  # noqa: E501
         :rtype: list[KeyValuePair]
@@ -366,6 +387,7 @@ class Invoice(object):
     def opt(self, opt):
         """Sets the opt of this Invoice.
 
+        Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.  # noqa: E501
 
         :param opt: The opt of this Invoice.  # noqa: E501
         :type: list[KeyValuePair]
@@ -377,6 +399,7 @@ class Invoice(object):
     def acct(self):
         """Gets the acct of this Invoice.  # noqa: E501
 
+        Account reference for reporting  # noqa: E501
 
         :return: The acct of this Invoice.  # noqa: E501
         :rtype: str
@@ -387,6 +410,7 @@ class Invoice(object):
     def acct(self, acct):
         """Sets the acct of this Invoice.
 
+        Account reference for reporting  # noqa: E501
 
         :param acct: The acct of this Invoice.  # noqa: E501
         :type: str
@@ -398,6 +422,7 @@ class Invoice(object):
     def custref(self):
         """Gets the custref of this Invoice.  # noqa: E501
 
+        Customer Reference for reporting  # noqa: E501
 
         :return: The custref of this Invoice.  # noqa: E501
         :rtype: str
@@ -408,6 +433,7 @@ class Invoice(object):
     def custref(self, custref):
         """Sets the custref of this Invoice.
 
+        Customer Reference for reporting  # noqa: E501
 
         :param custref: The custref of this Invoice.  # noqa: E501
         :type: str
@@ -419,6 +445,7 @@ class Invoice(object):
     def invn(self):
         """Gets the invn of this Invoice.  # noqa: E501
 
+        Invoice Number reference for reporting  # noqa: E501
 
         :return: The invn of this Invoice.  # noqa: E501
         :rtype: str
@@ -429,6 +456,7 @@ class Invoice(object):
     def invn(self, invn):
         """Sets the invn of this Invoice.
 
+        Invoice Number reference for reporting  # noqa: E501
 
         :param invn: The invn of this Invoice.  # noqa: E501
         :type: str
@@ -440,6 +468,7 @@ class Invoice(object):
     def bcyc(self):
         """Gets the bcyc of this Invoice.  # noqa: E501
 
+        Bill Cycle reference for reporting  # noqa: E501
 
         :return: The bcyc of this Invoice.  # noqa: E501
         :rtype: str
@@ -450,6 +479,7 @@ class Invoice(object):
     def bcyc(self, bcyc):
         """Sets the bcyc of this Invoice.
 
+        Bill Cycle reference for reporting  # noqa: E501
 
         :param bcyc: The bcyc of this Invoice.  # noqa: E501
         :type: str
@@ -482,6 +512,7 @@ class Invoice(object):
     def ccycd(self):
         """Gets the ccycd of this Invoice.  # noqa: E501
 
+        Currency code for invoice.  Example: CAD = Canadian Dollar  # noqa: E501
 
         :return: The ccycd of this Invoice.  # noqa: E501
         :rtype: str
@@ -492,6 +523,7 @@ class Invoice(object):
     def ccycd(self, ccycd):
         """Sets the ccycd of this Invoice.
 
+        Currency code for invoice.  Example: CAD = Canadian Dollar  # noqa: E501
 
         :param ccycd: The ccycd of this Invoice.  # noqa: E501
         :type: str

@@ -248,7 +248,7 @@ class KeyValuePair implements ModelInterface, ArrayAccess
     /**
      * Sets val
      *
-     * @param string|null $val val
+     * @param string|null $val Value.
      *
      * @return $this
      */

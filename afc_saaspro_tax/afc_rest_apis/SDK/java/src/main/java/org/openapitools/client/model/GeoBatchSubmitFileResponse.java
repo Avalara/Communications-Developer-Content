@@ -31,7 +31,7 @@ import org.openapitools.client.model.Error;
  * Response body for Geo Batch Submit File API.
  */
 @ApiModel(description = "Response body for Geo Batch Submit File API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class GeoBatchSubmitFileResponse {
   public static final String SERIALIZED_NAME_PROCESS_ID = "ProcessId";
   @SerializedName(SERIALIZED_NAME_PROCESS_ID)
@@ -80,11 +80,11 @@ public class GeoBatchSubmitFileResponse {
   }
 
    /**
-   * Get err
+   * Error description (as applicable).
    * @return err
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error description (as applicable).")
 
   public List<Error> getErr() {
     return err;

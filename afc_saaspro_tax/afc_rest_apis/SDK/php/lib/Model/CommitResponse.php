@@ -224,7 +224,7 @@ class CommitResponse implements ModelInterface, ArrayAccess
     /**
      * Sets ok
      *
-     * @param bool|null $ok ok
+     * @param bool|null $ok Indicates if document code's commit status was updated successfully.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CommitResponse implements ModelInterface, ArrayAccess
     /**
      * Sets err
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $err err
+     * @param \OpenAPI\Client\Model\Error[]|null $err Error description (as applicable).
      *
      * @return $this
      */

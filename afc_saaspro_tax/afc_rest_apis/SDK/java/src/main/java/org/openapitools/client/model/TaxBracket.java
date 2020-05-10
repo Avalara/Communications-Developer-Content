@@ -28,7 +28,7 @@ import java.io.IOException;
  * Rate information for a tax bracket.
  */
 @ApiModel(description = "Rate information for a tax bracket.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class TaxBracket {
   public static final String SERIALIZED_NAME_RATE = "rate";
   @SerializedName(SERIALIZED_NAME_RATE)
@@ -69,11 +69,11 @@ public class TaxBracket {
   }
 
    /**
-   * Get max
+   * Maximum base that this rate applies to.
    * @return max
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Maximum base that this rate applies to.")
 
   public Double getMax() {
     return max;

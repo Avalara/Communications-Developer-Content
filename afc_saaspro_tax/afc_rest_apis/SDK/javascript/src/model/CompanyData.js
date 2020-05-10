@@ -78,36 +78,43 @@ class CompanyData {
 }
 
 /**
+ * Business class. 0 = ILEC, 1 = CLEC.
  * @member {Number} bscl
  */
 CompanyData.prototype['bscl'] = undefined;
 
 /**
+ * Service class. 0 = Primary Local, 1 = Primary Long Distance.
  * @member {Number} svcl
  */
 CompanyData.prototype['svcl'] = undefined;
 
 /**
+ * Specifies if the carrier delivering the service has company owned facilities to provide the service.
  * @member {Boolean} fclt
  */
 CompanyData.prototype['fclt'] = undefined;
 
 /**
+ * Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.
  * @member {Boolean} frch
  */
 CompanyData.prototype['frch'] = undefined;
 
 /**
+ * Indicates if company is regulated.
  * @member {Boolean} reg
  */
 CompanyData.prototype['reg'] = undefined;
 
 /**
+ * Exclusion list.
  * @member {Array.<module:model/Exclusion>} excl
  */
 CompanyData.prototype['excl'] = undefined;
 
 /**
+ * An optional company identifier for reporting
  * @member {String} idnt
  */
 CompanyData.prototype['idnt'] = undefined;

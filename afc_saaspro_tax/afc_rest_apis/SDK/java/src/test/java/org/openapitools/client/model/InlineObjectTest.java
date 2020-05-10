@@ -42,11 +42,11 @@ public class InlineObjectTest {
     }
 
     /**
-     * Test the property 'file'
+     * Test the property 'geoBatchFile'
      */
     @Test
-    public void fileTest() {
-        // TODO: test file
+    public void geoBatchFileTest() {
+        // TODO: test geoBatchFile
     }
 
 }

@@ -30,7 +30,6 @@ module OpenapiClient
     # Status Of Batch File.
     attr_accessor :status
 
-    # Output File Name.
     attr_accessor :downloads
 
     # Error information.
@@ -70,7 +69,6 @@ module OpenapiClient
         :'processing_start',
         :'processing_end',
         :'status',
-        :'downloads',
         :'error'
       ])
     end

@@ -29,7 +29,7 @@ import org.openapitools.client.model.Address;
  * Results for geocoding request.
  */
 @ApiModel(description = "Results for geocoding request.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class GeocodeResult {
   public static final String SERIALIZED_NAME_REF = "ref";
   @SerializedName(SERIALIZED_NAME_REF)
@@ -37,7 +37,7 @@ public class GeocodeResult {
 
   public static final String SERIALIZED_NAME_CASS = "cass";
   @SerializedName(SERIALIZED_NAME_CASS)
-  private Address cass = null;
+  private Address cass;
 
   public static final String SERIALIZED_NAME_C_BLK = "cBlk";
   @SerializedName(SERIALIZED_NAME_C_BLK)
@@ -95,11 +95,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get ref
+   * Reference Id from geocode request input.
    * @return ref
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Reference Id from geocode request input.")
 
   public String getRef() {
     return ref;
@@ -141,11 +141,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get cBlk
+   * Census block.
    * @return cBlk
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Census block.")
 
   public Integer getcBlk() {
     return cBlk;
@@ -164,11 +164,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get cTrc
+   * Census tract.
    * @return cTrc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Census tract.")
 
   public Integer getcTrc() {
     return cTrc;
@@ -187,11 +187,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get cnty
+   * County
    * @return cnty
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "County")
 
   public String getCnty() {
     return cnty;
@@ -210,11 +210,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get feat
+   * Feature ID.
    * @return feat
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Feature ID.")
 
   public Integer getFeat() {
     return feat;
@@ -233,11 +233,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get fips
+   * FIPS Code.
    * @return fips
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "FIPS Code.")
 
   public String getFips() {
     return fips;
@@ -256,11 +256,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get inc
+   * Indicates if address is within city limits.
    * @return inc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if address is within city limits.")
 
   public Boolean getInc() {
     return inc;
@@ -279,11 +279,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get jur
+   * Tax jurisdiction name.
    * @return jur
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax jurisdiction name.")
 
   public String getJur() {
     return jur;
@@ -302,11 +302,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get lat
+   * Latitude.
    * @return lat
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Latitude.")
 
   public Double getLat() {
     return lat;
@@ -325,11 +325,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get _long
+   * Longitude.
    * @return _long
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Longitude.")
 
   public Double getLong() {
     return _long;
@@ -348,11 +348,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get pcd
+   * PCode for tax jurisdiction.
    * @return pcd
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "PCode for tax jurisdiction.")
 
   public Integer getPcd() {
     return pcd;
@@ -371,11 +371,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get scr
+   * Score indicating accuracy of address match in mapping database.
    * @return scr
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Score indicating accuracy of address match in mapping database.")
 
   public Double getScr() {
     return scr;
@@ -394,11 +394,11 @@ public class GeocodeResult {
   }
 
    /**
-   * Get err
+   * Error message.
    * @return err
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error message.")
 
   public String getErr() {
     return err;

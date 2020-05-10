@@ -62,11 +62,13 @@ class BillingPeriod {
 }
 
 /**
+ * Numeric value representing billing period month.  1 = January.
  * @member {Number} month
  */
 BillingPeriod.prototype['month'] = undefined;
 
 /**
+ * Numeric 4 digit representation of billing period year.
  * @member {Number} year
  */
 BillingPeriod.prototype['year'] = undefined;

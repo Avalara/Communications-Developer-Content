@@ -59,6 +59,7 @@ class CalcTaxesResponse(object):
     def inv(self):
         """Gets the inv of this CalcTaxesResponse.  # noqa: E501
 
+        Tax calculation results for each invoice submitted in request.  # noqa: E501
 
         :return: The inv of this CalcTaxesResponse.  # noqa: E501
         :rtype: list[InvoiceResult]
@@ -69,6 +70,7 @@ class CalcTaxesResponse(object):
     def inv(self, inv):
         """Sets the inv of this CalcTaxesResponse.
 
+        Tax calculation results for each invoice submitted in request.  # noqa: E501
 
         :param inv: The inv of this CalcTaxesResponse.  # noqa: E501
         :type: list[InvoiceResult]
@@ -80,6 +82,7 @@ class CalcTaxesResponse(object):
     def err(self):
         """Gets the err of this CalcTaxesResponse.  # noqa: E501
 
+        Error description (as applicable).  # noqa: E501
 
         :return: The err of this CalcTaxesResponse.  # noqa: E501
         :rtype: list[Error]
@@ -90,6 +93,7 @@ class CalcTaxesResponse(object):
     def err(self, err):
         """Sets the err of this CalcTaxesResponse.
 
+        Error description (as applicable).  # noqa: E501
 
         :param err: The err of this CalcTaxesResponse.  # noqa: E501
         :type: list[Error]

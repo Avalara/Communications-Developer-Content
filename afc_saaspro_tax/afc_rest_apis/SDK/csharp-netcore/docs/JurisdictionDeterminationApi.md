@@ -231,7 +231,7 @@ Name | Type | Description  | Notes
 
 <a name="apiv2geobatchuploadpost"></a>
 # **ApiV2GeoBatchUploadPost**
-> GeoBatchSubmitFileResponse ApiV2GeoBatchUploadPost (System.IO.Stream file = null)
+> GeoBatchSubmitFileResponse ApiV2GeoBatchUploadPost (System.IO.Stream geoBatchFile = null)
 
 Uploads file to Geo Batch.
 
@@ -256,12 +256,12 @@ namespace Example
             config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
-            var file = BINARY_DATA_HERE;  // System.IO.Stream |  (optional) 
+            var geoBatchFile = BINARY_DATA_HERE;  // System.IO.Stream |  (optional) 
 
             try
             {
                 // Uploads file to Geo Batch.
-                GeoBatchSubmitFileResponse result = apiInstance.ApiV2GeoBatchUploadPost(file);
+                GeoBatchSubmitFileResponse result = apiInstance.ApiV2GeoBatchUploadPost(geoBatchFile);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -279,7 +279,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **System.IO.Stream****System.IO.Stream**|  | [optional] 
+ **geoBatchFile** | **System.IO.Stream****System.IO.Stream**|  | [optional] 
 
 ### Return type
 

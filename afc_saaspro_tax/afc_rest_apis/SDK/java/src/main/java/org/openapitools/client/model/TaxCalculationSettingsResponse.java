@@ -38,7 +38,7 @@ import org.openapitools.client.model.Warning;
  * Data for an invoice or quote line item.
  */
 @ApiModel(description = "Data for an invoice or quote line item.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class TaxCalculationSettingsResponse {
   public static final String SERIALIZED_NAME_PROFILE_CONFIG_ID = "ProfileConfigId";
   @SerializedName(SERIALIZED_NAME_PROFILE_CONFIG_ID)
@@ -62,7 +62,7 @@ public class TaxCalculationSettingsResponse {
 
   public static final String SERIALIZED_NAME_SETTINGS = "Settings";
   @SerializedName(SERIALIZED_NAME_SETTINGS)
-  private ModelConfiguration settings = null;
+  private ModelConfiguration settings;
 
   public static final String SERIALIZED_NAME_EXCLUSIONS = "Exclusions";
   @SerializedName(SERIALIZED_NAME_EXCLUSIONS)
@@ -78,7 +78,7 @@ public class TaxCalculationSettingsResponse {
 
   public static final String SERIALIZED_NAME_OVERRIDES = "Overrides";
   @SerializedName(SERIALIZED_NAME_OVERRIDES)
-  private OverrideConfig overrides = null;
+  private OverrideConfig overrides;
 
   public static final String SERIALIZED_NAME_DESCRIPTION = "Description";
   @SerializedName(SERIALIZED_NAME_DESCRIPTION)
@@ -235,11 +235,11 @@ public class TaxCalculationSettingsResponse {
   }
 
    /**
-   * Configuration settings (as applicable)
+   * Get settings
    * @return settings
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Configuration settings (as applicable)")
+  @ApiModelProperty(value = "")
 
   public ModelConfiguration getSettings() {
     return settings;
@@ -351,11 +351,11 @@ public class TaxCalculationSettingsResponse {
   }
 
    /**
-   * Overrides (as applicable - raw data)
+   * Get overrides
    * @return overrides
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Overrides (as applicable - raw data)")
+  @ApiModelProperty(value = "")
 
   public OverrideConfig getOverrides() {
     return overrides;

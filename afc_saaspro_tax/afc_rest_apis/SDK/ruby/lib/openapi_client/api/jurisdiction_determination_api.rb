@@ -96,10 +96,6 @@ module OpenapiClient
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: JurisdictionDeterminationApi.api_v2_geo_batch_log_process_id_get ...'
       end
-      # verify the required parameter 'process_id' is set
-      if @api_client.config.client_side_validation && process_id.nil?
-        fail ArgumentError, "Missing the required parameter 'process_id' when calling JurisdictionDeterminationApi.api_v2_geo_batch_log_process_id_get"
-      end
       # resource path
       local_var_path = '/api/v2/geo/batch/log/{processId}'.sub('{' + 'processId' + '}', CGI.escape(process_id.to_s))
 
@@ -156,10 +152,6 @@ module OpenapiClient
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: JurisdictionDeterminationApi.api_v2_geo_batch_status_process_id_get ...'
       end
-      # verify the required parameter 'process_id' is set
-      if @api_client.config.client_side_validation && process_id.nil?
-        fail ArgumentError, "Missing the required parameter 'process_id' when calling JurisdictionDeterminationApi.api_v2_geo_batch_status_process_id_get"
-      end
       # resource path
       local_var_path = '/api/v2/geo/batch/status/{processId}'.sub('{' + 'processId' + '}', CGI.escape(process_id.to_s))
 
@@ -201,7 +193,7 @@ module OpenapiClient
 
     # Uploads file to Geo Batch.
     # @param [Hash] opts the optional parameters
-    # @option opts [File] :file 
+    # @option opts [File] :geo_batch_file 
     # @return [GeoBatchSubmitFileResponse]
     def api_v2_geo_batch_upload_post(opts = {})
       data, _status_code, _headers = api_v2_geo_batch_upload_post_with_http_info(opts)
@@ -210,7 +202,7 @@ module OpenapiClient
 
     # Uploads file to Geo Batch.
     # @param [Hash] opts the optional parameters
-    # @option opts [File] :file 
+    # @option opts [File] :geo_batch_file 
     # @return [Array<(GeoBatchSubmitFileResponse, Integer, Hash)>] GeoBatchSubmitFileResponse data, response status code and response headers
     def api_v2_geo_batch_upload_post_with_http_info(opts = {})
       if @api_client.config.debugging
@@ -231,7 +223,7 @@ module OpenapiClient
 
       # form parameters
       form_params = opts[:form_params] || {}
-      form_params['file'] = opts[:'file'] if !opts[:'file'].nil?
+      form_params['geoBatchFile'] = opts[:'geo_batch_file'] if !opts[:'geo_batch_file'].nil?
 
       # http body (model)
       post_body = opts[:body] 

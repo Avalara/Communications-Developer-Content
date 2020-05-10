@@ -28,7 +28,7 @@ import java.io.IOException;
  * Settings associated with a client profile exclusions  Maybe associated with 0 to many profiles
  */
 @ApiModel(description = "Settings associated with a client profile exclusions  Maybe associated with 0 to many profiles")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class ExclusionConfig {
   public static final String SERIALIZED_NAME_COUNTRY_ISO = "CountryIso";
   @SerializedName(SERIALIZED_NAME_COUNTRY_ISO)

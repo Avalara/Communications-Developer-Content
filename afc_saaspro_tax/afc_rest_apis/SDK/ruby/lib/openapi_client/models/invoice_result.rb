@@ -15,12 +15,16 @@ require 'date'
 module OpenapiClient
   # Tax calculation results for an invoice.
   class InvoiceResult
+    # Document number for invoice.
     attr_accessor :doc
 
+    # Individual tax calculation results for each line item.
     attr_accessor :itms
 
+    # Summarized taxes for invoice.
     attr_accessor :summ
 
+    # Error description (as applicable).
     attr_accessor :err
 
     attr_accessor :incrf
@@ -54,7 +58,6 @@ module OpenapiClient
         :'itms',
         :'summ',
         :'err',
-        :'incrf'
       ])
     end
 

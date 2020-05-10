@@ -80,26 +80,31 @@ class GeocodeRequest {
 }
 
 /**
+ * Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.
  * @member {String} ref
  */
 GeocodeRequest.prototype['ref'] = undefined;
 
 /**
+ * Indicates if the CASS validated address is desired in the results.
  * @member {Boolean} cass
  */
 GeocodeRequest.prototype['cass'] = undefined;
 
 /**
+ * Latitude for geocoding based on lat/long coordinates.
  * @member {Number} lat
  */
 GeocodeRequest.prototype['lat'] = undefined;
 
 /**
+ * Longitude for geocoding based on lat/long coordinates.
  * @member {Number} long
  */
 GeocodeRequest.prototype['long'] = undefined;
 
 /**
+ * Street address.
  * @member {String} addr
  */
 GeocodeRequest.prototype['addr'] = undefined;
@@ -111,11 +116,13 @@ GeocodeRequest.prototype['addr'] = undefined;
 GeocodeRequest.prototype['city'] = undefined;
 
 /**
+ * State name or abbreviation.
  * @member {String} st
  */
 GeocodeRequest.prototype['st'] = undefined;
 
 /**
+ * Postal code.
  * @member {String} zip
  */
 GeocodeRequest.prototype['zip'] = undefined;

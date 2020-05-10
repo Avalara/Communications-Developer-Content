@@ -260,7 +260,7 @@ class GeocodeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets ref
      *
-     * @param string|null $ref ref
+     * @param string|null $ref Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class GeocodeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cass
      *
-     * @param bool|null $cass cass
+     * @param bool|null $cass Indicates if the CASS validated address is desired in the results.
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class GeocodeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets lat
      *
-     * @param double|null $lat lat
+     * @param double|null $lat Latitude for geocoding based on lat/long coordinates.
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class GeocodeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets long
      *
-     * @param double|null $long long
+     * @param double|null $long Longitude for geocoding based on lat/long coordinates.
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class GeocodeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets addr
      *
-     * @param string|null $addr addr
+     * @param string|null $addr Street address.
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class GeocodeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets st
      *
-     * @param string|null $st st
+     * @param string|null $st State name or abbreviation.
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class GeocodeRequest implements ModelInterface, ArrayAccess
     /**
      * Sets zip
      *
-     * @param string|null $zip zip
+     * @param string|null $zip Postal code.
      *
      * @return $this
      */

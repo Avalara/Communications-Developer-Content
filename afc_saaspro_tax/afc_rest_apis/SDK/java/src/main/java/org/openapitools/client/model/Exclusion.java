@@ -28,7 +28,7 @@ import java.io.IOException;
  * Specifies a tax exclusion by state.
  */
 @ApiModel(description = "Specifies a tax exclusion by state.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class Exclusion {
   public static final String SERIALIZED_NAME_CTRY = "ctry";
   @SerializedName(SERIALIZED_NAME_CTRY)
@@ -50,11 +50,11 @@ public class Exclusion {
   }
 
    /**
-   * Get ctry
+   * Country ISO code.
    * @return ctry
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Country ISO code.")
 
   public String getCtry() {
     return ctry;
@@ -73,11 +73,11 @@ public class Exclusion {
   }
 
    /**
-   * Get st
+   * State abbreviation.
    * @return st
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "State abbreviation.")
 
   public String getSt() {
     return st;
@@ -96,11 +96,11 @@ public class Exclusion {
   }
 
    /**
-   * Get excl
+   * Indicates if exclusion applies to the specified state.
    * @return excl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if exclusion applies to the specified state.")
 
   public Boolean getExcl() {
     return excl;

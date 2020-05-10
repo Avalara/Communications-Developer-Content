@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * LocationItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class LocationItem {
   public static final String SERIALIZED_NAME_IS_ALTERNATE = "IsAlternate";
   @SerializedName(SERIALIZED_NAME_IS_ALTERNATE)

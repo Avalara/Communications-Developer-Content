@@ -57,7 +57,7 @@ class InlineObject implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'file' => '\SplFileObject'
+        'geo_batch_file' => '\SplFileObject'
     ];
 
     /**
@@ -66,7 +66,7 @@ class InlineObject implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPIFormats = [
-        'file' => 'binary'
+        'geo_batch_file' => 'binary'
     ];
 
     /**
@@ -96,7 +96,7 @@ class InlineObject implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'file' => 'file'
+        'geo_batch_file' => 'geoBatchFile'
     ];
 
     /**
@@ -105,7 +105,7 @@ class InlineObject implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'file' => 'setFile'
+        'geo_batch_file' => 'setGeoBatchFile'
     ];
 
     /**
@@ -114,7 +114,7 @@ class InlineObject implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'file' => 'getFile'
+        'geo_batch_file' => 'getGeoBatchFile'
     ];
 
     /**
@@ -177,7 +177,7 @@ class InlineObject implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['file'] = isset($data['file']) ? $data['file'] : null;
+        $this->container['geo_batch_file'] = isset($data['geo_batch_file']) ? $data['geo_batch_file'] : null;
     }
 
     /**
@@ -205,25 +205,25 @@ class InlineObject implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets file
+     * Gets geo_batch_file
      *
      * @return \SplFileObject|null
      */
-    public function getFile()
+    public function getGeoBatchFile()
     {
-        return $this->container['file'];
+        return $this->container['geo_batch_file'];
     }
 
     /**
-     * Sets file
+     * Sets geo_batch_file
      *
-     * @param \SplFileObject|null $file file
+     * @param \SplFileObject|null $geo_batch_file geo_batch_file
      *
      * @return $this
      */
-    public function setFile($file)
+    public function setGeoBatchFile($geo_batch_file)
     {
-        $this->container['file'] = $file;
+        $this->container['geo_batch_file'] = $geo_batch_file;
 
         return $this;
     }

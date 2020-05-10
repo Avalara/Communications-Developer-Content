@@ -60,7 +60,7 @@ class Invoice {
                 obj['cmmt'] = ApiClient.convertToType(data['cmmt'], 'Boolean');
             }
             if (data.hasOwnProperty('bill')) {
-                obj['bill'] = ApiClient.convertToType(data['bill'], Location);
+                obj['bill'] = Location.constructFromObject(data['bill']);
             }
             if (data.hasOwnProperty('cust')) {
                 obj['cust'] = ApiClient.convertToType(data['cust'], 'Number');
@@ -102,7 +102,7 @@ class Invoice {
                 obj['bcyc'] = ApiClient.convertToType(data['bcyc'], 'String');
             }
             if (data.hasOwnProperty('bpd')) {
-                obj['bpd'] = ApiClient.convertToType(data['bpd'], BillingPeriod);
+                obj['bpd'] = BillingPeriod.constructFromObject(data['bpd']);
             }
             if (data.hasOwnProperty('ccycd')) {
                 obj['ccycd'] = ApiClient.convertToType(data['ccycd'], 'String');
@@ -115,11 +115,13 @@ class Invoice {
 }
 
 /**
+ * Document code.
  * @member {String} doc
  */
 Invoice.prototype['doc'] = undefined;
 
 /**
+ * Indicates if invoice should be committed as soon as it is processed.  Default: false.
  * @member {Boolean} cmmt
  */
 Invoice.prototype['cmmt'] = undefined;
@@ -130,11 +132,13 @@ Invoice.prototype['cmmt'] = undefined;
 Invoice.prototype['bill'] = undefined;
 
 /**
+ * Customer type.
  * @member {Number} cust
  */
 Invoice.prototype['cust'] = undefined;
 
 /**
+ * Indicates if customer is a Lifeline participant.  Default: false.
  * @member {Boolean} lfln
  */
 Invoice.prototype['lfln'] = undefined;
@@ -146,51 +150,61 @@ Invoice.prototype['lfln'] = undefined;
 Invoice.prototype['date'] = undefined;
 
 /**
+ * Tax exemptions.
  * @member {Array.<module:model/TaxExemption>} exms
  */
 Invoice.prototype['exms'] = undefined;
 
 /**
+ * Line items.
  * @member {Array.<module:model/LineItem>} itms
  */
 Invoice.prototype['itms'] = undefined;
 
 /**
+ * Indicates if all line items within invoice should be processed in invoice mode.  Default: true.
  * @member {Boolean} invm
  */
 Invoice.prototype['invm'] = undefined;
 
 /**
+ * Indicates if individual line item taxes should be included in response.  Default: true.
  * @member {Boolean} dtl
  */
 Invoice.prototype['dtl'] = undefined;
 
 /**
+ * Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.
  * @member {Boolean} summ
  */
 Invoice.prototype['summ'] = undefined;
 
 /**
+ * Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.
  * @member {Array.<module:model/KeyValuePair>} opt
  */
 Invoice.prototype['opt'] = undefined;
 
 /**
+ * Account reference for reporting
  * @member {String} acct
  */
 Invoice.prototype['acct'] = undefined;
 
 /**
+ * Customer Reference for reporting
  * @member {String} custref
  */
 Invoice.prototype['custref'] = undefined;
 
 /**
+ * Invoice Number reference for reporting
  * @member {String} invn
  */
 Invoice.prototype['invn'] = undefined;
 
 /**
+ * Bill Cycle reference for reporting
  * @member {String} bcyc
  */
 Invoice.prototype['bcyc'] = undefined;
@@ -201,6 +215,7 @@ Invoice.prototype['bcyc'] = undefined;
 Invoice.prototype['bpd'] = undefined;
 
 /**
+ * Currency code for invoice.  Example: CAD = Canadian Dollar
  * @member {String} ccycd
  */
 Invoice.prototype['ccycd'] = undefined;

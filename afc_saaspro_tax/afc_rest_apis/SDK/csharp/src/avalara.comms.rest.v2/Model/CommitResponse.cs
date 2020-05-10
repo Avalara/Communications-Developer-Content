@@ -33,8 +33,8 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CommitResponse" /> class.
         /// </summary>
-        /// <param name="ok">ok.</param>
-        /// <param name="err">err.</param>
+        /// <param name="ok">Indicates if document code&#39;s commit status was updated successfully..</param>
+        /// <param name="err">Error description (as applicable)..</param>
         public CommitResponse(bool? ok = default(bool?), List<Error> err = default(List<Error>))
         {
             this.Ok = ok;
@@ -44,14 +44,16 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Ok
+        /// Indicates if document code&#39;s commit status was updated successfully.
         /// </summary>
+        /// <value>Indicates if document code&#39;s commit status was updated successfully.</value>
         [DataMember(Name="ok", EmitDefaultValue=true)]
         public bool? Ok { get; set; }
 
         /// <summary>
-        /// Gets or Sets Err
+        /// Error description (as applicable).
         /// </summary>
+        /// <value>Error description (as applicable).</value>
         [DataMember(Name="err", EmitDefaultValue=true)]
         public List<Error> Err { get; set; }
 

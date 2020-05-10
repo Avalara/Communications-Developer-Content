@@ -68,6 +68,7 @@ class Status {
 Status.prototype['code'] = undefined;
 
 /**
+ * Status message.
  * @member {String} msg
  */
 Status.prototype['msg'] = undefined;

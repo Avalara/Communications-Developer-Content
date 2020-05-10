@@ -34,9 +34,9 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="RequestConfig" /> class.
         /// </summary>
-        /// <param name="retnb">retnb.</param>
-        /// <param name="retext">retext.</param>
-        /// <param name="incrf">incrf.</param>
+        /// <param name="retnb">Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value.</param>
+        /// <param name="retext">Flag indicating extended tax information should be returned.  Reference online documentation for more details.</param>
+        /// <param name="incrf">Flag indicating reporting information should be returned.  Reference online documentation for more details.</param>
         public RequestConfig(bool? retnb = default(bool?), bool? retext = default(bool?), bool? incrf = default(bool?))
         {
             this.Retnb = retnb;
@@ -45,20 +45,23 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Retnb
+        /// Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value
         /// </summary>
+        /// <value>Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value</value>
         [DataMember(Name="retnb", EmitDefaultValue=true)]
         public bool? Retnb { get; set; }
 
         /// <summary>
-        /// Gets or Sets Retext
+        /// Flag indicating extended tax information should be returned.  Reference online documentation for more details
         /// </summary>
+        /// <value>Flag indicating extended tax information should be returned.  Reference online documentation for more details</value>
         [DataMember(Name="retext", EmitDefaultValue=true)]
         public bool? Retext { get; set; }
 
         /// <summary>
-        /// Gets or Sets Incrf
+        /// Flag indicating reporting information should be returned.  Reference online documentation for more details
         /// </summary>
+        /// <value>Flag indicating reporting information should be returned.  Reference online documentation for more details</value>
         [DataMember(Name="incrf", EmitDefaultValue=true)]
         public bool? Incrf { get; set; }
 

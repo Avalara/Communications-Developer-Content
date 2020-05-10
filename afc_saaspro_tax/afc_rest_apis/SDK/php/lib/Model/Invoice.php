@@ -60,7 +60,7 @@ class Invoice implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'doc' => 'string',
         'cmmt' => 'bool',
-        'bill' => 'Location',
+        'bill' => '\OpenAPI\Client\Model\Location',
         'cust' => 'int',
         'lfln' => 'bool',
         'date' => '\DateTime',
@@ -74,7 +74,7 @@ class Invoice implements ModelInterface, ArrayAccess
         'custref' => 'string',
         'invn' => 'string',
         'bcyc' => 'string',
-        'bpd' => 'BillingPeriod',
+        'bpd' => '\OpenAPI\Client\Model\BillingPeriod',
         'ccycd' => 'string'
     ];
 
@@ -320,7 +320,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets doc
      *
-     * @param string|null $doc doc
+     * @param string|null $doc Document code.
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets cmmt
      *
-     * @param bool|null $cmmt cmmt
+     * @param bool|null $cmmt Indicates if invoice should be committed as soon as it is processed.  Default: false.
      *
      * @return $this
      */
@@ -358,7 +358,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Gets bill
      *
-     * @return Location|null
+     * @return \OpenAPI\Client\Model\Location|null
      */
     public function getBill()
     {
@@ -368,7 +368,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets bill
      *
-     * @param Location|null $bill bill
+     * @param \OpenAPI\Client\Model\Location|null $bill bill
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets cust
      *
-     * @param int|null $cust cust
+     * @param int|null $cust Customer type.
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets lfln
      *
-     * @param bool|null $lfln lfln
+     * @param bool|null $lfln Indicates if customer is a Lifeline participant.  Default: false.
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets exms
      *
-     * @param \OpenAPI\Client\Model\TaxExemption[]|null $exms exms
+     * @param \OpenAPI\Client\Model\TaxExemption[]|null $exms Tax exemptions.
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets itms
      *
-     * @param \OpenAPI\Client\Model\LineItem[]|null $itms itms
+     * @param \OpenAPI\Client\Model\LineItem[]|null $itms Line items.
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets invm
      *
-     * @param bool|null $invm invm
+     * @param bool|null $invm Indicates if all line items within invoice should be processed in invoice mode.  Default: true.
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets dtl
      *
-     * @param bool|null $dtl dtl
+     * @param bool|null $dtl Indicates if individual line item taxes should be included in response.  Default: true.
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets summ
      *
-     * @param bool|null $summ summ
+     * @param bool|null $summ Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets opt
      *
-     * @param \OpenAPI\Client\Model\KeyValuePair[]|null $opt opt
+     * @param \OpenAPI\Client\Model\KeyValuePair[]|null $opt Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets acct
      *
-     * @param string|null $acct acct
+     * @param string|null $acct Account reference for reporting
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets custref
      *
-     * @param string|null $custref custref
+     * @param string|null $custref Customer Reference for reporting
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets invn
      *
-     * @param string|null $invn invn
+     * @param string|null $invn Invoice Number reference for reporting
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets bcyc
      *
-     * @param string|null $bcyc bcyc
+     * @param string|null $bcyc Bill Cycle reference for reporting
      *
      * @return $this
      */
@@ -694,7 +694,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Gets bpd
      *
-     * @return BillingPeriod|null
+     * @return \OpenAPI\Client\Model\BillingPeriod|null
      */
     public function getBpd()
     {
@@ -704,7 +704,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets bpd
      *
-     * @param BillingPeriod|null $bpd bpd
+     * @param \OpenAPI\Client\Model\BillingPeriod|null $bpd bpd
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class Invoice implements ModelInterface, ArrayAccess
     /**
      * Sets ccycd
      *
-     * @param string|null $ccycd ccycd
+     * @param string|null $ccycd Currency code for invoice.  Example: CAD = Canadian Dollar
      *
      * @return $this
      */

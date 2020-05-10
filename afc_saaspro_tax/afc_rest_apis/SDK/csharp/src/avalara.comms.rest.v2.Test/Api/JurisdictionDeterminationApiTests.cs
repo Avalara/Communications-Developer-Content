@@ -106,8 +106,8 @@ namespace avalara.comms.rest.v2.Test
         public void ApiV2GeoBatchUploadPostTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //System.IO.Stream file = null;
-            //var response = instance.ApiV2GeoBatchUploadPost(file);
+            //System.IO.Stream geoBatchFile = null;
+            //var response = instance.ApiV2GeoBatchUploadPost(geoBatchFile);
             //Assert.IsInstanceOf(typeof(GeoBatchSubmitFileResponse), response, "response is GeoBatchSubmitFileResponse");
         }
         

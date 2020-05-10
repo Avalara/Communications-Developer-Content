@@ -166,14 +166,14 @@ __PACKAGE__->method_documentation({
     'inv' => {
         datatype => 'ARRAY[InvoiceResult]',
         base_name => 'inv',
-        description => '',
+        description => 'Tax calculation results for each invoice submitted in request.',
         format => '',
         read_only => '',
             },
     'err' => {
         datatype => 'ARRAY[Error]',
         base_name => 'err',
-        description => '',
+        description => 'Error description (as applicable).',
         format => '',
         read_only => '',
             },

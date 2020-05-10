@@ -32,7 +32,7 @@ import org.openapitools.client.model.Tax;
  * Tax calculation results for a single line item.
  */
 @ApiModel(description = "Tax calculation results for a single line item.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class LineItemResult {
   public static final String SERIALIZED_NAME_REF = "ref";
   @SerializedName(SERIALIZED_NAME_REF)
@@ -58,11 +58,11 @@ public class LineItemResult {
   }
 
    /**
-   * Get ref
+   * Reference ID for line item.
    * @return ref
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Reference ID for line item.")
 
   public String getRef() {
     return ref;
@@ -81,11 +81,11 @@ public class LineItemResult {
   }
 
    /**
-   * Get base
+   * Base sale amount for tax-inclusive line items.
    * @return base
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Base sale amount for tax-inclusive line items.")
 
   public Double getBase() {
     return base;
@@ -112,11 +112,11 @@ public class LineItemResult {
   }
 
    /**
-   * Get txs
+   * Taxes generated for line item.
    * @return txs
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Taxes generated for line item.")
 
   public List<Tax> getTxs() {
     return txs;
@@ -143,11 +143,11 @@ public class LineItemResult {
   }
 
    /**
-   * Get err
+   * Error description (as applicable).
    * @return err
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error description (as applicable).")
 
   public List<Error> getErr() {
     return err;

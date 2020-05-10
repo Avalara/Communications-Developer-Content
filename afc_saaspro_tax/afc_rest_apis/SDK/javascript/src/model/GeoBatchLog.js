@@ -70,6 +70,7 @@ class GeoBatchLog {
 GeoBatchLog.prototype['Log'] = undefined;
 
 /**
+ * Error description (as applicable).
  * @member {Array.<module:model/Error>} err
  */
 GeoBatchLog.prototype['err'] = undefined;

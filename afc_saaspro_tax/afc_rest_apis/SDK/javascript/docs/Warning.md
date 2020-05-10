@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **Number** | Warning code. | [optional] [readonly] 
-**msg** | **String** |  | [optional] [readonly] 
+**code** | **Number** | Warning code. | [optional] 
+**msg** | **String** | Warning message. | [optional] [readonly] 
 
 

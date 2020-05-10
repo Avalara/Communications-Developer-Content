@@ -28,7 +28,7 @@ import java.io.IOException;
  * Safe harbor rate override for a USF tax type.
  */
 @ApiModel(description = "Safe harbor rate override for a USF tax type.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class SafeHarborOverride {
   public static final String SERIALIZED_NAME_SH = "sh";
   @SerializedName(SERIALIZED_NAME_SH)
@@ -50,11 +50,11 @@ public class SafeHarborOverride {
   }
 
    /**
-   * Get sh
+   * Safe harbor type (1 &#x3D; Cellular, 2 &#x3D; VoIp, 4 &#x3D; Paging).
    * @return sh
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Safe harbor type (1 = Cellular, 2 = VoIp, 4 = Paging).")
 
   public Integer getSh() {
     return sh;
@@ -73,11 +73,11 @@ public class SafeHarborOverride {
   }
 
    /**
-   * Get old
+   * Original Federal TAM value to override.
    * @return old
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Original Federal TAM value to override.")
 
   public Double getOld() {
     return old;
@@ -96,11 +96,11 @@ public class SafeHarborOverride {
   }
 
    /**
-   * Get _new
+   * New TAM value that will replace the original TAM value.
    * @return _new
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "New TAM value that will replace the original TAM value.")
 
   public Double getNew() {
     return _new;

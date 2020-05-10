@@ -95,6 +95,7 @@ class Location(object):
     def cnty(self):
         """Gets the cnty of this Location.  # noqa: E501
 
+        County name.  # noqa: E501
 
         :return: The cnty of this Location.  # noqa: E501
         :rtype: str
@@ -105,6 +106,7 @@ class Location(object):
     def cnty(self, cnty):
         """Sets the cnty of this Location.
 
+        County name.  # noqa: E501
 
         :param cnty: The cnty of this Location.  # noqa: E501
         :type: str
@@ -116,6 +118,7 @@ class Location(object):
     def ctry(self):
         """Gets the ctry of this Location.  # noqa: E501
 
+        Country ISO code.  # noqa: E501
 
         :return: The ctry of this Location.  # noqa: E501
         :rtype: str
@@ -126,6 +129,7 @@ class Location(object):
     def ctry(self, ctry):
         """Sets the ctry of this Location.
 
+        Country ISO code.  # noqa: E501
 
         :param ctry: The ctry of this Location.  # noqa: E501
         :type: str
@@ -137,6 +141,7 @@ class Location(object):
     def int(self):
         """Gets the int of this Location.  # noqa: E501
 
+        Indicates if the location is within city limits.  Default: true.  # noqa: E501
 
         :return: The int of this Location.  # noqa: E501
         :rtype: bool
@@ -147,6 +152,7 @@ class Location(object):
     def int(self, int):
         """Sets the int of this Location.
 
+        Indicates if the location is within city limits.  Default: true.  # noqa: E501
 
         :param int: The int of this Location.  # noqa: E501
         :type: bool
@@ -158,6 +164,7 @@ class Location(object):
     def geo(self):
         """Gets the geo of this Location.  # noqa: E501
 
+        Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.  # noqa: E501
 
         :return: The geo of this Location.  # noqa: E501
         :rtype: bool
@@ -168,6 +175,7 @@ class Location(object):
     def geo(self, geo):
         """Sets the geo of this Location.
 
+        Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.  # noqa: E501
 
         :param geo: The geo of this Location.  # noqa: E501
         :type: bool
@@ -179,6 +187,7 @@ class Location(object):
     def pcd(self):
         """Gets the pcd of this Location.  # noqa: E501
 
+        PCode for taxing jurisdiction.  # noqa: E501
 
         :return: The pcd of this Location.  # noqa: E501
         :rtype: int
@@ -189,6 +198,7 @@ class Location(object):
     def pcd(self, pcd):
         """Sets the pcd of this Location.
 
+        PCode for taxing jurisdiction.  # noqa: E501
 
         :param pcd: The pcd of this Location.  # noqa: E501
         :type: int
@@ -200,6 +210,7 @@ class Location(object):
     def npa(self):
         """Gets the npa of this Location.  # noqa: E501
 
+        NPANXX number.  # noqa: E501
 
         :return: The npa of this Location.  # noqa: E501
         :rtype: int
@@ -210,6 +221,7 @@ class Location(object):
     def npa(self, npa):
         """Sets the npa of this Location.
 
+        NPANXX number.  # noqa: E501
 
         :param npa: The npa of this Location.  # noqa: E501
         :type: int
@@ -221,6 +233,7 @@ class Location(object):
     def fips(self):
         """Gets the fips of this Location.  # noqa: E501
 
+        FIPS code for taxing jurisdiction.  # noqa: E501
 
         :return: The fips of this Location.  # noqa: E501
         :rtype: str
@@ -231,6 +244,7 @@ class Location(object):
     def fips(self, fips):
         """Sets the fips of this Location.
 
+        FIPS code for taxing jurisdiction.  # noqa: E501
 
         :param fips: The fips of this Location.  # noqa: E501
         :type: str
@@ -242,6 +256,7 @@ class Location(object):
     def addr(self):
         """Gets the addr of this Location.  # noqa: E501
 
+        Street address.  # noqa: E501
 
         :return: The addr of this Location.  # noqa: E501
         :rtype: str
@@ -252,6 +267,7 @@ class Location(object):
     def addr(self, addr):
         """Sets the addr of this Location.
 
+        Street address.  # noqa: E501
 
         :param addr: The addr of this Location.  # noqa: E501
         :type: str
@@ -286,6 +302,7 @@ class Location(object):
     def st(self):
         """Gets the st of this Location.  # noqa: E501
 
+        State name or abbreviation.  # noqa: E501
 
         :return: The st of this Location.  # noqa: E501
         :rtype: str
@@ -296,6 +313,7 @@ class Location(object):
     def st(self, st):
         """Sets the st of this Location.
 
+        State name or abbreviation.  # noqa: E501
 
         :param st: The st of this Location.  # noqa: E501
         :type: str
@@ -307,6 +325,7 @@ class Location(object):
     def zip(self):
         """Gets the zip of this Location.  # noqa: E501
 
+        Postal code.  # noqa: E501
 
         :return: The zip of this Location.  # noqa: E501
         :rtype: str
@@ -317,6 +336,7 @@ class Location(object):
     def zip(self, zip):
         """Sets the zip of this Location.
 
+        Postal code.  # noqa: E501
 
         :param zip: The zip of this Location.  # noqa: E501
         :type: str

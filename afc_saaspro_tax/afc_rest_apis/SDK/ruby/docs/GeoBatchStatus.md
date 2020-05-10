@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **processing_start** | **DateTime** | Processing Start. | [optional] 
 **processing_end** | **DateTime** | Processing End. | [optional] 
 **status** | **String** | Status Of Batch File. | [optional] 
-**downloads** | [**GeoBatchDownloadResponse**](GeoBatchDownloadResponse.md) | Output File Name. | [optional] 
+**downloads** | [**GeoBatchDownloadResponse**](GeoBatchDownloadResponse.md) |  | [optional] 
 **error** | [**Array&lt;Error&gt;**](Error.md) | Error information. | [optional] 
 
 ## Code Sample

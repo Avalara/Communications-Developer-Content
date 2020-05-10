@@ -33,45 +33,44 @@ class InlineObject(object):
                             and the value is json key in definition.
     """
     openapi_types = {
-        'file': 'file'
+        'geo_batch_file': 'file'
     }
 
     attribute_map = {
-        'file': 'file'
+        'geo_batch_file': 'geoBatchFile'
     }
 
-    def __init__(self, file=None, local_vars_configuration=None):  # noqa: E501
+    def __init__(self, geo_batch_file=None, local_vars_configuration=None):  # noqa: E501
         """InlineObject - a model defined in OpenAPI"""  # noqa: E501
         if local_vars_configuration is None:
             local_vars_configuration = Configuration()
         self.local_vars_configuration = local_vars_configuration
 
-        self._file = None
+        self._geo_batch_file = None
         self.discriminator = None
 
-        if file is not None:
-            self.file = file
+        self.geo_batch_file = geo_batch_file
 
     @property
-    def file(self):
-        """Gets the file of this InlineObject.  # noqa: E501
+    def geo_batch_file(self):
+        """Gets the geo_batch_file of this InlineObject.  # noqa: E501
 
 
-        :return: The file of this InlineObject.  # noqa: E501
+        :return: The geo_batch_file of this InlineObject.  # noqa: E501
         :rtype: file
         """
-        return self._file
+        return self._geo_batch_file
 
-    @file.setter
-    def file(self, file):
-        """Sets the file of this InlineObject.
+    @geo_batch_file.setter
+    def geo_batch_file(self, geo_batch_file):
+        """Sets the geo_batch_file of this InlineObject.
 
 
-        :param file: The file of this InlineObject.  # noqa: E501
+        :param geo_batch_file: The geo_batch_file of this InlineObject.  # noqa: E501
         :type: file
         """
 
-        self._file = file
+        self._geo_batch_file = geo_batch_file
 
     def to_dict(self):
         """Returns the model properties as a dict"""

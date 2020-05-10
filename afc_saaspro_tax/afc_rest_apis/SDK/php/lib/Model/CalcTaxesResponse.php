@@ -224,7 +224,7 @@ class CalcTaxesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets inv
      *
-     * @param \OpenAPI\Client\Model\InvoiceResult[]|null $inv inv
+     * @param \OpenAPI\Client\Model\InvoiceResult[]|null $inv Tax calculation results for each invoice submitted in request.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class CalcTaxesResponse implements ModelInterface, ArrayAccess
     /**
      * Sets err
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $err err
+     * @param \OpenAPI\Client\Model\Error[]|null $err Error description (as applicable).
      *
      * @return $this
      */

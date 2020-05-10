@@ -35,7 +35,7 @@ namespace avalara.comms.rest.v2.Model
         /// Initializes a new instance of the <see cref="TaxBracket" /> class.
         /// </summary>
         /// <param name="rate">Tax rate. Value cannot be negative. For rated taxes, value must be from 0 to 1. Otherwise, value may be larger..</param>
-        /// <param name="max">max.</param>
+        /// <param name="max">Maximum base that this rate applies to..</param>
         public TaxBracket(double? rate = default(double?), double? max = default(double?))
         {
             this.Rate = rate;
@@ -50,8 +50,9 @@ namespace avalara.comms.rest.v2.Model
         public double? Rate { get; set; }
 
         /// <summary>
-        /// Gets or Sets Max
+        /// Maximum base that this rate applies to.
         /// </summary>
+        /// <value>Maximum base that this rate applies to.</value>
         [DataMember(Name="max", EmitDefaultValue=true)]
         public double? Max { get; set; }
 

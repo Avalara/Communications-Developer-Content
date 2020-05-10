@@ -18,6 +18,7 @@ module OpenapiClient
     # Tax rate. Value cannot be negative. For rated taxes, value must be from 0 to 1. Otherwise, value may be larger.
     attr_accessor :rate
 
+    # Maximum base that this rate applies to.
     attr_accessor :max
 
     # Attribute mapping from ruby-style variable name to JSON key.

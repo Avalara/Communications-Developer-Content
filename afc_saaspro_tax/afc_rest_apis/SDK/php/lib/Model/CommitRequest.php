@@ -230,7 +230,7 @@ class CommitRequest implements ModelInterface, ArrayAccess
     /**
      * Sets doc
      *
-     * @param string|null $doc doc
+     * @param string|null $doc Document code.
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class CommitRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cmmt
      *
-     * @param bool|null $cmmt cmmt
+     * @param bool|null $cmmt Indicates if transactions for the specified document code should be committed.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CommitRequest implements ModelInterface, ArrayAccess
     /**
      * Sets opt
      *
-     * @param \OpenAPI\Client\Model\KeyValuePair[]|null $opt opt
+     * @param \OpenAPI\Client\Model\KeyValuePair[]|null $opt Overrides value for OptionalFields field in reports.
      *
      * @return $this
      */

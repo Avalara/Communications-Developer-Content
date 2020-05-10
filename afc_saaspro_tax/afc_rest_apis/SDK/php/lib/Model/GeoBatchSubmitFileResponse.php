@@ -248,7 +248,7 @@ class GeoBatchSubmitFileResponse implements ModelInterface, ArrayAccess
     /**
      * Sets err
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $err err
+     * @param \OpenAPI\Client\Model\Error[]|null $err Error description (as applicable).
      *
      * @return $this
      */

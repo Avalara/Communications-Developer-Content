@@ -5,12 +5,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Acct** | **string** |  | [optional] 
-**Custref** | **string** |  | [optional] 
-**Invn** | **string** |  | [optional] 
-**Bcyc** | **string** |  | [optional] 
-**Ccycd** | **string** |  | [optional] 
-**Ccydesc** | **string** |  | [optional] 
+**Acct** | **string** | Account id | [optional] 
+**Custref** | **string** | Customer reference | [optional] 
+**Invn** | **string** | Invoice Number reference | [optional] 
+**Bcyc** | **string** | Bill Cycle reference | [optional] 
+**Ccycd** | **string** | Currency code for invoice | [optional] 
+**Ccydesc** | **string** | Currency description | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

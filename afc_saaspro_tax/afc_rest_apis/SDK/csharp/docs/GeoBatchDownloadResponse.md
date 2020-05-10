@@ -5,9 +5,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**InputFile** | **string** |  | [optional] 
+**InputFile** | **string** | Input File Name. | [optional] 
 **InputFileDownload** | **string** | Input File Download. | [optional] 
-**OutputFile** | **string** |  | [optional] 
+**OutputFile** | **string** | Output File Name. | [optional] 
 **OutputFileDownload** | **string** | Output File Name. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

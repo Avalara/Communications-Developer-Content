@@ -126,10 +126,6 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *SaasPro.CustomizationApi* | [**apiV2ProfilesGetProfilesGet**](docs/CustomizationApi.md#apiV2ProfilesGetProfilesGet) | **GET** /api/v2/profiles/GetProfiles | Retrieves one or more profiles with associated settings and configurable items
-*SaasPro.CustomizationApi* | [**apiV2ProfilesSetBundlesPost**](docs/CustomizationApi.md#apiV2ProfilesSetBundlesPost) | **POST** /api/v2/profiles/SetBundles | Creates or updates bundle packages and associated profile mappings.
-*SaasPro.CustomizationApi* | [**apiV2ProfilesSetConfigPost**](docs/CustomizationApi.md#apiV2ProfilesSetConfigPost) | **POST** /api/v2/profiles/SetConfig | Creates or updates configuration settings and associated profile mappings.
-*SaasPro.CustomizationApi* | [**apiV2ProfilesSetExclusionsPost**](docs/CustomizationApi.md#apiV2ProfilesSetExclusionsPost) | **POST** /api/v2/profiles/SetExclusions | Creates or updates exclusions and associated profile mappings.
-*SaasPro.CustomizationApi* | [**apiV2ProfilesSetOverridesPost**](docs/CustomizationApi.md#apiV2ProfilesSetOverridesPost) | **POST** /api/v2/profiles/SetOverrides | Creates or updates overrides and associated profile mappings.
 *SaasPro.HealthCheckApi* | [**apiV2HealthCheckGet**](docs/HealthCheckApi.md#apiV2HealthCheckGet) | **GET** /api/v2/HealthCheck | Health check that confirms the service is operational and ready to use
 *SaasPro.JurisdictionDeterminationApi* | [**apiV2AfcPCodePost**](docs/JurisdictionDeterminationApi.md#apiV2AfcPCodePost) | **POST** /api/v2/afc/PCode | Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
 *SaasPro.JurisdictionDeterminationApi* | [**apiV2GeoBatchLogProcessIdGet**](docs/JurisdictionDeterminationApi.md#apiV2GeoBatchLogProcessIdGet) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
@@ -183,7 +179,6 @@ Class | Method | HTTP request | Description
  - [SaasPro.RequestConfig](docs/RequestConfig.md)
  - [SaasPro.SafeHarborOverride](docs/SafeHarborOverride.md)
  - [SaasPro.ServiceInfo](docs/ServiceInfo.md)
- - [SaasPro.SetTaxCalculationSettingRequest](docs/SetTaxCalculationSettingRequest.md)
  - [SaasPro.Status](docs/Status.md)
  - [SaasPro.SummarizedTax](docs/SummarizedTax.md)
  - [SaasPro.TSPairData](docs/TSPairData.md)

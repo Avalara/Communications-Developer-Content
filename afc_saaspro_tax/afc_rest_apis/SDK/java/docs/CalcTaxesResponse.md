@@ -7,8 +7,8 @@ Response body for tax calculation API.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inv** | [**List&lt;InvoiceResult&gt;**](InvoiceResult.md) |  |  [optional]
-**err** | [**List&lt;Error&gt;**](Error.md) |  |  [optional]
+**inv** | [**List&lt;InvoiceResult&gt;**](InvoiceResult.md) | Tax calculation results for each invoice submitted in request. |  [optional]
+**err** | [**List&lt;Error&gt;**](Error.md) | Error description (as applicable). |  [optional]
 
 
 

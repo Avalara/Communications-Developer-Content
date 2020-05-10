@@ -15,18 +15,25 @@ require 'date'
 module OpenapiClient
   # Container class for json properties associated with v2.CalcTaxes company data
   class CompanyData
+    # Business class. 0 = ILEC, 1 = CLEC.
     attr_accessor :bscl
 
+    # Service class. 0 = Primary Local, 1 = Primary Long Distance.
     attr_accessor :svcl
 
+    # Specifies if the carrier delivering the service has company owned facilities to provide the service.
     attr_accessor :fclt
 
+    # Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.
     attr_accessor :frch
 
+    # Indicates if company is regulated.
     attr_accessor :reg
 
+    # Exclusion list.
     attr_accessor :excl
 
+    # An optional company identifier for reporting
     attr_accessor :idnt
 
     # Attribute mapping from ruby-style variable name to JSON key.

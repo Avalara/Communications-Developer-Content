@@ -15,41 +15,56 @@ require 'date'
 module OpenapiClient
   # Contains information about an invoice or quote.
   class Invoice
+    # Document code.
     attr_accessor :doc
 
+    # Indicates if invoice should be committed as soon as it is processed.  Default: false.
     attr_accessor :cmmt
 
     attr_accessor :bill
 
+    # Customer type.
     attr_accessor :cust
 
+    # Indicates if customer is a Lifeline participant.  Default: false.
     attr_accessor :lfln
 
     # Invoice date.
     attr_accessor :date
 
+    # Tax exemptions.
     attr_accessor :exms
 
+    # Line items.
     attr_accessor :itms
 
+    # Indicates if all line items within invoice should be processed in invoice mode.  Default: true.
     attr_accessor :invm
 
+    # Indicates if individual line item taxes should be included in response.  Default: true.
     attr_accessor :dtl
 
+    # Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.
     attr_accessor :summ
 
+    # Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.
     attr_accessor :opt
 
+    # Account reference for reporting
     attr_accessor :acct
 
+    # Customer Reference for reporting
     attr_accessor :custref
 
+    # Invoice Number reference for reporting
     attr_accessor :invn
 
+    # Bill Cycle reference for reporting
     attr_accessor :bcyc
 
     attr_accessor :bpd
 
+    # Currency code for invoice.  Example: CAD = Canadian Dollar
     attr_accessor :ccycd
 
     # Attribute mapping from ruby-style variable name to JSON key.
@@ -105,7 +120,6 @@ module OpenapiClient
       Set.new([
         :'doc',
         :'cmmt',
-        :'bill',
         :'cust',
         :'lfln',
         :'date',
@@ -119,7 +133,6 @@ module OpenapiClient
         :'custref',
         :'invn',
         :'bcyc',
-        :'bpd',
         :'ccycd'
       ])
     end

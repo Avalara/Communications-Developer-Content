@@ -390,7 +390,7 @@ public class JurisdictionDeterminationApi {
     }
     /**
      * Build call for apiV2GeoBatchUploadPost
-     * @param file  (optional)
+     * @param geoBatchFile  (optional)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -400,7 +400,7 @@ public class JurisdictionDeterminationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2GeoBatchUploadPostCall(File file, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call apiV2GeoBatchUploadPostCall(File geoBatchFile, final ApiCallback _callback) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -411,8 +411,8 @@ public class JurisdictionDeterminationApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
-        if (file != null) {
-            localVarFormParams.put("file", file);
+        if (geoBatchFile != null) {
+            localVarFormParams.put("geoBatchFile", geoBatchFile);
         }
 
         final String[] localVarAccepts = {
@@ -434,10 +434,10 @@ public class JurisdictionDeterminationApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call apiV2GeoBatchUploadPostValidateBeforeCall(File file, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call apiV2GeoBatchUploadPostValidateBeforeCall(File geoBatchFile, final ApiCallback _callback) throws ApiException {
         
 
-        okhttp3.Call localVarCall = apiV2GeoBatchUploadPostCall(file, _callback);
+        okhttp3.Call localVarCall = apiV2GeoBatchUploadPostCall(geoBatchFile, _callback);
         return localVarCall;
 
     }
@@ -445,7 +445,7 @@ public class JurisdictionDeterminationApi {
     /**
      * Uploads file to Geo Batch.
      * 
-     * @param file  (optional)
+     * @param geoBatchFile  (optional)
      * @return GeoBatchSubmitFileResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -454,15 +454,15 @@ public class JurisdictionDeterminationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public GeoBatchSubmitFileResponse apiV2GeoBatchUploadPost(File file) throws ApiException {
-        ApiResponse<GeoBatchSubmitFileResponse> localVarResp = apiV2GeoBatchUploadPostWithHttpInfo(file);
+    public GeoBatchSubmitFileResponse apiV2GeoBatchUploadPost(File geoBatchFile) throws ApiException {
+        ApiResponse<GeoBatchSubmitFileResponse> localVarResp = apiV2GeoBatchUploadPostWithHttpInfo(geoBatchFile);
         return localVarResp.getData();
     }
 
     /**
      * Uploads file to Geo Batch.
      * 
-     * @param file  (optional)
+     * @param geoBatchFile  (optional)
      * @return ApiResponse&lt;GeoBatchSubmitFileResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -471,8 +471,8 @@ public class JurisdictionDeterminationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<GeoBatchSubmitFileResponse> apiV2GeoBatchUploadPostWithHttpInfo(File file) throws ApiException {
-        okhttp3.Call localVarCall = apiV2GeoBatchUploadPostValidateBeforeCall(file, null);
+    public ApiResponse<GeoBatchSubmitFileResponse> apiV2GeoBatchUploadPostWithHttpInfo(File geoBatchFile) throws ApiException {
+        okhttp3.Call localVarCall = apiV2GeoBatchUploadPostValidateBeforeCall(geoBatchFile, null);
         Type localVarReturnType = new TypeToken<GeoBatchSubmitFileResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -480,7 +480,7 @@ public class JurisdictionDeterminationApi {
     /**
      * Uploads file to Geo Batch. (asynchronously)
      * 
-     * @param file  (optional)
+     * @param geoBatchFile  (optional)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -490,9 +490,9 @@ public class JurisdictionDeterminationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2GeoBatchUploadPostAsync(File file, final ApiCallback<GeoBatchSubmitFileResponse> _callback) throws ApiException {
+    public okhttp3.Call apiV2GeoBatchUploadPostAsync(File geoBatchFile, final ApiCallback<GeoBatchSubmitFileResponse> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = apiV2GeoBatchUploadPostValidateBeforeCall(file, _callback);
+        okhttp3.Call localVarCall = apiV2GeoBatchUploadPostValidateBeforeCall(geoBatchFile, _callback);
         Type localVarReturnType = new TypeToken<GeoBatchSubmitFileResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;

@@ -30,7 +30,6 @@ module OpenapiClient
     # Active status of the configuration item
     attr_accessor :active
 
-    # Configuration settings (as applicable)
     attr_accessor :settings
 
     # Exclusions (as applicable)
@@ -42,7 +41,6 @@ module OpenapiClient
     # Nexus (as applicable)
     attr_accessor :nexus
 
-    # Overrides (as applicable - raw data)
     attr_accessor :overrides
 
     # Description associated with this item
@@ -115,11 +113,9 @@ module OpenapiClient
         :'client_id',
         :'last_update_by',
         :'active',
-        :'settings',
         :'exclusions',
         :'bundles',
         :'nexus',
-        :'overrides',
         :'description',
         :'error',
         :'item_type',

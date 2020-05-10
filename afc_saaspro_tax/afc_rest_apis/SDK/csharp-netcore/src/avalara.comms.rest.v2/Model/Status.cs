@@ -34,9 +34,10 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Status" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        public Status()
+        /// <param name="code">Status code..</param>
+        public Status(int code = default(int))
         {
+            this.Code = code;
         }
         
         /// <summary>
@@ -44,11 +45,12 @@ namespace avalara.comms.rest.v2.Model
         /// </summary>
         /// <value>Status code.</value>
         [DataMember(Name="code", EmitDefaultValue=false)]
-        public int Code { get; private set; }
+        public int Code { get; set; }
 
         /// <summary>
-        /// Gets or Sets Msg
+        /// Status message.
         /// </summary>
+        /// <value>Status message.</value>
         [DataMember(Name="msg", EmitDefaultValue=true)]
         public string Msg { get; private set; }
 

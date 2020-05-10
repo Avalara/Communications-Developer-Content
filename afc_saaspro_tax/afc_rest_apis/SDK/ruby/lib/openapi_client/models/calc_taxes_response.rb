@@ -15,8 +15,10 @@ require 'date'
 module OpenapiClient
   # Response body for tax calculation API.
   class CalcTaxesResponse
+    # Tax calculation results for each invoice submitted in request.
     attr_accessor :inv
 
+    # Error description (as applicable).
     attr_accessor :err
 
     # Attribute mapping from ruby-style variable name to JSON key.

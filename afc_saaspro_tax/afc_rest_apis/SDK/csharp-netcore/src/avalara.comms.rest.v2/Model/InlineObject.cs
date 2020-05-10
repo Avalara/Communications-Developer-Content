@@ -34,17 +34,17 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="InlineObject" /> class.
         /// </summary>
-        /// <param name="file">file.</param>
-        public InlineObject(System.IO.Stream file = default(System.IO.Stream))
+        /// <param name="geoBatchFile">geoBatchFile.</param>
+        public InlineObject(System.IO.Stream geoBatchFile = default(System.IO.Stream))
         {
-            this.File = file;
+            this.GeoBatchFile = geoBatchFile;
         }
         
         /// <summary>
-        /// Gets or Sets File
+        /// Gets or Sets GeoBatchFile
         /// </summary>
-        [DataMember(Name="file", EmitDefaultValue=false)]
-        public System.IO.Stream File { get; set; }
+        [DataMember(Name="geoBatchFile", EmitDefaultValue=true)]
+        public System.IO.Stream GeoBatchFile { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -54,7 +54,7 @@ namespace avalara.comms.rest.v2.Model
         {
             var sb = new StringBuilder();
             sb.Append("class InlineObject {\n");
-            sb.Append("  File: ").Append(File).Append("\n");
+            sb.Append("  GeoBatchFile: ").Append(GeoBatchFile).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -90,9 +90,9 @@ namespace avalara.comms.rest.v2.Model
 
             return 
                 (
-                    this.File == input.File ||
-                    (this.File != null &&
-                    this.File.Equals(input.File))
+                    this.GeoBatchFile == input.GeoBatchFile ||
+                    (this.GeoBatchFile != null &&
+                    this.GeoBatchFile.Equals(input.GeoBatchFile))
                 );
         }
 
@@ -105,8 +105,8 @@ namespace avalara.comms.rest.v2.Model
             unchecked // Overflow is fine, just wrap
             {
                 int hashCode = 41;
-                if (this.File != null)
-                    hashCode = hashCode * 59 + this.File.GetHashCode();
+                if (this.GeoBatchFile != null)
+                    hashCode = hashCode * 59 + this.GeoBatchFile.GetHashCode();
                 return hashCode;
             }
         }

@@ -13,7 +13,7 @@ The version of the OpenAPI document: v2
     <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}</ProjectGuid>
+    <ProjectGuid>{0F660961-5954-4A77-8F42-D4422CC6EEC3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>avalara.comms.rest.v2</RootNamespace>

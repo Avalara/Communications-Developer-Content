@@ -224,7 +224,7 @@ class BillingPeriod implements ModelInterface, ArrayAccess
     /**
      * Sets month
      *
-     * @param int|null $month month
+     * @param int|null $month Numeric value representing billing period month.  1 = January.
      *
      * @return $this
      */
@@ -248,7 +248,7 @@ class BillingPeriod implements ModelInterface, ArrayAccess
     /**
      * Sets year
      *
-     * @param int|null $year year
+     * @param int|null $year Numeric 4 digit representation of billing period year.
      *
      * @return $this
      */

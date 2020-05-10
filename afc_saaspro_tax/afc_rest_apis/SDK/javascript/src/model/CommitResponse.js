@@ -63,11 +63,13 @@ class CommitResponse {
 }
 
 /**
+ * Indicates if document code's commit status was updated successfully.
  * @member {Boolean} ok
  */
 CommitResponse.prototype['ok'] = undefined;
 
 /**
+ * Error description (as applicable).
  * @member {Array.<module:model/Error>} err
  */
 CommitResponse.prototype['err'] = undefined;

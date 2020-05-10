@@ -35,7 +35,7 @@ namespace avalara.comms.rest.v2.Model
         /// Initializes a new instance of the <see cref="GeoBatchSubmitFileResponse" /> class.
         /// </summary>
         /// <param name="processId">Process Id for File uploaded.</param>
-        /// <param name="err">err.</param>
+        /// <param name="err">Error description (as applicable)..</param>
         public GeoBatchSubmitFileResponse(int? processId = default(int?), List<Error> err = default(List<Error>))
         {
             this.ProcessId = processId;
@@ -50,8 +50,9 @@ namespace avalara.comms.rest.v2.Model
         public int? ProcessId { get; set; }
 
         /// <summary>
-        /// Gets or Sets Err
+        /// Error description (as applicable).
         /// </summary>
+        /// <value>Error description (as applicable).</value>
         [DataMember(Name="err", EmitDefaultValue=true)]
         public List<Error> Err { get; set; }
 

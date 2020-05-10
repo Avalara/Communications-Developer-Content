@@ -5,7 +5,7 @@ Response body for service info API.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **server_time** | **datetime** | Server time. | [optional] 
-**versions** | [**VersionInfo**](VersionInfo.md) | Version information. | [optional] 
+**versions** | [**VersionInfo**](VersionInfo.md) |  | [optional] 
 **error** | **str** | Error information. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

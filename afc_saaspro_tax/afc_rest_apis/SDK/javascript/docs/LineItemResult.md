@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ref** | **String** |  | [optional] 
-**base** | **Number** |  | [optional] 
-**txs** | [**[Tax]**](Tax.md) |  | [optional] 
-**err** | [**[Error]**](Error.md) |  | [optional] 
+**ref** | **String** | Reference ID for line item. | [optional] 
+**base** | **Number** | Base sale amount for tax-inclusive line items. | [optional] 
+**txs** | [**[Tax]**](Tax.md) | Taxes generated for line item. | [optional] 
+**err** | [**[Error]**](Error.md) | Error description (as applicable). | [optional] 
 
 

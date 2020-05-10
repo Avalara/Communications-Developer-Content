@@ -18,6 +18,7 @@ module OpenapiClient
     # Log of provided Process Id
     attr_accessor :log
 
+    # Error description (as applicable).
     attr_accessor :err
 
     # Attribute mapping from ruby-style variable name to JSON key.

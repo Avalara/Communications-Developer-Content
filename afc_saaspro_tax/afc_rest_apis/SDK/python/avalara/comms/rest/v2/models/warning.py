@@ -83,6 +83,7 @@ class Warning(object):
     def msg(self):
         """Gets the msg of this Warning.  # noqa: E501
 
+        Warning message.  # noqa: E501
 
         :return: The msg of this Warning.  # noqa: E501
         :rtype: str
@@ -93,6 +94,7 @@ class Warning(object):
     def msg(self, msg):
         """Sets the msg of this Warning.
 
+        Warning message.  # noqa: E501
 
         :param msg: The msg of this Warning.  # noqa: E501
         :type: str

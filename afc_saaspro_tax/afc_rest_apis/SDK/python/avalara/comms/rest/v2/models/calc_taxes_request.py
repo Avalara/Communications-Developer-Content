@@ -61,8 +61,10 @@ class CalcTaxesRequest(object):
         self._sovr = None
         self.discriminator = None
 
-        self.cfg = cfg
-        self.cmpn = cmpn
+        if cfg is not None:
+            self.cfg = cfg
+        if cmpn is not None:
+            self.cmpn = cmpn
         self.inv = inv
         self.ovr = ovr
         self.sovr = sovr
@@ -113,6 +115,7 @@ class CalcTaxesRequest(object):
     def inv(self):
         """Gets the inv of this CalcTaxesRequest.  # noqa: E501
 
+        List of invoices to process.  # noqa: E501
 
         :return: The inv of this CalcTaxesRequest.  # noqa: E501
         :rtype: list[Invoice]
@@ -123,6 +126,7 @@ class CalcTaxesRequest(object):
     def inv(self, inv):
         """Sets the inv of this CalcTaxesRequest.
 
+        List of invoices to process.  # noqa: E501
 
         :param inv: The inv of this CalcTaxesRequest.  # noqa: E501
         :type: list[Invoice]
@@ -134,6 +138,7 @@ class CalcTaxesRequest(object):
     def ovr(self):
         """Gets the ovr of this CalcTaxesRequest.  # noqa: E501
 
+        Tax rate overrides.  # noqa: E501
 
         :return: The ovr of this CalcTaxesRequest.  # noqa: E501
         :rtype: list[TaxOverride]
@@ -144,6 +149,7 @@ class CalcTaxesRequest(object):
     def ovr(self, ovr):
         """Sets the ovr of this CalcTaxesRequest.
 
+        Tax rate overrides.  # noqa: E501
 
         :param ovr: The ovr of this CalcTaxesRequest.  # noqa: E501
         :type: list[TaxOverride]
@@ -155,6 +161,7 @@ class CalcTaxesRequest(object):
     def sovr(self):
         """Gets the sovr of this CalcTaxesRequest.  # noqa: E501
 
+        Safe harbor overrides for USF taxes.  # noqa: E501
 
         :return: The sovr of this CalcTaxesRequest.  # noqa: E501
         :rtype: list[SafeHarborOverride]
@@ -165,6 +172,7 @@ class CalcTaxesRequest(object):
     def sovr(self, sovr):
         """Sets the sovr of this CalcTaxesRequest.
 
+        Safe harbor overrides for USF taxes.  # noqa: E501
 
         :param sovr: The sovr of this CalcTaxesRequest.  # noqa: E501
         :type: list[SafeHarborOverride]

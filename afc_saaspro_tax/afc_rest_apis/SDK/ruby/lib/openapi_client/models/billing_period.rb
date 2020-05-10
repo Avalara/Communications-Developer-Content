@@ -15,8 +15,10 @@ require 'date'
 module OpenapiClient
   # Optional object for passing in billing period
   class BillingPeriod
+    # Numeric value representing billing period month.  1 = January.
     attr_accessor :month
 
+    # Numeric 4 digit representation of billing period year.
     attr_accessor :year
 
     # Attribute mapping from ruby-style variable name to JSON key.

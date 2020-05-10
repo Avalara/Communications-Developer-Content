@@ -83,6 +83,7 @@ class GeocodeRequest(object):
     def ref(self):
         """Gets the ref of this GeocodeRequest.  # noqa: E501
 
+        Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.  # noqa: E501
 
         :return: The ref of this GeocodeRequest.  # noqa: E501
         :rtype: str
@@ -93,6 +94,7 @@ class GeocodeRequest(object):
     def ref(self, ref):
         """Sets the ref of this GeocodeRequest.
 
+        Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.  # noqa: E501
 
         :param ref: The ref of this GeocodeRequest.  # noqa: E501
         :type: str
@@ -104,6 +106,7 @@ class GeocodeRequest(object):
     def cass(self):
         """Gets the cass of this GeocodeRequest.  # noqa: E501
 
+        Indicates if the CASS validated address is desired in the results.  # noqa: E501
 
         :return: The cass of this GeocodeRequest.  # noqa: E501
         :rtype: bool
@@ -114,6 +117,7 @@ class GeocodeRequest(object):
     def cass(self, cass):
         """Sets the cass of this GeocodeRequest.
 
+        Indicates if the CASS validated address is desired in the results.  # noqa: E501
 
         :param cass: The cass of this GeocodeRequest.  # noqa: E501
         :type: bool
@@ -125,6 +129,7 @@ class GeocodeRequest(object):
     def lat(self):
         """Gets the lat of this GeocodeRequest.  # noqa: E501
 
+        Latitude for geocoding based on lat/long coordinates.  # noqa: E501
 
         :return: The lat of this GeocodeRequest.  # noqa: E501
         :rtype: float
@@ -135,6 +140,7 @@ class GeocodeRequest(object):
     def lat(self, lat):
         """Sets the lat of this GeocodeRequest.
 
+        Latitude for geocoding based on lat/long coordinates.  # noqa: E501
 
         :param lat: The lat of this GeocodeRequest.  # noqa: E501
         :type: float
@@ -146,6 +152,7 @@ class GeocodeRequest(object):
     def long(self):
         """Gets the long of this GeocodeRequest.  # noqa: E501
 
+        Longitude for geocoding based on lat/long coordinates.  # noqa: E501
 
         :return: The long of this GeocodeRequest.  # noqa: E501
         :rtype: float
@@ -156,6 +163,7 @@ class GeocodeRequest(object):
     def long(self, long):
         """Sets the long of this GeocodeRequest.
 
+        Longitude for geocoding based on lat/long coordinates.  # noqa: E501
 
         :param long: The long of this GeocodeRequest.  # noqa: E501
         :type: float
@@ -167,6 +175,7 @@ class GeocodeRequest(object):
     def addr(self):
         """Gets the addr of this GeocodeRequest.  # noqa: E501
 
+        Street address.  # noqa: E501
 
         :return: The addr of this GeocodeRequest.  # noqa: E501
         :rtype: str
@@ -177,6 +186,7 @@ class GeocodeRequest(object):
     def addr(self, addr):
         """Sets the addr of this GeocodeRequest.
 
+        Street address.  # noqa: E501
 
         :param addr: The addr of this GeocodeRequest.  # noqa: E501
         :type: str
@@ -211,6 +221,7 @@ class GeocodeRequest(object):
     def st(self):
         """Gets the st of this GeocodeRequest.  # noqa: E501
 
+        State name or abbreviation.  # noqa: E501
 
         :return: The st of this GeocodeRequest.  # noqa: E501
         :rtype: str
@@ -221,6 +232,7 @@ class GeocodeRequest(object):
     def st(self, st):
         """Sets the st of this GeocodeRequest.
 
+        State name or abbreviation.  # noqa: E501
 
         :param st: The st of this GeocodeRequest.  # noqa: E501
         :type: str
@@ -232,6 +244,7 @@ class GeocodeRequest(object):
     def zip(self):
         """Gets the zip of this GeocodeRequest.  # noqa: E501
 
+        Postal code.  # noqa: E501
 
         :return: The zip of this GeocodeRequest.  # noqa: E501
         :rtype: str
@@ -242,6 +255,7 @@ class GeocodeRequest(object):
     def zip(self, zip):
         """Sets the zip of this GeocodeRequest.
 
+        Postal code.  # noqa: E501
 
         :param zip: The zip of this GeocodeRequest.  # noqa: E501
         :type: str

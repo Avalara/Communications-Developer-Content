@@ -38,7 +38,7 @@ namespace avalara.comms.rest.v2.Model
         /// <param name="processingStart">Processing Start..</param>
         /// <param name="processingEnd">Processing End..</param>
         /// <param name="status">Status Of Batch File..</param>
-        /// <param name="downloads">Output File Name..</param>
+        /// <param name="downloads">downloads.</param>
         /// <param name="error">Error information..</param>
         public GeoBatchStatus(int? processId = default(int?), DateTime? requestDate = default(DateTime?), DateTime? processingStart = default(DateTime?), DateTime? processingEnd = default(DateTime?), string status = default(string), GeoBatchDownloadResponse downloads = default(GeoBatchDownloadResponse), List<Error> error = default(List<Error>))
         {
@@ -47,7 +47,6 @@ namespace avalara.comms.rest.v2.Model
             this.ProcessingStart = processingStart;
             this.ProcessingEnd = processingEnd;
             this.Status = status;
-            this.Downloads = downloads;
             this.Error = error;
             this.ProcessId = processId;
             this.RequestDate = requestDate;
@@ -94,10 +93,9 @@ namespace avalara.comms.rest.v2.Model
         public string Status { get; set; }
 
         /// <summary>
-        /// Output File Name.
+        /// Gets or Sets Downloads
         /// </summary>
-        /// <value>Output File Name.</value>
-        [DataMember(Name="Downloads", EmitDefaultValue=true)]
+        [DataMember(Name="Downloads", EmitDefaultValue=false)]
         public GeoBatchDownloadResponse Downloads { get; set; }
 
         /// <summary>

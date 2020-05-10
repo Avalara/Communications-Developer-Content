@@ -81,7 +81,7 @@ The version of the OpenAPI document: v2
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\avalara.comms.rest.v2\avalara.comms.rest.v2.csproj">
-          <Project>{89E9D727-EE86-421C-A5D3-28B133B45C14}</Project>
+          <Project>{BFC67857-4CE9-4A90-8CB2-D98370930BD5}</Project>
           <Name>avalara.comms.rest.v2</Name>
       </ProjectReference>
   </ItemGroup>

@@ -69,54 +69,6 @@ namespace avalara.comms.rest.v2.Test
             //Assert.IsType<TaxCalculationSettingsResponse> (response, "response is TaxCalculationSettingsResponse");
         }
         
-        /// <summary>
-        /// Test ApiV2ProfilesSetBundlesPost
-        /// </summary>
-        [Fact]
-        public void ApiV2ProfilesSetBundlesPostTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-            //var response = instance.ApiV2ProfilesSetBundlesPost(setTaxCalculationSettingRequest);
-            //Assert.IsType<TaxCalculationSettingsResponse> (response, "response is TaxCalculationSettingsResponse");
-        }
-        
-        /// <summary>
-        /// Test ApiV2ProfilesSetConfigPost
-        /// </summary>
-        [Fact]
-        public void ApiV2ProfilesSetConfigPostTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-            //var response = instance.ApiV2ProfilesSetConfigPost(setTaxCalculationSettingRequest);
-            //Assert.IsType<TaxCalculationSettingsResponse> (response, "response is TaxCalculationSettingsResponse");
-        }
-        
-        /// <summary>
-        /// Test ApiV2ProfilesSetExclusionsPost
-        /// </summary>
-        [Fact]
-        public void ApiV2ProfilesSetExclusionsPostTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-            //var response = instance.ApiV2ProfilesSetExclusionsPost(setTaxCalculationSettingRequest);
-            //Assert.IsType<TaxCalculationSettingsResponse> (response, "response is TaxCalculationSettingsResponse");
-        }
-        
-        /// <summary>
-        /// Test ApiV2ProfilesSetOverridesPost
-        /// </summary>
-        [Fact]
-        public void ApiV2ProfilesSetOverridesPostTest()
-        {
-            // TODO uncomment below to test the method and replace null with proper value
-            //SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-            //var response = instance.ApiV2ProfilesSetOverridesPost(setTaxCalculationSettingRequest);
-            //Assert.IsType<TaxCalculationSettingsResponse> (response, "response is TaxCalculationSettingsResponse");
-        }
-        
     }
 
 }

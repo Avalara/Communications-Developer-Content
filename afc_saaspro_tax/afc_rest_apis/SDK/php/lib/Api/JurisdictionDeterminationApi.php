@@ -925,15 +925,15 @@ class JurisdictionDeterminationApi
      *
      * Uploads file to Geo Batch.
      *
-     * @param  \SplFileObject $file file (optional)
+     * @param  \SplFileObject $geo_batch_file geo_batch_file (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \OpenAPI\Client\Model\GeoBatchSubmitFileResponse
      */
-    public function apiV2GeoBatchUploadPost($file = null)
+    public function apiV2GeoBatchUploadPost($geo_batch_file = null)
     {
-        list($response) = $this->apiV2GeoBatchUploadPostWithHttpInfo($file);
+        list($response) = $this->apiV2GeoBatchUploadPostWithHttpInfo($geo_batch_file);
         return $response;
     }
 
@@ -942,15 +942,15 @@ class JurisdictionDeterminationApi
      *
      * Uploads file to Geo Batch.
      *
-     * @param  \SplFileObject $file (optional)
+     * @param  \SplFileObject $geo_batch_file (optional)
      *
      * @throws \OpenAPI\Client\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \OpenAPI\Client\Model\GeoBatchSubmitFileResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function apiV2GeoBatchUploadPostWithHttpInfo($file = null)
+    public function apiV2GeoBatchUploadPostWithHttpInfo($geo_batch_file = null)
     {
-        $request = $this->apiV2GeoBatchUploadPostRequest($file);
+        $request = $this->apiV2GeoBatchUploadPostRequest($geo_batch_file);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1030,14 +1030,14 @@ class JurisdictionDeterminationApi
      *
      * Uploads file to Geo Batch.
      *
-     * @param  \SplFileObject $file (optional)
+     * @param  \SplFileObject $geo_batch_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function apiV2GeoBatchUploadPostAsync($file = null)
+    public function apiV2GeoBatchUploadPostAsync($geo_batch_file = null)
     {
-        return $this->apiV2GeoBatchUploadPostAsyncWithHttpInfo($file)
+        return $this->apiV2GeoBatchUploadPostAsyncWithHttpInfo($geo_batch_file)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1050,15 +1050,15 @@ class JurisdictionDeterminationApi
      *
      * Uploads file to Geo Batch.
      *
-     * @param  \SplFileObject $file (optional)
+     * @param  \SplFileObject $geo_batch_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function apiV2GeoBatchUploadPostAsyncWithHttpInfo($file = null)
+    public function apiV2GeoBatchUploadPostAsyncWithHttpInfo($geo_batch_file = null)
     {
         $returnType = '\OpenAPI\Client\Model\GeoBatchSubmitFileResponse';
-        $request = $this->apiV2GeoBatchUploadPostRequest($file);
+        $request = $this->apiV2GeoBatchUploadPostRequest($geo_batch_file);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1097,12 +1097,12 @@ class JurisdictionDeterminationApi
     /**
      * Create request for operation 'apiV2GeoBatchUploadPost'
      *
-     * @param  \SplFileObject $file (optional)
+     * @param  \SplFileObject $geo_batch_file (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    protected function apiV2GeoBatchUploadPostRequest($file = null)
+    protected function apiV2GeoBatchUploadPostRequest($geo_batch_file = null)
     {
 
         $resourcePath = '/api/v2/geo/batch/Upload';
@@ -1115,9 +1115,9 @@ class JurisdictionDeterminationApi
 
 
         // form params
-        if ($file !== null) {
+        if ($geo_batch_file !== null) {
             $multipart = true;
-            $formParams['file'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($file), 'rb');
+            $formParams['geoBatchFile'] = \GuzzleHttp\Psr7\try_fopen(ObjectSerializer::toFormValue($geo_batch_file), 'rb');
         }
         // body params
         $_tempBody = null;

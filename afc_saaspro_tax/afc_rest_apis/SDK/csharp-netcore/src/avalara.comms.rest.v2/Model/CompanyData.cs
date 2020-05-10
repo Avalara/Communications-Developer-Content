@@ -34,13 +34,13 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CompanyData" /> class.
         /// </summary>
-        /// <param name="bscl">bscl.</param>
-        /// <param name="svcl">svcl.</param>
-        /// <param name="fclt">fclt.</param>
-        /// <param name="frch">frch.</param>
-        /// <param name="reg">reg.</param>
-        /// <param name="excl">excl.</param>
-        /// <param name="idnt">idnt.</param>
+        /// <param name="bscl">Business class. 0 &#x3D; ILEC, 1 &#x3D; CLEC..</param>
+        /// <param name="svcl">Service class. 0 &#x3D; Primary Local, 1 &#x3D; Primary Long Distance..</param>
+        /// <param name="fclt">Specifies if the carrier delivering the service has company owned facilities to provide the service..</param>
+        /// <param name="frch">Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction..</param>
+        /// <param name="reg">Indicates if company is regulated..</param>
+        /// <param name="excl">Exclusion list..</param>
+        /// <param name="idnt">An optional company identifier for reporting.</param>
         public CompanyData(int? bscl = default(int?), int? svcl = default(int?), bool? fclt = default(bool?), bool? frch = default(bool?), bool? reg = default(bool?), List<Exclusion> excl = default(List<Exclusion>), string idnt = default(string))
         {
             this.Bscl = bscl;
@@ -53,44 +53,51 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Bscl
+        /// Business class. 0 &#x3D; ILEC, 1 &#x3D; CLEC.
         /// </summary>
+        /// <value>Business class. 0 &#x3D; ILEC, 1 &#x3D; CLEC.</value>
         [DataMember(Name="bscl", EmitDefaultValue=true)]
         public int? Bscl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Svcl
+        /// Service class. 0 &#x3D; Primary Local, 1 &#x3D; Primary Long Distance.
         /// </summary>
+        /// <value>Service class. 0 &#x3D; Primary Local, 1 &#x3D; Primary Long Distance.</value>
         [DataMember(Name="svcl", EmitDefaultValue=true)]
         public int? Svcl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Fclt
+        /// Specifies if the carrier delivering the service has company owned facilities to provide the service.
         /// </summary>
+        /// <value>Specifies if the carrier delivering the service has company owned facilities to provide the service.</value>
         [DataMember(Name="fclt", EmitDefaultValue=true)]
         public bool? Fclt { get; set; }
 
         /// <summary>
-        /// Gets or Sets Frch
+        /// Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.
         /// </summary>
+        /// <value>Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.</value>
         [DataMember(Name="frch", EmitDefaultValue=true)]
         public bool? Frch { get; set; }
 
         /// <summary>
-        /// Gets or Sets Reg
+        /// Indicates if company is regulated.
         /// </summary>
+        /// <value>Indicates if company is regulated.</value>
         [DataMember(Name="reg", EmitDefaultValue=true)]
         public bool? Reg { get; set; }
 
         /// <summary>
-        /// Gets or Sets Excl
+        /// Exclusion list.
         /// </summary>
+        /// <value>Exclusion list.</value>
         [DataMember(Name="excl", EmitDefaultValue=true)]
         public List<Exclusion> Excl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Idnt
+        /// An optional company identifier for reporting
         /// </summary>
+        /// <value>An optional company identifier for reporting</value>
         [DataMember(Name="idnt", EmitDefaultValue=true)]
         public string Idnt { get; set; }
 

@@ -17,14 +17,19 @@ module OpenapiClient
   class TaxOverride
     attr_accessor :loc
 
+    # Scope for override. 0 = Country, 1 = State, 2 = County, 3 = City.
     attr_accessor :scp
 
+    # Tax type ID.
     attr_accessor :tid
 
+    # Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.
     attr_accessor :lvl
 
+    # Indicates if the tax can be exempted using level exemptions.
     attr_accessor :lvl_exm
 
+    # Tax rate/bracket information.
     attr_accessor :brkt
 
     # Attribute mapping from ruby-style variable name to JSON key.
@@ -54,7 +59,6 @@ module OpenapiClient
     # List of attributes with nullable: true
     def self.openapi_nullable
       Set.new([
-        :'loc',
         :'scp',
         :'tid',
         :'lvl',

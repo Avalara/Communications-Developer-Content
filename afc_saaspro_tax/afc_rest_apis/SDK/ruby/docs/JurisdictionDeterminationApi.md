@@ -177,7 +177,7 @@ end
 
 api_instance = OpenapiClient::JurisdictionDeterminationApi.new
 opts = {
-  file: File.new('/path/to/file') # File | 
+  geo_batch_file: File.new('/path/to/file') # File | 
 }
 
 begin
@@ -194,7 +194,7 @@ end
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **File**|  | [optional] 
+ **geo_batch_file** | **File**|  | [optional] 
 
 ### Return type
 

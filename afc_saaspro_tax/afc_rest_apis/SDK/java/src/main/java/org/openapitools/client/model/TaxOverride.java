@@ -32,11 +32,11 @@ import org.openapitools.client.model.TaxBracket;
  * Tax rate override information.
  */
 @ApiModel(description = "Tax rate override information.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class TaxOverride {
   public static final String SERIALIZED_NAME_LOC = "loc";
   @SerializedName(SERIALIZED_NAME_LOC)
-  private Location loc = null;
+  private Location loc;
 
   public static final String SERIALIZED_NAME_SCP = "scp";
   @SerializedName(SERIALIZED_NAME_SCP)
@@ -89,11 +89,11 @@ public class TaxOverride {
   }
 
    /**
-   * Get scp
+   * Scope for override. 0 &#x3D; Country, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City.
    * @return scp
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Scope for override. 0 = Country, 1 = State, 2 = County, 3 = City.")
 
   public Integer getScp() {
     return scp;
@@ -112,11 +112,11 @@ public class TaxOverride {
   }
 
    /**
-   * Get tid
+   * Tax type ID.
    * @return tid
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax type ID.")
 
   public Integer getTid() {
     return tid;
@@ -135,11 +135,11 @@ public class TaxOverride {
   }
 
    /**
-   * Get lvl
+   * Tax level ID. 0 &#x3D; Federal, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City.
    * @return lvl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.")
 
   public Integer getLvl() {
     return lvl;
@@ -158,11 +158,11 @@ public class TaxOverride {
   }
 
    /**
-   * Get lvlExm
+   * Indicates if the tax can be exempted using level exemptions.
    * @return lvlExm
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if the tax can be exempted using level exemptions.")
 
   public Boolean getLvlExm() {
     return lvlExm;
@@ -189,11 +189,11 @@ public class TaxOverride {
   }
 
    /**
-   * Get brkt
+   * Tax rate/bracket information.
    * @return brkt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax rate/bracket information.")
 
   public List<TaxBracket> getBrkt() {
     return brkt;

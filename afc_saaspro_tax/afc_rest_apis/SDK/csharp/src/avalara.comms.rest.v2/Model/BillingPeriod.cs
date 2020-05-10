@@ -33,8 +33,8 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="BillingPeriod" /> class.
         /// </summary>
-        /// <param name="month">month.</param>
-        /// <param name="year">year.</param>
+        /// <param name="month">Numeric value representing billing period month.  1 &#x3D; January..</param>
+        /// <param name="year">Numeric 4 digit representation of billing period year..</param>
         public BillingPeriod(int month = default(int), int year = default(int))
         {
             this.Month = month;
@@ -42,14 +42,16 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Month
+        /// Numeric value representing billing period month.  1 &#x3D; January.
         /// </summary>
+        /// <value>Numeric value representing billing period month.  1 &#x3D; January.</value>
         [DataMember(Name="month", EmitDefaultValue=false)]
         public int Month { get; set; }
 
         /// <summary>
-        /// Gets or Sets Year
+        /// Numeric 4 digit representation of billing period year.
         /// </summary>
+        /// <value>Numeric 4 digit representation of billing period year.</value>
         [DataMember(Name="year", EmitDefaultValue=false)]
         public int Year { get; set; }
 

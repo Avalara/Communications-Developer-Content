@@ -64,7 +64,8 @@ class TaxOverride(object):
         self._brkt = None
         self.discriminator = None
 
-        self.loc = loc
+        if loc is not None:
+            self.loc = loc
         self.scp = scp
         self.tid = tid
         self.lvl = lvl
@@ -96,6 +97,7 @@ class TaxOverride(object):
     def scp(self):
         """Gets the scp of this TaxOverride.  # noqa: E501
 
+        Scope for override. 0 = Country, 1 = State, 2 = County, 3 = City.  # noqa: E501
 
         :return: The scp of this TaxOverride.  # noqa: E501
         :rtype: int
@@ -106,6 +108,7 @@ class TaxOverride(object):
     def scp(self, scp):
         """Sets the scp of this TaxOverride.
 
+        Scope for override. 0 = Country, 1 = State, 2 = County, 3 = City.  # noqa: E501
 
         :param scp: The scp of this TaxOverride.  # noqa: E501
         :type: int
@@ -117,6 +120,7 @@ class TaxOverride(object):
     def tid(self):
         """Gets the tid of this TaxOverride.  # noqa: E501
 
+        Tax type ID.  # noqa: E501
 
         :return: The tid of this TaxOverride.  # noqa: E501
         :rtype: int
@@ -127,6 +131,7 @@ class TaxOverride(object):
     def tid(self, tid):
         """Sets the tid of this TaxOverride.
 
+        Tax type ID.  # noqa: E501
 
         :param tid: The tid of this TaxOverride.  # noqa: E501
         :type: int
@@ -138,6 +143,7 @@ class TaxOverride(object):
     def lvl(self):
         """Gets the lvl of this TaxOverride.  # noqa: E501
 
+        Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.  # noqa: E501
 
         :return: The lvl of this TaxOverride.  # noqa: E501
         :rtype: int
@@ -148,6 +154,7 @@ class TaxOverride(object):
     def lvl(self, lvl):
         """Sets the lvl of this TaxOverride.
 
+        Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.  # noqa: E501
 
         :param lvl: The lvl of this TaxOverride.  # noqa: E501
         :type: int
@@ -159,6 +166,7 @@ class TaxOverride(object):
     def lvl_exm(self):
         """Gets the lvl_exm of this TaxOverride.  # noqa: E501
 
+        Indicates if the tax can be exempted using level exemptions.  # noqa: E501
 
         :return: The lvl_exm of this TaxOverride.  # noqa: E501
         :rtype: bool
@@ -169,6 +177,7 @@ class TaxOverride(object):
     def lvl_exm(self, lvl_exm):
         """Sets the lvl_exm of this TaxOverride.
 
+        Indicates if the tax can be exempted using level exemptions.  # noqa: E501
 
         :param lvl_exm: The lvl_exm of this TaxOverride.  # noqa: E501
         :type: bool
@@ -180,6 +189,7 @@ class TaxOverride(object):
     def brkt(self):
         """Gets the brkt of this TaxOverride.  # noqa: E501
 
+        Tax rate/bracket information.  # noqa: E501
 
         :return: The brkt of this TaxOverride.  # noqa: E501
         :rtype: list[TaxBracket]
@@ -190,6 +200,7 @@ class TaxOverride(object):
     def brkt(self, brkt):
         """Sets the brkt of this TaxOverride.
 
+        Tax rate/bracket information.  # noqa: E501
 
         :param brkt: The brkt of this TaxOverride.  # noqa: E501
         :type: list[TaxBracket]

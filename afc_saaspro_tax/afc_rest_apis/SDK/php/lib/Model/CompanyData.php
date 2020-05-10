@@ -254,7 +254,7 @@ class CompanyData implements ModelInterface, ArrayAccess
     /**
      * Sets bscl
      *
-     * @param int|null $bscl bscl
+     * @param int|null $bscl Business class. 0 = ILEC, 1 = CLEC.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class CompanyData implements ModelInterface, ArrayAccess
     /**
      * Sets svcl
      *
-     * @param int|null $svcl svcl
+     * @param int|null $svcl Service class. 0 = Primary Local, 1 = Primary Long Distance.
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class CompanyData implements ModelInterface, ArrayAccess
     /**
      * Sets fclt
      *
-     * @param bool|null $fclt fclt
+     * @param bool|null $fclt Specifies if the carrier delivering the service has company owned facilities to provide the service.
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class CompanyData implements ModelInterface, ArrayAccess
     /**
      * Sets frch
      *
-     * @param bool|null $frch frch
+     * @param bool|null $frch Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class CompanyData implements ModelInterface, ArrayAccess
     /**
      * Sets reg
      *
-     * @param bool|null $reg reg
+     * @param bool|null $reg Indicates if company is regulated.
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class CompanyData implements ModelInterface, ArrayAccess
     /**
      * Sets excl
      *
-     * @param \OpenAPI\Client\Model\Exclusion[]|null $excl excl
+     * @param \OpenAPI\Client\Model\Exclusion[]|null $excl Exclusion list.
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class CompanyData implements ModelInterface, ArrayAccess
     /**
      * Sets idnt
      *
-     * @param string|null $idnt idnt
+     * @param string|null $idnt An optional company identifier for reporting
      *
      * @return $this
      */

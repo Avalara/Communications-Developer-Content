@@ -15,8 +15,10 @@ require 'date'
 module OpenapiClient
   # Response body for Commit API.
   class CommitResponse
+    # Indicates if document code's commit status was updated successfully.
     attr_accessor :ok
 
+    # Error description (as applicable).
     attr_accessor :err
 
     # Attribute mapping from ruby-style variable name to JSON key.

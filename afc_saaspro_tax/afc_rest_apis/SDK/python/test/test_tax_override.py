@@ -36,7 +36,18 @@ class TestTaxOverride(unittest.TestCase):
         # model = avalara.comms.rest.v2.models.tax_override.TaxOverride()  # noqa: E501
         if include_optional :
             return TaxOverride(
-                loc = null, 
+                loc = avalara.comms.rest.v2.models.location.Location(
+                    cnty = '0', 
+                    ctry = '0', 
+                    int = True, 
+                    geo = True, 
+                    pcd = 56, 
+                    npa = 56, 
+                    fips = '0', 
+                    addr = '0', 
+                    city = '0', 
+                    st = '0', 
+                    zip = '0', ), 
                 scp = 56, 
                 tid = 56, 
                 lvl = 56, 

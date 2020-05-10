@@ -74,31 +74,37 @@ class ReportingInformation {
 }
 
 /**
+ * Account id
  * @member {String} acct
  */
 ReportingInformation.prototype['acct'] = undefined;
 
 /**
+ * Customer reference
  * @member {String} custref
  */
 ReportingInformation.prototype['custref'] = undefined;
 
 /**
+ * Invoice Number reference
  * @member {String} invn
  */
 ReportingInformation.prototype['invn'] = undefined;
 
 /**
+ * Bill Cycle reference
  * @member {String} bcyc
  */
 ReportingInformation.prototype['bcyc'] = undefined;
 
 /**
+ * Currency code for invoice
  * @member {String} ccycd
  */
 ReportingInformation.prototype['ccycd'] = undefined;
 
 /**
+ * Currency description
  * @member {String} ccydesc
  */
 ReportingInformation.prototype['ccydesc'] = undefined;

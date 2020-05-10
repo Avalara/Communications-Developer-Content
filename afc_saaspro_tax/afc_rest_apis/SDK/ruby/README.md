@@ -84,10 +84,6 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *OpenapiClient::CustomizationApi* | [**api_v2_profiles_get_profiles_get**](docs/CustomizationApi.md#api_v2_profiles_get_profiles_get) | **GET** /api/v2/profiles/GetProfiles | Retrieves one or more profiles with associated settings and configurable items
-*OpenapiClient::CustomizationApi* | [**api_v2_profiles_set_bundles_post**](docs/CustomizationApi.md#api_v2_profiles_set_bundles_post) | **POST** /api/v2/profiles/SetBundles | Creates or updates bundle packages and associated profile mappings.
-*OpenapiClient::CustomizationApi* | [**api_v2_profiles_set_config_post**](docs/CustomizationApi.md#api_v2_profiles_set_config_post) | **POST** /api/v2/profiles/SetConfig | Creates or updates configuration settings and associated profile mappings.
-*OpenapiClient::CustomizationApi* | [**api_v2_profiles_set_exclusions_post**](docs/CustomizationApi.md#api_v2_profiles_set_exclusions_post) | **POST** /api/v2/profiles/SetExclusions | Creates or updates exclusions and associated profile mappings.
-*OpenapiClient::CustomizationApi* | [**api_v2_profiles_set_overrides_post**](docs/CustomizationApi.md#api_v2_profiles_set_overrides_post) | **POST** /api/v2/profiles/SetOverrides | Creates or updates overrides and associated profile mappings.
 *OpenapiClient::HealthCheckApi* | [**api_v2_health_check_get**](docs/HealthCheckApi.md#api_v2_health_check_get) | **GET** /api/v2/HealthCheck | Health check that confirms the service is operational and ready to use
 *OpenapiClient::JurisdictionDeterminationApi* | [**api_v2_afc_p_code_post**](docs/JurisdictionDeterminationApi.md#api_v2_afc_p_code_post) | **POST** /api/v2/afc/PCode | Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
 *OpenapiClient::JurisdictionDeterminationApi* | [**api_v2_geo_batch_log_process_id_get**](docs/JurisdictionDeterminationApi.md#api_v2_geo_batch_log_process_id_get) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
@@ -141,7 +137,6 @@ Class | Method | HTTP request | Description
  - [OpenapiClient::RequestConfig](docs/RequestConfig.md)
  - [OpenapiClient::SafeHarborOverride](docs/SafeHarborOverride.md)
  - [OpenapiClient::ServiceInfo](docs/ServiceInfo.md)
- - [OpenapiClient::SetTaxCalculationSettingRequest](docs/SetTaxCalculationSettingRequest.md)
  - [OpenapiClient::Status](docs/Status.md)
  - [OpenapiClient::SummarizedTax](docs/SummarizedTax.md)
  - [OpenapiClient::TSPairData](docs/TSPairData.md)

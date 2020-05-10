@@ -37,7 +37,18 @@ class TestTaxExemption(unittest.TestCase):
         if include_optional :
             return TaxExemption(
                 frc = True, 
-                loc = null, 
+                loc = avalara.comms.rest.v2.models.location.Location(
+                    cnty = '0', 
+                    ctry = '0', 
+                    int = True, 
+                    geo = True, 
+                    pcd = 56, 
+                    npa = 56, 
+                    fips = '0', 
+                    addr = '0', 
+                    city = '0', 
+                    st = '0', 
+                    zip = '0', ), 
                 tpe = 56, 
                 lvl = 56, 
                 cat = 56, 

@@ -35,7 +35,7 @@ namespace avalara.comms.rest.v2.Model
         /// Initializes a new instance of the <see cref="GeoBatchLog" /> class.
         /// </summary>
         /// <param name="log">Log of provided Process Id.</param>
-        /// <param name="err">err.</param>
+        /// <param name="err">Error description (as applicable)..</param>
         public GeoBatchLog(List<GeoBatchLogItem> log = default(List<GeoBatchLogItem>), List<Error> err = default(List<Error>))
         {
             this.Log = log;
@@ -50,8 +50,9 @@ namespace avalara.comms.rest.v2.Model
         public List<GeoBatchLogItem> Log { get; set; }
 
         /// <summary>
-        /// Gets or Sets Err
+        /// Error description (as applicable).
         /// </summary>
+        /// <value>Error description (as applicable).</value>
         [DataMember(Name="err", EmitDefaultValue=true)]
         public List<Error> Err { get; set; }
 

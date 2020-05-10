@@ -33,10 +33,10 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Address" /> class.
         /// </summary>
-        /// <param name="addr">addr.</param>
+        /// <param name="addr">Street address..</param>
         /// <param name="city">City name..</param>
-        /// <param name="st">st.</param>
-        /// <param name="zip">zip.</param>
+        /// <param name="st">State name or abbreviation..</param>
+        /// <param name="zip">Postal code..</param>
         public Address(string addr = default(string), string city = default(string), string st = default(string), string zip = default(string))
         {
             this.Addr = addr;
@@ -50,8 +50,9 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Addr
+        /// Street address.
         /// </summary>
+        /// <value>Street address.</value>
         [DataMember(Name="addr", EmitDefaultValue=true)]
         public string Addr { get; set; }
 
@@ -63,14 +64,16 @@ namespace avalara.comms.rest.v2.Model
         public string City { get; set; }
 
         /// <summary>
-        /// Gets or Sets St
+        /// State name or abbreviation.
         /// </summary>
+        /// <value>State name or abbreviation.</value>
         [DataMember(Name="st", EmitDefaultValue=true)]
         public string St { get; set; }
 
         /// <summary>
-        /// Gets or Sets Zip
+        /// Postal code.
         /// </summary>
+        /// <value>Postal code.</value>
         [DataMember(Name="zip", EmitDefaultValue=true)]
         public string Zip { get; set; }
 

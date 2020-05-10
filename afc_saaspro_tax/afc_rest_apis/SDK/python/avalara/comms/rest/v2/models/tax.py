@@ -139,6 +139,7 @@ class Tax(object):
     def bill(self):
         """Gets the bill of this Tax.  # noqa: E501
 
+        Indicates if tax is billable to customer.  # noqa: E501
 
         :return: The bill of this Tax.  # noqa: E501
         :rtype: bool
@@ -149,6 +150,7 @@ class Tax(object):
     def bill(self, bill):
         """Sets the bill of this Tax.
 
+        Indicates if tax is billable to customer.  # noqa: E501
 
         :param bill: The bill of this Tax.  # noqa: E501
         :type: bool
@@ -160,6 +162,7 @@ class Tax(object):
     def cmpl(self):
         """Gets the cmpl of this Tax.  # noqa: E501
 
+        Indicates if the tax is to be reported to jurisdiction.  # noqa: E501
 
         :return: The cmpl of this Tax.  # noqa: E501
         :rtype: bool
@@ -170,6 +173,7 @@ class Tax(object):
     def cmpl(self, cmpl):
         """Sets the cmpl of this Tax.
 
+        Indicates if the tax is to be reported to jurisdiction.  # noqa: E501
 
         :param cmpl: The cmpl of this Tax.  # noqa: E501
         :type: bool
@@ -181,6 +185,7 @@ class Tax(object):
     def tm(self):
         """Gets the tm of this Tax.  # noqa: E501
 
+        Taxable measure.  # noqa: E501
 
         :return: The tm of this Tax.  # noqa: E501
         :rtype: float
@@ -191,6 +196,7 @@ class Tax(object):
     def tm(self, tm):
         """Sets the tm of this Tax.
 
+        Taxable measure.  # noqa: E501
 
         :param tm: The tm of this Tax.  # noqa: E501
         :type: float
@@ -202,6 +208,7 @@ class Tax(object):
     def calc(self):
         """Gets the calc of this Tax.  # noqa: E501
 
+        Calculation type.  # noqa: E501
 
         :return: The calc of this Tax.  # noqa: E501
         :rtype: int
@@ -212,6 +219,7 @@ class Tax(object):
     def calc(self, calc):
         """Sets the calc of this Tax.
 
+        Calculation type.  # noqa: E501
 
         :param calc: The calc of this Tax.  # noqa: E501
         :type: int
@@ -223,6 +231,7 @@ class Tax(object):
     def cat(self):
         """Gets the cat of this Tax.  # noqa: E501
 
+        Tax category name.  # noqa: E501
 
         :return: The cat of this Tax.  # noqa: E501
         :rtype: str
@@ -233,6 +242,7 @@ class Tax(object):
     def cat(self, cat):
         """Sets the cat of this Tax.
 
+        Tax category name.  # noqa: E501
 
         :param cat: The cat of this Tax.  # noqa: E501
         :type: str
@@ -244,6 +254,7 @@ class Tax(object):
     def cid(self):
         """Gets the cid of this Tax.  # noqa: E501
 
+        Tax category ID.  # noqa: E501
 
         :return: The cid of this Tax.  # noqa: E501
         :rtype: int
@@ -254,6 +265,7 @@ class Tax(object):
     def cid(self, cid):
         """Sets the cid of this Tax.
 
+        Tax category ID.  # noqa: E501
 
         :param cid: The cid of this Tax.  # noqa: E501
         :type: int
@@ -288,6 +300,7 @@ class Tax(object):
     def exm(self):
         """Gets the exm of this Tax.  # noqa: E501
 
+        Exempt sale amount.  # noqa: E501
 
         :return: The exm of this Tax.  # noqa: E501
         :rtype: float
@@ -298,6 +311,7 @@ class Tax(object):
     def exm(self, exm):
         """Sets the exm of this Tax.
 
+        Exempt sale amount.  # noqa: E501
 
         :param exm: The exm of this Tax.  # noqa: E501
         :type: float
@@ -309,6 +323,7 @@ class Tax(object):
     def lns(self):
         """Gets the lns of this Tax.  # noqa: E501
 
+        Lines.  # noqa: E501
 
         :return: The lns of this Tax.  # noqa: E501
         :rtype: int
@@ -319,6 +334,7 @@ class Tax(object):
     def lns(self, lns):
         """Sets the lns of this Tax.
 
+        Lines.  # noqa: E501
 
         :param lns: The lns of this Tax.  # noqa: E501
         :type: int
@@ -330,6 +346,7 @@ class Tax(object):
     def min(self):
         """Gets the min of this Tax.  # noqa: E501
 
+        Minutes.  # noqa: E501
 
         :return: The min of this Tax.  # noqa: E501
         :rtype: float
@@ -340,6 +357,7 @@ class Tax(object):
     def min(self, min):
         """Sets the min of this Tax.
 
+        Minutes.  # noqa: E501
 
         :param min: The min of this Tax.  # noqa: E501
         :type: float
@@ -351,6 +369,7 @@ class Tax(object):
     def pcd(self):
         """Gets the pcd of this Tax.  # noqa: E501
 
+        PCode for reporting jurisdiction.  # noqa: E501
 
         :return: The pcd of this Tax.  # noqa: E501
         :rtype: int
@@ -361,6 +380,7 @@ class Tax(object):
     def pcd(self, pcd):
         """Sets the pcd of this Tax.
 
+        PCode for reporting jurisdiction.  # noqa: E501
 
         :param pcd: The pcd of this Tax.  # noqa: E501
         :type: int
@@ -372,6 +392,7 @@ class Tax(object):
     def taxpcd(self):
         """Gets the taxpcd of this Tax.  # noqa: E501
 
+        PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The taxpcd of this Tax.  # noqa: E501
         :rtype: int
@@ -382,6 +403,7 @@ class Tax(object):
     def taxpcd(self, taxpcd):
         """Sets the taxpcd of this Tax.
 
+        PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param taxpcd: The taxpcd of this Tax.  # noqa: E501
         :type: int
@@ -416,6 +438,7 @@ class Tax(object):
     def sur(self):
         """Gets the sur of this Tax.  # noqa: E501
 
+        Indicates if this tax is a surcharge.  # noqa: E501
 
         :return: The sur of this Tax.  # noqa: E501
         :rtype: bool
@@ -426,6 +449,7 @@ class Tax(object):
     def sur(self, sur):
         """Sets the sur of this Tax.
 
+        Indicates if this tax is a surcharge.  # noqa: E501
 
         :param sur: The sur of this Tax.  # noqa: E501
         :type: bool
@@ -437,6 +461,7 @@ class Tax(object):
     def tax(self):
         """Gets the tax of this Tax.  # noqa: E501
 
+        Tax amount.  # noqa: E501
 
         :return: The tax of this Tax.  # noqa: E501
         :rtype: float
@@ -447,6 +472,7 @@ class Tax(object):
     def tax(self, tax):
         """Sets the tax of this Tax.
 
+        Tax amount.  # noqa: E501
 
         :param tax: The tax of this Tax.  # noqa: E501
         :type: float
@@ -458,6 +484,7 @@ class Tax(object):
     def lvl(self):
         """Gets the lvl of this Tax.  # noqa: E501
 
+        Tax level ID.  # noqa: E501
 
         :return: The lvl of this Tax.  # noqa: E501
         :rtype: int
@@ -468,6 +495,7 @@ class Tax(object):
     def lvl(self, lvl):
         """Sets the lvl of this Tax.
 
+        Tax level ID.  # noqa: E501
 
         :param lvl: The lvl of this Tax.  # noqa: E501
         :type: int
@@ -479,6 +507,7 @@ class Tax(object):
     def tid(self):
         """Gets the tid of this Tax.  # noqa: E501
 
+        Tax type ID.  # noqa: E501
 
         :return: The tid of this Tax.  # noqa: E501
         :rtype: int
@@ -489,6 +518,7 @@ class Tax(object):
     def tid(self, tid):
         """Sets the tid of this Tax.
 
+        Tax type ID.  # noqa: E501
 
         :param tid: The tid of this Tax.  # noqa: E501
         :type: int
@@ -500,6 +530,7 @@ class Tax(object):
     def usexm(self):
         """Gets the usexm of this Tax.  # noqa: E501
 
+        Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The usexm of this Tax.  # noqa: E501
         :rtype: bool
@@ -510,6 +541,7 @@ class Tax(object):
     def usexm(self, usexm):
         """Sets the usexm of this Tax.
 
+        Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param usexm: The usexm of this Tax.  # noqa: E501
         :type: bool
@@ -521,6 +553,7 @@ class Tax(object):
     def notax(self):
         """Gets the notax of this Tax.  # noqa: E501
 
+        Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The notax of this Tax.  # noqa: E501
         :rtype: bool
@@ -531,6 +564,7 @@ class Tax(object):
     def notax(self, notax):
         """Sets the notax of this Tax.
 
+        Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param notax: The notax of this Tax.  # noqa: E501
         :type: bool
@@ -542,6 +576,7 @@ class Tax(object):
     def trans(self):
         """Gets the trans of this Tax.  # noqa: E501
 
+        Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The trans of this Tax.  # noqa: E501
         :rtype: int
@@ -552,6 +587,7 @@ class Tax(object):
     def trans(self, trans):
         """Sets the trans of this Tax.
 
+        Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param trans: The trans of this Tax.  # noqa: E501
         :type: int
@@ -563,6 +599,7 @@ class Tax(object):
     def svc(self):
         """Gets the svc of this Tax.  # noqa: E501
 
+        Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The svc of this Tax.  # noqa: E501
         :rtype: int
@@ -573,6 +610,7 @@ class Tax(object):
     def svc(self, svc):
         """Sets the svc of this Tax.
 
+        Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param svc: The svc of this Tax.  # noqa: E501
         :type: int
@@ -584,6 +622,7 @@ class Tax(object):
     def chg(self):
         """Gets the chg of this Tax.  # noqa: E501
 
+        Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The chg of this Tax.  # noqa: E501
         :rtype: float
@@ -594,6 +633,7 @@ class Tax(object):
     def chg(self, chg):
         """Sets the chg of this Tax.
 
+        Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param chg: The chg of this Tax.  # noqa: E501
         :type: float

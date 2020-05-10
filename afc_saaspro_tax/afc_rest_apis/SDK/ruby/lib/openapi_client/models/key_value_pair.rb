@@ -18,6 +18,7 @@ module OpenapiClient
     # Key.
     attr_accessor :key
 
+    # Value.
     attr_accessor :val
 
     # Attribute mapping from ruby-style variable name to JSON key.

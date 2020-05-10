@@ -47,8 +47,8 @@ class InlineObject {
         if (data) {
             obj = obj || new InlineObject();
 
-            if (data.hasOwnProperty('file')) {
-                obj['file'] = ApiClient.convertToType(data['file'], File);
+            if (data.hasOwnProperty('geoBatchFile')) {
+                obj['geoBatchFile'] = ApiClient.convertToType(data['geoBatchFile'], File);
             }
         }
         return obj;
@@ -58,9 +58,9 @@ class InlineObject {
 }
 
 /**
- * @member {File} file
+ * @member {File} geoBatchFile
  */
-InlineObject.prototype['file'] = undefined;
+InlineObject.prototype['geoBatchFile'] = undefined;
 
 
 

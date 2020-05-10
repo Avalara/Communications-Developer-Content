@@ -37,7 +37,11 @@ class TestGeocodeResult(unittest.TestCase):
         if include_optional :
             return GeocodeResult(
                 ref = '0', 
-                cass = null, 
+                cass = avalara.comms.rest.v2.models.address.Address(
+                    addr = '0', 
+                    city = '0', 
+                    st = '0', 
+                    zip = '0', ), 
                 c_blk = 56, 
                 c_trc = 56, 
                 cnty = '0', 

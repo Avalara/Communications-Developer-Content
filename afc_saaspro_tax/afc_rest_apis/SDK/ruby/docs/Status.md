@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **Integer** | Status code. | [optional] [readonly] 
-**msg** | **String** |  | [optional] [readonly] 
+**code** | **Integer** | Status code. | [optional] 
+**msg** | **String** | Status message. | [optional] [readonly] 
 
 ## Code Sample
 

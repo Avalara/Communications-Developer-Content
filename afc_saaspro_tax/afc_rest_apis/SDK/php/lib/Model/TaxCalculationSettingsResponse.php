@@ -63,11 +63,11 @@ class TaxCalculationSettingsResponse implements ModelInterface, ArrayAccess
         'client_id' => 'int',
         'last_update_by' => 'string',
         'active' => 'bool',
-        'settings' => 'Configuration',
+        'settings' => '\OpenAPI\Client\Model\Configuration',
         'exclusions' => '\OpenAPI\Client\Model\ExclusionConfig[]',
         'bundles' => '\OpenAPI\Client\Model\BundleConfig[]',
         'nexus' => '\OpenAPI\Client\Model\NexusConfig[]',
-        'overrides' => 'OverrideConfig',
+        'overrides' => '\OpenAPI\Client\Model\OverrideConfig',
         'description' => 'string',
         'error' => 'string',
         'item_type' => 'string',
@@ -418,7 +418,7 @@ class TaxCalculationSettingsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets settings
      *
-     * @return Configuration|null
+     * @return \OpenAPI\Client\Model\Configuration|null
      */
     public function getSettings()
     {
@@ -428,7 +428,7 @@ class TaxCalculationSettingsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets settings
      *
-     * @param Configuration|null $settings Configuration settings (as applicable)
+     * @param \OpenAPI\Client\Model\Configuration|null $settings settings
      *
      * @return $this
      */
@@ -514,7 +514,7 @@ class TaxCalculationSettingsResponse implements ModelInterface, ArrayAccess
     /**
      * Gets overrides
      *
-     * @return OverrideConfig|null
+     * @return \OpenAPI\Client\Model\OverrideConfig|null
      */
     public function getOverrides()
     {
@@ -524,7 +524,7 @@ class TaxCalculationSettingsResponse implements ModelInterface, ArrayAccess
     /**
      * Sets overrides
      *
-     * @param OverrideConfig|null $overrides Overrides (as applicable - raw data)
+     * @param \OpenAPI\Client\Model\OverrideConfig|null $overrides overrides
      *
      * @return $this
      */

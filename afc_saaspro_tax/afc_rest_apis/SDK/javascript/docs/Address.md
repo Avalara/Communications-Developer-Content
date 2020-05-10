@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**addr** | **String** |  | [optional] 
+**addr** | **String** | Street address. | [optional] 
 **city** | **String** | City name. | [optional] 
-**st** | **String** |  | [optional] 
-**zip** | **String** |  | [optional] 
+**st** | **String** | State name or abbreviation. | [optional] 
+**zip** | **String** | Postal code. | [optional] 
 
 

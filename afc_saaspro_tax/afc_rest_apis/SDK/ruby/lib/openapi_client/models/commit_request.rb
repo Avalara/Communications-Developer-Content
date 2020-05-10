@@ -15,10 +15,13 @@ require 'date'
 module OpenapiClient
   # Parameter for CommitTransactions API.
   class CommitRequest
+    # Document code.
     attr_accessor :doc
 
+    # Indicates if transactions for the specified document code should be committed.
     attr_accessor :cmmt
 
+    # Overrides value for OptionalFields field in reports.
     attr_accessor :opt
 
     # Attribute mapping from ruby-style variable name to JSON key.

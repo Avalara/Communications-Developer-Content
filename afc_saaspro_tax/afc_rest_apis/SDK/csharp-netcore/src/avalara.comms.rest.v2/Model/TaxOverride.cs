@@ -35,11 +35,11 @@ namespace avalara.comms.rest.v2.Model
         /// Initializes a new instance of the <see cref="TaxOverride" /> class.
         /// </summary>
         /// <param name="loc">loc.</param>
-        /// <param name="scp">scp.</param>
-        /// <param name="tid">tid.</param>
-        /// <param name="lvl">lvl.</param>
-        /// <param name="lvlExm">lvlExm.</param>
-        /// <param name="brkt">brkt.</param>
+        /// <param name="scp">Scope for override. 0 &#x3D; Country, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City..</param>
+        /// <param name="tid">Tax type ID..</param>
+        /// <param name="lvl">Tax level ID. 0 &#x3D; Federal, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City..</param>
+        /// <param name="lvlExm">Indicates if the tax can be exempted using level exemptions..</param>
+        /// <param name="brkt">Tax rate/bracket information..</param>
         public TaxOverride(Location loc = default(Location), int? scp = default(int?), int? tid = default(int?), int? lvl = default(int?), bool? lvlExm = default(bool?), List<TaxBracket> brkt = default(List<TaxBracket>))
         {
             this.Loc = loc;
@@ -53,36 +53,41 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Gets or Sets Loc
         /// </summary>
-        [DataMember(Name="loc", EmitDefaultValue=true)]
+        [DataMember(Name="loc", EmitDefaultValue=false)]
         public Location Loc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Scp
+        /// Scope for override. 0 &#x3D; Country, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City.
         /// </summary>
+        /// <value>Scope for override. 0 &#x3D; Country, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City.</value>
         [DataMember(Name="scp", EmitDefaultValue=true)]
         public int? Scp { get; set; }
 
         /// <summary>
-        /// Gets or Sets Tid
+        /// Tax type ID.
         /// </summary>
+        /// <value>Tax type ID.</value>
         [DataMember(Name="tid", EmitDefaultValue=true)]
         public int? Tid { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lvl
+        /// Tax level ID. 0 &#x3D; Federal, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City.
         /// </summary>
+        /// <value>Tax level ID. 0 &#x3D; Federal, 1 &#x3D; State, 2 &#x3D; County, 3 &#x3D; City.</value>
         [DataMember(Name="lvl", EmitDefaultValue=true)]
         public int? Lvl { get; set; }
 
         /// <summary>
-        /// Gets or Sets LvlExm
+        /// Indicates if the tax can be exempted using level exemptions.
         /// </summary>
+        /// <value>Indicates if the tax can be exempted using level exemptions.</value>
         [DataMember(Name="lvlExm", EmitDefaultValue=true)]
         public bool? LvlExm { get; set; }
 
         /// <summary>
-        /// Gets or Sets Brkt
+        /// Tax rate/bracket information.
         /// </summary>
+        /// <value>Tax rate/bracket information.</value>
         [DataMember(Name="brkt", EmitDefaultValue=true)]
         public List<TaxBracket> Brkt { get; set; }
 

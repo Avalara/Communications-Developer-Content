@@ -58,8 +58,8 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cfg' => 'RequestConfig',
-        'cmpn' => 'CompanyData',
+        'cfg' => '\OpenAPI\Client\Model\RequestConfig',
+        'cmpn' => '\OpenAPI\Client\Model\CompanyData',
         'inv' => '\OpenAPI\Client\Model\Invoice[]',
         'ovr' => '\OpenAPI\Client\Model\TaxOverride[]',
         'sovr' => '\OpenAPI\Client\Model\SafeHarborOverride[]'
@@ -232,7 +232,7 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cfg
      *
-     * @return RequestConfig|null
+     * @return \OpenAPI\Client\Model\RequestConfig|null
      */
     public function getCfg()
     {
@@ -242,7 +242,7 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cfg
      *
-     * @param RequestConfig|null $cfg cfg
+     * @param \OpenAPI\Client\Model\RequestConfig|null $cfg cfg
      *
      * @return $this
      */
@@ -256,7 +256,7 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
     /**
      * Gets cmpn
      *
-     * @return CompanyData|null
+     * @return \OpenAPI\Client\Model\CompanyData|null
      */
     public function getCmpn()
     {
@@ -266,7 +266,7 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets cmpn
      *
-     * @param CompanyData|null $cmpn cmpn
+     * @param \OpenAPI\Client\Model\CompanyData|null $cmpn cmpn
      *
      * @return $this
      */
@@ -290,7 +290,7 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets inv
      *
-     * @param \OpenAPI\Client\Model\Invoice[]|null $inv inv
+     * @param \OpenAPI\Client\Model\Invoice[]|null $inv List of invoices to process.
      *
      * @return $this
      */
@@ -314,7 +314,7 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets ovr
      *
-     * @param \OpenAPI\Client\Model\TaxOverride[]|null $ovr ovr
+     * @param \OpenAPI\Client\Model\TaxOverride[]|null $ovr Tax rate overrides.
      *
      * @return $this
      */
@@ -338,7 +338,7 @@ class CalcTaxesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets sovr
      *
-     * @param \OpenAPI\Client\Model\SafeHarborOverride[]|null $sovr sovr
+     * @param \OpenAPI\Client\Model\SafeHarborOverride[]|null $sovr Safe harbor overrides for USF taxes.
      *
      * @return $this
      */

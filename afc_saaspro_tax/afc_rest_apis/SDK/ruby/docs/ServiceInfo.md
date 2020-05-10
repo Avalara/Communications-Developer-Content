@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **server_time** | **DateTime** | Server time. | [optional] 
-**versions** | [**VersionInfo**](VersionInfo.md) | Version information. | [optional] 
+**versions** | [**VersionInfo**](VersionInfo.md) |  | [optional] 
 **error** | **String** | Error information. | [optional] 
 
 ## Code Sample

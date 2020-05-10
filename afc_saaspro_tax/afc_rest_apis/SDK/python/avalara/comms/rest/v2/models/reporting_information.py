@@ -75,6 +75,7 @@ class ReportingInformation(object):
     def acct(self):
         """Gets the acct of this ReportingInformation.  # noqa: E501
 
+        Account id  # noqa: E501
 
         :return: The acct of this ReportingInformation.  # noqa: E501
         :rtype: str
@@ -85,6 +86,7 @@ class ReportingInformation(object):
     def acct(self, acct):
         """Sets the acct of this ReportingInformation.
 
+        Account id  # noqa: E501
 
         :param acct: The acct of this ReportingInformation.  # noqa: E501
         :type: str
@@ -96,6 +98,7 @@ class ReportingInformation(object):
     def custref(self):
         """Gets the custref of this ReportingInformation.  # noqa: E501
 
+        Customer reference  # noqa: E501
 
         :return: The custref of this ReportingInformation.  # noqa: E501
         :rtype: str
@@ -106,6 +109,7 @@ class ReportingInformation(object):
     def custref(self, custref):
         """Sets the custref of this ReportingInformation.
 
+        Customer reference  # noqa: E501
 
         :param custref: The custref of this ReportingInformation.  # noqa: E501
         :type: str
@@ -117,6 +121,7 @@ class ReportingInformation(object):
     def invn(self):
         """Gets the invn of this ReportingInformation.  # noqa: E501
 
+        Invoice Number reference  # noqa: E501
 
         :return: The invn of this ReportingInformation.  # noqa: E501
         :rtype: str
@@ -127,6 +132,7 @@ class ReportingInformation(object):
     def invn(self, invn):
         """Sets the invn of this ReportingInformation.
 
+        Invoice Number reference  # noqa: E501
 
         :param invn: The invn of this ReportingInformation.  # noqa: E501
         :type: str
@@ -138,6 +144,7 @@ class ReportingInformation(object):
     def bcyc(self):
         """Gets the bcyc of this ReportingInformation.  # noqa: E501
 
+        Bill Cycle reference  # noqa: E501
 
         :return: The bcyc of this ReportingInformation.  # noqa: E501
         :rtype: str
@@ -148,6 +155,7 @@ class ReportingInformation(object):
     def bcyc(self, bcyc):
         """Sets the bcyc of this ReportingInformation.
 
+        Bill Cycle reference  # noqa: E501
 
         :param bcyc: The bcyc of this ReportingInformation.  # noqa: E501
         :type: str
@@ -159,6 +167,7 @@ class ReportingInformation(object):
     def ccycd(self):
         """Gets the ccycd of this ReportingInformation.  # noqa: E501
 
+        Currency code for invoice  # noqa: E501
 
         :return: The ccycd of this ReportingInformation.  # noqa: E501
         :rtype: str
@@ -169,6 +178,7 @@ class ReportingInformation(object):
     def ccycd(self, ccycd):
         """Sets the ccycd of this ReportingInformation.
 
+        Currency code for invoice  # noqa: E501
 
         :param ccycd: The ccycd of this ReportingInformation.  # noqa: E501
         :type: str
@@ -180,6 +190,7 @@ class ReportingInformation(object):
     def ccydesc(self):
         """Gets the ccydesc of this ReportingInformation.  # noqa: E501
 
+        Currency description  # noqa: E501
 
         :return: The ccydesc of this ReportingInformation.  # noqa: E501
         :rtype: str
@@ -190,6 +201,7 @@ class ReportingInformation(object):
     def ccydesc(self, ccydesc):
         """Sets the ccydesc of this ReportingInformation.
 
+        Currency description  # noqa: E501
 
         :param ccydesc: The ccydesc of this ReportingInformation.  # noqa: E501
         :type: str
