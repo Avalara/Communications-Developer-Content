@@ -171,7 +171,7 @@ __PACKAGE__->method_documentation({
     'msg' => {
         datatype => 'string',
         base_name => 'msg',
-        description => '',
+        description => 'Error message.',
         format => '',
         read_only => '',
             },

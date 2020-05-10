@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**input_file** | **String** |  | [optional] 
+**input_file** | **String** | Input File Name. | [optional] 
 **input_file_download** | **String** | Input File Download. | [optional] 
-**output_file** | **String** |  | [optional] 
+**output_file** | **String** | Output File Name. | [optional] 
 **output_file_download** | **String** | Output File Name. | [optional] 
 
 ## Code Sample

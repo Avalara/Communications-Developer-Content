@@ -69,6 +69,7 @@ class GeoBatchSubmitFileResponse {
 GeoBatchSubmitFileResponse.prototype['ProcessId'] = undefined;
 
 /**
+ * Error description (as applicable).
  * @member {Array.<module:model/Error>} err
  */
 GeoBatchSubmitFileResponse.prototype['err'] = undefined;

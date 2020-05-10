@@ -7,10 +7,10 @@ Tax calculation results for a single line item.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ref** | **String** |  |  [optional]
-**base** | **Double** |  |  [optional]
-**txs** | [**List&lt;Tax&gt;**](Tax.md) |  |  [optional]
-**err** | [**List&lt;Error&gt;**](Error.md) |  |  [optional]
+**ref** | **String** | Reference ID for line item. |  [optional]
+**base** | **Double** | Base sale amount for tax-inclusive line items. |  [optional]
+**txs** | [**List&lt;Tax&gt;**](Tax.md) | Taxes generated for line item. |  [optional]
+**err** | [**List&lt;Error&gt;**](Error.md) | Error description (as applicable). |  [optional]
 
 
 

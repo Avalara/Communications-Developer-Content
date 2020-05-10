@@ -201,7 +201,7 @@ __PACKAGE__->method_documentation({
     'downloads' => {
         datatype => 'GeoBatchDownloadResponse',
         base_name => 'Downloads',
-        description => 'Output File Name.',
+        description => '',
         format => '',
         read_only => '',
             },

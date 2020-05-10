@@ -28,7 +28,7 @@ import java.io.IOException;
  * Input data for Geocoding API.
  */
 @ApiModel(description = "Input data for Geocoding API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class GeocodeRequest {
   public static final String SERIALIZED_NAME_REF = "ref";
   @SerializedName(SERIALIZED_NAME_REF)
@@ -70,11 +70,11 @@ public class GeocodeRequest {
   }
 
    /**
-   * Get ref
+   * Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.
    * @return ref
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Optional reference Id for geocode request.   Only address information or latitude/longitude should be provided in request body but not both.")
 
   public String getRef() {
     return ref;
@@ -93,11 +93,11 @@ public class GeocodeRequest {
   }
 
    /**
-   * Get cass
+   * Indicates if the CASS validated address is desired in the results.
    * @return cass
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if the CASS validated address is desired in the results.")
 
   public Boolean getCass() {
     return cass;
@@ -116,11 +116,11 @@ public class GeocodeRequest {
   }
 
    /**
-   * Get lat
+   * Latitude for geocoding based on lat/long coordinates.
    * @return lat
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Latitude for geocoding based on lat/long coordinates.")
 
   public Double getLat() {
     return lat;
@@ -139,11 +139,11 @@ public class GeocodeRequest {
   }
 
    /**
-   * Get _long
+   * Longitude for geocoding based on lat/long coordinates.
    * @return _long
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Longitude for geocoding based on lat/long coordinates.")
 
   public Double getLong() {
     return _long;
@@ -162,11 +162,11 @@ public class GeocodeRequest {
   }
 
    /**
-   * Get addr
+   * Street address.
    * @return addr
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Street address.")
 
   public String getAddr() {
     return addr;
@@ -208,11 +208,11 @@ public class GeocodeRequest {
   }
 
    /**
-   * Get st
+   * State name or abbreviation.
    * @return st
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "State name or abbreviation.")
 
   public String getSt() {
     return st;
@@ -231,11 +231,11 @@ public class GeocodeRequest {
   }
 
    /**
-   * Get zip
+   * Postal code.
    * @return zip
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Postal code.")
 
   public String getZip() {
     return zip;

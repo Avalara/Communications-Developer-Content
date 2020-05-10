@@ -28,7 +28,7 @@ Describe 'avalara.comms.rest.v2 JurisdictionDeterminationApi' {
 
     Context 'JurisdictionDeterminationApi' {
         It 'Invoke-JurisdictionDeterminationApiApiV2GeoBatchUploadPost' {
-            $ret = Invoke-PetApiGetPetById -file "TEST_VALUE"
+            $ret = Invoke-PetApiGetPetById -geoBatchFile "TEST_VALUE"
             #$ret | Should BeOfType avalara.comms.rest.v2.Model.ModelNameHere
             #$ret.property | Should Be 0
         }

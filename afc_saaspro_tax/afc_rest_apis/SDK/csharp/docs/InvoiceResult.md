@@ -5,10 +5,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Doc** | **string** |  | [optional] 
-**Itms** | [**List&lt;LineItemResult&gt;**](LineItemResult.md) |  | [optional] 
-**Summ** | [**List&lt;SummarizedTax&gt;**](SummarizedTax.md) |  | [optional] 
-**Err** | [**List&lt;Error&gt;**](Error.md) |  | [optional] 
+**Doc** | **string** | Document number for invoice. | [optional] 
+**Itms** | [**List&lt;LineItemResult&gt;**](LineItemResult.md) | Individual tax calculation results for each line item. | [optional] 
+**Summ** | [**List&lt;SummarizedTax&gt;**](SummarizedTax.md) | Summarized taxes for invoice. | [optional] 
+**Err** | [**List&lt;Error&gt;**](Error.md) | Error description (as applicable). | [optional] 
 **Incrf** | [**ReportingInformation**](ReportingInformation.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models)

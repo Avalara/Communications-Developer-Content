@@ -41,7 +41,11 @@ class TestGeoBatchStatus(unittest.TestCase):
                 processing_start = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                 processing_end = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                 status = '0', 
-                downloads = null, 
+                downloads = avalara.comms.rest.v2.models.geo_batch_download_response.GeoBatchDownloadResponse(
+                    input_file = '0', 
+                    input_file_download = '0', 
+                    output_file = '0', 
+                    output_file_download = '0', ), 
                 error = [
                     avalara.comms.rest.v2.models.error.Error(
                         code = 56, 

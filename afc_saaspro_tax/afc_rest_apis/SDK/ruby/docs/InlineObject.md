@@ -4,14 +4,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**file** | **File** |  | [optional] 
+**geo_batch_file** | **File** |  | [optional] 
 
 ## Code Sample
 
 ```ruby
 require 'OpenapiClient'
 
-instance = OpenapiClient::InlineObject.new(file: null)
+instance = OpenapiClient::InlineObject.new(geo_batch_file: null)
 ```
 
 

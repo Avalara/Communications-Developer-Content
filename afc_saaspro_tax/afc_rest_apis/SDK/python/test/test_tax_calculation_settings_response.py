@@ -43,7 +43,16 @@ class TestTaxCalculationSettingsResponse(unittest.TestCase):
                 client_id = 56, 
                 last_update_by = '0', 
                 active = True, 
-                settings = null, 
+                settings = avalara.comms.rest.v2.models.configuration.Configuration(
+                    traffic_study_overrides = [
+                        avalara.comms.rest.v2.models.traffic_study_override.TrafficStudyOverride(
+                            traffic_study_type = 56, 
+                            safe_harbor_fed_pcnt = 1.337, 
+                            traffic_study_fed_pcnt = 1.337, )
+                        ], 
+                    return_non_billable = True, 
+                    tax_on_tax_algorithm = 56, 
+                    self_tax_algorithm = 56, ), 
                 exclusions = [
                     avalara.comms.rest.v2.models.exclusion_config.ExclusionConfig(
                         country_iso = '0', 
@@ -71,7 +80,10 @@ class TestTaxCalculationSettingsResponse(unittest.TestCase):
                     avalara.comms.rest.v2.models.nexus_config.NexusConfig(
                         state = '0', )
                     ], 
-                overrides = null, 
+                overrides = avalara.comms.rest.v2.models.override_config.OverrideConfig(
+                    raw_data = [
+                        '0'
+                        ], ), 
                 description = '0', 
                 error = '0', 
                 item_type = '0', 

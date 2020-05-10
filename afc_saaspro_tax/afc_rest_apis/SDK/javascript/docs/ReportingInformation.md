@@ -4,11 +4,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**acct** | **String** |  | [optional] 
-**custref** | **String** |  | [optional] 
-**invn** | **String** |  | [optional] 
-**bcyc** | **String** |  | [optional] 
-**ccycd** | **String** |  | [optional] 
-**ccydesc** | **String** |  | [optional] 
+**acct** | **String** | Account id | [optional] 
+**custref** | **String** | Customer reference | [optional] 
+**invn** | **String** | Invoice Number reference | [optional] 
+**bcyc** | **String** | Bill Cycle reference | [optional] 
+**ccycd** | **String** | Currency code for invoice | [optional] 
+**ccydesc** | **String** | Currency description | [optional] 
 
 

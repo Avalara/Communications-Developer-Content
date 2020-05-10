@@ -33,29 +33,28 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Invoice" /> class.
         /// </summary>
-        /// <param name="doc">doc.</param>
-        /// <param name="cmmt">cmmt.</param>
+        /// <param name="doc">Document code..</param>
+        /// <param name="cmmt">Indicates if invoice should be committed as soon as it is processed.  Default: false..</param>
         /// <param name="bill">bill.</param>
-        /// <param name="cust">cust.</param>
-        /// <param name="lfln">lfln.</param>
+        /// <param name="cust">Customer type..</param>
+        /// <param name="lfln">Indicates if customer is a Lifeline participant.  Default: false..</param>
         /// <param name="date">Invoice date..</param>
-        /// <param name="exms">exms.</param>
-        /// <param name="itms">itms.</param>
-        /// <param name="invm">invm.</param>
-        /// <param name="dtl">dtl.</param>
-        /// <param name="summ">summ.</param>
-        /// <param name="opt">opt.</param>
-        /// <param name="acct">acct.</param>
-        /// <param name="custref">custref.</param>
-        /// <param name="invn">invn.</param>
-        /// <param name="bcyc">bcyc.</param>
+        /// <param name="exms">Tax exemptions..</param>
+        /// <param name="itms">Line items..</param>
+        /// <param name="invm">Indicates if all line items within invoice should be processed in invoice mode.  Default: true..</param>
+        /// <param name="dtl">Indicates if individual line item taxes should be included in response.  Default: true..</param>
+        /// <param name="summ">Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false..</param>
+        /// <param name="opt">Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5..</param>
+        /// <param name="acct">Account reference for reporting.</param>
+        /// <param name="custref">Customer Reference for reporting.</param>
+        /// <param name="invn">Invoice Number reference for reporting.</param>
+        /// <param name="bcyc">Bill Cycle reference for reporting.</param>
         /// <param name="bpd">bpd.</param>
-        /// <param name="ccycd">ccycd.</param>
+        /// <param name="ccycd">Currency code for invoice.  Example: CAD &#x3D; Canadian Dollar.</param>
         public Invoice(string doc = default(string), bool? cmmt = default(bool?), Location bill = default(Location), int? cust = default(int?), bool? lfln = default(bool?), DateTime? date = default(DateTime?), List<TaxExemption> exms = default(List<TaxExemption>), List<LineItem> itms = default(List<LineItem>), bool? invm = default(bool?), bool? dtl = default(bool?), bool? summ = default(bool?), List<KeyValuePair> opt = default(List<KeyValuePair>), string acct = default(string), string custref = default(string), string invn = default(string), string bcyc = default(string), BillingPeriod bpd = default(BillingPeriod), string ccycd = default(string))
         {
             this.Doc = doc;
             this.Cmmt = cmmt;
-            this.Bill = bill;
             this.Cust = cust;
             this.Lfln = lfln;
             this.Date = date;
@@ -69,7 +68,6 @@ namespace avalara.comms.rest.v2.Model
             this.Custref = custref;
             this.Invn = invn;
             this.Bcyc = bcyc;
-            this.Bpd = bpd;
             this.Ccycd = ccycd;
             this.Doc = doc;
             this.Cmmt = cmmt;
@@ -92,32 +90,36 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Doc
+        /// Document code.
         /// </summary>
+        /// <value>Document code.</value>
         [DataMember(Name="doc", EmitDefaultValue=true)]
         public string Doc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cmmt
+        /// Indicates if invoice should be committed as soon as it is processed.  Default: false.
         /// </summary>
+        /// <value>Indicates if invoice should be committed as soon as it is processed.  Default: false.</value>
         [DataMember(Name="cmmt", EmitDefaultValue=true)]
         public bool? Cmmt { get; set; }
 
         /// <summary>
         /// Gets or Sets Bill
         /// </summary>
-        [DataMember(Name="bill", EmitDefaultValue=true)]
+        [DataMember(Name="bill", EmitDefaultValue=false)]
         public Location Bill { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cust
+        /// Customer type.
         /// </summary>
+        /// <value>Customer type.</value>
         [DataMember(Name="cust", EmitDefaultValue=true)]
         public int? Cust { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lfln
+        /// Indicates if customer is a Lifeline participant.  Default: false.
         /// </summary>
+        /// <value>Indicates if customer is a Lifeline participant.  Default: false.</value>
         [DataMember(Name="lfln", EmitDefaultValue=true)]
         public bool? Lfln { get; set; }
 
@@ -129,74 +131,85 @@ namespace avalara.comms.rest.v2.Model
         public DateTime? Date { get; set; }
 
         /// <summary>
-        /// Gets or Sets Exms
+        /// Tax exemptions.
         /// </summary>
+        /// <value>Tax exemptions.</value>
         [DataMember(Name="exms", EmitDefaultValue=true)]
         public List<TaxExemption> Exms { get; set; }
 
         /// <summary>
-        /// Gets or Sets Itms
+        /// Line items.
         /// </summary>
+        /// <value>Line items.</value>
         [DataMember(Name="itms", EmitDefaultValue=true)]
         public List<LineItem> Itms { get; set; }
 
         /// <summary>
-        /// Gets or Sets Invm
+        /// Indicates if all line items within invoice should be processed in invoice mode.  Default: true.
         /// </summary>
+        /// <value>Indicates if all line items within invoice should be processed in invoice mode.  Default: true.</value>
         [DataMember(Name="invm", EmitDefaultValue=true)]
         public bool? Invm { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dtl
+        /// Indicates if individual line item taxes should be included in response.  Default: true.
         /// </summary>
+        /// <value>Indicates if individual line item taxes should be included in response.  Default: true.</value>
         [DataMember(Name="dtl", EmitDefaultValue=true)]
         public bool? Dtl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Summ
+        /// Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.
         /// </summary>
+        /// <value>Indicates if the summarized taxes for the invoice should be included in the resonse.  Default: false.</value>
         [DataMember(Name="summ", EmitDefaultValue=true)]
         public bool? Summ { get; set; }
 
         /// <summary>
-        /// Gets or Sets Opt
+        /// Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.
         /// </summary>
+        /// <value>Optional values for invoice. Maximum of 5. Keys must be numeric from 1 to 5.</value>
         [DataMember(Name="opt", EmitDefaultValue=true)]
         public List<KeyValuePair> Opt { get; set; }
 
         /// <summary>
-        /// Gets or Sets Acct
+        /// Account reference for reporting
         /// </summary>
+        /// <value>Account reference for reporting</value>
         [DataMember(Name="acct", EmitDefaultValue=true)]
         public string Acct { get; set; }
 
         /// <summary>
-        /// Gets or Sets Custref
+        /// Customer Reference for reporting
         /// </summary>
+        /// <value>Customer Reference for reporting</value>
         [DataMember(Name="custref", EmitDefaultValue=true)]
         public string Custref { get; set; }
 
         /// <summary>
-        /// Gets or Sets Invn
+        /// Invoice Number reference for reporting
         /// </summary>
+        /// <value>Invoice Number reference for reporting</value>
         [DataMember(Name="invn", EmitDefaultValue=true)]
         public string Invn { get; set; }
 
         /// <summary>
-        /// Gets or Sets Bcyc
+        /// Bill Cycle reference for reporting
         /// </summary>
+        /// <value>Bill Cycle reference for reporting</value>
         [DataMember(Name="bcyc", EmitDefaultValue=true)]
         public string Bcyc { get; set; }
 
         /// <summary>
         /// Gets or Sets Bpd
         /// </summary>
-        [DataMember(Name="bpd", EmitDefaultValue=true)]
+        [DataMember(Name="bpd", EmitDefaultValue=false)]
         public BillingPeriod Bpd { get; set; }
 
         /// <summary>
-        /// Gets or Sets Ccycd
+        /// Currency code for invoice.  Example: CAD &#x3D; Canadian Dollar
         /// </summary>
+        /// <value>Currency code for invoice.  Example: CAD &#x3D; Canadian Dollar</value>
         [DataMember(Name="ccycd", EmitDefaultValue=true)]
         public string Ccycd { get; set; }
 

@@ -15,13 +15,16 @@ require 'date'
 module OpenapiClient
   # Address information.
   class Address
+    # Street address.
     attr_accessor :addr
 
     # City name.
     attr_accessor :city
 
+    # State name or abbreviation.
     attr_accessor :st
 
+    # Postal code.
     attr_accessor :zip
 
     # Attribute mapping from ruby-style variable name to JSON key.

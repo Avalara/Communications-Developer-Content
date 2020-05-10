@@ -58,46 +58,6 @@
         done();
       });
     });
-    describe('apiV2ProfilesSetBundlesPost', function() {
-      it('should call apiV2ProfilesSetBundlesPost successfully', function(done) {
-        //uncomment below and update the code to test apiV2ProfilesSetBundlesPost
-        //instance.apiV2ProfilesSetBundlesPost(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('apiV2ProfilesSetConfigPost', function() {
-      it('should call apiV2ProfilesSetConfigPost successfully', function(done) {
-        //uncomment below and update the code to test apiV2ProfilesSetConfigPost
-        //instance.apiV2ProfilesSetConfigPost(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('apiV2ProfilesSetExclusionsPost', function() {
-      it('should call apiV2ProfilesSetExclusionsPost successfully', function(done) {
-        //uncomment below and update the code to test apiV2ProfilesSetExclusionsPost
-        //instance.apiV2ProfilesSetExclusionsPost(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
-    describe('apiV2ProfilesSetOverridesPost', function() {
-      it('should call apiV2ProfilesSetOverridesPost successfully', function(done) {
-        //uncomment below and update the code to test apiV2ProfilesSetOverridesPost
-        //instance.apiV2ProfilesSetOverridesPost(function(error) {
-        //  if (error) throw error;
-        //expect().to.be();
-        //});
-        done();
-      });
-    });
   });
 
 }));

@@ -33,9 +33,10 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Warning" /> class.
         /// </summary>
-        [JsonConstructorAttribute]
-        public Warning()
+        /// <param name="code">Warning code..</param>
+        public Warning(int code = default(int))
         {
+            this.Code = code;
         }
         
         /// <summary>
@@ -43,11 +44,12 @@ namespace avalara.comms.rest.v2.Model
         /// </summary>
         /// <value>Warning code.</value>
         [DataMember(Name="code", EmitDefaultValue=false)]
-        public int Code { get; private set; }
+        public int Code { get; set; }
 
         /// <summary>
-        /// Gets or Sets Msg
+        /// Warning message.
         /// </summary>
+        /// <value>Warning message.</value>
         [DataMember(Name="msg", EmitDefaultValue=true)]
         public string Msg { get; private set; }
 

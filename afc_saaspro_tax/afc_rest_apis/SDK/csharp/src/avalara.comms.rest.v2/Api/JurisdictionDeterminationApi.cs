@@ -94,9 +94,9 @@ namespace avalara.comms.rest.v2.Api
         /// 
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>GeoBatchSubmitFileResponse</returns>
-        GeoBatchSubmitFileResponse ApiV2GeoBatchUploadPost (System.IO.Stream file = default(System.IO.Stream));
+        GeoBatchSubmitFileResponse ApiV2GeoBatchUploadPost (System.IO.Stream geoBatchFile = default(System.IO.Stream));
 
         /// <summary>
         /// Uploads file to Geo Batch.
@@ -105,9 +105,9 @@ namespace avalara.comms.rest.v2.Api
         /// 
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>ApiResponse of GeoBatchSubmitFileResponse</returns>
-        ApiResponse<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostWithHttpInfo (System.IO.Stream file = default(System.IO.Stream));
+        ApiResponse<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostWithHttpInfo (System.IO.Stream geoBatchFile = default(System.IO.Stream));
         /// <summary>
         /// Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
         /// </summary>
@@ -201,9 +201,9 @@ namespace avalara.comms.rest.v2.Api
         /// 
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>Task of GeoBatchSubmitFileResponse</returns>
-        System.Threading.Tasks.Task<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostAsync (System.IO.Stream file = default(System.IO.Stream));
+        System.Threading.Tasks.Task<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostAsync (System.IO.Stream geoBatchFile = default(System.IO.Stream));
 
         /// <summary>
         /// Uploads file to Geo Batch.
@@ -212,9 +212,9 @@ namespace avalara.comms.rest.v2.Api
         /// 
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>Task of ApiResponse (GeoBatchSubmitFileResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<GeoBatchSubmitFileResponse>> ApiV2GeoBatchUploadPostAsyncWithHttpInfo (System.IO.Stream file = default(System.IO.Stream));
+        System.Threading.Tasks.Task<ApiResponse<GeoBatchSubmitFileResponse>> ApiV2GeoBatchUploadPostAsyncWithHttpInfo (System.IO.Stream geoBatchFile = default(System.IO.Stream));
         /// <summary>
         /// Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
         /// </summary>
@@ -814,11 +814,11 @@ namespace avalara.comms.rest.v2.Api
         /// Uploads file to Geo Batch. 
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>GeoBatchSubmitFileResponse</returns>
-        public GeoBatchSubmitFileResponse ApiV2GeoBatchUploadPost (System.IO.Stream file = default(System.IO.Stream))
+        public GeoBatchSubmitFileResponse ApiV2GeoBatchUploadPost (System.IO.Stream geoBatchFile = default(System.IO.Stream))
         {
-             ApiResponse<GeoBatchSubmitFileResponse> localVarResponse = ApiV2GeoBatchUploadPostWithHttpInfo(file);
+             ApiResponse<GeoBatchSubmitFileResponse> localVarResponse = ApiV2GeoBatchUploadPostWithHttpInfo(geoBatchFile);
              return localVarResponse.Data;
         }
 
@@ -826,9 +826,9 @@ namespace avalara.comms.rest.v2.Api
         /// Uploads file to Geo Batch. 
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>ApiResponse of GeoBatchSubmitFileResponse</returns>
-        public ApiResponse<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostWithHttpInfo (System.IO.Stream file = default(System.IO.Stream))
+        public ApiResponse<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostWithHttpInfo (System.IO.Stream geoBatchFile = default(System.IO.Stream))
         {
 
             var localVarPath = "/api/v2/geo/batch/Upload";
@@ -855,7 +855,7 @@ namespace avalara.comms.rest.v2.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+            if (geoBatchFile != null) localVarFileParams.Add("geoBatchFile", this.Configuration.ApiClient.ParameterToFile("geoBatchFile", geoBatchFile));
 
             // authentication (Basic) required
             // http basic authentication required
@@ -886,11 +886,11 @@ namespace avalara.comms.rest.v2.Api
         /// Uploads file to Geo Batch. 
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>Task of GeoBatchSubmitFileResponse</returns>
-        public async System.Threading.Tasks.Task<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostAsync (System.IO.Stream file = default(System.IO.Stream))
+        public async System.Threading.Tasks.Task<GeoBatchSubmitFileResponse> ApiV2GeoBatchUploadPostAsync (System.IO.Stream geoBatchFile = default(System.IO.Stream))
         {
-             ApiResponse<GeoBatchSubmitFileResponse> localVarResponse = await ApiV2GeoBatchUploadPostAsyncWithHttpInfo(file);
+             ApiResponse<GeoBatchSubmitFileResponse> localVarResponse = await ApiV2GeoBatchUploadPostAsyncWithHttpInfo(geoBatchFile);
              return localVarResponse.Data;
 
         }
@@ -899,9 +899,9 @@ namespace avalara.comms.rest.v2.Api
         /// Uploads file to Geo Batch. 
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="file"> (optional)</param>
+        /// <param name="geoBatchFile"> (optional)</param>
         /// <returns>Task of ApiResponse (GeoBatchSubmitFileResponse)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<GeoBatchSubmitFileResponse>> ApiV2GeoBatchUploadPostAsyncWithHttpInfo (System.IO.Stream file = default(System.IO.Stream))
+        public async System.Threading.Tasks.Task<ApiResponse<GeoBatchSubmitFileResponse>> ApiV2GeoBatchUploadPostAsyncWithHttpInfo (System.IO.Stream geoBatchFile = default(System.IO.Stream))
         {
 
             var localVarPath = "/api/v2/geo/batch/Upload";
@@ -928,7 +928,7 @@ namespace avalara.comms.rest.v2.Api
             if (localVarHttpHeaderAccept != null)
                 localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
 
-            if (file != null) localVarFileParams.Add("file", this.Configuration.ApiClient.ParameterToFile("file", file));
+            if (geoBatchFile != null) localVarFileParams.Add("geoBatchFile", this.Configuration.ApiClient.ParameterToFile("geoBatchFile", geoBatchFile));
 
             // authentication (Basic) required
             // http basic authentication required

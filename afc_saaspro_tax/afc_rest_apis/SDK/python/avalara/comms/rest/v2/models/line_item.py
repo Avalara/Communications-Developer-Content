@@ -125,8 +125,10 @@ class LineItem(object):
         self.discriminator = None
 
         self.ref = ref
-        self._from = _from
-        self.to = to
+        if _from is not None:
+            self._from = _from
+        if to is not None:
+            self.to = to
         self.chg = chg
         self.line = line
         self.loc = loc
@@ -145,7 +147,8 @@ class LineItem(object):
         self.disc = disc
         self.opt = opt
         self.prop = prop
-        self.bill = bill
+        if bill is not None:
+            self.bill = bill
         self.cust = cust
         self.lfln = lfln
         self.date = date
@@ -156,6 +159,7 @@ class LineItem(object):
     def ref(self):
         """Gets the ref of this LineItem.  # noqa: E501
 
+        Reference ID for line item.  # noqa: E501
 
         :return: The ref of this LineItem.  # noqa: E501
         :rtype: str
@@ -166,6 +170,7 @@ class LineItem(object):
     def ref(self, ref):
         """Sets the ref of this LineItem.
 
+        Reference ID for line item.  # noqa: E501
 
         :param ref: The ref of this LineItem.  # noqa: E501
         :type: str
@@ -177,7 +182,6 @@ class LineItem(object):
     def _from(self):
         """Gets the _from of this LineItem.  # noqa: E501
 
-        Location for origination point. If null, will default to Invoice's BillTo location.  # noqa: E501
 
         :return: The _from of this LineItem.  # noqa: E501
         :rtype: Location
@@ -188,7 +192,6 @@ class LineItem(object):
     def _from(self, _from):
         """Sets the _from of this LineItem.
 
-        Location for origination point. If null, will default to Invoice's BillTo location.  # noqa: E501
 
         :param _from: The _from of this LineItem.  # noqa: E501
         :type: Location
@@ -200,7 +203,6 @@ class LineItem(object):
     def to(self):
         """Gets the to of this LineItem.  # noqa: E501
 
-        Location for destination point. If null, will default to Invoice's BillTo location.  # noqa: E501
 
         :return: The to of this LineItem.  # noqa: E501
         :rtype: Location
@@ -211,7 +213,6 @@ class LineItem(object):
     def to(self, to):
         """Sets the to of this LineItem.
 
-        Location for destination point. If null, will default to Invoice's BillTo location.  # noqa: E501
 
         :param to: The to of this LineItem.  # noqa: E501
         :type: Location
@@ -223,6 +224,7 @@ class LineItem(object):
     def chg(self):
         """Gets the chg of this LineItem.  # noqa: E501
 
+        Charge amount.  Default: 0.  # noqa: E501
 
         :return: The chg of this LineItem.  # noqa: E501
         :rtype: float
@@ -233,6 +235,7 @@ class LineItem(object):
     def chg(self, chg):
         """Sets the chg of this LineItem.
 
+        Charge amount.  Default: 0.  # noqa: E501
 
         :param chg: The chg of this LineItem.  # noqa: E501
         :type: float
@@ -244,6 +247,7 @@ class LineItem(object):
     def line(self):
         """Gets the line of this LineItem.  # noqa: E501
 
+        Number of lines.  Default: 0.  # noqa: E501
 
         :return: The line of this LineItem.  # noqa: E501
         :rtype: int
@@ -254,6 +258,7 @@ class LineItem(object):
     def line(self, line):
         """Sets the line of this LineItem.
 
+        Number of lines.  Default: 0.  # noqa: E501
 
         :param line: The line of this LineItem.  # noqa: E501
         :type: int
@@ -265,6 +270,7 @@ class LineItem(object):
     def loc(self):
         """Gets the loc of this LineItem.  # noqa: E501
 
+        Number of locations.  Default: 0.  # noqa: E501
 
         :return: The loc of this LineItem.  # noqa: E501
         :rtype: int
@@ -275,6 +281,7 @@ class LineItem(object):
     def loc(self, loc):
         """Sets the loc of this LineItem.
 
+        Number of locations.  Default: 0.  # noqa: E501
 
         :param loc: The loc of this LineItem.  # noqa: E501
         :type: int
@@ -286,6 +293,7 @@ class LineItem(object):
     def min(self):
         """Gets the min of this LineItem.  # noqa: E501
 
+        Number of minutes.  Default: 0.  # noqa: E501
 
         :return: The min of this LineItem.  # noqa: E501
         :rtype: float
@@ -296,6 +304,7 @@ class LineItem(object):
     def min(self, min):
         """Sets the min of this LineItem.
 
+        Number of minutes.  Default: 0.  # noqa: E501
 
         :param min: The min of this LineItem.  # noqa: E501
         :type: float
@@ -307,6 +316,7 @@ class LineItem(object):
     def sale(self):
         """Gets the sale of this LineItem.  # noqa: E501
 
+        0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).  # noqa: E501
 
         :return: The sale of this LineItem.  # noqa: E501
         :rtype: int
@@ -317,6 +327,7 @@ class LineItem(object):
     def sale(self, sale):
         """Sets the sale of this LineItem.
 
+        0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).  # noqa: E501
 
         :param sale: The sale of this LineItem.  # noqa: E501
         :type: int
@@ -328,6 +339,7 @@ class LineItem(object):
     def plsp(self):
         """Gets the plsp of this LineItem.  # noqa: E501
 
+        Split for private-line transactions.  # noqa: E501
 
         :return: The plsp of this LineItem.  # noqa: E501
         :rtype: float
@@ -338,6 +350,7 @@ class LineItem(object):
     def plsp(self, plsp):
         """Sets the plsp of this LineItem.
 
+        Split for private-line transactions.  # noqa: E501
 
         :param plsp: The plsp of this LineItem.  # noqa: E501
         :type: float
@@ -349,6 +362,7 @@ class LineItem(object):
     def incl(self):
         """Gets the incl of this LineItem.  # noqa: E501
 
+        Indicates if the charge for this line item is tax-inclusive.  # noqa: E501
 
         :return: The incl of this LineItem.  # noqa: E501
         :rtype: bool
@@ -359,6 +373,7 @@ class LineItem(object):
     def incl(self, incl):
         """Sets the incl of this LineItem.
 
+        Indicates if the charge for this line item is tax-inclusive.  # noqa: E501
 
         :param incl: The incl of this LineItem.  # noqa: E501
         :type: bool
@@ -370,6 +385,7 @@ class LineItem(object):
     def pror(self):
         """Gets the pror of this LineItem.  # noqa: E501
 
+        For pro-rated tax calculations. Percentage to pro-rate.  # noqa: E501
 
         :return: The pror of this LineItem.  # noqa: E501
         :rtype: float
@@ -380,6 +396,7 @@ class LineItem(object):
     def pror(self, pror):
         """Sets the pror of this LineItem.
 
+        For pro-rated tax calculations. Percentage to pro-rate.  # noqa: E501
 
         :param pror: The pror of this LineItem.  # noqa: E501
         :type: float
@@ -391,6 +408,7 @@ class LineItem(object):
     def proadj(self):
         """Gets the proadj of this LineItem.  # noqa: E501
 
+        For pro-rated credit or adjustment calculations.  0 = default  1 = do not return non-proratable fixed taxes in response  2 = return non-proratable fixed taxes in response  # noqa: E501
 
         :return: The proadj of this LineItem.  # noqa: E501
         :rtype: int
@@ -401,6 +419,7 @@ class LineItem(object):
     def proadj(self, proadj):
         """Sets the proadj of this LineItem.
 
+        For pro-rated credit or adjustment calculations.  0 = default  1 = do not return non-proratable fixed taxes in response  2 = return non-proratable fixed taxes in response  # noqa: E501
 
         :param proadj: The proadj of this LineItem.  # noqa: E501
         :type: int
@@ -412,6 +431,7 @@ class LineItem(object):
     def tran(self):
         """Gets the tran of this LineItem.  # noqa: E501
 
+        Transaction type ID.  # noqa: E501
 
         :return: The tran of this LineItem.  # noqa: E501
         :rtype: int
@@ -422,6 +442,7 @@ class LineItem(object):
     def tran(self, tran):
         """Sets the tran of this LineItem.
 
+        Transaction type ID.  # noqa: E501
 
         :param tran: The tran of this LineItem.  # noqa: E501
         :type: int
@@ -433,6 +454,7 @@ class LineItem(object):
     def serv(self):
         """Gets the serv of this LineItem.  # noqa: E501
 
+        Service type ID.  # noqa: E501
 
         :return: The serv of this LineItem.  # noqa: E501
         :rtype: int
@@ -443,6 +465,7 @@ class LineItem(object):
     def serv(self, serv):
         """Sets the serv of this LineItem.
 
+        Service type ID.  # noqa: E501
 
         :param serv: The serv of this LineItem.  # noqa: E501
         :type: int
@@ -454,6 +477,7 @@ class LineItem(object):
     def dbt(self):
         """Gets the dbt of this LineItem.  # noqa: E501
 
+        Indicates if this line item is a debit card transaction.  Default: false.  # noqa: E501
 
         :return: The dbt of this LineItem.  # noqa: E501
         :rtype: bool
@@ -464,6 +488,7 @@ class LineItem(object):
     def dbt(self, dbt):
         """Sets the dbt of this LineItem.
 
+        Indicates if this line item is a debit card transaction.  Default: false.  # noqa: E501
 
         :param dbt: The dbt of this LineItem.  # noqa: E501
         :type: bool
@@ -475,6 +500,7 @@ class LineItem(object):
     def adj(self):
         """Gets the adj of this LineItem.  # noqa: E501
 
+        Indicates if this line item is an adjustment.  Default: false.  # noqa: E501
 
         :return: The adj of this LineItem.  # noqa: E501
         :rtype: bool
@@ -485,6 +511,7 @@ class LineItem(object):
     def adj(self, adj):
         """Sets the adj of this LineItem.
 
+        Indicates if this line item is an adjustment.  Default: false.  # noqa: E501
 
         :param adj: The adj of this LineItem.  # noqa: E501
         :type: bool
@@ -496,6 +523,7 @@ class LineItem(object):
     def adjm(self):
         """Gets the adjm of this LineItem.  # noqa: E501
 
+        Adjustment method.  # noqa: E501
 
         :return: The adjm of this LineItem.  # noqa: E501
         :rtype: int
@@ -506,6 +534,7 @@ class LineItem(object):
     def adjm(self, adjm):
         """Sets the adjm of this LineItem.
 
+        Adjustment method.  # noqa: E501
 
         :param adjm: The adjm of this LineItem.  # noqa: E501
         :type: int
@@ -517,6 +546,7 @@ class LineItem(object):
     def disc(self):
         """Gets the disc of this LineItem.  # noqa: E501
 
+        Discount type for adjustments.  # noqa: E501
 
         :return: The disc of this LineItem.  # noqa: E501
         :rtype: int
@@ -527,6 +557,7 @@ class LineItem(object):
     def disc(self, disc):
         """Sets the disc of this LineItem.
 
+        Discount type for adjustments.  # noqa: E501
 
         :param disc: The disc of this LineItem.  # noqa: E501
         :type: int
@@ -538,6 +569,7 @@ class LineItem(object):
     def opt(self):
         """Gets the opt of this LineItem.  # noqa: E501
 
+        Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.  # noqa: E501
 
         :return: The opt of this LineItem.  # noqa: E501
         :rtype: list[KeyValuePair]
@@ -548,6 +580,7 @@ class LineItem(object):
     def opt(self, opt):
         """Sets the opt of this LineItem.
 
+        Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.  # noqa: E501
 
         :param opt: The opt of this LineItem.  # noqa: E501
         :type: list[KeyValuePair]
@@ -559,6 +592,7 @@ class LineItem(object):
     def prop(self):
         """Gets the prop of this LineItem.  # noqa: E501
 
+        Attribute/property value for sales and use transaction/service pairs.  # noqa: E501
 
         :return: The prop of this LineItem.  # noqa: E501
         :rtype: int
@@ -569,6 +603,7 @@ class LineItem(object):
     def prop(self, prop):
         """Sets the prop of this LineItem.
 
+        Attribute/property value for sales and use transaction/service pairs.  # noqa: E501
 
         :param prop: The prop of this LineItem.  # noqa: E501
         :type: int
@@ -601,6 +636,7 @@ class LineItem(object):
     def cust(self):
         """Gets the cust of this LineItem.  # noqa: E501
 
+        Customer type.  # noqa: E501
 
         :return: The cust of this LineItem.  # noqa: E501
         :rtype: int
@@ -611,6 +647,7 @@ class LineItem(object):
     def cust(self, cust):
         """Sets the cust of this LineItem.
 
+        Customer type.  # noqa: E501
 
         :param cust: The cust of this LineItem.  # noqa: E501
         :type: int
@@ -622,6 +659,7 @@ class LineItem(object):
     def lfln(self):
         """Gets the lfln of this LineItem.  # noqa: E501
 
+        Indicates if customer is a Lifeline participant.  Default: false.  # noqa: E501
 
         :return: The lfln of this LineItem.  # noqa: E501
         :rtype: bool
@@ -632,6 +670,7 @@ class LineItem(object):
     def lfln(self, lfln):
         """Sets the lfln of this LineItem.
 
+        Indicates if customer is a Lifeline participant.  Default: false.  # noqa: E501
 
         :param lfln: The lfln of this LineItem.  # noqa: E501
         :type: bool
@@ -666,6 +705,7 @@ class LineItem(object):
     def qty(self):
         """Gets the qty of this LineItem.  # noqa: E501
 
+        Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity  # noqa: E501
 
         :return: The qty of this LineItem.  # noqa: E501
         :rtype: int
@@ -676,6 +716,7 @@ class LineItem(object):
     def qty(self, qty):
         """Sets the qty of this LineItem.
 
+        Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity  # noqa: E501
 
         :param qty: The qty of this LineItem.  # noqa: E501
         :type: int
@@ -687,6 +728,7 @@ class LineItem(object):
     def glref(self):
         """Gets the glref of this LineItem.  # noqa: E501
 
+        General Ledger reference to be used in reporting  # noqa: E501
 
         :return: The glref of this LineItem.  # noqa: E501
         :rtype: str
@@ -697,6 +739,7 @@ class LineItem(object):
     def glref(self, glref):
         """Sets the glref of this LineItem.
 
+        General Ledger reference to be used in reporting  # noqa: E501
 
         :param glref: The glref of this LineItem.  # noqa: E501
         :type: str

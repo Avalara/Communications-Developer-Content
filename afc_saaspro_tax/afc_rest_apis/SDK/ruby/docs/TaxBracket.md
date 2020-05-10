@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **rate** | **Float** | Tax rate. Value cannot be negative. For rated taxes, value must be from 0 to 1. Otherwise, value may be larger. | [optional] 
-**max** | **Float** |  | [optional] 
+**max** | **Float** | Maximum base that this rate applies to. | [optional] 
 
 ## Code Sample
 

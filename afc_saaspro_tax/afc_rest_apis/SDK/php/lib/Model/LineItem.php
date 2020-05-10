@@ -59,8 +59,8 @@ class LineItem implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'ref' => 'string',
-        'from' => 'Location',
-        'to' => 'Location',
+        'from' => '\OpenAPI\Client\Model\Location',
+        'to' => '\OpenAPI\Client\Model\Location',
         'chg' => 'double',
         'line' => 'int',
         'loc' => 'int',
@@ -78,7 +78,7 @@ class LineItem implements ModelInterface, ArrayAccess
         'disc' => 'int',
         'opt' => '\OpenAPI\Client\Model\KeyValuePair[]',
         'prop' => 'int',
-        'bill' => 'Location',
+        'bill' => '\OpenAPI\Client\Model\Location',
         'cust' => 'int',
         'lfln' => 'bool',
         'date' => '\DateTime',
@@ -368,7 +368,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets ref
      *
-     * @param string|null $ref ref
+     * @param string|null $ref Reference ID for line item.
      *
      * @return $this
      */
@@ -382,7 +382,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Gets from
      *
-     * @return Location|null
+     * @return \OpenAPI\Client\Model\Location|null
      */
     public function getFrom()
     {
@@ -392,7 +392,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets from
      *
-     * @param Location|null $from Location for origination point. If null, will default to Invoice's BillTo location.
+     * @param \OpenAPI\Client\Model\Location|null $from from
      *
      * @return $this
      */
@@ -406,7 +406,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Gets to
      *
-     * @return Location|null
+     * @return \OpenAPI\Client\Model\Location|null
      */
     public function getTo()
     {
@@ -416,7 +416,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets to
      *
-     * @param Location|null $to Location for destination point. If null, will default to Invoice's BillTo location.
+     * @param \OpenAPI\Client\Model\Location|null $to to
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets chg
      *
-     * @param double|null $chg chg
+     * @param double|null $chg Charge amount.  Default: 0.
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets line
      *
-     * @param int|null $line line
+     * @param int|null $line Number of lines.  Default: 0.
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets loc
      *
-     * @param int|null $loc loc
+     * @param int|null $loc Number of locations.  Default: 0.
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets min
      *
-     * @param double|null $min min
+     * @param double|null $min Number of minutes.  Default: 0.
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets sale
      *
-     * @param int|null $sale sale
+     * @param int|null $sale 0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets plsp
      *
-     * @param double|null $plsp plsp
+     * @param double|null $plsp Split for private-line transactions.
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets incl
      *
-     * @param bool|null $incl incl
+     * @param bool|null $incl Indicates if the charge for this line item is tax-inclusive.
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets pror
      *
-     * @param double|null $pror pror
+     * @param double|null $pror For pro-rated tax calculations. Percentage to pro-rate.
      *
      * @return $this
      */
@@ -632,7 +632,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets proadj
      *
-     * @param int|null $proadj proadj
+     * @param int|null $proadj For pro-rated credit or adjustment calculations.  0 = default  1 = do not return non-proratable fixed taxes in response  2 = return non-proratable fixed taxes in response
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets tran
      *
-     * @param int|null $tran tran
+     * @param int|null $tran Transaction type ID.
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets serv
      *
-     * @param int|null $serv serv
+     * @param int|null $serv Service type ID.
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets dbt
      *
-     * @param bool|null $dbt dbt
+     * @param bool|null $dbt Indicates if this line item is a debit card transaction.  Default: false.
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets adj
      *
-     * @param bool|null $adj adj
+     * @param bool|null $adj Indicates if this line item is an adjustment.  Default: false.
      *
      * @return $this
      */
@@ -752,7 +752,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets adjm
      *
-     * @param int|null $adjm adjm
+     * @param int|null $adjm Adjustment method.
      *
      * @return $this
      */
@@ -776,7 +776,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets disc
      *
-     * @param int|null $disc disc
+     * @param int|null $disc Discount type for adjustments.
      *
      * @return $this
      */
@@ -800,7 +800,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets opt
      *
-     * @param \OpenAPI\Client\Model\KeyValuePair[]|null $opt opt
+     * @param \OpenAPI\Client\Model\KeyValuePair[]|null $opt Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.
      *
      * @return $this
      */
@@ -824,7 +824,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets prop
      *
-     * @param int|null $prop prop
+     * @param int|null $prop Attribute/property value for sales and use transaction/service pairs.
      *
      * @return $this
      */
@@ -838,7 +838,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Gets bill
      *
-     * @return Location|null
+     * @return \OpenAPI\Client\Model\Location|null
      */
     public function getBill()
     {
@@ -848,7 +848,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets bill
      *
-     * @param Location|null $bill bill
+     * @param \OpenAPI\Client\Model\Location|null $bill bill
      *
      * @return $this
      */
@@ -872,7 +872,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets cust
      *
-     * @param int|null $cust cust
+     * @param int|null $cust Customer type.
      *
      * @return $this
      */
@@ -896,7 +896,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets lfln
      *
-     * @param bool|null $lfln lfln
+     * @param bool|null $lfln Indicates if customer is a Lifeline participant.  Default: false.
      *
      * @return $this
      */
@@ -944,7 +944,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets qty
      *
-     * @param int|null $qty qty
+     * @param int|null $qty Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity
      *
      * @return $this
      */
@@ -968,7 +968,7 @@ class LineItem implements ModelInterface, ArrayAccess
     /**
      * Sets glref
      *
-     * @param string|null $glref glref
+     * @param string|null $glref General Ledger reference to be used in reporting
      *
      * @return $this
      */

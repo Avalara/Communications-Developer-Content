@@ -5,8 +5,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Code** | **int** | Warning code. | [optional] [readonly] 
-**Msg** | **string** |  | [optional] [readonly] 
+**Code** | **int** | Warning code. | [optional] 
+**Msg** | **string** | Warning message. | [optional] [readonly] 
 
 [[Back to Model list]](../README.md#documentation-for-models)
 [[Back to API list]](../README.md#documentation-for-api-endpoints)

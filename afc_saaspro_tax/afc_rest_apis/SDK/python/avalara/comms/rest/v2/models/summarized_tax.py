@@ -135,6 +135,7 @@ class SummarizedTax(object):
     def max(self):
         """Gets the max of this SummarizedTax.  # noqa: E501
 
+        Maximum base for tax bracket.  # noqa: E501
 
         :return: The max of this SummarizedTax.  # noqa: E501
         :rtype: float
@@ -145,6 +146,7 @@ class SummarizedTax(object):
     def max(self, max):
         """Sets the max of this SummarizedTax.
 
+        Maximum base for tax bracket.  # noqa: E501
 
         :param max: The max of this SummarizedTax.  # noqa: E501
         :type: float
@@ -156,6 +158,7 @@ class SummarizedTax(object):
     def min(self):
         """Gets the min of this SummarizedTax.  # noqa: E501
 
+        Minimum base for tax bracket.  # noqa: E501
 
         :return: The min of this SummarizedTax.  # noqa: E501
         :rtype: float
@@ -166,6 +169,7 @@ class SummarizedTax(object):
     def min(self, min):
         """Sets the min of this SummarizedTax.
 
+        Minimum base for tax bracket.  # noqa: E501
 
         :param min: The min of this SummarizedTax.  # noqa: E501
         :type: float
@@ -177,6 +181,7 @@ class SummarizedTax(object):
     def tchg(self):
         """Gets the tchg of this SummarizedTax.  # noqa: E501
 
+        Total charge amount.  # noqa: E501
 
         :return: The tchg of this SummarizedTax.  # noqa: E501
         :rtype: float
@@ -187,6 +192,7 @@ class SummarizedTax(object):
     def tchg(self, tchg):
         """Sets the tchg of this SummarizedTax.
 
+        Total charge amount.  # noqa: E501
 
         :param tchg: The tchg of this SummarizedTax.  # noqa: E501
         :type: float
@@ -198,6 +204,7 @@ class SummarizedTax(object):
     def calc(self):
         """Gets the calc of this SummarizedTax.  # noqa: E501
 
+        Calculation type.  # noqa: E501
 
         :return: The calc of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -208,6 +215,7 @@ class SummarizedTax(object):
     def calc(self, calc):
         """Sets the calc of this SummarizedTax.
 
+        Calculation type.  # noqa: E501
 
         :param calc: The calc of this SummarizedTax.  # noqa: E501
         :type: int
@@ -219,6 +227,7 @@ class SummarizedTax(object):
     def cat(self):
         """Gets the cat of this SummarizedTax.  # noqa: E501
 
+        Tax category name.  # noqa: E501
 
         :return: The cat of this SummarizedTax.  # noqa: E501
         :rtype: str
@@ -229,6 +238,7 @@ class SummarizedTax(object):
     def cat(self, cat):
         """Sets the cat of this SummarizedTax.
 
+        Tax category name.  # noqa: E501
 
         :param cat: The cat of this SummarizedTax.  # noqa: E501
         :type: str
@@ -240,6 +250,7 @@ class SummarizedTax(object):
     def cid(self):
         """Gets the cid of this SummarizedTax.  # noqa: E501
 
+        Tax category ID.  # noqa: E501
 
         :return: The cid of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -250,6 +261,7 @@ class SummarizedTax(object):
     def cid(self, cid):
         """Sets the cid of this SummarizedTax.
 
+        Tax category ID.  # noqa: E501
 
         :param cid: The cid of this SummarizedTax.  # noqa: E501
         :type: int
@@ -284,6 +296,7 @@ class SummarizedTax(object):
     def exm(self):
         """Gets the exm of this SummarizedTax.  # noqa: E501
 
+        Exempt sale amount.  # noqa: E501
 
         :return: The exm of this SummarizedTax.  # noqa: E501
         :rtype: float
@@ -294,6 +307,7 @@ class SummarizedTax(object):
     def exm(self, exm):
         """Sets the exm of this SummarizedTax.
 
+        Exempt sale amount.  # noqa: E501
 
         :param exm: The exm of this SummarizedTax.  # noqa: E501
         :type: float
@@ -305,6 +319,7 @@ class SummarizedTax(object):
     def lns(self):
         """Gets the lns of this SummarizedTax.  # noqa: E501
 
+        Lines.  # noqa: E501
 
         :return: The lns of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -315,6 +330,7 @@ class SummarizedTax(object):
     def lns(self, lns):
         """Sets the lns of this SummarizedTax.
 
+        Lines.  # noqa: E501
 
         :param lns: The lns of this SummarizedTax.  # noqa: E501
         :type: int
@@ -326,6 +342,7 @@ class SummarizedTax(object):
     def pcd(self):
         """Gets the pcd of this SummarizedTax.  # noqa: E501
 
+        PCode for reporting jurisdiction.  # noqa: E501
 
         :return: The pcd of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -336,6 +353,7 @@ class SummarizedTax(object):
     def pcd(self, pcd):
         """Sets the pcd of this SummarizedTax.
 
+        PCode for reporting jurisdiction.  # noqa: E501
 
         :param pcd: The pcd of this SummarizedTax.  # noqa: E501
         :type: int
@@ -347,6 +365,7 @@ class SummarizedTax(object):
     def taxpcd(self):
         """Gets the taxpcd of this SummarizedTax.  # noqa: E501
 
+        PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The taxpcd of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -357,6 +376,7 @@ class SummarizedTax(object):
     def taxpcd(self, taxpcd):
         """Sets the taxpcd of this SummarizedTax.
 
+        PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param taxpcd: The taxpcd of this SummarizedTax.  # noqa: E501
         :type: int
@@ -391,6 +411,7 @@ class SummarizedTax(object):
     def sur(self):
         """Gets the sur of this SummarizedTax.  # noqa: E501
 
+        Indicates if this tax is a surcharge.  # noqa: E501
 
         :return: The sur of this SummarizedTax.  # noqa: E501
         :rtype: bool
@@ -401,6 +422,7 @@ class SummarizedTax(object):
     def sur(self, sur):
         """Sets the sur of this SummarizedTax.
 
+        Indicates if this tax is a surcharge.  # noqa: E501
 
         :param sur: The sur of this SummarizedTax.  # noqa: E501
         :type: bool
@@ -412,6 +434,7 @@ class SummarizedTax(object):
     def tax(self):
         """Gets the tax of this SummarizedTax.  # noqa: E501
 
+        Tax amount.  # noqa: E501
 
         :return: The tax of this SummarizedTax.  # noqa: E501
         :rtype: float
@@ -422,6 +445,7 @@ class SummarizedTax(object):
     def tax(self, tax):
         """Sets the tax of this SummarizedTax.
 
+        Tax amount.  # noqa: E501
 
         :param tax: The tax of this SummarizedTax.  # noqa: E501
         :type: float
@@ -433,6 +457,7 @@ class SummarizedTax(object):
     def lvl(self):
         """Gets the lvl of this SummarizedTax.  # noqa: E501
 
+        Tax level ID.  # noqa: E501
 
         :return: The lvl of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -443,6 +468,7 @@ class SummarizedTax(object):
     def lvl(self, lvl):
         """Sets the lvl of this SummarizedTax.
 
+        Tax level ID.  # noqa: E501
 
         :param lvl: The lvl of this SummarizedTax.  # noqa: E501
         :type: int
@@ -454,6 +480,7 @@ class SummarizedTax(object):
     def tid(self):
         """Gets the tid of this SummarizedTax.  # noqa: E501
 
+        Tax type ID.  # noqa: E501
 
         :return: The tid of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -464,6 +491,7 @@ class SummarizedTax(object):
     def tid(self, tid):
         """Sets the tid of this SummarizedTax.
 
+        Tax type ID.  # noqa: E501
 
         :param tid: The tid of this SummarizedTax.  # noqa: E501
         :type: int
@@ -475,6 +503,7 @@ class SummarizedTax(object):
     def usexm(self):
         """Gets the usexm of this SummarizedTax.  # noqa: E501
 
+        Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The usexm of this SummarizedTax.  # noqa: E501
         :rtype: bool
@@ -485,6 +514,7 @@ class SummarizedTax(object):
     def usexm(self, usexm):
         """Sets the usexm of this SummarizedTax.
 
+        Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param usexm: The usexm of this SummarizedTax.  # noqa: E501
         :type: bool
@@ -496,6 +526,7 @@ class SummarizedTax(object):
     def notax(self):
         """Gets the notax of this SummarizedTax.  # noqa: E501
 
+        Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The notax of this SummarizedTax.  # noqa: E501
         :rtype: bool
@@ -506,6 +537,7 @@ class SummarizedTax(object):
     def notax(self, notax):
         """Sets the notax of this SummarizedTax.
 
+        Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param notax: The notax of this SummarizedTax.  # noqa: E501
         :type: bool
@@ -517,6 +549,7 @@ class SummarizedTax(object):
     def trans(self):
         """Gets the trans of this SummarizedTax.  # noqa: E501
 
+        Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The trans of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -527,6 +560,7 @@ class SummarizedTax(object):
     def trans(self, trans):
         """Sets the trans of this SummarizedTax.
 
+        Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param trans: The trans of this SummarizedTax.  # noqa: E501
         :type: int
@@ -538,6 +572,7 @@ class SummarizedTax(object):
     def svc(self):
         """Gets the svc of this SummarizedTax.  # noqa: E501
 
+        Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The svc of this SummarizedTax.  # noqa: E501
         :rtype: int
@@ -548,6 +583,7 @@ class SummarizedTax(object):
     def svc(self, svc):
         """Sets the svc of this SummarizedTax.
 
+        Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param svc: The svc of this SummarizedTax.  # noqa: E501
         :type: int
@@ -559,6 +595,7 @@ class SummarizedTax(object):
     def chg(self):
         """Gets the chg of this SummarizedTax.  # noqa: E501
 
+        Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true  # noqa: E501
 
         :return: The chg of this SummarizedTax.  # noqa: E501
         :rtype: float
@@ -569,6 +606,7 @@ class SummarizedTax(object):
     def chg(self, chg):
         """Sets the chg of this SummarizedTax.
 
+        Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true  # noqa: E501
 
         :param chg: The chg of this SummarizedTax.  # noqa: E501
         :type: float

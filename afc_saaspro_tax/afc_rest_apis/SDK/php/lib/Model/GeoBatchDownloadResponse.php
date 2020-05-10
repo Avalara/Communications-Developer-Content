@@ -236,7 +236,7 @@ class GeoBatchDownloadResponse implements ModelInterface, ArrayAccess
     /**
      * Sets input_file
      *
-     * @param string|null $input_file input_file
+     * @param string|null $input_file Input File Name.
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class GeoBatchDownloadResponse implements ModelInterface, ArrayAccess
     /**
      * Sets output_file
      *
-     * @param string|null $output_file output_file
+     * @param string|null $output_file Output File Name.
      *
      * @return $this
      */

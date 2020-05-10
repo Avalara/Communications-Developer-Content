@@ -28,7 +28,7 @@ import java.io.IOException;
  * Location data used to determine taxing jurisdiction.
  */
 @ApiModel(description = "Location data used to determine taxing jurisdiction.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class Location {
   public static final String SERIALIZED_NAME_CNTY = "cnty";
   @SerializedName(SERIALIZED_NAME_CNTY)
@@ -82,11 +82,11 @@ public class Location {
   }
 
    /**
-   * Get cnty
+   * County name.
    * @return cnty
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "County name.")
 
   public String getCnty() {
     return cnty;
@@ -105,11 +105,11 @@ public class Location {
   }
 
    /**
-   * Get ctry
+   * Country ISO code.
    * @return ctry
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Country ISO code.")
 
   public String getCtry() {
     return ctry;
@@ -128,11 +128,11 @@ public class Location {
   }
 
    /**
-   * Get _int
+   * Indicates if the location is within city limits.  Default: true.
    * @return _int
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if the location is within city limits.  Default: true.")
 
   public Boolean getInt() {
     return _int;
@@ -151,11 +151,11 @@ public class Location {
   }
 
    /**
-   * Get geo
+   * Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.
    * @return geo
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.")
 
   public Boolean getGeo() {
     return geo;
@@ -174,11 +174,11 @@ public class Location {
   }
 
    /**
-   * Get pcd
+   * PCode for taxing jurisdiction.
    * @return pcd
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "PCode for taxing jurisdiction.")
 
   public Integer getPcd() {
     return pcd;
@@ -197,11 +197,11 @@ public class Location {
   }
 
    /**
-   * Get npa
+   * NPANXX number.
    * @return npa
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "NPANXX number.")
 
   public Integer getNpa() {
     return npa;
@@ -220,11 +220,11 @@ public class Location {
   }
 
    /**
-   * Get fips
+   * FIPS code for taxing jurisdiction.
    * @return fips
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "FIPS code for taxing jurisdiction.")
 
   public String getFips() {
     return fips;
@@ -243,11 +243,11 @@ public class Location {
   }
 
    /**
-   * Get addr
+   * Street address.
    * @return addr
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Street address.")
 
   public String getAddr() {
     return addr;
@@ -289,11 +289,11 @@ public class Location {
   }
 
    /**
-   * Get st
+   * State name or abbreviation.
    * @return st
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "State name or abbreviation.")
 
   public String getSt() {
     return st;
@@ -312,11 +312,11 @@ public class Location {
   }
 
    /**
-   * Get zip
+   * Postal code.
    * @return zip
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Postal code.")
 
   public String getZip() {
     return zip;

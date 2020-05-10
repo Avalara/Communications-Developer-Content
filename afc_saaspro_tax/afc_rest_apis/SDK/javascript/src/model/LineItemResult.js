@@ -70,21 +70,25 @@ class LineItemResult {
 }
 
 /**
+ * Reference ID for line item.
  * @member {String} ref
  */
 LineItemResult.prototype['ref'] = undefined;
 
 /**
+ * Base sale amount for tax-inclusive line items.
  * @member {Number} base
  */
 LineItemResult.prototype['base'] = undefined;
 
 /**
+ * Taxes generated for line item.
  * @member {Array.<module:model/Tax>} txs
  */
 LineItemResult.prototype['txs'] = undefined;
 
 /**
+ * Error description (as applicable).
  * @member {Array.<module:model/Error>} err
  */
 LineItemResult.prototype['err'] = undefined;

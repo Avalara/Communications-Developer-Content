@@ -208,10 +208,6 @@ class JurisdictionDeterminationApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'process_id' is set
-        if self.api_client.client_side_validation and ('process_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['process_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `process_id` when calling `api_v2_geo_batch_log_process_id_get`")  # noqa: E501
 
         collection_formats = {}
 
@@ -314,10 +310,6 @@ class JurisdictionDeterminationApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'process_id' is set
-        if self.api_client.client_side_validation and ('process_id' not in local_var_params or  # noqa: E501
-                                                        local_var_params['process_id'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `process_id` when calling `api_v2_geo_batch_status_process_id_get`")  # noqa: E501
 
         collection_formats = {}
 
@@ -365,7 +357,7 @@ class JurisdictionDeterminationApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param file file:
+        :param file geo_batch_file:
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -389,7 +381,7 @@ class JurisdictionDeterminationApi(object):
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param file file:
+        :param file geo_batch_file:
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -406,7 +398,7 @@ class JurisdictionDeterminationApi(object):
 
         local_var_params = locals()
 
-        all_params = ['file']  # noqa: E501
+        all_params = ['geo_batch_file']  # noqa: E501
         all_params.append('async_req')
         all_params.append('_return_http_data_only')
         all_params.append('_preload_content')
@@ -431,8 +423,8 @@ class JurisdictionDeterminationApi(object):
 
         form_params = []
         local_var_files = {}
-        if 'file' in local_var_params:
-            local_var_files['file'] = local_var_params['file']  # noqa: E501
+        if 'geo_batch_file' in local_var_params:
+            local_var_files['geoBatchFile'] = local_var_params['geo_batch_file']  # noqa: E501
 
         body_params = None
         # HTTP header `Accept`

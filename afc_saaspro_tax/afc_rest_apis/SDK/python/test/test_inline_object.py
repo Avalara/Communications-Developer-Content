@@ -36,7 +36,7 @@ class TestInlineObject(unittest.TestCase):
         # model = avalara.comms.rest.v2.models.inline_object.InlineObject()  # noqa: E501
         if include_optional :
             return InlineObject(
-                file = bytes(b'blah')
+                geo_batch_file = bytes(b'blah')
             )
         else :
             return InlineObject(

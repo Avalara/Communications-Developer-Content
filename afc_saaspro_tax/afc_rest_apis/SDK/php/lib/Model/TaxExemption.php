@@ -59,7 +59,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'frc' => 'bool',
-        'loc' => 'Location',
+        'loc' => '\OpenAPI\Client\Model\Location',
         'tpe' => 'int',
         'lvl' => 'int',
         'cat' => 'int',
@@ -260,7 +260,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets frc
      *
-     * @param bool|null $frc frc
+     * @param bool|null $frc Override level exempt flag on wildcard tax type exemptions.
      *
      * @return $this
      */
@@ -274,7 +274,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Gets loc
      *
-     * @return Location|null
+     * @return \OpenAPI\Client\Model\Location|null
      */
     public function getLoc()
     {
@@ -284,7 +284,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets loc
      *
-     * @param Location|null $loc loc
+     * @param \OpenAPI\Client\Model\Location|null $loc loc
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets tpe
      *
-     * @param int|null $tpe tpe
+     * @param int|null $tpe Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.
      *
      * @return $this
      */
@@ -332,7 +332,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets lvl
      *
-     * @param int|null $lvl lvl
+     * @param int|null $lvl Tax level ID.
      *
      * @return $this
      */
@@ -356,7 +356,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets cat
      *
-     * @param int|null $cat cat
+     * @param int|null $cat Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.
      *
      * @return $this
      */
@@ -380,7 +380,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets dom
      *
-     * @param int|null $dom dom
+     * @param int|null $dom Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.
      *
      * @return $this
      */
@@ -404,7 +404,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets scp
      *
-     * @param int|null $scp scp
+     * @param int|null $scp Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.
      *
      * @return $this
      */
@@ -428,7 +428,7 @@ class TaxExemption implements ModelInterface, ArrayAccess
     /**
      * Sets exnb
      *
-     * @param bool|null $exnb exnb
+     * @param bool|null $exnb Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.
      *
      * @return $this
      */

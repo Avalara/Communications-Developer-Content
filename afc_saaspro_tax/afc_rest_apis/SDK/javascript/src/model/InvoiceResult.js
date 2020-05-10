@@ -65,7 +65,7 @@ class InvoiceResult {
                 obj['err'] = ApiClient.convertToType(data['err'], [Error]);
             }
             if (data.hasOwnProperty('incrf')) {
-                obj['incrf'] = ApiClient.convertToType(data['incrf'], ReportingInformation);
+                obj['incrf'] = ReportingInformation.constructFromObject(data['incrf']);
             }
         }
         return obj;
@@ -75,21 +75,25 @@ class InvoiceResult {
 }
 
 /**
+ * Document number for invoice.
  * @member {String} doc
  */
 InvoiceResult.prototype['doc'] = undefined;
 
 /**
+ * Individual tax calculation results for each line item.
  * @member {Array.<module:model/LineItemResult>} itms
  */
 InvoiceResult.prototype['itms'] = undefined;
 
 /**
+ * Summarized taxes for invoice.
  * @member {Array.<module:model/SummarizedTax>} summ
  */
 InvoiceResult.prototype['summ'] = undefined;
 
 /**
+ * Error description (as applicable).
  * @member {Array.<module:model/Error>} err
  */
 InvoiceResult.prototype['err'] = undefined;

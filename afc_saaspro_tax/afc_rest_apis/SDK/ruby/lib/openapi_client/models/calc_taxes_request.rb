@@ -19,10 +19,13 @@ module OpenapiClient
 
     attr_accessor :cmpn
 
+    # List of invoices to process.
     attr_accessor :inv
 
+    # Tax rate overrides.
     attr_accessor :ovr
 
+    # Safe harbor overrides for USF taxes.
     attr_accessor :sovr
 
     # Attribute mapping from ruby-style variable name to JSON key.
@@ -50,8 +53,6 @@ module OpenapiClient
     # List of attributes with nullable: true
     def self.openapi_nullable
       Set.new([
-        :'cfg',
-        :'cmpn',
         :'inv',
         :'ovr',
         :'sovr'

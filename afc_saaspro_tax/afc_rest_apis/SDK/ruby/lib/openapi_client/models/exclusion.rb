@@ -15,10 +15,13 @@ require 'date'
 module OpenapiClient
   # Specifies a tax exclusion by state.
   class Exclusion
+    # Country ISO code.
     attr_accessor :ctry
 
+    # State abbreviation.
     attr_accessor :st
 
+    # Indicates if exclusion applies to the specified state.
     attr_accessor :excl
 
     # Attribute mapping from ruby-style variable name to JSON key.

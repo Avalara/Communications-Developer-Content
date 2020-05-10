@@ -28,7 +28,7 @@ import java.io.IOException;
  * Specifies a traffic study override
  */
 @ApiModel(description = "Specifies a traffic study override")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class TrafficStudyOverride {
   public static final String SERIALIZED_NAME_TRAFFIC_STUDY_TYPE = "TrafficStudyType";
   @SerializedName(SERIALIZED_NAME_TRAFFIC_STUDY_TYPE)

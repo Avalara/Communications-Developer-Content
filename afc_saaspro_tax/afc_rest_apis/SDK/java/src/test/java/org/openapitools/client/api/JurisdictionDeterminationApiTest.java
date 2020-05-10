@@ -97,8 +97,8 @@ public class JurisdictionDeterminationApiTest {
      */
     @Test
     public void apiV2GeoBatchUploadPostTest() throws ApiException {
-        File file = null;
-        GeoBatchSubmitFileResponse response = api.apiV2GeoBatchUploadPost(file);
+        File geoBatchFile = null;
+        GeoBatchSubmitFileResponse response = api.apiV2GeoBatchUploadPost(geoBatchFile);
 
         // TODO: test validations
     }

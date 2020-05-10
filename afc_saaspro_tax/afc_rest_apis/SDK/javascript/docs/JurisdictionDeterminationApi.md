@@ -162,7 +162,7 @@ let defaultClient = SaasPro.ApiClient.instance;
 
 let apiInstance = new SaasPro.JurisdictionDeterminationApi();
 let opts = {
-  'file': "/path/to/file" // File | 
+  'geoBatchFile': "/path/to/file" // File | 
 };
 apiInstance.apiV2GeoBatchUploadPost(opts, (error, data, response) => {
   if (error) {
@@ -178,7 +178,7 @@ apiInstance.apiV2GeoBatchUploadPost(opts, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **File**|  | [optional] 
+ **geoBatchFile** | **File**|  | [optional] 
 
 ### Return type
 

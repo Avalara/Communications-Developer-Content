@@ -79,6 +79,7 @@ class CompanyData(object):
     def bscl(self):
         """Gets the bscl of this CompanyData.  # noqa: E501
 
+        Business class. 0 = ILEC, 1 = CLEC.  # noqa: E501
 
         :return: The bscl of this CompanyData.  # noqa: E501
         :rtype: int
@@ -89,6 +90,7 @@ class CompanyData(object):
     def bscl(self, bscl):
         """Sets the bscl of this CompanyData.
 
+        Business class. 0 = ILEC, 1 = CLEC.  # noqa: E501
 
         :param bscl: The bscl of this CompanyData.  # noqa: E501
         :type: int
@@ -100,6 +102,7 @@ class CompanyData(object):
     def svcl(self):
         """Gets the svcl of this CompanyData.  # noqa: E501
 
+        Service class. 0 = Primary Local, 1 = Primary Long Distance.  # noqa: E501
 
         :return: The svcl of this CompanyData.  # noqa: E501
         :rtype: int
@@ -110,6 +113,7 @@ class CompanyData(object):
     def svcl(self, svcl):
         """Sets the svcl of this CompanyData.
 
+        Service class. 0 = Primary Local, 1 = Primary Long Distance.  # noqa: E501
 
         :param svcl: The svcl of this CompanyData.  # noqa: E501
         :type: int
@@ -121,6 +125,7 @@ class CompanyData(object):
     def fclt(self):
         """Gets the fclt of this CompanyData.  # noqa: E501
 
+        Specifies if the carrier delivering the service has company owned facilities to provide the service.  # noqa: E501
 
         :return: The fclt of this CompanyData.  # noqa: E501
         :rtype: bool
@@ -131,6 +136,7 @@ class CompanyData(object):
     def fclt(self, fclt):
         """Sets the fclt of this CompanyData.
 
+        Specifies if the carrier delivering the service has company owned facilities to provide the service.  # noqa: E501
 
         :param fclt: The fclt of this CompanyData.  # noqa: E501
         :type: bool
@@ -142,6 +148,7 @@ class CompanyData(object):
     def frch(self):
         """Gets the frch of this CompanyData.  # noqa: E501
 
+        Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.  # noqa: E501
 
         :return: The frch of this CompanyData.  # noqa: E501
         :rtype: bool
@@ -152,6 +159,7 @@ class CompanyData(object):
     def frch(self, frch):
         """Sets the frch of this CompanyData.
 
+        Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.  # noqa: E501
 
         :param frch: The frch of this CompanyData.  # noqa: E501
         :type: bool
@@ -163,6 +171,7 @@ class CompanyData(object):
     def reg(self):
         """Gets the reg of this CompanyData.  # noqa: E501
 
+        Indicates if company is regulated.  # noqa: E501
 
         :return: The reg of this CompanyData.  # noqa: E501
         :rtype: bool
@@ -173,6 +182,7 @@ class CompanyData(object):
     def reg(self, reg):
         """Sets the reg of this CompanyData.
 
+        Indicates if company is regulated.  # noqa: E501
 
         :param reg: The reg of this CompanyData.  # noqa: E501
         :type: bool
@@ -184,6 +194,7 @@ class CompanyData(object):
     def excl(self):
         """Gets the excl of this CompanyData.  # noqa: E501
 
+        Exclusion list.  # noqa: E501
 
         :return: The excl of this CompanyData.  # noqa: E501
         :rtype: list[Exclusion]
@@ -194,6 +205,7 @@ class CompanyData(object):
     def excl(self, excl):
         """Sets the excl of this CompanyData.
 
+        Exclusion list.  # noqa: E501
 
         :param excl: The excl of this CompanyData.  # noqa: E501
         :type: list[Exclusion]
@@ -205,6 +217,7 @@ class CompanyData(object):
     def idnt(self):
         """Gets the idnt of this CompanyData.  # noqa: E501
 
+        An optional company identifier for reporting  # noqa: E501
 
         :return: The idnt of this CompanyData.  # noqa: E501
         :rtype: str
@@ -215,6 +228,7 @@ class CompanyData(object):
     def idnt(self, idnt):
         """Sets the idnt of this CompanyData.
 
+        An optional company identifier for reporting  # noqa: E501
 
         :param idnt: The idnt of this CompanyData.  # noqa: E501
         :type: str

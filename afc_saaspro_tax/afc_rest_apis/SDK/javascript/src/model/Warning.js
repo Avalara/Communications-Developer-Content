@@ -68,6 +68,7 @@ class Warning {
 Warning.prototype['code'] = undefined;
 
 /**
+ * Warning message.
  * @member {String} msg
  */
 Warning.prototype['msg'] = undefined;

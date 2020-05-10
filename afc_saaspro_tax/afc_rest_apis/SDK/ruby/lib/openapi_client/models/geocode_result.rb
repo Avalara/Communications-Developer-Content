@@ -15,32 +15,45 @@ require 'date'
 module OpenapiClient
   # Results for geocoding request.
   class GeocodeResult
+    # Reference Id from geocode request input.
     attr_accessor :ref
 
     attr_accessor :cass
 
+    # Census block.
     attr_accessor :c_blk
 
+    # Census tract.
     attr_accessor :c_trc
 
+    # County
     attr_accessor :cnty
 
+    # Feature ID.
     attr_accessor :feat
 
+    # FIPS Code.
     attr_accessor :fips
 
+    # Indicates if address is within city limits.
     attr_accessor :inc
 
+    # Tax jurisdiction name.
     attr_accessor :jur
 
+    # Latitude.
     attr_accessor :lat
 
+    # Longitude.
     attr_accessor :long
 
+    # PCode for tax jurisdiction.
     attr_accessor :pcd
 
+    # Score indicating accuracy of address match in mapping database.
     attr_accessor :scr
 
+    # Error message.
     attr_accessor :err
 
     # Attribute mapping from ruby-style variable name to JSON key.
@@ -87,7 +100,6 @@ module OpenapiClient
     def self.openapi_nullable
       Set.new([
         :'ref',
-        :'cass',
         :'c_blk',
         :'c_trc',
         :'cnty',

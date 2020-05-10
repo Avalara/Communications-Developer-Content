@@ -248,7 +248,7 @@ class ReportingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets acct
      *
-     * @param string|null $acct acct
+     * @param string|null $acct Account id
      *
      * @return $this
      */
@@ -272,7 +272,7 @@ class ReportingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets custref
      *
-     * @param string|null $custref custref
+     * @param string|null $custref Customer reference
      *
      * @return $this
      */
@@ -296,7 +296,7 @@ class ReportingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets invn
      *
-     * @param string|null $invn invn
+     * @param string|null $invn Invoice Number reference
      *
      * @return $this
      */
@@ -320,7 +320,7 @@ class ReportingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets bcyc
      *
-     * @param string|null $bcyc bcyc
+     * @param string|null $bcyc Bill Cycle reference
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class ReportingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets ccycd
      *
-     * @param string|null $ccycd ccycd
+     * @param string|null $ccycd Currency code for invoice
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class ReportingInformation implements ModelInterface, ArrayAccess
     /**
      * Sets ccydesc
      *
-     * @param string|null $ccydesc ccydesc
+     * @param string|null $ccydesc Currency description
      *
      * @return $this
      */

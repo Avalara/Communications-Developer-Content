@@ -4,10 +4,10 @@ Address information.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Addr** | **string** |  | [optional] 
+**Addr** | **string** | Street address. | [optional] 
 **City** | **string** | City name. | [optional] 
-**St** | **string** |  | [optional] 
-**Zip** | **string** |  | [optional] 
+**St** | **string** | State name or abbreviation. | [optional] 
+**Zip** | **string** | Postal code. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

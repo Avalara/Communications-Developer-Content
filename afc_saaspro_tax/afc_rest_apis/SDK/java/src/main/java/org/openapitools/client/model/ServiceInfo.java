@@ -30,7 +30,7 @@ import org.threeten.bp.OffsetDateTime;
  * Response body for service info API.
  */
 @ApiModel(description = "Response body for service info API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class ServiceInfo {
   public static final String SERIALIZED_NAME_SERVER_TIME = "ServerTime";
   @SerializedName(SERIALIZED_NAME_SERVER_TIME)
@@ -38,7 +38,7 @@ public class ServiceInfo {
 
   public static final String SERIALIZED_NAME_VERSIONS = "Versions";
   @SerializedName(SERIALIZED_NAME_VERSIONS)
-  private VersionInfo versions = null;
+  private VersionInfo versions;
 
   public static final String SERIALIZED_NAME_ERROR = "Error";
   @SerializedName(SERIALIZED_NAME_ERROR)
@@ -75,11 +75,11 @@ public class ServiceInfo {
   }
 
    /**
-   * Version information.
+   * Get versions
    * @return versions
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Version information.")
+  @ApiModelProperty(value = "")
 
   public VersionInfo getVersions() {
     return versions;

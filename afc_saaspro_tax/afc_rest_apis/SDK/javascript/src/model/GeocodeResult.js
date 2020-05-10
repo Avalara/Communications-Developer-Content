@@ -53,7 +53,7 @@ class GeocodeResult {
                 obj['ref'] = ApiClient.convertToType(data['ref'], 'String');
             }
             if (data.hasOwnProperty('cass')) {
-                obj['cass'] = ApiClient.convertToType(data['cass'], Address);
+                obj['cass'] = Address.constructFromObject(data['cass']);
             }
             if (data.hasOwnProperty('cBlk')) {
                 obj['cBlk'] = ApiClient.convertToType(data['cBlk'], 'Number');
@@ -99,6 +99,7 @@ class GeocodeResult {
 }
 
 /**
+ * Reference Id from geocode request input.
  * @member {String} ref
  */
 GeocodeResult.prototype['ref'] = undefined;
@@ -109,61 +110,73 @@ GeocodeResult.prototype['ref'] = undefined;
 GeocodeResult.prototype['cass'] = undefined;
 
 /**
+ * Census block.
  * @member {Number} cBlk
  */
 GeocodeResult.prototype['cBlk'] = undefined;
 
 /**
+ * Census tract.
  * @member {Number} cTrc
  */
 GeocodeResult.prototype['cTrc'] = undefined;
 
 /**
+ * County
  * @member {String} cnty
  */
 GeocodeResult.prototype['cnty'] = undefined;
 
 /**
+ * Feature ID.
  * @member {Number} feat
  */
 GeocodeResult.prototype['feat'] = undefined;
 
 /**
+ * FIPS Code.
  * @member {String} fips
  */
 GeocodeResult.prototype['fips'] = undefined;
 
 /**
+ * Indicates if address is within city limits.
  * @member {Boolean} inc
  */
 GeocodeResult.prototype['inc'] = undefined;
 
 /**
+ * Tax jurisdiction name.
  * @member {String} jur
  */
 GeocodeResult.prototype['jur'] = undefined;
 
 /**
+ * Latitude.
  * @member {Number} lat
  */
 GeocodeResult.prototype['lat'] = undefined;
 
 /**
+ * Longitude.
  * @member {Number} long
  */
 GeocodeResult.prototype['long'] = undefined;
 
 /**
+ * PCode for tax jurisdiction.
  * @member {Number} pcd
  */
 GeocodeResult.prototype['pcd'] = undefined;
 
 /**
+ * Score indicating accuracy of address match in mapping database.
  * @member {Number} scr
  */
 GeocodeResult.prototype['scr'] = undefined;
 
 /**
+ * Error message.
  * @member {String} err
  */
 GeocodeResult.prototype['err'] = undefined;

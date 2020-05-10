@@ -122,31 +122,37 @@ class Tax {
 }
 
 /**
+ * Indicates if tax is billable to customer.
  * @member {Boolean} bill
  */
 Tax.prototype['bill'] = undefined;
 
 /**
+ * Indicates if the tax is to be reported to jurisdiction.
  * @member {Boolean} cmpl
  */
 Tax.prototype['cmpl'] = undefined;
 
 /**
+ * Taxable measure.
  * @member {Number} tm
  */
 Tax.prototype['tm'] = undefined;
 
 /**
+ * Calculation type.
  * @member {Number} calc
  */
 Tax.prototype['calc'] = undefined;
 
 /**
+ * Tax category name.
  * @member {String} cat
  */
 Tax.prototype['cat'] = undefined;
 
 /**
+ * Tax category ID.
  * @member {Number} cid
  */
 Tax.prototype['cid'] = undefined;
@@ -158,26 +164,31 @@ Tax.prototype['cid'] = undefined;
 Tax.prototype['name'] = undefined;
 
 /**
+ * Exempt sale amount.
  * @member {Number} exm
  */
 Tax.prototype['exm'] = undefined;
 
 /**
+ * Lines.
  * @member {Number} lns
  */
 Tax.prototype['lns'] = undefined;
 
 /**
+ * Minutes.
  * @member {Number} min
  */
 Tax.prototype['min'] = undefined;
 
 /**
+ * PCode for reporting jurisdiction.
  * @member {Number} pcd
  */
 Tax.prototype['pcd'] = undefined;
 
 /**
+ * PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true
  * @member {Number} taxpcd
  */
 Tax.prototype['taxpcd'] = undefined;
@@ -189,46 +200,55 @@ Tax.prototype['taxpcd'] = undefined;
 Tax.prototype['rate'] = undefined;
 
 /**
+ * Indicates if this tax is a surcharge.
  * @member {Boolean} sur
  */
 Tax.prototype['sur'] = undefined;
 
 /**
+ * Tax amount.
  * @member {Number} tax
  */
 Tax.prototype['tax'] = undefined;
 
 /**
+ * Tax level ID.
  * @member {Number} lvl
  */
 Tax.prototype['lvl'] = undefined;
 
 /**
+ * Tax type ID.
  * @member {Number} tid
  */
 Tax.prototype['tid'] = undefined;
 
 /**
+ * Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true
  * @member {Boolean} usexm
  */
 Tax.prototype['usexm'] = undefined;
 
 /**
+ * Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true
  * @member {Boolean} notax
  */
 Tax.prototype['notax'] = undefined;
 
 /**
+ * Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true
  * @member {Number} trans
  */
 Tax.prototype['trans'] = undefined;
 
 /**
+ * Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true
  * @member {Number} svc
  */
 Tax.prototype['svc'] = undefined;
 
 /**
+ * Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true
  * @member {Number} chg
  */
 Tax.prototype['chg'] = undefined;

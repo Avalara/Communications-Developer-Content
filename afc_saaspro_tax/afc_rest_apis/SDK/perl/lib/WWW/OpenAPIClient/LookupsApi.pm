@@ -256,11 +256,6 @@ sub api_v2_afc_serviceinfo_get {
 sub api_v2_afc_taxtype_tax_type_get {
     my ($self, %args) = @_;
 
-    # verify the required parameter 'tax_type' is set
-    unless (exists $args{'tax_type'}) {
-      croak("Missing the required parameter 'tax_type' when calling api_v2_afc_taxtype_tax_type_get");
-    }
-
     # parse inputs
     my $_resource_path = '/api/v2/afc/taxtype/{taxType}';
 

@@ -66,7 +66,7 @@ class GeoBatchStatus {
                 obj['Status'] = ApiClient.convertToType(data['Status'], 'String');
             }
             if (data.hasOwnProperty('Downloads')) {
-                obj['Downloads'] = ApiClient.convertToType(data['Downloads'], GeoBatchDownloadResponse);
+                obj['Downloads'] = GeoBatchDownloadResponse.constructFromObject(data['Downloads']);
             }
             if (data.hasOwnProperty('Error')) {
                 obj['Error'] = ApiClient.convertToType(data['Error'], [Error]);
@@ -109,7 +109,6 @@ GeoBatchStatus.prototype['ProcessingEnd'] = undefined;
 GeoBatchStatus.prototype['Status'] = undefined;
 
 /**
- * Output File Name.
  * @member {module:model/GeoBatchDownloadResponse} Downloads
  */
 GeoBatchStatus.prototype['Downloads'] = undefined;

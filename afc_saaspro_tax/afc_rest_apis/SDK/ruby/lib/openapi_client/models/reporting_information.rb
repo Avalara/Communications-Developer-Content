@@ -15,16 +15,22 @@ require 'date'
 module OpenapiClient
   # Tax rate override information.
   class ReportingInformation
+    # Account id
     attr_accessor :acct
 
+    # Customer reference
     attr_accessor :custref
 
+    # Invoice Number reference
     attr_accessor :invn
 
+    # Bill Cycle reference
     attr_accessor :bcyc
 
+    # Currency code for invoice
     attr_accessor :ccycd
 
+    # Currency description
     attr_accessor :ccydesc
 
     # Attribute mapping from ruby-style variable name to JSON key.

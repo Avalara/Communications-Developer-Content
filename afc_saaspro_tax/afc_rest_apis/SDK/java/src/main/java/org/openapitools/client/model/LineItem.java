@@ -33,7 +33,7 @@ import org.threeten.bp.OffsetDateTime;
  * Data for an invoice or quote line item.
  */
 @ApiModel(description = "Data for an invoice or quote line item.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class LineItem {
   public static final String SERIALIZED_NAME_REF = "ref";
   @SerializedName(SERIALIZED_NAME_REF)
@@ -41,11 +41,11 @@ public class LineItem {
 
   public static final String SERIALIZED_NAME_FROM = "from";
   @SerializedName(SERIALIZED_NAME_FROM)
-  private Location from = null;
+  private Location from;
 
   public static final String SERIALIZED_NAME_TO = "to";
   @SerializedName(SERIALIZED_NAME_TO)
-  private Location to = null;
+  private Location to;
 
   public static final String SERIALIZED_NAME_CHG = "chg";
   @SerializedName(SERIALIZED_NAME_CHG)
@@ -117,7 +117,7 @@ public class LineItem {
 
   public static final String SERIALIZED_NAME_BILL = "bill";
   @SerializedName(SERIALIZED_NAME_BILL)
-  private Location bill = null;
+  private Location bill;
 
   public static final String SERIALIZED_NAME_CUST = "cust";
   @SerializedName(SERIALIZED_NAME_CUST)
@@ -147,11 +147,11 @@ public class LineItem {
   }
 
    /**
-   * Get ref
+   * Reference ID for line item.
    * @return ref
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Reference ID for line item.")
 
   public String getRef() {
     return ref;
@@ -170,11 +170,11 @@ public class LineItem {
   }
 
    /**
-   * Location for origination point. If null, will default to Invoice&#39;s BillTo location.
+   * Get from
    * @return from
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Location for origination point. If null, will default to Invoice's BillTo location.")
+  @ApiModelProperty(value = "")
 
   public Location getFrom() {
     return from;
@@ -193,11 +193,11 @@ public class LineItem {
   }
 
    /**
-   * Location for destination point. If null, will default to Invoice&#39;s BillTo location.
+   * Get to
    * @return to
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Location for destination point. If null, will default to Invoice's BillTo location.")
+  @ApiModelProperty(value = "")
 
   public Location getTo() {
     return to;
@@ -216,11 +216,11 @@ public class LineItem {
   }
 
    /**
-   * Get chg
+   * Charge amount.  Default: 0.
    * @return chg
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Charge amount.  Default: 0.")
 
   public Double getChg() {
     return chg;
@@ -239,11 +239,11 @@ public class LineItem {
   }
 
    /**
-   * Get line
+   * Number of lines.  Default: 0.
    * @return line
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Number of lines.  Default: 0.")
 
   public Integer getLine() {
     return line;
@@ -262,11 +262,11 @@ public class LineItem {
   }
 
    /**
-   * Get loc
+   * Number of locations.  Default: 0.
    * @return loc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Number of locations.  Default: 0.")
 
   public Integer getLoc() {
     return loc;
@@ -285,11 +285,11 @@ public class LineItem {
   }
 
    /**
-   * Get min
+   * Number of minutes.  Default: 0.
    * @return min
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Number of minutes.  Default: 0.")
 
   public Double getMin() {
     return min;
@@ -308,11 +308,11 @@ public class LineItem {
   }
 
    /**
-   * Get sale
+   * 0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).
    * @return sale
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).")
 
   public Integer getSale() {
     return sale;
@@ -331,11 +331,11 @@ public class LineItem {
   }
 
    /**
-   * Get plsp
+   * Split for private-line transactions.
    * @return plsp
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Split for private-line transactions.")
 
   public Double getPlsp() {
     return plsp;
@@ -354,11 +354,11 @@ public class LineItem {
   }
 
    /**
-   * Get incl
+   * Indicates if the charge for this line item is tax-inclusive.
    * @return incl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if the charge for this line item is tax-inclusive.")
 
   public Boolean getIncl() {
     return incl;
@@ -377,11 +377,11 @@ public class LineItem {
   }
 
    /**
-   * Get pror
+   * For pro-rated tax calculations. Percentage to pro-rate.
    * @return pror
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "For pro-rated tax calculations. Percentage to pro-rate.")
 
   public Double getPror() {
     return pror;
@@ -400,11 +400,11 @@ public class LineItem {
   }
 
    /**
-   * Get proadj
+   * For pro-rated credit or adjustment calculations.  0 &#x3D; default  1 &#x3D; do not return non-proratable fixed taxes in response  2 &#x3D; return non-proratable fixed taxes in response
    * @return proadj
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "For pro-rated credit or adjustment calculations.  0 = default  1 = do not return non-proratable fixed taxes in response  2 = return non-proratable fixed taxes in response")
 
   public Integer getProadj() {
     return proadj;
@@ -423,11 +423,11 @@ public class LineItem {
   }
 
    /**
-   * Get tran
+   * Transaction type ID.
    * @return tran
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Transaction type ID.")
 
   public Integer getTran() {
     return tran;
@@ -446,11 +446,11 @@ public class LineItem {
   }
 
    /**
-   * Get serv
+   * Service type ID.
    * @return serv
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Service type ID.")
 
   public Integer getServ() {
     return serv;
@@ -469,11 +469,11 @@ public class LineItem {
   }
 
    /**
-   * Get dbt
+   * Indicates if this line item is a debit card transaction.  Default: false.
    * @return dbt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if this line item is a debit card transaction.  Default: false.")
 
   public Boolean getDbt() {
     return dbt;
@@ -492,11 +492,11 @@ public class LineItem {
   }
 
    /**
-   * Get adj
+   * Indicates if this line item is an adjustment.  Default: false.
    * @return adj
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if this line item is an adjustment.  Default: false.")
 
   public Boolean getAdj() {
     return adj;
@@ -515,11 +515,11 @@ public class LineItem {
   }
 
    /**
-   * Get adjm
+   * Adjustment method.
    * @return adjm
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Adjustment method.")
 
   public Integer getAdjm() {
     return adjm;
@@ -538,11 +538,11 @@ public class LineItem {
   }
 
    /**
-   * Get disc
+   * Discount type for adjustments.
    * @return disc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Discount type for adjustments.")
 
   public Integer getDisc() {
     return disc;
@@ -569,11 +569,11 @@ public class LineItem {
   }
 
    /**
-   * Get opt
+   * Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.
    * @return opt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.")
 
   public List<KeyValuePair> getOpt() {
     return opt;
@@ -592,11 +592,11 @@ public class LineItem {
   }
 
    /**
-   * Get prop
+   * Attribute/property value for sales and use transaction/service pairs.
    * @return prop
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Attribute/property value for sales and use transaction/service pairs.")
 
   public Integer getProp() {
     return prop;
@@ -638,11 +638,11 @@ public class LineItem {
   }
 
    /**
-   * Get cust
+   * Customer type.
    * @return cust
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Customer type.")
 
   public Integer getCust() {
     return cust;
@@ -661,11 +661,11 @@ public class LineItem {
   }
 
    /**
-   * Get lfln
+   * Indicates if customer is a Lifeline participant.  Default: false.
    * @return lfln
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if customer is a Lifeline participant.  Default: false.")
 
   public Boolean getLfln() {
     return lfln;
@@ -707,11 +707,11 @@ public class LineItem {
   }
 
    /**
-   * Get qty
+   * Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity
    * @return qty
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity")
 
   public Integer getQty() {
     return qty;
@@ -730,11 +730,11 @@ public class LineItem {
   }
 
    /**
-   * Get glref
+   * General Ledger reference to be used in reporting
    * @return glref
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "General Ledger reference to be used in reporting")
 
   public String getGlref() {
     return glref;

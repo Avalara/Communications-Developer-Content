@@ -33,10 +33,10 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="InvoiceResult" /> class.
         /// </summary>
-        /// <param name="doc">doc.</param>
-        /// <param name="itms">itms.</param>
-        /// <param name="summ">summ.</param>
-        /// <param name="err">err.</param>
+        /// <param name="doc">Document number for invoice..</param>
+        /// <param name="itms">Individual tax calculation results for each line item..</param>
+        /// <param name="summ">Summarized taxes for invoice..</param>
+        /// <param name="err">Error description (as applicable)..</param>
         /// <param name="incrf">incrf.</param>
         public InvoiceResult(string doc = default(string), List<LineItemResult> itms = default(List<LineItemResult>), List<SummarizedTax> summ = default(List<SummarizedTax>), List<Error> err = default(List<Error>), ReportingInformation incrf = default(ReportingInformation))
         {
@@ -44,7 +44,6 @@ namespace avalara.comms.rest.v2.Model
             this.Itms = itms;
             this.Summ = summ;
             this.Err = err;
-            this.Incrf = incrf;
             this.Doc = doc;
             this.Itms = itms;
             this.Summ = summ;
@@ -53,33 +52,37 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Doc
+        /// Document number for invoice.
         /// </summary>
+        /// <value>Document number for invoice.</value>
         [DataMember(Name="doc", EmitDefaultValue=true)]
         public string Doc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Itms
+        /// Individual tax calculation results for each line item.
         /// </summary>
+        /// <value>Individual tax calculation results for each line item.</value>
         [DataMember(Name="itms", EmitDefaultValue=true)]
         public List<LineItemResult> Itms { get; set; }
 
         /// <summary>
-        /// Gets or Sets Summ
+        /// Summarized taxes for invoice.
         /// </summary>
+        /// <value>Summarized taxes for invoice.</value>
         [DataMember(Name="summ", EmitDefaultValue=true)]
         public List<SummarizedTax> Summ { get; set; }
 
         /// <summary>
-        /// Gets or Sets Err
+        /// Error description (as applicable).
         /// </summary>
+        /// <value>Error description (as applicable).</value>
         [DataMember(Name="err", EmitDefaultValue=true)]
         public List<Error> Err { get; set; }
 
         /// <summary>
         /// Gets or Sets Incrf
         /// </summary>
-        [DataMember(Name="incrf", EmitDefaultValue=true)]
+        [DataMember(Name="incrf", EmitDefaultValue=false)]
         public ReportingInformation Incrf { get; set; }
 
         /// <summary>

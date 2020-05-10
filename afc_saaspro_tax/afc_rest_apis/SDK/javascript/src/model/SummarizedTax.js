@@ -119,31 +119,37 @@ class SummarizedTax {
 }
 
 /**
+ * Maximum base for tax bracket.
  * @member {Number} max
  */
 SummarizedTax.prototype['max'] = undefined;
 
 /**
+ * Minimum base for tax bracket.
  * @member {Number} min
  */
 SummarizedTax.prototype['min'] = undefined;
 
 /**
+ * Total charge amount.
  * @member {Number} tchg
  */
 SummarizedTax.prototype['tchg'] = undefined;
 
 /**
+ * Calculation type.
  * @member {Number} calc
  */
 SummarizedTax.prototype['calc'] = undefined;
 
 /**
+ * Tax category name.
  * @member {String} cat
  */
 SummarizedTax.prototype['cat'] = undefined;
 
 /**
+ * Tax category ID.
  * @member {Number} cid
  */
 SummarizedTax.prototype['cid'] = undefined;
@@ -155,21 +161,25 @@ SummarizedTax.prototype['cid'] = undefined;
 SummarizedTax.prototype['name'] = undefined;
 
 /**
+ * Exempt sale amount.
  * @member {Number} exm
  */
 SummarizedTax.prototype['exm'] = undefined;
 
 /**
+ * Lines.
  * @member {Number} lns
  */
 SummarizedTax.prototype['lns'] = undefined;
 
 /**
+ * PCode for reporting jurisdiction.
  * @member {Number} pcd
  */
 SummarizedTax.prototype['pcd'] = undefined;
 
 /**
+ * PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true
  * @member {Number} taxpcd
  */
 SummarizedTax.prototype['taxpcd'] = undefined;
@@ -181,46 +191,55 @@ SummarizedTax.prototype['taxpcd'] = undefined;
 SummarizedTax.prototype['rate'] = undefined;
 
 /**
+ * Indicates if this tax is a surcharge.
  * @member {Boolean} sur
  */
 SummarizedTax.prototype['sur'] = undefined;
 
 /**
+ * Tax amount.
  * @member {Number} tax
  */
 SummarizedTax.prototype['tax'] = undefined;
 
 /**
+ * Tax level ID.
  * @member {Number} lvl
  */
 SummarizedTax.prototype['lvl'] = undefined;
 
 /**
+ * Tax type ID.
  * @member {Number} tid
  */
 SummarizedTax.prototype['tid'] = undefined;
 
 /**
+ * Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true
  * @member {Boolean} usexm
  */
 SummarizedTax.prototype['usexm'] = undefined;
 
 /**
+ * Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true
  * @member {Boolean} notax
  */
 SummarizedTax.prototype['notax'] = undefined;
 
 /**
+ * Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true
  * @member {Number} trans
  */
 SummarizedTax.prototype['trans'] = undefined;
 
 /**
+ * Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true
  * @member {Number} svc
  */
 SummarizedTax.prototype['svc'] = undefined;
 
 /**
+ * Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true
  * @member {Number} chg
  */
 SummarizedTax.prototype['chg'] = undefined;

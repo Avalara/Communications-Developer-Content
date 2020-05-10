@@ -35,13 +35,11 @@ namespace avalara.comms.rest.v2.Model
         /// </summary>
         /// <param name="cfg">cfg.</param>
         /// <param name="cmpn">cmpn.</param>
-        /// <param name="inv">inv.</param>
-        /// <param name="ovr">ovr.</param>
-        /// <param name="sovr">sovr.</param>
+        /// <param name="inv">List of invoices to process..</param>
+        /// <param name="ovr">Tax rate overrides..</param>
+        /// <param name="sovr">Safe harbor overrides for USF taxes..</param>
         public CalcTaxesRequest(RequestConfig cfg = default(RequestConfig), CompanyData cmpn = default(CompanyData), List<Invoice> inv = default(List<Invoice>), List<TaxOverride> ovr = default(List<TaxOverride>), List<SafeHarborOverride> sovr = default(List<SafeHarborOverride>))
         {
-            this.Cfg = cfg;
-            this.Cmpn = cmpn;
             this.Inv = inv;
             this.Ovr = ovr;
             this.Sovr = sovr;
@@ -55,30 +53,33 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Gets or Sets Cfg
         /// </summary>
-        [DataMember(Name="cfg", EmitDefaultValue=true)]
+        [DataMember(Name="cfg", EmitDefaultValue=false)]
         public RequestConfig Cfg { get; set; }
 
         /// <summary>
         /// Gets or Sets Cmpn
         /// </summary>
-        [DataMember(Name="cmpn", EmitDefaultValue=true)]
+        [DataMember(Name="cmpn", EmitDefaultValue=false)]
         public CompanyData Cmpn { get; set; }
 
         /// <summary>
-        /// Gets or Sets Inv
+        /// List of invoices to process.
         /// </summary>
+        /// <value>List of invoices to process.</value>
         [DataMember(Name="inv", EmitDefaultValue=true)]
         public List<Invoice> Inv { get; set; }
 
         /// <summary>
-        /// Gets or Sets Ovr
+        /// Tax rate overrides.
         /// </summary>
+        /// <value>Tax rate overrides.</value>
         [DataMember(Name="ovr", EmitDefaultValue=true)]
         public List<TaxOverride> Ovr { get; set; }
 
         /// <summary>
-        /// Gets or Sets Sovr
+        /// Safe harbor overrides for USF taxes.
         /// </summary>
+        /// <value>Safe harbor overrides for USF taxes.</value>
         [DataMember(Name="sovr", EmitDefaultValue=true)]
         public List<SafeHarborOverride> Sovr { get; set; }
 

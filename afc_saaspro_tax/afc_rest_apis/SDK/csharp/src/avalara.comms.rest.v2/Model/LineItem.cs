@@ -33,37 +33,35 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="LineItem" /> class.
         /// </summary>
-        /// <param name="_ref">_ref.</param>
-        /// <param name="from">Location for origination point. If null, will default to Invoice&#39;s BillTo location..</param>
-        /// <param name="to">Location for destination point. If null, will default to Invoice&#39;s BillTo location..</param>
-        /// <param name="chg">chg.</param>
-        /// <param name="line">line.</param>
-        /// <param name="loc">loc.</param>
-        /// <param name="min">min.</param>
-        /// <param name="sale">sale.</param>
-        /// <param name="plsp">plsp.</param>
-        /// <param name="incl">incl.</param>
-        /// <param name="pror">pror.</param>
-        /// <param name="proadj">proadj.</param>
-        /// <param name="tran">tran.</param>
-        /// <param name="serv">serv.</param>
-        /// <param name="dbt">dbt.</param>
-        /// <param name="adj">adj.</param>
-        /// <param name="adjm">adjm.</param>
-        /// <param name="disc">disc.</param>
-        /// <param name="opt">opt.</param>
-        /// <param name="prop">prop.</param>
+        /// <param name="_ref">Reference ID for line item..</param>
+        /// <param name="from">from.</param>
+        /// <param name="to">to.</param>
+        /// <param name="chg">Charge amount.  Default: 0..</param>
+        /// <param name="line">Number of lines.  Default: 0..</param>
+        /// <param name="loc">Number of locations.  Default: 0..</param>
+        /// <param name="min">Number of minutes.  Default: 0..</param>
+        /// <param name="sale">0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only)..</param>
+        /// <param name="plsp">Split for private-line transactions..</param>
+        /// <param name="incl">Indicates if the charge for this line item is tax-inclusive..</param>
+        /// <param name="pror">For pro-rated tax calculations. Percentage to pro-rate..</param>
+        /// <param name="proadj">For pro-rated credit or adjustment calculations.  0 &#x3D; default  1 &#x3D; do not return non-proratable fixed taxes in response  2 &#x3D; return non-proratable fixed taxes in response.</param>
+        /// <param name="tran">Transaction type ID..</param>
+        /// <param name="serv">Service type ID..</param>
+        /// <param name="dbt">Indicates if this line item is a debit card transaction.  Default: false..</param>
+        /// <param name="adj">Indicates if this line item is an adjustment.  Default: false..</param>
+        /// <param name="adjm">Adjustment method..</param>
+        /// <param name="disc">Discount type for adjustments..</param>
+        /// <param name="opt">Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10..</param>
+        /// <param name="prop">Attribute/property value for sales and use transaction/service pairs..</param>
         /// <param name="bill">bill.</param>
-        /// <param name="cust">cust.</param>
-        /// <param name="lfln">lfln.</param>
+        /// <param name="cust">Customer type..</param>
+        /// <param name="lfln">Indicates if customer is a Lifeline participant.  Default: false..</param>
         /// <param name="date">Invoice date..</param>
-        /// <param name="qty">qty.</param>
-        /// <param name="glref">glref.</param>
+        /// <param name="qty">Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity.</param>
+        /// <param name="glref">General Ledger reference to be used in reporting.</param>
         public LineItem(string _ref = default(string), Location from = default(Location), Location to = default(Location), double? chg = default(double?), int? line = default(int?), int? loc = default(int?), double? min = default(double?), int? sale = default(int?), double? plsp = default(double?), bool? incl = default(bool?), double? pror = default(double?), int proadj = default(int), int? tran = default(int?), int? serv = default(int?), bool? dbt = default(bool?), bool? adj = default(bool?), int? adjm = default(int?), int? disc = default(int?), List<KeyValuePair> opt = default(List<KeyValuePair>), int? prop = default(int?), Location bill = default(Location), int? cust = default(int?), bool? lfln = default(bool?), DateTime? date = default(DateTime?), int? qty = default(int?), string glref = default(string))
         {
             this.Ref = _ref;
-            this.From = from;
-            this.To = to;
             this.Chg = chg;
             this.Line = line;
             this.Loc = loc;
@@ -80,7 +78,6 @@ namespace avalara.comms.rest.v2.Model
             this.Disc = disc;
             this.Opt = opt;
             this.Prop = prop;
-            this.Bill = bill;
             this.Cust = cust;
             this.Lfln = lfln;
             this.Date = date;
@@ -115,142 +112,160 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Ref
+        /// Reference ID for line item.
         /// </summary>
+        /// <value>Reference ID for line item.</value>
         [DataMember(Name="ref", EmitDefaultValue=true)]
         public string Ref { get; set; }
 
         /// <summary>
-        /// Location for origination point. If null, will default to Invoice&#39;s BillTo location.
+        /// Gets or Sets From
         /// </summary>
-        /// <value>Location for origination point. If null, will default to Invoice&#39;s BillTo location.</value>
-        [DataMember(Name="from", EmitDefaultValue=true)]
+        [DataMember(Name="from", EmitDefaultValue=false)]
         public Location From { get; set; }
 
         /// <summary>
-        /// Location for destination point. If null, will default to Invoice&#39;s BillTo location.
+        /// Gets or Sets To
         /// </summary>
-        /// <value>Location for destination point. If null, will default to Invoice&#39;s BillTo location.</value>
-        [DataMember(Name="to", EmitDefaultValue=true)]
+        [DataMember(Name="to", EmitDefaultValue=false)]
         public Location To { get; set; }
 
         /// <summary>
-        /// Gets or Sets Chg
+        /// Charge amount.  Default: 0.
         /// </summary>
+        /// <value>Charge amount.  Default: 0.</value>
         [DataMember(Name="chg", EmitDefaultValue=true)]
         public double? Chg { get; set; }
 
         /// <summary>
-        /// Gets or Sets Line
+        /// Number of lines.  Default: 0.
         /// </summary>
+        /// <value>Number of lines.  Default: 0.</value>
         [DataMember(Name="line", EmitDefaultValue=true)]
         public int? Line { get; set; }
 
         /// <summary>
-        /// Gets or Sets Loc
+        /// Number of locations.  Default: 0.
         /// </summary>
+        /// <value>Number of locations.  Default: 0.</value>
         [DataMember(Name="loc", EmitDefaultValue=true)]
         public int? Loc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Min
+        /// Number of minutes.  Default: 0.
         /// </summary>
+        /// <value>Number of minutes.  Default: 0.</value>
         [DataMember(Name="min", EmitDefaultValue=true)]
         public double? Min { get; set; }
 
         /// <summary>
-        /// Gets or Sets Sale
+        /// 0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).
         /// </summary>
+        /// <value>0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).</value>
         [DataMember(Name="sale", EmitDefaultValue=true)]
         public int? Sale { get; set; }
 
         /// <summary>
-        /// Gets or Sets Plsp
+        /// Split for private-line transactions.
         /// </summary>
+        /// <value>Split for private-line transactions.</value>
         [DataMember(Name="plsp", EmitDefaultValue=true)]
         public double? Plsp { get; set; }
 
         /// <summary>
-        /// Gets or Sets Incl
+        /// Indicates if the charge for this line item is tax-inclusive.
         /// </summary>
+        /// <value>Indicates if the charge for this line item is tax-inclusive.</value>
         [DataMember(Name="incl", EmitDefaultValue=true)]
         public bool? Incl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Pror
+        /// For pro-rated tax calculations. Percentage to pro-rate.
         /// </summary>
+        /// <value>For pro-rated tax calculations. Percentage to pro-rate.</value>
         [DataMember(Name="pror", EmitDefaultValue=true)]
         public double? Pror { get; set; }
 
         /// <summary>
-        /// Gets or Sets Proadj
+        /// For pro-rated credit or adjustment calculations.  0 &#x3D; default  1 &#x3D; do not return non-proratable fixed taxes in response  2 &#x3D; return non-proratable fixed taxes in response
         /// </summary>
+        /// <value>For pro-rated credit or adjustment calculations.  0 &#x3D; default  1 &#x3D; do not return non-proratable fixed taxes in response  2 &#x3D; return non-proratable fixed taxes in response</value>
         [DataMember(Name="proadj", EmitDefaultValue=false)]
         public int Proadj { get; set; }
 
         /// <summary>
-        /// Gets or Sets Tran
+        /// Transaction type ID.
         /// </summary>
+        /// <value>Transaction type ID.</value>
         [DataMember(Name="tran", EmitDefaultValue=true)]
         public int? Tran { get; set; }
 
         /// <summary>
-        /// Gets or Sets Serv
+        /// Service type ID.
         /// </summary>
+        /// <value>Service type ID.</value>
         [DataMember(Name="serv", EmitDefaultValue=true)]
         public int? Serv { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dbt
+        /// Indicates if this line item is a debit card transaction.  Default: false.
         /// </summary>
+        /// <value>Indicates if this line item is a debit card transaction.  Default: false.</value>
         [DataMember(Name="dbt", EmitDefaultValue=true)]
         public bool? Dbt { get; set; }
 
         /// <summary>
-        /// Gets or Sets Adj
+        /// Indicates if this line item is an adjustment.  Default: false.
         /// </summary>
+        /// <value>Indicates if this line item is an adjustment.  Default: false.</value>
         [DataMember(Name="adj", EmitDefaultValue=true)]
         public bool? Adj { get; set; }
 
         /// <summary>
-        /// Gets or Sets Adjm
+        /// Adjustment method.
         /// </summary>
+        /// <value>Adjustment method.</value>
         [DataMember(Name="adjm", EmitDefaultValue=true)]
         public int? Adjm { get; set; }
 
         /// <summary>
-        /// Gets or Sets Disc
+        /// Discount type for adjustments.
         /// </summary>
+        /// <value>Discount type for adjustments.</value>
         [DataMember(Name="disc", EmitDefaultValue=true)]
         public int? Disc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Opt
+        /// Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.
         /// </summary>
+        /// <value>Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.</value>
         [DataMember(Name="opt", EmitDefaultValue=true)]
         public List<KeyValuePair> Opt { get; set; }
 
         /// <summary>
-        /// Gets or Sets Prop
+        /// Attribute/property value for sales and use transaction/service pairs.
         /// </summary>
+        /// <value>Attribute/property value for sales and use transaction/service pairs.</value>
         [DataMember(Name="prop", EmitDefaultValue=true)]
         public int? Prop { get; set; }
 
         /// <summary>
         /// Gets or Sets Bill
         /// </summary>
-        [DataMember(Name="bill", EmitDefaultValue=true)]
+        [DataMember(Name="bill", EmitDefaultValue=false)]
         public Location Bill { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cust
+        /// Customer type.
         /// </summary>
+        /// <value>Customer type.</value>
         [DataMember(Name="cust", EmitDefaultValue=true)]
         public int? Cust { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lfln
+        /// Indicates if customer is a Lifeline participant.  Default: false.
         /// </summary>
+        /// <value>Indicates if customer is a Lifeline participant.  Default: false.</value>
         [DataMember(Name="lfln", EmitDefaultValue=true)]
         public bool? Lfln { get; set; }
 
@@ -262,14 +277,16 @@ namespace avalara.comms.rest.v2.Model
         public DateTime? Date { get; set; }
 
         /// <summary>
-        /// Gets or Sets Qty
+        /// Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity
         /// </summary>
+        /// <value>Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity</value>
         [DataMember(Name="qty", EmitDefaultValue=true)]
         public int? Qty { get; set; }
 
         /// <summary>
-        /// Gets or Sets Glref
+        /// General Ledger reference to be used in reporting
         /// </summary>
+        /// <value>General Ledger reference to be used in reporting</value>
         [DataMember(Name="glref", EmitDefaultValue=true)]
         public string Glref { get; set; }
 

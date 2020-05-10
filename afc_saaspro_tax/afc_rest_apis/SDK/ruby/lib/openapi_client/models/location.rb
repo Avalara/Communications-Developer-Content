@@ -15,27 +15,37 @@ require 'date'
 module OpenapiClient
   # Location data used to determine taxing jurisdiction.
   class Location
+    # County name.
     attr_accessor :cnty
 
+    # Country ISO code.
     attr_accessor :ctry
 
+    # Indicates if the location is within city limits.  Default: true.
     attr_accessor :int
 
+    # Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.
     attr_accessor :geo
 
+    # PCode for taxing jurisdiction.
     attr_accessor :pcd
 
+    # NPANXX number.
     attr_accessor :npa
 
+    # FIPS code for taxing jurisdiction.
     attr_accessor :fips
 
+    # Street address.
     attr_accessor :addr
 
     # City name.
     attr_accessor :city
 
+    # State name or abbreviation.
     attr_accessor :st
 
+    # Postal code.
     attr_accessor :zip
 
     # Attribute mapping from ruby-style variable name to JSON key.

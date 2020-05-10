@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**month** | **Integer** |  | [optional] 
-**year** | **Integer** |  | [optional] 
+**month** | **Integer** | Numeric value representing billing period month.  1 &#x3D; January. | [optional] 
+**year** | **Integer** | Numeric 4 digit representation of billing period year. | [optional] 
 
 ## Code Sample
 

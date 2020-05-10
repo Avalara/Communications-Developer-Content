@@ -33,9 +33,9 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Exclusion" /> class.
         /// </summary>
-        /// <param name="ctry">ctry.</param>
-        /// <param name="st">st.</param>
-        /// <param name="excl">excl.</param>
+        /// <param name="ctry">Country ISO code..</param>
+        /// <param name="st">State abbreviation..</param>
+        /// <param name="excl">Indicates if exclusion applies to the specified state..</param>
         public Exclusion(string ctry = default(string), string st = default(string), bool? excl = default(bool?))
         {
             this.Ctry = ctry;
@@ -47,20 +47,23 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Ctry
+        /// Country ISO code.
         /// </summary>
+        /// <value>Country ISO code.</value>
         [DataMember(Name="ctry", EmitDefaultValue=true)]
         public string Ctry { get; set; }
 
         /// <summary>
-        /// Gets or Sets St
+        /// State abbreviation.
         /// </summary>
+        /// <value>State abbreviation.</value>
         [DataMember(Name="st", EmitDefaultValue=true)]
         public string St { get; set; }
 
         /// <summary>
-        /// Gets or Sets Excl
+        /// Indicates if exclusion applies to the specified state.
         /// </summary>
+        /// <value>Indicates if exclusion applies to the specified state.</value>
         [DataMember(Name="excl", EmitDefaultValue=true)]
         public bool? Excl { get; set; }
 

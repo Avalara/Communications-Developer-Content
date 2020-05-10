@@ -18,6 +18,7 @@ module OpenapiClient
     # Status code.
     attr_accessor :code
 
+    # Status message.
     attr_accessor :msg
 
     # Attribute mapping from ruby-style variable name to JSON key.

@@ -8,7 +8,7 @@ Response body for Geo Batch Submit File API.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **log** | [**List&lt;GeoBatchLogItem&gt;**](GeoBatchLogItem.md) | Log of provided Process Id |  [optional]
-**err** | [**List&lt;Error&gt;**](Error.md) |  |  [optional]
+**err** | [**List&lt;Error&gt;**](Error.md) | Error description (as applicable). |  [optional]
 
 
 

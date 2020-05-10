@@ -65,16 +65,19 @@ class Exclusion {
 }
 
 /**
+ * Country ISO code.
  * @member {String} ctry
  */
 Exclusion.prototype['ctry'] = undefined;
 
 /**
+ * State abbreviation.
  * @member {String} st
  */
 Exclusion.prototype['st'] = undefined;
 
 /**
+ * Indicates if exclusion applies to the specified state.
  * @member {Boolean} excl
  */
 Exclusion.prototype['excl'] = undefined;

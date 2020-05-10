@@ -7,8 +7,8 @@ Response body for Commit API.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ok** | **Boolean** |  |  [optional]
-**err** | [**List&lt;Error&gt;**](Error.md) |  |  [optional]
+**ok** | **Boolean** | Indicates if document code&#39;s commit status was updated successfully. |  [optional]
+**err** | [**List&lt;Error&gt;**](Error.md) | Error description (as applicable). |  [optional]
 
 
 

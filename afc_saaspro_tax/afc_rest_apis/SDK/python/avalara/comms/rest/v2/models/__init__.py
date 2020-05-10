@@ -50,7 +50,6 @@ from avalara.comms.rest.v2.models.reporting_information import ReportingInformat
 from avalara.comms.rest.v2.models.request_config import RequestConfig
 from avalara.comms.rest.v2.models.safe_harbor_override import SafeHarborOverride
 from avalara.comms.rest.v2.models.service_info import ServiceInfo
-from avalara.comms.rest.v2.models.set_tax_calculation_setting_request import SetTaxCalculationSettingRequest
 from avalara.comms.rest.v2.models.status import Status
 from avalara.comms.rest.v2.models.summarized_tax import SummarizedTax
 from avalara.comms.rest.v2.models.ts_pair_data import TSPairData

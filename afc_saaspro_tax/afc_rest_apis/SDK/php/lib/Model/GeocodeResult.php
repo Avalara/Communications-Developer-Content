@@ -59,7 +59,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'ref' => 'string',
-        'cass' => 'Address',
+        'cass' => '\OpenAPI\Client\Model\Address',
         'c_blk' => 'int',
         'c_trc' => 'int',
         'cnty' => 'string',
@@ -296,7 +296,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets ref
      *
-     * @param string|null $ref ref
+     * @param string|null $ref Reference Id from geocode request input.
      *
      * @return $this
      */
@@ -310,7 +310,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Gets cass
      *
-     * @return Address|null
+     * @return \OpenAPI\Client\Model\Address|null
      */
     public function getCass()
     {
@@ -320,7 +320,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets cass
      *
-     * @param Address|null $cass cass
+     * @param \OpenAPI\Client\Model\Address|null $cass cass
      *
      * @return $this
      */
@@ -344,7 +344,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets c_blk
      *
-     * @param int|null $c_blk c_blk
+     * @param int|null $c_blk Census block.
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets c_trc
      *
-     * @param int|null $c_trc c_trc
+     * @param int|null $c_trc Census tract.
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets cnty
      *
-     * @param string|null $cnty cnty
+     * @param string|null $cnty County
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets feat
      *
-     * @param int|null $feat feat
+     * @param int|null $feat Feature ID.
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets fips
      *
-     * @param string|null $fips fips
+     * @param string|null $fips FIPS Code.
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets inc
      *
-     * @param bool|null $inc inc
+     * @param bool|null $inc Indicates if address is within city limits.
      *
      * @return $this
      */
@@ -488,7 +488,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets jur
      *
-     * @param string|null $jur jur
+     * @param string|null $jur Tax jurisdiction name.
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets lat
      *
-     * @param double|null $lat lat
+     * @param double|null $lat Latitude.
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets long
      *
-     * @param double|null $long long
+     * @param double|null $long Longitude.
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets pcd
      *
-     * @param int|null $pcd pcd
+     * @param int|null $pcd PCode for tax jurisdiction.
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets scr
      *
-     * @param double|null $scr scr
+     * @param double|null $scr Score indicating accuracy of address match in mapping database.
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class GeocodeResult implements ModelInterface, ArrayAccess
     /**
      * Sets err
      *
-     * @param string|null $err err
+     * @param string|null $err Error message.
      *
      * @return $this
      */

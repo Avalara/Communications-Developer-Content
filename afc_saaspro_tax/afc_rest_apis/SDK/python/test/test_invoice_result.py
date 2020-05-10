@@ -101,7 +101,13 @@ class TestInvoiceResult(unittest.TestCase):
                         code = 56, 
                         msg = '0', )
                     ], 
-                incrf = null
+                incrf = avalara.comms.rest.v2.models.reporting_information.ReportingInformation(
+                    acct = '0', 
+                    custref = '0', 
+                    invn = '0', 
+                    bcyc = '0', 
+                    ccycd = '0', 
+                    ccydesc = '0', )
             )
         else :
             return InvoiceResult(

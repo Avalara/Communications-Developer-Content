@@ -29,7 +29,7 @@ The version of the OpenAPI document: v2
   </ItemGroup>
   <ItemGroup>
       <ProjectReference Include="..\avalara.comms.rest.v2\avalara.comms.rest.v2.csproj">
-          <Project>{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}</Project>
+          <Project>{0F660961-5954-4A77-8F42-D4422CC6EEC3}</Project>
           <Name>avalara.comms.rest.v2</Name>
       </ProjectReference>
   </ItemGroup>

@@ -6,9 +6,9 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **cfg** | [**RequestConfig**](RequestConfig.md) |  | [optional] 
 **cmpn** | [**CompanyData**](CompanyData.md) |  | [optional] 
-**inv** | [**Array&lt;Invoice&gt;**](Invoice.md) |  | [optional] 
-**ovr** | [**Array&lt;TaxOverride&gt;**](TaxOverride.md) |  | [optional] 
-**sovr** | [**Array&lt;SafeHarborOverride&gt;**](SafeHarborOverride.md) |  | [optional] 
+**inv** | [**Array&lt;Invoice&gt;**](Invoice.md) | List of invoices to process. | [optional] 
+**ovr** | [**Array&lt;TaxOverride&gt;**](TaxOverride.md) | Tax rate overrides. | [optional] 
+**sovr** | [**Array&lt;SafeHarborOverride&gt;**](SafeHarborOverride.md) | Safe harbor overrides for USF taxes. | [optional] 
 
 ## Code Sample
 

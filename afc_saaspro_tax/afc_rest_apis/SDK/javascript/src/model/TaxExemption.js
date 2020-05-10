@@ -53,7 +53,7 @@ class TaxExemption {
                 obj['frc'] = ApiClient.convertToType(data['frc'], 'Boolean');
             }
             if (data.hasOwnProperty('loc')) {
-                obj['loc'] = ApiClient.convertToType(data['loc'], Location);
+                obj['loc'] = Location.constructFromObject(data['loc']);
             }
             if (data.hasOwnProperty('tpe')) {
                 obj['tpe'] = ApiClient.convertToType(data['tpe'], 'Number');
@@ -81,6 +81,7 @@ class TaxExemption {
 }
 
 /**
+ * Override level exempt flag on wildcard tax type exemptions.
  * @member {Boolean} frc
  */
 TaxExemption.prototype['frc'] = undefined;
@@ -91,31 +92,37 @@ TaxExemption.prototype['frc'] = undefined;
 TaxExemption.prototype['loc'] = undefined;
 
 /**
+ * Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.
  * @member {Number} tpe
  */
 TaxExemption.prototype['tpe'] = undefined;
 
 /**
+ * Tax level ID.
  * @member {Number} lvl
  */
 TaxExemption.prototype['lvl'] = undefined;
 
 /**
+ * Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.
  * @member {Number} cat
  */
 TaxExemption.prototype['cat'] = undefined;
 
 /**
+ * Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.
  * @member {Number} dom
  */
 TaxExemption.prototype['dom'] = undefined;
 
 /**
+ * Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.
  * @member {Number} scp
  */
 TaxExemption.prototype['scp'] = undefined;
 
 /**
+ * Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.
  * @member {Boolean} exnb
  */
 TaxExemption.prototype['exnb'] = undefined;

@@ -164,7 +164,7 @@ __PACKAGE__->method_documentation({
     'input_file' => {
         datatype => 'string',
         base_name => 'InputFile',
-        description => '',
+        description => 'Input File Name.',
         format => '',
         read_only => '',
             },
@@ -178,7 +178,7 @@ __PACKAGE__->method_documentation({
     'output_file' => {
         datatype => 'string',
         base_name => 'OutputFile',
-        description => '',
+        description => 'Output File Name.',
         format => '',
         read_only => '',
             },

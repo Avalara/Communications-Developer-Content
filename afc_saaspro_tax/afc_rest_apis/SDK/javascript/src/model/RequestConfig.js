@@ -65,16 +65,19 @@ class RequestConfig {
 }
 
 /**
+ * Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value
  * @member {Boolean} retnb
  */
 RequestConfig.prototype['retnb'] = undefined;
 
 /**
+ * Flag indicating extended tax information should be returned.  Reference online documentation for more details
  * @member {Boolean} retext
  */
 RequestConfig.prototype['retext'] = undefined;
 
 /**
+ * Flag indicating reporting information should be returned.  Reference online documentation for more details
  * @member {Boolean} incrf
  */
 RequestConfig.prototype['incrf'] = undefined;

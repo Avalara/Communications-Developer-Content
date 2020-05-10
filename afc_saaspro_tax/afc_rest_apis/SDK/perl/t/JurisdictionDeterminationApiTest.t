@@ -57,8 +57,8 @@ isa_ok($api, 'WWW::OpenAPIClient::JurisdictionDeterminationApi');
 # api_v2_geo_batch_upload_post test
 #
 {
-    my $file = undef; # replace NULL with a proper value
-    my $result = $api->api_v2_geo_batch_upload_post(file => $file);
+    my $geo_batch_file = undef; # replace NULL with a proper value
+    my $result = $api->api_v2_geo_batch_upload_post(geo_batch_file => $geo_batch_file);
 }
 
 #

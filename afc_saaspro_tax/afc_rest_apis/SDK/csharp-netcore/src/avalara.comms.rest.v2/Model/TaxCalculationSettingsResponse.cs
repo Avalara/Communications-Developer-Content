@@ -39,11 +39,11 @@ namespace avalara.comms.rest.v2.Model
         /// <param name="clientId">Client id associated with configuration item.</param>
         /// <param name="lastUpdateBy">User who last updated the configuration item.</param>
         /// <param name="active">Active status of the configuration item.</param>
-        /// <param name="settings">Configuration settings (as applicable).</param>
+        /// <param name="settings">settings.</param>
         /// <param name="exclusions">Exclusions (as applicable).</param>
         /// <param name="bundles">Bundles (as applicable).</param>
         /// <param name="nexus">Nexus (as applicable).</param>
-        /// <param name="overrides">Overrides (as applicable - raw data).</param>
+        /// <param name="overrides">overrides.</param>
         /// <param name="description">Description associated with this item.</param>
         /// <param name="error">Error information..</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override.</param>
@@ -106,10 +106,9 @@ namespace avalara.comms.rest.v2.Model
         public bool? Active { get; set; }
 
         /// <summary>
-        /// Configuration settings (as applicable)
+        /// Gets or Sets Settings
         /// </summary>
-        /// <value>Configuration settings (as applicable)</value>
-        [DataMember(Name="Settings", EmitDefaultValue=true)]
+        [DataMember(Name="Settings", EmitDefaultValue=false)]
         public Configuration Settings { get; set; }
 
         /// <summary>
@@ -134,10 +133,9 @@ namespace avalara.comms.rest.v2.Model
         public List<NexusConfig> Nexus { get; set; }
 
         /// <summary>
-        /// Overrides (as applicable - raw data)
+        /// Gets or Sets Overrides
         /// </summary>
-        /// <value>Overrides (as applicable - raw data)</value>
-        [DataMember(Name="Overrides", EmitDefaultValue=true)]
+        [DataMember(Name="Overrides", EmitDefaultValue=false)]
         public OverrideConfig Overrides { get; set; }
 
         /// <summary>

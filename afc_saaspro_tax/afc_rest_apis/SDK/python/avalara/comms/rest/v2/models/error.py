@@ -83,6 +83,7 @@ class Error(object):
     def msg(self):
         """Gets the msg of this Error.  # noqa: E501
 
+        Error message.  # noqa: E501
 
         :return: The msg of this Error.  # noqa: E501
         :rtype: str
@@ -93,6 +94,7 @@ class Error(object):
     def msg(self, msg):
         """Sets the msg of this Error.
 
+        Error message.  # noqa: E501
 
         :param msg: The msg of this Error.  # noqa: E501
         :type: str

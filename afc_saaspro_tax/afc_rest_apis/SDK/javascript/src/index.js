@@ -49,7 +49,6 @@ import ReportingInformation from './model/ReportingInformation';
 import RequestConfig from './model/RequestConfig';
 import SafeHarborOverride from './model/SafeHarborOverride';
 import ServiceInfo from './model/ServiceInfo';
-import SetTaxCalculationSettingRequest from './model/SetTaxCalculationSettingRequest';
 import Status from './model/Status';
 import SummarizedTax from './model/SummarizedTax';
 import TSPairData from './model/TSPairData';
@@ -323,12 +322,6 @@ export {
      * @property {module:model/ServiceInfo}
      */
     ServiceInfo,
-
-    /**
-     * The SetTaxCalculationSettingRequest model constructor.
-     * @property {module:model/SetTaxCalculationSettingRequest}
-     */
-    SetTaxCalculationSettingRequest,
 
     /**
      * The Status model constructor.

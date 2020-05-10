@@ -65,12 +65,14 @@ class InvoiceResult(object):
         self.itms = itms
         self.summ = summ
         self.err = err
-        self.incrf = incrf
+        if incrf is not None:
+            self.incrf = incrf
 
     @property
     def doc(self):
         """Gets the doc of this InvoiceResult.  # noqa: E501
 
+        Document number for invoice.  # noqa: E501
 
         :return: The doc of this InvoiceResult.  # noqa: E501
         :rtype: str
@@ -81,6 +83,7 @@ class InvoiceResult(object):
     def doc(self, doc):
         """Sets the doc of this InvoiceResult.
 
+        Document number for invoice.  # noqa: E501
 
         :param doc: The doc of this InvoiceResult.  # noqa: E501
         :type: str
@@ -92,6 +95,7 @@ class InvoiceResult(object):
     def itms(self):
         """Gets the itms of this InvoiceResult.  # noqa: E501
 
+        Individual tax calculation results for each line item.  # noqa: E501
 
         :return: The itms of this InvoiceResult.  # noqa: E501
         :rtype: list[LineItemResult]
@@ -102,6 +106,7 @@ class InvoiceResult(object):
     def itms(self, itms):
         """Sets the itms of this InvoiceResult.
 
+        Individual tax calculation results for each line item.  # noqa: E501
 
         :param itms: The itms of this InvoiceResult.  # noqa: E501
         :type: list[LineItemResult]
@@ -113,6 +118,7 @@ class InvoiceResult(object):
     def summ(self):
         """Gets the summ of this InvoiceResult.  # noqa: E501
 
+        Summarized taxes for invoice.  # noqa: E501
 
         :return: The summ of this InvoiceResult.  # noqa: E501
         :rtype: list[SummarizedTax]
@@ -123,6 +129,7 @@ class InvoiceResult(object):
     def summ(self, summ):
         """Sets the summ of this InvoiceResult.
 
+        Summarized taxes for invoice.  # noqa: E501
 
         :param summ: The summ of this InvoiceResult.  # noqa: E501
         :type: list[SummarizedTax]
@@ -134,6 +141,7 @@ class InvoiceResult(object):
     def err(self):
         """Gets the err of this InvoiceResult.  # noqa: E501
 
+        Error description (as applicable).  # noqa: E501
 
         :return: The err of this InvoiceResult.  # noqa: E501
         :rtype: list[Error]
@@ -144,6 +152,7 @@ class InvoiceResult(object):
     def err(self, err):
         """Sets the err of this InvoiceResult.
 
+        Error description (as applicable).  # noqa: E501
 
         :param err: The err of this InvoiceResult.  # noqa: E501
         :type: list[Error]

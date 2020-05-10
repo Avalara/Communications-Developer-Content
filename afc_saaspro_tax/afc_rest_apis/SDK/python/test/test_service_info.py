@@ -37,7 +37,9 @@ class TestServiceInfo(unittest.TestCase):
         if include_optional :
             return ServiceInfo(
                 server_time = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
-                versions = null, 
+                versions = avalara.comms.rest.v2.models.version_info.VersionInfo(
+                    afc_engine_version = '0', 
+                    build_version = '0', ), 
                 error = '0'
             )
         else :

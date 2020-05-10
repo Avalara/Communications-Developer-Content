@@ -34,14 +34,14 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="TaxExemption" /> class.
         /// </summary>
-        /// <param name="frc">frc.</param>
+        /// <param name="frc">Override level exempt flag on wildcard tax type exemptions..</param>
         /// <param name="loc">loc.</param>
-        /// <param name="tpe">tpe.</param>
-        /// <param name="lvl">lvl.</param>
-        /// <param name="cat">cat.</param>
-        /// <param name="dom">dom.</param>
-        /// <param name="scp">scp.</param>
-        /// <param name="exnb">exnb.</param>
+        /// <param name="tpe">Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive..</param>
+        /// <param name="lvl">Tax level ID..</param>
+        /// <param name="cat">Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive..</param>
+        /// <param name="dom">Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction..</param>
+        /// <param name="scp">Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption..</param>
+        /// <param name="exnb">Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption..</param>
         public TaxExemption(bool? frc = default(bool?), Location loc = default(Location), int? tpe = default(int?), int? lvl = default(int?), int? cat = default(int?), int? dom = default(int?), int? scp = default(int?), bool? exnb = default(bool?))
         {
             this.Frc = frc;
@@ -55,50 +55,57 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Frc
+        /// Override level exempt flag on wildcard tax type exemptions.
         /// </summary>
+        /// <value>Override level exempt flag on wildcard tax type exemptions.</value>
         [DataMember(Name="frc", EmitDefaultValue=true)]
         public bool? Frc { get; set; }
 
         /// <summary>
         /// Gets or Sets Loc
         /// </summary>
-        [DataMember(Name="loc", EmitDefaultValue=true)]
+        [DataMember(Name="loc", EmitDefaultValue=false)]
         public Location Loc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Tpe
+        /// Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.
         /// </summary>
+        /// <value>Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.</value>
         [DataMember(Name="tpe", EmitDefaultValue=true)]
         public int? Tpe { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lvl
+        /// Tax level ID.
         /// </summary>
+        /// <value>Tax level ID.</value>
         [DataMember(Name="lvl", EmitDefaultValue=true)]
         public int? Lvl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cat
+        /// Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.
         /// </summary>
+        /// <value>Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.</value>
         [DataMember(Name="cat", EmitDefaultValue=true)]
         public int? Cat { get; set; }
 
         /// <summary>
-        /// Gets or Sets Dom
+        /// Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.
         /// </summary>
+        /// <value>Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.</value>
         [DataMember(Name="dom", EmitDefaultValue=true)]
         public int? Dom { get; set; }
 
         /// <summary>
-        /// Gets or Sets Scp
+        /// Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.
         /// </summary>
+        /// <value>Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.</value>
         [DataMember(Name="scp", EmitDefaultValue=true)]
         public int? Scp { get; set; }
 
         /// <summary>
-        /// Gets or Sets Exnb
+        /// Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.
         /// </summary>
+        /// <value>Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.</value>
         [DataMember(Name="exnb", EmitDefaultValue=true)]
         public bool? Exnb { get; set; }
 

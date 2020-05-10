@@ -54,10 +54,10 @@ class CalcTaxesRequest {
             obj = obj || new CalcTaxesRequest();
 
             if (data.hasOwnProperty('cfg')) {
-                obj['cfg'] = ApiClient.convertToType(data['cfg'], RequestConfig);
+                obj['cfg'] = RequestConfig.constructFromObject(data['cfg']);
             }
             if (data.hasOwnProperty('cmpn')) {
-                obj['cmpn'] = ApiClient.convertToType(data['cmpn'], CompanyData);
+                obj['cmpn'] = CompanyData.constructFromObject(data['cmpn']);
             }
             if (data.hasOwnProperty('inv')) {
                 obj['inv'] = ApiClient.convertToType(data['inv'], [Invoice]);
@@ -86,16 +86,19 @@ CalcTaxesRequest.prototype['cfg'] = undefined;
 CalcTaxesRequest.prototype['cmpn'] = undefined;
 
 /**
+ * List of invoices to process.
  * @member {Array.<module:model/Invoice>} inv
  */
 CalcTaxesRequest.prototype['inv'] = undefined;
 
 /**
+ * Tax rate overrides.
  * @member {Array.<module:model/TaxOverride>} ovr
  */
 CalcTaxesRequest.prototype['ovr'] = undefined;
 
 /**
+ * Safe harbor overrides for USF taxes.
  * @member {Array.<module:model/SafeHarborOverride>} sovr
  */
 CalcTaxesRequest.prototype['sovr'] = undefined;

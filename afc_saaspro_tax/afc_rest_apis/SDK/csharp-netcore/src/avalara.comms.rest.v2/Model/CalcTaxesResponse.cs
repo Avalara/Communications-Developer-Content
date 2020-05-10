@@ -34,8 +34,8 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CalcTaxesResponse" /> class.
         /// </summary>
-        /// <param name="inv">inv.</param>
-        /// <param name="err">err.</param>
+        /// <param name="inv">Tax calculation results for each invoice submitted in request..</param>
+        /// <param name="err">Error description (as applicable)..</param>
         public CalcTaxesResponse(List<InvoiceResult> inv = default(List<InvoiceResult>), List<Error> err = default(List<Error>))
         {
             this.Inv = inv;
@@ -43,14 +43,16 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Inv
+        /// Tax calculation results for each invoice submitted in request.
         /// </summary>
+        /// <value>Tax calculation results for each invoice submitted in request.</value>
         [DataMember(Name="inv", EmitDefaultValue=true)]
         public List<InvoiceResult> Inv { get; set; }
 
         /// <summary>
-        /// Gets or Sets Err
+        /// Error description (as applicable).
         /// </summary>
+        /// <value>Error description (as applicable).</value>
         [DataMember(Name="err", EmitDefaultValue=true)]
         public List<Error> Err { get; set; }
 

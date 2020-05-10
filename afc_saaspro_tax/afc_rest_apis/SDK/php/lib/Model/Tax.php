@@ -344,7 +344,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets bill
      *
-     * @param bool|null $bill bill
+     * @param bool|null $bill Indicates if tax is billable to customer.
      *
      * @return $this
      */
@@ -368,7 +368,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets cmpl
      *
-     * @param bool|null $cmpl cmpl
+     * @param bool|null $cmpl Indicates if the tax is to be reported to jurisdiction.
      *
      * @return $this
      */
@@ -392,7 +392,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets tm
      *
-     * @param double|null $tm tm
+     * @param double|null $tm Taxable measure.
      *
      * @return $this
      */
@@ -416,7 +416,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets calc
      *
-     * @param int|null $calc calc
+     * @param int|null $calc Calculation type.
      *
      * @return $this
      */
@@ -440,7 +440,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets cat
      *
-     * @param string|null $cat cat
+     * @param string|null $cat Tax category name.
      *
      * @return $this
      */
@@ -464,7 +464,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets cid
      *
-     * @param int|null $cid cid
+     * @param int|null $cid Tax category ID.
      *
      * @return $this
      */
@@ -512,7 +512,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets exm
      *
-     * @param double|null $exm exm
+     * @param double|null $exm Exempt sale amount.
      *
      * @return $this
      */
@@ -536,7 +536,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets lns
      *
-     * @param int|null $lns lns
+     * @param int|null $lns Lines.
      *
      * @return $this
      */
@@ -560,7 +560,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets min
      *
-     * @param double|null $min min
+     * @param double|null $min Minutes.
      *
      * @return $this
      */
@@ -584,7 +584,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets pcd
      *
-     * @param int|null $pcd pcd
+     * @param int|null $pcd PCode for reporting jurisdiction.
      *
      * @return $this
      */
@@ -608,7 +608,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets taxpcd
      *
-     * @param int|null $taxpcd taxpcd
+     * @param int|null $taxpcd PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true
      *
      * @return $this
      */
@@ -656,7 +656,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets sur
      *
-     * @param bool|null $sur sur
+     * @param bool|null $sur Indicates if this tax is a surcharge.
      *
      * @return $this
      */
@@ -680,7 +680,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets tax
      *
-     * @param double|null $tax tax
+     * @param double|null $tax Tax amount.
      *
      * @return $this
      */
@@ -704,7 +704,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets lvl
      *
-     * @param int|null $lvl lvl
+     * @param int|null $lvl Tax level ID.
      *
      * @return $this
      */
@@ -728,7 +728,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets tid
      *
-     * @param int|null $tid tid
+     * @param int|null $tid Tax type ID.
      *
      * @return $this
      */
@@ -752,7 +752,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets usexm
      *
-     * @param bool|null $usexm usexm
+     * @param bool|null $usexm Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true
      *
      * @return $this
      */
@@ -776,7 +776,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets notax
      *
-     * @param bool|null $notax notax
+     * @param bool|null $notax Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true
      *
      * @return $this
      */
@@ -800,7 +800,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets trans
      *
-     * @param int|null $trans trans
+     * @param int|null $trans Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true
      *
      * @return $this
      */
@@ -824,7 +824,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets svc
      *
-     * @param int|null $svc svc
+     * @param int|null $svc Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true
      *
      * @return $this
      */
@@ -848,7 +848,7 @@ class Tax implements ModelInterface, ArrayAccess
     /**
      * Sets chg
      *
-     * @param double|null $chg chg
+     * @param double|null $chg Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true
      *
      * @return $this
      */

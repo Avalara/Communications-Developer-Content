@@ -28,7 +28,7 @@ import java.io.IOException;
  * Response body for Geo Batch Submit File API.
  */
 @ApiModel(description = "Response body for Geo Batch Submit File API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class GeoBatchDownloadResponse {
   public static final String SERIALIZED_NAME_INPUT_FILE = "InputFile";
   @SerializedName(SERIALIZED_NAME_INPUT_FILE)
@@ -54,11 +54,11 @@ public class GeoBatchDownloadResponse {
   }
 
    /**
-   * Get inputFile
+   * Input File Name.
    * @return inputFile
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Input File Name.")
 
   public String getInputFile() {
     return inputFile;
@@ -100,11 +100,11 @@ public class GeoBatchDownloadResponse {
   }
 
    /**
-   * Get outputFile
+   * Output File Name.
    * @return outputFile
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Output File Name.")
 
   public String getOutputFile() {
     return outputFile;

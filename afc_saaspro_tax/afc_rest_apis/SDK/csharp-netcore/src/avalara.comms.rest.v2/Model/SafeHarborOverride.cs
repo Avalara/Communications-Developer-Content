@@ -34,9 +34,9 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="SafeHarborOverride" /> class.
         /// </summary>
-        /// <param name="sh">sh.</param>
-        /// <param name="old">old.</param>
-        /// <param name="_new">_new.</param>
+        /// <param name="sh">Safe harbor type (1 &#x3D; Cellular, 2 &#x3D; VoIp, 4 &#x3D; Paging)..</param>
+        /// <param name="old">Original Federal TAM value to override..</param>
+        /// <param name="_new">New TAM value that will replace the original TAM value..</param>
         public SafeHarborOverride(int? sh = default(int?), double? old = default(double?), double? _new = default(double?))
         {
             this.Sh = sh;
@@ -45,20 +45,23 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Sh
+        /// Safe harbor type (1 &#x3D; Cellular, 2 &#x3D; VoIp, 4 &#x3D; Paging).
         /// </summary>
+        /// <value>Safe harbor type (1 &#x3D; Cellular, 2 &#x3D; VoIp, 4 &#x3D; Paging).</value>
         [DataMember(Name="sh", EmitDefaultValue=true)]
         public int? Sh { get; set; }
 
         /// <summary>
-        /// Gets or Sets Old
+        /// Original Federal TAM value to override.
         /// </summary>
+        /// <value>Original Federal TAM value to override.</value>
         [DataMember(Name="old", EmitDefaultValue=true)]
         public double? Old { get; set; }
 
         /// <summary>
-        /// Gets or Sets New
+        /// New TAM value that will replace the original TAM value.
         /// </summary>
+        /// <value>New TAM value that will replace the original TAM value.</value>
         [DataMember(Name="new", EmitDefaultValue=true)]
         public double? New { get; set; }
 

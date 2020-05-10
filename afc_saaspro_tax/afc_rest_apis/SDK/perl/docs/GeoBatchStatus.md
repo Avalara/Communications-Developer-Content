@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **processing_start** | **DateTime** | Processing Start. | [optional] 
 **processing_end** | **DateTime** | Processing End. | [optional] 
 **status** | **string** | Status Of Batch File. | [optional] 
-**downloads** | [**GeoBatchDownloadResponse**](GeoBatchDownloadResponse.md) | Output File Name. | [optional] 
+**downloads** | [**GeoBatchDownloadResponse**](GeoBatchDownloadResponse.md) |  | [optional] 
 **error** | [**ARRAY[Error]**](Error.md) | Error information. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **processingStart** | [**OffsetDateTime**](OffsetDateTime.md) | Processing Start. |  [optional]
 **processingEnd** | [**OffsetDateTime**](OffsetDateTime.md) | Processing End. |  [optional]
 **status** | **String** | Status Of Batch File. |  [optional]
-**downloads** | [**GeoBatchDownloadResponse**](GeoBatchDownloadResponse.md) | Output File Name. |  [optional]
+**downloads** | [**GeoBatchDownloadResponse**](GeoBatchDownloadResponse.md) |  |  [optional]
 **error** | [**List&lt;Error&gt;**](Error.md) | Error information. |  [optional]
 
 

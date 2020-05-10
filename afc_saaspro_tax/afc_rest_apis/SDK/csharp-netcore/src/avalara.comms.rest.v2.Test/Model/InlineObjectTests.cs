@@ -58,12 +58,12 @@ namespace avalara.comms.rest.v2.Test
 
 
         /// <summary>
-        /// Test the property 'File'
+        /// Test the property 'GeoBatchFile'
         /// </summary>
         [Fact]
-        public void FileTest()
+        public void GeoBatchFileTest()
         {
-            // TODO unit test for the property 'File'
+            // TODO unit test for the property 'GeoBatchFile'
         }
 
     }

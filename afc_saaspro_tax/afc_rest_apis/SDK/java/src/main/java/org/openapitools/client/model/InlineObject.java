@@ -28,33 +28,33 @@ import java.io.IOException;
 /**
  * InlineObject
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class InlineObject {
-  public static final String SERIALIZED_NAME_FILE = "file";
-  @SerializedName(SERIALIZED_NAME_FILE)
-  private File file;
+  public static final String SERIALIZED_NAME_GEO_BATCH_FILE = "geoBatchFile";
+  @SerializedName(SERIALIZED_NAME_GEO_BATCH_FILE)
+  private File geoBatchFile;
 
 
-  public InlineObject file(File file) {
+  public InlineObject geoBatchFile(File geoBatchFile) {
     
-    this.file = file;
+    this.geoBatchFile = geoBatchFile;
     return this;
   }
 
    /**
-   * Get file
-   * @return file
+   * Get geoBatchFile
+   * @return geoBatchFile
   **/
   @javax.annotation.Nullable
   @ApiModelProperty(value = "")
 
-  public File getFile() {
-    return file;
+  public File getGeoBatchFile() {
+    return geoBatchFile;
   }
 
 
-  public void setFile(File file) {
-    this.file = file;
+  public void setGeoBatchFile(File geoBatchFile) {
+    this.geoBatchFile = geoBatchFile;
   }
 
 
@@ -67,12 +67,12 @@ public class InlineObject {
       return false;
     }
     InlineObject inlineObject = (InlineObject) o;
-    return Objects.equals(this.file, inlineObject.file);
+    return Objects.equals(this.geoBatchFile, inlineObject.geoBatchFile);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(file);
+    return Objects.hash(geoBatchFile);
   }
 
 
@@ -80,7 +80,7 @@ public class InlineObject {
   public String toString() {
     StringBuilder sb = new StringBuilder();
     sb.append("class InlineObject {\n");
-    sb.append("    file: ").append(toIndentedString(file)).append("\n");
+    sb.append("    geoBatchFile: ").append(toIndentedString(geoBatchFile)).append("\n");
     sb.append("}");
     return sb.toString();
   }

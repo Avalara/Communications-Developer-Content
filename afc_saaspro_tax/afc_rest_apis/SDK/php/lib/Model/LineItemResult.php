@@ -236,7 +236,7 @@ class LineItemResult implements ModelInterface, ArrayAccess
     /**
      * Sets ref
      *
-     * @param string|null $ref ref
+     * @param string|null $ref Reference ID for line item.
      *
      * @return $this
      */
@@ -260,7 +260,7 @@ class LineItemResult implements ModelInterface, ArrayAccess
     /**
      * Sets base
      *
-     * @param double|null $base base
+     * @param double|null $base Base sale amount for tax-inclusive line items.
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class LineItemResult implements ModelInterface, ArrayAccess
     /**
      * Sets txs
      *
-     * @param \OpenAPI\Client\Model\Tax[]|null $txs txs
+     * @param \OpenAPI\Client\Model\Tax[]|null $txs Taxes generated for line item.
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class LineItemResult implements ModelInterface, ArrayAccess
     /**
      * Sets err
      *
-     * @param \OpenAPI\Client\Model\Error[]|null $err err
+     * @param \OpenAPI\Client\Model\Error[]|null $err Error description (as applicable).
      *
      * @return $this
      */

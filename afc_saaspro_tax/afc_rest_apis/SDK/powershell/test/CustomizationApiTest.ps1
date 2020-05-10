@@ -10,36 +10,4 @@ Describe 'avalara.comms.rest.v2 CustomizationApi' {
         }
     }
 
-    Context 'CustomizationApi' {
-        It 'Invoke-CustomizationApiApiV2ProfilesSetBundlesPost' {
-            $ret = Invoke-PetApiGetPetById -setTaxCalculationSettingRequest "TEST_VALUE"
-            #$ret | Should BeOfType avalara.comms.rest.v2.Model.ModelNameHere
-            #$ret.property | Should Be 0
-        }
-    }
-
-    Context 'CustomizationApi' {
-        It 'Invoke-CustomizationApiApiV2ProfilesSetConfigPost' {
-            $ret = Invoke-PetApiGetPetById -setTaxCalculationSettingRequest "TEST_VALUE"
-            #$ret | Should BeOfType avalara.comms.rest.v2.Model.ModelNameHere
-            #$ret.property | Should Be 0
-        }
-    }
-
-    Context 'CustomizationApi' {
-        It 'Invoke-CustomizationApiApiV2ProfilesSetExclusionsPost' {
-            $ret = Invoke-PetApiGetPetById -setTaxCalculationSettingRequest "TEST_VALUE"
-            #$ret | Should BeOfType avalara.comms.rest.v2.Model.ModelNameHere
-            #$ret.property | Should Be 0
-        }
-    }
-
-    Context 'CustomizationApi' {
-        It 'Invoke-CustomizationApiApiV2ProfilesSetOverridesPost' {
-            $ret = Invoke-PetApiGetPetById -setTaxCalculationSettingRequest "TEST_VALUE"
-            #$ret | Should BeOfType avalara.comms.rest.v2.Model.ModelNameHere
-            #$ret.property | Should Be 0
-        }
-    }
-
 }

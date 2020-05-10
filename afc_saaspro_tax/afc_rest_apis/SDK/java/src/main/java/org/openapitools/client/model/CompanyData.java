@@ -31,7 +31,7 @@ import org.openapitools.client.model.Exclusion;
  * Container class for json properties associated with v2.CalcTaxes company data
  */
 @ApiModel(description = "Container class for json properties associated with v2.CalcTaxes company data")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class CompanyData {
   public static final String SERIALIZED_NAME_BSCL = "bscl";
   @SerializedName(SERIALIZED_NAME_BSCL)
@@ -69,11 +69,11 @@ public class CompanyData {
   }
 
    /**
-   * Get bscl
+   * Business class. 0 &#x3D; ILEC, 1 &#x3D; CLEC.
    * @return bscl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Business class. 0 = ILEC, 1 = CLEC.")
 
   public Integer getBscl() {
     return bscl;
@@ -92,11 +92,11 @@ public class CompanyData {
   }
 
    /**
-   * Get svcl
+   * Service class. 0 &#x3D; Primary Local, 1 &#x3D; Primary Long Distance.
    * @return svcl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Service class. 0 = Primary Local, 1 = Primary Long Distance.")
 
   public Integer getSvcl() {
     return svcl;
@@ -115,11 +115,11 @@ public class CompanyData {
   }
 
    /**
-   * Get fclt
+   * Specifies if the carrier delivering the service has company owned facilities to provide the service.
    * @return fclt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Specifies if the carrier delivering the service has company owned facilities to provide the service.")
 
   public Boolean getFclt() {
     return fclt;
@@ -138,11 +138,11 @@ public class CompanyData {
   }
 
    /**
-   * Get frch
+   * Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.
    * @return frch
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if the company provides services sold pursuant to a franchise agreement between the carrier and jurisdiction.")
 
   public Boolean getFrch() {
     return frch;
@@ -161,11 +161,11 @@ public class CompanyData {
   }
 
    /**
-   * Get reg
+   * Indicates if company is regulated.
    * @return reg
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if company is regulated.")
 
   public Boolean getReg() {
     return reg;
@@ -192,11 +192,11 @@ public class CompanyData {
   }
 
    /**
-   * Get excl
+   * Exclusion list.
    * @return excl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Exclusion list.")
 
   public List<Exclusion> getExcl() {
     return excl;
@@ -215,11 +215,11 @@ public class CompanyData {
   }
 
    /**
-   * Get idnt
+   * An optional company identifier for reporting
    * @return idnt
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "An optional company identifier for reporting")
 
   public String getIdnt() {
     return idnt;

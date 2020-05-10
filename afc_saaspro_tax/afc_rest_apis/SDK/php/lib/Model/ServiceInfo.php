@@ -59,7 +59,7 @@ class ServiceInfo implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'server_time' => '\DateTime',
-        'versions' => 'VersionInfo',
+        'versions' => '\OpenAPI\Client\Model\VersionInfo',
         'error' => 'string'
     ];
 
@@ -244,7 +244,7 @@ class ServiceInfo implements ModelInterface, ArrayAccess
     /**
      * Gets versions
      *
-     * @return VersionInfo|null
+     * @return \OpenAPI\Client\Model\VersionInfo|null
      */
     public function getVersions()
     {
@@ -254,7 +254,7 @@ class ServiceInfo implements ModelInterface, ArrayAccess
     /**
      * Sets versions
      *
-     * @param VersionInfo|null $versions Version information.
+     * @param \OpenAPI\Client\Model\VersionInfo|null $versions versions
      *
      * @return $this
      */

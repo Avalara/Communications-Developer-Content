@@ -57,7 +57,8 @@ class ServiceInfo(object):
 
         if server_time is not None:
             self.server_time = server_time
-        self.versions = versions
+        if versions is not None:
+            self.versions = versions
         self.error = error
 
     @property
@@ -87,7 +88,6 @@ class ServiceInfo(object):
     def versions(self):
         """Gets the versions of this ServiceInfo.  # noqa: E501
 
-        Version information.  # noqa: E501
 
         :return: The versions of this ServiceInfo.  # noqa: E501
         :rtype: VersionInfo
@@ -98,7 +98,6 @@ class ServiceInfo(object):
     def versions(self, versions):
         """Sets the versions of this ServiceInfo.
 
-        Version information.  # noqa: E501
 
         :param versions: The versions of this ServiceInfo.  # noqa: E501
         :type: VersionInfo

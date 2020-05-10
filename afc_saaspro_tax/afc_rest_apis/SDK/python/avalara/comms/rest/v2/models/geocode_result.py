@@ -89,7 +89,8 @@ class GeocodeResult(object):
         self.discriminator = None
 
         self.ref = ref
-        self.cass = cass
+        if cass is not None:
+            self.cass = cass
         self.c_blk = c_blk
         self.c_trc = c_trc
         self.cnty = cnty
@@ -107,6 +108,7 @@ class GeocodeResult(object):
     def ref(self):
         """Gets the ref of this GeocodeResult.  # noqa: E501
 
+        Reference Id from geocode request input.  # noqa: E501
 
         :return: The ref of this GeocodeResult.  # noqa: E501
         :rtype: str
@@ -117,6 +119,7 @@ class GeocodeResult(object):
     def ref(self, ref):
         """Sets the ref of this GeocodeResult.
 
+        Reference Id from geocode request input.  # noqa: E501
 
         :param ref: The ref of this GeocodeResult.  # noqa: E501
         :type: str
@@ -149,6 +152,7 @@ class GeocodeResult(object):
     def c_blk(self):
         """Gets the c_blk of this GeocodeResult.  # noqa: E501
 
+        Census block.  # noqa: E501
 
         :return: The c_blk of this GeocodeResult.  # noqa: E501
         :rtype: int
@@ -159,6 +163,7 @@ class GeocodeResult(object):
     def c_blk(self, c_blk):
         """Sets the c_blk of this GeocodeResult.
 
+        Census block.  # noqa: E501
 
         :param c_blk: The c_blk of this GeocodeResult.  # noqa: E501
         :type: int
@@ -170,6 +175,7 @@ class GeocodeResult(object):
     def c_trc(self):
         """Gets the c_trc of this GeocodeResult.  # noqa: E501
 
+        Census tract.  # noqa: E501
 
         :return: The c_trc of this GeocodeResult.  # noqa: E501
         :rtype: int
@@ -180,6 +186,7 @@ class GeocodeResult(object):
     def c_trc(self, c_trc):
         """Sets the c_trc of this GeocodeResult.
 
+        Census tract.  # noqa: E501
 
         :param c_trc: The c_trc of this GeocodeResult.  # noqa: E501
         :type: int
@@ -191,6 +198,7 @@ class GeocodeResult(object):
     def cnty(self):
         """Gets the cnty of this GeocodeResult.  # noqa: E501
 
+        County  # noqa: E501
 
         :return: The cnty of this GeocodeResult.  # noqa: E501
         :rtype: str
@@ -201,6 +209,7 @@ class GeocodeResult(object):
     def cnty(self, cnty):
         """Sets the cnty of this GeocodeResult.
 
+        County  # noqa: E501
 
         :param cnty: The cnty of this GeocodeResult.  # noqa: E501
         :type: str
@@ -212,6 +221,7 @@ class GeocodeResult(object):
     def feat(self):
         """Gets the feat of this GeocodeResult.  # noqa: E501
 
+        Feature ID.  # noqa: E501
 
         :return: The feat of this GeocodeResult.  # noqa: E501
         :rtype: int
@@ -222,6 +232,7 @@ class GeocodeResult(object):
     def feat(self, feat):
         """Sets the feat of this GeocodeResult.
 
+        Feature ID.  # noqa: E501
 
         :param feat: The feat of this GeocodeResult.  # noqa: E501
         :type: int
@@ -233,6 +244,7 @@ class GeocodeResult(object):
     def fips(self):
         """Gets the fips of this GeocodeResult.  # noqa: E501
 
+        FIPS Code.  # noqa: E501
 
         :return: The fips of this GeocodeResult.  # noqa: E501
         :rtype: str
@@ -243,6 +255,7 @@ class GeocodeResult(object):
     def fips(self, fips):
         """Sets the fips of this GeocodeResult.
 
+        FIPS Code.  # noqa: E501
 
         :param fips: The fips of this GeocodeResult.  # noqa: E501
         :type: str
@@ -254,6 +267,7 @@ class GeocodeResult(object):
     def inc(self):
         """Gets the inc of this GeocodeResult.  # noqa: E501
 
+        Indicates if address is within city limits.  # noqa: E501
 
         :return: The inc of this GeocodeResult.  # noqa: E501
         :rtype: bool
@@ -264,6 +278,7 @@ class GeocodeResult(object):
     def inc(self, inc):
         """Sets the inc of this GeocodeResult.
 
+        Indicates if address is within city limits.  # noqa: E501
 
         :param inc: The inc of this GeocodeResult.  # noqa: E501
         :type: bool
@@ -275,6 +290,7 @@ class GeocodeResult(object):
     def jur(self):
         """Gets the jur of this GeocodeResult.  # noqa: E501
 
+        Tax jurisdiction name.  # noqa: E501
 
         :return: The jur of this GeocodeResult.  # noqa: E501
         :rtype: str
@@ -285,6 +301,7 @@ class GeocodeResult(object):
     def jur(self, jur):
         """Sets the jur of this GeocodeResult.
 
+        Tax jurisdiction name.  # noqa: E501
 
         :param jur: The jur of this GeocodeResult.  # noqa: E501
         :type: str
@@ -296,6 +313,7 @@ class GeocodeResult(object):
     def lat(self):
         """Gets the lat of this GeocodeResult.  # noqa: E501
 
+        Latitude.  # noqa: E501
 
         :return: The lat of this GeocodeResult.  # noqa: E501
         :rtype: float
@@ -306,6 +324,7 @@ class GeocodeResult(object):
     def lat(self, lat):
         """Sets the lat of this GeocodeResult.
 
+        Latitude.  # noqa: E501
 
         :param lat: The lat of this GeocodeResult.  # noqa: E501
         :type: float
@@ -317,6 +336,7 @@ class GeocodeResult(object):
     def long(self):
         """Gets the long of this GeocodeResult.  # noqa: E501
 
+        Longitude.  # noqa: E501
 
         :return: The long of this GeocodeResult.  # noqa: E501
         :rtype: float
@@ -327,6 +347,7 @@ class GeocodeResult(object):
     def long(self, long):
         """Sets the long of this GeocodeResult.
 
+        Longitude.  # noqa: E501
 
         :param long: The long of this GeocodeResult.  # noqa: E501
         :type: float
@@ -338,6 +359,7 @@ class GeocodeResult(object):
     def pcd(self):
         """Gets the pcd of this GeocodeResult.  # noqa: E501
 
+        PCode for tax jurisdiction.  # noqa: E501
 
         :return: The pcd of this GeocodeResult.  # noqa: E501
         :rtype: int
@@ -348,6 +370,7 @@ class GeocodeResult(object):
     def pcd(self, pcd):
         """Sets the pcd of this GeocodeResult.
 
+        PCode for tax jurisdiction.  # noqa: E501
 
         :param pcd: The pcd of this GeocodeResult.  # noqa: E501
         :type: int
@@ -359,6 +382,7 @@ class GeocodeResult(object):
     def scr(self):
         """Gets the scr of this GeocodeResult.  # noqa: E501
 
+        Score indicating accuracy of address match in mapping database.  # noqa: E501
 
         :return: The scr of this GeocodeResult.  # noqa: E501
         :rtype: float
@@ -369,6 +393,7 @@ class GeocodeResult(object):
     def scr(self, scr):
         """Sets the scr of this GeocodeResult.
 
+        Score indicating accuracy of address match in mapping database.  # noqa: E501
 
         :param scr: The scr of this GeocodeResult.  # noqa: E501
         :type: float
@@ -380,6 +405,7 @@ class GeocodeResult(object):
     def err(self):
         """Gets the err of this GeocodeResult.  # noqa: E501
 
+        Error message.  # noqa: E501
 
         :return: The err of this GeocodeResult.  # noqa: E501
         :rtype: str
@@ -390,6 +416,7 @@ class GeocodeResult(object):
     def err(self, err):
         """Sets the err of this GeocodeResult.
 
+        Error message.  # noqa: E501
 
         :param err: The err of this GeocodeResult.  # noqa: E501
         :type: str

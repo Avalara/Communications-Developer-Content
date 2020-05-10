@@ -33,17 +33,17 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Location" /> class.
         /// </summary>
-        /// <param name="cnty">cnty.</param>
-        /// <param name="ctry">ctry.</param>
-        /// <param name="_int">_int.</param>
-        /// <param name="geo">geo.</param>
-        /// <param name="pcd">pcd.</param>
-        /// <param name="npa">npa.</param>
-        /// <param name="fips">fips.</param>
-        /// <param name="addr">addr.</param>
+        /// <param name="cnty">County name..</param>
+        /// <param name="ctry">Country ISO code..</param>
+        /// <param name="_int">Indicates if the location is within city limits.  Default: true..</param>
+        /// <param name="geo">Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false..</param>
+        /// <param name="pcd">PCode for taxing jurisdiction..</param>
+        /// <param name="npa">NPANXX number..</param>
+        /// <param name="fips">FIPS code for taxing jurisdiction..</param>
+        /// <param name="addr">Street address..</param>
         /// <param name="city">City name..</param>
-        /// <param name="st">st.</param>
-        /// <param name="zip">zip.</param>
+        /// <param name="st">State name or abbreviation..</param>
+        /// <param name="zip">Postal code..</param>
         public Location(string cnty = default(string), string ctry = default(string), bool? _int = default(bool?), bool? geo = default(bool?), int? pcd = default(int?), int? npa = default(int?), string fips = default(string), string addr = default(string), string city = default(string), string st = default(string), string zip = default(string))
         {
             this.Cnty = cnty;
@@ -71,50 +71,58 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Cnty
+        /// County name.
         /// </summary>
+        /// <value>County name.</value>
         [DataMember(Name="cnty", EmitDefaultValue=true)]
         public string Cnty { get; set; }
 
         /// <summary>
-        /// Gets or Sets Ctry
+        /// Country ISO code.
         /// </summary>
+        /// <value>Country ISO code.</value>
         [DataMember(Name="ctry", EmitDefaultValue=true)]
         public string Ctry { get; set; }
 
         /// <summary>
-        /// Gets or Sets Int
+        /// Indicates if the location is within city limits.  Default: true.
         /// </summary>
+        /// <value>Indicates if the location is within city limits.  Default: true.</value>
         [DataMember(Name="int", EmitDefaultValue=true)]
         public bool? Int { get; set; }
 
         /// <summary>
-        /// Gets or Sets Geo
+        /// Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.
         /// </summary>
+        /// <value>Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.</value>
         [DataMember(Name="geo", EmitDefaultValue=true)]
         public bool? Geo { get; set; }
 
         /// <summary>
-        /// Gets or Sets Pcd
+        /// PCode for taxing jurisdiction.
         /// </summary>
+        /// <value>PCode for taxing jurisdiction.</value>
         [DataMember(Name="pcd", EmitDefaultValue=true)]
         public int? Pcd { get; set; }
 
         /// <summary>
-        /// Gets or Sets Npa
+        /// NPANXX number.
         /// </summary>
+        /// <value>NPANXX number.</value>
         [DataMember(Name="npa", EmitDefaultValue=true)]
         public int? Npa { get; set; }
 
         /// <summary>
-        /// Gets or Sets Fips
+        /// FIPS code for taxing jurisdiction.
         /// </summary>
+        /// <value>FIPS code for taxing jurisdiction.</value>
         [DataMember(Name="fips", EmitDefaultValue=true)]
         public string Fips { get; set; }
 
         /// <summary>
-        /// Gets or Sets Addr
+        /// Street address.
         /// </summary>
+        /// <value>Street address.</value>
         [DataMember(Name="addr", EmitDefaultValue=true)]
         public string Addr { get; set; }
 
@@ -126,14 +134,16 @@ namespace avalara.comms.rest.v2.Model
         public string City { get; set; }
 
         /// <summary>
-        /// Gets or Sets St
+        /// State name or abbreviation.
         /// </summary>
+        /// <value>State name or abbreviation.</value>
         [DataMember(Name="st", EmitDefaultValue=true)]
         public string St { get; set; }
 
         /// <summary>
-        /// Gets or Sets Zip
+        /// Postal code.
         /// </summary>
+        /// <value>Postal code.</value>
         [DataMember(Name="zip", EmitDefaultValue=true)]
         public string Zip { get; set; }
 

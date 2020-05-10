@@ -28,7 +28,7 @@ import java.io.IOException;
  * Tax rate override information.
  */
 @ApiModel(description = "Tax rate override information.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class ReportingInformation {
   public static final String SERIALIZED_NAME_ACCT = "acct";
   @SerializedName(SERIALIZED_NAME_ACCT)
@@ -62,11 +62,11 @@ public class ReportingInformation {
   }
 
    /**
-   * Get acct
+   * Account id
    * @return acct
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Account id")
 
   public String getAcct() {
     return acct;
@@ -85,11 +85,11 @@ public class ReportingInformation {
   }
 
    /**
-   * Get custref
+   * Customer reference
    * @return custref
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Customer reference")
 
   public String getCustref() {
     return custref;
@@ -108,11 +108,11 @@ public class ReportingInformation {
   }
 
    /**
-   * Get invn
+   * Invoice Number reference
    * @return invn
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Invoice Number reference")
 
   public String getInvn() {
     return invn;
@@ -131,11 +131,11 @@ public class ReportingInformation {
   }
 
    /**
-   * Get bcyc
+   * Bill Cycle reference
    * @return bcyc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Bill Cycle reference")
 
   public String getBcyc() {
     return bcyc;
@@ -154,11 +154,11 @@ public class ReportingInformation {
   }
 
    /**
-   * Get ccycd
+   * Currency code for invoice
    * @return ccycd
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Currency code for invoice")
 
   public String getCcycd() {
     return ccycd;
@@ -177,11 +177,11 @@ public class ReportingInformation {
   }
 
    /**
-   * Get ccydesc
+   * Currency description
    * @return ccydesc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Currency description")
 
   public String getCcydesc() {
     return ccydesc;

@@ -230,7 +230,7 @@ class SafeHarborOverride implements ModelInterface, ArrayAccess
     /**
      * Sets sh
      *
-     * @param int|null $sh sh
+     * @param int|null $sh Safe harbor type (1 = Cellular, 2 = VoIp, 4 = Paging).
      *
      * @return $this
      */
@@ -254,7 +254,7 @@ class SafeHarborOverride implements ModelInterface, ArrayAccess
     /**
      * Sets old
      *
-     * @param double|null $old old
+     * @param double|null $old Original Federal TAM value to override.
      *
      * @return $this
      */
@@ -278,7 +278,7 @@ class SafeHarborOverride implements ModelInterface, ArrayAccess
     /**
      * Sets new
      *
-     * @param double|null $new new
+     * @param double|null $new New TAM value that will replace the original TAM value.
      *
      * @return $this
      */

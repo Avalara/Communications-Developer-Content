@@ -81,44 +81,4 @@ class CustomizationApiTest extends TestCase
     public function testApiV2ProfilesGetProfilesGet()
     {
     }
-
-    /**
-     * Test case for apiV2ProfilesSetBundlesPost
-     *
-     * Creates or updates bundle packages and associated profile mappings..
-     *
-     */
-    public function testApiV2ProfilesSetBundlesPost()
-    {
-    }
-
-    /**
-     * Test case for apiV2ProfilesSetConfigPost
-     *
-     * Creates or updates configuration settings and associated profile mappings..
-     *
-     */
-    public function testApiV2ProfilesSetConfigPost()
-    {
-    }
-
-    /**
-     * Test case for apiV2ProfilesSetExclusionsPost
-     *
-     * Creates or updates exclusions and associated profile mappings..
-     *
-     */
-    public function testApiV2ProfilesSetExclusionsPost()
-    {
-    }
-
-    /**
-     * Test case for apiV2ProfilesSetOverridesPost
-     *
-     * Creates or updates overrides and associated profile mappings..
-     *
-     */
-    public function testApiV2ProfilesSetOverridesPost()
-    {
-    }
 }

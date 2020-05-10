@@ -35,15 +35,15 @@ import org.openapitools.client.model.TaxOverride;
  * Request body for tax calculation API.
  */
 @ApiModel(description = "Request body for tax calculation API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class CalcTaxesRequest {
   public static final String SERIALIZED_NAME_CFG = "cfg";
   @SerializedName(SERIALIZED_NAME_CFG)
-  private RequestConfig cfg = null;
+  private RequestConfig cfg;
 
   public static final String SERIALIZED_NAME_CMPN = "cmpn";
   @SerializedName(SERIALIZED_NAME_CMPN)
-  private CompanyData cmpn = null;
+  private CompanyData cmpn;
 
   public static final String SERIALIZED_NAME_INV = "inv";
   @SerializedName(SERIALIZED_NAME_INV)
@@ -119,11 +119,11 @@ public class CalcTaxesRequest {
   }
 
    /**
-   * Get inv
+   * List of invoices to process.
    * @return inv
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "List of invoices to process.")
 
   public List<Invoice> getInv() {
     return inv;
@@ -150,11 +150,11 @@ public class CalcTaxesRequest {
   }
 
    /**
-   * Get ovr
+   * Tax rate overrides.
    * @return ovr
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax rate overrides.")
 
   public List<TaxOverride> getOvr() {
     return ovr;
@@ -181,11 +181,11 @@ public class CalcTaxesRequest {
   }
 
    /**
-   * Get sovr
+   * Safe harbor overrides for USF taxes.
    * @return sovr
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Safe harbor overrides for USF taxes.")
 
   public List<SafeHarborOverride> getSovr() {
     return sovr;

@@ -54,10 +54,10 @@ class LineItem {
                 obj['ref'] = ApiClient.convertToType(data['ref'], 'String');
             }
             if (data.hasOwnProperty('from')) {
-                obj['from'] = ApiClient.convertToType(data['from'], Location);
+                obj['from'] = Location.constructFromObject(data['from']);
             }
             if (data.hasOwnProperty('to')) {
-                obj['to'] = ApiClient.convertToType(data['to'], Location);
+                obj['to'] = Location.constructFromObject(data['to']);
             }
             if (data.hasOwnProperty('chg')) {
                 obj['chg'] = ApiClient.convertToType(data['chg'], 'Number');
@@ -111,7 +111,7 @@ class LineItem {
                 obj['prop'] = ApiClient.convertToType(data['prop'], 'Number');
             }
             if (data.hasOwnProperty('bill')) {
-                obj['bill'] = ApiClient.convertToType(data['bill'], Location);
+                obj['bill'] = Location.constructFromObject(data['bill']);
             }
             if (data.hasOwnProperty('cust')) {
                 obj['cust'] = ApiClient.convertToType(data['cust'], 'Number');
@@ -136,103 +136,119 @@ class LineItem {
 }
 
 /**
+ * Reference ID for line item.
  * @member {String} ref
  */
 LineItem.prototype['ref'] = undefined;
 
 /**
- * Location for origination point. If null, will default to Invoice's BillTo location.
  * @member {module:model/Location} from
  */
 LineItem.prototype['from'] = undefined;
 
 /**
- * Location for destination point. If null, will default to Invoice's BillTo location.
  * @member {module:model/Location} to
  */
 LineItem.prototype['to'] = undefined;
 
 /**
+ * Charge amount.  Default: 0.
  * @member {Number} chg
  */
 LineItem.prototype['chg'] = undefined;
 
 /**
+ * Number of lines.  Default: 0.
  * @member {Number} line
  */
 LineItem.prototype['line'] = undefined;
 
 /**
+ * Number of locations.  Default: 0.
  * @member {Number} loc
  */
 LineItem.prototype['loc'] = undefined;
 
 /**
+ * Number of minutes.  Default: 0.
  * @member {Number} min
  */
 LineItem.prototype['min'] = undefined;
 
 /**
+ * 0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).
  * @member {Number} sale
  */
 LineItem.prototype['sale'] = undefined;
 
 /**
+ * Split for private-line transactions.
  * @member {Number} plsp
  */
 LineItem.prototype['plsp'] = undefined;
 
 /**
+ * Indicates if the charge for this line item is tax-inclusive.
  * @member {Boolean} incl
  */
 LineItem.prototype['incl'] = undefined;
 
 /**
+ * For pro-rated tax calculations. Percentage to pro-rate.
  * @member {Number} pror
  */
 LineItem.prototype['pror'] = undefined;
 
 /**
+ * For pro-rated credit or adjustment calculations.  0 = default  1 = do not return non-proratable fixed taxes in response  2 = return non-proratable fixed taxes in response
  * @member {Number} proadj
  */
 LineItem.prototype['proadj'] = undefined;
 
 /**
+ * Transaction type ID.
  * @member {Number} tran
  */
 LineItem.prototype['tran'] = undefined;
 
 /**
+ * Service type ID.
  * @member {Number} serv
  */
 LineItem.prototype['serv'] = undefined;
 
 /**
+ * Indicates if this line item is a debit card transaction.  Default: false.
  * @member {Boolean} dbt
  */
 LineItem.prototype['dbt'] = undefined;
 
 /**
+ * Indicates if this line item is an adjustment.  Default: false.
  * @member {Boolean} adj
  */
 LineItem.prototype['adj'] = undefined;
 
 /**
+ * Adjustment method.
  * @member {Number} adjm
  */
 LineItem.prototype['adjm'] = undefined;
 
 /**
+ * Discount type for adjustments.
  * @member {Number} disc
  */
 LineItem.prototype['disc'] = undefined;
 
 /**
+ * Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.
  * @member {Array.<module:model/KeyValuePair>} opt
  */
 LineItem.prototype['opt'] = undefined;
 
 /**
+ * Attribute/property value for sales and use transaction/service pairs.
  * @member {Number} prop
  */
 LineItem.prototype['prop'] = undefined;
@@ -243,11 +259,13 @@ LineItem.prototype['prop'] = undefined;
 LineItem.prototype['bill'] = undefined;
 
 /**
+ * Customer type.
  * @member {Number} cust
  */
 LineItem.prototype['cust'] = undefined;
 
 /**
+ * Indicates if customer is a Lifeline participant.  Default: false.
  * @member {Boolean} lfln
  */
 LineItem.prototype['lfln'] = undefined;
@@ -259,11 +277,13 @@ LineItem.prototype['lfln'] = undefined;
 LineItem.prototype['date'] = undefined;
 
 /**
+ * Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity
  * @member {Number} qty
  */
 LineItem.prototype['qty'] = undefined;
 
 /**
+ * General Ledger reference to be used in reporting
  * @member {String} glref
  */
 LineItem.prototype['glref'] = undefined;

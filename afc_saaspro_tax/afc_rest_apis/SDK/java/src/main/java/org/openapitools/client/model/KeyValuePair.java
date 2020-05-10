@@ -28,7 +28,7 @@ import java.io.IOException;
  * Key/value pair data.
  */
 @ApiModel(description = "Key/value pair data.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class KeyValuePair {
   public static final String SERIALIZED_NAME_KEY = "key";
   @SerializedName(SERIALIZED_NAME_KEY)
@@ -69,11 +69,11 @@ public class KeyValuePair {
   }
 
    /**
-   * Get val
+   * Value.
    * @return val
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Value.")
 
   public String getVal() {
     return val;

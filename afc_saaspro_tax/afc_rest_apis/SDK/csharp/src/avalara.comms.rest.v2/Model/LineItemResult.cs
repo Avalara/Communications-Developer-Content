@@ -33,10 +33,10 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="LineItemResult" /> class.
         /// </summary>
-        /// <param name="_ref">_ref.</param>
-        /// <param name="_base">_base.</param>
-        /// <param name="txs">txs.</param>
-        /// <param name="err">err.</param>
+        /// <param name="_ref">Reference ID for line item..</param>
+        /// <param name="_base">Base sale amount for tax-inclusive line items..</param>
+        /// <param name="txs">Taxes generated for line item..</param>
+        /// <param name="err">Error description (as applicable)..</param>
         public LineItemResult(string _ref = default(string), double? _base = default(double?), List<Tax> txs = default(List<Tax>), List<Error> err = default(List<Error>))
         {
             this.Ref = _ref;
@@ -50,26 +50,30 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Ref
+        /// Reference ID for line item.
         /// </summary>
+        /// <value>Reference ID for line item.</value>
         [DataMember(Name="ref", EmitDefaultValue=true)]
         public string Ref { get; set; }
 
         /// <summary>
-        /// Gets or Sets Base
+        /// Base sale amount for tax-inclusive line items.
         /// </summary>
+        /// <value>Base sale amount for tax-inclusive line items.</value>
         [DataMember(Name="base", EmitDefaultValue=true)]
         public double? Base { get; set; }
 
         /// <summary>
-        /// Gets or Sets Txs
+        /// Taxes generated for line item.
         /// </summary>
+        /// <value>Taxes generated for line item.</value>
         [DataMember(Name="txs", EmitDefaultValue=true)]
         public List<Tax> Txs { get; set; }
 
         /// <summary>
-        /// Gets or Sets Err
+        /// Error description (as applicable).
         /// </summary>
+        /// <value>Error description (as applicable).</value>
         [DataMember(Name="err", EmitDefaultValue=true)]
         public List<Error> Err { get; set; }
 

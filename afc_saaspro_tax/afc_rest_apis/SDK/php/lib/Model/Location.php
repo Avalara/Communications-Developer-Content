@@ -278,7 +278,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets cnty
      *
-     * @param string|null $cnty cnty
+     * @param string|null $cnty County name.
      *
      * @return $this
      */
@@ -302,7 +302,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets ctry
      *
-     * @param string|null $ctry ctry
+     * @param string|null $ctry Country ISO code.
      *
      * @return $this
      */
@@ -326,7 +326,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets int
      *
-     * @param bool|null $int int
+     * @param bool|null $int Indicates if the location is within city limits.  Default: true.
      *
      * @return $this
      */
@@ -350,7 +350,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets geo
      *
-     * @param bool|null $geo geo
+     * @param bool|null $geo Indicates if this address should be geocoded in order to obtain taxing jurisdiction.  Default: false.
      *
      * @return $this
      */
@@ -374,7 +374,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets pcd
      *
-     * @param int|null $pcd pcd
+     * @param int|null $pcd PCode for taxing jurisdiction.
      *
      * @return $this
      */
@@ -398,7 +398,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets npa
      *
-     * @param int|null $npa npa
+     * @param int|null $npa NPANXX number.
      *
      * @return $this
      */
@@ -422,7 +422,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets fips
      *
-     * @param string|null $fips fips
+     * @param string|null $fips FIPS code for taxing jurisdiction.
      *
      * @return $this
      */
@@ -446,7 +446,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets addr
      *
-     * @param string|null $addr addr
+     * @param string|null $addr Street address.
      *
      * @return $this
      */
@@ -494,7 +494,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets st
      *
-     * @param string|null $st st
+     * @param string|null $st State name or abbreviation.
      *
      * @return $this
      */
@@ -518,7 +518,7 @@ class Location implements ModelInterface, ArrayAccess
     /**
      * Sets zip
      *
-     * @param string|null $zip zip
+     * @param string|null $zip Postal code.
      *
      * @return $this
      */

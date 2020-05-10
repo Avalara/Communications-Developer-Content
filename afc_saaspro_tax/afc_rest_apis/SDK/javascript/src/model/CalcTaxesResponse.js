@@ -64,11 +64,13 @@ class CalcTaxesResponse {
 }
 
 /**
+ * Tax calculation results for each invoice submitted in request.
  * @member {Array.<module:model/InvoiceResult>} inv
  */
 CalcTaxesResponse.prototype['inv'] = undefined;
 
 /**
+ * Error description (as applicable).
  * @member {Array.<module:model/Error>} err
  */
 CalcTaxesResponse.prototype['err'] = undefined;

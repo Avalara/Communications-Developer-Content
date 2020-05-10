@@ -32,7 +32,7 @@ describe 'InlineObject' do
       expect(@instance).to be_instance_of(OpenapiClient::InlineObject)
     end
   end
-  describe 'test attribute "file"' do
+  describe 'test attribute "geo_batch_file"' do
     it 'should work' do
       # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
     end

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **process_id** | **Integer** | Process Id for File uploaded | [optional] 
-**err** | [**Array&lt;Error&gt;**](Error.md) |  | [optional] 
+**err** | [**Array&lt;Error&gt;**](Error.md) | Error description (as applicable). | [optional] 
 
 ## Code Sample
 

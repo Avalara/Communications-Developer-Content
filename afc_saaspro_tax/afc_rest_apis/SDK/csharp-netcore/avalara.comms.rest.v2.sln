@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "avalara.comms.rest.v2", "src\avalara.comms.rest.v2\avalara.comms.rest.v2.csproj", "{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "avalara.comms.rest.v2", "src\avalara.comms.rest.v2\avalara.comms.rest.v2.csproj", "{0F660961-5954-4A77-8F42-D4422CC6EEC3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "avalara.comms.rest.v2.Test", "src\avalara.comms.rest.v2.Test\avalara.comms.rest.v2.Test.csproj", "{19F1DEBC-DE5E-4517-8062-F000CD499087}"
 EndProject
@@ -12,10 +12,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7D902B9-5ED0-4E02-855D-B07AB416E1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F660961-5954-4A77-8F42-D4422CC6EEC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F660961-5954-4A77-8F42-D4422CC6EEC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F660961-5954-4A77-8F42-D4422CC6EEC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F660961-5954-4A77-8F42-D4422CC6EEC3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19F1DEBC-DE5E-4517-8062-F000CD499087}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**inv** | [**Array&lt;InvoiceResult&gt;**](InvoiceResult.md) |  | [optional] 
-**err** | [**Array&lt;Error&gt;**](Error.md) |  | [optional] 
+**inv** | [**Array&lt;InvoiceResult&gt;**](InvoiceResult.md) | Tax calculation results for each invoice submitted in request. | [optional] 
+**err** | [**Array&lt;Error&gt;**](Error.md) | Error description (as applicable). | [optional] 
 
 ## Code Sample
 

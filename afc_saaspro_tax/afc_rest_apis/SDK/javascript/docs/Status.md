@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **Number** | Status code. | [optional] [readonly] 
-**msg** | **String** |  | [optional] [readonly] 
+**code** | **Number** | Status code. | [optional] 
+**msg** | **String** | Status message. | [optional] [readonly] 
 
 

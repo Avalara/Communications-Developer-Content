@@ -61,6 +61,7 @@ class BillingPeriod(object):
     def month(self):
         """Gets the month of this BillingPeriod.  # noqa: E501
 
+        Numeric value representing billing period month.  1 = January.  # noqa: E501
 
         :return: The month of this BillingPeriod.  # noqa: E501
         :rtype: int
@@ -71,6 +72,7 @@ class BillingPeriod(object):
     def month(self, month):
         """Sets the month of this BillingPeriod.
 
+        Numeric value representing billing period month.  1 = January.  # noqa: E501
 
         :param month: The month of this BillingPeriod.  # noqa: E501
         :type: int
@@ -82,6 +84,7 @@ class BillingPeriod(object):
     def year(self):
         """Gets the year of this BillingPeriod.  # noqa: E501
 
+        Numeric 4 digit representation of billing period year.  # noqa: E501
 
         :return: The year of this BillingPeriod.  # noqa: E501
         :rtype: int
@@ -92,6 +95,7 @@ class BillingPeriod(object):
     def year(self, year):
         """Sets the year of this BillingPeriod.
 
+        Numeric 4 digit representation of billing period year.  # noqa: E501
 
         :param year: The year of this BillingPeriod.  # noqa: E501
         :type: int

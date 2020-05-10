@@ -79,9 +79,9 @@ class InlineObjectTest extends TestCase
     }
 
     /**
-     * Test attribute "file"
+     * Test attribute "geo_batch_file"
      */
-    public function testPropertyFile()
+    public function testPropertyGeoBatchFile()
     {
     }
 }

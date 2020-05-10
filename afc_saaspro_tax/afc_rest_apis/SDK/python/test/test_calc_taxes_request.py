@@ -36,20 +36,56 @@ class TestCalcTaxesRequest(unittest.TestCase):
         # model = avalara.comms.rest.v2.models.calc_taxes_request.CalcTaxesRequest()  # noqa: E501
         if include_optional :
             return CalcTaxesRequest(
-                cfg = null, 
-                cmpn = null, 
+                cfg = avalara.comms.rest.v2.models.request_config.RequestConfig(
+                    retnb = True, 
+                    retext = True, 
+                    incrf = True, ), 
+                cmpn = avalara.comms.rest.v2.models.company_data.CompanyData(
+                    bscl = 56, 
+                    svcl = 56, 
+                    fclt = True, 
+                    frch = True, 
+                    reg = True, 
+                    excl = [
+                        avalara.comms.rest.v2.models.exclusion.Exclusion(
+                            ctry = '0', 
+                            st = '0', )
+                        ], 
+                    idnt = '0', ), 
                 inv = [
                     avalara.comms.rest.v2.models.invoice.Invoice(
                         doc = '0', 
                         cmmt = True, 
-                        bill = null, 
+                        bill = avalara.comms.rest.v2.models.location.Location(
+                            cnty = '0', 
+                            ctry = '0', 
+                            int = True, 
+                            geo = True, 
+                            pcd = 56, 
+                            npa = 56, 
+                            fips = '0', 
+                            addr = '0', 
+                            city = '0', 
+                            st = '0', 
+                            zip = '0', ), 
                         cust = 56, 
                         lfln = True, 
                         date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
                         exms = [
                             avalara.comms.rest.v2.models.tax_exemption.TaxExemption(
                                 frc = True, 
-                                loc = null, 
+                                loc = avalara.comms.rest.v2.models.location.Location(
+                                    cnty = '0', 
+                                    ctry = '0', 
+                                    int = True, 
+                                    geo = True, 
+                                    pcd = 56, 
+                                    npa = 56, 
+                                    fips = '0', 
+                                    addr = '0', 
+                                    city = '0', 
+                                    st = '0', 
+                                    zip = '0', ), 
                                 tpe = 56, 
                                 lvl = 56, 
                                 cat = 56, 
@@ -60,11 +96,32 @@ class TestCalcTaxesRequest(unittest.TestCase):
                         itms = [
                             avalara.comms.rest.v2.models.line_item.LineItem(
                                 ref = '0', 
-                                from = null, 
-                                to = null, 
+                                from = avalara.comms.rest.v2.models.location.Location(
+                                    cnty = '0', 
+                                    ctry = '0', 
+                                    int = True, 
+                                    geo = True, 
+                                    pcd = 56, 
+                                    npa = 56, 
+                                    fips = '0', 
+                                    addr = '0', 
+                                    city = '0', 
+                                    st = '0', 
+                                    zip = '0', ), 
+                                to = avalara.comms.rest.v2.models.location.Location(
+                                    cnty = '0', 
+                                    ctry = '0', 
+                                    int = True, 
+                                    geo = True, 
+                                    pcd = 56, 
+                                    npa = 56, 
+                                    fips = '0', 
+                                    addr = '0', 
+                                    city = '0', 
+                                    st = '0', 
+                                    zip = '0', ), 
                                 chg = 1.337, 
                                 line = 56, 
-                                loc = 56, 
                                 min = 1.337, 
                                 sale = 56, 
                                 plsp = 1.337, 
@@ -83,7 +140,6 @@ class TestCalcTaxesRequest(unittest.TestCase):
                                         val = '0', )
                                     ], 
                                 prop = 56, 
-                                bill = null, 
                                 cust = 56, 
                                 lfln = True, 
                                 date = datetime.datetime.strptime('2013-10-20 19:20:30.00', '%Y-%m-%d %H:%M:%S.%f'), 
@@ -102,12 +158,25 @@ class TestCalcTaxesRequest(unittest.TestCase):
                         custref = '0', 
                         invn = '0', 
                         bcyc = '0', 
-                        bpd = null, 
+                        bpd = avalara.comms.rest.v2.models.billing_period.BillingPeriod(
+                            month = 56, 
+                            year = 56, ), 
                         ccycd = '0', )
                     ], 
                 ovr = [
                     avalara.comms.rest.v2.models.tax_override.TaxOverride(
-                        loc = null, 
+                        loc = avalara.comms.rest.v2.models.location.Location(
+                            cnty = '0', 
+                            ctry = '0', 
+                            int = True, 
+                            geo = True, 
+                            pcd = 56, 
+                            npa = 56, 
+                            fips = '0', 
+                            addr = '0', 
+                            city = '0', 
+                            st = '0', 
+                            zip = '0', ), 
                         scp = 56, 
                         tid = 56, 
                         lvl = 56, 

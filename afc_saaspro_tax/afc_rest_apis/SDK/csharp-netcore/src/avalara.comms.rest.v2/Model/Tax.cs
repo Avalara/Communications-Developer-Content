@@ -34,28 +34,28 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Tax" /> class.
         /// </summary>
-        /// <param name="bill">bill.</param>
-        /// <param name="cmpl">cmpl.</param>
-        /// <param name="tm">tm.</param>
-        /// <param name="calc">calc.</param>
-        /// <param name="cat">cat.</param>
-        /// <param name="cid">cid.</param>
+        /// <param name="bill">Indicates if tax is billable to customer..</param>
+        /// <param name="cmpl">Indicates if the tax is to be reported to jurisdiction..</param>
+        /// <param name="tm">Taxable measure..</param>
+        /// <param name="calc">Calculation type..</param>
+        /// <param name="cat">Tax category name..</param>
+        /// <param name="cid">Tax category ID..</param>
         /// <param name="name">Tax name..</param>
-        /// <param name="exm">exm.</param>
-        /// <param name="lns">lns.</param>
-        /// <param name="min">min.</param>
-        /// <param name="pcd">pcd.</param>
-        /// <param name="taxpcd">taxpcd.</param>
+        /// <param name="exm">Exempt sale amount..</param>
+        /// <param name="lns">Lines..</param>
+        /// <param name="min">Minutes..</param>
+        /// <param name="pcd">PCode for reporting jurisdiction..</param>
+        /// <param name="taxpcd">PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true.</param>
         /// <param name="rate">Tax rate..</param>
-        /// <param name="sur">sur.</param>
-        /// <param name="tax">tax.</param>
-        /// <param name="lvl">lvl.</param>
-        /// <param name="tid">tid.</param>
-        /// <param name="usexm">usexm.</param>
-        /// <param name="notax">notax.</param>
-        /// <param name="trans">trans.</param>
-        /// <param name="svc">svc.</param>
-        /// <param name="chg">chg.</param>
+        /// <param name="sur">Indicates if this tax is a surcharge..</param>
+        /// <param name="tax">Tax amount..</param>
+        /// <param name="lvl">Tax level ID..</param>
+        /// <param name="tid">Tax type ID..</param>
+        /// <param name="usexm">Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true.</param>
+        /// <param name="notax">Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true.</param>
+        /// <param name="trans">Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true.</param>
+        /// <param name="svc">Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true.</param>
+        /// <param name="chg">Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true.</param>
         public Tax(bool? bill = default(bool?), bool? cmpl = default(bool?), double? tm = default(double?), int? calc = default(int?), string cat = default(string), int? cid = default(int?), string name = default(string), double? exm = default(double?), int? lns = default(int?), double? min = default(double?), int? pcd = default(int?), int? taxpcd = default(int?), double? rate = default(double?), bool? sur = default(bool?), double? tax = default(double?), int? lvl = default(int?), int? tid = default(int?), bool? usexm = default(bool?), bool? notax = default(bool?), int? trans = default(int?), int? svc = default(int?), double? chg = default(double?))
         {
             this.Bill = bill;
@@ -83,38 +83,44 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Bill
+        /// Indicates if tax is billable to customer.
         /// </summary>
+        /// <value>Indicates if tax is billable to customer.</value>
         [DataMember(Name="bill", EmitDefaultValue=true)]
         public bool? Bill { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cmpl
+        /// Indicates if the tax is to be reported to jurisdiction.
         /// </summary>
+        /// <value>Indicates if the tax is to be reported to jurisdiction.</value>
         [DataMember(Name="cmpl", EmitDefaultValue=true)]
         public bool? Cmpl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Tm
+        /// Taxable measure.
         /// </summary>
+        /// <value>Taxable measure.</value>
         [DataMember(Name="tm", EmitDefaultValue=true)]
         public double? Tm { get; set; }
 
         /// <summary>
-        /// Gets or Sets Calc
+        /// Calculation type.
         /// </summary>
+        /// <value>Calculation type.</value>
         [DataMember(Name="calc", EmitDefaultValue=true)]
         public int? Calc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cat
+        /// Tax category name.
         /// </summary>
+        /// <value>Tax category name.</value>
         [DataMember(Name="cat", EmitDefaultValue=true)]
         public string Cat { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cid
+        /// Tax category ID.
         /// </summary>
+        /// <value>Tax category ID.</value>
         [DataMember(Name="cid", EmitDefaultValue=true)]
         public int? Cid { get; set; }
 
@@ -126,32 +132,37 @@ namespace avalara.comms.rest.v2.Model
         public string Name { get; set; }
 
         /// <summary>
-        /// Gets or Sets Exm
+        /// Exempt sale amount.
         /// </summary>
+        /// <value>Exempt sale amount.</value>
         [DataMember(Name="exm", EmitDefaultValue=true)]
         public double? Exm { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lns
+        /// Lines.
         /// </summary>
+        /// <value>Lines.</value>
         [DataMember(Name="lns", EmitDefaultValue=true)]
         public int? Lns { get; set; }
 
         /// <summary>
-        /// Gets or Sets Min
+        /// Minutes.
         /// </summary>
+        /// <value>Minutes.</value>
         [DataMember(Name="min", EmitDefaultValue=true)]
         public double? Min { get; set; }
 
         /// <summary>
-        /// Gets or Sets Pcd
+        /// PCode for reporting jurisdiction.
         /// </summary>
+        /// <value>PCode for reporting jurisdiction.</value>
         [DataMember(Name="pcd", EmitDefaultValue=true)]
         public int? Pcd { get; set; }
 
         /// <summary>
-        /// Gets or Sets Taxpcd
+        /// PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true
         /// </summary>
+        /// <value>PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true</value>
         [DataMember(Name="taxpcd", EmitDefaultValue=true)]
         public int? Taxpcd { get; set; }
 
@@ -163,56 +174,65 @@ namespace avalara.comms.rest.v2.Model
         public double? Rate { get; set; }
 
         /// <summary>
-        /// Gets or Sets Sur
+        /// Indicates if this tax is a surcharge.
         /// </summary>
+        /// <value>Indicates if this tax is a surcharge.</value>
         [DataMember(Name="sur", EmitDefaultValue=true)]
         public bool? Sur { get; set; }
 
         /// <summary>
-        /// Gets or Sets _Tax
+        /// Tax amount.
         /// </summary>
+        /// <value>Tax amount.</value>
         [DataMember(Name="tax", EmitDefaultValue=true)]
         public double? _Tax { get; set; }
 
         /// <summary>
-        /// Gets or Sets Lvl
+        /// Tax level ID.
         /// </summary>
+        /// <value>Tax level ID.</value>
         [DataMember(Name="lvl", EmitDefaultValue=true)]
         public int? Lvl { get; set; }
 
         /// <summary>
-        /// Gets or Sets Tid
+        /// Tax type ID.
         /// </summary>
+        /// <value>Tax type ID.</value>
         [DataMember(Name="tid", EmitDefaultValue=true)]
         public int? Tid { get; set; }
 
         /// <summary>
-        /// Gets or Sets Usexm
+        /// Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true
         /// </summary>
+        /// <value>Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true</value>
         [DataMember(Name="usexm", EmitDefaultValue=true)]
         public bool? Usexm { get; set; }
 
         /// <summary>
-        /// Gets or Sets Notax
+        /// Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true
         /// </summary>
+        /// <value>Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true</value>
         [DataMember(Name="notax", EmitDefaultValue=true)]
         public bool? Notax { get; set; }
 
         /// <summary>
-        /// Gets or Sets Trans
+        /// Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true
         /// </summary>
+        /// <value>Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true</value>
         [DataMember(Name="trans", EmitDefaultValue=true)]
         public int? Trans { get; set; }
 
         /// <summary>
-        /// Gets or Sets Svc
+        /// Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true
         /// </summary>
+        /// <value>Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true</value>
         [DataMember(Name="svc", EmitDefaultValue=true)]
         public int? Svc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Chg
+        /// Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true
         /// </summary>
+        /// <value>Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true</value>
         [DataMember(Name="chg", EmitDefaultValue=true)]
         public double? Chg { get; set; }
 

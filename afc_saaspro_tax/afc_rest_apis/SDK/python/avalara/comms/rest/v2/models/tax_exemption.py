@@ -71,7 +71,8 @@ class TaxExemption(object):
         self.discriminator = None
 
         self.frc = frc
-        self.loc = loc
+        if loc is not None:
+            self.loc = loc
         self.tpe = tpe
         self.lvl = lvl
         self.cat = cat
@@ -83,6 +84,7 @@ class TaxExemption(object):
     def frc(self):
         """Gets the frc of this TaxExemption.  # noqa: E501
 
+        Override level exempt flag on wildcard tax type exemptions.  # noqa: E501
 
         :return: The frc of this TaxExemption.  # noqa: E501
         :rtype: bool
@@ -93,6 +95,7 @@ class TaxExemption(object):
     def frc(self, frc):
         """Sets the frc of this TaxExemption.
 
+        Override level exempt flag on wildcard tax type exemptions.  # noqa: E501
 
         :param frc: The frc of this TaxExemption.  # noqa: E501
         :type: bool
@@ -125,6 +128,7 @@ class TaxExemption(object):
     def tpe(self):
         """Gets the tpe of this TaxExemption.  # noqa: E501
 
+        Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.  # noqa: E501
 
         :return: The tpe of this TaxExemption.  # noqa: E501
         :rtype: int
@@ -135,6 +139,7 @@ class TaxExemption(object):
     def tpe(self, tpe):
         """Sets the tpe of this TaxExemption.
 
+        Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.  # noqa: E501
 
         :param tpe: The tpe of this TaxExemption.  # noqa: E501
         :type: int
@@ -146,6 +151,7 @@ class TaxExemption(object):
     def lvl(self):
         """Gets the lvl of this TaxExemption.  # noqa: E501
 
+        Tax level ID.  # noqa: E501
 
         :return: The lvl of this TaxExemption.  # noqa: E501
         :rtype: int
@@ -156,6 +162,7 @@ class TaxExemption(object):
     def lvl(self, lvl):
         """Sets the lvl of this TaxExemption.
 
+        Tax level ID.  # noqa: E501
 
         :param lvl: The lvl of this TaxExemption.  # noqa: E501
         :type: int
@@ -167,6 +174,7 @@ class TaxExemption(object):
     def cat(self):
         """Gets the cat of this TaxExemption.  # noqa: E501
 
+        Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.  # noqa: E501
 
         :return: The cat of this TaxExemption.  # noqa: E501
         :rtype: int
@@ -177,6 +185,7 @@ class TaxExemption(object):
     def cat(self, cat):
         """Sets the cat of this TaxExemption.
 
+        Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.  # noqa: E501
 
         :param cat: The cat of this TaxExemption.  # noqa: E501
         :type: int
@@ -188,6 +197,7 @@ class TaxExemption(object):
     def dom(self):
         """Gets the dom of this TaxExemption.  # noqa: E501
 
+        Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.  # noqa: E501
 
         :return: The dom of this TaxExemption.  # noqa: E501
         :rtype: int
@@ -198,6 +208,7 @@ class TaxExemption(object):
     def dom(self, dom):
         """Sets the dom of this TaxExemption.
 
+        Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.  # noqa: E501
 
         :param dom: The dom of this TaxExemption.  # noqa: E501
         :type: int
@@ -209,6 +220,7 @@ class TaxExemption(object):
     def scp(self):
         """Gets the scp of this TaxExemption.  # noqa: E501
 
+        Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.  # noqa: E501
 
         :return: The scp of this TaxExemption.  # noqa: E501
         :rtype: int
@@ -219,6 +231,7 @@ class TaxExemption(object):
     def scp(self, scp):
         """Sets the scp of this TaxExemption.
 
+        Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.  # noqa: E501
 
         :param scp: The scp of this TaxExemption.  # noqa: E501
         :type: int
@@ -230,6 +243,7 @@ class TaxExemption(object):
     def exnb(self):
         """Gets the exnb of this TaxExemption.  # noqa: E501
 
+        Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.  # noqa: E501
 
         :return: The exnb of this TaxExemption.  # noqa: E501
         :rtype: bool
@@ -240,6 +254,7 @@ class TaxExemption(object):
     def exnb(self, exnb):
         """Sets the exnb of this TaxExemption.
 
+        Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.  # noqa: E501
 
         :param exnb: The exnb of this TaxExemption.  # noqa: E501
         :type: bool

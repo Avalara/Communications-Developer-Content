@@ -18,6 +18,7 @@ module OpenapiClient
     # Process Id for File uploaded
     attr_accessor :process_id
 
+    # Error description (as applicable).
     attr_accessor :err
 
     # Attribute mapping from ruby-style variable name to JSON key.

@@ -236,7 +236,7 @@ class Address implements ModelInterface, ArrayAccess
     /**
      * Sets addr
      *
-     * @param string|null $addr addr
+     * @param string|null $addr Street address.
      *
      * @return $this
      */
@@ -284,7 +284,7 @@ class Address implements ModelInterface, ArrayAccess
     /**
      * Sets st
      *
-     * @param string|null $st st
+     * @param string|null $st State name or abbreviation.
      *
      * @return $this
      */
@@ -308,7 +308,7 @@ class Address implements ModelInterface, ArrayAccess
     /**
      * Sets zip
      *
-     * @param string|null $zip zip
+     * @param string|null $zip Postal code.
      *
      * @return $this
      */

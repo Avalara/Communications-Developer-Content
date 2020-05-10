@@ -89,10 +89,6 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CustomizationApi* | [**apiV2ProfilesGetProfilesGet**](docs/Api/CustomizationApi.md#apiv2profilesgetprofilesget) | **GET** /api/v2/profiles/GetProfiles | Retrieves one or more profiles with associated settings and configurable items
-*CustomizationApi* | [**apiV2ProfilesSetBundlesPost**](docs/Api/CustomizationApi.md#apiv2profilessetbundlespost) | **POST** /api/v2/profiles/SetBundles | Creates or updates bundle packages and associated profile mappings.
-*CustomizationApi* | [**apiV2ProfilesSetConfigPost**](docs/Api/CustomizationApi.md#apiv2profilessetconfigpost) | **POST** /api/v2/profiles/SetConfig | Creates or updates configuration settings and associated profile mappings.
-*CustomizationApi* | [**apiV2ProfilesSetExclusionsPost**](docs/Api/CustomizationApi.md#apiv2profilessetexclusionspost) | **POST** /api/v2/profiles/SetExclusions | Creates or updates exclusions and associated profile mappings.
-*CustomizationApi* | [**apiV2ProfilesSetOverridesPost**](docs/Api/CustomizationApi.md#apiv2profilessetoverridespost) | **POST** /api/v2/profiles/SetOverrides | Creates or updates overrides and associated profile mappings.
 *HealthCheckApi* | [**apiV2HealthCheckGet**](docs/Api/HealthCheckApi.md#apiv2healthcheckget) | **GET** /api/v2/HealthCheck | Health check that confirms the service is operational and ready to use
 *JurisdictionDeterminationApi* | [**apiV2AfcPCodePost**](docs/Api/JurisdictionDeterminationApi.md#apiv2afcpcodepost) | **POST** /api/v2/afc/PCode | Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
 *JurisdictionDeterminationApi* | [**apiV2GeoBatchLogProcessIdGet**](docs/Api/JurisdictionDeterminationApi.md#apiv2geobatchlogprocessidget) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
@@ -146,7 +142,6 @@ Class | Method | HTTP request | Description
  - [RequestConfig](docs/Model/RequestConfig.md)
  - [SafeHarborOverride](docs/Model/SafeHarborOverride.md)
  - [ServiceInfo](docs/Model/ServiceInfo.md)
- - [SetTaxCalculationSettingRequest](docs/Model/SetTaxCalculationSettingRequest.md)
  - [Status](docs/Model/Status.md)
  - [SummarizedTax](docs/Model/SummarizedTax.md)
  - [TSPairData](docs/Model/TSPairData.md)

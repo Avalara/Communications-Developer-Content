@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ref** | **String** |  | [optional] 
-**base** | **Float** |  | [optional] 
-**txs** | [**Array&lt;Tax&gt;**](Tax.md) |  | [optional] 
-**err** | [**Array&lt;Error&gt;**](Error.md) |  | [optional] 
+**ref** | **String** | Reference ID for line item. | [optional] 
+**base** | **Float** | Base sale amount for tax-inclusive line items. | [optional] 
+**txs** | [**Array&lt;Tax&gt;**](Tax.md) | Taxes generated for line item. | [optional] 
+**err** | [**Array&lt;Error&gt;**](Error.md) | Error description (as applicable). | [optional] 
 
 ## Code Sample
 

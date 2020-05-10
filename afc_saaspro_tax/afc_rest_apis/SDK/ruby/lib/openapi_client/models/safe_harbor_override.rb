@@ -15,10 +15,13 @@ require 'date'
 module OpenapiClient
   # Safe harbor rate override for a USF tax type.
   class SafeHarborOverride
+    # Safe harbor type (1 = Cellular, 2 = VoIp, 4 = Paging).
     attr_accessor :sh
 
+    # Original Federal TAM value to override.
     attr_accessor :old
 
+    # New TAM value that will replace the original TAM value.
     attr_accessor :new
 
     # Attribute mapping from ruby-style variable name to JSON key.

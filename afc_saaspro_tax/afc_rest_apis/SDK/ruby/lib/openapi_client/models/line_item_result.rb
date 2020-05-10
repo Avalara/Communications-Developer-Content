@@ -15,12 +15,16 @@ require 'date'
 module OpenapiClient
   # Tax calculation results for a single line item.
   class LineItemResult
+    # Reference ID for line item.
     attr_accessor :ref
 
+    # Base sale amount for tax-inclusive line items.
     attr_accessor :base
 
+    # Taxes generated for line item.
     attr_accessor :txs
 
+    # Error description (as applicable).
     attr_accessor :err
 
     # Attribute mapping from ruby-style variable name to JSON key.

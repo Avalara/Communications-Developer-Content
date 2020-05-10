@@ -15,11 +15,13 @@ require 'date'
 module OpenapiClient
   # Response body for Geo Batch Submit File API.
   class GeoBatchDownloadResponse
+    # Input File Name.
     attr_accessor :input_file
 
     # Input File Download.
     attr_accessor :input_file_download
 
+    # Output File Name.
     attr_accessor :output_file
 
     # Output File Name.

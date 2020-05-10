@@ -82,6 +82,7 @@ class KeyValuePair(object):
     def val(self):
         """Gets the val of this KeyValuePair.  # noqa: E501
 
+        Value.  # noqa: E501
 
         :return: The val of this KeyValuePair.  # noqa: E501
         :rtype: str
@@ -92,6 +93,7 @@ class KeyValuePair(object):
     def val(self, val):
         """Sets the val of this KeyValuePair.
 
+        Value.  # noqa: E501
 
         :param val: The val of this KeyValuePair.  # noqa: E501
         :type: str

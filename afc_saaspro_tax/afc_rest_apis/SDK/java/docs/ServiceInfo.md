@@ -8,7 +8,7 @@ Response body for service info API.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **serverTime** | [**OffsetDateTime**](OffsetDateTime.md) | Server time. |  [optional]
-**versions** | [**VersionInfo**](VersionInfo.md) | Version information. |  [optional]
+**versions** | [**VersionInfo**](VersionInfo.md) |  |  [optional]
 **error** | **String** | Error information. |  [optional]
 
 

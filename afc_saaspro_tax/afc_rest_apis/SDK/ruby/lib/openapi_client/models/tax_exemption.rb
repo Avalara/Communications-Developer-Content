@@ -15,20 +15,27 @@ require 'date'
 module OpenapiClient
   # Tax exemption data.
   class TaxExemption
+    # Override level exempt flag on wildcard tax type exemptions.
     attr_accessor :frc
 
     attr_accessor :loc
 
+    # Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.
     attr_accessor :tpe
 
+    # Tax level ID.
     attr_accessor :lvl
 
+    # Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.
     attr_accessor :cat
 
+    # Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.
     attr_accessor :dom
 
+    # Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.
     attr_accessor :scp
 
+    # Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.
     attr_accessor :exnb
 
     # Attribute mapping from ruby-style variable name to JSON key.
@@ -63,7 +70,6 @@ module OpenapiClient
     def self.openapi_nullable
       Set.new([
         :'frc',
-        :'loc',
         :'tpe',
         :'lvl',
         :'cat',

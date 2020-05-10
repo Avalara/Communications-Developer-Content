@@ -32,7 +32,7 @@ import org.openapitools.client.model.InvoiceResult;
  * Response body for tax calculation API.
  */
 @ApiModel(description = "Response body for tax calculation API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class CalcTaxesResponse {
   public static final String SERIALIZED_NAME_INV = "inv";
   @SerializedName(SERIALIZED_NAME_INV)
@@ -58,11 +58,11 @@ public class CalcTaxesResponse {
   }
 
    /**
-   * Get inv
+   * Tax calculation results for each invoice submitted in request.
    * @return inv
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax calculation results for each invoice submitted in request.")
 
   public List<InvoiceResult> getInv() {
     return inv;
@@ -89,11 +89,11 @@ public class CalcTaxesResponse {
   }
 
    /**
-   * Get err
+   * Error description (as applicable).
    * @return err
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error description (as applicable).")
 
   public List<Error> getErr() {
     return err;

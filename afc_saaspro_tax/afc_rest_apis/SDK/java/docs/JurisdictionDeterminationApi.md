@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 <a name="apiV2GeoBatchUploadPost"></a>
 # **apiV2GeoBatchUploadPost**
-> GeoBatchSubmitFileResponse apiV2GeoBatchUploadPost(file)
+> GeoBatchSubmitFileResponse apiV2GeoBatchUploadPost(geoBatchFile)
 
 Uploads file to Geo Batch.
 
@@ -222,9 +222,9 @@ public class Example {
     
 
     JurisdictionDeterminationApi apiInstance = new JurisdictionDeterminationApi(defaultClient);
-    File file = new File("/path/to/file"); // File | 
+    File geoBatchFile = new File("/path/to/file"); // File | 
     try {
-      GeoBatchSubmitFileResponse result = apiInstance.apiV2GeoBatchUploadPost(file);
+      GeoBatchSubmitFileResponse result = apiInstance.apiV2GeoBatchUploadPost(geoBatchFile);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling JurisdictionDeterminationApi#apiV2GeoBatchUploadPost");
@@ -241,7 +241,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **File**|  | [optional]
+ **geoBatchFile** | **File**|  | [optional]
 
 ### Return type
 

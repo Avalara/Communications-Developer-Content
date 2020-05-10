@@ -34,12 +34,12 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="ReportingInformation" /> class.
         /// </summary>
-        /// <param name="acct">acct.</param>
-        /// <param name="custref">custref.</param>
-        /// <param name="invn">invn.</param>
-        /// <param name="bcyc">bcyc.</param>
-        /// <param name="ccycd">ccycd.</param>
-        /// <param name="ccydesc">ccydesc.</param>
+        /// <param name="acct">Account id.</param>
+        /// <param name="custref">Customer reference.</param>
+        /// <param name="invn">Invoice Number reference.</param>
+        /// <param name="bcyc">Bill Cycle reference.</param>
+        /// <param name="ccycd">Currency code for invoice.</param>
+        /// <param name="ccydesc">Currency description.</param>
         public ReportingInformation(string acct = default(string), string custref = default(string), string invn = default(string), string bcyc = default(string), string ccycd = default(string), string ccydesc = default(string))
         {
             this.Acct = acct;
@@ -51,38 +51,44 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Acct
+        /// Account id
         /// </summary>
+        /// <value>Account id</value>
         [DataMember(Name="acct", EmitDefaultValue=true)]
         public string Acct { get; set; }
 
         /// <summary>
-        /// Gets or Sets Custref
+        /// Customer reference
         /// </summary>
+        /// <value>Customer reference</value>
         [DataMember(Name="custref", EmitDefaultValue=true)]
         public string Custref { get; set; }
 
         /// <summary>
-        /// Gets or Sets Invn
+        /// Invoice Number reference
         /// </summary>
+        /// <value>Invoice Number reference</value>
         [DataMember(Name="invn", EmitDefaultValue=true)]
         public string Invn { get; set; }
 
         /// <summary>
-        /// Gets or Sets Bcyc
+        /// Bill Cycle reference
         /// </summary>
+        /// <value>Bill Cycle reference</value>
         [DataMember(Name="bcyc", EmitDefaultValue=true)]
         public string Bcyc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Ccycd
+        /// Currency code for invoice
         /// </summary>
+        /// <value>Currency code for invoice</value>
         [DataMember(Name="ccycd", EmitDefaultValue=true)]
         public string Ccycd { get; set; }
 
         /// <summary>
-        /// Gets or Sets Ccydesc
+        /// Currency description
         /// </summary>
+        /// <value>Currency description</value>
         [DataMember(Name="ccydesc", EmitDefaultValue=true)]
         public string Ccydesc { get; set; }
 

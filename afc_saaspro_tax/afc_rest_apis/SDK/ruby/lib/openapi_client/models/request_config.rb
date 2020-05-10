@@ -15,10 +15,13 @@ require 'date'
 module OpenapiClient
   # Container class for json properties associated with v2.CalcTaxes request configuration options
   class RequestConfig
+    # Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value
     attr_accessor :retnb
 
+    # Flag indicating extended tax information should be returned.  Reference online documentation for more details
     attr_accessor :retext
 
+    # Flag indicating reporting information should be returned.  Reference online documentation for more details
     attr_accessor :incrf
 
     # Attribute mapping from ruby-style variable name to JSON key.

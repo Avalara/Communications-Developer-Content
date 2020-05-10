@@ -33,7 +33,7 @@ import org.threeten.bp.OffsetDateTime;
  * Individual File Status For Geo Batch result
  */
 @ApiModel(description = "Individual File Status For Geo Batch result")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class GeoBatchStatus {
   public static final String SERIALIZED_NAME_PROCESS_ID = "ProcessId";
   @SerializedName(SERIALIZED_NAME_PROCESS_ID)
@@ -57,7 +57,7 @@ public class GeoBatchStatus {
 
   public static final String SERIALIZED_NAME_DOWNLOADS = "Downloads";
   @SerializedName(SERIALIZED_NAME_DOWNLOADS)
-  private GeoBatchDownloadResponse downloads = null;
+  private GeoBatchDownloadResponse downloads;
 
   public static final String SERIALIZED_NAME_ERROR = "Error";
   @SerializedName(SERIALIZED_NAME_ERROR)
@@ -186,11 +186,11 @@ public class GeoBatchStatus {
   }
 
    /**
-   * Output File Name.
+   * Get downloads
    * @return downloads
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "Output File Name.")
+  @ApiModelProperty(value = "")
 
   public GeoBatchDownloadResponse getDownloads() {
     return downloads;

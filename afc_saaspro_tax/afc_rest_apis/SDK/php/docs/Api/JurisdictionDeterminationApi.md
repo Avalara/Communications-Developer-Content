@@ -187,7 +187,7 @@ Name | Type | Description  | Notes
 
 ## apiV2GeoBatchUploadPost
 
-> \OpenAPI\Client\Model\GeoBatchSubmitFileResponse apiV2GeoBatchUploadPost($file)
+> \OpenAPI\Client\Model\GeoBatchSubmitFileResponse apiV2GeoBatchUploadPost($geo_batch_file)
 
 Uploads file to Geo Batch.
 
@@ -206,10 +206,10 @@ $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$file = "/path/to/file.txt"; // \SplFileObject | 
+$geo_batch_file = "/path/to/file.txt"; // \SplFileObject | 
 
 try {
-    $result = $apiInstance->apiV2GeoBatchUploadPost($file);
+    $result = $apiInstance->apiV2GeoBatchUploadPost($geo_batch_file);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling JurisdictionDeterminationApi->apiV2GeoBatchUploadPost: ', $e->getMessage(), PHP_EOL;
@@ -222,7 +222,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **\SplFileObject****\SplFileObject**|  | [optional]
+ **geo_batch_file** | **\SplFileObject****\SplFileObject**|  | [optional]
 
 ### Return type
 

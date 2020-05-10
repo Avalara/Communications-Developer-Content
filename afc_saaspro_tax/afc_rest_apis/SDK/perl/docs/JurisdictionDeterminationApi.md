@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v2_geo_batch_upload_post**
-> GeoBatchSubmitFileResponse api_v2_geo_batch_upload_post(file => $file)
+> GeoBatchSubmitFileResponse api_v2_geo_batch_upload_post(geo_batch_file => $geo_batch_file)
 
 Uploads file to Geo Batch.
 
@@ -174,10 +174,10 @@ my $api_instance = WWW::OpenAPIClient::JurisdictionDeterminationApi->new(
     
 );
 
-my $file = "/path/to/file"; # string | 
+my $geo_batch_file = "/path/to/file"; # string | 
 
 eval { 
-    my $result = $api_instance->api_v2_geo_batch_upload_post(file => $file);
+    my $result = $api_instance->api_v2_geo_batch_upload_post(geo_batch_file => $geo_batch_file);
     print Dumper($result);
 };
 if ($@) {
@@ -189,7 +189,7 @@ if ($@) {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **string****string**|  | [optional] 
+ **geo_batch_file** | **string****string**|  | [optional] 
 
 ### Return type
 

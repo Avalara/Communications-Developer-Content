@@ -67,6 +67,7 @@ class GeoBatchDownloadResponse(object):
     def input_file(self):
         """Gets the input_file of this GeoBatchDownloadResponse.  # noqa: E501
 
+        Input File Name.  # noqa: E501
 
         :return: The input_file of this GeoBatchDownloadResponse.  # noqa: E501
         :rtype: str
@@ -77,6 +78,7 @@ class GeoBatchDownloadResponse(object):
     def input_file(self, input_file):
         """Sets the input_file of this GeoBatchDownloadResponse.
 
+        Input File Name.  # noqa: E501
 
         :param input_file: The input_file of this GeoBatchDownloadResponse.  # noqa: E501
         :type: str
@@ -111,6 +113,7 @@ class GeoBatchDownloadResponse(object):
     def output_file(self):
         """Gets the output_file of this GeoBatchDownloadResponse.  # noqa: E501
 
+        Output File Name.  # noqa: E501
 
         :return: The output_file of this GeoBatchDownloadResponse.  # noqa: E501
         :rtype: str
@@ -121,6 +124,7 @@ class GeoBatchDownloadResponse(object):
     def output_file(self, output_file):
         """Sets the output_file of this GeoBatchDownloadResponse.
 
+        Output File Name.  # noqa: E501
 
         :param output_file: The output_file of this GeoBatchDownloadResponse.  # noqa: E501
         :type: str

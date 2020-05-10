@@ -53,7 +53,7 @@ class ServiceInfo {
                 obj['ServerTime'] = ApiClient.convertToType(data['ServerTime'], 'Date');
             }
             if (data.hasOwnProperty('Versions')) {
-                obj['Versions'] = ApiClient.convertToType(data['Versions'], VersionInfo);
+                obj['Versions'] = VersionInfo.constructFromObject(data['Versions']);
             }
             if (data.hasOwnProperty('Error')) {
                 obj['Error'] = ApiClient.convertToType(data['Error'], 'String');
@@ -72,7 +72,6 @@ class ServiceInfo {
 ServiceInfo.prototype['ServerTime'] = undefined;
 
 /**
- * Version information.
  * @member {module:model/VersionInfo} Versions
  */
 ServiceInfo.prototype['Versions'] = undefined;

@@ -29,7 +29,7 @@ import org.threeten.bp.OffsetDateTime;
  * Response body for Geo Batch Submit File API.
  */
 @ApiModel(description = "Response body for Geo Batch Submit File API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class GeoBatchLogItem {
   public static final String SERIALIZED_NAME_DATE = "Date";
   @SerializedName(SERIALIZED_NAME_DATE)

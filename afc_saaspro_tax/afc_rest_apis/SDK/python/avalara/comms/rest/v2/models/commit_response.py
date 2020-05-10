@@ -59,6 +59,7 @@ class CommitResponse(object):
     def ok(self):
         """Gets the ok of this CommitResponse.  # noqa: E501
 
+        Indicates if document code's commit status was updated successfully.  # noqa: E501
 
         :return: The ok of this CommitResponse.  # noqa: E501
         :rtype: bool
@@ -69,6 +70,7 @@ class CommitResponse(object):
     def ok(self, ok):
         """Sets the ok of this CommitResponse.
 
+        Indicates if document code's commit status was updated successfully.  # noqa: E501
 
         :param ok: The ok of this CommitResponse.  # noqa: E501
         :type: bool
@@ -80,6 +82,7 @@ class CommitResponse(object):
     def err(self):
         """Gets the err of this CommitResponse.  # noqa: E501
 
+        Error description (as applicable).  # noqa: E501
 
         :return: The err of this CommitResponse.  # noqa: E501
         :rtype: list[Error]
@@ -90,6 +93,7 @@ class CommitResponse(object):
     def err(self, err):
         """Sets the err of this CommitResponse.
 
+        Error description (as applicable).  # noqa: E501
 
         :param err: The err of this CommitResponse.  # noqa: E501
         :type: list[Error]

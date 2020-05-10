@@ -172,7 +172,7 @@ __PACKAGE__->method_documentation({
     'err' => {
         datatype => 'ARRAY[Error]',
         base_name => 'err',
-        description => '',
+        description => 'Error description (as applicable).',
         format => '',
         read_only => '',
             },

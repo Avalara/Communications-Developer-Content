@@ -175,7 +175,7 @@ export default class JurisdictionDeterminationApi {
     /**
      * Uploads file to Geo Batch.
      * @param {Object} opts Optional parameters
-     * @param {File} opts.file 
+     * @param {File} opts.geoBatchFile 
      * @param {module:api/JurisdictionDeterminationApi~apiV2GeoBatchUploadPostCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/GeoBatchSubmitFileResponse}
      */
@@ -190,7 +190,7 @@ export default class JurisdictionDeterminationApi {
       let headerParams = {
       };
       let formParams = {
-        'file': opts['file']
+        'geoBatchFile': opts['geoBatchFile']
       };
 
       let authNames = ['Basic'];

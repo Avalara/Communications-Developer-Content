@@ -172,7 +172,7 @@ __PACKAGE__->method_documentation({
     'versions' => {
         datatype => 'VersionInfo',
         base_name => 'Versions',
-        description => 'Version information.',
+        description => '',
         format => '',
         read_only => '',
             },

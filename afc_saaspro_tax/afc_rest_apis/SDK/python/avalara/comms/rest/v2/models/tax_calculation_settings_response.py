@@ -99,11 +99,13 @@ class TaxCalculationSettingsResponse(object):
         self.client_id = client_id
         self.last_update_by = last_update_by
         self.active = active
-        self.settings = settings
+        if settings is not None:
+            self.settings = settings
         self.exclusions = exclusions
         self.bundles = bundles
         self.nexus = nexus
-        self.overrides = overrides
+        if overrides is not None:
+            self.overrides = overrides
         self.description = description
         self.error = error
         self.item_type = item_type
@@ -230,7 +232,6 @@ class TaxCalculationSettingsResponse(object):
     def settings(self):
         """Gets the settings of this TaxCalculationSettingsResponse.  # noqa: E501
 
-        Configuration settings (as applicable)  # noqa: E501
 
         :return: The settings of this TaxCalculationSettingsResponse.  # noqa: E501
         :rtype: Configuration
@@ -241,7 +242,6 @@ class TaxCalculationSettingsResponse(object):
     def settings(self, settings):
         """Sets the settings of this TaxCalculationSettingsResponse.
 
-        Configuration settings (as applicable)  # noqa: E501
 
         :param settings: The settings of this TaxCalculationSettingsResponse.  # noqa: E501
         :type: Configuration
@@ -322,7 +322,6 @@ class TaxCalculationSettingsResponse(object):
     def overrides(self):
         """Gets the overrides of this TaxCalculationSettingsResponse.  # noqa: E501
 
-        Overrides (as applicable - raw data)  # noqa: E501
 
         :return: The overrides of this TaxCalculationSettingsResponse.  # noqa: E501
         :rtype: OverrideConfig
@@ -333,7 +332,6 @@ class TaxCalculationSettingsResponse(object):
     def overrides(self, overrides):
         """Sets the overrides of this TaxCalculationSettingsResponse.
 
-        Overrides (as applicable - raw data)  # noqa: E501
 
         :param overrides: The overrides of this TaxCalculationSettingsResponse.  # noqa: E501
         :type: OverrideConfig

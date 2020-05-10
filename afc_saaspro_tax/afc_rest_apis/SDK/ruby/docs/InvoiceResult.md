@@ -4,10 +4,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**doc** | **String** |  | [optional] 
-**itms** | [**Array&lt;LineItemResult&gt;**](LineItemResult.md) |  | [optional] 
-**summ** | [**Array&lt;SummarizedTax&gt;**](SummarizedTax.md) |  | [optional] 
-**err** | [**Array&lt;Error&gt;**](Error.md) |  | [optional] 
+**doc** | **String** | Document number for invoice. | [optional] 
+**itms** | [**Array&lt;LineItemResult&gt;**](LineItemResult.md) | Individual tax calculation results for each line item. | [optional] 
+**summ** | [**Array&lt;SummarizedTax&gt;**](SummarizedTax.md) | Summarized taxes for invoice. | [optional] 
+**err** | [**Array&lt;Error&gt;**](Error.md) | Error description (as applicable). | [optional] 
 **incrf** | [**ReportingInformation**](ReportingInformation.md) |  | [optional] 
 
 ## Code Sample

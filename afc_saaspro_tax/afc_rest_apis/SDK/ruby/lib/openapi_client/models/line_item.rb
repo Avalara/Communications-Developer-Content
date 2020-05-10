@@ -15,59 +15,79 @@ require 'date'
 module OpenapiClient
   # Data for an invoice or quote line item.
   class LineItem
+    # Reference ID for line item.
     attr_accessor :ref
 
-    # Location for origination point. If null, will default to Invoice's BillTo location.
     attr_accessor :from
 
-    # Location for destination point. If null, will default to Invoice's BillTo location.
     attr_accessor :to
 
+    # Charge amount.  Default: 0.
     attr_accessor :chg
 
+    # Number of lines.  Default: 0.
     attr_accessor :line
 
+    # Number of locations.  Default: 0.
     attr_accessor :loc
 
+    # Number of minutes.  Default: 0.
     attr_accessor :min
 
+    # 0 - Wholesale : Indicates that the item was sold to a wholeseller.  1 - Retail : Indicates that the item was sold to an end user - a retail sale.  2 - Consumed : Indicates that the item was consumed directly (SAU products only).  3 - VendorUse : Indicates that the item is subject to vendor use tax (SAU products only).
     attr_accessor :sale
 
+    # Split for private-line transactions.
     attr_accessor :plsp
 
+    # Indicates if the charge for this line item is tax-inclusive.
     attr_accessor :incl
 
+    # For pro-rated tax calculations. Percentage to pro-rate.
     attr_accessor :pror
 
+    # For pro-rated credit or adjustment calculations.  0 = default  1 = do not return non-proratable fixed taxes in response  2 = return non-proratable fixed taxes in response
     attr_accessor :proadj
 
+    # Transaction type ID.
     attr_accessor :tran
 
+    # Service type ID.
     attr_accessor :serv
 
+    # Indicates if this line item is a debit card transaction.  Default: false.
     attr_accessor :dbt
 
+    # Indicates if this line item is an adjustment.  Default: false.
     attr_accessor :adj
 
+    # Adjustment method.
     attr_accessor :adjm
 
+    # Discount type for adjustments.
     attr_accessor :disc
 
+    # Optional values for line item. Maximum of 5. Keys must be numeric from 5 to 10.
     attr_accessor :opt
 
+    # Attribute/property value for sales and use transaction/service pairs.
     attr_accessor :prop
 
     attr_accessor :bill
 
+    # Customer type.
     attr_accessor :cust
 
+    # Indicates if customer is a Lifeline participant.  Default: false.
     attr_accessor :lfln
 
     # Invoice date.
     attr_accessor :date
 
+    # Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity
     attr_accessor :qty
 
+    # General Ledger reference to be used in reporting
     attr_accessor :glref
 
     # Attribute mapping from ruby-style variable name to JSON key.
@@ -138,8 +158,6 @@ module OpenapiClient
     def self.openapi_nullable
       Set.new([
         :'ref',
-        :'from',
-        :'to',
         :'chg',
         :'line',
         :'loc',
@@ -156,7 +174,6 @@ module OpenapiClient
         :'disc',
         :'opt',
         :'prop',
-        :'bill',
         :'cust',
         :'lfln',
         :'date',

@@ -57,7 +57,7 @@ function Invoke-JurisdictionDeterminationApiApiV2GeoBatchUploadPost {
     Param (
         [Parameter(Position = 0, ValueFromPipeline = $true, ValueFromPipelineByPropertyName = $true, Mandatory = $false)]
         [String]
-        ${file}
+        ${geoBatchFile}
     )
 
     Process {
@@ -65,7 +65,7 @@ function Invoke-JurisdictionDeterminationApiApiV2GeoBatchUploadPost {
         $PSBoundParameters | Out-DebugParameter | Write-Debug
 
         $Script:JurisdictionDeterminationApi.ApiV2GeoBatchUploadPost(
-            ${file}
+            ${geoBatchFile}
         )
     }
 }

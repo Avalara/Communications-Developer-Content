@@ -416,10 +416,6 @@ class LookupsApi(object):
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'tax_type' is set
-        if self.api_client.client_side_validation and ('tax_type' not in local_var_params or  # noqa: E501
-                                                        local_var_params['tax_type'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `tax_type` when calling `api_v2_afc_taxtype_tax_type_get`")  # noqa: E501
 
         collection_formats = {}
 

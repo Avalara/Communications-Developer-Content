@@ -15,50 +15,70 @@ require 'date'
 module OpenapiClient
   # Tax data for individual line item.
   class Tax
+    # Indicates if tax is billable to customer.
     attr_accessor :bill
 
+    # Indicates if the tax is to be reported to jurisdiction.
     attr_accessor :cmpl
 
+    # Taxable measure.
     attr_accessor :tm
 
+    # Calculation type.
     attr_accessor :calc
 
+    # Tax category name.
     attr_accessor :cat
 
+    # Tax category ID.
     attr_accessor :cid
 
     # Tax name.
     attr_accessor :name
 
+    # Exempt sale amount.
     attr_accessor :exm
 
+    # Lines.
     attr_accessor :lns
 
+    # Minutes.
     attr_accessor :min
 
+    # PCode for reporting jurisdiction.
     attr_accessor :pcd
 
+    # PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true
     attr_accessor :taxpcd
 
     # Tax rate.
     attr_accessor :rate
 
+    # Indicates if this tax is a surcharge.
     attr_accessor :sur
 
+    # Tax amount.
     attr_accessor :tax
 
+    # Tax level ID.
     attr_accessor :lvl
 
+    # Tax type ID.
     attr_accessor :tid
 
+    # Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true
     attr_accessor :usexm
 
+    # Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true
     attr_accessor :notax
 
+    # Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true
     attr_accessor :trans
 
+    # Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true
     attr_accessor :svc
 
+    # Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true
     attr_accessor :chg
 
     # Attribute mapping from ruby-style variable name to JSON key.

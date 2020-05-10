@@ -68,6 +68,7 @@ class KeyValuePair {
 KeyValuePair.prototype['key'] = undefined;
 
 /**
+ * Value.
  * @member {String} val
  */
 KeyValuePair.prototype['val'] = undefined;

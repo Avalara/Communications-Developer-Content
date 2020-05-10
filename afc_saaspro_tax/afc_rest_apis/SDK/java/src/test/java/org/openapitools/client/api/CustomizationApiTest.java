@@ -14,7 +14,6 @@
 package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
-import org.openapitools.client.model.SetTaxCalculationSettingRequest;
 import org.openapitools.client.model.TaxCalculationSettingTypes;
 import org.openapitools.client.model.TaxCalculationSettingsResponse;
 import org.junit.Test;
@@ -48,70 +47,6 @@ public class CustomizationApiTest {
         Integer requestedProfileId = null;
         TaxCalculationSettingTypes itemType = null;
         TaxCalculationSettingsResponse response = api.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Creates or updates bundle packages and associated profile mappings.
-     *
-     * 
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void apiV2ProfilesSetBundlesPostTest() throws ApiException {
-        SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-        TaxCalculationSettingsResponse response = api.apiV2ProfilesSetBundlesPost(setTaxCalculationSettingRequest);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Creates or updates configuration settings and associated profile mappings.
-     *
-     * 
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void apiV2ProfilesSetConfigPostTest() throws ApiException {
-        SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-        TaxCalculationSettingsResponse response = api.apiV2ProfilesSetConfigPost(setTaxCalculationSettingRequest);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Creates or updates exclusions and associated profile mappings.
-     *
-     * 
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void apiV2ProfilesSetExclusionsPostTest() throws ApiException {
-        SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-        TaxCalculationSettingsResponse response = api.apiV2ProfilesSetExclusionsPost(setTaxCalculationSettingRequest);
-
-        // TODO: test validations
-    }
-    
-    /**
-     * Creates or updates overrides and associated profile mappings.
-     *
-     * 
-     *
-     * @throws ApiException
-     *          if the Api call fails
-     */
-    @Test
-    public void apiV2ProfilesSetOverridesPostTest() throws ApiException {
-        SetTaxCalculationSettingRequest setTaxCalculationSettingRequest = null;
-        TaxCalculationSettingsResponse response = api.apiV2ProfilesSetOverridesPost(setTaxCalculationSettingRequest);
 
         // TODO: test validations
     }

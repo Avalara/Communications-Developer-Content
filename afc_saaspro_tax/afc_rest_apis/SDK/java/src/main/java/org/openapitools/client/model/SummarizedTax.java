@@ -28,7 +28,7 @@ import java.io.IOException;
  * Tax data for summarized invoice taxes.
  */
 @ApiModel(description = "Tax data for summarized invoice taxes.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class SummarizedTax {
   public static final String SERIALIZED_NAME_MAX = "max";
   @SerializedName(SERIALIZED_NAME_MAX)
@@ -122,11 +122,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get max
+   * Maximum base for tax bracket.
    * @return max
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Maximum base for tax bracket.")
 
   public Double getMax() {
     return max;
@@ -145,11 +145,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get min
+   * Minimum base for tax bracket.
    * @return min
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Minimum base for tax bracket.")
 
   public Double getMin() {
     return min;
@@ -168,11 +168,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get tchg
+   * Total charge amount.
    * @return tchg
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Total charge amount.")
 
   public Double getTchg() {
     return tchg;
@@ -191,11 +191,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get calc
+   * Calculation type.
    * @return calc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Calculation type.")
 
   public Integer getCalc() {
     return calc;
@@ -214,11 +214,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get cat
+   * Tax category name.
    * @return cat
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax category name.")
 
   public String getCat() {
     return cat;
@@ -237,11 +237,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get cid
+   * Tax category ID.
    * @return cid
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax category ID.")
 
   public Integer getCid() {
     return cid;
@@ -283,11 +283,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get exm
+   * Exempt sale amount.
    * @return exm
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Exempt sale amount.")
 
   public Double getExm() {
     return exm;
@@ -306,11 +306,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get lns
+   * Lines.
    * @return lns
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Lines.")
 
   public Integer getLns() {
     return lns;
@@ -329,11 +329,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get pcd
+   * PCode for reporting jurisdiction.
    * @return pcd
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "PCode for reporting jurisdiction.")
 
   public Integer getPcd() {
     return pcd;
@@ -352,11 +352,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get taxpcd
+   * PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true
    * @return taxpcd
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "PCode for taxing jurisdiction.  Only returned if return extended tax data flag is true")
 
   public Integer getTaxpcd() {
     return taxpcd;
@@ -398,11 +398,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get sur
+   * Indicates if this tax is a surcharge.
    * @return sur
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Indicates if this tax is a surcharge.")
 
   public Boolean getSur() {
     return sur;
@@ -421,11 +421,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get tax
+   * Tax amount.
    * @return tax
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax amount.")
 
   public Double getTax() {
     return tax;
@@ -444,11 +444,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get lvl
+   * Tax level ID.
    * @return lvl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax level ID.")
 
   public Integer getLvl() {
     return lvl;
@@ -467,11 +467,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get tid
+   * Tax type ID.
    * @return tid
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax type ID.")
 
   public Integer getTid() {
     return tid;
@@ -490,11 +490,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get usexm
+   * Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true
    * @return usexm
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Flag indicating if tax was user exempted  Only returned if return extended tax data flag is true")
 
   public Boolean getUsexm() {
     return usexm;
@@ -513,11 +513,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get notax
+   * Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true
    * @return notax
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Flag indicating the item is a no tax entry  There were no taxes generated, this entry is to convey back the taxing jurisdiction that was used in the response  Only returned if return extended tax data flag is true")
 
   public Boolean getNotax() {
     return notax;
@@ -536,11 +536,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get trans
+   * Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true
    * @return trans
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Transaction type used to calculate tax  For bundles will be specific bundled item transaction type  Only returned if return extended tax data flag is true")
 
   public Integer getTrans() {
     return trans;
@@ -559,11 +559,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get svc
+   * Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true
    * @return svc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Service type used to calculate tax  For bundles will be specific bundled item service type  Only returned if return extended tax data flag is true")
 
   public Integer getSvc() {
     return svc;
@@ -582,11 +582,11 @@ public class SummarizedTax {
   }
 
    /**
-   * Get chg
+   * Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true
    * @return chg
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Charge used to calculate tax  For bundles will be the percentage of charge applied to bundled item  For tax inclusive calls will be the calculated charge  Only returned if return extended tax data flag is true")
 
   public Double getChg() {
     return chg;

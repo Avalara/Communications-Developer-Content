@@ -34,9 +34,9 @@ namespace avalara.comms.rest.v2.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="CommitRequest" /> class.
         /// </summary>
-        /// <param name="doc">doc.</param>
-        /// <param name="cmmt">cmmt.</param>
-        /// <param name="opt">opt.</param>
+        /// <param name="doc">Document code..</param>
+        /// <param name="cmmt">Indicates if transactions for the specified document code should be committed..</param>
+        /// <param name="opt">Overrides value for OptionalFields field in reports..</param>
         public CommitRequest(string doc = default(string), bool? cmmt = default(bool?), List<KeyValuePair> opt = default(List<KeyValuePair>))
         {
             this.Doc = doc;
@@ -45,20 +45,23 @@ namespace avalara.comms.rest.v2.Model
         }
         
         /// <summary>
-        /// Gets or Sets Doc
+        /// Document code.
         /// </summary>
+        /// <value>Document code.</value>
         [DataMember(Name="doc", EmitDefaultValue=true)]
         public string Doc { get; set; }
 
         /// <summary>
-        /// Gets or Sets Cmmt
+        /// Indicates if transactions for the specified document code should be committed.
         /// </summary>
+        /// <value>Indicates if transactions for the specified document code should be committed.</value>
         [DataMember(Name="cmmt", EmitDefaultValue=true)]
         public bool? Cmmt { get; set; }
 
         /// <summary>
-        /// Gets or Sets Opt
+        /// Overrides value for OptionalFields field in reports.
         /// </summary>
+        /// <value>Overrides value for OptionalFields field in reports.</value>
         [DataMember(Name="opt", EmitDefaultValue=true)]
         public List<KeyValuePair> Opt { get; set; }
 

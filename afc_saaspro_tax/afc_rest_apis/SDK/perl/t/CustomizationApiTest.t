@@ -39,37 +39,5 @@ isa_ok($api, 'WWW::OpenAPIClient::CustomizationApi');
     my $result = $api->api_v2_profiles_get_profiles_get(requested_client_id => $requested_client_id, requested_profile_id => $requested_profile_id, item_type => $item_type);
 }
 
-#
-# api_v2_profiles_set_bundles_post test
-#
-{
-    my $set_tax_calculation_setting_request = undef; # replace NULL with a proper value
-    my $result = $api->api_v2_profiles_set_bundles_post(set_tax_calculation_setting_request => $set_tax_calculation_setting_request);
-}
-
-#
-# api_v2_profiles_set_config_post test
-#
-{
-    my $set_tax_calculation_setting_request = undef; # replace NULL with a proper value
-    my $result = $api->api_v2_profiles_set_config_post(set_tax_calculation_setting_request => $set_tax_calculation_setting_request);
-}
-
-#
-# api_v2_profiles_set_exclusions_post test
-#
-{
-    my $set_tax_calculation_setting_request = undef; # replace NULL with a proper value
-    my $result = $api->api_v2_profiles_set_exclusions_post(set_tax_calculation_setting_request => $set_tax_calculation_setting_request);
-}
-
-#
-# api_v2_profiles_set_overrides_post test
-#
-{
-    my $set_tax_calculation_setting_request = undef; # replace NULL with a proper value
-    my $result = $api->api_v2_profiles_set_overrides_post(set_tax_calculation_setting_request => $set_tax_calculation_setting_request);
-}
-
 
 1;

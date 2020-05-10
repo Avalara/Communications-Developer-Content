@@ -164,14 +164,14 @@ __PACKAGE__->method_documentation({
     'month' => {
         datatype => 'int',
         base_name => 'month',
-        description => '',
+        description => 'Numeric value representing billing period month.  1 &#x3D; January.',
         format => '',
         read_only => '',
             },
     'year' => {
         datatype => 'int',
         base_name => 'year',
-        description => '',
+        description => 'Numeric 4 digit representation of billing period year.',
         format => '',
         read_only => '',
             },

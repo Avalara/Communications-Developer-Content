@@ -63,6 +63,7 @@ class RequestConfig(object):
     def retnb(self):
         """Gets the retnb of this RequestConfig.  # noqa: E501
 
+        Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value  # noqa: E501
 
         :return: The retnb of this RequestConfig.  # noqa: E501
         :rtype: bool
@@ -73,6 +74,7 @@ class RequestConfig(object):
     def retnb(self, retnb):
         """Sets the retnb of this RequestConfig.
 
+        Flag indicating non-billable taxes should be returned.  If set, will override account setting  Default if not provided is account setting value  # noqa: E501
 
         :param retnb: The retnb of this RequestConfig.  # noqa: E501
         :type: bool
@@ -84,6 +86,7 @@ class RequestConfig(object):
     def retext(self):
         """Gets the retext of this RequestConfig.  # noqa: E501
 
+        Flag indicating extended tax information should be returned.  Reference online documentation for more details  # noqa: E501
 
         :return: The retext of this RequestConfig.  # noqa: E501
         :rtype: bool
@@ -94,6 +97,7 @@ class RequestConfig(object):
     def retext(self, retext):
         """Sets the retext of this RequestConfig.
 
+        Flag indicating extended tax information should be returned.  Reference online documentation for more details  # noqa: E501
 
         :param retext: The retext of this RequestConfig.  # noqa: E501
         :type: bool
@@ -105,6 +109,7 @@ class RequestConfig(object):
     def incrf(self):
         """Gets the incrf of this RequestConfig.  # noqa: E501
 
+        Flag indicating reporting information should be returned.  Reference online documentation for more details  # noqa: E501
 
         :return: The incrf of this RequestConfig.  # noqa: E501
         :rtype: bool
@@ -115,6 +120,7 @@ class RequestConfig(object):
     def incrf(self, incrf):
         """Sets the incrf of this RequestConfig.
 
+        Flag indicating reporting information should be returned.  Reference online documentation for more details  # noqa: E501
 
         :param incrf: The incrf of this RequestConfig.  # noqa: E501
         :type: bool

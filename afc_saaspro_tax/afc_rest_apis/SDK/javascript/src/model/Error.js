@@ -68,6 +68,7 @@ class Error {
 Error.prototype['code'] = undefined;
 
 /**
+ * Error message.
  * @member {String} msg
  */
 Error.prototype['msg'] = undefined;

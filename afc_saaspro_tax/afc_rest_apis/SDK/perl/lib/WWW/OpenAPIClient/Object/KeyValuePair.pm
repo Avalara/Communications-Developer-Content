@@ -171,7 +171,7 @@ __PACKAGE__->method_documentation({
     'val' => {
         datatype => 'string',
         base_name => 'val',
-        description => '',
+        description => 'Value.',
         format => '',
         read_only => '',
             },

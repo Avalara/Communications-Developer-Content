@@ -35,7 +35,7 @@ namespace avalara.comms.rest.v2.Model
         /// Initializes a new instance of the <see cref="ServiceInfo" /> class.
         /// </summary>
         /// <param name="serverTime">Server time..</param>
-        /// <param name="versions">Version information..</param>
+        /// <param name="versions">versions.</param>
         /// <param name="error">Error information..</param>
         public ServiceInfo(DateTime serverTime = default(DateTime), VersionInfo versions = default(VersionInfo), string error = default(string))
         {
@@ -52,10 +52,9 @@ namespace avalara.comms.rest.v2.Model
         public DateTime ServerTime { get; set; }
 
         /// <summary>
-        /// Version information.
+        /// Gets or Sets Versions
         /// </summary>
-        /// <value>Version information.</value>
-        [DataMember(Name="Versions", EmitDefaultValue=true)]
+        [DataMember(Name="Versions", EmitDefaultValue=false)]
         public VersionInfo Versions { get; set; }
 
         /// <summary>

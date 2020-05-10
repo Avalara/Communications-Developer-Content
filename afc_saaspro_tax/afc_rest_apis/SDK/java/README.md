@@ -2,7 +2,7 @@
 
 SaasPro
 - API version: v2
-  - Build date: 2020-02-14T16:02:52.336-05:00[America/New_York]
+  - Build date: 2020-05-10T00:57:00.867-04:00[America/New_York]
 
 APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
 
@@ -112,10 +112,6 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CustomizationApi* | [**apiV2ProfilesGetProfilesGet**](docs/CustomizationApi.md#apiV2ProfilesGetProfilesGet) | **GET** /api/v2/profiles/GetProfiles | Retrieves one or more profiles with associated settings and configurable items
-*CustomizationApi* | [**apiV2ProfilesSetBundlesPost**](docs/CustomizationApi.md#apiV2ProfilesSetBundlesPost) | **POST** /api/v2/profiles/SetBundles | Creates or updates bundle packages and associated profile mappings.
-*CustomizationApi* | [**apiV2ProfilesSetConfigPost**](docs/CustomizationApi.md#apiV2ProfilesSetConfigPost) | **POST** /api/v2/profiles/SetConfig | Creates or updates configuration settings and associated profile mappings.
-*CustomizationApi* | [**apiV2ProfilesSetExclusionsPost**](docs/CustomizationApi.md#apiV2ProfilesSetExclusionsPost) | **POST** /api/v2/profiles/SetExclusions | Creates or updates exclusions and associated profile mappings.
-*CustomizationApi* | [**apiV2ProfilesSetOverridesPost**](docs/CustomizationApi.md#apiV2ProfilesSetOverridesPost) | **POST** /api/v2/profiles/SetOverrides | Creates or updates overrides and associated profile mappings.
 *HealthCheckApi* | [**apiV2HealthCheckGet**](docs/HealthCheckApi.md#apiV2HealthCheckGet) | **GET** /api/v2/HealthCheck | Health check that confirms the service is operational and ready to use
 *JurisdictionDeterminationApi* | [**apiV2AfcPCodePost**](docs/JurisdictionDeterminationApi.md#apiV2AfcPCodePost) | **POST** /api/v2/afc/PCode | Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
 *JurisdictionDeterminationApi* | [**apiV2GeoBatchLogProcessIdGet**](docs/JurisdictionDeterminationApi.md#apiV2GeoBatchLogProcessIdGet) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
@@ -169,7 +165,6 @@ Class | Method | HTTP request | Description
  - [RequestConfig](docs/RequestConfig.md)
  - [SafeHarborOverride](docs/SafeHarborOverride.md)
  - [ServiceInfo](docs/ServiceInfo.md)
- - [SetTaxCalculationSettingRequest](docs/SetTaxCalculationSettingRequest.md)
  - [Status](docs/Status.md)
  - [SummarizedTax](docs/SummarizedTax.md)
  - [TSPairData](docs/TSPairData.md)

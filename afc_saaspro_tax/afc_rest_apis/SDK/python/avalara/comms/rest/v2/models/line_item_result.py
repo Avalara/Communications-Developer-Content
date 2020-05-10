@@ -67,6 +67,7 @@ class LineItemResult(object):
     def ref(self):
         """Gets the ref of this LineItemResult.  # noqa: E501
 
+        Reference ID for line item.  # noqa: E501
 
         :return: The ref of this LineItemResult.  # noqa: E501
         :rtype: str
@@ -77,6 +78,7 @@ class LineItemResult(object):
     def ref(self, ref):
         """Sets the ref of this LineItemResult.
 
+        Reference ID for line item.  # noqa: E501
 
         :param ref: The ref of this LineItemResult.  # noqa: E501
         :type: str
@@ -88,6 +90,7 @@ class LineItemResult(object):
     def base(self):
         """Gets the base of this LineItemResult.  # noqa: E501
 
+        Base sale amount for tax-inclusive line items.  # noqa: E501
 
         :return: The base of this LineItemResult.  # noqa: E501
         :rtype: float
@@ -98,6 +101,7 @@ class LineItemResult(object):
     def base(self, base):
         """Sets the base of this LineItemResult.
 
+        Base sale amount for tax-inclusive line items.  # noqa: E501
 
         :param base: The base of this LineItemResult.  # noqa: E501
         :type: float
@@ -109,6 +113,7 @@ class LineItemResult(object):
     def txs(self):
         """Gets the txs of this LineItemResult.  # noqa: E501
 
+        Taxes generated for line item.  # noqa: E501
 
         :return: The txs of this LineItemResult.  # noqa: E501
         :rtype: list[Tax]
@@ -119,6 +124,7 @@ class LineItemResult(object):
     def txs(self, txs):
         """Sets the txs of this LineItemResult.
 
+        Taxes generated for line item.  # noqa: E501
 
         :param txs: The txs of this LineItemResult.  # noqa: E501
         :type: list[Tax]
@@ -130,6 +136,7 @@ class LineItemResult(object):
     def err(self):
         """Gets the err of this LineItemResult.  # noqa: E501
 
+        Error description (as applicable).  # noqa: E501
 
         :return: The err of this LineItemResult.  # noqa: E501
         :rtype: list[Error]
@@ -140,6 +147,7 @@ class LineItemResult(object):
     def err(self, err):
         """Sets the err of this LineItemResult.
 
+        Error description (as applicable).  # noqa: E501
 
         :param err: The err of this LineItemResult.  # noqa: E501
         :type: list[Error]

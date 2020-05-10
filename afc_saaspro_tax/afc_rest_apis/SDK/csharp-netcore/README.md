@@ -98,10 +98,6 @@ All URIs are relative to *http://localhost*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CustomizationApi* | [**ApiV2ProfilesGetProfilesGet**](docs/CustomizationApi.md#apiv2profilesgetprofilesget) | **GET** /api/v2/profiles/GetProfiles | Retrieves one or more profiles with associated settings and configurable items
-*CustomizationApi* | [**ApiV2ProfilesSetBundlesPost**](docs/CustomizationApi.md#apiv2profilessetbundlespost) | **POST** /api/v2/profiles/SetBundles | Creates or updates bundle packages and associated profile mappings.
-*CustomizationApi* | [**ApiV2ProfilesSetConfigPost**](docs/CustomizationApi.md#apiv2profilessetconfigpost) | **POST** /api/v2/profiles/SetConfig | Creates or updates configuration settings and associated profile mappings.
-*CustomizationApi* | [**ApiV2ProfilesSetExclusionsPost**](docs/CustomizationApi.md#apiv2profilessetexclusionspost) | **POST** /api/v2/profiles/SetExclusions | Creates or updates exclusions and associated profile mappings.
-*CustomizationApi* | [**ApiV2ProfilesSetOverridesPost**](docs/CustomizationApi.md#apiv2profilessetoverridespost) | **POST** /api/v2/profiles/SetOverrides | Creates or updates overrides and associated profile mappings.
 *HealthCheckApi* | [**ApiV2HealthCheckGet**](docs/HealthCheckApi.md#apiv2healthcheckget) | **GET** /api/v2/HealthCheck | Health check that confirms the service is operational and ready to use
 *JurisdictionDeterminationApi* | [**ApiV2AfcPCodePost**](docs/JurisdictionDeterminationApi.md#apiv2afcpcodepost) | **POST** /api/v2/afc/PCode | Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
 *JurisdictionDeterminationApi* | [**ApiV2GeoBatchLogProcessIdGet**](docs/JurisdictionDeterminationApi.md#apiv2geobatchlogprocessidget) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
@@ -156,7 +152,6 @@ Class | Method | HTTP request | Description
  - [Model.RequestConfig](docs/RequestConfig.md)
  - [Model.SafeHarborOverride](docs/SafeHarborOverride.md)
  - [Model.ServiceInfo](docs/ServiceInfo.md)
- - [Model.SetTaxCalculationSettingRequest](docs/SetTaxCalculationSettingRequest.md)
  - [Model.Status](docs/Status.md)
  - [Model.SummarizedTax](docs/SummarizedTax.md)
  - [Model.TSPairData](docs/TSPairData.md)

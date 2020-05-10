@@ -29,7 +29,7 @@ import org.openapitools.client.model.Location;
  * Tax exemption data.
  */
 @ApiModel(description = "Tax exemption data.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class TaxExemption {
   public static final String SERIALIZED_NAME_FRC = "frc";
   @SerializedName(SERIALIZED_NAME_FRC)
@@ -37,7 +37,7 @@ public class TaxExemption {
 
   public static final String SERIALIZED_NAME_LOC = "loc";
   @SerializedName(SERIALIZED_NAME_LOC)
-  private Location loc = null;
+  private Location loc;
 
   public static final String SERIALIZED_NAME_TPE = "tpe";
   @SerializedName(SERIALIZED_NAME_TPE)
@@ -71,11 +71,11 @@ public class TaxExemption {
   }
 
    /**
-   * Get frc
+   * Override level exempt flag on wildcard tax type exemptions.
    * @return frc
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Override level exempt flag on wildcard tax type exemptions.")
 
   public Boolean getFrc() {
     return frc;
@@ -117,11 +117,11 @@ public class TaxExemption {
   }
 
    /**
-   * Get tpe
+   * Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.
    * @return tpe
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax type to exempt.  Tax type exemptions and Category exemptions are mutually exclusive.")
 
   public Integer getTpe() {
     return tpe;
@@ -140,11 +140,11 @@ public class TaxExemption {
   }
 
    /**
-   * Get lvl
+   * Tax level ID.
    * @return lvl
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax level ID.")
 
   public Integer getLvl() {
     return lvl;
@@ -163,11 +163,11 @@ public class TaxExemption {
   }
 
    /**
-   * Get cat
+   * Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.
    * @return cat
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Tax category to exempt. Tax type exemptions and Category exemptions are mutually exclusive.")
 
   public Integer getCat() {
     return cat;
@@ -186,11 +186,11 @@ public class TaxExemption {
   }
 
    /**
-   * Get dom
+   * Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.
    * @return dom
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Exemption Domain.  This is the jurisdiction level in which the  exemption jurisdiction must match the taxing jurisdiction.")
 
   public Integer getDom() {
     return dom;
@@ -209,11 +209,11 @@ public class TaxExemption {
   }
 
    /**
-   * Get scp
+   * Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.
    * @return scp
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Exemption Scope.  This defines the tax levels in which the  taxes will be considered as candidates for exemption.")
 
   public Integer getScp() {
     return scp;
@@ -232,11 +232,11 @@ public class TaxExemption {
   }
 
    /**
-   * Get exnb
+   * Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.
    * @return exnb
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Exempt non-billable flag.  Determines if non-billable taxes are  to be considered as candidates for exemption.")
 
   public Boolean getExnb() {
     return exnb;

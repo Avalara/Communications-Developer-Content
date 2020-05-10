@@ -68,6 +68,7 @@ class Address {
 }
 
 /**
+ * Street address.
  * @member {String} addr
  */
 Address.prototype['addr'] = undefined;
@@ -79,11 +80,13 @@ Address.prototype['addr'] = undefined;
 Address.prototype['city'] = undefined;
 
 /**
+ * State name or abbreviation.
  * @member {String} st
  */
 Address.prototype['st'] = undefined;
 
 /**
+ * Postal code.
  * @member {String} zip
  */
 Address.prototype['zip'] = undefined;

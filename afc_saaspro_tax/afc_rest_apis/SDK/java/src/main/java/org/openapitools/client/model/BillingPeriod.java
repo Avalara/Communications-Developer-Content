@@ -28,7 +28,7 @@ import java.io.IOException;
  * Optional object for passing in billing period
  */
 @ApiModel(description = "Optional object for passing in billing period")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class BillingPeriod {
   public static final String SERIALIZED_NAME_MONTH = "month";
   @SerializedName(SERIALIZED_NAME_MONTH)
@@ -46,11 +46,11 @@ public class BillingPeriod {
   }
 
    /**
-   * Get month
+   * Numeric value representing billing period month.  1 &#x3D; January.
    * @return month
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Numeric value representing billing period month.  1 = January.")
 
   public Integer getMonth() {
     return month;
@@ -69,11 +69,11 @@ public class BillingPeriod {
   }
 
    /**
-   * Get year
+   * Numeric 4 digit representation of billing period year.
    * @return year
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Numeric 4 digit representation of billing period year.")
 
   public Integer getYear() {
     return year;

@@ -32,7 +32,7 @@ import org.openapitools.client.model.GeoBatchLogItem;
  * Response body for Geo Batch Submit File API.
  */
 @ApiModel(description = "Response body for Geo Batch Submit File API.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class GeoBatchLog {
   public static final String SERIALIZED_NAME_LOG = "Log";
   @SerializedName(SERIALIZED_NAME_LOG)
@@ -89,11 +89,11 @@ public class GeoBatchLog {
   }
 
    /**
-   * Get err
+   * Error description (as applicable).
    * @return err
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Error description (as applicable).")
 
   public List<Error> getErr() {
     return err;

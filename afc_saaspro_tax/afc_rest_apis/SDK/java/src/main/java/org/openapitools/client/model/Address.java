@@ -28,7 +28,7 @@ import java.io.IOException;
  * Address information.
  */
 @ApiModel(description = "Address information.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-02-14T16:02:52.336-05:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
 public class Address {
   public static final String SERIALIZED_NAME_ADDR = "addr";
   @SerializedName(SERIALIZED_NAME_ADDR)
@@ -54,11 +54,11 @@ public class Address {
   }
 
    /**
-   * Get addr
+   * Street address.
    * @return addr
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Street address.")
 
   public String getAddr() {
     return addr;
@@ -100,11 +100,11 @@ public class Address {
   }
 
    /**
-   * Get st
+   * State name or abbreviation.
    * @return st
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "State name or abbreviation.")
 
   public String getSt() {
     return st;
@@ -123,11 +123,11 @@ public class Address {
   }
 
    /**
-   * Get zip
+   * Postal code.
    * @return zip
   **/
   @javax.annotation.Nullable
-  @ApiModelProperty(value = "")
+  @ApiModelProperty(value = "Postal code.")
 
   public String getZip() {
     return zip;

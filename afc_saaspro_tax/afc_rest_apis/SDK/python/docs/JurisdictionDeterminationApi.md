@@ -185,7 +185,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v2_geo_batch_upload_post**
-> GeoBatchSubmitFileResponse api_v2_geo_batch_upload_post(file=file)
+> GeoBatchSubmitFileResponse api_v2_geo_batch_upload_post(geo_batch_file=geo_batch_file)
 
 Uploads file to Geo Batch.
 
@@ -205,11 +205,11 @@ configuration.host = "http://localhost"
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = avalara.comms.rest.v2.JurisdictionDeterminationApi(api_client)
-    file = '/path/to/file' # file |  (optional)
+    geo_batch_file = '/path/to/file' # file |  (optional)
 
     try:
         # Uploads file to Geo Batch.
-        api_response = api_instance.api_v2_geo_batch_upload_post(file=file)
+        api_response = api_instance.api_v2_geo_batch_upload_post(geo_batch_file=geo_batch_file)
         pprint(api_response)
     except ApiException as e:
         print("Exception when calling JurisdictionDeterminationApi->api_v2_geo_batch_upload_post: %s\n" % e)
@@ -219,7 +219,7 @@ with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **file** | **file**|  | [optional] 
+ **geo_batch_file** | **file**|  | [optional] 
 
 ### Return type
 

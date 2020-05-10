@@ -68,6 +68,7 @@ class GeoBatchDownloadResponse {
 }
 
 /**
+ * Input File Name.
  * @member {String} InputFile
  */
 GeoBatchDownloadResponse.prototype['InputFile'] = undefined;
@@ -79,6 +80,7 @@ GeoBatchDownloadResponse.prototype['InputFile'] = undefined;
 GeoBatchDownloadResponse.prototype['InputFileDownload'] = undefined;
 
 /**
+ * Output File Name.
  * @member {String} OutputFile
  */
 GeoBatchDownloadResponse.prototype['OutputFile'] = undefined;

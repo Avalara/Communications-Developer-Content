@@ -54,8 +54,8 @@
       //expect(instance).to.be.a(SaasPro.InlineObject);
     });
 
-    it('should have the property file (base name: "file")', function() {
-      // uncomment below and update the code to test the property file
+    it('should have the property geoBatchFile (base name: "geoBatchFile")', function() {
+      // uncomment below and update the code to test the property geoBatchFile
       //var instane = new SaasPro.InlineObject();
       //expect(instance).to.be();
     });

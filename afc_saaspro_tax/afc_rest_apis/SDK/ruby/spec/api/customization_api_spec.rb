@@ -45,48 +45,4 @@ describe 'CustomizationApi' do
     end
   end
 
-  # unit tests for api_v2_profiles_set_bundles_post
-  # Creates or updates bundle packages and associated profile mappings.
-  # @param [Hash] opts the optional parameters
-  # @option opts [SetTaxCalculationSettingRequest] :set_tax_calculation_setting_request 
-  # @return [TaxCalculationSettingsResponse]
-  describe 'api_v2_profiles_set_bundles_post test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for api_v2_profiles_set_config_post
-  # Creates or updates configuration settings and associated profile mappings.
-  # @param [Hash] opts the optional parameters
-  # @option opts [SetTaxCalculationSettingRequest] :set_tax_calculation_setting_request 
-  # @return [TaxCalculationSettingsResponse]
-  describe 'api_v2_profiles_set_config_post test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for api_v2_profiles_set_exclusions_post
-  # Creates or updates exclusions and associated profile mappings.
-  # @param [Hash] opts the optional parameters
-  # @option opts [SetTaxCalculationSettingRequest] :set_tax_calculation_setting_request 
-  # @return [TaxCalculationSettingsResponse]
-  describe 'api_v2_profiles_set_exclusions_post test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
-  # unit tests for api_v2_profiles_set_overrides_post
-  # Creates or updates overrides and associated profile mappings.
-  # @param [Hash] opts the optional parameters
-  # @option opts [SetTaxCalculationSettingRequest] :set_tax_calculation_setting_request 
-  # @return [TaxCalculationSettingsResponse]
-  describe 'api_v2_profiles_set_overrides_post test' do
-    it 'should work' do
-      # assertion here. ref: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
-    end
-  end
-
 end

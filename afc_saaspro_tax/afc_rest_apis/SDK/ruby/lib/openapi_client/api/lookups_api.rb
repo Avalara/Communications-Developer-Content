@@ -216,10 +216,6 @@ module OpenapiClient
       if @api_client.config.debugging
         @api_client.config.logger.debug 'Calling API: LookupsApi.api_v2_afc_taxtype_tax_type_get ...'
       end
-      # verify the required parameter 'tax_type' is set
-      if @api_client.config.client_side_validation && tax_type.nil?
-        fail ArgumentError, "Missing the required parameter 'tax_type' when calling LookupsApi.api_v2_afc_taxtype_tax_type_get"
-      end
       # resource path
       local_var_path = '/api/v2/afc/taxtype/{taxType}'.sub('{' + 'taxType' + '}', CGI.escape(tax_type.to_s))
 

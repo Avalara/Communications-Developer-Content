@@ -34,7 +34,7 @@ namespace avalara.comms.rest.v2.Model
         /// Initializes a new instance of the <see cref="KeyValuePair" /> class.
         /// </summary>
         /// <param name="key">Key..</param>
-        /// <param name="val">val.</param>
+        /// <param name="val">Value..</param>
         public KeyValuePair(string key = default(string), string val = default(string))
         {
             this.Key = key;
@@ -51,8 +51,9 @@ namespace avalara.comms.rest.v2.Model
         public string Key { get; set; }
 
         /// <summary>
-        /// Gets or Sets Val
+        /// Value.
         /// </summary>
+        /// <value>Value.</value>
         [DataMember(Name="val", EmitDefaultValue=true)]
         public string Val { get; set; }
 

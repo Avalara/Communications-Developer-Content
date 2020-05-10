@@ -82,6 +82,7 @@ class TaxBracket(object):
     def max(self):
         """Gets the max of this TaxBracket.  # noqa: E501
 
+        Maximum base that this rate applies to.  # noqa: E501
 
         :return: The max of this TaxBracket.  # noqa: E501
         :rtype: float
@@ -92,6 +93,7 @@ class TaxBracket(object):
     def max(self, max):
         """Sets the max of this TaxBracket.
 
+        Maximum base that this rate applies to.  # noqa: E501
 
         :param max: The max of this TaxBracket.  # noqa: E501
         :type: float

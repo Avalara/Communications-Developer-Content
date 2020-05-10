@@ -164,7 +164,7 @@ __PACKAGE__->method_documentation({
     'addr' => {
         datatype => 'string',
         base_name => 'addr',
-        description => '',
+        description => 'Street address.',
         format => '',
         read_only => '',
             },
@@ -178,14 +178,14 @@ __PACKAGE__->method_documentation({
     'st' => {
         datatype => 'string',
         base_name => 'st',
-        description => '',
+        description => 'State name or abbreviation.',
         format => '',
         read_only => '',
             },
     'zip' => {
         datatype => 'string',
         base_name => 'zip',
-        description => '',
+        description => 'Postal code.',
         format => '',
         read_only => '',
             },

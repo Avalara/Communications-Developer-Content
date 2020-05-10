@@ -72,7 +72,7 @@ class TaxCalculationSettingsResponse {
                 obj['Active'] = ApiClient.convertToType(data['Active'], 'Boolean');
             }
             if (data.hasOwnProperty('Settings')) {
-                obj['Settings'] = ApiClient.convertToType(data['Settings'], Configuration);
+                obj['Settings'] = Configuration.constructFromObject(data['Settings']);
             }
             if (data.hasOwnProperty('Exclusions')) {
                 obj['Exclusions'] = ApiClient.convertToType(data['Exclusions'], [ExclusionConfig]);
@@ -84,7 +84,7 @@ class TaxCalculationSettingsResponse {
                 obj['Nexus'] = ApiClient.convertToType(data['Nexus'], [NexusConfig]);
             }
             if (data.hasOwnProperty('Overrides')) {
-                obj['Overrides'] = ApiClient.convertToType(data['Overrides'], OverrideConfig);
+                obj['Overrides'] = OverrideConfig.constructFromObject(data['Overrides']);
             }
             if (data.hasOwnProperty('Description')) {
                 obj['Description'] = ApiClient.convertToType(data['Description'], 'String');
@@ -142,7 +142,6 @@ TaxCalculationSettingsResponse.prototype['LastUpdateBy'] = undefined;
 TaxCalculationSettingsResponse.prototype['Active'] = undefined;
 
 /**
- * Configuration settings (as applicable)
  * @member {module:model/Configuration} Settings
  */
 TaxCalculationSettingsResponse.prototype['Settings'] = undefined;
@@ -166,7 +165,6 @@ TaxCalculationSettingsResponse.prototype['Bundles'] = undefined;
 TaxCalculationSettingsResponse.prototype['Nexus'] = undefined;
 
 /**
- * Overrides (as applicable - raw data)
  * @member {module:model/OverrideConfig} Overrides
  */
 TaxCalculationSettingsResponse.prototype['Overrides'] = undefined;

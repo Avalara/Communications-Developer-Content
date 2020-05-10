@@ -7,8 +7,8 @@ Warning information.
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **Integer** | Warning code. |  [optional] [readonly]
-**msg** | **String** |  |  [optional] [readonly]
+**code** | **Integer** | Warning code. |  [optional]
+**msg** | **String** | Warning message. |  [optional] [readonly]
 
 
 

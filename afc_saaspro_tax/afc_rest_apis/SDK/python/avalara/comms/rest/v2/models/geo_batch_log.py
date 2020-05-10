@@ -82,6 +82,7 @@ class GeoBatchLog(object):
     def err(self):
         """Gets the err of this GeoBatchLog.  # noqa: E501
 
+        Error description (as applicable).  # noqa: E501
 
         :return: The err of this GeoBatchLog.  # noqa: E501
         :rtype: list[Error]
@@ -92,6 +93,7 @@ class GeoBatchLog(object):
     def err(self, err):
         """Sets the err of this GeoBatchLog.
 
+        Error description (as applicable).  # noqa: E501
 
         :param err: The err of this GeoBatchLog.  # noqa: E501
         :type: list[Error]

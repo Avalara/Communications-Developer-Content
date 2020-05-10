@@ -66,16 +66,19 @@ class CommitRequest {
 }
 
 /**
+ * Document code.
  * @member {String} doc
  */
 CommitRequest.prototype['doc'] = undefined;
 
 /**
+ * Indicates if transactions for the specified document code should be committed.
  * @member {Boolean} cmmt
  */
 CommitRequest.prototype['cmmt'] = undefined;
 
 /**
+ * Overrides value for OptionalFields field in reports.
  * @member {Array.<module:model/KeyValuePair>} opt
  */
 CommitRequest.prototype['opt'] = undefined;

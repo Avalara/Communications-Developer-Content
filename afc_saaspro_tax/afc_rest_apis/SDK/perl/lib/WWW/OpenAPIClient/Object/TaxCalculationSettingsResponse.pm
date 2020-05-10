@@ -207,7 +207,7 @@ __PACKAGE__->method_documentation({
     'settings' => {
         datatype => 'Configuration',
         base_name => 'Settings',
-        description => 'Configuration settings (as applicable)',
+        description => '',
         format => '',
         read_only => '',
             },
@@ -235,7 +235,7 @@ __PACKAGE__->method_documentation({
     'overrides' => {
         datatype => 'OverrideConfig',
         base_name => 'Overrides',
-        description => 'Overrides (as applicable - raw data)',
+        description => '',
         format => '',
         read_only => '',
             },

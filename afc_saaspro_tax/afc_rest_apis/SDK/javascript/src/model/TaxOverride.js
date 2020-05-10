@@ -51,7 +51,7 @@ class TaxOverride {
             obj = obj || new TaxOverride();
 
             if (data.hasOwnProperty('loc')) {
-                obj['loc'] = ApiClient.convertToType(data['loc'], Location);
+                obj['loc'] = Location.constructFromObject(data['loc']);
             }
             if (data.hasOwnProperty('scp')) {
                 obj['scp'] = ApiClient.convertToType(data['scp'], 'Number');
@@ -81,26 +81,31 @@ class TaxOverride {
 TaxOverride.prototype['loc'] = undefined;
 
 /**
+ * Scope for override. 0 = Country, 1 = State, 2 = County, 3 = City.
  * @member {Number} scp
  */
 TaxOverride.prototype['scp'] = undefined;
 
 /**
+ * Tax type ID.
  * @member {Number} tid
  */
 TaxOverride.prototype['tid'] = undefined;
 
 /**
+ * Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.
  * @member {Number} lvl
  */
 TaxOverride.prototype['lvl'] = undefined;
 
 /**
+ * Indicates if the tax can be exempted using level exemptions.
  * @member {Boolean} lvlExm
  */
 TaxOverride.prototype['lvlExm'] = undefined;
 
 /**
+ * Tax rate/bracket information.
  * @member {Array.<module:model/TaxBracket>} brkt
  */
 TaxOverride.prototype['brkt'] = undefined;
