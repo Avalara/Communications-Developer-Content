@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import avalara.comms.rest.v2
-from avalara.comms.rest.v2.models.set_tax_calculation_setting_request import SetTaxCalculationSettingRequest  # noqa: E501
+from avalara.comms.rest.v2.models.client_profile_config_response import ClientProfileConfigResponse  # noqa: E501
 from avalara.comms.rest.v2.rest import ApiException
 
-class TestSetTaxCalculationSettingRequest(unittest.TestCase):
-    """SetTaxCalculationSettingRequest unit test stubs"""
+class TestClientProfileConfigResponse(unittest.TestCase):
+    """ClientProfileConfigResponse unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,25 +29,30 @@ class TestSetTaxCalculationSettingRequest(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test SetTaxCalculationSettingRequest
+        """Test ClientProfileConfigResponse
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = avalara.comms.rest.v2.models.set_tax_calculation_setting_request.SetTaxCalculationSettingRequest()  # noqa: E501
+        # model = avalara.comms.rest.v2.models.client_profile_config_response.ClientProfileConfigResponse()  # noqa: E501
         if include_optional :
-            return SetTaxCalculationSettingRequest(
+            return ClientProfileConfigResponse(
                 profile_config_id = 56, 
-                link_profile_ids = [
-                    56
-                    ], 
-                unlink_profile_ids = [
+                profile_ids = [
                     56
                     ], 
                 client_id = 56, 
-                deactivate = True, 
-                description = '0', 
-                replace_existing_links = True, 
-                settings = null, 
+                last_update_by = '0', 
+                active = True, 
+                settings = avalara.comms.rest.v2.models.configuration.Configuration(
+                    traffic_study_overrides = [
+                        avalara.comms.rest.v2.models.traffic_study_override.TrafficStudyOverride(
+                            traffic_study_type = 56, 
+                            safe_harbor_fed_pcnt = 1.337, 
+                            traffic_study_fed_pcnt = 1.337, )
+                        ], 
+                    return_non_billable = True, 
+                    tax_on_tax_algorithm = 56, 
+                    self_tax_algorithm = 56, ), 
                 exclusions = [
                     avalara.comms.rest.v2.models.exclusion_config.ExclusionConfig(
                         country_iso = '0', 
@@ -75,16 +80,35 @@ class TestSetTaxCalculationSettingRequest(unittest.TestCase):
                     avalara.comms.rest.v2.models.nexus_config.NexusConfig(
                         state = '0', )
                     ], 
-                overrides = [
-                    '0'
+                overrides = avalara.comms.rest.v2.models.override_config.OverrideConfig(
+                    raw_data = [
+                        '0'
+                        ], ), 
+                description = '0', 
+                error = '0', 
+                item_type = '0', 
+                errors = [
+                    avalara.comms.rest.v2.models.error.Error(
+                        code = 56, 
+                        msg = '0', )
+                    ], 
+                warnings = [
+                    avalara.comms.rest.v2.models.warning.Warning(
+                        code = 56, 
+                        msg = '0', )
+                    ], 
+                status = [
+                    avalara.comms.rest.v2.models.status.Status(
+                        code = 56, 
+                        msg = '0', )
                     ]
             )
         else :
-            return SetTaxCalculationSettingRequest(
+            return ClientProfileConfigResponse(
         )
 
-    def testSetTaxCalculationSettingRequest(self):
-        """Test SetTaxCalculationSettingRequest"""
+    def testClientProfileConfigResponse(self):
+        """Test ClientProfileConfigResponse"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 

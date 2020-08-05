@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **api_v2_profiles_get_profiles_get**
-> TaxCalculationSettingsResponse api_v2_profiles_get_profiles_get(requested_client_id=requested_client_id, requested_profile_id=requested_profile_id, item_type=item_type)
+> ClientProfileConfigResponse api_v2_profiles_get_profiles_get(requested_client_id=requested_client_id, requested_profile_id=requested_profile_id, item_type=item_type)
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -20,17 +20,24 @@ import time
 import avalara.comms.rest.v2
 from avalara.comms.rest.v2.rest import ApiException
 from pprint import pprint
-configuration = avalara.comms.rest.v2.Configuration()
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = avalara.comms.rest.v2.Configuration(
+    host = "http://localhost"
+)
 
-# Defining host is optional and default to http://localhost
-configuration.host = "http://localhost"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
 # Enter a context with an instance of the API client
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = avalara.comms.rest.v2.CustomizationApi(api_client)
     requested_client_id = 56 # int | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)
 requested_profile_id = 56 # int | Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)
-item_type = avalara.comms.rest.v2.TaxCalculationSettingTypes() # TaxCalculationSettingTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
+item_type = avalara.comms.rest.v2.ClientProfileConfigTypes() # ClientProfileConfigTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
 
     try:
         # Retrieves one or more profiles with associated settings and configurable items
@@ -46,11 +53,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **requested_client_id** | **int**| Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. | [optional] 
  **requested_profile_id** | **int**| Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. | [optional] 
- **item_type** | [**TaxCalculationSettingTypes**](.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] 
+ **item_type** | [**ClientProfileConfigTypes**](.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] 
 
 ### Return type
 
-[**TaxCalculationSettingsResponse**](TaxCalculationSettingsResponse.md)
+[**ClientProfileConfigResponse**](ClientProfileConfigResponse.md)
 
 ### Authorization
 

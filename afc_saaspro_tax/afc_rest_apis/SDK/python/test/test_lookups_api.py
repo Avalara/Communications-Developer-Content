@@ -28,8 +28,8 @@ class TestLookupsApi(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def test_api_v2_afc_location_pcode_get(self):
-        """Test case for api_v2_afc_location_pcode_get
+    def test_api_v2_afc_location_p_code_get(self):
+        """Test case for api_v2_afc_location_p_code_get
 
         Get location data associated with a PCode  # noqa: E501
         """

@@ -1,4 +1,4 @@
-# TaxCalculationSettingTypes
+# ClientProfileConfigTypes
 
 Choice of tax calculation setting types.
 ## Properties
