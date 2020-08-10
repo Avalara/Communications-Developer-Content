@@ -38,10 +38,12 @@ from avalara.comms.rest.v2.models.bundle_config import BundleConfig
 from avalara.comms.rest.v2.models.bundle_item import BundleItem
 from avalara.comms.rest.v2.models.calc_taxes_request import CalcTaxesRequest
 from avalara.comms.rest.v2.models.calc_taxes_response import CalcTaxesResponse
+from avalara.comms.rest.v2.models.client_profile_config_response import ClientProfileConfigResponse
+from avalara.comms.rest.v2.models.client_profile_config_types import ClientProfileConfigTypes
 from avalara.comms.rest.v2.models.commit_request import CommitRequest
 from avalara.comms.rest.v2.models.commit_response import CommitResponse
 from avalara.comms.rest.v2.models.company_data import CompanyData
-from avalara.comms.rest.v2.models.configuration import Configuration
+
 from avalara.comms.rest.v2.models.error import Error
 from avalara.comms.rest.v2.models.exclusion import Exclusion
 from avalara.comms.rest.v2.models.exclusion_config import ExclusionConfig
@@ -73,8 +75,6 @@ from avalara.comms.rest.v2.models.summarized_tax import SummarizedTax
 from avalara.comms.rest.v2.models.ts_pair_data import TSPairData
 from avalara.comms.rest.v2.models.tax import Tax
 from avalara.comms.rest.v2.models.tax_bracket import TaxBracket
-from avalara.comms.rest.v2.models.tax_calculation_setting_types import TaxCalculationSettingTypes
-from avalara.comms.rest.v2.models.tax_calculation_settings_response import TaxCalculationSettingsResponse
 from avalara.comms.rest.v2.models.tax_exemption import TaxExemption
 from avalara.comms.rest.v2.models.tax_override import TaxOverride
 from avalara.comms.rest.v2.models.tax_type_data import TaxTypeData

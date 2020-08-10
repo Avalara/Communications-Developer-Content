@@ -4,15 +4,15 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**api_v2_afc_location_pcode_get**](LookupsApi.md#api_v2_afc_location_pcode_get) | **GET** /api/v2/afc/location/{pcode} | Get location data associated with a PCode
+[**api_v2_afc_location_p_code_get**](LookupsApi.md#api_v2_afc_location_p_code_get) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
 [**api_v2_afc_primary_p_code_get**](LookupsApi.md#api_v2_afc_primary_p_code_get) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
 [**api_v2_afc_serviceinfo_get**](LookupsApi.md#api_v2_afc_serviceinfo_get) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
 [**api_v2_afc_taxtype_tax_type_get**](LookupsApi.md#api_v2_afc_taxtype_tax_type_get) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
 [**api_v2_afc_tspairs_get**](LookupsApi.md#api_v2_afc_tspairs_get) | **GET** /api/v2/afc/tspairs | Get transaction/service pair information
 
 
-# **api_v2_afc_location_pcode_get**
-> PCodeLookupResult api_v2_afc_location_pcode_get(pcode)
+# **api_v2_afc_location_p_code_get**
+> PCodeLookupResult api_v2_afc_location_p_code_get(p_code)
 
 Get location data associated with a PCode
 
@@ -26,29 +26,36 @@ import time
 import avalara.comms.rest.v2
 from avalara.comms.rest.v2.rest import ApiException
 from pprint import pprint
-configuration = avalara.comms.rest.v2.Configuration()
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = avalara.comms.rest.v2.Configuration(
+    host = "http://localhost"
+)
 
-# Defining host is optional and default to http://localhost
-configuration.host = "http://localhost"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
 # Enter a context with an instance of the API client
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = avalara.comms.rest.v2.LookupsApi(api_client)
-    pcode = 56 # int | 
+    p_code = 56 # int | 
 
     try:
         # Get location data associated with a PCode
-        api_response = api_instance.api_v2_afc_location_pcode_get(pcode)
+        api_response = api_instance.api_v2_afc_location_p_code_get(p_code)
         pprint(api_response)
     except ApiException as e:
-        print("Exception when calling LookupsApi->api_v2_afc_location_pcode_get: %s\n" % e)
+        print("Exception when calling LookupsApi->api_v2_afc_location_p_code_get: %s\n" % e)
 ```
 
 ### Parameters
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pcode** | **int**|  | 
+ **p_code** | **int**|  | 
 
 ### Return type
 
@@ -85,10 +92,17 @@ import time
 import avalara.comms.rest.v2
 from avalara.comms.rest.v2.rest import ApiException
 from pprint import pprint
-configuration = avalara.comms.rest.v2.Configuration()
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = avalara.comms.rest.v2.Configuration(
+    host = "http://localhost"
+)
 
-# Defining host is optional and default to http://localhost
-configuration.host = "http://localhost"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
 # Enter a context with an instance of the API client
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -142,10 +156,17 @@ import time
 import avalara.comms.rest.v2
 from avalara.comms.rest.v2.rest import ApiException
 from pprint import pprint
-configuration = avalara.comms.rest.v2.Configuration()
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = avalara.comms.rest.v2.Configuration(
+    host = "http://localhost"
+)
 
-# Defining host is optional and default to http://localhost
-configuration.host = "http://localhost"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
 # Enter a context with an instance of the API client
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -197,10 +218,17 @@ import time
 import avalara.comms.rest.v2
 from avalara.comms.rest.v2.rest import ApiException
 from pprint import pprint
-configuration = avalara.comms.rest.v2.Configuration()
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = avalara.comms.rest.v2.Configuration(
+    host = "http://localhost"
+)
 
-# Defining host is optional and default to http://localhost
-configuration.host = "http://localhost"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
 # Enter a context with an instance of the API client
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
@@ -256,10 +284,17 @@ import time
 import avalara.comms.rest.v2
 from avalara.comms.rest.v2.rest import ApiException
 from pprint import pprint
-configuration = avalara.comms.rest.v2.Configuration()
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = avalara.comms.rest.v2.Configuration(
+    host = "http://localhost"
+)
 
-# Defining host is optional and default to http://localhost
-configuration.host = "http://localhost"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
 # Enter a context with an instance of the API client
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class

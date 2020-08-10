@@ -46,22 +46,31 @@ Please follow the [installation procedure](#installation--usage) and then run th
 
 ```python
 from __future__ import print_function
+
 import time
 import avalara.comms.rest.v2
 from avalara.comms.rest.v2.rest import ApiException
 from pprint import pprint
 
-configuration = avalara.comms.rest.v2.Configuration()
+# Defining the host is optional and defaults to http://localhost
+# See configuration.py for a list of all supported configuration parameters.
+configuration = avalara.comms.rest.v2.Configuration(
+    host = "http://localhost"
+)
 
-# Defining host is optional and default to http://localhost
-configuration.host = "http://localhost"
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+
 # Enter a context with an instance of the API client
 with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = avalara.comms.rest.v2.CustomizationApi(api_client)
     requested_client_id = 56 # int | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)
 requested_profile_id = 56 # int | Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)
-item_type = avalara.comms.rest.v2.TaxCalculationSettingTypes() # TaxCalculationSettingTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
+item_type = avalara.comms.rest.v2.ClientProfileConfigTypes() # ClientProfileConfigTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
 
     try:
         # Retrieves one or more profiles with associated settings and configurable items
@@ -85,7 +94,7 @@ Class | Method | HTTP request | Description
 *JurisdictionDeterminationApi* | [**api_v2_geo_batch_status_process_id_get**](docs/JurisdictionDeterminationApi.md#api_v2_geo_batch_status_process_id_get) | **GET** /api/v2/geo/batch/status/{processId} | Retrieves information on Geo Batch file status
 *JurisdictionDeterminationApi* | [**api_v2_geo_batch_upload_post**](docs/JurisdictionDeterminationApi.md#api_v2_geo_batch_upload_post) | **POST** /api/v2/geo/batch/Upload | Uploads file to Geo Batch.
 *JurisdictionDeterminationApi* | [**api_v2_geo_geocode_post**](docs/JurisdictionDeterminationApi.md#api_v2_geo_geocode_post) | **POST** /api/v2/geo/Geocode | Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
-*LookupsApi* | [**api_v2_afc_location_pcode_get**](docs/LookupsApi.md#api_v2_afc_location_pcode_get) | **GET** /api/v2/afc/location/{pcode} | Get location data associated with a PCode
+*LookupsApi* | [**api_v2_afc_location_p_code_get**](docs/LookupsApi.md#api_v2_afc_location_p_code_get) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
 *LookupsApi* | [**api_v2_afc_primary_p_code_get**](docs/LookupsApi.md#api_v2_afc_primary_p_code_get) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
 *LookupsApi* | [**api_v2_afc_serviceinfo_get**](docs/LookupsApi.md#api_v2_afc_serviceinfo_get) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
 *LookupsApi* | [**api_v2_afc_taxtype_tax_type_get**](docs/LookupsApi.md#api_v2_afc_taxtype_tax_type_get) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
@@ -102,10 +111,12 @@ Class | Method | HTTP request | Description
  - [BundleItem](docs/BundleItem.md)
  - [CalcTaxesRequest](docs/CalcTaxesRequest.md)
  - [CalcTaxesResponse](docs/CalcTaxesResponse.md)
+ - [ClientProfileConfigResponse](docs/ClientProfileConfigResponse.md)
+ - [ClientProfileConfigTypes](docs/ClientProfileConfigTypes.md)
  - [CommitRequest](docs/CommitRequest.md)
  - [CommitResponse](docs/CommitResponse.md)
  - [CompanyData](docs/CompanyData.md)
- - [Configuration](docs/Configuration.md)
+
  - [Error](docs/Error.md)
  - [Exclusion](docs/Exclusion.md)
  - [ExclusionConfig](docs/ExclusionConfig.md)
@@ -137,8 +148,6 @@ Class | Method | HTTP request | Description
  - [TSPairData](docs/TSPairData.md)
  - [Tax](docs/Tax.md)
  - [TaxBracket](docs/TaxBracket.md)
- - [TaxCalculationSettingTypes](docs/TaxCalculationSettingTypes.md)
- - [TaxCalculationSettingsResponse](docs/TaxCalculationSettingsResponse.md)
  - [TaxExemption](docs/TaxExemption.md)
  - [TaxOverride](docs/TaxOverride.md)
  - [TaxTypeData](docs/TaxTypeData.md)

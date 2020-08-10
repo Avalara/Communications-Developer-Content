@@ -18,7 +18,7 @@ import re  # noqa: F401
 import six
 
 from avalara.comms.rest.v2.api_client import ApiClient
-from avalara.comms.rest.v2.exceptions import (
+from avalara.comms.rest.v2.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -47,7 +47,7 @@ class CustomizationApi(object):
         :param async_req bool: execute request asynchronously
         :param int requested_client_id: Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable.
         :param int requested_profile_id: Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set.
-        :param TaxCalculationSettingTypes item_type: Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
+        :param ClientProfileConfigTypes item_type: Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -55,7 +55,7 @@ class CustomizationApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: TaxCalculationSettingsResponse
+        :return: ClientProfileConfigResponse
                  If the method is called asynchronously,
                  returns the request thread.
         """
@@ -73,7 +73,7 @@ class CustomizationApi(object):
         :param async_req bool: execute request asynchronously
         :param int requested_client_id: Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable.
         :param int requested_profile_id: Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set.
-        :param TaxCalculationSettingTypes item_type: Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
+        :param ClientProfileConfigTypes item_type: Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -83,18 +83,26 @@ class CustomizationApi(object):
                                  number provided, it will be total request
                                  timeout. It can also be a pair (tuple) of
                                  (connection, read) timeouts.
-        :return: tuple(TaxCalculationSettingsResponse, status_code(int), headers(HTTPHeaderDict))
+        :return: tuple(ClientProfileConfigResponse, status_code(int), headers(HTTPHeaderDict))
                  If the method is called asynchronously,
                  returns the request thread.
         """
 
         local_var_params = locals()
 
-        all_params = ['requested_client_id', 'requested_profile_id', 'item_type']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'requested_client_id',
+            'requested_profile_id',
+            'item_type'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -138,7 +146,7 @@ class CustomizationApi(object):
             body=body_params,
             post_params=form_params,
             files=local_var_files,
-            response_type='TaxCalculationSettingsResponse',  # noqa: E501
+            response_type='ClientProfileConfigResponse',  # noqa: E501
             auth_settings=auth_settings,
             async_req=local_var_params.get('async_req'),
             _return_http_data_only=local_var_params.get('_return_http_data_only'),  # noqa: E501

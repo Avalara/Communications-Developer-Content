@@ -18,7 +18,7 @@ import re  # noqa: F401
 import six
 
 from avalara.comms.rest.v2.api_client import ApiClient
-from avalara.comms.rest.v2.exceptions import (
+from avalara.comms.rest.v2.exceptions import (  # noqa: F401
     ApiTypeError,
     ApiValueError
 )
@@ -36,17 +36,17 @@ class LookupsApi(object):
             api_client = ApiClient()
         self.api_client = api_client
 
-    def api_v2_afc_location_pcode_get(self, pcode, **kwargs):  # noqa: E501
+    def api_v2_afc_location_p_code_get(self, p_code, **kwargs):  # noqa: E501
         """Get location data associated with a PCode  # noqa: E501
 
         Request will return all jurisdictions associated with the PCode  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.api_v2_afc_location_pcode_get(pcode, async_req=True)
+        >>> thread = api.api_v2_afc_location_p_code_get(p_code, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int pcode: (required)
+        :param int p_code: (required)
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -59,19 +59,19 @@ class LookupsApi(object):
                  returns the request thread.
         """
         kwargs['_return_http_data_only'] = True
-        return self.api_v2_afc_location_pcode_get_with_http_info(pcode, **kwargs)  # noqa: E501
+        return self.api_v2_afc_location_p_code_get_with_http_info(p_code, **kwargs)  # noqa: E501
 
-    def api_v2_afc_location_pcode_get_with_http_info(self, pcode, **kwargs):  # noqa: E501
+    def api_v2_afc_location_p_code_get_with_http_info(self, p_code, **kwargs):  # noqa: E501
         """Get location data associated with a PCode  # noqa: E501
 
         Request will return all jurisdictions associated with the PCode  # noqa: E501
         This method makes a synchronous HTTP request by default. To make an
         asynchronous HTTP request, please pass async_req=True
-        >>> thread = api.api_v2_afc_location_pcode_get_with_http_info(pcode, async_req=True)
+        >>> thread = api.api_v2_afc_location_p_code_get_with_http_info(p_code, async_req=True)
         >>> result = thread.get()
 
         :param async_req bool: execute request asynchronously
-        :param int pcode: (required)
+        :param int p_code: (required)
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -88,30 +88,36 @@ class LookupsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['pcode']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'p_code'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
                 raise ApiTypeError(
                     "Got an unexpected keyword argument '%s'"
-                    " to method api_v2_afc_location_pcode_get" % key
+                    " to method api_v2_afc_location_p_code_get" % key
                 )
             local_var_params[key] = val
         del local_var_params['kwargs']
-        # verify the required parameter 'pcode' is set
-        if self.api_client.client_side_validation and ('pcode' not in local_var_params or  # noqa: E501
-                                                        local_var_params['pcode'] is None):  # noqa: E501
-            raise ApiValueError("Missing the required parameter `pcode` when calling `api_v2_afc_location_pcode_get`")  # noqa: E501
+        # verify the required parameter 'p_code' is set
+        if self.api_client.client_side_validation and ('p_code' not in local_var_params or  # noqa: E501
+                                                        local_var_params['p_code'] is None):  # noqa: E501
+            raise ApiValueError("Missing the required parameter `p_code` when calling `api_v2_afc_location_p_code_get`")  # noqa: E501
 
         collection_formats = {}
 
         path_params = {}
-        if 'pcode' in local_var_params:
-            path_params['pcode'] = local_var_params['pcode']  # noqa: E501
+        if 'p_code' in local_var_params:
+            path_params['pCode'] = local_var_params['p_code']  # noqa: E501
 
         query_params = []
 
@@ -129,7 +135,7 @@ class LookupsApi(object):
         auth_settings = ['Basic']  # noqa: E501
 
         return self.api_client.call_api(
-            '/api/v2/afc/location/{pcode}', 'GET',
+            '/api/v2/afc/location/{pCode}', 'GET',
             path_params,
             query_params,
             header_params,
@@ -196,11 +202,17 @@ class LookupsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['p_code']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'p_code'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -300,11 +312,16 @@ class LookupsApi(object):
 
         local_var_params = locals()
 
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -402,11 +419,17 @@ class LookupsApi(object):
 
         local_var_params = locals()
 
-        all_params = ['tax_type']  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+            'tax_type'
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:
@@ -504,11 +527,16 @@ class LookupsApi(object):
 
         local_var_params = locals()
 
-        all_params = []  # noqa: E501
-        all_params.append('async_req')
-        all_params.append('_return_http_data_only')
-        all_params.append('_preload_content')
-        all_params.append('_request_timeout')
+        all_params = [
+        ]
+        all_params.extend(
+            [
+                'async_req',
+                '_return_http_data_only',
+                '_preload_content',
+                '_request_timeout'
+            ]
+        )
 
         for key, val in six.iteritems(local_var_params['kwargs']):
             if key not in all_params:

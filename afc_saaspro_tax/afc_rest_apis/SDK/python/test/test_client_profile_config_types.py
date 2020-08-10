@@ -16,11 +16,11 @@ import unittest
 import datetime
 
 import avalara.comms.rest.v2
-from avalara.comms.rest.v2.models.tax_calculation_setting_types import TaxCalculationSettingTypes  # noqa: E501
+from avalara.comms.rest.v2.models.client_profile_config_types import ClientProfileConfigTypes  # noqa: E501
 from avalara.comms.rest.v2.rest import ApiException
 
-class TestTaxCalculationSettingTypes(unittest.TestCase):
-    """TaxCalculationSettingTypes unit test stubs"""
+class TestClientProfileConfigTypes(unittest.TestCase):
+    """ClientProfileConfigTypes unit test stubs"""
 
     def setUp(self):
         pass
@@ -29,20 +29,20 @@ class TestTaxCalculationSettingTypes(unittest.TestCase):
         pass
 
     def make_instance(self, include_optional):
-        """Test TaxCalculationSettingTypes
+        """Test ClientProfileConfigTypes
             include_option is a boolean, when False only required
             params are included, when True both required and
             optional params are included """
-        # model = avalara.comms.rest.v2.models.tax_calculation_setting_types.TaxCalculationSettingTypes()  # noqa: E501
+        # model = avalara.comms.rest.v2.models.client_profile_config_types.ClientProfileConfigTypes()  # noqa: E501
         if include_optional :
-            return TaxCalculationSettingTypes(
+            return ClientProfileConfigTypes(
             )
         else :
-            return TaxCalculationSettingTypes(
+            return ClientProfileConfigTypes(
         )
 
-    def testTaxCalculationSettingTypes(self):
-        """Test TaxCalculationSettingTypes"""
+    def testClientProfileConfigTypes(self):
+        """Test ClientProfileConfigTypes"""
         inst_req_only = self.make_instance(include_optional=False)
         inst_req_and_optional = self.make_instance(include_optional=True)
 
