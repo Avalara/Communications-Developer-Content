@@ -114,7 +114,7 @@ class ApiClient(object):
     def user_agent(self, value):
         self.default_headers['User-Agent'] = value
 
-    def set_default_header(self, header_name, header_value):
+    def set_default_header(self, headers):
         self.default_headers = headers
 
     def __call_api(
