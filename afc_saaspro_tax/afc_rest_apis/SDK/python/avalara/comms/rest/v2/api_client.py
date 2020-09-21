@@ -65,7 +65,7 @@ class ApiClient(object):
     }
     _pool = None
 
-    def __init__(self, configuration=None, header_name=None, header_value=None,
+    def __init__(self, configuration=None, headers=None,
                  cookie=None, pool_threads=1):
         if configuration is None:
             configuration = Configuration.get_default_copy()
@@ -74,8 +74,8 @@ class ApiClient(object):
 
         self.rest_client = rest.RESTClientObject(configuration)
         self.default_headers = {}
-        if header_name is not None:
-            self.default_headers[header_name] = header_value
+        if headers is not None:
+            self.default_headers = headers
         self.cookie = cookie
         # Set default User-Agent.
         self.user_agent = 'OpenAPI-Generator/1.0.0/python'
@@ -114,8 +114,8 @@ class ApiClient(object):
     def user_agent(self, value):
         self.default_headers['User-Agent'] = value
 
-    def set_default_header(self, header_name, header_value):
-        self.default_headers[header_name] = header_value
+    def set_default_header(self, headers):
+        self.default_headers = headers
 
     def __call_api(
             self, resource_path, method, path_params=None,

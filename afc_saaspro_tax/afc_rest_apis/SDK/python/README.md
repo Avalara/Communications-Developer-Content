@@ -65,7 +65,7 @@ configuration = avalara.comms.rest.v2.Configuration(
 
 
 # Enter a context with an instance of the API client
-with avalara.comms.rest.v2.ApiClient(configuration) as api_client:
+headers = {	"Authorization": "Basic Zmlyc3QubGFzdEBhdmFsYXJhLmNvbTpzZWNyZXRwYXNzd29yZCE="	"client_id: "56"}with avalara.comms.rest.v2.ApiClient(configuration, headers=headers) as api_client:
     # Create an instance of the API class
     api_instance = avalara.comms.rest.v2.CustomizationApi(api_client)
     requested_client_id = 56 # int | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)
