@@ -17,15 +17,11 @@ Following require login
 
 All SDK packages generated using the open source api tools from [openapi-generator](https://github.com/OpenAPITools/openapi-generator)
 
-* [csharp](./csharp/README.md)
 * [csharp-netcore](./csharp-netcore/README.md)
 * [java](./java/README.md)
 * [javascript](./javascript/README.md)
-* [perl](./perl/README.md)
 * [php](./php/README.md)
-* [powershell](./powershell/README.md)
 * [python](./python/README.md)
-* [ruby](./ruby/README.md)
 
 Contact [Communication Support](mailto:communicationsupport@avalara.com) to request additional SDK language packs
 
