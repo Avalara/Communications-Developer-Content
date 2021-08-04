@@ -35,9 +35,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var pCodeLookupRequest = new PCodeLookupRequest(); // PCodeLookupRequest |  (optional) 
@@ -107,9 +104,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var processId = processId_example;  // string | Process Id for Geo Batch File.
@@ -179,9 +173,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var processId = processId_example;  // string | Process Id for Geo Batch File.
@@ -251,9 +242,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var geoBatchFile = BINARY_DATA_HERE;  // System.IO.Stream |  (optional) 
@@ -323,9 +311,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var geocodeRequest = new List<GeocodeRequest>(); // List<GeocodeRequest> | List of street addresses and/or lat/long coordinate pairs to geocode. (optional) 

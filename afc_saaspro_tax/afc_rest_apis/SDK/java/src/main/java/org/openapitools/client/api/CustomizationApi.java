@@ -1,6 +1,6 @@
 /*
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -27,8 +27,8 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import org.openapitools.client.model.TaxCalculationSettingTypes;
-import org.openapitools.client.model.TaxCalculationSettingsResponse;
+import org.openapitools.client.model.ClientProfileConfigResponse;
+import org.openapitools.client.model.ClientProfileConfigTypes;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -69,7 +69,7 @@ public class CustomizationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2ProfilesGetProfilesGetCall(Integer requestedClientId, Integer requestedProfileId, TaxCalculationSettingTypes itemType, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call apiV2ProfilesGetProfilesGetCall(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType, final ApiCallback _callback) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
@@ -111,7 +111,7 @@ public class CustomizationApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call apiV2ProfilesGetProfilesGetValidateBeforeCall(Integer requestedClientId, Integer requestedProfileId, TaxCalculationSettingTypes itemType, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call apiV2ProfilesGetProfilesGetValidateBeforeCall(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType, final ApiCallback _callback) throws ApiException {
         
 
         okhttp3.Call localVarCall = apiV2ProfilesGetProfilesGetCall(requestedClientId, requestedProfileId, itemType, _callback);
@@ -125,7 +125,7 @@ public class CustomizationApi {
      * @param requestedClientId Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)
      * @param requestedProfileId Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)
      * @param itemType Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
-     * @return TaxCalculationSettingsResponse
+     * @return ClientProfileConfigResponse
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -133,8 +133,8 @@ public class CustomizationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public TaxCalculationSettingsResponse apiV2ProfilesGetProfilesGet(Integer requestedClientId, Integer requestedProfileId, TaxCalculationSettingTypes itemType) throws ApiException {
-        ApiResponse<TaxCalculationSettingsResponse> localVarResp = apiV2ProfilesGetProfilesGetWithHttpInfo(requestedClientId, requestedProfileId, itemType);
+    public ClientProfileConfigResponse apiV2ProfilesGetProfilesGet(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType) throws ApiException {
+        ApiResponse<ClientProfileConfigResponse> localVarResp = apiV2ProfilesGetProfilesGetWithHttpInfo(requestedClientId, requestedProfileId, itemType);
         return localVarResp.getData();
     }
 
@@ -144,7 +144,7 @@ public class CustomizationApi {
      * @param requestedClientId Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)
      * @param requestedProfileId Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)
      * @param itemType Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
-     * @return ApiResponse&lt;TaxCalculationSettingsResponse&gt;
+     * @return ApiResponse&lt;ClientProfileConfigResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -152,9 +152,9 @@ public class CustomizationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<TaxCalculationSettingsResponse> apiV2ProfilesGetProfilesGetWithHttpInfo(Integer requestedClientId, Integer requestedProfileId, TaxCalculationSettingTypes itemType) throws ApiException {
+    public ApiResponse<ClientProfileConfigResponse> apiV2ProfilesGetProfilesGetWithHttpInfo(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType) throws ApiException {
         okhttp3.Call localVarCall = apiV2ProfilesGetProfilesGetValidateBeforeCall(requestedClientId, requestedProfileId, itemType, null);
-        Type localVarReturnType = new TypeToken<TaxCalculationSettingsResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<ClientProfileConfigResponse>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -173,10 +173,10 @@ public class CustomizationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2ProfilesGetProfilesGetAsync(Integer requestedClientId, Integer requestedProfileId, TaxCalculationSettingTypes itemType, final ApiCallback<TaxCalculationSettingsResponse> _callback) throws ApiException {
+    public okhttp3.Call apiV2ProfilesGetProfilesGetAsync(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType, final ApiCallback<ClientProfileConfigResponse> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = apiV2ProfilesGetProfilesGetValidateBeforeCall(requestedClientId, requestedProfileId, itemType, _callback);
-        Type localVarReturnType = new TypeToken<TaxCalculationSettingsResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<ClientProfileConfigResponse>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

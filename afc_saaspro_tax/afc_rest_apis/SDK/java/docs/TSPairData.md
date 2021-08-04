@@ -1,6 +1,6 @@
 
 
-# TSPairData
+# TsPairData
 
 ## Properties
 

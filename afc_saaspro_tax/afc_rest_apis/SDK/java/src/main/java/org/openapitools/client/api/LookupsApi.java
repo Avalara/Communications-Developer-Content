@@ -1,6 +1,6 @@
 /*
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -29,8 +29,8 @@ import java.io.IOException;
 
 import org.openapitools.client.model.PCodeLookupResult;
 import org.openapitools.client.model.ServiceInfo;
-import org.openapitools.client.model.TSPairData;
 import org.openapitools.client.model.TaxTypeData;
+import org.openapitools.client.model.TsPairData;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -58,8 +58,8 @@ public class LookupsApi {
     }
 
     /**
-     * Build call for apiV2AfcLocationPcodeGet
-     * @param pcode  (required)
+     * Build call for apiV2AfcLocationPCodeGet
+     * @param pCode  (required)
      * @param _callback Callback for upload/download progress
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
@@ -69,12 +69,12 @@ public class LookupsApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2AfcLocationPcodeGetCall(Integer pcode, final ApiCallback _callback) throws ApiException {
+    public okhttp3.Call apiV2AfcLocationPCodeGetCall(Integer pCode, final ApiCallback _callback) throws ApiException {
         Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/api/v2/afc/location/{pcode}"
-            .replaceAll("\\{" + "pcode" + "\\}", localVarApiClient.escapeString(pcode.toString()));
+        String localVarPath = "/api/v2/afc/location/{pCode}"
+            .replaceAll("\\{" + "pCode" + "\\}", localVarApiClient.escapeString(pCode.toString()));
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -100,15 +100,15 @@ public class LookupsApi {
     }
 
     @SuppressWarnings("rawtypes")
-    private okhttp3.Call apiV2AfcLocationPcodeGetValidateBeforeCall(Integer pcode, final ApiCallback _callback) throws ApiException {
+    private okhttp3.Call apiV2AfcLocationPCodeGetValidateBeforeCall(Integer pCode, final ApiCallback _callback) throws ApiException {
         
-        // verify the required parameter 'pcode' is set
-        if (pcode == null) {
-            throw new ApiException("Missing the required parameter 'pcode' when calling apiV2AfcLocationPcodeGet(Async)");
+        // verify the required parameter 'pCode' is set
+        if (pCode == null) {
+            throw new ApiException("Missing the required parameter 'pCode' when calling apiV2AfcLocationPCodeGet(Async)");
         }
         
 
-        okhttp3.Call localVarCall = apiV2AfcLocationPcodeGetCall(pcode, _callback);
+        okhttp3.Call localVarCall = apiV2AfcLocationPCodeGetCall(pCode, _callback);
         return localVarCall;
 
     }
@@ -116,7 +116,7 @@ public class LookupsApi {
     /**
      * Get location data associated with a PCode
      * Request will return all jurisdictions associated with the PCode
-     * @param pcode  (required)
+     * @param pCode  (required)
      * @return PCodeLookupResult
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -125,15 +125,15 @@ public class LookupsApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public PCodeLookupResult apiV2AfcLocationPcodeGet(Integer pcode) throws ApiException {
-        ApiResponse<PCodeLookupResult> localVarResp = apiV2AfcLocationPcodeGetWithHttpInfo(pcode);
+    public PCodeLookupResult apiV2AfcLocationPCodeGet(Integer pCode) throws ApiException {
+        ApiResponse<PCodeLookupResult> localVarResp = apiV2AfcLocationPCodeGetWithHttpInfo(pCode);
         return localVarResp.getData();
     }
 
     /**
      * Get location data associated with a PCode
      * Request will return all jurisdictions associated with the PCode
-     * @param pcode  (required)
+     * @param pCode  (required)
      * @return ApiResponse&lt;PCodeLookupResult&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
@@ -142,8 +142,8 @@ public class LookupsApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<PCodeLookupResult> apiV2AfcLocationPcodeGetWithHttpInfo(Integer pcode) throws ApiException {
-        okhttp3.Call localVarCall = apiV2AfcLocationPcodeGetValidateBeforeCall(pcode, null);
+    public ApiResponse<PCodeLookupResult> apiV2AfcLocationPCodeGetWithHttpInfo(Integer pCode) throws ApiException {
+        okhttp3.Call localVarCall = apiV2AfcLocationPCodeGetValidateBeforeCall(pCode, null);
         Type localVarReturnType = new TypeToken<PCodeLookupResult>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
@@ -151,7 +151,7 @@ public class LookupsApi {
     /**
      * Get location data associated with a PCode (asynchronously)
      * Request will return all jurisdictions associated with the PCode
-     * @param pcode  (required)
+     * @param pCode  (required)
      * @param _callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
@@ -161,9 +161,9 @@ public class LookupsApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2AfcLocationPcodeGetAsync(Integer pcode, final ApiCallback<PCodeLookupResult> _callback) throws ApiException {
+    public okhttp3.Call apiV2AfcLocationPCodeGetAsync(Integer pCode, final ApiCallback<PCodeLookupResult> _callback) throws ApiException {
 
-        okhttp3.Call localVarCall = apiV2AfcLocationPcodeGetValidateBeforeCall(pcode, _callback);
+        okhttp3.Call localVarCall = apiV2AfcLocationPCodeGetValidateBeforeCall(pCode, _callback);
         Type localVarReturnType = new TypeToken<PCodeLookupResult>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
@@ -543,7 +543,7 @@ public class LookupsApi {
     /**
      * Get transaction/service pair information
      * This method returns the description for the transaction type, service type and the ts pairs.
-     * @return List&lt;TSPairData&gt;
+     * @return List&lt;TsPairData&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -551,15 +551,15 @@ public class LookupsApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public List<TSPairData> apiV2AfcTspairsGet() throws ApiException {
-        ApiResponse<List<TSPairData>> localVarResp = apiV2AfcTspairsGetWithHttpInfo();
+    public List<TsPairData> apiV2AfcTspairsGet() throws ApiException {
+        ApiResponse<List<TsPairData>> localVarResp = apiV2AfcTspairsGetWithHttpInfo();
         return localVarResp.getData();
     }
 
     /**
      * Get transaction/service pair information
      * This method returns the description for the transaction type, service type and the ts pairs.
-     * @return ApiResponse&lt;List&lt;TSPairData&gt;&gt;
+     * @return ApiResponse&lt;List&lt;TsPairData&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -567,9 +567,9 @@ public class LookupsApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<List<TSPairData>> apiV2AfcTspairsGetWithHttpInfo() throws ApiException {
+    public ApiResponse<List<TsPairData>> apiV2AfcTspairsGetWithHttpInfo() throws ApiException {
         okhttp3.Call localVarCall = apiV2AfcTspairsGetValidateBeforeCall(null);
-        Type localVarReturnType = new TypeToken<List<TSPairData>>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<TsPairData>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -585,10 +585,10 @@ public class LookupsApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2AfcTspairsGetAsync(final ApiCallback<List<TSPairData>> _callback) throws ApiException {
+    public okhttp3.Call apiV2AfcTspairsGetAsync(final ApiCallback<List<TsPairData>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = apiV2AfcTspairsGetValidateBeforeCall(_callback);
-        Type localVarReturnType = new TypeToken<List<TSPairData>>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<TsPairData>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

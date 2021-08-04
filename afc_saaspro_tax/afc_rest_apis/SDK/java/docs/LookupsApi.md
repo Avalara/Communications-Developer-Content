@@ -4,16 +4,16 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2AfcLocationPcodeGet**](LookupsApi.md#apiV2AfcLocationPcodeGet) | **GET** /api/v2/afc/location/{pcode} | Get location data associated with a PCode
+[**apiV2AfcLocationPCodeGet**](LookupsApi.md#apiV2AfcLocationPCodeGet) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
 [**apiV2AfcPrimaryPCodeGet**](LookupsApi.md#apiV2AfcPrimaryPCodeGet) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
 [**apiV2AfcServiceinfoGet**](LookupsApi.md#apiV2AfcServiceinfoGet) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
 [**apiV2AfcTaxtypeTaxTypeGet**](LookupsApi.md#apiV2AfcTaxtypeTaxTypeGet) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
 [**apiV2AfcTspairsGet**](LookupsApi.md#apiV2AfcTspairsGet) | **GET** /api/v2/afc/tspairs | Get transaction/service pair information
 
 
-<a name="apiV2AfcLocationPcodeGet"></a>
-# **apiV2AfcLocationPcodeGet**
-> PCodeLookupResult apiV2AfcLocationPcodeGet(pcode)
+<a name="apiV2AfcLocationPCodeGet"></a>
+# **apiV2AfcLocationPCodeGet**
+> PCodeLookupResult apiV2AfcLocationPCodeGet(pCode)
 
 Get location data associated with a PCode
 
@@ -36,12 +36,12 @@ public class Example {
     
 
     LookupsApi apiInstance = new LookupsApi(defaultClient);
-    Integer pcode = 56; // Integer | 
+    Integer pCode = 56; // Integer | 
     try {
-      PCodeLookupResult result = apiInstance.apiV2AfcLocationPcodeGet(pcode);
+      PCodeLookupResult result = apiInstance.apiV2AfcLocationPCodeGet(pCode);
       System.out.println(result);
     } catch (ApiException e) {
-      System.err.println("Exception when calling LookupsApi#apiV2AfcLocationPcodeGet");
+      System.err.println("Exception when calling LookupsApi#apiV2AfcLocationPCodeGet");
       System.err.println("Status code: " + e.getCode());
       System.err.println("Reason: " + e.getResponseBody());
       System.err.println("Response headers: " + e.getResponseHeaders());
@@ -55,7 +55,7 @@ public class Example {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pcode** | **Integer**|  |
+ **pCode** | **Integer**|  |
 
 ### Return type
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 
 <a name="apiV2AfcTspairsGet"></a>
 # **apiV2AfcTspairsGet**
-> List&lt;TSPairData&gt; apiV2AfcTspairsGet()
+> List&lt;TsPairData&gt; apiV2AfcTspairsGet()
 
 Get transaction/service pair information
 
@@ -287,7 +287,7 @@ public class Example {
 
     LookupsApi apiInstance = new LookupsApi(defaultClient);
     try {
-      List<TSPairData> result = apiInstance.apiV2AfcTspairsGet();
+      List<TsPairData> result = apiInstance.apiV2AfcTspairsGet();
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling LookupsApi#apiV2AfcTspairsGet");
@@ -305,7 +305,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**List&lt;TSPairData&gt;**](TSPairData.md)
+[**List&lt;TsPairData&gt;**](TsPairData.md)
 
 ### Authorization
 

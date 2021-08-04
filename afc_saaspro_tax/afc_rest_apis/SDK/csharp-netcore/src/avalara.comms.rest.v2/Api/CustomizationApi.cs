@@ -1,7 +1,7 @@
 /* 
  * SaasPro
  *
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -37,8 +37,8 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>TaxCalculationSettingsResponse</returns>
-        TaxCalculationSettingsResponse ApiV2ProfilesGetProfilesGet (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes));
+        /// <returns>ClientProfileConfigResponse</returns>
+        ClientProfileConfigResponse ApiV2ProfilesGetProfilesGet (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?));
 
         /// <summary>
         /// Retrieves one or more profiles with associated settings and configurable items
@@ -50,8 +50,8 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>ApiResponse of TaxCalculationSettingsResponse</returns>
-        ApiResponse<TaxCalculationSettingsResponse> ApiV2ProfilesGetProfilesGetWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes));
+        /// <returns>ApiResponse of ClientProfileConfigResponse</returns>
+        ApiResponse<ClientProfileConfigResponse> ApiV2ProfilesGetProfilesGetWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?));
         #endregion Synchronous Operations
     }
 
@@ -71,8 +71,8 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>Task of TaxCalculationSettingsResponse</returns>
-        System.Threading.Tasks.Task<TaxCalculationSettingsResponse> ApiV2ProfilesGetProfilesGetAsync (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes));
+        /// <returns>Task of ClientProfileConfigResponse</returns>
+        System.Threading.Tasks.Task<ClientProfileConfigResponse> ApiV2ProfilesGetProfilesGetAsync (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?));
 
         /// <summary>
         /// Retrieves one or more profiles with associated settings and configurable items
@@ -84,8 +84,8 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>Task of ApiResponse (TaxCalculationSettingsResponse)</returns>
-        System.Threading.Tasks.Task<ApiResponse<TaxCalculationSettingsResponse>> ApiV2ProfilesGetProfilesGetAsyncWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes));
+        /// <returns>Task of ApiResponse (ClientProfileConfigResponse)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ClientProfileConfigResponse>> ApiV2ProfilesGetProfilesGetAsyncWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?));
         #endregion Asynchronous Operations
     }
 
@@ -213,10 +213,10 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>TaxCalculationSettingsResponse</returns>
-        public TaxCalculationSettingsResponse ApiV2ProfilesGetProfilesGet (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes))
+        /// <returns>ClientProfileConfigResponse</returns>
+        public ClientProfileConfigResponse ApiV2ProfilesGetProfilesGet (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?))
         {
-             avalara.comms.rest.v2.Client.ApiResponse<TaxCalculationSettingsResponse> localVarResponse = ApiV2ProfilesGetProfilesGetWithHttpInfo(requestedClientId, requestedProfileId, itemType);
+             avalara.comms.rest.v2.Client.ApiResponse<ClientProfileConfigResponse> localVarResponse = ApiV2ProfilesGetProfilesGetWithHttpInfo(requestedClientId, requestedProfileId, itemType);
              return localVarResponse.Data;
         }
 
@@ -227,8 +227,8 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>ApiResponse of TaxCalculationSettingsResponse</returns>
-        public avalara.comms.rest.v2.Client.ApiResponse< TaxCalculationSettingsResponse > ApiV2ProfilesGetProfilesGetWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes))
+        /// <returns>ApiResponse of ClientProfileConfigResponse</returns>
+        public avalara.comms.rest.v2.Client.ApiResponse< ClientProfileConfigResponse > ApiV2ProfilesGetProfilesGetWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?))
         {
             avalara.comms.rest.v2.Client.RequestOptions localVarRequestOptions = new avalara.comms.rest.v2.Client.RequestOptions();
 
@@ -250,44 +250,21 @@ namespace avalara.comms.rest.v2.Api
 
             if (requestedClientId != null)
             {
-                foreach (var _kvp in avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedClientId", requestedClientId))
-                {
-                    foreach (var _kvpValue in _kvp.Value)
-                    {
-                        localVarRequestOptions.QueryParameters.Add(_kvp.Key, _kvpValue);
-                    }
-                }
+                localVarRequestOptions.QueryParameters.Add(avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedClientId", requestedClientId));
             }
             if (requestedProfileId != null)
             {
-                foreach (var _kvp in avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedProfileId", requestedProfileId))
-                {
-                    foreach (var _kvpValue in _kvp.Value)
-                    {
-                        localVarRequestOptions.QueryParameters.Add(_kvp.Key, _kvpValue);
-                    }
-                }
+                localVarRequestOptions.QueryParameters.Add(avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedProfileId", requestedProfileId));
             }
             if (itemType != null)
             {
-                foreach (var _kvp in avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "ItemType", itemType))
-                {
-                    foreach (var _kvpValue in _kvp.Value)
-                    {
-                        localVarRequestOptions.QueryParameters.Add(_kvp.Key, _kvpValue);
-                    }
-                }
+                localVarRequestOptions.QueryParameters.Add(avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "ItemType", itemType));
             }
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< TaxCalculationSettingsResponse >("/api/v2/profiles/GetProfiles", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get< ClientProfileConfigResponse >("/api/v2/profiles/GetProfiles", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -305,10 +282,10 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>Task of TaxCalculationSettingsResponse</returns>
-        public async System.Threading.Tasks.Task<TaxCalculationSettingsResponse> ApiV2ProfilesGetProfilesGetAsync (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes))
+        /// <returns>Task of ClientProfileConfigResponse</returns>
+        public async System.Threading.Tasks.Task<ClientProfileConfigResponse> ApiV2ProfilesGetProfilesGetAsync (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?))
         {
-             avalara.comms.rest.v2.Client.ApiResponse<TaxCalculationSettingsResponse> localVarResponse = await ApiV2ProfilesGetProfilesGetAsyncWithHttpInfo(requestedClientId, requestedProfileId, itemType);
+             avalara.comms.rest.v2.Client.ApiResponse<ClientProfileConfigResponse> localVarResponse = await ApiV2ProfilesGetProfilesGetAsyncWithHttpInfo(requestedClientId, requestedProfileId, itemType);
              return localVarResponse.Data;
 
         }
@@ -320,8 +297,8 @@ namespace avalara.comms.rest.v2.Api
         /// <param name="requestedClientId">Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)</param>
         /// <param name="requestedProfileId">Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)</param>
         /// <param name="itemType">Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)</param>
-        /// <returns>Task of ApiResponse (TaxCalculationSettingsResponse)</returns>
-        public async System.Threading.Tasks.Task<avalara.comms.rest.v2.Client.ApiResponse<TaxCalculationSettingsResponse>> ApiV2ProfilesGetProfilesGetAsyncWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), TaxCalculationSettingTypes itemType = default(TaxCalculationSettingTypes))
+        /// <returns>Task of ApiResponse (ClientProfileConfigResponse)</returns>
+        public async System.Threading.Tasks.Task<avalara.comms.rest.v2.Client.ApiResponse<ClientProfileConfigResponse>> ApiV2ProfilesGetProfilesGetAsyncWithHttpInfo (int? requestedClientId = default(int?), int? requestedProfileId = default(int?), ClientProfileConfigTypes? itemType = default(ClientProfileConfigTypes?))
         {
 
             avalara.comms.rest.v2.Client.RequestOptions localVarRequestOptions = new avalara.comms.rest.v2.Client.RequestOptions();
@@ -344,45 +321,22 @@ namespace avalara.comms.rest.v2.Api
             
             if (requestedClientId != null)
             {
-                foreach (var _kvp in avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedClientId", requestedClientId))
-                {
-                    foreach (var _kvpValue in _kvp.Value)
-                    {
-                        localVarRequestOptions.QueryParameters.Add(_kvp.Key, _kvpValue);
-                    }
-                }
+                localVarRequestOptions.QueryParameters.Add(avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedClientId", requestedClientId));
             }
             if (requestedProfileId != null)
             {
-                foreach (var _kvp in avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedProfileId", requestedProfileId))
-                {
-                    foreach (var _kvpValue in _kvp.Value)
-                    {
-                        localVarRequestOptions.QueryParameters.Add(_kvp.Key, _kvpValue);
-                    }
-                }
+                localVarRequestOptions.QueryParameters.Add(avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "RequestedProfileId", requestedProfileId));
             }
             if (itemType != null)
             {
-                foreach (var _kvp in avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "ItemType", itemType))
-                {
-                    foreach (var _kvpValue in _kvp.Value)
-                    {
-                        localVarRequestOptions.QueryParameters.Add(_kvp.Key, _kvpValue);
-                    }
-                }
+                localVarRequestOptions.QueryParameters.Add(avalara.comms.rest.v2.Client.ClientUtils.ParameterToMultiMap("", "ItemType", itemType));
             }
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<TaxCalculationSettingsResponse>("/api/v2/profiles/GetProfiles", localVarRequestOptions, this.Configuration);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<ClientProfileConfigResponse>("/api/v2/profiles/GetProfiles", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {

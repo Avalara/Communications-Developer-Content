@@ -1,7 +1,7 @@
 /* 
  * SaasPro
  *
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -411,11 +411,6 @@ namespace avalara.comms.rest.v2.Api
             localVarRequestOptions.Data = pCodeLookupRequest;
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post< PCodeLookupResult >("/api/v2/afc/PCode", localVarRequestOptions, this.Configuration);
@@ -476,11 +471,6 @@ namespace avalara.comms.rest.v2.Api
             localVarRequestOptions.Data = pCodeLookupRequest;
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
@@ -537,15 +527,9 @@ namespace avalara.comms.rest.v2.Api
             var localVarAccept = avalara.comms.rest.v2.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (processId != null)
-                localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
+            localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Get< GeoBatchLog >("/api/v2/geo/batch/log/{processId}", localVarRequestOptions, this.Configuration);
@@ -603,15 +587,9 @@ namespace avalara.comms.rest.v2.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (processId != null)
-                localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
+            localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
@@ -668,15 +646,9 @@ namespace avalara.comms.rest.v2.Api
             var localVarAccept = avalara.comms.rest.v2.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (processId != null)
-                localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
+            localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Get< GeoBatchStatus >("/api/v2/geo/batch/status/{processId}", localVarRequestOptions, this.Configuration);
@@ -734,15 +706,9 @@ namespace avalara.comms.rest.v2.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (processId != null)
-                localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
+            localVarRequestOptions.PathParameters.Add("processId", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(processId)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
@@ -802,11 +768,6 @@ namespace avalara.comms.rest.v2.Api
             }
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post< GeoBatchSubmitFileResponse >("/api/v2/geo/batch/Upload", localVarRequestOptions, this.Configuration);
@@ -867,11 +828,6 @@ namespace avalara.comms.rest.v2.Api
             }
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
@@ -931,11 +887,6 @@ namespace avalara.comms.rest.v2.Api
             localVarRequestOptions.Data = geocodeRequest;
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Post< List<GeocodeResult> >("/api/v2/geo/Geocode", localVarRequestOptions, this.Configuration);
@@ -996,11 +947,6 @@ namespace avalara.comms.rest.v2.Api
             localVarRequestOptions.Data = geocodeRequest;
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 

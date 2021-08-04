@@ -1,7 +1,7 @@
 /* 
  * SaasPro
  *
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -15,6 +15,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 
 namespace avalara.comms.rest.v2.Client
@@ -217,6 +218,12 @@ namespace avalara.comms.rest.v2.Client
             
             return apiKeyValue;
         }
+
+        /// <summary>
+        /// Gets or sets certificate collection to be sent with requests.
+        /// </summary>
+        /// <value>X509 Certificate collection.</value>
+        public X509CertificateCollection ClientCertificates { get; set; }
 
         /// <summary>
         /// Gets or sets the access token for OAuth2 authentication.

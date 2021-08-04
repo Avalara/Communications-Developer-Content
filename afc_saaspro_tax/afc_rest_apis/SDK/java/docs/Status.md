@@ -8,7 +8,7 @@ Status information.
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **Integer** | Status code. |  [optional]
-**msg** | **String** | Status message. |  [optional] [readonly]
+**msg** | **String** | Status message. |  [optional]
 
 
 

@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v2_afc_tspairs_get**
-> list[TSPairData] api_v2_afc_tspairs_get()
+> list[TsPairData] api_v2_afc_tspairs_get()
 
 Get transaction/service pair information
 
@@ -313,7 +313,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**list[TSPairData]**](TSPairData.md)
+[**list[TsPairData]**](TsPairData.md)
 
 ### Authorization
 

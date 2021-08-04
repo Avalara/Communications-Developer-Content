@@ -1,7 +1,7 @@
 /* 
  * SaasPro
  *
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -34,9 +34,9 @@ namespace avalara.comms.rest.v2.Api
         /// Request will return all jurisdictions associated with the PCode
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>PCodeLookupResult</returns>
-        PCodeLookupResult ApiV2AfcLocationPcodeGet (int pcode);
+        PCodeLookupResult ApiV2AfcLocationPCodeGet (int pCode);
 
         /// <summary>
         /// Get location data associated with a PCode
@@ -45,9 +45,9 @@ namespace avalara.comms.rest.v2.Api
         /// Request will return all jurisdictions associated with the PCode
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>ApiResponse of PCodeLookupResult</returns>
-        ApiResponse<PCodeLookupResult> ApiV2AfcLocationPcodeGetWithHttpInfo (int pcode);
+        ApiResponse<PCodeLookupResult> ApiV2AfcLocationPCodeGetWithHttpInfo (int pCode);
         /// <summary>
         /// Get primary location data associated with a PCode
         /// </summary>
@@ -116,8 +116,8 @@ namespace avalara.comms.rest.v2.Api
         /// This method returns the description for the transaction type, service type and the ts pairs.
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;TSPairData&gt;</returns>
-        List<TSPairData> ApiV2AfcTspairsGet ();
+        /// <returns>List&lt;TsPairData&gt;</returns>
+        List<TsPairData> ApiV2AfcTspairsGet ();
 
         /// <summary>
         /// Get transaction/service pair information
@@ -126,8 +126,8 @@ namespace avalara.comms.rest.v2.Api
         /// This method returns the description for the transaction type, service type and the ts pairs.
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;TSPairData&gt;</returns>
-        ApiResponse<List<TSPairData>> ApiV2AfcTspairsGetWithHttpInfo ();
+        /// <returns>ApiResponse of List&lt;TsPairData&gt;</returns>
+        ApiResponse<List<TsPairData>> ApiV2AfcTspairsGetWithHttpInfo ();
         #endregion Synchronous Operations
     }
 
@@ -144,9 +144,9 @@ namespace avalara.comms.rest.v2.Api
         /// Request will return all jurisdictions associated with the PCode
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>Task of PCodeLookupResult</returns>
-        System.Threading.Tasks.Task<PCodeLookupResult> ApiV2AfcLocationPcodeGetAsync (int pcode);
+        System.Threading.Tasks.Task<PCodeLookupResult> ApiV2AfcLocationPCodeGetAsync (int pCode);
 
         /// <summary>
         /// Get location data associated with a PCode
@@ -155,9 +155,9 @@ namespace avalara.comms.rest.v2.Api
         /// Request will return all jurisdictions associated with the PCode
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>Task of ApiResponse (PCodeLookupResult)</returns>
-        System.Threading.Tasks.Task<ApiResponse<PCodeLookupResult>> ApiV2AfcLocationPcodeGetAsyncWithHttpInfo (int pcode);
+        System.Threading.Tasks.Task<ApiResponse<PCodeLookupResult>> ApiV2AfcLocationPCodeGetAsyncWithHttpInfo (int pCode);
         /// <summary>
         /// Get primary location data associated with a PCode
         /// </summary>
@@ -226,8 +226,8 @@ namespace avalara.comms.rest.v2.Api
         /// This method returns the description for the transaction type, service type and the ts pairs.
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;TSPairData&gt;</returns>
-        System.Threading.Tasks.Task<List<TSPairData>> ApiV2AfcTspairsGetAsync ();
+        /// <returns>Task of List&lt;TsPairData&gt;</returns>
+        System.Threading.Tasks.Task<List<TsPairData>> ApiV2AfcTspairsGetAsync ();
 
         /// <summary>
         /// Get transaction/service pair information
@@ -236,8 +236,8 @@ namespace avalara.comms.rest.v2.Api
         /// This method returns the description for the transaction type, service type and the ts pairs.
         /// </remarks>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;TSPairData&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<TSPairData>>> ApiV2AfcTspairsGetAsyncWithHttpInfo ();
+        /// <returns>Task of ApiResponse (List&lt;TsPairData&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<TsPairData>>> ApiV2AfcTspairsGetAsyncWithHttpInfo ();
         #endregion Asynchronous Operations
     }
 
@@ -362,11 +362,11 @@ namespace avalara.comms.rest.v2.Api
         /// Get location data associated with a PCode Request will return all jurisdictions associated with the PCode
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>PCodeLookupResult</returns>
-        public PCodeLookupResult ApiV2AfcLocationPcodeGet (int pcode)
+        public PCodeLookupResult ApiV2AfcLocationPCodeGet (int pCode)
         {
-             avalara.comms.rest.v2.Client.ApiResponse<PCodeLookupResult> localVarResponse = ApiV2AfcLocationPcodeGetWithHttpInfo(pcode);
+             avalara.comms.rest.v2.Client.ApiResponse<PCodeLookupResult> localVarResponse = ApiV2AfcLocationPCodeGetWithHttpInfo(pCode);
              return localVarResponse.Data;
         }
 
@@ -374,9 +374,9 @@ namespace avalara.comms.rest.v2.Api
         /// Get location data associated with a PCode Request will return all jurisdictions associated with the PCode
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>ApiResponse of PCodeLookupResult</returns>
-        public avalara.comms.rest.v2.Client.ApiResponse< PCodeLookupResult > ApiV2AfcLocationPcodeGetWithHttpInfo (int pcode)
+        public avalara.comms.rest.v2.Client.ApiResponse< PCodeLookupResult > ApiV2AfcLocationPCodeGetWithHttpInfo (int pCode)
         {
             avalara.comms.rest.v2.Client.RequestOptions localVarRequestOptions = new avalara.comms.rest.v2.Client.RequestOptions();
 
@@ -396,21 +396,16 @@ namespace avalara.comms.rest.v2.Api
             var localVarAccept = avalara.comms.rest.v2.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            localVarRequestOptions.PathParameters.Add("pcode", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(pcode)); // path parameter
+            localVarRequestOptions.PathParameters.Add("pCode", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(pCode)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< PCodeLookupResult >("/api/v2/afc/location/{pcode}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get< PCodeLookupResult >("/api/v2/afc/location/{pCode}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV2AfcLocationPcodeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiV2AfcLocationPCodeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -421,11 +416,11 @@ namespace avalara.comms.rest.v2.Api
         /// Get location data associated with a PCode Request will return all jurisdictions associated with the PCode
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>Task of PCodeLookupResult</returns>
-        public async System.Threading.Tasks.Task<PCodeLookupResult> ApiV2AfcLocationPcodeGetAsync (int pcode)
+        public async System.Threading.Tasks.Task<PCodeLookupResult> ApiV2AfcLocationPCodeGetAsync (int pCode)
         {
-             avalara.comms.rest.v2.Client.ApiResponse<PCodeLookupResult> localVarResponse = await ApiV2AfcLocationPcodeGetAsyncWithHttpInfo(pcode);
+             avalara.comms.rest.v2.Client.ApiResponse<PCodeLookupResult> localVarResponse = await ApiV2AfcLocationPCodeGetAsyncWithHttpInfo(pCode);
              return localVarResponse.Data;
 
         }
@@ -434,9 +429,9 @@ namespace avalara.comms.rest.v2.Api
         /// Get location data associated with a PCode Request will return all jurisdictions associated with the PCode
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pcode"></param>
+        /// <param name="pCode"></param>
         /// <returns>Task of ApiResponse (PCodeLookupResult)</returns>
-        public async System.Threading.Tasks.Task<avalara.comms.rest.v2.Client.ApiResponse<PCodeLookupResult>> ApiV2AfcLocationPcodeGetAsyncWithHttpInfo (int pcode)
+        public async System.Threading.Tasks.Task<avalara.comms.rest.v2.Client.ApiResponse<PCodeLookupResult>> ApiV2AfcLocationPCodeGetAsyncWithHttpInfo (int pCode)
         {
 
             avalara.comms.rest.v2.Client.RequestOptions localVarRequestOptions = new avalara.comms.rest.v2.Client.RequestOptions();
@@ -457,22 +452,17 @@ namespace avalara.comms.rest.v2.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            localVarRequestOptions.PathParameters.Add("pcode", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(pcode)); // path parameter
+            localVarRequestOptions.PathParameters.Add("pCode", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(pCode)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<PCodeLookupResult>("/api/v2/afc/location/{pcode}", localVarRequestOptions, this.Configuration);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<PCodeLookupResult>("/api/v2/afc/location/{pCode}", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
-                Exception _exception = this.ExceptionFactory("ApiV2AfcLocationPcodeGet", localVarResponse);
+                Exception _exception = this.ExceptionFactory("ApiV2AfcLocationPCodeGet", localVarResponse);
                 if (_exception != null) throw _exception;
             }
 
@@ -520,11 +510,6 @@ namespace avalara.comms.rest.v2.Api
             localVarRequestOptions.PathParameters.Add("pCode", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(pCode)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Get< PCodeLookupResult >("/api/v2/afc/primary/{pCode}", localVarRequestOptions, this.Configuration);
@@ -581,11 +566,6 @@ namespace avalara.comms.rest.v2.Api
             localVarRequestOptions.PathParameters.Add("pCode", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(pCode)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
@@ -638,11 +618,6 @@ namespace avalara.comms.rest.v2.Api
 
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Get< ServiceInfo >("/api/v2/afc/serviceinfo", localVarRequestOptions, this.Configuration);
@@ -696,11 +671,6 @@ namespace avalara.comms.rest.v2.Api
             
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
@@ -757,15 +727,9 @@ namespace avalara.comms.rest.v2.Api
             var localVarAccept = avalara.comms.rest.v2.Client.ClientUtils.SelectHeaderAccept(_accepts);
             if (localVarAccept != null) localVarRequestOptions.HeaderParameters.Add("Accept", localVarAccept);
 
-            if (taxType != null)
-                localVarRequestOptions.PathParameters.Add("taxType", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(taxType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("taxType", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(taxType)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
             var localVarResponse = this.Client.Get< List<TaxTypeData> >("/api/v2/afc/taxtype/{taxType}", localVarRequestOptions, this.Configuration);
@@ -823,15 +787,9 @@ namespace avalara.comms.rest.v2.Api
             foreach (var _accept in _accepts)
                 localVarRequestOptions.HeaderParameters.Add("Accept", _accept);
             
-            if (taxType != null)
-                localVarRequestOptions.PathParameters.Add("taxType", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(taxType)); // path parameter
+            localVarRequestOptions.PathParameters.Add("taxType", avalara.comms.rest.v2.Client.ClientUtils.ParameterToString(taxType)); // path parameter
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
@@ -850,10 +808,10 @@ namespace avalara.comms.rest.v2.Api
         /// Get transaction/service pair information This method returns the description for the transaction type, service type and the ts pairs.
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>List&lt;TSPairData&gt;</returns>
-        public List<TSPairData> ApiV2AfcTspairsGet ()
+        /// <returns>List&lt;TsPairData&gt;</returns>
+        public List<TsPairData> ApiV2AfcTspairsGet ()
         {
-             avalara.comms.rest.v2.Client.ApiResponse<List<TSPairData>> localVarResponse = ApiV2AfcTspairsGetWithHttpInfo();
+             avalara.comms.rest.v2.Client.ApiResponse<List<TsPairData>> localVarResponse = ApiV2AfcTspairsGetWithHttpInfo();
              return localVarResponse.Data;
         }
 
@@ -861,8 +819,8 @@ namespace avalara.comms.rest.v2.Api
         /// Get transaction/service pair information This method returns the description for the transaction type, service type and the ts pairs.
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>ApiResponse of List&lt;TSPairData&gt;</returns>
-        public avalara.comms.rest.v2.Client.ApiResponse< List<TSPairData> > ApiV2AfcTspairsGetWithHttpInfo ()
+        /// <returns>ApiResponse of List&lt;TsPairData&gt;</returns>
+        public avalara.comms.rest.v2.Client.ApiResponse< List<TsPairData> > ApiV2AfcTspairsGetWithHttpInfo ()
         {
             avalara.comms.rest.v2.Client.RequestOptions localVarRequestOptions = new avalara.comms.rest.v2.Client.RequestOptions();
 
@@ -884,14 +842,9 @@ namespace avalara.comms.rest.v2.Api
 
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
-            var localVarResponse = this.Client.Get< List<TSPairData> >("/api/v2/afc/tspairs", localVarRequestOptions, this.Configuration);
+            var localVarResponse = this.Client.Get< List<TsPairData> >("/api/v2/afc/tspairs", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {
@@ -906,10 +859,10 @@ namespace avalara.comms.rest.v2.Api
         /// Get transaction/service pair information This method returns the description for the transaction type, service type and the ts pairs.
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of List&lt;TSPairData&gt;</returns>
-        public async System.Threading.Tasks.Task<List<TSPairData>> ApiV2AfcTspairsGetAsync ()
+        /// <returns>Task of List&lt;TsPairData&gt;</returns>
+        public async System.Threading.Tasks.Task<List<TsPairData>> ApiV2AfcTspairsGetAsync ()
         {
-             avalara.comms.rest.v2.Client.ApiResponse<List<TSPairData>> localVarResponse = await ApiV2AfcTspairsGetAsyncWithHttpInfo();
+             avalara.comms.rest.v2.Client.ApiResponse<List<TsPairData>> localVarResponse = await ApiV2AfcTspairsGetAsyncWithHttpInfo();
              return localVarResponse.Data;
 
         }
@@ -918,8 +871,8 @@ namespace avalara.comms.rest.v2.Api
         /// Get transaction/service pair information This method returns the description for the transaction type, service type and the ts pairs.
         /// </summary>
         /// <exception cref="avalara.comms.rest.v2.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <returns>Task of ApiResponse (List&lt;TSPairData&gt;)</returns>
-        public async System.Threading.Tasks.Task<avalara.comms.rest.v2.Client.ApiResponse<List<TSPairData>>> ApiV2AfcTspairsGetAsyncWithHttpInfo ()
+        /// <returns>Task of ApiResponse (List&lt;TsPairData&gt;)</returns>
+        public async System.Threading.Tasks.Task<avalara.comms.rest.v2.Client.ApiResponse<List<TsPairData>>> ApiV2AfcTspairsGetAsyncWithHttpInfo ()
         {
 
             avalara.comms.rest.v2.Client.RequestOptions localVarRequestOptions = new avalara.comms.rest.v2.Client.RequestOptions();
@@ -942,15 +895,10 @@ namespace avalara.comms.rest.v2.Api
             
 
             // authentication (Basic) required
-            // http basic authentication required
-            if (!String.IsNullOrEmpty(this.Configuration.Username) || !String.IsNullOrEmpty(this.Configuration.Password))
-            {
-                localVarRequestOptions.HeaderParameters.Add("Authorization", "Basic " + avalara.comms.rest.v2.Client.ClientUtils.Base64Encode(this.Configuration.Username + ":" + this.Configuration.Password));
-            }
 
             // make the HTTP request
 
-            var localVarResponse = await this.AsynchronousClient.GetAsync<List<TSPairData>>("/api/v2/afc/tspairs", localVarRequestOptions, this.Configuration);
+            var localVarResponse = await this.AsynchronousClient.GetAsync<List<TsPairData>>("/api/v2/afc/tspairs", localVarRequestOptions, this.Configuration);
 
             if (this.ExceptionFactory != null)
             {

@@ -1,6 +1,6 @@
 /**
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -19,6 +19,8 @@ import BundleConfig from './model/BundleConfig';
 import BundleItem from './model/BundleItem';
 import CalcTaxesRequest from './model/CalcTaxesRequest';
 import CalcTaxesResponse from './model/CalcTaxesResponse';
+import ClientProfileConfigResponse from './model/ClientProfileConfigResponse';
+import ClientProfileConfigTypes from './model/ClientProfileConfigTypes';
 import CommitRequest from './model/CommitRequest';
 import CommitResponse from './model/CommitResponse';
 import CompanyData from './model/CompanyData';
@@ -51,15 +53,13 @@ import SafeHarborOverride from './model/SafeHarborOverride';
 import ServiceInfo from './model/ServiceInfo';
 import Status from './model/Status';
 import SummarizedTax from './model/SummarizedTax';
-import TSPairData from './model/TSPairData';
 import Tax from './model/Tax';
 import TaxBracket from './model/TaxBracket';
-import TaxCalculationSettingTypes from './model/TaxCalculationSettingTypes';
-import TaxCalculationSettingsResponse from './model/TaxCalculationSettingsResponse';
 import TaxExemption from './model/TaxExemption';
 import TaxOverride from './model/TaxOverride';
 import TaxTypeData from './model/TaxTypeData';
 import TrafficStudyOverride from './model/TrafficStudyOverride';
+import TsPairData from './model/TsPairData';
 import VersionInfo from './model/VersionInfo';
 import Warning from './model/Warning';
 import CustomizationApi from './api/CustomizationApi';
@@ -70,7 +70,7 @@ import TaxCalculationApi from './api/TaxCalculationApi';
 
 
 /**
-* APIs_to_interface_with_communications_tax_engine_br__The_API_requires_Basic_authentication_br__Users_with_access_to_multiple_clients_must_also_set_request_header_parameter_for_codeclient_id_code_br__Set_codeclient_profile_id_code_to_specify_profile_to_be_used_for_taxation_.<br>
+* APIs_to_interface_with_communications_tax_engine_br__The_API_requires_Basic_authentication_br__Users_with_access_to_multiple_clients_must_also_set_request_header_parameter_for_codeclient_id_code_br__Set_codeclient_profile_id_code_to_specify_profile_to_be_used_for_taxation_br__br__Effective_January_1st_2022_all_Avalara_products_will_be_enforcing_TLS_1_2_server_side__Please_ensure_that_your_implementation_sets_a_minimal_of_TLS_1_2_encryption_when_making_web_requests_to_Avalara_APIs_.<br>
 * The <code>index</code> module provides access to constructors for all the classes which comprise the public API.
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
@@ -142,6 +142,18 @@ export {
      * @property {module:model/CalcTaxesResponse}
      */
     CalcTaxesResponse,
+
+    /**
+     * The ClientProfileConfigResponse model constructor.
+     * @property {module:model/ClientProfileConfigResponse}
+     */
+    ClientProfileConfigResponse,
+
+    /**
+     * The ClientProfileConfigTypes model constructor.
+     * @property {module:model/ClientProfileConfigTypes}
+     */
+    ClientProfileConfigTypes,
 
     /**
      * The CommitRequest model constructor.
@@ -336,12 +348,6 @@ export {
     SummarizedTax,
 
     /**
-     * The TSPairData model constructor.
-     * @property {module:model/TSPairData}
-     */
-    TSPairData,
-
-    /**
      * The Tax model constructor.
      * @property {module:model/Tax}
      */
@@ -352,18 +358,6 @@ export {
      * @property {module:model/TaxBracket}
      */
     TaxBracket,
-
-    /**
-     * The TaxCalculationSettingTypes model constructor.
-     * @property {module:model/TaxCalculationSettingTypes}
-     */
-    TaxCalculationSettingTypes,
-
-    /**
-     * The TaxCalculationSettingsResponse model constructor.
-     * @property {module:model/TaxCalculationSettingsResponse}
-     */
-    TaxCalculationSettingsResponse,
 
     /**
      * The TaxExemption model constructor.
@@ -388,6 +382,12 @@ export {
      * @property {module:model/TrafficStudyOverride}
      */
     TrafficStudyOverride,
+
+    /**
+     * The TsPairData model constructor.
+     * @property {module:model/TsPairData}
+     */
+    TsPairData,
 
     /**
      * The VersionInfo model constructor.

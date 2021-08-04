@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## apiV2ProfilesGetProfilesGet
 
-> \OpenAPI\Client\Model\TaxCalculationSettingsResponse apiV2ProfilesGetProfilesGet($requested_client_id, $requested_profile_id, $item_type)
+> \OpenAPI\Client\Model\ClientProfileConfigResponse apiV2ProfilesGetProfilesGet($requested_client_id, $requested_profile_id, $item_type)
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -31,7 +31,7 @@ $apiInstance = new OpenAPI\Client\Api\CustomizationApi(
 );
 $requested_client_id = 56; // int | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable.
 $requested_profile_id = 56; // int | Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set.
-$item_type = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\TaxCalculationSettingTypes(); // \OpenAPI\Client\Model\TaxCalculationSettingTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
+$item_type = new \OpenAPI\Client\Model\\OpenAPI\Client\Model\ClientProfileConfigTypes(); // \OpenAPI\Client\Model\ClientProfileConfigTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
 
 try {
     $result = $apiInstance->apiV2ProfilesGetProfilesGet($requested_client_id, $requested_profile_id, $item_type);
@@ -49,11 +49,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **requested_client_id** | **int**| Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. | [optional]
  **requested_profile_id** | **int**| Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. | [optional]
- **item_type** | [**\OpenAPI\Client\Model\TaxCalculationSettingTypes**](../Model/.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional]
+ **item_type** | [**\OpenAPI\Client\Model\ClientProfileConfigTypes**](../Model/.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional]
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TaxCalculationSettingsResponse**](../Model/TaxCalculationSettingsResponse.md)
+[**\OpenAPI\Client\Model\ClientProfileConfigResponse**](../Model/ClientProfileConfigResponse.md)
 
 ### Authorization
 

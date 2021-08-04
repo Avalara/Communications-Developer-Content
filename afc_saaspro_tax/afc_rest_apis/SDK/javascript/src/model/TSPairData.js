@@ -1,6 +1,6 @@
 /**
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -14,18 +14,18 @@
 import ApiClient from '../ApiClient';
 
 /**
- * The TSPairData model module.
- * @module model/TSPairData
+ * The TsPairData model module.
+ * @module model/TsPairData
  * @version v2
  */
-class TSPairData {
+class TsPairData {
     /**
-     * Constructs a new <code>TSPairData</code>.
-     * @alias module:model/TSPairData
+     * Constructs a new <code>TsPairData</code>.
+     * @alias module:model/TsPairData
      */
     constructor() { 
         
-        TSPairData.initialize(this);
+        TsPairData.initialize(this);
     }
 
     /**
@@ -37,15 +37,15 @@ class TSPairData {
     }
 
     /**
-     * Constructs a <code>TSPairData</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>TsPairData</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/TSPairData} obj Optional instance to populate.
-     * @return {module:model/TSPairData} The populated <code>TSPairData</code> instance.
+     * @param {module:model/TsPairData} obj Optional instance to populate.
+     * @return {module:model/TsPairData} The populated <code>TsPairData</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new TSPairData();
+            obj = obj || new TsPairData();
 
             if (data.hasOwnProperty('TransactionType')) {
                 obj['TransactionType'] = ApiClient.convertToType(data['TransactionType'], 'Number');
@@ -84,52 +84,52 @@ class TSPairData {
 /**
  * @member {Number} TransactionType
  */
-TSPairData.prototype['TransactionType'] = undefined;
+TsPairData.prototype['TransactionType'] = undefined;
 
 /**
  * @member {Number} ServiceType
  */
-TSPairData.prototype['ServiceType'] = undefined;
+TsPairData.prototype['ServiceType'] = undefined;
 
 /**
  * @member {Number} MarketType
  */
-TSPairData.prototype['MarketType'] = undefined;
+TsPairData.prototype['MarketType'] = undefined;
 
 /**
  * @member {Number} InterfaceType
  */
-TSPairData.prototype['InterfaceType'] = undefined;
+TsPairData.prototype['InterfaceType'] = undefined;
 
 /**
  * @member {Number} InputType
  */
-TSPairData.prototype['InputType'] = undefined;
+TsPairData.prototype['InputType'] = undefined;
 
 /**
  * @member {Boolean} IsBundle
  */
-TSPairData.prototype['IsBundle'] = undefined;
+TsPairData.prototype['IsBundle'] = undefined;
 
 /**
  * @member {String} TransactionDescription
  */
-TSPairData.prototype['TransactionDescription'] = undefined;
+TsPairData.prototype['TransactionDescription'] = undefined;
 
 /**
  * @member {String} ServiceDescription
  */
-TSPairData.prototype['ServiceDescription'] = undefined;
+TsPairData.prototype['ServiceDescription'] = undefined;
 
 /**
  * @member {String} TSPairDescription
  */
-TSPairData.prototype['TSPairDescription'] = undefined;
+TsPairData.prototype['TSPairDescription'] = undefined;
 
 
 
 
 
 
-export default TSPairData;
+export default TsPairData;
 

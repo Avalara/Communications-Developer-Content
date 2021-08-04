@@ -1,7 +1,7 @@
 /* 
  * SaasPro
  *
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -35,9 +35,11 @@ namespace avalara.comms.rest.v2.Model
         /// Initializes a new instance of the <see cref="Warning" /> class.
         /// </summary>
         /// <param name="code">Warning code..</param>
-        public Warning(int code = default(int))
+        /// <param name="msg">Warning message..</param>
+        public Warning(int code = default(int), string msg = default(string))
         {
             this.Code = code;
+            this.Msg = msg;
         }
         
         /// <summary>
@@ -52,7 +54,7 @@ namespace avalara.comms.rest.v2.Model
         /// </summary>
         /// <value>Warning message.</value>
         [DataMember(Name="msg", EmitDefaultValue=true)]
-        public string Msg { get; private set; }
+        public string Msg { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object

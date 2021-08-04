@@ -1,7 +1,7 @@
 /* 
  * SaasPro
  *
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -56,14 +56,14 @@ namespace avalara.comms.rest.v2.Test
 
         
         /// <summary>
-        /// Test ApiV2AfcLocationPcodeGet
+        /// Test ApiV2AfcLocationPCodeGet
         /// </summary>
         [Fact]
-        public void ApiV2AfcLocationPcodeGetTest()
+        public void ApiV2AfcLocationPCodeGetTest()
         {
             // TODO uncomment below to test the method and replace null with proper value
-            //int pcode = null;
-            //var response = instance.ApiV2AfcLocationPcodeGet(pcode);
+            //int pCode = null;
+            //var response = instance.ApiV2AfcLocationPCodeGet(pCode);
             //Assert.IsType<PCodeLookupResult> (response, "response is PCodeLookupResult");
         }
         
@@ -110,7 +110,7 @@ namespace avalara.comms.rest.v2.Test
         {
             // TODO uncomment below to test the method and replace null with proper value
             //var response = instance.ApiV2AfcTspairsGet();
-            //Assert.IsType<List<TSPairData>> (response, "response is List<TSPairData>");
+            //Assert.IsType<List<TsPairData>> (response, "response is List<TsPairData>");
         }
         
     }

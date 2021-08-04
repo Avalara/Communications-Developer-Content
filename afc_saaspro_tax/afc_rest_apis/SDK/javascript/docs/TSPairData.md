@@ -1,4 +1,4 @@
-# SaasPro.TSPairData
+# SaasPro.TsPairData
 
 ## Properties
 
