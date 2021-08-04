@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="apiV2ProfilesGetProfilesGet"></a>
 # **apiV2ProfilesGetProfilesGet**
-> TaxCalculationSettingsResponse apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType)
+> ClientProfileConfigResponse apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType)
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -32,9 +32,9 @@ public class Example {
     CustomizationApi apiInstance = new CustomizationApi(defaultClient);
     Integer requestedClientId = 56; // Integer | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable.
     Integer requestedProfileId = 56; // Integer | Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set.
-    TaxCalculationSettingTypes itemType = new TaxCalculationSettingTypes(); // TaxCalculationSettingTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
+    ClientProfileConfigTypes itemType = new ClientProfileConfigTypes(); // ClientProfileConfigTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
     try {
-      TaxCalculationSettingsResponse result = apiInstance.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
+      ClientProfileConfigResponse result = apiInstance.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CustomizationApi#apiV2ProfilesGetProfilesGet");
@@ -53,11 +53,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **requestedClientId** | **Integer**| Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. | [optional]
  **requestedProfileId** | **Integer**| Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. | [optional]
- **itemType** | [**TaxCalculationSettingTypes**](.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] [enum: All, Configuration, Bundle, Exclusion, Override, Nexus, Exemption]
+ **itemType** | [**ClientProfileConfigTypes**](.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] [enum: All, Configuration, Bundle, Exclusion, Override, Nexus, Exemption]
 
 ### Return type
 
-[**TaxCalculationSettingsResponse**](TaxCalculationSettingsResponse.md)
+[**ClientProfileConfigResponse**](ClientProfileConfigResponse.md)
 
 ### Authorization
 

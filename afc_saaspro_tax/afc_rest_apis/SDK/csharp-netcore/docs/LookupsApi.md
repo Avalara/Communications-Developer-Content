@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**ApiV2AfcLocationPcodeGet**](LookupsApi.md#apiv2afclocationpcodeget) | **GET** /api/v2/afc/location/{pcode} | Get location data associated with a PCode
+[**ApiV2AfcLocationPCodeGet**](LookupsApi.md#apiv2afclocationpcodeget) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
 [**ApiV2AfcPrimaryPCodeGet**](LookupsApi.md#apiv2afcprimarypcodeget) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
 [**ApiV2AfcServiceinfoGet**](LookupsApi.md#apiv2afcserviceinfoget) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
 [**ApiV2AfcTaxtypeTaxTypeGet**](LookupsApi.md#apiv2afctaxtypetaxtypeget) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
@@ -12,8 +12,8 @@ Method | HTTP request | Description
 
 
 <a name="apiv2afclocationpcodeget"></a>
-# **ApiV2AfcLocationPcodeGet**
-> PCodeLookupResult ApiV2AfcLocationPcodeGet (int pcode)
+# **ApiV2AfcLocationPCodeGet**
+> PCodeLookupResult ApiV2AfcLocationPCodeGet (int pCode)
 
 Get location data associated with a PCode
 
@@ -29,28 +29,25 @@ using avalara.comms.rest.v2.Model;
 
 namespace Example
 {
-    public class ApiV2AfcLocationPcodeGetExample
+    public class ApiV2AfcLocationPCodeGetExample
     {
         public static void Main()
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new LookupsApi(config);
-            var pcode = 56;  // int | 
+            var pCode = 56;  // int | 
 
             try
             {
                 // Get location data associated with a PCode
-                PCodeLookupResult result = apiInstance.ApiV2AfcLocationPcodeGet(pcode);
+                PCodeLookupResult result = apiInstance.ApiV2AfcLocationPCodeGet(pCode);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
             {
-                Debug.Print("Exception when calling LookupsApi.ApiV2AfcLocationPcodeGet: " + e.Message );
+                Debug.Print("Exception when calling LookupsApi.ApiV2AfcLocationPCodeGet: " + e.Message );
                 Debug.Print("Status Code: "+ e.ErrorCode);
                 Debug.Print(e.StackTrace);
             }
@@ -63,7 +60,7 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pcode** | **int**|  | 
+ **pCode** | **int**|  | 
 
 ### Return type
 
@@ -109,9 +106,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new LookupsApi(config);
             var pCode = 56;  // int | 
@@ -181,9 +175,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new LookupsApi(config);
 
@@ -251,9 +242,6 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new LookupsApi(config);
             var taxType = taxType_example;  // string | Tax type ID for the tax type.
@@ -303,7 +291,7 @@ Name | Type | Description  | Notes
 
 <a name="apiv2afctspairsget"></a>
 # **ApiV2AfcTspairsGet**
-> List&lt;TSPairData&gt; ApiV2AfcTspairsGet ()
+> List&lt;TsPairData&gt; ApiV2AfcTspairsGet ()
 
 Get transaction/service pair information
 
@@ -325,16 +313,13 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new LookupsApi(config);
 
             try
             {
                 // Get transaction/service pair information
-                List<TSPairData> result = apiInstance.ApiV2AfcTspairsGet();
+                List<TsPairData> result = apiInstance.ApiV2AfcTspairsGet();
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -353,7 +338,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**List&lt;TSPairData&gt;**](TSPairData.md)
+[**List&lt;TsPairData&gt;**](TsPairData.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2AfcLocationPcodeGet**](LookupsApi.md#apiV2AfcLocationPcodeGet) | **GET** /api/v2/afc/location/{pcode} | Get location data associated with a PCode
+[**apiV2AfcLocationPCodeGet**](LookupsApi.md#apiV2AfcLocationPCodeGet) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
 [**apiV2AfcPrimaryPCodeGet**](LookupsApi.md#apiV2AfcPrimaryPCodeGet) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
 [**apiV2AfcServiceinfoGet**](LookupsApi.md#apiV2AfcServiceinfoGet) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
 [**apiV2AfcTaxtypeTaxTypeGet**](LookupsApi.md#apiV2AfcTaxtypeTaxTypeGet) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
@@ -12,9 +12,9 @@ Method | HTTP request | Description
 
 
 
-## apiV2AfcLocationPcodeGet
+## apiV2AfcLocationPCodeGet
 
-> \OpenAPI\Client\Model\PCodeLookupResult apiV2AfcLocationPcodeGet($pcode)
+> \OpenAPI\Client\Model\PCodeLookupResult apiV2AfcLocationPCodeGet($p_code)
 
 Get location data associated with a PCode
 
@@ -35,13 +35,13 @@ $apiInstance = new OpenAPI\Client\Api\LookupsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$pcode = 56; // int | 
+$p_code = 56; // int | 
 
 try {
-    $result = $apiInstance->apiV2AfcLocationPcodeGet($pcode);
+    $result = $apiInstance->apiV2AfcLocationPCodeGet($p_code);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling LookupsApi->apiV2AfcLocationPcodeGet: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling LookupsApi->apiV2AfcLocationPCodeGet: ', $e->getMessage(), PHP_EOL;
 }
 ?>
 ```
@@ -51,7 +51,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pcode** | **int**|  |
+ **p_code** | **int**|  |
 
 ### Return type
 
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ## apiV2AfcTspairsGet
 
-> \OpenAPI\Client\Model\TSPairData[] apiV2AfcTspairsGet()
+> \OpenAPI\Client\Model\TsPairData[] apiV2AfcTspairsGet()
 
 Get transaction/service pair information
 
@@ -281,7 +281,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\OpenAPI\Client\Model\TSPairData[]**](../Model/TSPairData.md)
+[**\OpenAPI\Client\Model\TsPairData[]**](../Model/TsPairData.md)
 
 ### Authorization
 

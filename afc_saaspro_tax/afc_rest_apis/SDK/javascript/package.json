@@ -1,7 +1,7 @@
 {
   "name": "saas_pro",
-  "version": "v2",
-  "description": "APIs_to_interface_with_communications_tax_engine_br__The_API_requires_Basic_authentication_br__Users_with_access_to_multiple_clients_must_also_set_request_header_parameter_for_codeclient_id_code_br__Set_codeclient_profile_id_code_to_specify_profile_to_be_used_for_taxation_",
+  "version": "2.0.0",
+  "description": "APIs_to_interface_with_communications_tax_engine_br__The_API_requires_Basic_authentication_br__Users_with_access_to_multiple_clients_must_also_set_request_header_parameter_for_codeclient_id_code_br__Set_codeclient_profile_id_code_to_specify_profile_to_be_used_for_taxation_br__br__Effective_January_1st_2022_all_Avalara_products_will_be_enforcing_TLS_1_2_server_side__Please_ensure_that_your_implementation_sets_a_minimal_of_TLS_1_2_encryption_when_making_web_requests_to_Avalara_APIs_",
   "license": "Unlicense",
   "main": "dist/index.js",
   "scripts": {

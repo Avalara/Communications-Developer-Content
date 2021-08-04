@@ -1,0 +1,3782 @@
+openapi: 3.0.1
+info:
+  description: APIs to interface with communications tax engine.<br />The API requires
+    Basic authentication.<br />Users with access to multiple clients must also set
+    request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code>
+    to specify profile to be used for taxation.<br /><br />Effective January 1st,
+    2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure
+    that your implementation sets a minimal of TLS 1.2 encryption when making web
+    requests to Avalara APIs.
+  title: SaasPro
+  version: v2
+servers:
+- url: /
+security:
+- Basic: []
+paths:
+  /api/v2/afc/CalcTaxes:
+    post:
+      requestBody:
+        content:
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/CalcTaxesRequest'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CalcTaxesRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CalcTaxesRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CalcTaxesRequest'
+        description: "CalcTaxesRequest object containing invoices to process and data\
+          \ required \r\n            for performing tax calculations."
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/CalcTaxesResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CalcTaxesResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/CalcTaxesResponse'
+          description: Success
+      summary: Performs tax calculations on all invoices and line items within the
+        request body.
+      tags:
+      - Tax Calculation
+      x-contentType: application/json-patch+json
+      x-accepts: application/json
+  /api/v2/afc/Commit:
+    post:
+      requestBody:
+        content:
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/CommitRequest'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CommitRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/CommitRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/CommitRequest'
+        description: CommitRequest object containing document code and optional field
+          data to override in reports.
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/CommitResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CommitResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/CommitResponse'
+          description: Success
+      summary: Commits or un-commits a document code.
+      tags:
+      - Tax Calculation
+      x-contentType: application/json-patch+json
+      x-accepts: application/json
+  /api/v2/afc/serviceinfo:
+    get:
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ServiceInfo'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServiceInfo'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ServiceInfo'
+          description: Success
+      summary: Retrieves server time, service build version and engine version
+      tags:
+      - Lookups
+      x-accepts: application/json
+  /api/v2/afc/taxtype/{taxType}:
+    get:
+      description: This method returns the description for the specified tax type
+        ID. If tax type * is supplied it will return all tax types.
+      parameters:
+      - description: Tax type ID for the tax type.
+        explode: false
+        in: path
+        name: taxType
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/TaxTypeData'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/TaxTypeData'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/TaxTypeData'
+                type: array
+          description: Success
+      summary: Get the tax information (description and category) for a tax type ID
+      tags:
+      - Lookups
+      x-accepts: application/json
+  /api/v2/afc/tspairs:
+    get:
+      description: This method returns the description for the transaction type, service
+        type and the ts pairs.
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/TsPairData'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/TsPairData'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/TsPairData'
+                type: array
+          description: Success
+      summary: Get transaction/service pair information
+      tags:
+      - Lookups
+      x-accepts: application/json
+  /api/v2/afc/PCode:
+    post:
+      description: Requests supports using best match or exact match as well as limiting
+        the number of matches returned. Use a * on the end of Fips/Npanxx Codes to
+        find a range of values.
+      requestBody:
+        content:
+          application/json-patch+json:
+            schema:
+              $ref: '#/components/schemas/PCodeLookupRequest'
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PCodeLookupRequest'
+          text/json:
+            schema:
+              $ref: '#/components/schemas/PCodeLookupRequest'
+          application/*+json:
+            schema:
+              $ref: '#/components/schemas/PCodeLookupRequest'
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+          description: Success
+      summary: Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
+      tags:
+      - Jurisdiction Determination
+      x-contentType: application/json-patch+json
+      x-accepts: application/json
+  /api/v2/afc/location/{pCode}:
+    get:
+      description: Request will return all jurisdictions associated with the PCode
+      parameters:
+      - explode: false
+        in: path
+        name: pCode
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+          description: Success
+      summary: Get location data associated with a PCode
+      tags:
+      - Lookups
+      x-accepts: application/json
+  /api/v2/afc/primary/{pCode}:
+    get:
+      description: Request will return primary jurisdiction associated with the PCode
+      parameters:
+      - explode: false
+        in: path
+        name: pCode
+        required: true
+        schema:
+          format: int32
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/PCodeLookupResult'
+          description: Success
+      summary: Get primary location data associated with a PCode
+      tags:
+      - Lookups
+      x-accepts: application/json
+  /api/v2/profiles/GetProfiles:
+    get:
+      parameters:
+      - description: "Client id associated with profile(s) to be fetched\r\nNull value\
+          \ will use client id submitting the request or default client id as applicable."
+        explode: true
+        in: query
+        name: RequestedClientId
+        required: false
+        schema:
+          format: int32
+          type: integer
+        style: form
+      - description: "Configuration profile id to be fetched\r\nUse 0 to indicate\
+          \ all profiles\r\nNull value will use profile id from request or 0 if not\
+          \ set."
+        explode: true
+        in: query
+        name: RequestedProfileId
+        required: false
+        schema:
+          format: int32
+          type: integer
+        style: form
+      - description: "Item Type\r\nExamples:\r\n  Configuration, Bundle, Exclusion,\
+          \ Override, All"
+        explode: true
+        in: query
+        name: ItemType
+        required: false
+        schema:
+          $ref: '#/components/schemas/ClientProfileConfigTypes'
+        style: form
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/ClientProfileConfigResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ClientProfileConfigResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/ClientProfileConfigResponse'
+          description: Success
+      summary: Retrieves one or more profiles with associated settings and configurable
+        items
+      tags:
+      - Customization
+      x-accepts: application/json
+  /api/v2/geo/Geocode:
+    post:
+      requestBody:
+        content:
+          application/json-patch+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/GeocodeRequest'
+              type: array
+          application/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/GeocodeRequest'
+              type: array
+          text/json:
+            schema:
+              items:
+                $ref: '#/components/schemas/GeocodeRequest'
+              type: array
+          application/*+json:
+            schema:
+              items:
+                $ref: '#/components/schemas/GeocodeRequest'
+              type: array
+        description: List of street addresses and/or lat/long coordinate pairs to
+          geocode.
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                items:
+                  $ref: '#/components/schemas/GeocodeResult'
+                type: array
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/GeocodeResult'
+                type: array
+            text/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/GeocodeResult'
+                type: array
+          description: Success
+      summary: Geocodes one or multiple street addresses and/or lat/long coordinate
+        pairs.
+      tags:
+      - Jurisdiction Determination
+      x-contentType: application/json-patch+json
+      x-accepts: application/json
+  /api/v2/geo/batch/Upload:
+    post:
+      requestBody:
+        $ref: '#/components/requestBodies/inline_object'
+        content:
+          multipart/form-data:
+            encoding:
+              geoBatchFile:
+                style: form
+            schema:
+              properties:
+                geoBatchFile:
+                  format: binary
+                  type: string
+              type: object
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/GeoBatchSubmitFileResponse'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GeoBatchSubmitFileResponse'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/GeoBatchSubmitFileResponse'
+          description: Success
+      summary: Uploads file to Geo Batch.
+      tags:
+      - Jurisdiction Determination
+      x-contentType: multipart/form-data
+      x-accepts: application/json
+  /api/v2/geo/batch/status/{processId}:
+    get:
+      parameters:
+      - description: Process Id for Geo Batch File.
+        explode: false
+        in: path
+        name: processId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/GeoBatchStatus'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GeoBatchStatus'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/GeoBatchStatus'
+          description: Success
+      summary: Retrieves information on Geo Batch file status
+      tags:
+      - Jurisdiction Determination
+      x-accepts: application/json
+  /api/v2/geo/batch/log/{processId}:
+    get:
+      parameters:
+      - description: Process Id for Geo Batch File.
+        explode: false
+        in: path
+        name: processId
+        required: true
+        schema:
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            text/plain:
+              schema:
+                $ref: '#/components/schemas/GeoBatchLog'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GeoBatchLog'
+            text/json:
+              schema:
+                $ref: '#/components/schemas/GeoBatchLog'
+          description: Success
+      summary: Retrieves log on Geo Batch file
+      tags:
+      - Jurisdiction Determination
+      x-accepts: application/json
+  /api/v2/HealthCheck:
+    get:
+      responses:
+        "200":
+          description: Success
+      summary: Health check that confirms the service is operational and ready to
+        use
+      tags:
+      - Health Check
+      x-accepts: application/json
+components:
+  requestBodies:
+    inline_object:
+      content:
+        multipart/form-data:
+          schema:
+            $ref: '#/components/schemas/inline_object'
+  schemas:
+    Address:
+      additionalProperties: false
+      description: Address information.
+      example:
+        zip: zip
+        st: st
+        city: city
+        addr: addr
+      properties:
+        addr:
+          description: Street address.
+          nullable: true
+          type: string
+        city:
+          description: City name.
+          nullable: true
+          type: string
+        st:
+          description: State name or abbreviation.
+          nullable: true
+          type: string
+        zip:
+          description: Postal code.
+          nullable: true
+          type: string
+      type: object
+    BillingPeriod:
+      additionalProperties: false
+      description: Optional object for passing in billing period
+      example:
+        month: 6
+        year: 3
+      properties:
+        month:
+          description: Numeric value representing billing period month.  1 = January.
+          format: int32
+          type: integer
+        year:
+          description: Numeric 4 digit representation of billing period year.
+          format: int32
+          type: integer
+      type: object
+    BundleConfig:
+      additionalProperties: false
+      description: "Bundles associated with a client profile configuration\r\nMaybe\
+        \ associated with 0 to many profiles"
+      example:
+        BundleId: 2
+        Description: Description
+        BundlePackage: 3
+        Version: Version
+        BundleItems:
+        - Percentage: 1.2315135367772556
+          ServiceDesc: ServiceDesc
+          TransactionDesc: TransactionDesc
+          FixedAmount: 1.0246457001441578
+          Minutes: 6.84685269835264
+          TransactionId: 4
+          ServiceId: 7
+          Lines: 1
+        - Percentage: 1.2315135367772556
+          ServiceDesc: ServiceDesc
+          TransactionDesc: TransactionDesc
+          FixedAmount: 1.0246457001441578
+          Minutes: 6.84685269835264
+          TransactionId: 4
+          ServiceId: 7
+          Lines: 1
+      properties:
+        BundlePackage:
+          description: 'Bundle Package - example:  20000'
+          format: int32
+          type: integer
+        BundleId:
+          description: 'Bundle Id - example:  20001'
+          format: int32
+          type: integer
+        Description:
+          description: Bundle Description
+          nullable: true
+          type: string
+        BundleItems:
+          description: Bundled items - percentage should add up to 100% (as applicable)
+          items:
+            $ref: '#/components/schemas/BundleItem'
+          nullable: true
+          type: array
+        Version:
+          description: "Version for bundle - intended to allow changes to format \r\
+            \nwithout having to perform expensive SQL updates on existing bundles"
+          nullable: true
+          type: string
+      type: object
+    BundleItem:
+      additionalProperties: false
+      description: Bundled items associated with a bundle package
+      example:
+        Percentage: 1.2315135367772556
+        ServiceDesc: ServiceDesc
+        TransactionDesc: TransactionDesc
+        FixedAmount: 1.0246457001441578
+        Minutes: 6.84685269835264
+        TransactionId: 4
+        ServiceId: 7
+        Lines: 1
+      properties:
+        TransactionId:
+          description: Transaction id for item
+          format: int32
+          type: integer
+        ServiceId:
+          description: Service id for item
+          format: int32
+          type: integer
+        Percentage:
+          description: Percentage of package charge to be applied to item
+          format: double
+          nullable: true
+          type: number
+        FixedAmount:
+          description: Fixed charge to be applied to item
+          format: double
+          nullable: true
+          type: number
+        Lines:
+          description: Fixed lines to be applied to item
+          format: int32
+          nullable: true
+          type: integer
+        Minutes:
+          description: Fixed minutes to be applied to item
+          format: double
+          nullable: true
+          type: number
+        TransactionDesc:
+          description: Transaction id for item
+          nullable: true
+          type: string
+        ServiceDesc:
+          description: Service id for item
+          nullable: true
+          type: string
+      type: object
+    CalcTaxesRequest:
+      additionalProperties: false
+      description: Request body for tax calculation API.
+      example:
+        inv:
+        - date: 2000-01-23T04:56:07.000+00:00
+          itms:
+          - date: 2000-01-23T04:56:07.000+00:00
+            loc: 1
+            proadj: 1
+            line: 7
+            adjm: 9
+            lfln: true
+            glref: glref
+            pror: 7.457744773683766
+            ref: ref
+            min: 1.0246457001441578
+            prop: 6
+            from:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            tran: 4
+            chg: 4.145608029883936
+            serv: 5
+            adj: true
+            bill:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            plsp: 6.84685269835264
+            sale: 1
+            opt:
+            - val: val
+              key: key
+            - val: val
+              key: key
+            dbt: true
+            qty: 9
+            disc: 9
+            to:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            cust: 8
+            incl: true
+          - date: 2000-01-23T04:56:07.000+00:00
+            loc: 1
+            proadj: 1
+            line: 7
+            adjm: 9
+            lfln: true
+            glref: glref
+            pror: 7.457744773683766
+            ref: ref
+            min: 1.0246457001441578
+            prop: 6
+            from:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            tran: 4
+            chg: 4.145608029883936
+            serv: 5
+            adj: true
+            bill:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            plsp: 6.84685269835264
+            sale: 1
+            opt:
+            - val: val
+              key: key
+            - val: val
+              key: key
+            dbt: true
+            qty: 9
+            disc: 9
+            to:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            cust: 8
+            incl: true
+          bcyc: bcyc
+          bill:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          invn: invn
+          invm: true
+          lfln: true
+          opt:
+          - val: val
+            key: key
+          - val: val
+            key: key
+          summ: true
+          exms:
+          - loc:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            scp: 2
+            lvl: 7
+            dom: 3
+            frc: true
+            cat: 9
+            tpe: 2
+            exnb: true
+          - loc:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            scp: 2
+            lvl: 7
+            dom: 3
+            frc: true
+            cat: 9
+            tpe: 2
+            exnb: true
+          bpd:
+            month: 6
+            year: 3
+          doc: doc
+          custref: custref
+          ccycd: ccycd
+          cust: 5
+          dtl: true
+          acct: acct
+          cmmt: true
+        - date: 2000-01-23T04:56:07.000+00:00
+          itms:
+          - date: 2000-01-23T04:56:07.000+00:00
+            loc: 1
+            proadj: 1
+            line: 7
+            adjm: 9
+            lfln: true
+            glref: glref
+            pror: 7.457744773683766
+            ref: ref
+            min: 1.0246457001441578
+            prop: 6
+            from:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            tran: 4
+            chg: 4.145608029883936
+            serv: 5
+            adj: true
+            bill:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            plsp: 6.84685269835264
+            sale: 1
+            opt:
+            - val: val
+              key: key
+            - val: val
+              key: key
+            dbt: true
+            qty: 9
+            disc: 9
+            to:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            cust: 8
+            incl: true
+          - date: 2000-01-23T04:56:07.000+00:00
+            loc: 1
+            proadj: 1
+            line: 7
+            adjm: 9
+            lfln: true
+            glref: glref
+            pror: 7.457744773683766
+            ref: ref
+            min: 1.0246457001441578
+            prop: 6
+            from:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            tran: 4
+            chg: 4.145608029883936
+            serv: 5
+            adj: true
+            bill:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            plsp: 6.84685269835264
+            sale: 1
+            opt:
+            - val: val
+              key: key
+            - val: val
+              key: key
+            dbt: true
+            qty: 9
+            disc: 9
+            to:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            cust: 8
+            incl: true
+          bcyc: bcyc
+          bill:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          invn: invn
+          invm: true
+          lfln: true
+          opt:
+          - val: val
+            key: key
+          - val: val
+            key: key
+          summ: true
+          exms:
+          - loc:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            scp: 2
+            lvl: 7
+            dom: 3
+            frc: true
+            cat: 9
+            tpe: 2
+            exnb: true
+          - loc:
+              geo: true
+              pcd: 1
+              zip: zip
+              st: st
+              city: city
+              ctry: ctry
+              fips: fips
+              addr: addr
+              cnty: cnty
+              int: true
+              npa: 5
+            scp: 2
+            lvl: 7
+            dom: 3
+            frc: true
+            cat: 9
+            tpe: 2
+            exnb: true
+          bpd:
+            month: 6
+            year: 3
+          doc: doc
+          custref: custref
+          ccycd: ccycd
+          cust: 5
+          dtl: true
+          acct: acct
+          cmmt: true
+        cfg:
+          retnb: true
+          incrf: true
+          retext: true
+        cmpn:
+          idnt: idnt
+          frch: true
+          excl:
+          - st: st
+            excl: true
+            ctry: ctry
+          - st: st
+            excl: true
+            ctry: ctry
+          bscl: 0
+          reg: true
+          svcl: 6
+          fclt: true
+        ovr:
+        - loc:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          scp: 6
+          lvl: 2
+          lvlExm: true
+          brkt:
+          - rate: 6.778324963048013
+            max: 6.878052220127876
+          - rate: 6.778324963048013
+            max: 6.878052220127876
+          tid: 1
+        - loc:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          scp: 6
+          lvl: 2
+          lvlExm: true
+          brkt:
+          - rate: 6.778324963048013
+            max: 6.878052220127876
+          - rate: 6.778324963048013
+            max: 6.878052220127876
+          tid: 1
+        sovr:
+        - new: 3.353193347011243
+          sh: 5
+          old: 6.704019297950036
+        - new: 3.353193347011243
+          sh: 5
+          old: 6.704019297950036
+      properties:
+        cfg:
+          $ref: '#/components/schemas/RequestConfig'
+        cmpn:
+          $ref: '#/components/schemas/CompanyData'
+        inv:
+          description: List of invoices to process.
+          items:
+            $ref: '#/components/schemas/Invoice'
+          nullable: true
+          type: array
+        ovr:
+          description: Tax rate overrides.
+          items:
+            $ref: '#/components/schemas/TaxOverride'
+          nullable: true
+          type: array
+        sovr:
+          description: Safe harbor overrides for USF taxes.
+          items:
+            $ref: '#/components/schemas/SafeHarborOverride'
+          nullable: true
+          type: array
+      type: object
+    CalcTaxesResponse:
+      additionalProperties: false
+      description: Response body for tax calculation API.
+      example:
+        inv:
+        - itms:
+          - ref: ref
+            err:
+            - msg: msg
+              code: 7
+            - msg: msg
+              code: 7
+            txs:
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            base: 0.8008281904610115
+          - ref: ref
+            err:
+            - msg: msg
+              code: 7
+            - msg: msg
+              code: 7
+            txs:
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            base: 0.8008281904610115
+          summ:
+          - svc: 6
+            lvl: 1
+            chg: 5.944895607614016
+            max: 1.1730742509559433
+            taxpcd: 6
+            notax: true
+            tax: 6.965117697638846
+            tid: 2
+            lns: 8
+            pcd: 9
+            sur: true
+            min: 4.965218492984954
+            rate: 3.5571952270680973
+            cat: cat
+            tchg: 5.025004791520295
+            name: name
+            usexm: true
+            calc: 9
+            exm: 6.683562403749608
+            cid: 9
+            trans: 6
+          - svc: 6
+            lvl: 1
+            chg: 5.944895607614016
+            max: 1.1730742509559433
+            taxpcd: 6
+            notax: true
+            tax: 6.965117697638846
+            tid: 2
+            lns: 8
+            pcd: 9
+            sur: true
+            min: 4.965218492984954
+            rate: 3.5571952270680973
+            cat: cat
+            tchg: 5.025004791520295
+            name: name
+            usexm: true
+            calc: 9
+            exm: 6.683562403749608
+            cid: 9
+            trans: 6
+          err:
+          - msg: msg
+            code: 7
+          - msg: msg
+            code: 7
+          doc: doc
+          incrf:
+            bcyc: bcyc
+            custref: custref
+            ccydesc: ccydesc
+            ccycd: ccycd
+            invn: invn
+            acct: acct
+        - itms:
+          - ref: ref
+            err:
+            - msg: msg
+              code: 7
+            - msg: msg
+              code: 7
+            txs:
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            base: 0.8008281904610115
+          - ref: ref
+            err:
+            - msg: msg
+              code: 7
+            - msg: msg
+              code: 7
+            txs:
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            - svc: 1
+              lvl: 7
+              chg: 6.84685269835264
+              taxpcd: 3
+              cmpl: true
+              notax: true
+              bill: true
+              tax: 4.145608029883936
+              tid: 1
+              lns: 2
+              pcd: 9
+              sur: true
+              min: 7.061401241503109
+              rate: 2.027123023002322
+              cat: cat
+              name: name
+              tm: 6.027456183070403
+              usexm: true
+              calc: 1
+              exm: 5.637376656633329
+              cid: 5
+              trans: 1
+            base: 0.8008281904610115
+          summ:
+          - svc: 6
+            lvl: 1
+            chg: 5.944895607614016
+            max: 1.1730742509559433
+            taxpcd: 6
+            notax: true
+            tax: 6.965117697638846
+            tid: 2
+            lns: 8
+            pcd: 9
+            sur: true
+            min: 4.965218492984954
+            rate: 3.5571952270680973
+            cat: cat
+            tchg: 5.025004791520295
+            name: name
+            usexm: true
+            calc: 9
+            exm: 6.683562403749608
+            cid: 9
+            trans: 6
+          - svc: 6
+            lvl: 1
+            chg: 5.944895607614016
+            max: 1.1730742509559433
+            taxpcd: 6
+            notax: true
+            tax: 6.965117697638846
+            tid: 2
+            lns: 8
+            pcd: 9
+            sur: true
+            min: 4.965218492984954
+            rate: 3.5571952270680973
+            cat: cat
+            tchg: 5.025004791520295
+            name: name
+            usexm: true
+            calc: 9
+            exm: 6.683562403749608
+            cid: 9
+            trans: 6
+          err:
+          - msg: msg
+            code: 7
+          - msg: msg
+            code: 7
+          doc: doc
+          incrf:
+            bcyc: bcyc
+            custref: custref
+            ccydesc: ccydesc
+            ccycd: ccycd
+            invn: invn
+            acct: acct
+        err:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+      properties:
+        inv:
+          description: Tax calculation results for each invoice submitted in request.
+          items:
+            $ref: '#/components/schemas/InvoiceResult'
+          nullable: true
+          type: array
+        err:
+          description: Error description (as applicable).
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+      type: object
+    ClientProfileConfigResponse:
+      additionalProperties: false
+      description: Data for an invoice or quote line item.
+      example:
+        Status:
+        - msg: msg
+          code: 1
+        - msg: msg
+          code: 1
+        LastUpdateBy: LastUpdateBy
+        Description: Description
+        Exclusions:
+        - CountryIso: CountryIso
+          State: State
+        - CountryIso: CountryIso
+          State: State
+        Nexus:
+        - State: State
+        - State: State
+        ItemType: ItemType
+        Error: Error
+        Bundles:
+        - BundleId: 2
+          Description: Description
+          BundlePackage: 3
+          Version: Version
+          BundleItems:
+          - Percentage: 1.2315135367772556
+            ServiceDesc: ServiceDesc
+            TransactionDesc: TransactionDesc
+            FixedAmount: 1.0246457001441578
+            Minutes: 6.84685269835264
+            TransactionId: 4
+            ServiceId: 7
+            Lines: 1
+          - Percentage: 1.2315135367772556
+            ServiceDesc: ServiceDesc
+            TransactionDesc: TransactionDesc
+            FixedAmount: 1.0246457001441578
+            Minutes: 6.84685269835264
+            TransactionId: 4
+            ServiceId: 7
+            Lines: 1
+        - BundleId: 2
+          Description: Description
+          BundlePackage: 3
+          Version: Version
+          BundleItems:
+          - Percentage: 1.2315135367772556
+            ServiceDesc: ServiceDesc
+            TransactionDesc: TransactionDesc
+            FixedAmount: 1.0246457001441578
+            Minutes: 6.84685269835264
+            TransactionId: 4
+            ServiceId: 7
+            Lines: 1
+          - Percentage: 1.2315135367772556
+            ServiceDesc: ServiceDesc
+            TransactionDesc: TransactionDesc
+            FixedAmount: 1.0246457001441578
+            Minutes: 6.84685269835264
+            TransactionId: 4
+            ServiceId: 7
+            Lines: 1
+        Errors:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        Active: true
+        ProfileIds:
+        - 6
+        - 6
+        ClientId: 1
+        Overrides:
+          RawData:
+          - RawData
+          - RawData
+        ProfileConfigId: 0
+        Warnings:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        Settings:
+          SelfTaxAlgorithm: 9
+          TaxOnTaxAlgorithm: 7
+          TrafficStudyOverrides:
+          - TrafficStudyFedPcnt: 2.3021358869347655
+            TrafficStudyType: 5
+            SafeHarborFedPcnt: 5.637376656633329
+          - TrafficStudyFedPcnt: 2.3021358869347655
+            TrafficStudyType: 5
+            SafeHarborFedPcnt: 5.637376656633329
+          ReturnNonBillable: true
+      properties:
+        ProfileConfigId:
+          description: Unique profile configuration id associated with configuration
+            item
+          format: int64
+          nullable: true
+          type: integer
+        ProfileIds:
+          description: Profile id's associated with configuration item
+          items:
+            format: int32
+            type: integer
+          nullable: true
+          type: array
+        ClientId:
+          description: Client id associated with configuration item
+          format: int32
+          nullable: true
+          type: integer
+        LastUpdateBy:
+          description: User who last updated the configuration item
+          nullable: true
+          type: string
+        Active:
+          description: Active status of the configuration item
+          nullable: true
+          type: boolean
+        Settings:
+          $ref: '#/components/schemas/Configuration'
+        Exclusions:
+          description: Exclusions (as applicable)
+          items:
+            $ref: '#/components/schemas/ExclusionConfig'
+          nullable: true
+          type: array
+        Bundles:
+          description: Bundles (as applicable)
+          items:
+            $ref: '#/components/schemas/BundleConfig'
+          nullable: true
+          type: array
+        Nexus:
+          description: Nexus (as applicable)
+          items:
+            $ref: '#/components/schemas/NexusConfig'
+          nullable: true
+          type: array
+        Overrides:
+          $ref: '#/components/schemas/OverrideConfig'
+        Description:
+          description: Description associated with this item
+          nullable: true
+          type: string
+        Error:
+          description: Error information.
+          nullable: true
+          type: string
+        ItemType:
+          description: "Item Type\r\nExamples:\r\n  Configuration, Bundle, Exclusion,\
+            \ Override"
+          nullable: true
+          type: string
+        Errors:
+          description: Error information.
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+        Warnings:
+          description: Warning information.
+          items:
+            $ref: '#/components/schemas/Warning'
+          nullable: true
+          type: array
+        Status:
+          description: Status information.
+          items:
+            $ref: '#/components/schemas/Status'
+          nullable: true
+          type: array
+      type: object
+    ClientProfileConfigTypes:
+      description: Choice of tax calculation setting types.
+      enum:
+      - All
+      - Configuration
+      - Bundle
+      - Exclusion
+      - Override
+      - Nexus
+      - Exemption
+      type: string
+    CommitRequest:
+      additionalProperties: false
+      description: Parameter for CommitTransactions API.
+      example:
+        opt:
+        - val: val
+          key: key
+        - val: val
+          key: key
+        doc: doc
+        cmmt: true
+      properties:
+        doc:
+          description: Document code.
+          nullable: true
+          type: string
+        cmmt:
+          description: Indicates if transactions for the specified document code should
+            be committed.
+          nullable: true
+          type: boolean
+        opt:
+          description: Overrides value for OptionalFields field in reports.
+          items:
+            $ref: '#/components/schemas/KeyValuePair'
+          nullable: true
+          type: array
+      type: object
+    CommitResponse:
+      additionalProperties: false
+      description: Response body for Commit API.
+      example:
+        err:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        ok: true
+      properties:
+        ok:
+          description: Indicates if document code's commit status was updated successfully.
+          nullable: true
+          type: boolean
+        err:
+          description: Error description (as applicable).
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+      type: object
+    CompanyData:
+      additionalProperties: false
+      description: Container class for json properties associated with v2.CalcTaxes
+        company data
+      example:
+        idnt: idnt
+        frch: true
+        excl:
+        - st: st
+          excl: true
+          ctry: ctry
+        - st: st
+          excl: true
+          ctry: ctry
+        bscl: 0
+        reg: true
+        svcl: 6
+        fclt: true
+      properties:
+        bscl:
+          description: Business class. 0 = ILEC, 1 = CLEC.
+          format: int32
+          nullable: true
+          type: integer
+        svcl:
+          description: Service class. 0 = Primary Local, 1 = Primary Long Distance.
+          format: int32
+          nullable: true
+          type: integer
+        fclt:
+          description: Specifies if the carrier delivering the service has company
+            owned facilities to provide the service.
+          nullable: true
+          type: boolean
+        frch:
+          description: Indicates if the company provides services sold pursuant to
+            a franchise agreement between the carrier and jurisdiction.
+          nullable: true
+          type: boolean
+        reg:
+          description: Indicates if company is regulated.
+          nullable: true
+          type: boolean
+        excl:
+          description: Exclusion list.
+          items:
+            $ref: '#/components/schemas/Exclusion'
+          nullable: true
+          type: array
+        idnt:
+          description: An optional company identifier for reporting
+          nullable: true
+          type: string
+      type: object
+    Configuration:
+      additionalProperties: false
+      description: "Settings associated with a client profile configuration\r\nMaybe\
+        \ associated with 0 to many profiles"
+      example:
+        SelfTaxAlgorithm: 9
+        TaxOnTaxAlgorithm: 7
+        TrafficStudyOverrides:
+        - TrafficStudyFedPcnt: 2.3021358869347655
+          TrafficStudyType: 5
+          SafeHarborFedPcnt: 5.637376656633329
+        - TrafficStudyFedPcnt: 2.3021358869347655
+          TrafficStudyType: 5
+          SafeHarborFedPcnt: 5.637376656633329
+        ReturnNonBillable: true
+      properties:
+        TrafficStudyOverrides:
+          description: List of Traffic Study Overrides
+          items:
+            $ref: '#/components/schemas/TrafficStudyOverride'
+          nullable: true
+          type: array
+        ReturnNonBillable:
+          description: "true : Return both non-billable and billable taxes in taxation\
+            \ response\r\nfalse (default) : Return billable taxes only in taxation\
+            \ response\r\nDefault: false"
+          nullable: true
+          type: boolean
+        TaxOnTaxAlgorithm:
+          description: "Tax-on-tax algorithm to be used in tax calculations\r\n0 :\
+            \ Single pass\r\n1 (default) : IterateOnTaxAmount\r\n2 : IterateOnTaxableMeasure"
+          format: int32
+          nullable: true
+          type: integer
+        SelfTaxAlgorithm:
+          description: "Self-tax algorithm to be used in tax calculations\r\n0 (default)\
+            \ : Calculate tax on individual self-taxing taxes\r\n1 : Calculate tax\
+            \ on aggregate of self-taxing taxes"
+          format: int32
+          nullable: true
+          type: integer
+      type: object
+    Error:
+      additionalProperties: false
+      description: Error information.
+      example:
+        msg: msg
+        code: 7
+      properties:
+        code:
+          description: Error code.
+          format: int32
+          type: integer
+        msg:
+          description: Error message.
+          nullable: true
+          type: string
+      type: object
+    Exclusion:
+      additionalProperties: false
+      description: Specifies a tax exclusion by state.
+      example:
+        st: st
+        excl: true
+        ctry: ctry
+      properties:
+        ctry:
+          description: Country ISO code.
+          nullable: true
+          type: string
+        st:
+          description: State abbreviation.
+          nullable: true
+          type: string
+        excl:
+          description: Indicates if exclusion applies to the specified state.
+          nullable: true
+          type: boolean
+      type: object
+    ExclusionConfig:
+      additionalProperties: false
+      description: "Settings associated with a client profile exclusions\r\nMaybe\
+        \ associated with 0 to many profiles"
+      example:
+        CountryIso: CountryIso
+        State: State
+      properties:
+        CountryIso:
+          description: Country ISO value
+          nullable: true
+          type: string
+        State:
+          description: State abbreviation
+          nullable: true
+          type: string
+      type: object
+    GeoBatchDownloadResponse:
+      additionalProperties: false
+      description: Response body for Geo Batch Submit File API.
+      example:
+        OutputFile: OutputFile
+        InputFileDownload: InputFileDownload
+        OutputFileDownload: OutputFileDownload
+        InputFile: InputFile
+      properties:
+        InputFile:
+          description: Input File Name.
+          nullable: true
+          type: string
+        InputFileDownload:
+          description: Input File Download.
+          nullable: true
+          type: string
+        OutputFile:
+          description: Output File Name.
+          nullable: true
+          type: string
+        OutputFileDownload:
+          description: Output File Name.
+          nullable: true
+          type: string
+      type: object
+    GeoBatchLog:
+      additionalProperties: false
+      description: Response body for Geo Batch Submit File API.
+      example:
+        err:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        Log:
+        - Status: Status
+          Message: Message
+          Date: 2000-01-23T04:56:07.000+00:00
+        - Status: Status
+          Message: Message
+          Date: 2000-01-23T04:56:07.000+00:00
+      properties:
+        Log:
+          description: Log of provided Process Id
+          items:
+            $ref: '#/components/schemas/GeoBatchLogItem'
+          nullable: true
+          type: array
+        err:
+          description: Error description (as applicable).
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+      type: object
+    GeoBatchLogItem:
+      additionalProperties: false
+      description: Response body for Geo Batch Submit File API.
+      example:
+        Status: Status
+        Message: Message
+        Date: 2000-01-23T04:56:07.000+00:00
+      properties:
+        Date:
+          description: DateTime of Log.
+          format: date-time
+          type: string
+        Status:
+          description: Level of Status.
+          nullable: true
+          type: string
+        Message:
+          description: Output File Name.
+          nullable: true
+          type: string
+      type: object
+    GeoBatchStatus:
+      additionalProperties: false
+      description: Individual File Status For Geo Batch result
+      example:
+        Status: Status
+        RequestDate: 2000-01-23T04:56:07.000+00:00
+        ProcessingEnd: 2000-01-23T04:56:07.000+00:00
+        Error:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        ProcessId: 0
+        Downloads:
+          OutputFile: OutputFile
+          InputFileDownload: InputFileDownload
+          OutputFileDownload: OutputFileDownload
+          InputFile: InputFile
+        ProcessingStart: 2000-01-23T04:56:07.000+00:00
+      properties:
+        ProcessId:
+          description: Process ID for Batch file.
+          format: int32
+          nullable: true
+          type: integer
+        RequestDate:
+          description: Request Date.
+          format: date-time
+          nullable: true
+          type: string
+        ProcessingStart:
+          description: Processing Start.
+          format: date-time
+          nullable: true
+          type: string
+        ProcessingEnd:
+          description: Processing End.
+          format: date-time
+          nullable: true
+          type: string
+        Status:
+          description: Status Of Batch File.
+          nullable: true
+          type: string
+        Downloads:
+          $ref: '#/components/schemas/GeoBatchDownloadResponse'
+        Error:
+          description: Error information.
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+      type: object
+    GeoBatchSubmitFileResponse:
+      additionalProperties: false
+      description: Response body for Geo Batch Submit File API.
+      example:
+        err:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        ProcessId: 0
+      properties:
+        ProcessId:
+          description: Process Id for File uploaded
+          format: int32
+          nullable: true
+          type: integer
+        err:
+          description: Error description (as applicable).
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+      type: object
+    GeocodeRequest:
+      additionalProperties: false
+      description: Input data for Geocoding API.
+      example:
+        cass: true
+        zip: zip
+        st: st
+        ref: ref
+        city: city
+        addr: addr
+        lat: 0.8008281904610115
+        long: 6.027456183070403
+      properties:
+        ref:
+          description: "Optional reference Id for geocode request. \r\nOnly address\
+            \ information or latitude/longitude should be provided in request body\
+            \ but not both."
+          nullable: true
+          type: string
+        cass:
+          description: Indicates if the CASS validated address is desired in the results.
+          nullable: true
+          type: boolean
+        lat:
+          description: Latitude for geocoding based on lat/long coordinates.
+          format: double
+          nullable: true
+          type: number
+        long:
+          description: Longitude for geocoding based on lat/long coordinates.
+          format: double
+          nullable: true
+          type: number
+        addr:
+          description: Street address.
+          nullable: true
+          type: string
+        city:
+          description: City name.
+          nullable: true
+          type: string
+        st:
+          description: State name or abbreviation.
+          nullable: true
+          type: string
+        zip:
+          description: Postal code.
+          nullable: true
+          type: string
+      type: object
+    GeocodeResult:
+      additionalProperties: false
+      description: Results for geocoding request.
+      example:
+        scr: 7.061401241503109
+        err: err
+        jur: jur
+        fips: fips
+        cTrc: 6
+        long: 5.637376656633329
+        cass:
+          zip: zip
+          st: st
+          city: city
+          addr: addr
+        cBlk: 0
+        pcd: 2
+        ref: ref
+        feat: 1
+        cnty: cnty
+        lat: 5.962133916683182
+        inc: true
+      properties:
+        ref:
+          description: Reference Id from geocode request input.
+          nullable: true
+          type: string
+        cass:
+          $ref: '#/components/schemas/Address'
+        cBlk:
+          description: Census block.
+          format: int32
+          nullable: true
+          type: integer
+        cTrc:
+          description: Census tract.
+          format: int32
+          nullable: true
+          type: integer
+        cnty:
+          description: County
+          nullable: true
+          type: string
+        feat:
+          description: Feature ID.
+          format: int32
+          nullable: true
+          type: integer
+        fips:
+          description: FIPS Code.
+          nullable: true
+          type: string
+        inc:
+          description: Indicates if address is within city limits.
+          nullable: true
+          type: boolean
+        jur:
+          description: Tax jurisdiction name.
+          nullable: true
+          type: string
+        lat:
+          description: Latitude.
+          format: double
+          nullable: true
+          type: number
+        long:
+          description: Longitude.
+          format: double
+          nullable: true
+          type: number
+        pcd:
+          description: PCode for tax jurisdiction.
+          format: int32
+          nullable: true
+          type: integer
+        scr:
+          description: Score indicating accuracy of address match in mapping database.
+          format: double
+          nullable: true
+          type: number
+        err:
+          description: Error message.
+          nullable: true
+          type: string
+      type: object
+    InternalProfileConfig:
+      additionalProperties: false
+      type: object
+    Invoice:
+      additionalProperties: false
+      description: Contains information about an invoice or quote.
+      example:
+        date: 2000-01-23T04:56:07.000+00:00
+        itms:
+        - date: 2000-01-23T04:56:07.000+00:00
+          loc: 1
+          proadj: 1
+          line: 7
+          adjm: 9
+          lfln: true
+          glref: glref
+          pror: 7.457744773683766
+          ref: ref
+          min: 1.0246457001441578
+          prop: 6
+          from:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          tran: 4
+          chg: 4.145608029883936
+          serv: 5
+          adj: true
+          bill:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          plsp: 6.84685269835264
+          sale: 1
+          opt:
+          - val: val
+            key: key
+          - val: val
+            key: key
+          dbt: true
+          qty: 9
+          disc: 9
+          to:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          cust: 8
+          incl: true
+        - date: 2000-01-23T04:56:07.000+00:00
+          loc: 1
+          proadj: 1
+          line: 7
+          adjm: 9
+          lfln: true
+          glref: glref
+          pror: 7.457744773683766
+          ref: ref
+          min: 1.0246457001441578
+          prop: 6
+          from:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          tran: 4
+          chg: 4.145608029883936
+          serv: 5
+          adj: true
+          bill:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          plsp: 6.84685269835264
+          sale: 1
+          opt:
+          - val: val
+            key: key
+          - val: val
+            key: key
+          dbt: true
+          qty: 9
+          disc: 9
+          to:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          cust: 8
+          incl: true
+        bcyc: bcyc
+        bill:
+          geo: true
+          pcd: 1
+          zip: zip
+          st: st
+          city: city
+          ctry: ctry
+          fips: fips
+          addr: addr
+          cnty: cnty
+          int: true
+          npa: 5
+        invn: invn
+        invm: true
+        lfln: true
+        opt:
+        - val: val
+          key: key
+        - val: val
+          key: key
+        summ: true
+        exms:
+        - loc:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          scp: 2
+          lvl: 7
+          dom: 3
+          frc: true
+          cat: 9
+          tpe: 2
+          exnb: true
+        - loc:
+            geo: true
+            pcd: 1
+            zip: zip
+            st: st
+            city: city
+            ctry: ctry
+            fips: fips
+            addr: addr
+            cnty: cnty
+            int: true
+            npa: 5
+          scp: 2
+          lvl: 7
+          dom: 3
+          frc: true
+          cat: 9
+          tpe: 2
+          exnb: true
+        bpd:
+          month: 6
+          year: 3
+        doc: doc
+        custref: custref
+        ccycd: ccycd
+        cust: 5
+        dtl: true
+        acct: acct
+        cmmt: true
+      properties:
+        doc:
+          description: Document code.
+          nullable: true
+          type: string
+        cmmt:
+          description: "Indicates if invoice should be committed as soon as it is\
+            \ processed.\r\nDefault: false."
+          nullable: true
+          type: boolean
+        bill:
+          $ref: '#/components/schemas/Location'
+        cust:
+          description: Customer type.
+          format: int32
+          nullable: true
+          type: integer
+        lfln:
+          description: "Indicates if customer is a Lifeline participant.\r\nDefault:\
+            \ false."
+          nullable: true
+          type: boolean
+        date:
+          description: Invoice date.
+          format: date-time
+          nullable: true
+          type: string
+        exms:
+          description: Tax exemptions.
+          items:
+            $ref: '#/components/schemas/TaxExemption'
+          nullable: true
+          type: array
+        itms:
+          description: Line items.
+          items:
+            $ref: '#/components/schemas/LineItem'
+          nullable: true
+          type: array
+        invm:
+          description: "Indicates if all line items within invoice should be processed\
+            \ in invoice mode.\r\nDefault: true."
+          nullable: true
+          type: boolean
+        dtl:
+          description: "Indicates if individual line item taxes should be included\
+            \ in response.\r\nDefault: true."
+          nullable: true
+          type: boolean
+        summ:
+          description: "Indicates if the summarized taxes for the invoice should be\
+            \ included in the resonse.\r\nDefault: false."
+          nullable: true
+          type: boolean
+        opt:
+          description: Optional values for invoice. Maximum of 5. Keys must be numeric
+            from 1 to 5.
+          items:
+            $ref: '#/components/schemas/KeyValuePair'
+          nullable: true
+          type: array
+        acct:
+          description: Account reference for reporting
+          nullable: true
+          type: string
+        custref:
+          description: Customer Reference for reporting
+          nullable: true
+          type: string
+        invn:
+          description: Invoice Number reference for reporting
+          nullable: true
+          type: string
+        bcyc:
+          description: Bill Cycle reference for reporting
+          nullable: true
+          type: string
+        bpd:
+          $ref: '#/components/schemas/BillingPeriod'
+        ccycd:
+          description: 'Currency code for invoice.  Example: CAD = Canadian Dollar'
+          nullable: true
+          type: string
+      type: object
+    InvoiceResult:
+      additionalProperties: false
+      description: Tax calculation results for an invoice.
+      example:
+        itms:
+        - ref: ref
+          err:
+          - msg: msg
+            code: 7
+          - msg: msg
+            code: 7
+          txs:
+          - svc: 1
+            lvl: 7
+            chg: 6.84685269835264
+            taxpcd: 3
+            cmpl: true
+            notax: true
+            bill: true
+            tax: 4.145608029883936
+            tid: 1
+            lns: 2
+            pcd: 9
+            sur: true
+            min: 7.061401241503109
+            rate: 2.027123023002322
+            cat: cat
+            name: name
+            tm: 6.027456183070403
+            usexm: true
+            calc: 1
+            exm: 5.637376656633329
+            cid: 5
+            trans: 1
+          - svc: 1
+            lvl: 7
+            chg: 6.84685269835264
+            taxpcd: 3
+            cmpl: true
+            notax: true
+            bill: true
+            tax: 4.145608029883936
+            tid: 1
+            lns: 2
+            pcd: 9
+            sur: true
+            min: 7.061401241503109
+            rate: 2.027123023002322
+            cat: cat
+            name: name
+            tm: 6.027456183070403
+            usexm: true
+            calc: 1
+            exm: 5.637376656633329
+            cid: 5
+            trans: 1
+          base: 0.8008281904610115
+        - ref: ref
+          err:
+          - msg: msg
+            code: 7
+          - msg: msg
+            code: 7
+          txs:
+          - svc: 1
+            lvl: 7
+            chg: 6.84685269835264
+            taxpcd: 3
+            cmpl: true
+            notax: true
+            bill: true
+            tax: 4.145608029883936
+            tid: 1
+            lns: 2
+            pcd: 9
+            sur: true
+            min: 7.061401241503109
+            rate: 2.027123023002322
+            cat: cat
+            name: name
+            tm: 6.027456183070403
+            usexm: true
+            calc: 1
+            exm: 5.637376656633329
+            cid: 5
+            trans: 1
+          - svc: 1
+            lvl: 7
+            chg: 6.84685269835264
+            taxpcd: 3
+            cmpl: true
+            notax: true
+            bill: true
+            tax: 4.145608029883936
+            tid: 1
+            lns: 2
+            pcd: 9
+            sur: true
+            min: 7.061401241503109
+            rate: 2.027123023002322
+            cat: cat
+            name: name
+            tm: 6.027456183070403
+            usexm: true
+            calc: 1
+            exm: 5.637376656633329
+            cid: 5
+            trans: 1
+          base: 0.8008281904610115
+        summ:
+        - svc: 6
+          lvl: 1
+          chg: 5.944895607614016
+          max: 1.1730742509559433
+          taxpcd: 6
+          notax: true
+          tax: 6.965117697638846
+          tid: 2
+          lns: 8
+          pcd: 9
+          sur: true
+          min: 4.965218492984954
+          rate: 3.5571952270680973
+          cat: cat
+          tchg: 5.025004791520295
+          name: name
+          usexm: true
+          calc: 9
+          exm: 6.683562403749608
+          cid: 9
+          trans: 6
+        - svc: 6
+          lvl: 1
+          chg: 5.944895607614016
+          max: 1.1730742509559433
+          taxpcd: 6
+          notax: true
+          tax: 6.965117697638846
+          tid: 2
+          lns: 8
+          pcd: 9
+          sur: true
+          min: 4.965218492984954
+          rate: 3.5571952270680973
+          cat: cat
+          tchg: 5.025004791520295
+          name: name
+          usexm: true
+          calc: 9
+          exm: 6.683562403749608
+          cid: 9
+          trans: 6
+        err:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        doc: doc
+        incrf:
+          bcyc: bcyc
+          custref: custref
+          ccydesc: ccydesc
+          ccycd: ccycd
+          invn: invn
+          acct: acct
+      properties:
+        doc:
+          description: Document number for invoice.
+          nullable: true
+          type: string
+        itms:
+          description: Individual tax calculation results for each line item.
+          items:
+            $ref: '#/components/schemas/LineItemResult'
+          nullable: true
+          type: array
+        summ:
+          description: Summarized taxes for invoice.
+          items:
+            $ref: '#/components/schemas/SummarizedTax'
+          nullable: true
+          type: array
+        err:
+          description: Error description (as applicable).
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+        incrf:
+          $ref: '#/components/schemas/ReportingInformation'
+      type: object
+    KeyValuePair:
+      additionalProperties: false
+      description: Key/value pair data.
+      example:
+        val: val
+        key: key
+      properties:
+        key:
+          description: Key.
+          nullable: true
+          type: string
+        val:
+          description: Value.
+          nullable: true
+          type: string
+      type: object
+    LineItem:
+      additionalProperties: false
+      description: Data for an invoice or quote line item.
+      example:
+        date: 2000-01-23T04:56:07.000+00:00
+        loc: 1
+        proadj: 1
+        line: 7
+        adjm: 9
+        lfln: true
+        glref: glref
+        pror: 7.457744773683766
+        ref: ref
+        min: 1.0246457001441578
+        prop: 6
+        from:
+          geo: true
+          pcd: 1
+          zip: zip
+          st: st
+          city: city
+          ctry: ctry
+          fips: fips
+          addr: addr
+          cnty: cnty
+          int: true
+          npa: 5
+        tran: 4
+        chg: 4.145608029883936
+        serv: 5
+        adj: true
+        bill:
+          geo: true
+          pcd: 1
+          zip: zip
+          st: st
+          city: city
+          ctry: ctry
+          fips: fips
+          addr: addr
+          cnty: cnty
+          int: true
+          npa: 5
+        plsp: 6.84685269835264
+        sale: 1
+        opt:
+        - val: val
+          key: key
+        - val: val
+          key: key
+        dbt: true
+        qty: 9
+        disc: 9
+        to:
+          geo: true
+          pcd: 1
+          zip: zip
+          st: st
+          city: city
+          ctry: ctry
+          fips: fips
+          addr: addr
+          cnty: cnty
+          int: true
+          npa: 5
+        cust: 8
+        incl: true
+      properties:
+        ref:
+          description: Reference ID for line item.
+          nullable: true
+          type: string
+        from:
+          $ref: '#/components/schemas/Location'
+        to:
+          $ref: '#/components/schemas/Location'
+        chg:
+          description: "Charge amount.\r\nDefault: 0."
+          format: double
+          nullable: true
+          type: number
+        line:
+          description: "Number of lines.\r\nDefault: 0."
+          format: int32
+          nullable: true
+          type: integer
+        loc:
+          description: "Number of locations.\r\nDefault: 0."
+          format: int32
+          nullable: true
+          type: integer
+        min:
+          description: "Number of minutes.\r\nDefault: 0."
+          format: double
+          nullable: true
+          type: number
+        sale:
+          description: "0 - Wholesale : Indicates that the item was sold to a wholeseller.\r\
+            \n1 - Retail : Indicates that the item was sold to an end user - a retail\
+            \ sale.\r\n2 - Consumed : Indicates that the item was consumed directly\
+            \ (SAU products only).\r\n3 - VendorUse : Indicates that the item is subject\
+            \ to vendor use tax (SAU products only)."
+          format: int32
+          nullable: true
+          type: integer
+        plsp:
+          description: Split for private-line transactions.
+          format: double
+          nullable: true
+          type: number
+        incl:
+          description: Indicates if the charge for this line item is tax-inclusive.
+          nullable: true
+          type: boolean
+        pror:
+          description: For pro-rated tax calculations. Percentage to pro-rate.
+          format: double
+          nullable: true
+          type: number
+        proadj:
+          description: "For pro-rated credit or adjustment calculations.\r\n0 = default\r\
+            \n1 = do not return non-proratable fixed taxes in response\r\n2 = return\
+            \ non-proratable fixed taxes in response"
+          format: int32
+          type: integer
+        tran:
+          description: Transaction type ID.
+          format: int32
+          nullable: true
+          type: integer
+        serv:
+          description: Service type ID.
+          format: int32
+          nullable: true
+          type: integer
+        dbt:
+          description: "Indicates if this line item is a debit card transaction.\r\
+            \nDefault: false."
+          nullable: true
+          type: boolean
+        adj:
+          description: "Indicates if this line item is an adjustment.\r\nDefault:\
+            \ false."
+          nullable: true
+          type: boolean
+        adjm:
+          description: Adjustment method.
+          format: int32
+          nullable: true
+          type: integer
+        disc:
+          description: Discount type for adjustments.
+          format: int32
+          nullable: true
+          type: integer
+        opt:
+          description: Optional values for line item. Maximum of 5. Keys must be numeric
+            from 5 to 10.
+          items:
+            $ref: '#/components/schemas/KeyValuePair'
+          nullable: true
+          type: array
+        prop:
+          description: Attribute/property value for sales and use transaction/service
+            pairs.
+          format: int32
+          nullable: true
+          type: integer
+        bill:
+          $ref: '#/components/schemas/Location'
+        cust:
+          description: Customer type.
+          format: int32
+          nullable: true
+          type: integer
+        lfln:
+          description: "Indicates if customer is a Lifeline participant.\r\nDefault:\
+            \ false."
+          nullable: true
+          type: boolean
+        date:
+          description: Invoice date.
+          format: date-time
+          nullable: true
+          type: string
+        qty:
+          description: Quantity to be applied to the item - taxation is equivalent
+            to repeating the item the number of times of the quantity
+          format: int32
+          nullable: true
+          type: integer
+        glref:
+          description: General Ledger reference to be used in reporting
+          nullable: true
+          type: string
+      type: object
+    LineItemResult:
+      additionalProperties: false
+      description: Tax calculation results for a single line item.
+      example:
+        ref: ref
+        err:
+        - msg: msg
+          code: 7
+        - msg: msg
+          code: 7
+        txs:
+        - svc: 1
+          lvl: 7
+          chg: 6.84685269835264
+          taxpcd: 3
+          cmpl: true
+          notax: true
+          bill: true
+          tax: 4.145608029883936
+          tid: 1
+          lns: 2
+          pcd: 9
+          sur: true
+          min: 7.061401241503109
+          rate: 2.027123023002322
+          cat: cat
+          name: name
+          tm: 6.027456183070403
+          usexm: true
+          calc: 1
+          exm: 5.637376656633329
+          cid: 5
+          trans: 1
+        - svc: 1
+          lvl: 7
+          chg: 6.84685269835264
+          taxpcd: 3
+          cmpl: true
+          notax: true
+          bill: true
+          tax: 4.145608029883936
+          tid: 1
+          lns: 2
+          pcd: 9
+          sur: true
+          min: 7.061401241503109
+          rate: 2.027123023002322
+          cat: cat
+          name: name
+          tm: 6.027456183070403
+          usexm: true
+          calc: 1
+          exm: 5.637376656633329
+          cid: 5
+          trans: 1
+        base: 0.8008281904610115
+      properties:
+        ref:
+          description: Reference ID for line item.
+          nullable: true
+          type: string
+        base:
+          description: Base sale amount for tax-inclusive line items.
+          format: double
+          nullable: true
+          type: number
+        txs:
+          description: Taxes generated for line item.
+          items:
+            $ref: '#/components/schemas/Tax'
+          nullable: true
+          type: array
+        err:
+          description: Error description (as applicable).
+          items:
+            $ref: '#/components/schemas/Error'
+          nullable: true
+          type: array
+      type: object
+    Location:
+      additionalProperties: false
+      description: Location data used to determine taxing jurisdiction.
+      example:
+        geo: true
+        pcd: 1
+        zip: zip
+        st: st
+        city: city
+        ctry: ctry
+        fips: fips
+        addr: addr
+        cnty: cnty
+        int: true
+        npa: 5
+      properties:
+        cnty:
+          description: County name.
+          nullable: true
+          type: string
+        ctry:
+          description: Country ISO code.
+          nullable: true
+          type: string
+        int:
+          description: "Indicates if the location is within city limits.\r\nDefault:\
+            \ true."
+          nullable: true
+          type: boolean
+        geo:
+          description: "Indicates if this address should be geocoded in order to obtain\
+            \ taxing jurisdiction.\r\nDefault: false."
+          nullable: true
+          type: boolean
+        pcd:
+          description: PCode for taxing jurisdiction.
+          format: int32
+          nullable: true
+          type: integer
+        npa:
+          description: NPANXX number.
+          format: int32
+          nullable: true
+          type: integer
+        fips:
+          description: FIPS code for taxing jurisdiction.
+          nullable: true
+          type: string
+        addr:
+          description: Street address.
+          nullable: true
+          type: string
+        city:
+          description: City name.
+          nullable: true
+          type: string
+        st:
+          description: State name or abbreviation.
+          nullable: true
+          type: string
+        zip:
+          description: Postal code.
+          nullable: true
+          type: string
+      type: object
+    LocationItem:
+      additionalProperties: false
+      example:
+        CountryIso: CountryIso
+        Locality: Locality
+        State: State
+        IsAlternate: true
+        PCode: 0
+        County: County
+      properties:
+        IsAlternate:
+          type: boolean
+        CountryIso:
+          nullable: true
+          type: string
+        State:
+          nullable: true
+          type: string
+        County:
+          nullable: true
+          type: string
+        Locality:
+          nullable: true
+          type: string
+        PCode:
+          format: int32
+          type: integer
+      type: object
+    NexusConfig:
+      additionalProperties: false
+      description: "Settings associated with a client profile nexus\r\nMaybe associated\
+        \ with 0 to many profiles"
+      example:
+        State: State
+      properties:
+        State:
+          description: State abbreviation
+          nullable: true
+          type: string
+      type: object
+    OverrideConfig:
+      additionalProperties: false
+      description: "Settings associated with a client profile override\r\nMaybe associated\
+        \ with 0 to many profiles"
+      example:
+        RawData:
+        - RawData
+        - RawData
+      properties:
+        RawData:
+          description: Raw data
+          items:
+            type: string
+          nullable: true
+          type: array
+      type: object
+    PCodeLookupRequest:
+      additionalProperties: false
+      example:
+        CountryIso: CountryIso
+        BestMatch: true
+        State: State
+        ZipCode: ZipCode
+        LimitResults: 0
+        Fips: Fips
+        City: City
+        County: County
+        NpaNxx: NpaNxx
+      properties:
+        CountryIso:
+          nullable: true
+          type: string
+        State:
+          nullable: true
+          type: string
+        County:
+          nullable: true
+          type: string
+        City:
+          nullable: true
+          type: string
+        ZipCode:
+          nullable: true
+          type: string
+        BestMatch:
+          nullable: true
+          type: boolean
+        LimitResults:
+          format: int32
+          nullable: true
+          type: integer
+        NpaNxx:
+          nullable: true
+          type: string
+        Fips:
+          nullable: true
+          type: string
+      type: object
+    PCodeLookupResult:
+      additionalProperties: false
+      example:
+        ResultsLimit: 1
+        LocationData:
+        - CountryIso: CountryIso
+          Locality: Locality
+          State: State
+          IsAlternate: true
+          PCode: 0
+          County: County
+        - CountryIso: CountryIso
+          Locality: Locality
+          State: State
+          IsAlternate: true
+          PCode: 0
+          County: County
+        MatchCount: 6
+        InputMatchType: InputMatchType
+        MatchTypeApplied: MatchTypeApplied
+      properties:
+        LocationData:
+          items:
+            $ref: '#/components/schemas/LocationItem'
+          nullable: true
+          type: array
+        MatchCount:
+          format: int32
+          type: integer
+        InputMatchType:
+          nullable: true
+          type: string
+        MatchTypeApplied:
+          nullable: true
+          type: string
+        ResultsLimit:
+          format: int32
+          type: integer
+      type: object
+    ReportingInformation:
+      additionalProperties: false
+      description: Tax rate override information.
+      example:
+        bcyc: bcyc
+        custref: custref
+        ccydesc: ccydesc
+        ccycd: ccycd
+        invn: invn
+        acct: acct
+      properties:
+        acct:
+          description: Account id
+          nullable: true
+          type: string
+        custref:
+          description: Customer reference
+          nullable: true
+          type: string
+        invn:
+          description: Invoice Number reference
+          nullable: true
+          type: string
+        bcyc:
+          description: Bill Cycle reference
+          nullable: true
+          type: string
+        ccycd:
+          description: Currency code for invoice
+          nullable: true
+          type: string
+        ccydesc:
+          description: Currency description
+          nullable: true
+          type: string
+      type: object
+    RequestConfig:
+      additionalProperties: false
+      description: Container class for json properties associated with v2.CalcTaxes
+        request configuration options
+      example:
+        retnb: true
+        incrf: true
+        retext: true
+      properties:
+        retnb:
+          description: "Flag indicating non-billable taxes should be returned.\r\n\
+            If set, will override account setting\r\nDefault if not provided is account\
+            \ setting value"
+          nullable: true
+          type: boolean
+        retext:
+          description: "Flag indicating extended tax information should be returned.\r\
+            \nReference online documentation for more details"
+          nullable: true
+          type: boolean
+        incrf:
+          description: "Flag indicating reporting information should be returned.\r\
+            \nReference online documentation for more details"
+          nullable: true
+          type: boolean
+      type: object
+    SafeHarborOverride:
+      additionalProperties: false
+      description: Safe harbor rate override for a USF tax type.
+      example:
+        new: 3.353193347011243
+        sh: 5
+        old: 6.704019297950036
+      properties:
+        sh:
+          description: Safe harbor type (1 = Cellular, 2 = VoIp, 4 = Paging).
+          format: int32
+          nullable: true
+          type: integer
+        old:
+          description: Original Federal TAM value to override.
+          format: double
+          nullable: true
+          type: number
+        new:
+          description: New TAM value that will replace the original TAM value.
+          format: double
+          nullable: true
+          type: number
+      type: object
+    ServiceInfo:
+      additionalProperties: false
+      description: Response body for service info API.
+      example:
+        Versions:
+          AfcEngineVersion: AfcEngineVersion
+          BuildVersion: BuildVersion
+        Error: Error
+        ServerTime: 2000-01-23T04:56:07.000+00:00
+      properties:
+        ServerTime:
+          description: Server time.
+          format: date-time
+          type: string
+        Versions:
+          $ref: '#/components/schemas/VersionInfo'
+        Error:
+          description: Error information.
+          nullable: true
+          type: string
+      type: object
+    Status:
+      additionalProperties: false
+      description: Status information.
+      example:
+        msg: msg
+        code: 1
+      properties:
+        code:
+          description: Status code.
+          format: int32
+          type: integer
+        msg:
+          description: Status message.
+          nullable: true
+          type: string
+      type: object
+    SummarizedTax:
+      additionalProperties: false
+      description: Tax data for summarized invoice taxes.
+      example:
+        svc: 6
+        lvl: 1
+        chg: 5.944895607614016
+        max: 1.1730742509559433
+        taxpcd: 6
+        notax: true
+        tax: 6.965117697638846
+        tid: 2
+        lns: 8
+        pcd: 9
+        sur: true
+        min: 4.965218492984954
+        rate: 3.5571952270680973
+        cat: cat
+        tchg: 5.025004791520295
+        name: name
+        usexm: true
+        calc: 9
+        exm: 6.683562403749608
+        cid: 9
+        trans: 6
+      properties:
+        max:
+          description: Maximum base for tax bracket.
+          format: double
+          nullable: true
+          type: number
+        min:
+          description: Minimum base for tax bracket.
+          format: double
+          nullable: true
+          type: number
+        tchg:
+          description: Total charge amount.
+          format: double
+          nullable: true
+          type: number
+        calc:
+          description: Calculation type.
+          format: int32
+          nullable: true
+          type: integer
+        cat:
+          description: Tax category name.
+          nullable: true
+          type: string
+        cid:
+          description: Tax category ID.
+          format: int32
+          nullable: true
+          type: integer
+        name:
+          description: Tax name.
+          nullable: true
+          type: string
+        exm:
+          description: Exempt sale amount.
+          format: double
+          nullable: true
+          type: number
+        lns:
+          description: Lines.
+          format: int32
+          nullable: true
+          type: integer
+        pcd:
+          description: PCode for reporting jurisdiction.
+          format: int32
+          nullable: true
+          type: integer
+        taxpcd:
+          description: "PCode for taxing jurisdiction.\r\nOnly returned if return\
+            \ extended tax data flag is true"
+          format: int32
+          nullable: true
+          type: integer
+        rate:
+          description: Tax rate.
+          format: double
+          nullable: true
+          type: number
+        sur:
+          description: Indicates if this tax is a surcharge.
+          nullable: true
+          type: boolean
+        tax:
+          description: Tax amount.
+          format: double
+          nullable: true
+          type: number
+        lvl:
+          description: Tax level ID.
+          format: int32
+          nullable: true
+          type: integer
+        tid:
+          description: Tax type ID.
+          format: int32
+          nullable: true
+          type: integer
+        usexm:
+          description: "Flag indicating if tax was user exempted\r\nOnly returned\
+            \ if return extended tax data flag is true"
+          nullable: true
+          type: boolean
+        notax:
+          description: "Flag indicating the item is a no tax entry\r\nThere were no\
+            \ taxes generated, this entry is to convey back the taxing jurisdiction\
+            \ that was used in the response\r\nOnly returned if return extended tax\
+            \ data flag is true"
+          nullable: true
+          type: boolean
+        trans:
+          description: "Transaction type used to calculate tax\r\nFor bundles will\
+            \ be specific bundled item transaction type\r\nOnly returned if return\
+            \ extended tax data flag is true"
+          format: int32
+          nullable: true
+          type: integer
+        svc:
+          description: "Service type used to calculate tax\r\nFor bundles will be\
+            \ specific bundled item service type\r\nOnly returned if return extended\
+            \ tax data flag is true"
+          format: int32
+          nullable: true
+          type: integer
+        chg:
+          description: "Charge used to calculate tax\r\nFor bundles will be the percentage\
+            \ of charge applied to bundled item\r\nFor tax inclusive calls will be\
+            \ the calculated charge\r\nOnly returned if return extended tax data flag\
+            \ is true"
+          format: double
+          nullable: true
+          type: number
+      type: object
+    Tax:
+      additionalProperties: false
+      description: Tax data for individual line item.
+      example:
+        svc: 1
+        lvl: 7
+        chg: 6.84685269835264
+        taxpcd: 3
+        cmpl: true
+        notax: true
+        bill: true
+        tax: 4.145608029883936
+        tid: 1
+        lns: 2
+        pcd: 9
+        sur: true
+        min: 7.061401241503109
+        rate: 2.027123023002322
+        cat: cat
+        name: name
+        tm: 6.027456183070403
+        usexm: true
+        calc: 1
+        exm: 5.637376656633329
+        cid: 5
+        trans: 1
+      properties:
+        bill:
+          description: Indicates if tax is billable to customer.
+          nullable: true
+          type: boolean
+        cmpl:
+          description: Indicates if the tax is to be reported to jurisdiction.
+          nullable: true
+          type: boolean
+        tm:
+          description: Taxable measure.
+          format: double
+          nullable: true
+          type: number
+        calc:
+          description: Calculation type.
+          format: int32
+          nullable: true
+          type: integer
+        cat:
+          description: Tax category name.
+          nullable: true
+          type: string
+        cid:
+          description: Tax category ID.
+          format: int32
+          nullable: true
+          type: integer
+        name:
+          description: Tax name.
+          nullable: true
+          type: string
+        exm:
+          description: Exempt sale amount.
+          format: double
+          nullable: true
+          type: number
+        lns:
+          description: Lines.
+          format: int32
+          nullable: true
+          type: integer
+        min:
+          description: Minutes.
+          format: double
+          nullable: true
+          type: number
+        pcd:
+          description: PCode for reporting jurisdiction.
+          format: int32
+          nullable: true
+          type: integer
+        taxpcd:
+          description: "PCode for taxing jurisdiction.\r\nOnly returned if return\
+            \ extended tax data flag is true"
+          format: int32
+          nullable: true
+          type: integer
+        rate:
+          description: Tax rate.
+          format: double
+          nullable: true
+          type: number
+        sur:
+          description: Indicates if this tax is a surcharge.
+          nullable: true
+          type: boolean
+        tax:
+          description: Tax amount.
+          format: double
+          nullable: true
+          type: number
+        lvl:
+          description: Tax level ID.
+          format: int32
+          nullable: true
+          type: integer
+        tid:
+          description: Tax type ID.
+          format: int32
+          nullable: true
+          type: integer
+        usexm:
+          description: "Flag indicating if tax was user exempted\r\nOnly returned\
+            \ if return extended tax data flag is true"
+          nullable: true
+          type: boolean
+        notax:
+          description: "Flag indicating the item is a no tax entry\r\nThere were no\
+            \ taxes generated, this entry is to convey back the taxing jurisdiction\
+            \ that was used in the response\r\nOnly returned if return extended tax\
+            \ data flag is true"
+          nullable: true
+          type: boolean
+        trans:
+          description: "Transaction type used to calculate tax\r\nFor bundles will\
+            \ be specific bundled item transaction type\r\nOnly returned if return\
+            \ extended tax data flag is true"
+          format: int32
+          nullable: true
+          type: integer
+        svc:
+          description: "Service type used to calculate tax\r\nFor bundles will be\
+            \ specific bundled item service type\r\nOnly returned if return extended\
+            \ tax data flag is true"
+          format: int32
+          nullable: true
+          type: integer
+        chg:
+          description: "Charge used to calculate tax\r\nFor bundles will be the percentage\
+            \ of charge applied to bundled item\r\nFor tax inclusive calls will be\
+            \ the calculated charge\r\nOnly returned if return extended tax data flag\
+            \ is true"
+          format: double
+          nullable: true
+          type: number
+      type: object
+    TaxBracket:
+      additionalProperties: false
+      description: Rate information for a tax bracket.
+      example:
+        rate: 6.778324963048013
+        max: 6.878052220127876
+      properties:
+        rate:
+          description: Tax rate. Value cannot be negative. For rated taxes, value
+            must be from 0 to 1. Otherwise, value may be larger.
+          format: double
+          nullable: true
+          type: number
+        max:
+          description: Maximum base that this rate applies to.
+          format: double
+          nullable: true
+          type: number
+      type: object
+    TaxExemption:
+      additionalProperties: false
+      description: Tax exemption data.
+      example:
+        loc:
+          geo: true
+          pcd: 1
+          zip: zip
+          st: st
+          city: city
+          ctry: ctry
+          fips: fips
+          addr: addr
+          cnty: cnty
+          int: true
+          npa: 5
+        scp: 2
+        lvl: 7
+        dom: 3
+        frc: true
+        cat: 9
+        tpe: 2
+        exnb: true
+      properties:
+        frc:
+          description: Override level exempt flag on wildcard tax type exemptions.
+          nullable: true
+          type: boolean
+        loc:
+          $ref: '#/components/schemas/Location'
+        tpe:
+          description: Tax type to exempt.  Tax type exemptions and Category exemptions
+            are mutually exclusive.
+          format: int32
+          nullable: true
+          type: integer
+        lvl:
+          description: Tax level ID.
+          format: int32
+          nullable: true
+          type: integer
+        cat:
+          description: Tax category to exempt. Tax type exemptions and Category exemptions
+            are mutually exclusive.
+          format: int32
+          nullable: true
+          type: integer
+        dom:
+          description: "Exemption Domain.  This is the jurisdiction level in which\
+            \ the\r\nexemption jurisdiction must match the taxing jurisdiction."
+          format: int32
+          nullable: true
+          type: integer
+        scp:
+          description: "Exemption Scope.  This defines the tax levels in which the\r\
+            \ntaxes will be considered as candidates for exemption."
+          format: int32
+          nullable: true
+          type: integer
+        exnb:
+          description: "Exempt non-billable flag.  Determines if non-billable taxes\
+            \ are\r\nto be considered as candidates for exemption."
+          nullable: true
+          type: boolean
+      type: object
+    TaxOverride:
+      additionalProperties: false
+      description: Tax rate override information.
+      example:
+        loc:
+          geo: true
+          pcd: 1
+          zip: zip
+          st: st
+          city: city
+          ctry: ctry
+          fips: fips
+          addr: addr
+          cnty: cnty
+          int: true
+          npa: 5
+        scp: 6
+        lvl: 2
+        lvlExm: true
+        brkt:
+        - rate: 6.778324963048013
+          max: 6.878052220127876
+        - rate: 6.778324963048013
+          max: 6.878052220127876
+        tid: 1
+      properties:
+        loc:
+          $ref: '#/components/schemas/Location'
+        scp:
+          description: Scope for override. 0 = Country, 1 = State, 2 = County, 3 =
+            City.
+          format: int32
+          nullable: true
+          type: integer
+        tid:
+          description: Tax type ID.
+          format: int32
+          nullable: true
+          type: integer
+        lvl:
+          description: Tax level ID. 0 = Federal, 1 = State, 2 = County, 3 = City.
+          format: int32
+          nullable: true
+          type: integer
+        lvlExm:
+          description: Indicates if the tax can be exempted using level exemptions.
+          nullable: true
+          type: boolean
+        brkt:
+          description: Tax rate/bracket information.
+          items:
+            $ref: '#/components/schemas/TaxBracket'
+          nullable: true
+          type: array
+      type: object
+    TaxTypeData:
+      additionalProperties: false
+      example:
+        TaxType: 0
+        TaxDescription: TaxDescription
+        CategoryDescription: CategoryDescription
+        CategoryType: 6
+      properties:
+        TaxType:
+          format: int32
+          type: integer
+        CategoryType:
+          format: int32
+          type: integer
+        TaxDescription:
+          nullable: true
+          type: string
+        CategoryDescription:
+          nullable: true
+          type: string
+      type: object
+    TrafficStudyOverride:
+      additionalProperties: false
+      description: Specifies a traffic study override
+      example:
+        TrafficStudyFedPcnt: 2.3021358869347655
+        TrafficStudyType: 5
+        SafeHarborFedPcnt: 5.637376656633329
+      properties:
+        TrafficStudyType:
+          description: Defines which transaction type the traffic study override applies
+            to.  Ref enum SafeHarborType for list.
+          format: int32
+          type: integer
+        SafeHarborFedPcnt:
+          description: Safe harbor value to be overriden.  Ref class SafeHarborTams
+            for default values.
+          format: double
+          nullable: true
+          type: number
+        TrafficStudyFedPcnt:
+          description: Client provided traffic study rate (Federal) to be used instead
+            of safe harbor.
+          format: double
+          type: number
+      type: object
+    TsPairData:
+      additionalProperties: false
+      example:
+        TransactionType: 0
+        InterfaceType: 5
+        TransactionDescription: TransactionDescription
+        InputType: 5
+        ServiceType: 6
+        ServiceDescription: ServiceDescription
+        TSPairDescription: TSPairDescription
+        IsBundle: true
+        MarketType: 1
+      properties:
+        TransactionType:
+          format: int32
+          type: integer
+        ServiceType:
+          format: int32
+          type: integer
+        MarketType:
+          format: int32
+          type: integer
+        InterfaceType:
+          format: int32
+          type: integer
+        InputType:
+          format: int32
+          type: integer
+        IsBundle:
+          type: boolean
+        TransactionDescription:
+          nullable: true
+          type: string
+        ServiceDescription:
+          nullable: true
+          type: string
+        TSPairDescription:
+          nullable: true
+          type: string
+      type: object
+    VersionInfo:
+      additionalProperties: false
+      description: Version specific results for service info request.
+      example:
+        AfcEngineVersion: AfcEngineVersion
+        BuildVersion: BuildVersion
+      properties:
+        AfcEngineVersion:
+          description: AFC Engine Version
+          nullable: true
+          type: string
+        BuildVersion:
+          description: Service Build Version.
+          nullable: true
+          type: string
+      type: object
+    Warning:
+      additionalProperties: false
+      description: Warning information.
+      example:
+        msg: msg
+        code: 7
+      properties:
+        code:
+          description: Warning code.
+          format: int32
+          type: integer
+        msg:
+          description: Warning message.
+          nullable: true
+          type: string
+      type: object
+    inline_object:
+      properties:
+        geoBatchFile:
+          format: binary
+          type: string
+      type: object
+  securitySchemes:
+    Basic:
+      description: Basic authentication
+      scheme: Basic
+      type: http
+

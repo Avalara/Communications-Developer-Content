@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="apiv2profilesgetprofilesget"></a>
 # **ApiV2ProfilesGetProfilesGet**
-> TaxCalculationSettingsResponse ApiV2ProfilesGetProfilesGet (int? requestedClientId = null, int? requestedProfileId = null, TaxCalculationSettingTypes itemType = null)
+> ClientProfileConfigResponse ApiV2ProfilesGetProfilesGet (int? requestedClientId = null, int? requestedProfileId = null, ClientProfileConfigTypes? itemType = null)
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -29,19 +29,16 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
-            // Configure HTTP basic authorization: Basic
-            config.Username = "YOUR_USERNAME";
-            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new CustomizationApi(config);
             var requestedClientId = 56;  // int? | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional) 
             var requestedProfileId = 56;  // int? | Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional) 
-            var itemType = new TaxCalculationSettingTypes(); // TaxCalculationSettingTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional) 
+            var itemType = ;  // ClientProfileConfigTypes? | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional) 
 
             try
             {
                 // Retrieves one or more profiles with associated settings and configurable items
-                TaxCalculationSettingsResponse result = apiInstance.ApiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
+                ClientProfileConfigResponse result = apiInstance.ApiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -61,11 +58,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **requestedClientId** | **int?**| Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. | [optional] 
  **requestedProfileId** | **int?**| Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. | [optional] 
- **itemType** | [**TaxCalculationSettingTypes**](TaxCalculationSettingTypes.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] 
+ **itemType** | **ClientProfileConfigTypes?**| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] 
 
 ### Return type
 
-[**TaxCalculationSettingsResponse**](TaxCalculationSettingsResponse.md)
+[**ClientProfileConfigResponse**](ClientProfileConfigResponse.md)
 
 ### Authorization
 

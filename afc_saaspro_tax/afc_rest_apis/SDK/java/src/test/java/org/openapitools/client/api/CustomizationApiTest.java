@@ -1,6 +1,6 @@
 /*
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -14,8 +14,8 @@
 package org.openapitools.client.api;
 
 import org.openapitools.client.ApiException;
-import org.openapitools.client.model.TaxCalculationSettingTypes;
-import org.openapitools.client.model.TaxCalculationSettingsResponse;
+import org.openapitools.client.model.ClientProfileConfigResponse;
+import org.openapitools.client.model.ClientProfileConfigTypes;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -45,8 +45,8 @@ public class CustomizationApiTest {
     public void apiV2ProfilesGetProfilesGetTest() throws ApiException {
         Integer requestedClientId = null;
         Integer requestedProfileId = null;
-        TaxCalculationSettingTypes itemType = null;
-        TaxCalculationSettingsResponse response = api.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
+        ClientProfileConfigTypes itemType = null;
+        ClientProfileConfigResponse response = api.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
 
         // TODO: test validations
     }

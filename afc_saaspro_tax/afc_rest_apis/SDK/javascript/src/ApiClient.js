@@ -1,6 +1,6 @@
 /**
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -40,8 +40,7 @@ class ApiClient {
          * The authentication methods to be included for all API calls.
          * @type {Array.<String>}
          */
-        this.authentications = {
-        }
+		this.authentications = { Basic : { type: 'basic', username: '', password: '' } };
 
         /**
          * The default HTTP headers to be included for all API calls.
@@ -404,8 +403,6 @@ class ApiClient {
             if(contentType != 'multipart/form-data') {
                 request.type(contentType);
             }
-        } else if (!request.header['Content-Type']) {
-            request.type('application/json');
         }
 
         if (contentType === 'application/x-www-form-urlencoded') {
@@ -423,6 +420,9 @@ class ApiClient {
                 }
             }
         } else if (bodyParam !== null && bodyParam !== undefined) {
+            if (!request.header['Content-Type']) {
+                request.type('application/json');
+            }
             request.send(bodyParam);
         }
 
@@ -649,3 +649,4 @@ ApiClient.CollectionFormatEnum = {
 */
 ApiClient.instance = new ApiClient();
 export default ApiClient;
+

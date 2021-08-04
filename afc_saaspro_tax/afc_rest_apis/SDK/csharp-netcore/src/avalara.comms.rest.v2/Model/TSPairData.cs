@@ -1,7 +1,7 @@
 /* 
  * SaasPro
  *
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -26,13 +26,13 @@ using OpenAPIDateConverter = avalara.comms.rest.v2.Client.OpenAPIDateConverter;
 namespace avalara.comms.rest.v2.Model
 {
     /// <summary>
-    /// TSPairData
+    /// TsPairData
     /// </summary>
     [DataContract]
-    public partial class TSPairData :  IEquatable<TSPairData>, IValidatableObject
+    public partial class TsPairData :  IEquatable<TsPairData>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TSPairData" /> class.
+        /// Initializes a new instance of the <see cref="TsPairData" /> class.
         /// </summary>
         /// <param name="transactionType">transactionType.</param>
         /// <param name="serviceType">serviceType.</param>
@@ -43,7 +43,7 @@ namespace avalara.comms.rest.v2.Model
         /// <param name="transactionDescription">transactionDescription.</param>
         /// <param name="serviceDescription">serviceDescription.</param>
         /// <param name="tSPairDescription">tSPairDescription.</param>
-        public TSPairData(int transactionType = default(int), int serviceType = default(int), int marketType = default(int), int interfaceType = default(int), int inputType = default(int), bool isBundle = default(bool), string transactionDescription = default(string), string serviceDescription = default(string), string tSPairDescription = default(string))
+        public TsPairData(int transactionType = default(int), int serviceType = default(int), int marketType = default(int), int interfaceType = default(int), int inputType = default(int), bool isBundle = default(bool), string transactionDescription = default(string), string serviceDescription = default(string), string tSPairDescription = default(string))
         {
             this.TransactionType = transactionType;
             this.ServiceType = serviceType;
@@ -117,7 +117,7 @@ namespace avalara.comms.rest.v2.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class TSPairData {\n");
+            sb.Append("class TsPairData {\n");
             sb.Append("  TransactionType: ").Append(TransactionType).Append("\n");
             sb.Append("  ServiceType: ").Append(ServiceType).Append("\n");
             sb.Append("  MarketType: ").Append(MarketType).Append("\n");
@@ -147,15 +147,15 @@ namespace avalara.comms.rest.v2.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as TSPairData);
+            return this.Equals(input as TsPairData);
         }
 
         /// <summary>
-        /// Returns true if TSPairData instances are equal
+        /// Returns true if TsPairData instances are equal
         /// </summary>
-        /// <param name="input">Instance of TSPairData to be compared</param>
+        /// <param name="input">Instance of TsPairData to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(TSPairData input)
+        public bool Equals(TsPairData input)
         {
             if (input == null)
                 return false;

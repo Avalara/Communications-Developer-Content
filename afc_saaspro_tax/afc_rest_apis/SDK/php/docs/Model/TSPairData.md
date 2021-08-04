@@ -1,4 +1,4 @@
-# # TSPairData
+# # TsPairData
 
 ## Properties
 

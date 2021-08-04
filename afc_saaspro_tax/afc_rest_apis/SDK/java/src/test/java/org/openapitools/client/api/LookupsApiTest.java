@@ -1,6 +1,6 @@
 /*
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -16,8 +16,8 @@ package org.openapitools.client.api;
 import org.openapitools.client.ApiException;
 import org.openapitools.client.model.PCodeLookupResult;
 import org.openapitools.client.model.ServiceInfo;
-import org.openapitools.client.model.TSPairData;
 import org.openapitools.client.model.TaxTypeData;
+import org.openapitools.client.model.TsPairData;
 import org.junit.Test;
 import org.junit.Ignore;
 
@@ -44,9 +44,9 @@ public class LookupsApiTest {
      *          if the Api call fails
      */
     @Test
-    public void apiV2AfcLocationPcodeGetTest() throws ApiException {
-        Integer pcode = null;
-        PCodeLookupResult response = api.apiV2AfcLocationPcodeGet(pcode);
+    public void apiV2AfcLocationPCodeGetTest() throws ApiException {
+        Integer pCode = null;
+        PCodeLookupResult response = api.apiV2AfcLocationPCodeGet(pCode);
 
         // TODO: test validations
     }
@@ -108,7 +108,7 @@ public class LookupsApiTest {
      */
     @Test
     public void apiV2AfcTspairsGetTest() throws ApiException {
-        List<TSPairData> response = api.apiV2AfcTspairsGet();
+        List<TsPairData> response = api.apiV2AfcTspairsGet();
 
         // TODO: test validations
     }

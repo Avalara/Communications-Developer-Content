@@ -1,4 +1,4 @@
-# avalara.comms.rest.v2.Model.TSPairData
+# avalara.comms.rest.v2.Model.TsPairData
 ## Properties
 
 Name | Type | Description | Notes

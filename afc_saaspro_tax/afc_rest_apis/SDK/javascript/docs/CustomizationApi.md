@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 ## apiV2ProfilesGetProfilesGet
 
-> TaxCalculationSettingsResponse apiV2ProfilesGetProfilesGet(opts)
+> ClientProfileConfigResponse apiV2ProfilesGetProfilesGet(opts)
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -24,7 +24,7 @@ let apiInstance = new SaasPro.CustomizationApi();
 let opts = {
   'requestedClientId': 56, // Number | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable.
   'requestedProfileId': 56, // Number | Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set.
-  'itemType': new SaasPro.TaxCalculationSettingTypes() // TaxCalculationSettingTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
+  'itemType': new SaasPro.ClientProfileConfigTypes() // ClientProfileConfigTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
 };
 apiInstance.apiV2ProfilesGetProfilesGet(opts, (error, data, response) => {
   if (error) {
@@ -42,11 +42,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **requestedClientId** | **Number**| Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. | [optional] 
  **requestedProfileId** | **Number**| Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. | [optional] 
- **itemType** | [**TaxCalculationSettingTypes**](.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] 
+ **itemType** | [**ClientProfileConfigTypes**](.md)| Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All | [optional] 
 
 ### Return type
 
-[**TaxCalculationSettingsResponse**](TaxCalculationSettingsResponse.md)
+[**ClientProfileConfigResponse**](ClientProfileConfigResponse.md)
 
 ### Authorization
 

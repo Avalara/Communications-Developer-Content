@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **code** | **Number** | Status code. | [optional] 
-**msg** | **String** | Status message. | [optional] [readonly] 
+**msg** | **String** | Status message. | [optional] 
 
 

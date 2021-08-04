@@ -1,6 +1,6 @@
 /**
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -15,8 +15,8 @@
 import ApiClient from "../ApiClient";
 import PCodeLookupResult from '../model/PCodeLookupResult';
 import ServiceInfo from '../model/ServiceInfo';
-import TSPairData from '../model/TSPairData';
 import TaxTypeData from '../model/TaxTypeData';
+import TsPairData from '../model/TsPairData';
 
 /**
 * Lookups service.
@@ -38,8 +38,8 @@ export default class LookupsApi {
 
 
     /**
-     * Callback function to receive the result of the apiV2AfcLocationPcodeGet operation.
-     * @callback module:api/LookupsApi~apiV2AfcLocationPcodeGetCallback
+     * Callback function to receive the result of the apiV2AfcLocationPCodeGet operation.
+     * @callback module:api/LookupsApi~apiV2AfcLocationPCodeGetCallback
      * @param {String} error Error message, if any.
      * @param {module:model/PCodeLookupResult} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
@@ -48,19 +48,19 @@ export default class LookupsApi {
     /**
      * Get location data associated with a PCode
      * Request will return all jurisdictions associated with the PCode
-     * @param {Number} pcode 
-     * @param {module:api/LookupsApi~apiV2AfcLocationPcodeGetCallback} callback The callback function, accepting three arguments: error, data, response
+     * @param {Number} pCode 
+     * @param {module:api/LookupsApi~apiV2AfcLocationPCodeGetCallback} callback The callback function, accepting three arguments: error, data, response
      * data is of type: {@link module:model/PCodeLookupResult}
      */
-    apiV2AfcLocationPcodeGet(pcode, callback) {
+    apiV2AfcLocationPCodeGet(pCode, callback) {
       let postBody = null;
-      // verify the required parameter 'pcode' is set
-      if (pcode === undefined || pcode === null) {
-        throw new Error("Missing the required parameter 'pcode' when calling apiV2AfcLocationPcodeGet");
+      // verify the required parameter 'pCode' is set
+      if (pCode === undefined || pCode === null) {
+        throw new Error("Missing the required parameter 'pCode' when calling apiV2AfcLocationPCodeGet");
       }
 
       let pathParams = {
-        'pcode': pcode
+        'pCode': pCode
       };
       let queryParams = {
       };
@@ -74,7 +74,7 @@ export default class LookupsApi {
       let accepts = ['text/plain', 'application/json', 'text/json'];
       let returnType = PCodeLookupResult;
       return this.apiClient.callApi(
-        '/api/v2/afc/location/{pcode}', 'GET',
+        '/api/v2/afc/location/{pCode}', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
         authNames, contentTypes, accepts, returnType, null, callback
       );
@@ -206,7 +206,7 @@ export default class LookupsApi {
      * Callback function to receive the result of the apiV2AfcTspairsGet operation.
      * @callback module:api/LookupsApi~apiV2AfcTspairsGetCallback
      * @param {String} error Error message, if any.
-     * @param {Array.<module:model/TSPairData>} data The data returned by the service call.
+     * @param {Array.<module:model/TsPairData>} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -214,7 +214,7 @@ export default class LookupsApi {
      * Get transaction/service pair information
      * This method returns the description for the transaction type, service type and the ts pairs.
      * @param {module:api/LookupsApi~apiV2AfcTspairsGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link Array.<module:model/TSPairData>}
+     * data is of type: {@link Array.<module:model/TsPairData>}
      */
     apiV2AfcTspairsGet(callback) {
       let postBody = null;
@@ -231,7 +231,7 @@ export default class LookupsApi {
       let authNames = ['Basic'];
       let contentTypes = [];
       let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = [TSPairData];
+      let returnType = [TsPairData];
       return this.apiClient.callApi(
         '/api/v2/afc/tspairs', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,

@@ -1,6 +1,6 @@
 /**
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SaasPro.TSPairData();
+    instance = new SaasPro.TsPairData();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,64 +47,64 @@
       object[property] = value;
   }
 
-  describe('TSPairData', function() {
-    it('should create an instance of TSPairData', function() {
-      // uncomment below and update the code to test TSPairData
-      //var instane = new SaasPro.TSPairData();
-      //expect(instance).to.be.a(SaasPro.TSPairData);
+  describe('TsPairData', function() {
+    it('should create an instance of TsPairData', function() {
+      // uncomment below and update the code to test TsPairData
+      //var instane = new SaasPro.TsPairData();
+      //expect(instance).to.be.a(SaasPro.TsPairData);
     });
 
     it('should have the property transactionType (base name: "TransactionType")', function() {
       // uncomment below and update the code to test the property transactionType
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property serviceType (base name: "ServiceType")', function() {
       // uncomment below and update the code to test the property serviceType
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property marketType (base name: "MarketType")', function() {
       // uncomment below and update the code to test the property marketType
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property interfaceType (base name: "InterfaceType")', function() {
       // uncomment below and update the code to test the property interfaceType
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property inputType (base name: "InputType")', function() {
       // uncomment below and update the code to test the property inputType
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property isBundle (base name: "IsBundle")', function() {
       // uncomment below and update the code to test the property isBundle
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property transactionDescription (base name: "TransactionDescription")', function() {
       // uncomment below and update the code to test the property transactionDescription
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property serviceDescription (base name: "ServiceDescription")', function() {
       // uncomment below and update the code to test the property serviceDescription
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 
     it('should have the property tSPairDescription (base name: "TSPairDescription")', function() {
       // uncomment below and update the code to test the property tSPairDescription
-      //var instane = new SaasPro.TSPairData();
+      //var instane = new SaasPro.TsPairData();
       //expect(instance).to.be();
     });
 

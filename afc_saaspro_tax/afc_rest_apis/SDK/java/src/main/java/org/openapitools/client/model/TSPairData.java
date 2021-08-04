@@ -1,6 +1,6 @@
 /*
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -25,10 +25,10 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * TSPairData
+ * TsPairData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-05-10T00:57:00.867-04:00[America/New_York]")
-public class TSPairData {
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-08-04T15:26:12.946-04:00[America/New_York]")
+public class TsPairData {
   public static final String SERIALIZED_NAME_TRANSACTION_TYPE = "TransactionType";
   @SerializedName(SERIALIZED_NAME_TRANSACTION_TYPE)
   private Integer transactionType;
@@ -66,7 +66,7 @@ public class TSPairData {
   private String tsPairDescription;
 
 
-  public TSPairData transactionType(Integer transactionType) {
+  public TsPairData transactionType(Integer transactionType) {
     
     this.transactionType = transactionType;
     return this;
@@ -89,7 +89,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData serviceType(Integer serviceType) {
+  public TsPairData serviceType(Integer serviceType) {
     
     this.serviceType = serviceType;
     return this;
@@ -112,7 +112,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData marketType(Integer marketType) {
+  public TsPairData marketType(Integer marketType) {
     
     this.marketType = marketType;
     return this;
@@ -135,7 +135,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData interfaceType(Integer interfaceType) {
+  public TsPairData interfaceType(Integer interfaceType) {
     
     this.interfaceType = interfaceType;
     return this;
@@ -158,7 +158,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData inputType(Integer inputType) {
+  public TsPairData inputType(Integer inputType) {
     
     this.inputType = inputType;
     return this;
@@ -181,7 +181,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData isBundle(Boolean isBundle) {
+  public TsPairData isBundle(Boolean isBundle) {
     
     this.isBundle = isBundle;
     return this;
@@ -204,7 +204,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData transactionDescription(String transactionDescription) {
+  public TsPairData transactionDescription(String transactionDescription) {
     
     this.transactionDescription = transactionDescription;
     return this;
@@ -227,7 +227,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData serviceDescription(String serviceDescription) {
+  public TsPairData serviceDescription(String serviceDescription) {
     
     this.serviceDescription = serviceDescription;
     return this;
@@ -250,7 +250,7 @@ public class TSPairData {
   }
 
 
-  public TSPairData tsPairDescription(String tsPairDescription) {
+  public TsPairData tsPairDescription(String tsPairDescription) {
     
     this.tsPairDescription = tsPairDescription;
     return this;
@@ -281,7 +281,7 @@ public class TSPairData {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    TSPairData tsPairData = (TSPairData) o;
+    TsPairData tsPairData = (TsPairData) o;
     return Objects.equals(this.transactionType, tsPairData.transactionType) &&
         Objects.equals(this.serviceType, tsPairData.serviceType) &&
         Objects.equals(this.marketType, tsPairData.marketType) &&
@@ -302,7 +302,7 @@ public class TSPairData {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class TSPairData {\n");
+    sb.append("class TsPairData {\n");
     sb.append("    transactionType: ").append(toIndentedString(transactionType)).append("\n");
     sb.append("    serviceType: ").append(toIndentedString(serviceType)).append("\n");
     sb.append("    marketType: ").append(toIndentedString(marketType)).append("\n");

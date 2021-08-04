@@ -4,7 +4,7 @@ All URIs are relative to *http://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2AfcLocationPcodeGet**](LookupsApi.md#apiV2AfcLocationPcodeGet) | **GET** /api/v2/afc/location/{pcode} | Get location data associated with a PCode
+[**apiV2AfcLocationPCodeGet**](LookupsApi.md#apiV2AfcLocationPCodeGet) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
 [**apiV2AfcPrimaryPCodeGet**](LookupsApi.md#apiV2AfcPrimaryPCodeGet) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
 [**apiV2AfcServiceinfoGet**](LookupsApi.md#apiV2AfcServiceinfoGet) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
 [**apiV2AfcTaxtypeTaxTypeGet**](LookupsApi.md#apiV2AfcTaxtypeTaxTypeGet) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
@@ -12,9 +12,9 @@ Method | HTTP request | Description
 
 
 
-## apiV2AfcLocationPcodeGet
+## apiV2AfcLocationPCodeGet
 
-> PCodeLookupResult apiV2AfcLocationPcodeGet(pcode)
+> PCodeLookupResult apiV2AfcLocationPCodeGet(pCode)
 
 Get location data associated with a PCode
 
@@ -27,8 +27,8 @@ import SaasPro from 'saas_pro';
 let defaultClient = SaasPro.ApiClient.instance;
 
 let apiInstance = new SaasPro.LookupsApi();
-let pcode = 56; // Number | 
-apiInstance.apiV2AfcLocationPcodeGet(pcode, (error, data, response) => {
+let pCode = 56; // Number | 
+apiInstance.apiV2AfcLocationPCodeGet(pCode, (error, data, response) => {
   if (error) {
     console.error(error);
   } else {
@@ -42,7 +42,7 @@ apiInstance.apiV2AfcLocationPcodeGet(pcode, (error, data, response) => {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **pcode** | **Number**|  | 
+ **pCode** | **Number**|  | 
 
 ### Return type
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ## apiV2AfcTspairsGet
 
-> [TSPairData] apiV2AfcTspairsGet()
+> [TsPairData] apiV2AfcTspairsGet()
 
 Get transaction/service pair information
 
@@ -220,7 +220,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**[TSPairData]**](TSPairData.md)
+[**[TsPairData]**](TsPairData.md)
 
 ### Authorization
 

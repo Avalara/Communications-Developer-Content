@@ -1,6 +1,6 @@
 /**
  * SaasPro
- * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.
+ * APIs to interface with communications tax engine.<br />The API requires Basic authentication.<br />Users with access to multiple clients must also set request header parameter for <code>client_id</code>.<br />Set <code>client_profile_id</code> to specify profile to be used for taxation.<br /><br />Effective January 1st, 2022 all Avalara products will be enforcing TLS 1.2 server-side. Please ensure that your implementation sets a minimal of TLS 1.2 encryption when making web requests to Avalara APIs.
  *
  * The version of the OpenAPI document: v2
  * 
@@ -13,8 +13,8 @@
 
 
 import ApiClient from "../ApiClient";
-import TaxCalculationSettingTypes from '../model/TaxCalculationSettingTypes';
-import TaxCalculationSettingsResponse from '../model/TaxCalculationSettingsResponse';
+import ClientProfileConfigResponse from '../model/ClientProfileConfigResponse';
+import ClientProfileConfigTypes from '../model/ClientProfileConfigTypes';
 
 /**
 * Customization service.
@@ -39,7 +39,7 @@ export default class CustomizationApi {
      * Callback function to receive the result of the apiV2ProfilesGetProfilesGet operation.
      * @callback module:api/CustomizationApi~apiV2ProfilesGetProfilesGetCallback
      * @param {String} error Error message, if any.
-     * @param {module:model/TaxCalculationSettingsResponse} data The data returned by the service call.
+     * @param {module:model/ClientProfileConfigResponse} data The data returned by the service call.
      * @param {String} response The complete HTTP response.
      */
 
@@ -48,9 +48,9 @@ export default class CustomizationApi {
      * @param {Object} opts Optional parameters
      * @param {Number} opts.requestedClientId Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable.
      * @param {Number} opts.requestedProfileId Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set.
-     * @param {module:model/TaxCalculationSettingTypes} opts.itemType Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
+     * @param {module:model/ClientProfileConfigTypes} opts.itemType Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
      * @param {module:api/CustomizationApi~apiV2ProfilesGetProfilesGetCallback} callback The callback function, accepting three arguments: error, data, response
-     * data is of type: {@link module:model/TaxCalculationSettingsResponse}
+     * data is of type: {@link module:model/ClientProfileConfigResponse}
      */
     apiV2ProfilesGetProfilesGet(opts, callback) {
       opts = opts || {};
@@ -71,7 +71,7 @@ export default class CustomizationApi {
       let authNames = ['Basic'];
       let contentTypes = [];
       let accepts = ['text/plain', 'application/json', 'text/json'];
-      let returnType = TaxCalculationSettingsResponse;
+      let returnType = ClientProfileConfigResponse;
       return this.apiClient.callApi(
         '/api/v2/profiles/GetProfiles', 'GET',
         pathParams, queryParams, headerParams, formParams, postBody,
