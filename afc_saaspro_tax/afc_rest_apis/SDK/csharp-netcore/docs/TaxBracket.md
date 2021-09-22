@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.TaxBracket
 Rate information for a tax bracket.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.CommitRequest
 Parameter for CommitTransactions API.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.TrafficStudyOverride
 Specifies a traffic study override
+
 ## Properties
 
 Name | Type | Description | Notes

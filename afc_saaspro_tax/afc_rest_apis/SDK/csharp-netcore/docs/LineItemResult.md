@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.LineItemResult
 Tax calculation results for a single line item.
+
 ## Properties
 
 Name | Type | Description | Notes

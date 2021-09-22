@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.GeoBatchLog
 Response body for Geo Batch Submit File API.
+
 ## Properties
 
 Name | Type | Description | Notes

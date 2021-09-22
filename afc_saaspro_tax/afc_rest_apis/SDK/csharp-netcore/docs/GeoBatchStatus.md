@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.GeoBatchStatus
 Individual File Status For Geo Batch result
+
 ## Properties
 
 Name | Type | Description | Notes

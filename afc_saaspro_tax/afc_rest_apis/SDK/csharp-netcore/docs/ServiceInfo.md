@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.ServiceInfo
 Response body for service info API.
+
 ## Properties
 
 Name | Type | Description | Notes

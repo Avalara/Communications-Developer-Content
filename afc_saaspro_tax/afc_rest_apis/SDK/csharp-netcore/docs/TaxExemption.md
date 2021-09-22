@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.TaxExemption
 Tax exemption data.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.InvoiceResult
 Tax calculation results for an invoice.
+
 ## Properties
 
 Name | Type | Description | Notes

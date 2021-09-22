@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.BundleItem
 Bundled items associated with a bundle package
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.LineItem
 Data for an invoice or quote line item.
+
 ## Properties
 
 Name | Type | Description | Notes

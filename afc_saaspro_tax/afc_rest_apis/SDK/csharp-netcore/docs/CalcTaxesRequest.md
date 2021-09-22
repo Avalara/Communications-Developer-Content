@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.CalcTaxesRequest
 Request body for tax calculation API.
+
 ## Properties
 
 Name | Type | Description | Notes

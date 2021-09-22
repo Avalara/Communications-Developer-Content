@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.CommitResponse
 Response body for Commit API.
+
 ## Properties
 
 Name | Type | Description | Notes

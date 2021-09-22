@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.ClientProfileConfigResponse
 Data for an invoice or quote line item.
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -9,7 +10,7 @@ Name | Type | Description | Notes
 **ClientId** | **int?** | Client id associated with configuration item | [optional] 
 **LastUpdateBy** | **string** | User who last updated the configuration item | [optional] 
 **Active** | **bool?** | Active status of the configuration item | [optional] 
-**Settings** | [**Configuration**](Configuration.md) |  | [optional] 
+**Settings** | [**ModelConfiguration**](ModelConfiguration.md) |  | [optional] 
 **Exclusions** | [**List&lt;ExclusionConfig&gt;**](ExclusionConfig.md) | Exclusions (as applicable) | [optional] 
 **Bundles** | [**List&lt;BundleConfig&gt;**](BundleConfig.md) | Bundles (as applicable) | [optional] 
 **Nexus** | [**List&lt;NexusConfig&gt;**](NexusConfig.md) | Nexus (as applicable) | [optional] 

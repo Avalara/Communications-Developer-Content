@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.KeyValuePair
 Key/value pair data.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.Location
 Location data used to determine taxing jurisdiction.
+
 ## Properties
 
 Name | Type | Description | Notes
