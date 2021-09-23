@@ -77,8 +77,13 @@ In the `avalara.comms.rest.v2.Demo` project, update the `Username` and `Password
             };
 
 ```
+Run the following command:
 
-If you are using Visual Studio, set `avalara.comms.rest.v2.Demo` as the startup project.
+```
+dotnet run src/avalara.comms.rest.v2.Demo/avalara.comms.rest.v2.Demo.csproj
+```
+
+Note: If you are using Visual Studio, set `avalara.comms.rest.v2.Demo` as the startup project.
 
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
