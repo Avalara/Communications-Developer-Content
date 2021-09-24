@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.GeocodeRequest
 Input data for Geocoding API.
+
 ## Properties
 
 Name | Type | Description | Notes

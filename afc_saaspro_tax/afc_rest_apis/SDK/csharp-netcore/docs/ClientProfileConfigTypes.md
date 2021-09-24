@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.ClientProfileConfigTypes
 Choice of tax calculation setting types.
+
 ## Properties
 
 Name | Type | Description | Notes

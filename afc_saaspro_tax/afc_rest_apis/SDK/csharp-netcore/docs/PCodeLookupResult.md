@@ -1,4 +1,5 @@
 # avalara.comms.rest.v2.Model.PCodeLookupResult
+
 ## Properties
 
 Name | Type | Description | Notes

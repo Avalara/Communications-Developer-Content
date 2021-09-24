@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.SummarizedTax
 Tax data for summarized invoice taxes.
+
 ## Properties
 
 Name | Type | Description | Notes

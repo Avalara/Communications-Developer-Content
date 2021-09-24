@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.Invoice
 Contains information about an invoice or quote.
+
 ## Properties
 
 Name | Type | Description | Notes

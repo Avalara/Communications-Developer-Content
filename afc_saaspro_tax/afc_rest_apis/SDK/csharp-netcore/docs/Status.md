@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.Status
 Status information.
+
 ## Properties
 
 Name | Type | Description | Notes

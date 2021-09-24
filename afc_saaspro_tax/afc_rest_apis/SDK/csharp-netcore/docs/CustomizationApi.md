@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="apiv2profilesgetprofilesget"></a>
 # **ApiV2ProfilesGetProfilesGet**
-> ClientProfileConfigResponse ApiV2ProfilesGetProfilesGet (int? requestedClientId = null, int? requestedProfileId = null, ClientProfileConfigTypes? itemType = null)
+> List&lt;ClientProfileConfigResponse&gt; ApiV2ProfilesGetProfilesGet (int? requestedClientId = null, int? requestedProfileId = null, ClientProfileConfigTypes? itemType = null)
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -29,6 +29,9 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new CustomizationApi(config);
             var requestedClientId = 56;  // int? | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional) 
@@ -38,7 +41,7 @@ namespace Example
             try
             {
                 // Retrieves one or more profiles with associated settings and configurable items
-                ClientProfileConfigResponse result = apiInstance.ApiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
+                List<ClientProfileConfigResponse> result = apiInstance.ApiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
                 Debug.WriteLine(result);
             }
             catch (ApiException  e)
@@ -62,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ClientProfileConfigResponse**](ClientProfileConfigResponse.md)
+[**List&lt;ClientProfileConfigResponse&gt;**](ClientProfileConfigResponse.md)
 
 ### Authorization
 
@@ -72,6 +75,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

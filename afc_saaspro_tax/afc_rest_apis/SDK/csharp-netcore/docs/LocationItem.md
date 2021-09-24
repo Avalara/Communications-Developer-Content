@@ -1,4 +1,5 @@
 # avalara.comms.rest.v2.Model.LocationItem
+
 ## Properties
 
 Name | Type | Description | Notes

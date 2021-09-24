@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**ApiV2GeoBatchLogProcessIdGet**](JurisdictionDeterminationApi.md#apiv2geobatchlogprocessidget) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
 [**ApiV2GeoBatchStatusProcessIdGet**](JurisdictionDeterminationApi.md#apiv2geobatchstatusprocessidget) | **GET** /api/v2/geo/batch/status/{processId} | Retrieves information on Geo Batch file status
 [**ApiV2GeoBatchUploadPost**](JurisdictionDeterminationApi.md#apiv2geobatchuploadpost) | **POST** /api/v2/geo/batch/Upload | Uploads file to Geo Batch.
-[**ApiV2GeoGeocodePost**](JurisdictionDeterminationApi.md#apiv2geogeocodepost) | **POST** /api/v2/geo/Geocode | Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+[**ApiV2GeoGeocodePost**](JurisdictionDeterminationApi.md#apiv2geogeocodepost) | **POST** /api/v2/geo/Geocode | Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
 
 
 <a name="apiv2afcpcodepost"></a>
@@ -35,6 +35,9 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var pCodeLookupRequest = new PCodeLookupRequest(); // PCodeLookupRequest |  (optional) 
@@ -75,6 +78,7 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -104,6 +108,9 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var processId = processId_example;  // string | Process Id for Geo Batch File.
@@ -144,6 +151,7 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -173,6 +181,9 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var processId = processId_example;  // string | Process Id for Geo Batch File.
@@ -213,6 +224,7 @@ Name | Type | Description  | Notes
  - **Content-Type**: Not defined
  - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -242,6 +254,9 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var geoBatchFile = BINARY_DATA_HERE;  // System.IO.Stream |  (optional) 
@@ -282,6 +297,7 @@ Name | Type | Description  | Notes
  - **Content-Type**: multipart/form-data
  - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -293,7 +309,7 @@ Name | Type | Description  | Notes
 # **ApiV2GeoGeocodePost**
 > List&lt;GeocodeResult&gt; ApiV2GeoGeocodePost (List<GeocodeRequest> geocodeRequest = null)
 
-Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
 
 ### Example
 ```csharp
@@ -311,13 +327,16 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new JurisdictionDeterminationApi(config);
             var geocodeRequest = new List<GeocodeRequest>(); // List<GeocodeRequest> | List of street addresses and/or lat/long coordinate pairs to geocode. (optional) 
 
             try
             {
-                // Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+                // Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
                 List<GeocodeResult> result = apiInstance.ApiV2GeoGeocodePost(geocodeRequest);
                 Debug.WriteLine(result);
             }
@@ -350,6 +369,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

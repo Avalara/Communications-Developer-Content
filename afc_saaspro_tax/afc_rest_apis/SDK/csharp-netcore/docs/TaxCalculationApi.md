@@ -30,6 +30,9 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TaxCalculationApi(config);
             var calcTaxesRequest = new CalcTaxesRequest(); // CalcTaxesRequest | CalcTaxesRequest object containing invoices to process and data required               for performing tax calculations. (optional) 
@@ -70,6 +73,7 @@ Name | Type | Description  | Notes
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
 
+
 ### HTTP response details
 | Status code | Description | Response headers |
 |-------------|-------------|------------------|
@@ -99,6 +103,9 @@ namespace Example
         {
             Configuration config = new Configuration();
             config.BasePath = "http://localhost";
+            // Configure HTTP basic authorization: Basic
+            config.Username = "YOUR_USERNAME";
+            config.Password = "YOUR_PASSWORD";
 
             var apiInstance = new TaxCalculationApi(config);
             var commitRequest = new CommitRequest(); // CommitRequest | CommitRequest object containing document code and optional field data to override in reports. (optional) 
@@ -138,6 +145,7 @@ Name | Type | Description  | Notes
 
  - **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
  - **Accept**: text/plain, application/json, text/json
+
 
 ### HTTP response details
 | Status code | Description | Response headers |

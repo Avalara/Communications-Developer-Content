@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.GeocodeResult
 Results for geocoding request.
+
 ## Properties
 
 Name | Type | Description | Notes

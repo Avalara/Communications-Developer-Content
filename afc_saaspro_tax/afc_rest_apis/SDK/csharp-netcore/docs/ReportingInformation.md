@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.ReportingInformation
 Tax rate override information.
+
 ## Properties
 
 Name | Type | Description | Notes

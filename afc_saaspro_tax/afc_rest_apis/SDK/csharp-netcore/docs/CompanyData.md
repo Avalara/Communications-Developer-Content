@@ -1,5 +1,6 @@
 # avalara.comms.rest.v2.Model.CompanyData
 Container class for json properties associated with v2.CalcTaxes company data
+
 ## Properties
 
 Name | Type | Description | Notes
