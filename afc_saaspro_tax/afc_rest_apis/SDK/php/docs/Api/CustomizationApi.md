@@ -1,16 +1,17 @@
 # OpenAPI\Client\CustomizationApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2ProfilesGetProfilesGet**](CustomizationApi.md#apiV2ProfilesGetProfilesGet) | **GET** /api/v2/profiles/GetProfiles | Retrieves one or more profiles with associated settings and configurable items
+[**apiV2ProfilesGetProfilesGet()**](CustomizationApi.md#apiV2ProfilesGetProfilesGet) | **GET** /api/v2/profiles/GetProfiles | Retrieves one or more profiles with associated settings and configurable items
 
 
+## `apiV2ProfilesGetProfilesGet()`
 
-## apiV2ProfilesGetProfilesGet
-
-> \OpenAPI\Client\Model\ClientProfileConfigResponse apiV2ProfilesGetProfilesGet($requested_client_id, $requested_profile_id, $item_type)
+```php
+apiV2ProfilesGetProfilesGet($requested_client_id, $requested_profile_id, $item_type): \OpenAPI\Client\Model\ClientProfileConfigResponse[]
+```
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -21,6 +22,10 @@ Retrieves one or more profiles with associated settings and configurable items
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\CustomizationApi(
@@ -39,11 +44,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling CustomizationApi->apiV2ProfilesGetProfilesGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -53,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\OpenAPI\Client\Model\ClientProfileConfigResponse**](../Model/ClientProfileConfigResponse.md)
+[**\OpenAPI\Client\Model\ClientProfileConfigResponse[]**](../Model/ClientProfileConfigResponse.md)
 
 ### Authorization
 
@@ -62,9 +65,8 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

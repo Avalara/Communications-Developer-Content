@@ -1,17 +1,18 @@
 # OpenAPI\Client\TaxCalculationApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2AfcCalcTaxesPost**](TaxCalculationApi.md#apiV2AfcCalcTaxesPost) | **POST** /api/v2/afc/CalcTaxes | Performs tax calculations on all invoices and line items within the request body.
-[**apiV2AfcCommitPost**](TaxCalculationApi.md#apiV2AfcCommitPost) | **POST** /api/v2/afc/Commit | Commits or un-commits a document code.
+[**apiV2AfcCalcTaxesPost()**](TaxCalculationApi.md#apiV2AfcCalcTaxesPost) | **POST** /api/v2/afc/CalcTaxes | Performs tax calculations on all invoices and line items within the request body.
+[**apiV2AfcCommitPost()**](TaxCalculationApi.md#apiV2AfcCommitPost) | **POST** /api/v2/afc/Commit | Commits or un-commits a document code.
 
 
+## `apiV2AfcCalcTaxesPost()`
 
-## apiV2AfcCalcTaxesPost
-
-> \OpenAPI\Client\Model\CalcTaxesResponse apiV2AfcCalcTaxesPost($calc_taxes_request)
+```php
+apiV2AfcCalcTaxesPost($calc_taxes_request): \OpenAPI\Client\Model\CalcTaxesResponse
+```
 
 Performs tax calculations on all invoices and line items within the request body.
 
@@ -22,6 +23,10 @@ Performs tax calculations on all invoices and line items within the request body
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\TaxCalculationApi(
@@ -38,11 +43,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling TaxCalculationApi->apiV2AfcCalcTaxesPost: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -58,17 +61,18 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
-- **Accept**: text/plain, application/json, text/json
+- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2AfcCommitPost()`
 
-## apiV2AfcCommitPost
-
-> \OpenAPI\Client\Model\CommitResponse apiV2AfcCommitPost($commit_request)
+```php
+apiV2AfcCommitPost($commit_request): \OpenAPI\Client\Model\CommitResponse
+```
 
 Commits or un-commits a document code.
 
@@ -79,6 +83,10 @@ Commits or un-commits a document code.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\TaxCalculationApi(
@@ -95,11 +103,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling TaxCalculationApi->apiV2AfcCommitPost: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -115,10 +121,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
-- **Accept**: text/plain, application/json, text/json
+- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

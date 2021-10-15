@@ -1,20 +1,21 @@
 # OpenAPI\Client\JurisdictionDeterminationApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2AfcPCodePost**](JurisdictionDeterminationApi.md#apiV2AfcPCodePost) | **POST** /api/v2/afc/PCode | Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
-[**apiV2GeoBatchLogProcessIdGet**](JurisdictionDeterminationApi.md#apiV2GeoBatchLogProcessIdGet) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
-[**apiV2GeoBatchStatusProcessIdGet**](JurisdictionDeterminationApi.md#apiV2GeoBatchStatusProcessIdGet) | **GET** /api/v2/geo/batch/status/{processId} | Retrieves information on Geo Batch file status
-[**apiV2GeoBatchUploadPost**](JurisdictionDeterminationApi.md#apiV2GeoBatchUploadPost) | **POST** /api/v2/geo/batch/Upload | Uploads file to Geo Batch.
-[**apiV2GeoGeocodePost**](JurisdictionDeterminationApi.md#apiV2GeoGeocodePost) | **POST** /api/v2/geo/Geocode | Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+[**apiV2AfcPCodePost()**](JurisdictionDeterminationApi.md#apiV2AfcPCodePost) | **POST** /api/v2/afc/PCode | Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
+[**apiV2GeoBatchLogProcessIdGet()**](JurisdictionDeterminationApi.md#apiV2GeoBatchLogProcessIdGet) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
+[**apiV2GeoBatchStatusProcessIdGet()**](JurisdictionDeterminationApi.md#apiV2GeoBatchStatusProcessIdGet) | **GET** /api/v2/geo/batch/status/{processId} | Retrieves information on Geo Batch file status
+[**apiV2GeoBatchUploadPost()**](JurisdictionDeterminationApi.md#apiV2GeoBatchUploadPost) | **POST** /api/v2/geo/batch/Upload | Uploads file to Geo Batch.
+[**apiV2GeoGeocodePost()**](JurisdictionDeterminationApi.md#apiV2GeoGeocodePost) | **POST** /api/v2/geo/Geocode | Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
 
 
+## `apiV2AfcPCodePost()`
 
-## apiV2AfcPCodePost
-
-> \OpenAPI\Client\Model\PCodeLookupResult apiV2AfcPCodePost($p_code_lookup_request)
+```php
+apiV2AfcPCodePost($p_code_lookup_request): \OpenAPI\Client\Model\PCodeLookupResult
+```
 
 Get PCode(s) associated with a location - Ctry/State/County/City/Zip/NpaNxx/Fips.
 
@@ -27,6 +28,10 @@ Requests supports using best match or exact match as well as limiting the number
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
@@ -35,7 +40,7 @@ $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$p_code_lookup_request = new \OpenAPI\Client\Model\PCodeLookupRequest(); // \OpenAPI\Client\Model\PCodeLookupRequest | 
+$p_code_lookup_request = new \OpenAPI\Client\Model\PCodeLookupRequest(); // \OpenAPI\Client\Model\PCodeLookupRequest
 
 try {
     $result = $apiInstance->apiV2AfcPCodePost($p_code_lookup_request);
@@ -43,11 +48,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling JurisdictionDeterminationApi->apiV2AfcPCodePost: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -63,17 +66,18 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
-- **Accept**: text/plain, application/json, text/json
+- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2GeoBatchLogProcessIdGet()`
 
-## apiV2GeoBatchLogProcessIdGet
-
-> \OpenAPI\Client\Model\GeoBatchLog apiV2GeoBatchLogProcessIdGet($process_id)
+```php
+apiV2GeoBatchLogProcessIdGet($process_id): \OpenAPI\Client\Model\GeoBatchLog
+```
 
 Retrieves log on Geo Batch file
 
@@ -84,6 +88,10 @@ Retrieves log on Geo Batch file
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
@@ -100,11 +108,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling JurisdictionDeterminationApi->apiV2GeoBatchLogProcessIdGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -121,16 +127,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2GeoBatchStatusProcessIdGet()`
 
-## apiV2GeoBatchStatusProcessIdGet
-
-> \OpenAPI\Client\Model\GeoBatchStatus apiV2GeoBatchStatusProcessIdGet($process_id)
+```php
+apiV2GeoBatchStatusProcessIdGet($process_id): \OpenAPI\Client\Model\GeoBatchStatus
+```
 
 Retrieves information on Geo Batch file status
 
@@ -141,6 +148,10 @@ Retrieves information on Geo Batch file status
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
@@ -157,11 +168,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling JurisdictionDeterminationApi->apiV2GeoBatchStatusProcessIdGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -178,16 +187,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2GeoBatchUploadPost()`
 
-## apiV2GeoBatchUploadPost
-
-> \OpenAPI\Client\Model\GeoBatchSubmitFileResponse apiV2GeoBatchUploadPost($geo_batch_file)
+```php
+apiV2GeoBatchUploadPost($geo_batch_file): \OpenAPI\Client\Model\GeoBatchSubmitFileResponse
+```
 
 Uploads file to Geo Batch.
 
@@ -198,6 +208,10 @@ Uploads file to Geo Batch.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
@@ -206,7 +220,7 @@ $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
     new GuzzleHttp\Client(),
     $config
 );
-$geo_batch_file = "/path/to/file.txt"; // \SplFileObject | 
+$geo_batch_file = "/path/to/file.txt"; // \SplFileObject
 
 try {
     $result = $apiInstance->apiV2GeoBatchUploadPost($geo_batch_file);
@@ -214,11 +228,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling JurisdictionDeterminationApi->apiV2GeoBatchUploadPost: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -234,19 +246,20 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: multipart/form-data
-- **Accept**: text/plain, application/json, text/json
+- **Content-Type**: `multipart/form-data`
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2GeoGeocodePost()`
 
-## apiV2GeoGeocodePost
+```php
+apiV2GeoGeocodePost($geocode_request): \OpenAPI\Client\Model\GeocodeResult[]
+```
 
-> \OpenAPI\Client\Model\GeocodeResult[] apiV2GeoGeocodePost($geocode_request)
-
-Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
 
 ### Example
 
@@ -255,6 +268,10 @@ Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\JurisdictionDeterminationApi(
@@ -271,11 +288,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling JurisdictionDeterminationApi->apiV2GeoGeocodePost: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -291,10 +306,9 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
-- **Content-Type**: application/json-patch+json, application/json, text/json, application/_*+json
-- **Accept**: text/plain, application/json, text/json
+- **Content-Type**: `application/json-patch+json`, `application/json`, `text/json`, `application/_*+json`
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-
