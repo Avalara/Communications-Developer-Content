@@ -1,16 +1,17 @@
 # OpenAPI\Client\HealthCheckApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2HealthCheckGet**](HealthCheckApi.md#apiV2HealthCheckGet) | **GET** /api/v2/HealthCheck | Health check that confirms the service is operational and ready to use
+[**apiV2HealthCheckGet()**](HealthCheckApi.md#apiV2HealthCheckGet) | **GET** /api/v2/HealthCheck | Health check that confirms the service is operational and ready to use
 
 
+## `apiV2HealthCheckGet()`
 
-## apiV2HealthCheckGet
-
-> apiV2HealthCheckGet()
+```php
+apiV2HealthCheckGet()
+```
 
 Health check that confirms the service is operational and ready to use
 
@@ -21,6 +22,10 @@ Health check that confirms the service is operational and ready to use
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\HealthCheckApi(
@@ -35,7 +40,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling HealthCheckApi->apiV2HealthCheckGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -55,7 +59,6 @@ void (empty response body)
 - **Content-Type**: Not defined
 - **Accept**: Not defined
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-

@@ -1,20 +1,21 @@
 # OpenAPI\Client\LookupsApi
 
-All URIs are relative to *http://localhost*
+All URIs are relative to http://localhost.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**apiV2AfcLocationPCodeGet**](LookupsApi.md#apiV2AfcLocationPCodeGet) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
-[**apiV2AfcPrimaryPCodeGet**](LookupsApi.md#apiV2AfcPrimaryPCodeGet) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
-[**apiV2AfcServiceinfoGet**](LookupsApi.md#apiV2AfcServiceinfoGet) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
-[**apiV2AfcTaxtypeTaxTypeGet**](LookupsApi.md#apiV2AfcTaxtypeTaxTypeGet) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
-[**apiV2AfcTspairsGet**](LookupsApi.md#apiV2AfcTspairsGet) | **GET** /api/v2/afc/tspairs | Get transaction/service pair information
+[**apiV2AfcLocationPCodeGet()**](LookupsApi.md#apiV2AfcLocationPCodeGet) | **GET** /api/v2/afc/location/{pCode} | Get location data associated with a PCode
+[**apiV2AfcPrimaryPCodeGet()**](LookupsApi.md#apiV2AfcPrimaryPCodeGet) | **GET** /api/v2/afc/primary/{pCode} | Get primary location data associated with a PCode
+[**apiV2AfcServiceinfoGet()**](LookupsApi.md#apiV2AfcServiceinfoGet) | **GET** /api/v2/afc/serviceinfo | Retrieves server time, service build version and engine version
+[**apiV2AfcTaxtypeTaxTypeGet()**](LookupsApi.md#apiV2AfcTaxtypeTaxTypeGet) | **GET** /api/v2/afc/taxtype/{taxType} | Get the tax information (description and category) for a tax type ID
+[**apiV2AfcTspairsGet()**](LookupsApi.md#apiV2AfcTspairsGet) | **GET** /api/v2/afc/tspairs | Get transaction/service pair information
 
 
+## `apiV2AfcLocationPCodeGet()`
 
-## apiV2AfcLocationPCodeGet
-
-> \OpenAPI\Client\Model\PCodeLookupResult apiV2AfcLocationPCodeGet($p_code)
+```php
+apiV2AfcLocationPCodeGet($p_code): \OpenAPI\Client\Model\PCodeLookupResult
+```
 
 Get location data associated with a PCode
 
@@ -27,6 +28,10 @@ Request will return all jurisdictions associated with the PCode
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\LookupsApi(
@@ -35,7 +40,7 @@ $apiInstance = new OpenAPI\Client\Api\LookupsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$p_code = 56; // int | 
+$p_code = 56; // int
 
 try {
     $result = $apiInstance->apiV2AfcLocationPCodeGet($p_code);
@@ -43,11 +48,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling LookupsApi->apiV2AfcLocationPCodeGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -64,16 +67,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2AfcPrimaryPCodeGet()`
 
-## apiV2AfcPrimaryPCodeGet
-
-> \OpenAPI\Client\Model\PCodeLookupResult apiV2AfcPrimaryPCodeGet($p_code)
+```php
+apiV2AfcPrimaryPCodeGet($p_code): \OpenAPI\Client\Model\PCodeLookupResult
+```
 
 Get primary location data associated with a PCode
 
@@ -86,6 +90,10 @@ Request will return primary jurisdiction associated with the PCode
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\LookupsApi(
@@ -94,7 +102,7 @@ $apiInstance = new OpenAPI\Client\Api\LookupsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$p_code = 56; // int | 
+$p_code = 56; // int
 
 try {
     $result = $apiInstance->apiV2AfcPrimaryPCodeGet($p_code);
@@ -102,11 +110,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling LookupsApi->apiV2AfcPrimaryPCodeGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -123,16 +129,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2AfcServiceinfoGet()`
 
-## apiV2AfcServiceinfoGet
-
-> \OpenAPI\Client\Model\ServiceInfo apiV2AfcServiceinfoGet()
+```php
+apiV2AfcServiceinfoGet(): \OpenAPI\Client\Model\ServiceInfo
+```
 
 Retrieves server time, service build version and engine version
 
@@ -143,6 +150,10 @@ Retrieves server time, service build version and engine version
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\LookupsApi(
@@ -158,7 +169,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling LookupsApi->apiV2AfcServiceinfoGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -176,16 +186,17 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2AfcTaxtypeTaxTypeGet()`
 
-## apiV2AfcTaxtypeTaxTypeGet
-
-> \OpenAPI\Client\Model\TaxTypeData[] apiV2AfcTaxtypeTaxTypeGet($tax_type)
+```php
+apiV2AfcTaxtypeTaxTypeGet($tax_type): \OpenAPI\Client\Model\TaxTypeData[]
+```
 
 Get the tax information (description and category) for a tax type ID
 
@@ -198,6 +209,10 @@ This method returns the description for the specified tax type ID. If tax type *
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\LookupsApi(
@@ -214,11 +229,9 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling LookupsApi->apiV2AfcTaxtypeTaxTypeGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
-
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
@@ -235,16 +248,17 @@ Name | Type | Description  | Notes
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
+## `apiV2AfcTspairsGet()`
 
-## apiV2AfcTspairsGet
-
-> \OpenAPI\Client\Model\TsPairData[] apiV2AfcTspairsGet()
+```php
+apiV2AfcTspairsGet(): \OpenAPI\Client\Model\TsPairData[]
+```
 
 Get transaction/service pair information
 
@@ -257,6 +271,10 @@ This method returns the description for the transaction type, service type and t
 require_once(__DIR__ . '/vendor/autoload.php');
 
 
+// Configure HTTP basic authorization: Basic
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration()
+              ->setUsername('YOUR_USERNAME')
+              ->setPassword('YOUR_PASSWORD');
 
 
 $apiInstance = new OpenAPI\Client\Api\LookupsApi(
@@ -272,7 +290,6 @@ try {
 } catch (Exception $e) {
     echo 'Exception when calling LookupsApi->apiV2AfcTspairsGet: ', $e->getMessage(), PHP_EOL;
 }
-?>
 ```
 
 ### Parameters
@@ -290,9 +307,8 @@ This endpoint does not need any parameter.
 ### HTTP request headers
 
 - **Content-Type**: Not defined
-- **Accept**: text/plain, application/json, text/json
+- **Accept**: `text/plain`, `application/json`, `text/json`
 
-[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints)
-[[Back to Model list]](../../README.md#documentation-for-models)
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
-
