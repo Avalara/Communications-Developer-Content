@@ -27,6 +27,7 @@ import org.openapitools.client.model.Error;
 import org.openapitools.client.model.LineItemResult;
 import org.openapitools.client.model.ReportingInformation;
 import org.openapitools.client.model.SummarizedTax;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

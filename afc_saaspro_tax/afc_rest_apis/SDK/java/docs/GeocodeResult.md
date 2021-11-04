@@ -3,6 +3,7 @@
 # GeocodeResult
 
 Results for geocoding request.
+
 ## Properties
 
 Name | Type | Description | Notes

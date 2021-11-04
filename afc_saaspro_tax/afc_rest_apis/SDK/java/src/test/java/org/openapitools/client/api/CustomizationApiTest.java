@@ -46,7 +46,7 @@ public class CustomizationApiTest {
         Integer requestedClientId = null;
         Integer requestedProfileId = null;
         ClientProfileConfigTypes itemType = null;
-        ClientProfileConfigResponse response = api.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
+        List<ClientProfileConfigResponse> response = api.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
 
         // TODO: test validations
     }

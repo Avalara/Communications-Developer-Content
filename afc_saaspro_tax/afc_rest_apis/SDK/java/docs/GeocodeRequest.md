@@ -3,6 +3,7 @@
 # GeocodeRequest
 
 Input data for Geocoding API.
+
 ## Properties
 
 Name | Type | Description | Notes

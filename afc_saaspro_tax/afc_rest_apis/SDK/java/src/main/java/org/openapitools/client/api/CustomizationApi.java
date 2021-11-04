@@ -77,6 +77,10 @@ public class CustomizationApi {
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
+        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
+        Map<String, String> localVarCookieParams = new HashMap<String, String>();
+        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
         if (requestedClientId != null) {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("RequestedClientId", requestedClientId));
         }
@@ -89,9 +93,6 @@ public class CustomizationApi {
             localVarQueryParams.addAll(localVarApiClient.parameterToPair("ItemType", itemType));
         }
 
-        Map<String, String> localVarHeaderParams = new HashMap<String, String>();
-        Map<String, String> localVarCookieParams = new HashMap<String, String>();
-        Map<String, Object> localVarFormParams = new HashMap<String, Object>();
         final String[] localVarAccepts = {
             "text/plain", "application/json", "text/json"
         };
@@ -125,7 +126,7 @@ public class CustomizationApi {
      * @param requestedClientId Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)
      * @param requestedProfileId Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)
      * @param itemType Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
-     * @return ClientProfileConfigResponse
+     * @return List&lt;ClientProfileConfigResponse&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -133,8 +134,8 @@ public class CustomizationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public ClientProfileConfigResponse apiV2ProfilesGetProfilesGet(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType) throws ApiException {
-        ApiResponse<ClientProfileConfigResponse> localVarResp = apiV2ProfilesGetProfilesGetWithHttpInfo(requestedClientId, requestedProfileId, itemType);
+    public List<ClientProfileConfigResponse> apiV2ProfilesGetProfilesGet(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType) throws ApiException {
+        ApiResponse<List<ClientProfileConfigResponse>> localVarResp = apiV2ProfilesGetProfilesGetWithHttpInfo(requestedClientId, requestedProfileId, itemType);
         return localVarResp.getData();
     }
 
@@ -144,7 +145,7 @@ public class CustomizationApi {
      * @param requestedClientId Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable. (optional)
      * @param requestedProfileId Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set. (optional)
      * @param itemType Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All (optional)
-     * @return ApiResponse&lt;ClientProfileConfigResponse&gt;
+     * @return ApiResponse&lt;List&lt;ClientProfileConfigResponse&gt;&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      * @http.response.details
      <table summary="Response Details" border="1">
@@ -152,9 +153,9 @@ public class CustomizationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public ApiResponse<ClientProfileConfigResponse> apiV2ProfilesGetProfilesGetWithHttpInfo(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType) throws ApiException {
+    public ApiResponse<List<ClientProfileConfigResponse>> apiV2ProfilesGetProfilesGetWithHttpInfo(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType) throws ApiException {
         okhttp3.Call localVarCall = apiV2ProfilesGetProfilesGetValidateBeforeCall(requestedClientId, requestedProfileId, itemType, null);
-        Type localVarReturnType = new TypeToken<ClientProfileConfigResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<ClientProfileConfigResponse>>(){}.getType();
         return localVarApiClient.execute(localVarCall, localVarReturnType);
     }
 
@@ -173,10 +174,10 @@ public class CustomizationApi {
         <tr><td> 200 </td><td> Success </td><td>  -  </td></tr>
      </table>
      */
-    public okhttp3.Call apiV2ProfilesGetProfilesGetAsync(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType, final ApiCallback<ClientProfileConfigResponse> _callback) throws ApiException {
+    public okhttp3.Call apiV2ProfilesGetProfilesGetAsync(Integer requestedClientId, Integer requestedProfileId, ClientProfileConfigTypes itemType, final ApiCallback<List<ClientProfileConfigResponse>> _callback) throws ApiException {
 
         okhttp3.Call localVarCall = apiV2ProfilesGetProfilesGetValidateBeforeCall(requestedClientId, requestedProfileId, itemType, _callback);
-        Type localVarReturnType = new TypeToken<ClientProfileConfigResponse>(){}.getType();
+        Type localVarReturnType = new TypeToken<List<ClientProfileConfigResponse>>(){}.getType();
         localVarApiClient.executeAsync(localVarCall, localVarReturnType, _callback);
         return localVarCall;
     }

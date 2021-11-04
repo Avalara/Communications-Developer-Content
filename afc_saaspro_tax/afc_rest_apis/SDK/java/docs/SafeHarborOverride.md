@@ -3,6 +3,7 @@
 # SafeHarborOverride
 
 Safe harbor rate override for a USF tax type.
+
 ## Properties
 
 Name | Type | Description | Notes

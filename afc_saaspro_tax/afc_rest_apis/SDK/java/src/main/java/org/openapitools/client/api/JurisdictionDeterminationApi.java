@@ -84,6 +84,7 @@ public class JurisdictionDeterminationApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
         final String[] localVarAccepts = {
             "text/plain", "application/json", "text/json"
         };
@@ -190,6 +191,7 @@ public class JurisdictionDeterminationApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
         final String[] localVarAccepts = {
             "text/plain", "application/json", "text/json"
         };
@@ -301,6 +303,7 @@ public class JurisdictionDeterminationApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
         final String[] localVarAccepts = {
             "text/plain", "application/json", "text/json"
         };
@@ -411,6 +414,7 @@ public class JurisdictionDeterminationApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
         if (geoBatchFile != null) {
             localVarFormParams.put("geoBatchFile", geoBatchFile);
         }
@@ -520,6 +524,7 @@ public class JurisdictionDeterminationApi {
         Map<String, String> localVarHeaderParams = new HashMap<String, String>();
         Map<String, String> localVarCookieParams = new HashMap<String, String>();
         Map<String, Object> localVarFormParams = new HashMap<String, Object>();
+
         final String[] localVarAccepts = {
             "text/plain", "application/json", "text/json"
         };
@@ -548,7 +553,7 @@ public class JurisdictionDeterminationApi {
     }
 
     /**
-     * Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+     * Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
      * 
      * @param geocodeRequest List of street addresses and/or lat/long coordinate pairs to geocode. (optional)
      * @return List&lt;GeocodeResult&gt;
@@ -565,7 +570,7 @@ public class JurisdictionDeterminationApi {
     }
 
     /**
-     * Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+     * Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
      * 
      * @param geocodeRequest List of street addresses and/or lat/long coordinate pairs to geocode. (optional)
      * @return ApiResponse&lt;List&lt;GeocodeResult&gt;&gt;
@@ -583,7 +588,7 @@ public class JurisdictionDeterminationApi {
     }
 
     /**
-     * Geocodes one or multiple street addresses and/or lat/long coordinate pairs. (asynchronously)
+     * Geo-codes one or multiple street addresses and/or lat/long coordinate pairs. (asynchronously)
      * 
      * @param geocodeRequest List of street addresses and/or lat/long coordinate pairs to geocode. (optional)
      * @param _callback The callback to be executed when the API call finishes

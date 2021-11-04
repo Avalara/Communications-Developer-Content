@@ -104,7 +104,7 @@ public class JurisdictionDeterminationApiTest {
     }
     
     /**
-     * Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+     * Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
      *
      * 
      *

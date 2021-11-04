@@ -3,6 +3,7 @@
 # Tax
 
 Tax data for individual line item.
+
 ## Properties
 
 Name | Type | Description | Notes

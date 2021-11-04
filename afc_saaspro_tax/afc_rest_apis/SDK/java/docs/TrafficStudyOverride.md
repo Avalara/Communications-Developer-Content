@@ -3,6 +3,7 @@
 # TrafficStudyOverride
 
 Specifies a traffic study override
+
 ## Properties
 
 Name | Type | Description | Notes

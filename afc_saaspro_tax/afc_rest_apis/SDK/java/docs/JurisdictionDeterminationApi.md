@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**apiV2GeoBatchLogProcessIdGet**](JurisdictionDeterminationApi.md#apiV2GeoBatchLogProcessIdGet) | **GET** /api/v2/geo/batch/log/{processId} | Retrieves log on Geo Batch file
 [**apiV2GeoBatchStatusProcessIdGet**](JurisdictionDeterminationApi.md#apiV2GeoBatchStatusProcessIdGet) | **GET** /api/v2/geo/batch/status/{processId} | Retrieves information on Geo Batch file status
 [**apiV2GeoBatchUploadPost**](JurisdictionDeterminationApi.md#apiV2GeoBatchUploadPost) | **POST** /api/v2/geo/batch/Upload | Uploads file to Geo Batch.
-[**apiV2GeoGeocodePost**](JurisdictionDeterminationApi.md#apiV2GeoGeocodePost) | **POST** /api/v2/geo/Geocode | Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+[**apiV2GeoGeocodePost**](JurisdictionDeterminationApi.md#apiV2GeoGeocodePost) | **POST** /api/v2/geo/Geocode | Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
 
 
 <a name="apiV2AfcPCodePost"></a>
@@ -34,6 +34,10 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     JurisdictionDeterminationApi apiInstance = new JurisdictionDeterminationApi(defaultClient);
     PCodeLookupRequest pcodeLookupRequest = new PCodeLookupRequest(); // PCodeLookupRequest | 
@@ -96,6 +100,10 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     JurisdictionDeterminationApi apiInstance = new JurisdictionDeterminationApi(defaultClient);
     String processId = "processId_example"; // String | Process Id for Geo Batch File.
@@ -158,6 +166,10 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     JurisdictionDeterminationApi apiInstance = new JurisdictionDeterminationApi(defaultClient);
     String processId = "processId_example"; // String | Process Id for Geo Batch File.
@@ -220,6 +232,10 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     JurisdictionDeterminationApi apiInstance = new JurisdictionDeterminationApi(defaultClient);
     File geoBatchFile = new File("/path/to/file"); // File | 
@@ -265,7 +281,7 @@ Name | Type | Description  | Notes
 # **apiV2GeoGeocodePost**
 > List&lt;GeocodeResult&gt; apiV2GeoGeocodePost(geocodeRequest)
 
-Geocodes one or multiple street addresses and/or lat/long coordinate pairs.
+Geo-codes one or multiple street addresses and/or lat/long coordinate pairs.
 
 ### Example
 ```java
@@ -282,6 +298,10 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     JurisdictionDeterminationApi apiInstance = new JurisdictionDeterminationApi(defaultClient);
     List<GeocodeRequest> geocodeRequest = Arrays.asList(); // List<GeocodeRequest> | List of street addresses and/or lat/long coordinate pairs to geocode.

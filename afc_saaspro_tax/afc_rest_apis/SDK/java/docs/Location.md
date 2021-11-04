@@ -3,6 +3,7 @@
 # Location
 
 Location data used to determine taxing jurisdiction.
+
 ## Properties
 
 Name | Type | Description | Notes

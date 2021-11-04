@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 <a name="apiV2ProfilesGetProfilesGet"></a>
 # **apiV2ProfilesGetProfilesGet**
-> ClientProfileConfigResponse apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType)
+> List&lt;ClientProfileConfigResponse&gt; apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType)
 
 Retrieves one or more profiles with associated settings and configurable items
 
@@ -28,13 +28,17 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     CustomizationApi apiInstance = new CustomizationApi(defaultClient);
     Integer requestedClientId = 56; // Integer | Client id associated with profile(s) to be fetched  Null value will use client id submitting the request or default client id as applicable.
     Integer requestedProfileId = 56; // Integer | Configuration profile id to be fetched  Use 0 to indicate all profiles  Null value will use profile id from request or 0 if not set.
-    ClientProfileConfigTypes itemType = new ClientProfileConfigTypes(); // ClientProfileConfigTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
+    ClientProfileConfigTypes itemType = ClientProfileConfigTypes.fromValue("All"); // ClientProfileConfigTypes | Item Type  Examples:    Configuration, Bundle, Exclusion, Override, All
     try {
-      ClientProfileConfigResponse result = apiInstance.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
+      List<ClientProfileConfigResponse> result = apiInstance.apiV2ProfilesGetProfilesGet(requestedClientId, requestedProfileId, itemType);
       System.out.println(result);
     } catch (ApiException e) {
       System.err.println("Exception when calling CustomizationApi#apiV2ProfilesGetProfilesGet");
@@ -57,7 +61,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ClientProfileConfigResponse**](ClientProfileConfigResponse.md)
+[**List&lt;ClientProfileConfigResponse&gt;**](ClientProfileConfigResponse.md)
 
 ### Authorization
 

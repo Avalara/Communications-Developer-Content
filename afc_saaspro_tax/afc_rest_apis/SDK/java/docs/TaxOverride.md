@@ -3,6 +3,7 @@
 # TaxOverride
 
 Tax rate override information.
+
 ## Properties
 
 Name | Type | Description | Notes
