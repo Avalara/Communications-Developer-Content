@@ -31,6 +31,7 @@ import org.openapitools.client.model.NexusConfig;
 import org.openapitools.client.model.OverrideConfig;
 import org.openapitools.client.model.Status;
 import org.openapitools.client.model.Warning;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

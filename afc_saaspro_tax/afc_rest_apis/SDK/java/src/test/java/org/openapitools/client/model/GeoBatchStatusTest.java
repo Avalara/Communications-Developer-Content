@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.openapitools.client.model.Error;
 import org.openapitools.client.model.GeoBatchDownloadResponse;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.threeten.bp.OffsetDateTime;
 import org.junit.Assert;
 import org.junit.Ignore;

@@ -29,6 +29,10 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     TaxCalculationApi apiInstance = new TaxCalculationApi(defaultClient);
     CalcTaxesRequest calcTaxesRequest = new CalcTaxesRequest(); // CalcTaxesRequest | CalcTaxesRequest object containing invoices to process and data required               for performing tax calculations.
@@ -91,6 +95,10 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("http://localhost");
     
+    // Configure HTTP basic authorization: Basic
+    HttpBasicAuth Basic = (HttpBasicAuth) defaultClient.getAuthentication("Basic");
+    Basic.setUsername("YOUR USERNAME");
+    Basic.setPassword("YOUR PASSWORD");
 
     TaxCalculationApi apiInstance = new TaxCalculationApi(defaultClient);
     CommitRequest commitRequest = new CommitRequest(); // CommitRequest | CommitRequest object containing document code and optional field data to override in reports.

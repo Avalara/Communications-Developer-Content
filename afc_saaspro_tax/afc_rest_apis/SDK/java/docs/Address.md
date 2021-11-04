@@ -3,6 +3,7 @@
 # Address
 
 Address information.
+
 ## Properties
 
 Name | Type | Description | Notes

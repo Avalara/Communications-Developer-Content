@@ -3,6 +3,7 @@
 # CommitResponse
 
 Response body for Commit API.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -3,6 +3,7 @@
 # LineItem
 
 Data for an invoice or quote line item.
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -30,7 +31,7 @@ Name | Type | Description | Notes
 **bill** | [**Location**](Location.md) |  |  [optional]
 **cust** | **Integer** | Customer type. |  [optional]
 **lfln** | **Boolean** | Indicates if customer is a Lifeline participant.  Default: false. |  [optional]
-**date** | [**OffsetDateTime**](OffsetDateTime.md) | Invoice date. |  [optional]
+**date** | **OffsetDateTime** | Invoice date. |  [optional]
 **qty** | **Integer** | Quantity to be applied to the item - taxation is equivalent to repeating the item the number of times of the quantity |  [optional]
 **glref** | **String** | General Ledger reference to be used in reporting |  [optional]
 

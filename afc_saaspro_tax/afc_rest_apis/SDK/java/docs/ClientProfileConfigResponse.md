@@ -3,6 +3,7 @@
 # ClientProfileConfigResponse
 
 Data for an invoice or quote line item.
+
 ## Properties
 
 Name | Type | Description | Notes

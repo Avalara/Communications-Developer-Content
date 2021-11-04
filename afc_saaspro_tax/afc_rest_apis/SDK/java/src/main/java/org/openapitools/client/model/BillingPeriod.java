@@ -28,7 +28,7 @@ import java.io.IOException;
  * Optional object for passing in billing period
  */
 @ApiModel(description = "Optional object for passing in billing period")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-08-04T15:26:12.946-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-11-04T16:10:49.104-04:00[America/New_York]")
 public class BillingPeriod {
   public static final String SERIALIZED_NAME_MONTH = "month";
   @SerializedName(SERIALIZED_NAME_MONTH)
@@ -86,7 +86,7 @@ public class BillingPeriod {
 
 
   @Override
-  public boolean equals(java.lang.Object o) {
+  public boolean equals(Object o) {
     if (this == o) {
       return true;
     }
@@ -103,7 +103,6 @@ public class BillingPeriod {
     return Objects.hash(month, year);
   }
 
-
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
@@ -118,7 +117,7 @@ public class BillingPeriod {
    * Convert the given object to string with each line indented by 4 spaces
    * (except the first line).
    */
-  private String toIndentedString(java.lang.Object o) {
+  private String toIndentedString(Object o) {
     if (o == null) {
       return "null";
     }

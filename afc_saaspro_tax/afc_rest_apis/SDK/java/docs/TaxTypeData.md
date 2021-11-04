@@ -2,6 +2,7 @@
 
 # TaxTypeData
 
+
 ## Properties
 
 Name | Type | Description | Notes

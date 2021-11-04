@@ -302,13 +302,19 @@ paths:
           content:
             text/plain:
               schema:
-                $ref: '#/components/schemas/ClientProfileConfigResponse'
+                items:
+                  $ref: '#/components/schemas/ClientProfileConfigResponse'
+                type: array
             application/json:
               schema:
-                $ref: '#/components/schemas/ClientProfileConfigResponse'
+                items:
+                  $ref: '#/components/schemas/ClientProfileConfigResponse'
+                type: array
             text/json:
               schema:
-                $ref: '#/components/schemas/ClientProfileConfigResponse'
+                items:
+                  $ref: '#/components/schemas/ClientProfileConfigResponse'
+                type: array
           description: Success
       summary: Retrieves one or more profiles with associated settings and configurable
         items
@@ -360,7 +366,7 @@ paths:
                   $ref: '#/components/schemas/GeocodeResult'
                 type: array
           description: Success
-      summary: Geocodes one or multiple street addresses and/or lat/long coordinate
+      summary: Geo-codes one or multiple street addresses and/or lat/long coordinate
         pairs.
       tags:
       - Jurisdiction Determination
@@ -3777,6 +3783,6 @@ components:
   securitySchemes:
     Basic:
       description: Basic authentication
-      scheme: Basic
+      scheme: basic
       type: http
 

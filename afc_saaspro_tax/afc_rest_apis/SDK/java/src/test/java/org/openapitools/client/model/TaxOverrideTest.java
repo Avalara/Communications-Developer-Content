@@ -25,6 +25,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.openapitools.client.model.Location;
 import org.openapitools.client.model.TaxBracket;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

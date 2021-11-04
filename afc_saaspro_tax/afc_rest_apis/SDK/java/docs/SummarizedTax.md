@@ -3,6 +3,7 @@
 # SummarizedTax
 
 Tax data for summarized invoice taxes.
+
 ## Properties
 
 Name | Type | Description | Notes

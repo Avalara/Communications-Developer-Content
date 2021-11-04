@@ -3,6 +3,7 @@
 # Warning
 
 Warning information.
+
 ## Properties
 
 Name | Type | Description | Notes

@@ -28,6 +28,7 @@ import org.openapitools.client.model.KeyValuePair;
 import org.openapitools.client.model.LineItem;
 import org.openapitools.client.model.Location;
 import org.openapitools.client.model.TaxExemption;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.threeten.bp.OffsetDateTime;
 import org.junit.Assert;
 import org.junit.Ignore;

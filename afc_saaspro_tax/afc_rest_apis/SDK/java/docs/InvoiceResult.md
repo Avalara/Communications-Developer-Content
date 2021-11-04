@@ -3,6 +3,7 @@
 # InvoiceResult
 
 Tax calculation results for an invoice.
+
 ## Properties
 
 Name | Type | Description | Notes

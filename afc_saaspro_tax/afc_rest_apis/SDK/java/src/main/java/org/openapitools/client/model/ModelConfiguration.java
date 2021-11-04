@@ -26,12 +26,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import org.openapitools.client.model.TrafficStudyOverride;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
  * Settings associated with a client profile configuration  Maybe associated with 0 to many profiles
  */
 @ApiModel(description = "Settings associated with a client profile configuration  Maybe associated with 0 to many profiles")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-08-04T15:26:12.946-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-11-04T16:10:49.104-04:00[America/New_York]")
 public class ModelConfiguration {
   public static final String SERIALIZED_NAME_TRAFFIC_STUDY_OVERRIDES = "TrafficStudyOverrides";
   @SerializedName(SERIALIZED_NAME_TRAFFIC_STUDY_OVERRIDES)
@@ -151,7 +152,7 @@ public class ModelConfiguration {
 
 
   @Override
-  public boolean equals(java.lang.Object o) {
+  public boolean equals(Object o) {
     if (this == o) {
       return true;
     }
@@ -165,11 +166,23 @@ public class ModelConfiguration {
         Objects.equals(this.selfTaxAlgorithm, _configuration.selfTaxAlgorithm);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && a.get().getClass().isArray() ? Arrays.equals((T[])a.get(), (T[])b.get()) : Objects.equals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(trafficStudyOverrides, returnNonBillable, taxOnTaxAlgorithm, selfTaxAlgorithm);
   }
 
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent()
+      ? (a.get().getClass().isArray() ? Arrays.hashCode((T[])a.get()) : Objects.hashCode(a.get()))
+      : 31;
+  }
 
   @Override
   public String toString() {
@@ -187,7 +200,7 @@ public class ModelConfiguration {
    * Convert the given object to string with each line indented by 4 spaces
    * (except the first line).
    */
-  private String toIndentedString(java.lang.Object o) {
+  private String toIndentedString(Object o) {
     if (o == null) {
       return "null";
     }

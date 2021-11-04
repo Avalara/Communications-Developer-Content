@@ -3,6 +3,7 @@
 # Invoice
 
 Contains information about an invoice or quote.
+
 ## Properties
 
 Name | Type | Description | Notes
@@ -12,7 +13,7 @@ Name | Type | Description | Notes
 **bill** | [**Location**](Location.md) |  |  [optional]
 **cust** | **Integer** | Customer type. |  [optional]
 **lfln** | **Boolean** | Indicates if customer is a Lifeline participant.  Default: false. |  [optional]
-**date** | [**OffsetDateTime**](OffsetDateTime.md) | Invoice date. |  [optional]
+**date** | **OffsetDateTime** | Invoice date. |  [optional]
 **exms** | [**List&lt;TaxExemption&gt;**](TaxExemption.md) | Tax exemptions. |  [optional]
 **itms** | [**List&lt;LineItem&gt;**](LineItem.md) | Line items. |  [optional]
 **invm** | **Boolean** | Indicates if all line items within invoice should be processed in invoice mode.  Default: true. |  [optional]

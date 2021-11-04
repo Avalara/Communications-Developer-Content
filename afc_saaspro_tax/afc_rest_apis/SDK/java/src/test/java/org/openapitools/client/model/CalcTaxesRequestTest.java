@@ -28,6 +28,7 @@ import org.openapitools.client.model.Invoice;
 import org.openapitools.client.model.RequestConfig;
 import org.openapitools.client.model.SafeHarborOverride;
 import org.openapitools.client.model.TaxOverride;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

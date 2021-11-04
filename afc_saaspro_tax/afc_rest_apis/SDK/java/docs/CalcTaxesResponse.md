@@ -3,6 +3,7 @@
 # CalcTaxesResponse
 
 Response body for tax calculation API.
+
 ## Properties
 
 Name | Type | Description | Notes

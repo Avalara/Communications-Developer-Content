@@ -33,12 +33,13 @@ import org.openapitools.client.model.NexusConfig;
 import org.openapitools.client.model.OverrideConfig;
 import org.openapitools.client.model.Status;
 import org.openapitools.client.model.Warning;
+import org.openapitools.jackson.nullable.JsonNullable;
 
 /**
  * Data for an invoice or quote line item.
  */
 @ApiModel(description = "Data for an invoice or quote line item.")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-08-04T15:26:12.946-04:00[America/New_York]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2021-11-04T16:10:49.104-04:00[America/New_York]")
 public class ClientProfileConfigResponse {
   public static final String SERIALIZED_NAME_PROFILE_CONFIG_ID = "ProfileConfigId";
   @SerializedName(SERIALIZED_NAME_PROFILE_CONFIG_ID)
@@ -530,7 +531,7 @@ public class ClientProfileConfigResponse {
 
 
   @Override
-  public boolean equals(java.lang.Object o) {
+  public boolean equals(Object o) {
     if (this == o) {
       return true;
     }
@@ -556,11 +557,23 @@ public class ClientProfileConfigResponse {
         Objects.equals(this.status, clientProfileConfigResponse.status);
   }
 
+  private static <T> boolean equalsNullable(JsonNullable<T> a, JsonNullable<T> b) {
+    return a == b || (a != null && b != null && a.isPresent() && b.isPresent() && a.get().getClass().isArray() ? Arrays.equals((T[])a.get(), (T[])b.get()) : Objects.equals(a.get(), b.get()));
+  }
+
   @Override
   public int hashCode() {
     return Objects.hash(profileConfigId, profileIds, clientId, lastUpdateBy, active, settings, exclusions, bundles, nexus, overrides, description, error, itemType, errors, warnings, status);
   }
 
+  private static <T> int hashCodeNullable(JsonNullable<T> a) {
+    if (a == null) {
+      return 1;
+    }
+    return a.isPresent()
+      ? (a.get().getClass().isArray() ? Arrays.hashCode((T[])a.get()) : Objects.hashCode(a.get()))
+      : 31;
+  }
 
   @Override
   public String toString() {
@@ -590,7 +603,7 @@ public class ClientProfileConfigResponse {
    * Convert the given object to string with each line indented by 4 spaces
    * (except the first line).
    */
-  private String toIndentedString(java.lang.Object o) {
+  private String toIndentedString(Object o) {
     if (o == null) {
       return "null";
     }

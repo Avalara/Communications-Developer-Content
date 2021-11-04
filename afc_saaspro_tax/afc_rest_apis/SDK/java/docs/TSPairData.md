@@ -2,6 +2,7 @@
 
 # TsPairData
 
+
 ## Properties
 
 Name | Type | Description | Notes
